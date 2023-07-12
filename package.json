@@ -1,5 +1,5 @@
 {
-  "name": "@maxst-design-system/maxst-design-system",
+  "name": "@maxst-designsystem/maxst-designsystem",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,7 +16,6 @@
     "url": "https://github.com/laura-maxst/maxst-design-system/issues"
   },
   "homepage": "https://github.com/laura-maxst/maxst-design-system#readme",
-  "private": true,
   "workspaces": {
     "packages": [
       "packages/**"

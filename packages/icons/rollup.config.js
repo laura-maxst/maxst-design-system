@@ -23,7 +23,6 @@ const config = {
     url(),
     peerDepsExternal(),
     sourcemaps(),
-    del({ targets: ["dist/*"] }),
   ],
   output: [
     {

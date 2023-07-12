@@ -10,10 +10,10 @@
     "outDir": "./dist",
     "strict": true,
     "noImplicitThis": false /* Raise error on 'this' expressions with an implied 'any' type. */,
-    "baseUrl": "src",
+    "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
+  "include": ["./"],
   "exclude": ["node_modules", "dist", "**/*.stories.tsx", "cypress"]
 }

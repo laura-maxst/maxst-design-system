@@ -1,0 +1,25 @@
+{
+  "name": "@maxst-design-system/maxst-design-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laura-maxst/maxst-design-system.git"
+  },
+  "author": "laura-mast",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laura-maxst/maxst-design-system/issues"
+  },
+  "homepage": "https://github.com/laura-maxst/maxst-design-system#readme",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  }
+}

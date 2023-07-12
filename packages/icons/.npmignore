@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+.vscode
+.idea
+.github
+.npmignore
+.babelrc
+.eslintrc
+tsconfig.json
+rollup.config.js

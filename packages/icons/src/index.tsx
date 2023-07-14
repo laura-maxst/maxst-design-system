@@ -31,6 +31,9 @@ export { NotificationFillIcon } from './icons/notificationFill';
 export { NotificationOffLineIcon } from './icons/notificationOffLine';
 export { NotificationOffFillIcon } from './icons/notificationOffFill';
 
+export { PlayCircleLineIcon } from './icons/playCircleLine';
+export { PlayCircleFillIcon } from './icons/playCircleFill';
+
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileFillIcon } from './icons/profileFill';
 

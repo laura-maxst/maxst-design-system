@@ -20,6 +20,9 @@ export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';
 export { HomeFillIcon } from './icons/homeFill';
 
+export { LanguageLineIcon } from './icons/languageLine';
+export { LanguageFillIcon } from './icons/languageFill';
+
 export { MessageLineIcon } from './icons/messageLine';
 export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';

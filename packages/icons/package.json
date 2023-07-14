@@ -1,6 +1,6 @@
 {
   "name": "@maxst-designsystem/icons",
-  "version": "0.2.02",
+  "version": "0.2.4",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {

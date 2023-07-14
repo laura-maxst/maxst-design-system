@@ -1,6 +1,12 @@
 export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 
+export { ArrowLeftLineIcon } from './icons/arrowLeftLine';
+export { ArrowLeftLineBoldIcon } from './icons/arrowLeftLineBold';
+
+export { ArrowRightLineIcon } from './icons/arrowRightLine';
+export { ArrowRightLineBoldIcon } from './icons/arrowRightLineBold';
+
 export { ArrowUpLineIcon } from './icons/arrowUpLine';
 export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
 

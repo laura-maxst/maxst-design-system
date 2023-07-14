@@ -31,3 +31,8 @@ export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';
 export { UserFillIcon } from './icons/userFill';
+
+export { ViewFillIcon } from './icons/viewFill';
+export { ViewFillBoldIcon } from './icons/viewFillBold';
+export { ViewLineIcon } from './icons/viewLine';
+export { ViewLineBoldIcon } from './icons/viewLineBold';

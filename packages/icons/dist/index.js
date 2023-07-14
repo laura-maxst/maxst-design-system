@@ -2803,10 +2803,28 @@ if (process.env.NODE_ENV === 'production') {
 var reactExports = react.exports;
 var React = /*@__PURE__*/getDefaultExportFromCjs(reactExports);
 
-var StarIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "25", viewBox: "0 0 24 25", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.0002 1.64429L15.1906 8.10878L22.3246 9.14541L17.1624 14.1773L18.381 21.2825L12.0002 17.9279L5.61936 21.2825L6.83799 14.1773L1.67578 9.14541L8.80978 8.10878L12.0002 1.64429ZM12.0002 4.35575L9.60665 9.20559L4.25453 9.9833L8.12737 13.7584L7.21311 19.0889L12.0002 16.5722L16.7873 19.0889L15.873 13.7584L19.7459 9.9833L14.3937 9.20559L12.0002 4.35575Z", fill: "currentColor" })));
+var HomeLineIcon = function () {
+    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
+        React.createElement("path", { d: "M35.2596 44H25.5796V30.56H22.5196V39.3L17.8196 44H8.05957V22L24.0196 6.04004L39.9796 22V39.3L35.2796 44H35.2596ZM27.9796 41.6H34.2596L37.5596 38.3V22.98L23.9996 9.42004L10.4396 22.98V41.6H16.7996L20.0996 38.3V28.16H27.9596V41.6H27.9796Z", fill: "currentColor" })));
 };
 
-exports.StarIcon = StarIcon;
+var HomeLineBoldIcon = function () {
+    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
+        React.createElement("path", { d: "M24 5.62L7.73999 21.88V44.3H17.92L22.8 39.42V30.86H25.26V44.3H35.36L40.24 39.42V21.86L24 5.62ZM37.26 38.18L34.22 41.22L28.28 41.3V27.86H19.82V38.18L16.7 41.3H10.76V23.12L24.02 9.85999L37.28 23.12V38.18H37.26Z", fill: "currentColor" })));
+};
+
+var HomeLineLightIcon = function () {
+    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
+        React.createElement("path", { d: "M23.9996 6.88L8.63965 22.24V43.4H17.5596L21.9196 39.04V29.96H26.1796V43.4H35.0196L39.3796 39.04V22.24L24.0196 6.88H23.9996ZM38.1596 38.54L34.5196 42.18H27.3796V28.74H20.7196V38.52L17.0796 42.16H9.85965V22.7L24.0196 8.54L38.1796 22.7V38.52L38.1596 38.54Z", fill: "currentColor" })));
+};
+
+var HomeFillIcon = function () {
+    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
+        React.createElement("path", { d: "M35.2596 44H25.5796V30.56H22.5196V39.3L17.8196 44H8.05957V22L24.0196 6.04004L39.9796 22V39.3L35.2796 44H35.2596Z", fill: "currentColor" })));
+};
+
+exports.HomeFillIcon = HomeFillIcon;
+exports.HomeLineBoldIcon = HomeLineBoldIcon;
+exports.HomeLineIcon = HomeLineIcon;
+exports.HomeLineLightIcon = HomeLineLightIcon;
 //# sourceMappingURL=index.js.map

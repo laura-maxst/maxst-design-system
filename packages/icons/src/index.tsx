@@ -39,6 +39,9 @@ export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';
 export { SettingFillIcon } from './icons/settingFill';
 
+export { StarLineIcon } from './icons/starLine';
+export { StarFillIcon } from './icons/starFill';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

@@ -70,6 +70,9 @@ export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';
 export { MessageFillIcon } from './icons/messageFill';
 
+export { MinusLineIcon } from './icons/minusLine';
+export { MinusLineBoldIcon } from './icons/minusLineBold';
+
 export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
 
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
@@ -84,6 +87,9 @@ export { OpenInNewLineIcon } from './icons/openInNewLine';
 
 export { PlayCircleLineIcon } from './icons/playCircleLine';
 export { PlayCircleFillIcon } from './icons/playCircleFill';
+
+export { PlusLineIcon } from './icons/plusLine';
+export { PlusLineBoldIcon } from './icons/plusLineBold';
 
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileFillIcon } from './icons/profileFill';

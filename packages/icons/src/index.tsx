@@ -28,6 +28,9 @@ export { NotificationFillIcon } from './icons/notificationFill';
 export { NotificationOffLineIcon } from './icons/notificationOffLine';
 export { NotificationOffFillIcon } from './icons/notificationOffFill';
 
+export { ProfileLineIcon } from './icons/profileLine';
+export { ProfileFillIcon } from './icons/profileFill';
+
 export { SettingLineIcon } from './icons/settingLine';
 export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';

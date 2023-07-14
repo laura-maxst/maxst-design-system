@@ -8,6 +8,10 @@ export { EditLineBoldIcon } from './icons/editLineBold';
 export { EditLineLightIcon } from './icons/editLineLight';
 export { EditFillIcon } from './icons/editFill';
 
+export { FileLineIcon } from './icons/fileLine';
+export { FileLineBoldIcon } from './icons/fileLineBold';
+export { FileLineLightIcon } from './icons/fileLineLight';
+
 export { HomeLineIcon } from './icons/homeLine';
 export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';

@@ -68,6 +68,8 @@ export { LoginLineIcon } from './icons/loginLine';
 
 export { LogoutLineIcon } from './icons/logoutLine';
 
+export { MenuLineIcon } from './icons/menuLine';
+
 export { MessageLineIcon } from './icons/messageLine';
 export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';
@@ -96,6 +98,8 @@ export { PlusLineBoldIcon } from './icons/plusLineBold';
 
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileFillIcon } from './icons/profileFill';
+
+export { RefreshLineIcon } from './icons/refreshLine';
 
 export { SearchLineIcon } from './icons/searchLine';
 

@@ -18,6 +18,11 @@ export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';
 export { MessageFillIcon } from './icons/messageFill';
 
+export { SettingLineIcon } from './icons/settingLine';
+export { SettingLineBoldIcon } from './icons/settingLineBold';
+export { SettingLineLightIcon } from './icons/settingLineLight';
+export { SettingFillIcon } from './icons/settingFill';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

@@ -10,8 +10,14 @@ export { ArrowDownwardLineBoldIcon } from './icons/arrowDownwardLineBold';
 export { ArrowForwardLineIcon } from './icons/arrowForwardLine';
 export { ArrowForwardLineBoldIcon } from './icons/arrowForwardLineBold';
 
+export { ArrowInwardLineIcon } from './icons/arrowInwardLine';
+export { ArrowInwardLineBoldIcon } from './icons/arrowInwardLineBold';
+
 export { ArrowLeftLineIcon } from './icons/arrowLeftLine';
 export { ArrowLeftLineBoldIcon } from './icons/arrowLeftLineBold';
+
+export { ArrowOutwardLineIcon } from './icons/arrowOutwardLine';
+export { ArrowOutwardLineBoldIcon } from './icons/arrowOutwardLineBold';
 
 export { ArrowRightLineIcon } from './icons/arrowRightLine';
 export { ArrowRightLineBoldIcon } from './icons/arrowRightLineBold';

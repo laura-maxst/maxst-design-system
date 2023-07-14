@@ -14,6 +14,10 @@ export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';
 
+export { FullScreenExitLineIcon } from './icons/fullScreenExitLine';
+
+export { FullScreenLineIcon } from './icons/fullScreenLine';
+
 export { HeartLineIcon } from './icons/heartLine';
 export { HeartFillIcon } from './icons/heartFill';
 
@@ -24,6 +28,8 @@ export { HomeFillIcon } from './icons/homeFill';
 
 export { LanguageLineIcon } from './icons/languageLine';
 export { LanguageFillIcon } from './icons/languageFill';
+
+export { ListLineIcon } from './icons/listLine';
 
 export { LoginLineIcon } from './icons/loginLine';
 
@@ -36,7 +42,7 @@ export { MessageFillIcon } from './icons/messageFill';
 
 export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
 
-export { MoreVerticalLineIcon } from './icons/fullScreenLine';
+export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
 
 export { NotificationLineIcon } from './icons/notificationLine';
 export { NotificationFillIcon } from './icons/notificationFill';

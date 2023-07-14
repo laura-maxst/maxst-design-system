@@ -36,3 +36,8 @@ export { ViewFillIcon } from './icons/viewFill';
 export { ViewFillBoldIcon } from './icons/viewFillBold';
 export { ViewLineIcon } from './icons/viewLine';
 export { ViewLineBoldIcon } from './icons/viewLineBold';
+
+export { ViewOffFillIcon } from './icons/viewOffFill';
+export { ViewOffFillBoldIcon } from './icons/viewOffFillBold';
+export { ViewOffLineIcon } from './icons/viewOffLine';
+export { ViewOffLineBoldIcon } from './icons/viewOffLineBold';

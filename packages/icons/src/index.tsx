@@ -1,8 +1,14 @@
+export { ArrowBackwardLineIcon } from './icons/arrowBackwardLine';
+export { ArrowBackwardLineBoldIcon } from './icons/arrowBackwardLineBold';
+
 export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 
 export { ArrowDownwardLineIcon } from './icons/arrowDownwardLine';
 export { ArrowDownwardLineBoldIcon } from './icons/arrowDownwardLineBold';
+
+export { ArrowForwardLineIcon } from './icons/arrowForwardLine';
+export { ArrowForwardLineBoldIcon } from './icons/arrowForwardLineBold';
 
 export { ArrowLeftLineIcon } from './icons/arrowLeftLine';
 export { ArrowLeftLineBoldIcon } from './icons/arrowLeftLineBold';

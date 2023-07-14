@@ -1,1 +1,1 @@
-export { StarIcon } from './icons/star'
+export { HomeLineIcon } from './icons/homeLine';

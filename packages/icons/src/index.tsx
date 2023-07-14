@@ -1,6 +1,9 @@
 export { ArrowBackwardLineIcon } from './icons/arrowBackwardLine';
 export { ArrowBackwardLineBoldIcon } from './icons/arrowBackwardLineBold';
 
+export { ArrowDownCircleLineIcon } from './icons/arrowDownCircleLine';
+export { ArrowDownCircleFillIcon } from './icons/arrowDownCircleFill';
+
 export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 

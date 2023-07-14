@@ -22,6 +22,9 @@ export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';
 export { MessageFillIcon } from './icons/messageFill';
 
+export { NotificationLineIcon } from './icons/notificationLine';
+export { NotificationFillIcon } from './icons/notificationFill';
+
 export { SettingLineIcon } from './icons/settingLine';
 export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';

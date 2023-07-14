@@ -3,6 +3,8 @@ export { DeleteLineBoldIcon } from './icons/deleteLineBold';
 export { DeleteLineLightIcon } from './icons/deleteLineLight';
 export { DeleteFillIcon } from './icons/deleteFill';
 
+export { DownloadLineIcon } from './icons/downloadLine';
+
 export { EditLineIcon } from './icons/editLine';
 export { EditLineBoldIcon } from './icons/editLineBold';
 export { EditLineLightIcon } from './icons/editLineLight';

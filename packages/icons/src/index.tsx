@@ -40,6 +40,8 @@ export { PlayCircleFillIcon } from './icons/playCircleFill';
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileFillIcon } from './icons/profileFill';
 
+export { SearchLineIcon } from './icons/searchLine';
+
 export { SettingLineIcon } from './icons/settingLine';
 export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';

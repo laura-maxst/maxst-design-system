@@ -13,6 +13,11 @@ export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';
 export { HomeFillIcon } from './icons/homeFill';
 
+export { MessageLineIcon } from './icons/messageLine';
+export { MessageLineBoldIcon } from './icons/messageLineBold';
+export { MessageLineLightIcon } from './icons/messageLineLight';
+export { MessageFillIcon } from './icons/messageFill';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

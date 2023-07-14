@@ -12,19 +12,19 @@ const LoginLineIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M13.5239 6.79999H24.9998V9.19999H14.4757L10.1998 13.2244V38.8H24.9998V41.2H7.7998V12.1874L13.5239 6.79999Z"
+        d="M34.4761 41.2H23.0002V38.8H33.5243L37.8002 34.7756V9.19998H23.0002V6.79998H40.2002V35.8126L34.4761 41.2Z"
         fill="currentColor"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M31.8484 15.1515L30.1514 16.8485L37.3028 24L30.1514 31.1515L31.8484 32.8485L40.697 24L31.8484 15.1515Z"
+        d="M21.8484 15.1515L20.1514 16.8485L27.3028 24L20.1514 31.1515L21.8484 32.8485L30.697 24L21.8484 15.1515Z"
         fill="currentColor"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M17 23L39 23L39 25.4L17 25.4L17 23Z"
+        d="M7.00018 23L29.0002 23L29.0002 25.4L7.00018 25.4L7.00018 23Z"
         fill="currentColor"
       />
     </svg>

@@ -1,6 +1,9 @@
 export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 
+export { ArrowDownwardLineIcon } from './icons/arrowDownwardLine';
+export { ArrowDownwardLineBoldIcon } from './icons/arrowDownwardLineBold';
+
 export { ArrowLeftLineIcon } from './icons/arrowLeftLine';
 export { ArrowLeftLineBoldIcon } from './icons/arrowLeftLineBold';
 
@@ -9,6 +12,9 @@ export { ArrowRightLineBoldIcon } from './icons/arrowRightLineBold';
 
 export { ArrowUpLineIcon } from './icons/arrowUpLine';
 export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
+
+export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
+export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 
 export { DeleteLineIcon } from './icons/deleteLine';
 export { DeleteLineBoldIcon } from './icons/deleteLineBold';

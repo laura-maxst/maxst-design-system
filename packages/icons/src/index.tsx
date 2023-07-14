@@ -23,6 +23,10 @@ export { HomeFillIcon } from './icons/homeFill';
 export { LanguageLineIcon } from './icons/languageLine';
 export { LanguageFillIcon } from './icons/languageFill';
 
+export { LoginLineIcon } from './icons/loginLine';
+
+export { LogoutLineIcon } from './icons/logoutLine';
+
 export { MessageLineIcon } from './icons/messageLine';
 export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';

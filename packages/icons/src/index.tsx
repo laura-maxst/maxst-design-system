@@ -12,6 +12,9 @@ export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';
 
+export { HeartLineIcon } from './icons/heartLine';
+export { HeartFillIcon } from './icons/heartFill';
+
 export { HomeLineIcon } from './icons/homeLine';
 export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';

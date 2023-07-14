@@ -34,6 +34,10 @@ export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';
 export { MessageFillIcon } from './icons/messageFill';
 
+export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
+
+export { MoreVerticalLineIcon } from './icons/fullScreenLine';
+
 export { NotificationLineIcon } from './icons/notificationLine';
 export { NotificationFillIcon } from './icons/notificationFill';
 

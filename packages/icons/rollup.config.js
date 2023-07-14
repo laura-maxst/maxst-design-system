@@ -8,6 +8,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import sourcemaps from "rollup-plugin-sourcemaps";
 import babel from "@rollup/plugin-babel";
 import pkg from "./package.json";
+import svg from "rollup-plugin-svg";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 const external = ["react", "react-dom", "styled-components"];
@@ -23,6 +24,8 @@ const config = {
     url(),
     peerDepsExternal(),
     sourcemaps(),
+    del({ targets: ["dist/*"] }),
+    svg(),
   ],
   output: [
     {

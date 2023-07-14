@@ -6,3 +6,7 @@ export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';
 export { UserFillIcon } from './icons/userFill';
+export { EditLineIcon } from './icons/editLine';
+export { EditLineBoldIcon } from './icons/editLineBold';
+export { EditLineLightIcon } from './icons/editLineLight';
+export { EditFillIcon } from './icons/editFill';

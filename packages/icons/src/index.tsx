@@ -1,6 +1,9 @@
 export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 
+export { ArrowUpLineIcon } from './icons/arrowUpLine';
+export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
+
 export { DeleteLineIcon } from './icons/deleteLine';
 export { DeleteLineBoldIcon } from './icons/deleteLineBold';
 export { DeleteLineLightIcon } from './icons/deleteLineLight';

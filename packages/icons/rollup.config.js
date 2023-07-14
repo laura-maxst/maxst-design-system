@@ -9,11 +9,12 @@ import sourcemaps from "rollup-plugin-sourcemaps";
 import babel from "@rollup/plugin-babel";
 import pkg from "./package.json";
 import svg from "rollup-plugin-svg";
+import del from "rollup-plugin-delete";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 const external = ["react", "react-dom", "styled-components"];
 const config = {
-  input: pkg.source,
+  input: "src/index.tsx",
   plugins: [
     resolve({ extensions }),
     babel({ exclude: "node_modules/**" }),
@@ -21,7 +22,14 @@ const config = {
     typescript({ tsconfig: "./tsconfig.json", clean: true }),
     svgr(),
     image(),
-    url(),
+    url({
+      include: ["**/*.svg", "src/icons/**/*.svg"],
+      limit: Infinity,
+      emitFiles: true,
+      fileName: "[name][extname]",
+      destDir: "dist/assets",
+      publicPath: "/assets",
+    }),
     peerDepsExternal(),
     sourcemaps(),
     del({ targets: ["dist/*"] }),
@@ -30,15 +38,9 @@ const config = {
   output: [
     {
       sourcemap: true,
-      file: pkg.main,
+      dir: "dist",
       format: "cjs",
     },
-    {
-      sourcemap: true,
-      file: pkg.module,
-      format: "esm",
-    },
-    external,
   ],
 };
 export default config;

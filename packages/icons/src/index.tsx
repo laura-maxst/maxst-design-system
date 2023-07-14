@@ -28,6 +28,9 @@ export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
 export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
 export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 
+export { CheckLineIcon } from './icons/checkLine';
+export { CheckLineBoldIcon } from './icons/checkLineBold';
+
 export { CloseLineIcon } from './icons/closeLine';
 export { CloseLineBoldIcon } from './icons/closeLineBold';
 

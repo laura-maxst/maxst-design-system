@@ -43,6 +43,11 @@ export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 export { CheckLineIcon } from './icons/checkLine';
 export { CheckLineBoldIcon } from './icons/checkLineBold';
 
+export { CloseCircleFillIcon } from './icons/closeCircleFill';
+export { CloseCircleFillBoldIcon } from './icons/closeCircleFillBold';
+export { CloseCircleLineIcon } from './icons/closeCircleLine';
+export { CloseCircleLineBoldIcon } from './icons/closeCircleLineBold';
+
 export { CloseLineIcon } from './icons/closeLine';
 export { CloseLineBoldIcon } from './icons/closeLineBold';
 

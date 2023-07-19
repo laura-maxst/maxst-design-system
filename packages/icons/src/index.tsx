@@ -103,6 +103,11 @@ export { MessageFillIcon } from './icons/messageFill';
 export { MinusLineIcon } from './icons/minusLine';
 export { MinusLineBoldIcon } from './icons/minusLineBold';
 
+export { MobileLineIcon } from './icons/mobileLine';
+export { MobileLineBoldIcon } from './icons/mobileLineBold';
+export { MobileLineLightIcon } from './icons/mobileLineLight';
+export { MobileFillIcon } from './icons/mobileFill';
+
 export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
 
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';

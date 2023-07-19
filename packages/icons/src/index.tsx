@@ -72,6 +72,11 @@ export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';
 
+export { FolderLineIcon } from './icons/folderLine';
+export { FolderLineBoldIcon } from './icons/folderLineBold';
+export { FolderLineLightIcon } from './icons/folderLineLight';
+export { FolderFillIcon } from './icons/folderFill';
+
 export { FullScreenExitLineIcon } from './icons/fullScreenExitLine';
 
 export { FullScreenLineIcon } from './icons/fullScreenLine';

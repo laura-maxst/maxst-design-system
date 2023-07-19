@@ -173,6 +173,8 @@ export { PlusLineBoldIcon } from './icons/plusLineBold';
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileFillIcon } from './icons/profileFill';
 
+export { ProgressLineIcon } from './icons/progressLine';
+
 export { RefreshLineIcon } from './icons/refreshLine';
 
 export { SearchLineIcon } from './icons/searchLine';

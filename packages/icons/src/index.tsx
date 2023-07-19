@@ -104,6 +104,11 @@ export { LockLineBoldIcon } from './icons/lockLineBold';
 export { LockLineLightIcon } from './icons/lockLineLight';
 export { LockFillIcon } from './icons/lockFill';
 
+export { LockOpenLineIcon } from './icons/lockOpenLine';
+export { LockOpenLineBoldIcon } from './icons/lockOpenLineBold';
+export { LockOpenLineLightIcon } from './icons/lockOpenLineLight';
+export { LockOpenFillIcon } from './icons/lockOpenFill';
+
 export { LoginLineIcon } from './icons/loginLine';
 
 export { LogoutLineIcon } from './icons/logoutLine';

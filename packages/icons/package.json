@@ -27,7 +27,11 @@
   "keywords": [
     "maxst",
     "maxst-design-system",
-    "maxst-design-system/icons"
+    "maxst-design-system/icons",
+    "react",
+    "typescript",
+    "icons",
+    "svg"
   ],
   "files": [
     "dist",

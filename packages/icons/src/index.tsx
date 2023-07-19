@@ -113,6 +113,11 @@ export { LoginLineIcon } from './icons/loginLine';
 
 export { LogoutLineIcon } from './icons/logoutLine';
 
+export { MapLineIcon } from './icons/mapLine';
+export { MapLineBoldIcon } from './icons/mapLineBold';
+export { MapLineLightIcon } from './icons/mapLineLight';
+export { MapFillIcon } from './icons/mapFill';
+
 export { MenuLineIcon } from './icons/menuLine';
 
 export { MessageLineIcon } from './icons/messageLine';

@@ -89,6 +89,11 @@ export { LanguageFillIcon } from './icons/languageFill';
 
 export { ListLineIcon } from './icons/listLine';
 
+export { LocationLineIcon } from './icons/locationLine';
+export { LocationLineBoldIcon } from './icons/locationLineBold';
+export { LocationLineLightIcon } from './icons/locationLineLight';
+export { LocationFillIcon } from './icons/locationFill';
+
 export { LoginLineIcon } from './icons/loginLine';
 
 export { LogoutLineIcon } from './icons/logoutLine';

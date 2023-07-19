@@ -40,6 +40,11 @@ export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
 export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
 export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 
+export { CheckCircleFillIcon } from './icons/checkCircleFill';
+export { CheckCircleFillBoldIcon } from './icons/checkCircleFillBold';
+export { CheckCircleLineIcon } from './icons/checkCircleLine';
+export { CheckCircleLineBoldIcon } from './icons/checkCircleLineBold';
+
 export { CheckLineIcon } from './icons/checkLine';
 export { CheckLineBoldIcon } from './icons/checkLineBold';
 

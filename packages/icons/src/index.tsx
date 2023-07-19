@@ -166,6 +166,11 @@ export { SettingFillIcon } from './icons/settingFill';
 export { StarLineIcon } from './icons/starLine';
 export { StarFillIcon } from './icons/starFill';
 
+export { ThreeDLineIcon } from './icons/threeDLine';
+export { ThreeDLineBoldIcon } from './icons/threeDLineBold';
+export { ThreeDLineLightIcon } from './icons/threeDLineLight';
+export { ThreeDFillIcon } from './icons/threeDFill';
+
 export { ThreeDMapLineIcon } from './icons/threeDMapLine';
 export { ThreeDMapLineBoldIcon } from './icons/threeDMapLineBold';
 export { ThreeDMapLineLightIcon } from './icons/threeDMapLineLight';

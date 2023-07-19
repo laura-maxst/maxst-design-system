@@ -48,6 +48,9 @@ export { CheckCircleLineBoldIcon } from './icons/checkCircleLineBold';
 export { CheckLineIcon } from './icons/checkLine';
 export { CheckLineBoldIcon } from './icons/checkLineBold';
 
+export { ClockCircleLineIcon } from './icons/clockCircleLine';
+export { ClockCircleFillIcon } from './icons/clockCircleFill';
+
 export { CloseCircleFillIcon } from './icons/closeCircleFill';
 export { CloseCircleFillBoldIcon } from './icons/closeCircleFillBold';
 export { CloseCircleLineIcon } from './icons/closeCircleLine';

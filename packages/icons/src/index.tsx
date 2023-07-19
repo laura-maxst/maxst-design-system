@@ -13,6 +13,9 @@ export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 export { ArrowDownwardLineIcon } from './icons/arrowDownwardLine';
 export { ArrowDownwardLineBoldIcon } from './icons/arrowDownwardLineBold';
 
+export { ArrowForwardCircleLineIcon } from './icons/arrowForwardCircleLine';
+export { ArrowForwardCircleFillIcon } from './icons/arrowForwardCircleFill';
+
 export { ArrowForwardLineIcon } from './icons/arrowForwardLine';
 export { ArrowForwardLineBoldIcon } from './icons/arrowForwardLineBold';
 

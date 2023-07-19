@@ -186,6 +186,9 @@ export { ViewFillBoldIcon } from './icons/viewFillBold';
 export { ViewLineIcon } from './icons/viewLine';
 export { ViewLineBoldIcon } from './icons/viewLineBold';
 
+export { ViewInArFillIcon } from './icons/viewInArFill';
+export { ViewInArLineIcon } from './icons/viewInArLine';
+
 export { ViewOffFillIcon } from './icons/viewOffFill';
 export { ViewOffFillBoldIcon } from './icons/viewOffFillBold';
 export { ViewOffLineIcon } from './icons/viewOffLine';

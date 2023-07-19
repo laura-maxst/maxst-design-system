@@ -99,6 +99,11 @@ export { LocationLineBoldIcon } from './icons/locationLineBold';
 export { LocationLineLightIcon } from './icons/locationLineLight';
 export { LocationFillIcon } from './icons/locationFill';
 
+export { LockLineIcon } from './icons/lockLine';
+export { LockLineBoldIcon } from './icons/lockLineBold';
+export { LockLineLightIcon } from './icons/lockLineLight';
+export { LockFillIcon } from './icons/lockFill';
+
 export { LoginLineIcon } from './icons/loginLine';
 
 export { LogoutLineIcon } from './icons/logoutLine';

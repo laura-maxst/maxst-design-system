@@ -94,6 +94,9 @@ export { FullScreenLineIcon } from './icons/fullScreenLine';
 export { HeartLineIcon } from './icons/heartLine';
 export { HeartFillIcon } from './icons/heartFill';
 
+export { HelpCircleLineIcon } from './icons/helpCircleLine';
+export { HelpCircleFillIcon } from './icons/helpCircleFill';
+
 export { HomeLineIcon } from './icons/homeLine';
 export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';

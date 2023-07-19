@@ -68,6 +68,11 @@ export { EditLineBoldIcon } from './icons/editLineBold';
 export { EditLineLightIcon } from './icons/editLineLight';
 export { EditFillIcon } from './icons/editFill';
 
+export { ErrorCircleFillIcon } from './icons/errorCircleFill';
+export { ErrorCircleFillBoldIcon } from './icons/errorCircleFillBold';
+export { ErrorCircleLineIcon } from './icons/errorCircleLine';
+export { ErrorCircleLineBoldIcon } from './icons/errorCircleLineBold';
+
 export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';

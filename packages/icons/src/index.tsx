@@ -99,6 +99,9 @@ export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';
 export { HomeFillIcon } from './icons/homeFill';
 
+export { InfoCircleLineIcon } from './icons/infoCircleLine';
+export { InfoCircleFillIcon } from './icons/infoCircleFill';
+
 export { LanguageLineIcon } from './icons/languageLine';
 export { LanguageFillIcon } from './icons/languageFill';
 

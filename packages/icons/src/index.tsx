@@ -56,6 +56,11 @@ export { DeleteLineBoldIcon } from './icons/deleteLineBold';
 export { DeleteLineLightIcon } from './icons/deleteLineLight';
 export { DeleteFillIcon } from './icons/deleteFill';
 
+export { DesktopLineIcon } from './icons/desktopLine';
+export { DesktopLineBoldIcon } from './icons/desktopLineBold';
+export { DesktopLineLightIcon } from './icons/desktopLineLight';
+export { DesktopFillIcon } from './icons/desktopFill';
+
 export { DownloadLineIcon } from './icons/downloadLine';
 
 export { EditLineIcon } from './icons/editLine';

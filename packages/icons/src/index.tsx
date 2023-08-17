@@ -214,3 +214,10 @@ export { ViewOffFillIcon } from './icons/viewOffFill';
 export { ViewOffFillBoldIcon } from './icons/viewOffFillBold';
 export { ViewOffLineIcon } from './icons/viewOffLine';
 export { ViewOffLineBoldIcon } from './icons/viewOffLineBold';
+
+export { WarningFillIcon } from './icons/warningFill';
+export { WarningFillBoldIcon } from './icons/warningFillBold';
+export { WarningFillLightIcon } from './icons/warningFillLight';
+export { WarningLineIcon } from './icons/warningLine';
+export { WarningLineBoldIcon } from './icons/warningLineBold';
+export { WarningLineLightIcon } from './icons/warningLineLight';

@@ -182,6 +182,10 @@ export { ProgressLineIcon } from './icons/progressLine';
 
 export { RefreshLineIcon } from './icons/refreshLine';
 
+export { RouteLineIcon } from './icons/routeLine';
+export { RouteLineBoldIcon } from './icons/routeLineBold';
+export { RouteLineLightIcon } from './icons/routeLineLight';
+
 export { SearchLineIcon } from './icons/searchLine';
 
 export { SettingLineIcon } from './icons/settingLine';

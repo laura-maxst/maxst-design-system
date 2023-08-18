@@ -161,6 +161,11 @@ export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
 
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
 
+export { MyLocationLineIcon } from './icons/myLocationLine';
+export { MyLocationLineBoldIcon } from './icons/myLocationLineBold';
+export { MyLocationLineLightIcon } from './icons/myLocationLineLight';
+export { MyLocationFillIcon } from './icons/myLocationFill';
+
 export { NotificationLineIcon } from './icons/notificationLine';
 export { NotificationFillIcon } from './icons/notificationFill';
 

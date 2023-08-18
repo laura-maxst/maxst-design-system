@@ -118,6 +118,11 @@ export { LocationLineBoldIcon } from './icons/locationLineBold';
 export { LocationLineLightIcon } from './icons/locationLineLight';
 export { LocationFillIcon } from './icons/locationFill';
 
+export { LayerLineIcon } from './icons/layerLine';
+export { LayerLineBoldIcon } from './icons/layerLineBold';
+export { LayerLineLightIcon } from './icons/layerLineLight';
+export { LayerFillIcon } from './icons/layerFill';
+
 export { LockLineIcon } from './icons/lockLine';
 export { LockLineBoldIcon } from './icons/lockLineBold';
 export { LockLineLightIcon } from './icons/lockLineLight';

@@ -69,6 +69,11 @@ export { DesktopLineBoldIcon } from './icons/desktopLineBold';
 export { DesktopLineLightIcon } from './icons/desktopLineLight';
 export { DesktopFillIcon } from './icons/desktopFill';
 
+export { DocumentLineIcon } from './icons/documentLine';
+export { DocumentLineBoldIcon } from './icons/documentLineBold';
+export { DocumentLineLightIcon } from './icons/documentLineLight';
+export { DocumentFillIcon } from './icons/documentFill';
+
 export { DownloadLineIcon } from './icons/downloadLine';
 
 export { EditLineIcon } from './icons/editLine';

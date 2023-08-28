@@ -137,6 +137,11 @@ export { LoginLineIcon } from './icons/loginLine';
 
 export { LogoutLineIcon } from './icons/logoutLine';
 
+export { MailLineIcon } from './icons/mailLine';
+export { MailLineBoldIcon } from './icons/mailLineBold';
+export { MailLineLightIcon } from './icons/mailLineLight';
+export { MailFillIcon } from './icons/mailFill';
+
 export { MapLineIcon } from './icons/mapLine';
 export { MapLineBoldIcon } from './icons/mapLineBold';
 export { MapLineLightIcon } from './icons/mapLineLight';

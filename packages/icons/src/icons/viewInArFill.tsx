@@ -3,11 +3,11 @@ import React from 'react';
 const ViewInArFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         fillRule="evenodd"
@@ -18,13 +18,13 @@ const ViewInArFillIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M33.0466 42.2161V39.8162L39.8146 39.8162V33.0486L42.2146 33.0486L42.2146 42.2161L33.0466 42.2161Z"
+        d="M33.0469 42.2161V39.8162L39.8149 39.8162V33.0486L42.215 33.0486L42.215 42.2161L33.0469 42.2161Z"
         fill="currentColor"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M33.0466 5.78417L33.0466 8.18409L39.8146 8.18409L39.8146 14.9517L42.2146 14.9517L42.2146 5.78417L33.0466 5.78417Z"
+        d="M33.0469 5.78417L33.0469 8.18409L39.8149 8.18409L39.8149 14.9517L42.215 14.9517L42.215 5.78417L33.0469 5.78417Z"
         fill="currentColor"
       />
       <path
@@ -36,7 +36,7 @@ const ViewInArFillIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M33.9166 16.8798L23.9987 11.6431L14.0817 16.8793L23.9991 21.1915L33.9166 16.8798ZM35.1987 18.9394L25.199 23.2868V35.7233L35.1987 30.4435V18.9394ZM22.799 35.7237V23.2868L12.7987 18.9385V30.4435L22.799 35.7237Z"
+        d="M34.3636 17.0267L24.0001 11.6L13.6366 17.0267L24.0001 21.5489L34.3636 17.0267ZM35.5001 18.7129L25.0001 23.2947V36.1673L35.5001 30.6691V18.7129ZM23.0001 36.1673V23.2947L12.5001 18.7129V30.6691L23.0001 36.1673ZM12.5001 17.6218L12.5001 17.6218L12.5001 17.6218V17.6218Z"
         fill="currentColor"
       />
     </svg>

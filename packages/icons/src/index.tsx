@@ -221,8 +221,10 @@ export { ViewFillBoldIcon } from './icons/viewFillBold';
 export { ViewLineIcon } from './icons/viewLine';
 export { ViewLineBoldIcon } from './icons/viewLineBold';
 
-export { ViewInArFillIcon } from './icons/viewInArFill';
 export { ViewInArLineIcon } from './icons/viewInArLine';
+export { ViewInArLineBoldIcon } from './icons/viewInArLineBold';
+export { ViewInArLineLightIcon } from './icons/viewInArLineLight';
+export { ViewInArFillIcon } from './icons/viewInArFill';
 
 export { ViewOffFillIcon } from './icons/viewOffFill';
 export { ViewOffFillBoldIcon } from './icons/viewOffFillBold';

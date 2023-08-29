@@ -203,6 +203,11 @@ export { RouteLineLightIcon } from './icons/routeLineLight';
 
 export { SearchLineIcon } from './icons/searchLine';
 
+export { SelectAreaLineIcon } from './icons/selectAreaLine';
+export { SelectAreaLineBoldIcon } from './icons/selectAreaLineBold';
+export { SelectAreaLineLightIcon } from './icons/selectAreaLineLight';
+export { SelectAreaFillIcon } from './icons/selectAreaFill';
+
 export { SettingLineIcon } from './icons/settingLine';
 export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';

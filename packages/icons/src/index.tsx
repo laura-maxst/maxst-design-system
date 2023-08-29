@@ -211,6 +211,11 @@ export { SettingFillIcon } from './icons/settingFill';
 export { StarLineIcon } from './icons/starLine';
 export { StarFillIcon } from './icons/starFill';
 
+export { TerminalLineIcon } from './icons/terminalLine';
+export { TerminalLineBoldIcon } from './icons/terminalLineBold';
+export { TerminalLineLightIcon } from './icons/terminalLineLight';
+export { TerminalFillIcon } from './icons/terminalFill';
+
 export { ThreeDLineIcon } from './icons/threeDLine';
 export { ThreeDLineBoldIcon } from './icons/threeDLineBold';
 export { ThreeDLineLightIcon } from './icons/threeDLineLight';

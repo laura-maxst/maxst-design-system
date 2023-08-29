@@ -147,6 +147,10 @@ export { MailLineBoldIcon } from './icons/mailLineBold';
 export { MailLineLightIcon } from './icons/mailLineLight';
 export { MailFillIcon } from './icons/mailFill';
 
+export { MapFlowLineIcon } from './icons/mapFlowLine';
+export { MapFlowLineBoldIcon } from './icons/mapFlowLineBold';
+export { MapFlowLineLightIcon } from './icons/mapFlowLineLight';
+
 export { MapLineIcon } from './icons/mapLine';
 export { MapLineBoldIcon } from './icons/mapLineBold';
 export { MapLineLightIcon } from './icons/mapLineLight';

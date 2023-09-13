@@ -1,0 +1,130 @@
+.snackbar-box{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:8px;
+  min-width:300px;
+  width: auto;
+  max-width: 500px;
+  padding:12px 16px;
+  color: semantic-color('text', 'default-reverse');
+  background-color: semantic-color('background', 'overlay-reverse');
+  z-index: 99999;
+  @include shadow-level2;
+  transition: all 0.7s ease-in-out;
+
+  &.open{
+    opacity: 1;
+    visibility : unset;
+    transition: all 0.7s ease-in-out;
+  }
+
+  &.close{
+    opacity: 0;
+    visibility : hidden;
+  }
+
+  p{
+    color: semantic-color('text', 'default-reverse');
+  }
+
+  button{
+    height: fit-content;
+    color: semantic-color('text', 'accent') !important;
+  }
+
+  svg{
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: semantic-color('text', 'default-reverse');
+  }
+
+  & > div{
+    display: flex;
+    gap:8px;
+  }
+}
+// theme에 따른 undo ghost button hover 배경 변경 
+.light{
+  .snackbar-box{
+    button{
+      &:hover, &:focus, &:active{
+        background-color: var($--palette-gray-900);
+      }
+    }
+  }
+}
+.dark{
+  .snackbar-box{
+    button{
+      &:hover, &:focus, &:active{
+        background-color: var($--palette-gray-800);
+      }
+    }
+  }
+}
+
+@include media-mobile-m {
+  .snackbar-box{
+    min-width: unset;
+    width: calc(100% - 32px);
+  }
+}
+
+$snackbarAlign: 'top-left', 'top', 'top-right', 'bottom-right', 'bottom', 'bottom-left';
+
+@mixin snackbarCase($align){
+  .snackbar-#{$align}{
+    @if($align == 'top-left'){
+      top: 20px;
+      left: 20px;
+    }@else if($align == 'top'){
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }@else if($align == 'top-right'){
+      top: 20px;
+      right: 20px;
+    }@else if($align == 'bottom-left'){
+      bottom: 20px;
+      left: 20px;
+    }@else if($align == 'bottom'){
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }@else if($align == 'bottom-right'){
+      bottom: 20px;
+      right:20px;
+    }
+
+    @include media-mobile-m {
+      @if($align == 'top-left'){
+        top: 16px;
+        left: 16px;
+      }@else if($align == 'top'){
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+      }@else if($align == 'top-right'){
+        top: 16px;
+        right: 16px;
+      }@else if($align == 'bottom-left'){
+        bottom: 16px;
+        left: 16px;
+      }@else if($align == 'bottom'){
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+      }@else if($align == 'bottom-right'){
+        bottom: 16px;
+        right:16px;
+      }  
+    }
+  }
+}
+
+@each $align in $snackbarAlign {
+  @include snackbarCase($align);
+}

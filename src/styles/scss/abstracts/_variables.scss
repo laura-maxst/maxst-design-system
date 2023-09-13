@@ -1,0 +1,139 @@
+$--theme-primary: --theme-primary;
+$--theme-secondary: --theme-secondary;
+$--theme-surface: --theme-surface;
+$--theme-background: --theme-background;
+$--theme-on-primary: --theme-on-primary;
+$--theme-on-secondary: --theme-on-secondary;
+$--theme-on-surface: --theme-on-surface;
+
+$--palette-white : --palette-white;
+$--palette-black :--palette-black;
+
+$--palette-mint-900: --palette-mint-900;
+$--palette-mint-800: --palette-mint-800;
+$--palette-mint-700: --palette-mint-700;
+$--palette-mint-600: --palette-mint-600;
+$--palette-mint-500: --palette-mint-500;
+$--palette-mint-400: --palette-mint-400;
+$--palette-mint-300: --palette-mint-300;
+$--palette-mint-200: --palette-mint-200;
+$--palette-mint-100: --palette-mint-100;
+$--palette-mint-50: --palette-mint-50;
+
+$--palette-gray-900: --palette-gray-900;
+$--palette-gray-800: --palette-gray-800;
+$--palette-gray-700: --palette-gray-700;
+$--palette-gray-600: --palette-gray-600;
+$--palette-gray-500: --palette-gray-500;
+$--palette-gray-400: --palette-gray-400;
+$--palette-gray-300: --palette-gray-300;
+$--palette-gray-200: --palette-gray-200;
+$--palette-gray-100: --palette-gray-100;
+$--palette-gray-50: --palette-gray-50;
+
+$--palette-red: --palette-red;
+$--palette-red-accent: --palette-red-accent;
+$--palette-red-light: --palette-red-light;
+$--palette-orange: --palette-orange;
+$--palette-orange-light: --palette-orange-light;
+$--palette-green: --palette-green;
+$--palette-green-light: --palette-green-light;
+$--palette-blue: --palette-blue;
+$--palette-blue-light: --palette-blue-light;
+$--palette-purple: --palette-purple;
+$--palette-magenta: --palette-magenta;
+
+$--text-accent: --text-accent;
+
+$--background-base: --background-base;
+$--background-2nd-base : --background-2nd-base;
+$--background-ui-base : --background-ui-base;
+$--background-ui-middle: --background-ui-middle;
+$--background-ui-middle-accent: --background-ui-middle-accent;
+$--background-overlay : --background-overlay;
+$--background-overlay-reverse : --background-overlay-reverse;
+$--background-overlay-accent : --background-overlay-accent;
+$--background-primary :--background-primary;
+$--background-primary-accent :--background-primary-accent;
+$--background-secondary :--background-secondary;
+$--background-secondary-accent: --background-secondary-accent;
+$--background-tertiary: --background-tertiary;
+$--background-disabled :--background-disabled;
+$--background-error :--background-error;
+$--background-error-accent : --background-error-accent;
+$--background-error-light : --background-error-light;
+$--background-warning : --background-warning;
+$--background-warning-light : --background-warning-light;
+$--background-information : --background-information;
+$--background-information-light : --background-information-light;
+$--background-success : --background-success;
+$--background-success-light : --background-success-light;
+
+$--border-default : --border-default;
+$--border-accent : --border-accent;
+$--border-disabled : --border-disabled;
+$--border-error : --border-error;
+$--border-error-accent : --border-error-accent;
+$--border-success : --border-success;
+
+$--divider-default : --divider-default;
+$--divider-accent : --divider-accent;
+
+// pc-> tablet-> mobile 순으로 작업하는 기준 
+$--breakpoint-desktop-l : 1920; // 1920+
+$--breakpoint-desktop-m : 1280; // 1280~1920 
+$--breakpoint-tablet-m : 1279; // 1024~1279
+$--breakpoint-tablet-s : 1023; // 768~1023
+$--breakpoint-mobile-m : 767; // 321~767
+$--breakpoint-mobile-s : 320; // 0~320
+
+// semantic text 
+$--color-text-default : --color-text-default;
+$--color-text-default-reverse : --color-text-default-reverse;
+$--color-text-sub: --color-text-sub;
+$--color-text-subtlest: --color-text-subtlest;
+$--color-text-disabled : --color-text-disabled;
+$--color-text-error : --color-text-error;
+$--color-text-error-accent : --color-text-error-accent;
+$--color-text-information : --color-text-information;
+$--color-text-accent : --color-text-accent;
+$--color-text-success : --color-text-success;
+$--color-text-warning : --color-text-warning;
+// semantic background 
+$--color-background-base :--color-background-base;
+$--color-background-2nd-base: --color-background-2nd-base;
+$--color-background-ui-base: --color-background-ui-base;
+$--color-background-ui-middle : --color-background-ui-middle;
+$--color-background-ui-middle-accent : --color-background-ui-middle-accent;
+$--color-background-overlay : --color-background-overlay;
+$--color-background-overlay-reverse : --color-background-overlay-reverse;
+$--color-background-overlay-accent : --color-background-overlay-accent;
+$--color-background-primary : --color-background-primary;
+$--color-background-primary-accent : --color-background-primary-accent;
+$--color-background-secondary : --color-background-secondary;
+$--color-background-secondary-accent: --color-background-secondary-accent;
+$--color-background-tertiary: --color-background-tertiary;
+$--color-background-disabled : --color-background-disabled ;
+$--color-background-error : --color-background-error;
+$--color-background-error-accent: --color-background-error-accent;
+$--color-background-error-light: --color-background-error-light;
+$--color-background-warning : --color-background-warning;
+$--color-background-warning-light : --color-background-warning-light;
+$--color-background-information : --color-background-information;
+$--color-background-information-light : --color-background-information-light;
+$--color-background-success : --color-background-success;
+$--color-background-success-light : --color-background-success-light;
+
+// semantic border 
+$--color-border-default : --color-border-default;
+$--color-border-accent: --color-border-accent;
+$--color-border-disabled:--color-border-disabled;
+$--color-border-error : --color-border-error;
+$--color-border-error-accent : --color-border-error-accent;
+$--color-border-success : --color-border-success;
+// semantic divider 
+$--color-divider-default : --color-divider-default;
+$--color-divider-accent: --color-divider-accent;
+// semantic dimmed 
+$--color-dimmed-85 : --color-dimmed-85;
+$--color-dimmed-60 : --color-dimmed-60;

@@ -1,0 +1,62 @@
+.mds-divider{
+  width: 100%;
+  height: 1px;
+  border:0;
+
+  &, &.divider-default{
+    background-color: semantic-color('divider', 'default');
+  }
+  &.divider-accent{
+    background-color: semantic-color('divider', 'accent');
+  }
+
+  &.divider-vertical {
+    height: auto;
+    width: 1px;
+    align-self: stretch;
+  }
+
+  &.with-children{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width:100%;
+    background-color: transparent;
+
+    .divider__children-box{
+      padding:0 8px;
+    }
+
+    &::before, &::after {
+      content:'';
+      display: block;
+      width: 100%;
+      height: 1px;
+    }
+    
+    &, &.divider-default{
+      &::before, &::after {
+        background-color: semantic-color('divider', 'default');
+      }
+    }
+    &.divider-accent{
+      &::before, &::after {
+        background-color: semantic-color('divider', 'accent');
+      }
+    }
+    
+    &.divider-vertical {
+      flex-direction: column;
+      
+      &::before, &::after {
+        content:'';
+        display: block;
+        width: 1px;
+        height: 100%;
+      }
+    }
+  }
+  
+}
+
+

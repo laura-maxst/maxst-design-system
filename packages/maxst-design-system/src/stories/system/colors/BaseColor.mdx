@@ -1,0 +1,76 @@
+{/* Colors.mdx */}
+
+import { Meta, Story } from '@storybook/blocks';
+
+import * as BaseColorStories from './BaseColor.stories';
+
+<Meta of={BaseColorStories} />
+
+# Base Color (=Color Palette)
+
+서비스에 사용하는 공통 컬러를 정의합니다.
+
+<br />
+
+## Type
+
+Base Color는 브랜드 경험과 특정 기준으로 정렬된 색상 범위입니다. 기능이 부여하지 않은 기본적인 color를 팔레트로 제공합니다.
+
+<ul className="docs__gray-box-list">
+  <li className="font-body-l">Primary Color</li>
+  <li className="font-body-l">Gray Color</li>
+  <li className="font-body-l">Sub Color</li>
+</ul>
+
+<br />
+
+## Primary color palette
+
+Primary color는 서비스(브랜드)의 정체성을 나타낼 수 있는 요소에 사용되는 메인 컬러입니다. 팔레트는 10단계 (50-900)를 지원하며, 기본 색상은 500입니다.
+
+Mint 컬러의 특성상 눈부심을 유발할 수 있으므로 최소화하여 사용하며, 밝은 컬러와 함께 사용 시 팔레트 내 명도가 낮은 컬러를 활용하여 사용합니다.
+
+<Story of={BaseColorStories.PrimaryPalette} />
+
+> 참고. 컬러 활용법은 2.Color > B.color > B-2.Semantic Color를 확인 합니다.
+
+<br />
+
+## Gray Color
+
+Gray color는 무채색 컬러로 적용되는 UI에 따라 구분하여 사용합니다. 팔레트는 10단계 (50-900)과 white/Black을 포함하여 총 12가지의 컬러를 지원합니다.
+
+목적에 따라 <b>Semantic color로 구분,정의하여 사용</b>합니다.
+
+<Story of={BaseColorStories.GrayPalette} />
+
+<ul className="color-chip-box-list">
+  <li className="white">
+    <p className="font-body-s">palette-white</p>
+    <p className="font-body-s">#FFFFFF</p>
+  </li>
+  <li className="black">
+    <p className="font-body-s">palette-black</p>
+    <p className="font-body-s">#000000</p>
+  </li>
+</ul>
+
+> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
+
+## Sub Color
+
+Sub Color는 다양한 카테고리 섹션 컬러로 State color 색상을 포함하여 카테고리에 따라 주요 컬러를 다양하게 제공합니다.
+
+상황에 따라 Variation하여 사용할 수 있으며, 목적에 따라 <b>Semantic color로 구분,정의하여 사용</b>합니다.
+
+<Story of={BaseColorStories.SubPalette} />
+
+> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

@@ -1,0 +1,259 @@
+.switch-toggle-wrap{
+  position: relative;
+
+  label {
+    display: block;
+  }
+
+  &.label-mode{
+    label .font-body{
+      position: absolute;
+    }
+  }
+
+  .helper-text.font-body{
+    display: block;
+    color: semantic-color('text', 'sub');
+  }
+}
+
+@mixin switchSize-l-width {
+  width: 44px;
+}
+@mixin switchSize-l-height {
+  height: 24px;
+}
+@mixin switchSize-l-button {
+  width: 20px;
+  height: 20px;
+}
+@mixin switchSize-s-width {
+  width: 30px;
+}
+@mixin switchSize-s-height {
+  height: 16px;
+}
+@mixin switchSize-s-button {
+  width: 12px;
+  height: 12px;
+}
+
+$switchSize: 'l' , 's';
+$switchState: 'default', 'pressed', 'disabled';
+
+@mixin switchCase($size, $state){
+  .switch-toggle-wrap{
+    &.disabled{
+      label .font-body{
+        color: semantic-color('text', 'disabled') !important;
+      }
+    }
+
+    &.switch-toggle-#{$size}{
+      @if($size == 'l'){
+        @include switchSize-l-width;
+        @include switchSize-l-height;
+    
+        label {
+          @include switchSize-l-height;
+        }
+    
+        &.label-mode{
+          width: auto;
+    
+          label .font-body{
+            top:0;
+            left:52px;
+            line-height: 24px;
+            word-break: break-all;
+          }
+        }
+      }@else if($size == 's'){
+        @include switchSize-s-width;
+        @include switchSize-s-height;
+        label {
+          @include switchSize-s-height;
+        }
+    
+        &.label-mode{
+          width: auto;
+
+          label .font-body{
+            top:0;
+            left:38px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    
+  }
+  .switch-toggle__#{$size}--#{$state}{
+    &::before{
+      position:absolute;
+      top:0;
+      left:0;
+      content:'';
+      display: block;
+      z-index: 1;
+      transition: all 0.2s ease-in-out;
+    }
+
+    & + .switch-button{
+      position:absolute;
+      left:2px;
+      display: block;
+      border-radius: 50%;
+      box-sizing: border-box;
+      z-index: 10;
+      transition: all 0.2s ease-in-out;
+      background-color: var($--palette-white);
+    }
+
+    &:checked{
+      & + .switch-button{
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    // size 별 
+    @if($size == 'l'){
+      &::before{
+        @include switchSize-l-width;
+        @include switchSize-l-height;
+        border-radius: 12px;
+      }
+
+      & + .switch-button{
+        top:calc(50% - 10px);
+        @include switchSize-l-button;
+  
+        svg{
+          @include switchSize-l-button;
+        }
+      }
+
+      &:checked{
+        & + .switch-button{
+          left: 22px;
+        }
+      }
+    }@else if($size == 's'){
+      &::before{
+        @include switchSize-s-width;
+        @include switchSize-s-height;
+        border-radius: 8px;
+      }
+
+      & + .switch-button{
+        top:calc(50% - 6px);
+        @include switchSize-s-button;
+        line-height: 12px;
+        svg{
+          @include switchSize-s-button;
+        }
+      }
+
+      &:checked{
+        & + .switch-button{
+          left: 16px;
+        }
+      }
+    }
+    
+    &:hover, &:focus{
+      &::before{
+        background-color: semantic-color('background', 'ui-middle-accent');
+      }
+      
+      & + .switch-button{
+        svg{
+          color: semantic-color('background', 'ui-middle-accent');
+        }
+      }
+
+      &:checked{
+        &::before{
+          background-color: semantic-color('background', 'primary-accent');
+        }
+        & + .switch-button{    
+          svg{
+            color: semantic-color('background', 'primary-accent');
+          }
+        }
+      }
+    }
+    // state 별 설정 
+    @if($state == 'disabled'){
+      &::before{
+        background-color: semantic-color('background', 'disabled') !important;
+      }
+
+      & + .switch-button{
+        background-color: semantic-color('text', 'disabled') !important;
+        svg{
+          color: semantic-color('background', 'disabled') !important;
+        }
+      }
+
+      &:checked{
+        &::before{
+          background-color: semantic-color('background', 'disabled') !important;
+        }
+        & + .switch-button{    
+          svg{
+            color: semantic-color('background', 'disabled') !important;
+          }
+        }
+      }
+    }@else if($state == 'pressed'){
+      &::before{
+        background-color: semantic-color('background', 'ui-middle-accent');
+      }
+      
+      & + .switch-button{
+        svg{
+          color: semantic-color('background', 'ui-middle-accent');
+        }
+      }
+
+      &:checked{
+        &::before{
+          background-color: semantic-color('background', 'primary-accent');
+        }
+        & + .switch-button{    
+          svg{
+            color: semantic-color('background', 'primary-accent');
+          }
+        }
+      }
+    }@else{
+      &::before{
+        background-color: semantic-color('background', 'ui-middle');
+      }
+
+      & + .switch-button{
+        background-color: var($--palette-white);
+        svg{
+          color: semantic-color('background', 'ui-middle');
+        }
+      }
+
+      &:checked{
+        &::before{
+          background-color: semantic-color('background', 'primary');
+        }
+        & + .switch-button{    
+          svg{
+            color: semantic-color('background', 'primary');
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $size in $switchSize {
+  @each $state in $switchState{
+    @include switchCase($size, $state);
+  }
+}

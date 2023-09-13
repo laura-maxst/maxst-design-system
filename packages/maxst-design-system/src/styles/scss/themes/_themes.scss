@@ -1,0 +1,219 @@
+// theme별 참조 컬러 토큰이 다른 경우 $semantic-color-map과 $theme-map-light, $theme-map-dark 모두 추가가 필요함. 
+// color-background 참고 
+$semantic-color-map: (
+  // semantic text 
+  $--color-text-default : var($--palette-gray-900),
+  $--color-text-default-reverse : var($--palette-gray-50),
+  $--color-text-sub: var($--palette-gray-700),
+  $--color-text-subtlest: var($--palette-gray-500),
+  $--color-text-disabled : var($--palette-gray-400),
+  $--color-text-error : var($--palette-red),
+  $--color-text-error-accent : var($--palette-red-accent),
+  $--color-text-information : var($--palette-blue),
+  $--color-text-accent : var($--text-accent),
+  $--color-text-success : var($--palette-green),
+  $--color-text-warning : var($--palette-orange),
+  // color background - theme별 참조 컬러 토큰이 다름 
+  $--color-background-base :var($--background-base),
+  $--color-background-2nd-base: var($--background-2nd-base),
+  $--color-background-ui-base: var($--background-ui-base),
+  $--color-background-ui-middle: var($--background-ui-middle),
+  $--color-background-ui-middle-accent: var($--background-ui-middle-accent),
+  $--color-background-overlay: var($--background-overlay),
+  $--color-background-overlay-reverse: var($--background-overlay-reverse),
+  $--color-background-overlay-accent: var($--background-overlay-accent),
+  $--color-background-primary : var($--background-primary),
+  $--color-background-primary-accent : var($--background-primary-accent),
+  $--color-background-secondary : var($--background-secondary),
+  $--color-background-secondary-accent: var($--background-secondary-accent),
+  $--color-background-tertiary: var($--background-tertiary),
+  $--color-background-disabled : var($--background-disabled),
+  $--color-background-error : var($--background-error),
+  $--color-background-error-accent: var($--background-error-accent),
+  $--color-background-error-light: var($--background-error-light),
+  $--color-background-warning : var($--background-warning),
+  $--color-background-warning-light: var($--background-warning-light),
+  $--color-background-information : var($--background-information),
+  $--color-background-information-light: var($--background-information-light),
+  $--color-background-success : var($--background-success),
+  $--color-background-success-light: var($--background-success-light),
+  // semantic border 
+  $--color-border-default : var($--palette-gray-400),
+  $--color-border-accent: var($--palette-gray-900),
+  $--color-border-disabled: var($--palette-gray-300),
+  $--color-border-error : var($--palette-red),
+  $--color-border-error-accent : var($--palette-red-accent),
+  $--color-border-success: var($--palette-green),
+  // semantic divider 
+  $--color-divider-default : var($--palette-gray-300),
+  $--color-divider-accent: var($--palette-gray-500),
+  // semantic dimmed 
+  $--color-dimmed-85 : rgba(0, 0, 0, 0.85),
+  $--color-dimmed-60 : rgba(0, 0, 0, 0.60),
+);
+
+$theme-map-light: (
+  $--theme-primary: #d75894,
+  $--theme-secondary: #9b3dca,
+  $--theme-surface: #fff,
+  $--theme-background: #fafafa,
+  $--theme-on-primary: #fff,
+  $--theme-on-secondary: #fff,
+  $--theme-on-surface: #000,
+  
+  $--palette-white: #FFFFFF,
+  $--palette-black :#000000,
+
+  // primary mint
+  $--palette-mint-900:#0F9BB6,
+  $--palette-mint-800:#0EADCA,
+  $--palette-mint-700:#0FBED7,
+  $--palette-mint-600:#0FCBDD,
+  $--palette-mint-500:#1DD9E7,
+  $--palette-mint-400:#43DFEB,
+  $--palette-mint-300:#73E7F0,
+  $--palette-mint-200:#99EEF4,
+  $--palette-mint-100:#BBF4F8,
+  $--palette-mint-50:#DDF9FB,
+
+  // gray 
+  $--palette-gray-900:#222222,
+  $--palette-gray-800:#424242,
+  $--palette-gray-700:#606060,
+  $--palette-gray-600:#818181,
+  $--palette-gray-500:#9E9E9E,
+  $--palette-gray-400:#C2C2C2,
+  $--palette-gray-300:#DEDEDE,
+  $--palette-gray-200:#F0F0F0,
+  $--palette-gray-100:#F5F5F5,
+  $--palette-gray-50:#FAFAFA,
+
+  // sub color
+  $--palette-red:#EA1B1B,
+  $--palette-red-accent:#D80516,
+  $--palette-red-light:#FFE9E9,
+  $--palette-orange:#F97F0E,
+  $--palette-orange-light:#FFEBD0,
+  $--palette-green:#00C400,
+  $--palette-green-light:#DBF1DB,
+  $--palette-blue:#109EFF,
+  $--palette-blue-light:#CEF1FF,
+  $--palette-purple:#E59BFF,
+  $--palette-magenta:#F567AC,
+
+  // text color
+  $--text-accent : var($--palette-mint-500),
+  
+  // background color
+  $--background-base : var($--palette-white),
+  $--background-2nd-base : var($--palette-gray-100),
+  $--background-ui-base : var($--palette-gray-50),
+  $--background-ui-middle : var($--palette-gray-500),
+  $--background-ui-middle-accent : var($--palette-gray-700),
+  $--background-overlay : var($--palette-white),
+  $--background-overlay-reverse : var($--palette-gray-800),
+  $--background-overlay-accent : var($--palette-gray-50),
+  $--background-primary : var($--palette-mint-500),
+  $--background-primary-accent : var($--palette-mint-800),
+  $--background-secondary : var($--palette-gray-700),
+  $--background-secondary-accent : var($--palette-gray-800),
+  $--background-tertiary: var($--palette-white),
+  $--background-disabled : var($--palette-gray-100),
+  $--background-error : var($--palette-red),
+  $--background-error-accent : var($--palette-red-accent),
+  $--background-error-light : var($--palette-red-light),
+  $--background-warning : var($--palette-orange),
+  $--background-warning-light : var($--palette-orange-light),
+  $--background-information : var($--palette-blue),
+  $--background-information-light : var($--palette-blue-light),
+  $--background-success : var($--palette-green),
+  $--background-success-light : var($--palette-green-light),
+);
+
+$theme-map-dark: (
+  $--theme-primary: #f34c83,
+  $--theme-secondary: #c298dc,
+  $--theme-surface: #2f2b2b,
+  $--theme-background: #1b1918,
+  $--theme-on-primary: #443e41,
+  $--theme-on-secondary: #000,
+  $--theme-on-surface: #f5f1f2,
+
+  $--palette-white: #FFFFFF,
+  $--palette-black :#000000,
+
+  // primary mint
+  $--palette-mint-900:#DDF9FB,
+  $--palette-mint-800:#BBF4F8,
+  $--palette-mint-700:#99EEF4,
+  $--palette-mint-600:#73E7F0,
+  $--palette-mint-500:#43DFEB,
+  $--palette-mint-400:#1DD9E7,
+  $--palette-mint-300:#0FCBDD,
+  $--palette-mint-200:#0FBED7,
+  $--palette-mint-100:#0EADCA,
+  $--palette-mint-50:#0F9BB6,
+
+  // gray 
+  $--palette-gray-900:#FDFDFD,
+  $--palette-gray-800:#E9E9E9,
+  $--palette-gray-700:#D9D9D9,
+  $--palette-gray-600:#C0C0C0,
+  $--palette-gray-500:#A3A3A3,
+  $--palette-gray-400:#8E8E8E,
+  $--palette-gray-300:#4F4F50,
+  $--palette-gray-200:#343434,
+  $--palette-gray-100:#272626,
+  $--palette-gray-50:#141212,
+    
+  // sub color
+  $--palette-red:#EE3B3B,
+  $--palette-red-accent:#E70F21,
+  $--palette-red-light:#4E0B0B,
+  $--palette-orange:#F98D0E,
+  $--palette-orange-light:#4D2E06,
+  $--palette-green:#03CD03,
+  $--palette-green-light:#073207,
+  $--palette-blue:#24A6FF, 
+  $--palette-blue-light:#023245, 
+  $--palette-purple:#E394FF,
+  $--palette-magenta:#F86FB1,
+
+  // text color
+  $--text-accent : var($--palette-mint-400),
+  
+  // background color
+  $--background-base : var($--palette-gray-50),
+  $--background-2nd-base : var($--palette-gray-100),
+  $--background-ui-base : var($--palette-gray-100),
+  $--background-ui-middle : var($--palette-gray-500),
+  $--background-ui-middle-accent : var($--palette-gray-700), 
+  $--background-overlay : var($--palette-gray-200),
+  $--background-overlay-reverse : var($--palette-gray-900),
+  $--background-overlay-accent : var($--palette-gray-300),
+  $--background-primary : var($--palette-mint-500),
+  $--background-primary-accent : var($--palette-mint-200),
+  $--background-secondary : var($--palette-gray-700),
+  $--background-secondary-accent : var($--palette-gray-800),
+  $--background-tertiary: var($--palette-gray-50),
+  $--background-disabled : var($--palette-gray-200),
+  $--background-error : var($--palette-red),
+  $--background-error-accent : var($--palette-red-accent),
+  $--background-error-light : var($--palette-red-light),
+  $--background-warning : var($--palette-orange),
+  $--background-warning-light : var($--palette-orange-light),
+  $--background-information : var($--palette-blue),
+  $--background-information-light : var($--palette-blue-light),
+  $--background-success : var($--palette-green),
+  $--background-success-light : var($--palette-green-light),
+);
+
+:root.light, .light {
+  @include spread-map($theme-map-light);
+  @include spread-map($semantic-color-map);
+}
+
+:root.dark,  .dark {
+  @include spread-map($theme-map-dark);
+  @include spread-map($semantic-color-map);
+}

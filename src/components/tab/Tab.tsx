@@ -106,7 +106,7 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
   }, []);
 
   useEffect(() => {
-    if (typeof size === 'string') {
+    if (size === ('l' || 'm' || 's')) {
       setTabSize(size);
     }
   }, [size]);
@@ -148,11 +148,12 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
               >
                 {tabitem.icon && tabitem.icon}
                 <TextLabel
-                  size={String(
+                  size={
                     (tabSize === 'l' && 'xl') ||
-                      (tabSize === 'm' && 'l') ||
-                      (tabSize === 's' && 'm'),
-                  )}
+                    (tabSize === 'm' && 'l') ||
+                    (tabSize === 's' && 'm') ||
+                    'l'
+                  }
                 >
                   {tabitem.label}
                 </TextLabel>

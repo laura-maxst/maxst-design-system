@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "module": "esnext",
     "lib": [
       "dom", 
       "dom.iterable", 
@@ -8,11 +9,14 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "sourceMap": true,
+    "outDir": "./dist",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -33,6 +37,7 @@
     "**/*.config.js",
     "./src",
     ".eslintrc",
+    "src"
   ],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "dist", "**/*.stories.tsx", "cypress"]
 }

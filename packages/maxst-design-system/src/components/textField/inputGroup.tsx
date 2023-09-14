@@ -16,7 +16,7 @@ interface InputGroupProps {
   children: React.ReactNode | any;
 }
 
-export const InputGroup = ({
+const InputGroup = ({
   id,
   label,
   state,
@@ -68,3 +68,5 @@ export const InputGroup = ({
     </>
   );
 };
+
+export { InputGroup };

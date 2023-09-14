@@ -6,7 +6,7 @@ import {
   MoreHorizontalLineIcon,
   HomeLineIcon,
 } from '@maxst-designsystem/icons';
-import Dropdown from '@components/dropdown';
+import { Dropdown } from '@components/dropdown';
 
 interface BreadcrumItemProps {
   id: string;
@@ -151,4 +151,4 @@ const Breadcrumb = ({
   );
 };
 
-export default Breadcrumb;
+export { Breadcrumb };

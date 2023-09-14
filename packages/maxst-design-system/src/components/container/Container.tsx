@@ -1,5 +1,4 @@
 import React from 'react';
-// import '@styles/scss/components/_container.scss';
 
 interface ContainerProps {
   full?: boolean;
@@ -20,4 +19,4 @@ const Container = ({ full, className, children, ...props }: ContainerProps) => {
   );
 };
 
-export default Container;
+export { Container };

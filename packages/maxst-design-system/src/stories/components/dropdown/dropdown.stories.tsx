@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Dropdown from '@components/dropdown';
+import { Dropdown } from '@components/dropdown';
 import { TextField } from '@components/textField';
 import { Button } from '@components/button';
 import {

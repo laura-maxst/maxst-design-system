@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Snackbar from '@components/snackbar';
+import { Snackbar } from '@components/snackbar';
 import { SnackbarProps } from '@components/snackbar/Snackbar';
 import { Button } from '@components/button';
 

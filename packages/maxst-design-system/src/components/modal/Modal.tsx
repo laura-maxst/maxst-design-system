@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { CloseLineIcon } from '@maxst-designsystem/icons';
-import Title from '@components/title';
+import { Title } from '@components/title';
 import { ButtonGroup, Button } from '@components/button';
 import { Text } from '@components/text';
 

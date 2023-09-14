@@ -28,7 +28,7 @@ interface ButtonProps {
   className?: string;
 }
 
-export const Button = ({
+const Button = ({
   id,
   size,
   children,
@@ -157,3 +157,5 @@ export const Button = ({
     </button>
   );
 };
+
+export { Button };

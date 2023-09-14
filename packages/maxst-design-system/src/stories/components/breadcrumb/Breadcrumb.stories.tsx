@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Breadcrumb from '@components/breadcrumb';
+import { Breadcrumb } from '@components/breadcrumb';
 import { UserLineIcon } from '@maxst-designsystem/icons';
 
 const meta: Meta<typeof Breadcrumb> = {

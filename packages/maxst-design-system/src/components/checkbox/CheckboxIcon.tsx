@@ -10,6 +10,7 @@ interface CheckboxIconPropsType {
   onChange?: (e: any) => void;
   onClick?: (e: any) => void;
 }
+
 function CheckboxIcon({
   id,
   size,

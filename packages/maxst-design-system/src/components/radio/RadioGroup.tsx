@@ -18,7 +18,7 @@ interface RadioGroupProps {
   options: RadioPropsType[];
 }
 
-export const RadioGroup = ({
+const RadioGroup = ({
   id,
   name,
   state,
@@ -124,3 +124,5 @@ export const RadioGroup = ({
     </>
   );
 };
+
+export { RadioGroup };

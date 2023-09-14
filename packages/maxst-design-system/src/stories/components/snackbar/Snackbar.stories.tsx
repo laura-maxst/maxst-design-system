@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from '@storybook/react';
-import Snackbar from '@components/snackbar';
+import { Snackbar } from '@components/snackbar';
 import SnackbarExample from './SnackbarExample';
 import { CheckCircleLineIcon } from '@maxst-designsystem/icons';
 

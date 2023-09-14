@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import Title from '@components/title';
+import React, { useEffect } from 'react';
+import { Title } from '@components/title';
 import { Text } from '@components/text';
 import { Checkbox } from '@components/checkbox';
 import { Button } from '@components/button';
-import Switch from '@components/switchToggle';
+import { Switch } from '@components/switchToggle';
 
 interface listItemProps {
   id: string;
@@ -18,7 +18,7 @@ interface listItemProps {
   labelData?: any;
   alignTop?: boolean;
 }
-export const ListItem = ({
+const ListItem = ({
   id,
   title,
   text,
@@ -100,3 +100,5 @@ export const ListItem = ({
     </li>
   );
 };
+
+export { ListItem };

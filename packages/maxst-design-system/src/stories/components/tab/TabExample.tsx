@@ -3,7 +3,7 @@ import { Tab } from '@components/tab';
 import { tabProps } from '@components/tab/Tab';
 
 function TabExample(args: tabProps) {
-  const [selectTabValue, setSelectTabValue] = useState<number>(
+  const [selectTabValue, setSelectTabValue] = useState<string>(
     args.selectValue,
   );
 

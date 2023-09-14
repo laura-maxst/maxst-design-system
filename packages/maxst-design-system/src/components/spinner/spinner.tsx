@@ -3,7 +3,7 @@ import React from 'react';
 interface spinnerProps {
   color?: 'white' | 'black';
 }
-export const Spinner = ({ color }: spinnerProps) => {
+const Spinner = ({ color }: spinnerProps) => {
   return (
     <span className="spinner-wrap">
       <svg
@@ -22,3 +22,5 @@ export const Spinner = ({ color }: spinnerProps) => {
     </span>
   );
 };
+
+export { Spinner };

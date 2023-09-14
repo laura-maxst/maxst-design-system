@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import DropdownMenu from './Menu';
+import { DropdownMenu } from './Menu';
 
 type DropDownMenuProps = {
   id: string;
@@ -153,5 +153,5 @@ const Dropdown = ({
   );
 };
 
-export default Dropdown;
+export { Dropdown };
 export type { DropDownMenuProps, DropdownProps };

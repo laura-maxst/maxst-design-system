@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '@components/title';
+import { Title } from '@components/title';
 import { Text } from '@components/text';
 
 function TextColorsThemePreview() {

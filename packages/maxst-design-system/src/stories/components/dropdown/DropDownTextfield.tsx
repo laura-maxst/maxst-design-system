@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { DropdownProps } from '@components/dropdown/Dropdown';
-import Dropdown from '@components/dropdown';
+import { Dropdown } from '@components/dropdown';
 import { TextField } from '@components/textField';
 import { ArrowDownLineIcon } from '@maxst-designsystem/icons';
 

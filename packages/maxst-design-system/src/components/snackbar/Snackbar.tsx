@@ -101,5 +101,5 @@ const Snackbar = ({
   );
 };
 
-export default Snackbar;
+export { Snackbar };
 export type { SnackbarProps };

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Title from '@components/title';
+import { Title } from '@components/title';
 import { Text } from '@components/text';
 import { Button } from '@components/button';
 import {
@@ -127,5 +127,5 @@ const Alert = ({
   );
 };
 
-export default Alert;
+export { Alert };
 export type { AlertProps };

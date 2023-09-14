@@ -12,12 +12,6 @@ const meta: Meta<typeof SearchBar> = {
         type: null,
       },
     },
-    // alertText: {
-    //   description:'error'
-    // },
-    // value: {
-    //   description:''
-    // },
   },
 };
 

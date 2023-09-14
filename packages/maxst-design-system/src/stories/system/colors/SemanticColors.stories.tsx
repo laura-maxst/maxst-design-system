@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { SemanticColors } from './SemanticColors';
-import Container from '@components/container';
-import Title from '@components/title';
+import { Container } from '@components/container';
+import { Title } from '@components/title';
 import { Text } from '@components/text';
 import { TextField } from '@components/textField';
 import { ButtonGroup, Button } from '@components/button';

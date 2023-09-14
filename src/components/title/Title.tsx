@@ -23,4 +23,4 @@ function Title({ role, type, size, align, className, children }: TitleProps) {
   );
 }
 
-export default Title;
+export { Title };

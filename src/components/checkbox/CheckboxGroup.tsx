@@ -20,7 +20,7 @@ interface CheckboxGroupProps {
   options: CheckboxPropsType[];
 }
 
-export const CheckboxGroup = ({
+const CheckboxGroup = ({
   id,
   type,
   state,
@@ -175,3 +175,5 @@ export const CheckboxGroup = ({
     </>
   );
 };
+
+export { CheckboxGroup };

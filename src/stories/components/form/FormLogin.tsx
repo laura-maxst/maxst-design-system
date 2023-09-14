@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { InputGroup, TextField } from '@components/textField';
 import { Button, ButtonGroup } from '@components/button';
-import { Checkbox, CheckboxGroup } from '@components/checkbox';
+import { Checkbox } from '@components/checkbox';
 
 type formDataType = {
   id: string | null;

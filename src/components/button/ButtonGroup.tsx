@@ -1,4 +1,4 @@
-import React, { Children, useState } from 'react';
+import React from 'react';
 
 interface ButtonGropProps {
   children: any;
@@ -8,7 +8,7 @@ interface ButtonGropProps {
   buttonWidth?: string;
 }
 
-export const ButtonGroup = ({
+const ButtonGroup = ({
   children,
   fullWidth,
   align,
@@ -32,3 +32,5 @@ export const ButtonGroup = ({
     </div>
   );
 };
+
+export { ButtonGroup };

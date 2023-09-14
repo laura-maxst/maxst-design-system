@@ -14,7 +14,7 @@ interface InputGroupProps {
   onClick?: (e: any) => void;
 }
 
-export const SearchBar = ({
+const SearchBar = ({
   id,
   size,
   placeholder,
@@ -42,3 +42,5 @@ export const SearchBar = ({
     </div>
   );
 };
+
+export { SearchBar };

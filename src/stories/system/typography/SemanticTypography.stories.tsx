@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Title from '@components/title';
-import { Text } from '@components/text';
+import { Title } from '@components/title';
+import { Text, TextLabel } from '@components/text';
 
 const meta: Meta<typeof Title> = {
   title: 'system/SemanticTypography',
@@ -11,7 +11,26 @@ export default meta;
 type StoryTitle = StoryObj<typeof Title>;
 type StoryText = StoryObj<typeof Text>;
 
-const titleData = [
+type titleDataType = {
+  role: number;
+  type: 'title';
+  size: 'xl' | 'l' | 'm' | 's' | 'xs';
+  content: string;
+};
+
+type textDataType = {
+  type: 'body';
+  size: 's' | 'l' | 'm';
+  content: string;
+  innerHtml?: boolean;
+};
+
+type textLabelDataType = {
+  size: 'xl' | 'l' | 'm' | 's';
+  content: string;
+};
+
+const titleData: titleDataType[] = [
   {
     role: 0,
     type: 'title',
@@ -38,13 +57,13 @@ const titleData = [
   },
   {
     role: 4,
-    type: 'title-xs',
+    type: 'title',
     size: 'xs',
     content: 'font-title-xs',
   },
 ];
 
-const bodyData = [
+const bodyData: textDataType[] = [
   {
     type: 'body',
     size: 'l',
@@ -68,24 +87,20 @@ const bodyData = [
   },
 ];
 
-const labelData = [
+const labelData: textLabelDataType[] = [
   {
-    type: 'label',
     size: 'xl',
     content: 'font-label-xl',
   },
   {
-    type: 'label',
     size: 'l',
     content: 'font-label-l',
   },
   {
-    type: 'label',
     size: 'm',
     content: 'font-label-m',
   },
   {
-    type: 'label',
     size: 's',
     content: 'font-label-s',
   },
@@ -94,8 +109,8 @@ const labelData = [
 const Titles = (
   titleData: {
     role: number;
-    type: string;
-    size: string;
+    type: 'title';
+    size: 'xl' | 'l' | 'm' | 's' | 'xs';
     content: string;
   }[],
 ) => {
@@ -117,8 +132,8 @@ const Titles = (
 
 const Texts = (
   bodyData: {
-    type: string;
-    size: string;
+    type: 'body';
+    size: 's' | 'l' | 'm';
     content: string;
     innerHtml?: boolean;
   }[],
@@ -139,6 +154,23 @@ const Texts = (
   );
 };
 
+const TextLabels = (
+  labelData: {
+    size: 'xl' | 'l' | 'm' | 's';
+    content: string;
+  }[],
+) => {
+  return (
+    <div className="font-box-wrap">
+      {labelData.map((textItem, index) => (
+        <TextLabel size={textItem.size} key={'label' + textItem.size + index}>
+          {textItem.content}
+        </TextLabel>
+      ))}
+    </div>
+  );
+};
+
 export const SemanticTitles: StoryTitle = {
   render: () => Titles(titleData),
 };
@@ -148,5 +180,5 @@ export const SemanticTexts: StoryText = {
 };
 
 export const SemanticLabels: StoryText = {
-  render: () => Texts(labelData),
+  render: () => TextLabels(labelData),
 };

@@ -6,7 +6,7 @@ import {
 } from '@maxst-designsystem/icons';
 import { Button } from '@components/button';
 import { Text } from '@components/text';
-import Divider from '@components/divider';
+import { Divider } from '@components/divider';
 
 const meta: Meta<typeof Tooltip> = {
   title: 'components/Tooltip',

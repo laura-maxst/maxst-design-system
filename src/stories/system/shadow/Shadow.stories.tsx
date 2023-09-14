@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ShadowBox } from './ShadowBox';
-import Container from '@components/container';
-import Dropdown from '@components/dropdown';
+import { Container } from '@components/container';
+import { Dropdown } from '@components/dropdown';
 import { TextField } from '@components/textField';
 import {
   ArrowDownLineIcon,

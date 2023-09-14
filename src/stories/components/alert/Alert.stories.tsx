@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from '@storybook/react';
-import Alert from '@components/alert';
+import { Alert } from '@components/alert';
 import AlertExample from './AlertExample';
-import { CheckCircleLineIcon } from '@maxst-designsystem/icons';
 
 const meta: Meta<typeof Alert> = {
   title: 'Components/Alert',

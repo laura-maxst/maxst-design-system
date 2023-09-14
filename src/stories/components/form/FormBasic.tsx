@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InputGroup, TextField } from '@components/textField';
-import Dropdown from '@components/dropdown';
+import { Dropdown } from '@components/dropdown';
 import { RadioGroup, RadioPropsType } from '@components/radio';
 import { Button, ButtonGroup } from '@components/button';
 import {

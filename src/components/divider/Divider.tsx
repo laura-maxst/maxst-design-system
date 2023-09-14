@@ -1,5 +1,4 @@
 import React from 'react';
-// import '@styles/scss/components/_container.scss';
 
 interface DividerProps {
   type?: 'default' | 'accent';
@@ -34,4 +33,4 @@ const Divider = ({ type, direction, children }: DividerProps) => {
   );
 };
 
-export default Divider;
+export { Divider };

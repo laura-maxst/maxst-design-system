@@ -22,9 +22,6 @@ const meta: Meta<typeof TextField> = {
     iconRight: {
       description: 'textarea에서는 icon이 적용되지 않는다.',
     },
-    // value: {
-    //   description:''
-    // },
   },
 };
 

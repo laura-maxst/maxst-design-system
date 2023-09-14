@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Alert from '@components/alert';
+import { Alert } from '@components/alert';
 import { AlertProps } from '@components/alert/Alert';
 import { Button } from '@components/button';
 

@@ -10,13 +10,13 @@ import babel from '@rollup/plugin-babel';
 import del from 'rollup-plugin-delete';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
-const external = ['react', 'react-dom', 'styled-components'];
+const external = ['react', 'react-dom'];
 const config = {
   input: 'src/components/alert/index.tsx',
   plugins: [
     resolve({ extensions }),
     babel({ exclude: 'node_modules/**' }),
-    commonjs({ include: 'node_modules/**' }),
+    commonjs({ include: 'node_modules/**', exclude: ['src/stories/**'] }),
     typescript({ tsconfig: './tsconfig.json', clean: true }),
     svgr(),
     image(),
@@ -39,5 +39,6 @@ const config = {
       format: 'cjs',
     },
   ],
+  external: ['src/stories/**'],
 };
 export default config;

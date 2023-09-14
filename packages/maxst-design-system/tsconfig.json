@@ -39,5 +39,5 @@
     ".eslintrc",
     "src"
   ],
-  "exclude": ["node_modules", "dist", "**/*.stories.tsx", "cypress"]
+  "exclude": ["node_modules", "dist", "**/*.stories.tsx", "cypress", "src/stories/**"]
 }

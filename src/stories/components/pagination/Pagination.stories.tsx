@@ -6,7 +6,7 @@ const meta: Meta<typeof Pagination> = {
   component: Pagination,
   tags: ['autodocs'],
   argTypes: {
-    type: {
+    totalCount: {
       description: '',
     },
   },
@@ -22,6 +22,7 @@ export const PaginationDefault: Story = {
     </div>
   ),
   args: {
-    type: 'default',
+    totalCount: 20,
+    size: 'l',
   },
 };

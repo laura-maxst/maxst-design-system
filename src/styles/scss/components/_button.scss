@@ -24,7 +24,13 @@
     background-color: semantic-color('background', $type);
   }
   @if($state == 'disabled'){
-    background-color: semantic-color('background', 'disabled');
+    cursor: unset;
+
+    @if($type == 'ghost'){
+      background-color: transparent;
+    }@else{
+      background-color: semantic-color('background', 'disabled');
+    }
   }
 }
 
@@ -67,7 +73,7 @@
     }
     color: semantic-color('text', 'default');
     & svg{
-      fill:  semantic-color('text', 'default');
+      color: semantic-color('text', 'default');
     }
   }@else if($type == 'error-tertiary'){
     @if ($state =='pressed'){
@@ -77,24 +83,24 @@
     }
     color: semantic-color('text', 'error');
     & svg{
-      fill: semantic-color('text', 'error');
+      color: semantic-color('text', 'error');
     }
   }@else if($type == 'ghost'){
     color: semantic-color('text', 'default');
     & svg{
-      fill:  semantic-color('text', 'default');
+      color: semantic-color('text', 'default');
     }
   }@else{
     color: semantic-color('text', 'default-reverse');
     & svg{
-      fill: semantic-color('text', 'default-reverse');
+      color: semantic-color('text', 'default-reverse');
     }
   }
   // disabled 
   @if($state == 'disabled'){
     color: semantic-color('text', 'disabled');
     & svg{
-      fill: semantic-color('text', 'disabled');
+      color: semantic-color('text', 'disabled');
     }
     @if($type == 'text' or $type == 'link'){
       background: none;
@@ -134,25 +140,25 @@
 %type-text-default{
   color: semantic-color('text', 'sub');
   & svg{
-    fill: semantic-color('text', 'sub');
+    color: semantic-color('text', 'sub');
   }
 }
 %type-text-pressed{
   color: semantic-color('text', 'default');
   & svg{
-    fill: semantic-color('text', 'default');
+    color: semantic-color('text', 'default');
   }
 }
 %type-text-error{
   color:semantic-color('text', 'error');
   & svg{
-    fill: semantic-color('text', 'error');
+    color:semantic-color('text', 'error');
   }
 }
 %type-link-default{ 
   color: semantic-color('text', 'information');
   & svg{
-    fill: semantic-color('text', 'information');
+    color: semantic-color('text', 'information');
   }
 }
 %type-link-pressed{
@@ -169,7 +175,7 @@
     background-color: semantic-color('text', 'information');;
   }
   & svg{
-    fill: semantic-color('text', 'information');
+    color: semantic-color('text', 'information');
   }
 }
 

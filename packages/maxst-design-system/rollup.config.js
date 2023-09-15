@@ -12,7 +12,7 @@ import del from 'rollup-plugin-delete';
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 const external = ['react', 'react-dom'];
 const config = {
-  input: 'src/components/alert/index.tsx',
+  input: 'src/index.tsx',
   plugins: [
     resolve({ extensions }),
     babel({ exclude: 'node_modules/**' }),

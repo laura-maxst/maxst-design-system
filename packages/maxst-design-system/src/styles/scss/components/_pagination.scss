@@ -1,0 +1,102 @@
+.mds-pagination{
+  ul{
+    display: flex;
+
+    li{
+      button {
+        min-width: unset;
+        padding: 0;
+
+        &.checked{
+          color:semantic-color('text', 'default-reverse');
+          background-color: semantic-color('background', 'secondary');
+
+          &:hover, &:focus, &:active{
+            background-color: semantic-color('background', 'secondary-accent');
+          }
+        }
+      }
+    }
+  }
+
+  &.pagination__simple-mode{
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+
+        &.simple-mode__dash{
+          padding: 0 2px;
+          color:semantic-color('text', 'subtlest');
+          span{
+            color:inherit;
+          }
+        }
+        
+        &.simple-mode__this{
+          color:semantic-color('text', 'subt');
+          span{
+            color:inherit;
+          }
+        }
+        &.simple-mode__total{
+          color:semantic-color('text', 'subtlest');
+          span{
+            color:inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+$paginaionSize: 'l', 'm', 's';
+
+@mixin paginationCase($size){
+  .pagination-#{$size}{
+    @if($size == 'l'){
+      li {
+        button {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &.pagination__simple-mode li.simple-mode__this,
+      &.pagination__simple-mode li.simple-mode__total {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+      }
+    }@else if($size == 'm'){
+      li{
+        button {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      &.pagination__simple-mode li.simple-mode__this,
+      &.pagination__simple-mode li.simple-mode__total {
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+      }
+    }@else if($size == 's'){
+      li{
+        button {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      &.pagination__simple-mode li.simple-mode__this,
+      &.pagination__simple-mode li.simple-mode__total {
+        width: 28px;
+        height: 28px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@each $size in $paginaionSize{
+  @include paginationCase($size);
+}

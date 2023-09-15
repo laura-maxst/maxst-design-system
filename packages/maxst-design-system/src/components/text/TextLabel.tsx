@@ -1,13 +1,13 @@
 import React from 'react';
 
-interface TextProps {
+interface TextLabelProps {
   role?: 'default' | 'sub' | 'subtlest';
   size: 'xl' | 'l' | 'm' | 's';
   className?: string;
   children: React.ReactNode;
 }
 
-function TextLabel({ role, size, className, children }: TextProps) {
+function TextLabel({ role, size, className, children }: TextLabelProps) {
   return (
     <span
       className={`font-label font-label-${size} ${role ? role : ''} ${

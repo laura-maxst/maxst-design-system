@@ -7,6 +7,7 @@ import url from '@rollup/plugin-url';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import babel from '@rollup/plugin-babel';
+import svg from 'rollup-plugin-svg';
 import del from 'rollup-plugin-delete';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
@@ -21,7 +22,7 @@ const config = {
     svgr(),
     image(),
     url({
-      include: ['**/*.svg', '**/*.tsx', '**/*.ts'],
+      include: ['src/**/*.tsx', 'src/**/*.ts'],
       limit: Infinity,
       emitFiles: true,
       fileName: '[name][extname]',
@@ -31,6 +32,7 @@ const config = {
     peerDepsExternal(),
     sourcemaps(),
     del({ targets: ['dist/*'] }),
+    svg(),
   ],
   output: [
     {

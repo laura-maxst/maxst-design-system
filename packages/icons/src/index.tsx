@@ -90,6 +90,9 @@ export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';
 
+export { FirstPageLineIcon } from './icons/firstPageLine';
+export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';
+
 export { FolderLineIcon } from './icons/folderLine';
 export { FolderLineBoldIcon } from './icons/folderLineBold';
 export { FolderLineLightIcon } from './icons/folderLineLight';
@@ -115,6 +118,9 @@ export { InfoCircleFillIcon } from './icons/infoCircleFill';
 
 export { LanguageLineIcon } from './icons/languageLine';
 export { LanguageFillIcon } from './icons/languageFill';
+
+export { LastPageLineIcon } from './icons/lastPageLine';
+export { LastPageLineBoldIcon } from './icons/lastPageLineBold';
 
 export { ListLineIcon } from './icons/listLine';
 

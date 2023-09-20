@@ -10,6 +10,7 @@ import babel from '@rollup/plugin-babel';
 import svg from 'rollup-plugin-svg';
 import del from 'rollup-plugin-delete';
 import postcss from 'rollup-plugin-postcss';
+import sass from 'rollup-plugin-sass';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 const external = [
@@ -40,8 +41,11 @@ const config = {
       exclude: ['src/stories/**', 'src/pages/**'],
     }),
     typescript({ tsconfig: './tsconfig.json', clean: true }),
-    postcss({
-      extensions: ['.scss'],
+    // postcss({
+    //   extensions: ['.scss'],
+    // }),
+    sass({
+      insert: true,
     }),
     svgr(),
     image(),

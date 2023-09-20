@@ -1,3 +1,4 @@
+import './styles/scss/main.scss';
 export { Alert } from './components/alert';
 export { Breadcrumb } from './components/breadcrumb';
 export { Button, ButtonGroup } from './components/button';

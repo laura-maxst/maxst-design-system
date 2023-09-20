@@ -3166,6 +3166,18 @@ var FileLineLightIcon = function () {
         React.createElement("path", { d: "M21.2201 39.38H8.62012V26.78L26.7801 8.62H39.3801V20.96H38.1801V9.81999H27.2801L9.82012 27.28V38.18H20.7201L32.1401 26.76V19.48H26.5201L15.6401 30.36L14.7801 29.52L26.0201 18.28H33.3401V27.26L21.2201 39.38Z", fill: "currentColor" })));
 };
 
+var FirstPageLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M34.3022 11L35.9992 12.6971L24.8477 23.8485L35.9992 35L34.3022 36.6971L21.4536 23.8485L34.3022 11Z", fill: "currentColor" }),
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M15.0015 37.4L15.0016 11L17.4016 11L17.4015 37.4L15.0015 37.4Z", fill: "currentColor" })));
+};
+
+var FirstPageLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M34.2724 11.4688L36.3937 13.5901L25.4544 24.5294L36.3937 35.4688L34.2724 37.5901L21.2118 24.5294L34.2724 11.4688Z", fill: "currentColor" }),
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M14.4 37.4L14.4 11L17.4 11L17.4 37.4L14.4 37.4Z", fill: "currentColor" })));
+};
+
 var FolderLineIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { d: "M32.34 14.76V9.95999H23.66V12.36H29.94V14.76H21.26V9.95999H10.74L6.03998 14.66V39.94H37.28L41.98 35.24V14.76H32.34ZM39.58 34.24L36.28 37.54H8.43998V15.66L11.74 12.36H18.86V17.16H39.58V34.24Z", fill: "currentColor" })));
@@ -3269,6 +3281,18 @@ var LanguageLineIcon = function () {
 var LanguageFillIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.0453 5.0993C15.0263 5.81664 9.13834 10.3547 6.49496 16.6H16.8877C18.0283 11.7875 20.0946 7.78851 22.0453 5.0993ZM5.66477 19C5.23134 20.5931 5 22.2695 5 24C5 25.5862 5.19438 27.127 5.56063 28.6H16.3238C15.8322 25.2135 15.9319 21.9798 16.4107 19H5.66477ZM6.33101 31C8.89197 37.4587 14.8919 42.1796 22.0716 42.9033C19.3082 38.8685 17.639 34.8538 16.7685 31H6.33101ZM25.9284 42.9033C33.1081 42.1796 39.108 37.4587 41.669 31H31.2315C30.361 34.8538 28.6918 38.8685 25.9284 42.9033ZM42.4394 28.6C42.8056 27.127 43 25.5862 43 24C43 22.2695 42.7687 20.5931 42.3352 19H31.5893C32.0681 21.9798 32.1678 25.2135 31.6762 28.6H42.4394ZM41.505 16.6H31.1123C29.9717 11.7875 27.9054 7.78851 25.9547 5.0993C32.9737 5.81664 38.8617 10.3547 41.505 16.6ZM28.9158 19C29.4265 21.9555 29.5378 25.1952 28.9984 28.6H19.0016C18.4622 25.1952 18.5735 21.9555 19.0842 19H28.9158ZM24 41.0826C21.7268 37.6664 20.2922 34.2723 19.4865 31H28.5135C27.7078 34.2723 26.2732 37.6664 24 41.0826ZM19.5983 16.6C20.63 12.5695 22.3503 9.20252 24 6.85927C25.6496 9.20252 27.37 12.5695 28.4017 16.6H19.5983Z", fill: "currentColor" })));
+};
+
+var LastPageLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M16.6986 11L15.0016 12.6971L26.1531 23.8485L15.0016 35L16.6986 36.6971L29.5472 23.8485L16.6986 11Z", fill: "currentColor" }),
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M35.9992 37.4L35.9992 11L33.5992 11L33.5992 37.4L35.9992 37.4Z", fill: "currentColor" })));
+};
+
+var LastPageLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M16.5213 11.4688L14.4 13.5901L25.3394 24.5294L14.4 35.4688L16.5213 37.5901L29.582 24.5294L16.5213 11.4688Z", fill: "currentColor" }),
+        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M36.3938 37.4L36.3938 11L33.3938 11L33.3938 37.4L36.3938 37.4Z", fill: "currentColor" })));
 };
 
 var ListLineIcon = function () {
@@ -4047,6 +4071,8 @@ exports.ErrorCircleLineIcon = ErrorCircleLineIcon;
 exports.FileLineBoldIcon = FileLineBoldIcon;
 exports.FileLineIcon = FileLineIcon;
 exports.FileLineLightIcon = FileLineLightIcon;
+exports.FirstPageLineBoldIcon = FirstPageLineBoldIcon;
+exports.FirstPageLineIcon = FirstPageLineIcon;
 exports.FolderFillIcon = FolderFillIcon;
 exports.FolderLineBoldIcon = FolderLineBoldIcon;
 exports.FolderLineIcon = FolderLineIcon;
@@ -4065,6 +4091,8 @@ exports.InfoCircleFillIcon = InfoCircleFillIcon;
 exports.InfoCircleLineIcon = InfoCircleLineIcon;
 exports.LanguageFillIcon = LanguageFillIcon;
 exports.LanguageLineIcon = LanguageLineIcon;
+exports.LastPageLineBoldIcon = LastPageLineBoldIcon;
+exports.LastPageLineIcon = LastPageLineIcon;
 exports.LayerFillIcon = LayerFillIcon;
 exports.LayerLineBoldIcon = LayerLineBoldIcon;
 exports.LayerLineIcon = LayerLineIcon;

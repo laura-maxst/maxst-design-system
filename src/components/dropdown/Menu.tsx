@@ -9,6 +9,7 @@ type DropDownMenuProps = {
   iconRight?: JSX.Element | React.ReactNode;
   disabled?: boolean;
   subLabel?: string;
+  onChange: (id: string, label: string) => void;
   onClick: (id: string, label: string) => void;
 };
 
@@ -20,6 +21,7 @@ const DropdownMenu = ({
   iconRight,
   disabled,
   subLabel,
+  onChange,
   onClick,
 }: DropDownMenuProps) => {
   const resolveOnClick = ({
@@ -33,6 +35,7 @@ const DropdownMenu = ({
   }) => {
     if (!disabled) {
       onClick(id, label);
+      onChange(id, label);
     }
   };
 

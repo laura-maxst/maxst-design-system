@@ -17,8 +17,8 @@ interface DropdownProps {
   align?: 'left' | 'right' | 'center';
   menuData: DropDownMenuProps[];
   children?: string | any;
-  onClick?: (selectMenuData: object) => void;
-  onChange?: (selectMenuData: object) => void;
+  onClick?: (selectMenuData: DropDownMenuProps) => void;
+  onChange?: (selectMenuData: DropDownMenuProps) => void;
   isFullWidthMenu?: boolean;
   className?: string;
 }
@@ -39,7 +39,6 @@ const Dropdown = ({
     label: '',
   };
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const [selectMenuData, setSelectMenuData] = useState<object>(selectMenu);
   const [isFullWidthMenuWrap, setIsFullWidthMenuWrap] = useState<boolean>(
     isFullWidthMenu ? isFullWidthMenu : false,
   );
@@ -52,38 +51,34 @@ const Dropdown = ({
     }
   };
 
-  const onClickDropdownMenu = (id: string, label: string) => {
-    setSelectMenuData({ id: id, label: label });
+  const onChangeDropdownMenu = (id: string, label: string) => {
+    if (!onChange) {
+      return;
+    } else {
+      onChange({ id: id, label: label });
+    }
+  };
 
+  const onClickDropdownMenu = (id: string, label: string) => {
     if (menuOpen) {
       setMenuOpen(false);
     } else {
       setMenuOpen(true);
     }
+    if (!onClick) {
+      return;
+    } else {
+      onClick({ id: id, label: label });
+    }
   };
 
   useEffect(() => {
-    if (children.type.displayName == 'TextField') {
+    if (children.type?.displayName == 'TextField') {
       setIsFullWidthMenuWrap(true);
     } else {
       setIsFullWidthMenuWrap(false);
     }
   }, [children]);
-
-  useEffect(() => {
-    if (!onChange) {
-      return;
-    }
-    onChange(selectMenuData);
-  }, [selectMenuData]);
-
-  useEffect(() => {
-    if (!onClick) {
-      return;
-    } else {
-      onClick(selectMenuData);
-    }
-  }, [selectMenuData]);
 
   useEffect(() => {
     if (menuOpen) {
@@ -143,6 +138,7 @@ const Dropdown = ({
                 iconLeft={item?.iconLeft}
                 iconRight={item?.iconRight}
                 disabled={item.disabled}
+                onChange={onChangeDropdownMenu}
                 onClick={onClickDropdownMenu}
                 key={item.id}
               />

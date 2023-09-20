@@ -1,48 +1,63 @@
-.mds-pagination{
-  ul{
+.mds-pagination {
+  display: flex;
+
+  ul {
     display: flex;
 
-    li{
+    li {
       button {
         min-width: unset;
         padding: 0;
 
-        &.checked{
-          color:semantic-color('text', 'default-reverse');
+        &.checked {
+          color: semantic-color('text', 'default-reverse');
           background-color: semantic-color('background', 'secondary');
 
-          &:hover, &:focus, &:active{
+          &:hover,
+          &:focus,
+          &:active {
             background-color: semantic-color('background', 'secondary-accent');
+          }
+
+          &:disabled {
+            color: semantic-color('text', 'disabled');
+            background-color: semantic-color('background', 'disabled');
+
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: semantic-color('background', 'disabled');
+            }
           }
         }
       }
     }
   }
 
-  &.pagination__simple-mode{
-    ul{
-      li{
+  &.pagination__simple-mode {
+    ul {
+      li {
         display: flex;
         align-items: center;
 
-        &.simple-mode__dash{
+        &.simple-mode__dash {
           padding: 0 2px;
-          color:semantic-color('text', 'subtlest');
-          span{
-            color:inherit;
+          color: semantic-color('text', 'subtlest');
+          span {
+            color: inherit;
           }
         }
-        
-        &.simple-mode__this{
-          color:semantic-color('text', 'subt');
-          span{
-            color:inherit;
+
+        &.simple-mode__this {
+          color: semantic-color('text', 'subt');
+          span {
+            color: inherit;
           }
         }
-        &.simple-mode__total{
-          color:semantic-color('text', 'subtlest');
-          span{
-            color:inherit;
+        &.simple-mode__total {
+          color: semantic-color('text', 'subtlest');
+          span {
+            color: inherit;
           }
         }
       }
@@ -52,9 +67,9 @@
 
 $paginaionSize: 'l', 'm', 's';
 
-@mixin paginationCase($size){
-  .pagination-#{$size}{
-    @if($size == 'l'){
+@mixin paginationCase($size) {
+  .pagination-#{$size} {
+    @if ($size == 'l') {
       li {
         button {
           width: 40px;
@@ -67,8 +82,8 @@ $paginaionSize: 'l', 'm', 's';
         height: 40px;
         justify-content: center;
       }
-    }@else if($size == 'm'){
-      li{
+    } @else if($size == 'm') {
+      li {
         button {
           width: 32px;
           height: 32px;
@@ -80,8 +95,8 @@ $paginaionSize: 'l', 'm', 's';
         height: 32px;
         justify-content: center;
       }
-    }@else if($size == 's'){
-      li{
+    } @else if($size == 's') {
+      li {
         button {
           width: 28px;
           height: 28px;
@@ -97,6 +112,6 @@ $paginaionSize: 'l', 'm', 's';
   }
 }
 
-@each $size in $paginaionSize{
+@each $size in $paginaionSize {
   @include paginationCase($size);
 }

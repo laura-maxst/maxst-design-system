@@ -4192,7 +4192,7 @@ dist.ArrowBackwardLineIcon = ArrowBackwardLineIcon;
 dist.ArrowDownCircleFillIcon = ArrowDownCircleFillIcon;
 dist.ArrowDownCircleLineIcon = ArrowDownCircleLineIcon;
 dist.ArrowDownLineBoldIcon = ArrowDownLineBoldIcon;
-dist.ArrowDownLineIcon = ArrowDownLineIcon;
+var ArrowDownLineIcon_1 = dist.ArrowDownLineIcon = ArrowDownLineIcon;
 dist.ArrowDownwardLineBoldIcon = ArrowDownwardLineBoldIcon;
 dist.ArrowDownwardLineIcon = ArrowDownwardLineIcon;
 dist.ArrowForwardCircleFillIcon = ArrowForwardCircleFillIcon;
@@ -4252,7 +4252,7 @@ dist.FileLineBoldIcon = FileLineBoldIcon;
 dist.FileLineIcon = FileLineIcon;
 dist.FileLineLightIcon = FileLineLightIcon;
 dist.FirstPageLineBoldIcon = FirstPageLineBoldIcon;
-dist.FirstPageLineIcon = FirstPageLineIcon;
+var FirstPageLineIcon_1 = dist.FirstPageLineIcon = FirstPageLineIcon;
 dist.FolderFillIcon = FolderFillIcon;
 dist.FolderLineBoldIcon = FolderLineBoldIcon;
 dist.FolderLineIcon = FolderLineIcon;
@@ -4272,7 +4272,7 @@ dist.InfoCircleLineIcon = InfoCircleLineIcon;
 dist.LanguageFillIcon = LanguageFillIcon;
 dist.LanguageLineIcon = LanguageLineIcon;
 dist.LastPageLineBoldIcon = LastPageLineBoldIcon;
-dist.LastPageLineIcon = LastPageLineIcon;
+var LastPageLineIcon_1 = dist.LastPageLineIcon = LastPageLineIcon;
 dist.LayerFillIcon = LayerFillIcon;
 dist.LayerLineBoldIcon = LayerLineBoldIcon;
 dist.LayerLineIcon = LayerLineIcon;
@@ -4437,11 +4437,12 @@ var Alert = function (_a) {
 };
 
 var DropdownMenu = function (_a) {
-    var id = _a.id, label = _a.label, size = _a.size, iconLeft = _a.iconLeft, iconRight = _a.iconRight, disabled = _a.disabled, subLabel = _a.subLabel, onClick = _a.onClick;
+    var id = _a.id, label = _a.label, size = _a.size, iconLeft = _a.iconLeft, iconRight = _a.iconRight, disabled = _a.disabled, subLabel = _a.subLabel, onChange = _a.onChange, onClick = _a.onClick;
     var resolveOnClick = function (_a) {
         _a.e; var id = _a.id, label = _a.label;
         if (!disabled) {
             onClick(id, label);
+            onChange(id, label);
         }
     };
     return (React__default["default"].createElement("div", { className: [
@@ -4457,13 +4458,8 @@ var DropdownMenu = function (_a) {
 
 var Dropdown = function (_a) {
     var id = _a.id, size = _a.size, align = _a.align, children = _a.children, menuData = _a.menuData, onClick = _a.onClick, onChange = _a.onChange, isFullWidthMenu = _a.isFullWidthMenu, className = _a.className;
-    var selectMenu = {
-        id: '',
-        label: '',
-    };
     var _b = React$1.useState(false), menuOpen = _b[0], setMenuOpen = _b[1];
-    var _c = React$1.useState(selectMenu), selectMenuData = _c[0], setSelectMenuData = _c[1];
-    var _d = React$1.useState(isFullWidthMenu ? isFullWidthMenu : false), isFullWidthMenuWrap = _d[0], setIsFullWidthMenuWrap = _d[1];
+    var _c = React$1.useState(isFullWidthMenu ? isFullWidthMenu : false), isFullWidthMenuWrap = _c[0], setIsFullWidthMenuWrap = _c[1];
     var onClickDropdownBase = function (e, id) {
         if (menuOpen) {
             setMenuOpen(false);
@@ -4472,37 +4468,37 @@ var Dropdown = function (_a) {
             setMenuOpen(true);
         }
     };
+    var onChangeDropdownMenu = function (id, label) {
+        if (!onChange) {
+            return;
+        }
+        else {
+            onChange({ id: id, label: label });
+        }
+    };
     var onClickDropdownMenu = function (id, label) {
-        setSelectMenuData({ id: id, label: label });
         if (menuOpen) {
             setMenuOpen(false);
         }
         else {
             setMenuOpen(true);
         }
+        if (!onClick) {
+            return;
+        }
+        else {
+            onClick({ id: id, label: label });
+        }
     };
     React$1.useEffect(function () {
-        if (children.type.displayName == 'TextField') {
+        var _a;
+        if (((_a = children.type) === null || _a === void 0 ? void 0 : _a.displayName) == 'TextField') {
             setIsFullWidthMenuWrap(true);
         }
         else {
             setIsFullWidthMenuWrap(false);
         }
     }, [children]);
-    React$1.useEffect(function () {
-        if (!onChange) {
-            return;
-        }
-        onChange(selectMenuData);
-    }, [selectMenuData]);
-    React$1.useEffect(function () {
-        if (!onClick) {
-            return;
-        }
-        else {
-            onClick(selectMenuData);
-        }
-    }, [selectMenuData]);
     React$1.useEffect(function () {
         if (menuOpen) {
             document.getElementById(String(id));
@@ -4536,7 +4532,7 @@ var Dropdown = function (_a) {
                 'dropdown-box__menu-wrap',
                 isFullWidthMenuWrap ? 'full-width' : '',
             ].join(' '), id: id + '-menu-wrap' }, menuData &&
-            menuData.map(function (item) { return (React__default["default"].createElement(DropdownMenu, { id: item.id, size: size, label: item.label, subLabel: item === null || item === void 0 ? void 0 : item.subLabel, iconLeft: item === null || item === void 0 ? void 0 : item.iconLeft, iconRight: item === null || item === void 0 ? void 0 : item.iconRight, disabled: item.disabled, onClick: onClickDropdownMenu, key: item.id })); })))));
+            menuData.map(function (item) { return (React__default["default"].createElement(DropdownMenu, { id: item.id, size: size, label: item.label, subLabel: item === null || item === void 0 ? void 0 : item.subLabel, iconLeft: item === null || item === void 0 ? void 0 : item.iconLeft, iconRight: item === null || item === void 0 ? void 0 : item.iconRight, disabled: item.disabled, onChange: onChangeDropdownMenu, onClick: onClickDropdownMenu, key: item.id })); })))));
 };
 
 var Breadcrumb = function (_a) {
@@ -4928,9 +4924,34 @@ var Modal = function (_a) {
                     buttonPrimary ? (React__default["default"].createElement(Button, { type: "primary", size: "l" }, buttonPrimary)) : (buttonError && (React__default["default"].createElement(Button, { type: "error", size: "l" }, buttonError)))))))));
 };
 
+var pageSizeData = [
+    {
+        id: 'page-size-10',
+        label: '10 pages',
+    },
+    {
+        id: 'page-size-20',
+        label: '20 pages',
+    },
+    {
+        id: 'page-size-50',
+        label: '50 pages',
+    },
+    {
+        id: 'page-size-100',
+        label: '100 pages',
+    },
+];
 var Pagination = function (_a) {
-    var simpleMode = _a.simpleMode, size = _a.size, totalCount = _a.totalCount, defaultPage = _a.defaultPage, disabled = _a.disabled; _a.showFirstButton; _a.showLastButton; _a.showPageSize; _a.showPageSizeChage; _a.onChange; var onClick = _a.onClick;
+    var smallWidth = _a.smallWidth, simpleMode = _a.simpleMode, size = _a.size, 
+    // totalCount,
+    totalPage = _a.totalPage, defaultPage = _a.defaultPage, disabled = _a.disabled, showFirstButton = _a.showFirstButton, showLastButton = _a.showLastButton, showPageSizeChanger = _a.showPageSizeChanger, onshowPageSizeChage = _a.onshowPageSizeChage, showPageOptionCustom = _a.showPageOptionCustom; _a.onChange; var onClick = _a.onClick;
     var _b = React$1.useState(1), thisPage = _b[0], setThisPage = _b[1];
+    var _c = React$1.useState(10); _c[0]; _c[1];
+    var _d = React$1.useState({
+        id: 'page-size-10',
+        label: '10 pages',
+    }), selectShowPageSizeData = _d[0], setSelectShowPageSizeData = _d[1];
     var buttonSizeFilter = function (size) {
         switch (size) {
             case 'l':
@@ -4955,6 +4976,18 @@ var Pagination = function (_a) {
                 return 'l';
         }
     };
+    var resolveOnshowPageSizeChage = function (selectMenuData) {
+        if (selectMenuData) {
+            setSelectShowPageSizeData({
+                id: selectMenuData.id,
+                label: selectMenuData.label,
+            });
+        }
+        if (!onshowPageSizeChage) {
+            return;
+        }
+        onshowPageSizeChage(selectMenuData);
+    };
     var resolveOnClick = function (type, index) {
         if (type === 'item') {
             setThisPage(Number(index));
@@ -4965,43 +4998,80 @@ var Pagination = function (_a) {
             }
         }
         else if (type === 'next') {
-            if (thisPage !== totalCount) {
+            if (thisPage !== totalPage) {
                 setThisPage(thisPage + 1);
             }
+        }
+        else if (type === 'first') {
+            setThisPage(1);
+        }
+        else if (type === 'last') {
+            setThisPage(totalPage);
         }
         if (!onClick) {
             return;
         }
         onClick();
     };
-    var pageNumbers = Array.from({ length: totalCount }, function (_, i) { return i + 1; });
+    var onClickMoreButton = function () {
+        console.log('more');
+    };
+    var pageNumbers = Array.from({ length: totalPage }, function (_, i) { return i + 1; });
     var paginaionItemFilter = function (node) {
         var itemList = [];
         var firstLastLiDraw = function (type, content) {
             return React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(type) }, content);
         };
         var moreButtonDraw = function (type) { return (React__default["default"].createElement("li", { key: "pagination-button-more-".concat(type) },
-            React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-more-".concat(type), iconOnly: React__default["default"].createElement(MoreHorizontalLineIcon_1, null), isIconMode: true }))); };
-        if (node.length >= 14) {
-            itemList = [];
-            if (thisPage < 7) {
-                itemList = node.map(function (item, index) {
-                    return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index < 12 && item));
-                });
-                itemList.push(moreButtonDraw('next'), firstLastLiDraw('last', node[node.length - 1]));
+            React__default["default"].createElement(Button, { type: "ghost", state: disabled ? 'disabled' : 'default', size: buttonSizeFilter(size), id: "pagination-button-more-".concat(type), iconOnly: React__default["default"].createElement(MoreHorizontalLineIcon_1, null), isIconMode: true, onClick: function () { return onClickMoreButton(); } }))); };
+        if (smallWidth) {
+            if (node.length >= 7) {
+                itemList = [];
+                if (thisPage < 4) {
+                    itemList = node.map(function (item, index) {
+                        return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index < 5 && item));
+                    });
+                    itemList.push(moreButtonDraw('next'), firstLastLiDraw('last', node[node.length - 1]));
+                }
+                else if (thisPage >= 4 && thisPage <= node.length - 4) {
+                    itemList = node.map(function (item, index) {
+                        if (index > thisPage - 3 && index < thisPage + 1) {
+                            return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, item));
+                        }
+                    });
+                    itemList.unshift(firstLastLiDraw('first', node[0]), moreButtonDraw('prev'));
+                    itemList.push(moreButtonDraw('next'), firstLastLiDraw('last', node[node.length - 1]));
+                }
+                else if (thisPage > node.length - 4) {
+                    itemList = node.map(function (item, index) {
+                        return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index >= node.length - 5 && item));
+                    });
+                    itemList.unshift(firstLastLiDraw('first', node[0]), moreButtonDraw('prev'));
+                }
             }
-            else if (thisPage >= 7 && thisPage < 15) {
-                itemList = node.map(function (item, index) {
-                    return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index >= thisPage - 6 && index <= thisPage + 3 && item));
-                });
-                itemList.unshift(firstLastLiDraw('first', node[0]), moreButtonDraw('prev'));
-                itemList.push(moreButtonDraw('next'), firstLastLiDraw('last', node[node.length - 1]));
-            }
-            else if (thisPage >= 15) {
-                itemList = node.map(function (item, index) {
-                    return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index >= 8 && item));
-                });
-                itemList.unshift(firstLastLiDraw('first', node[0]), moreButtonDraw('prev'));
+        }
+        else {
+            if (node.length >= 14) {
+                itemList = [];
+                if (thisPage < 7) {
+                    itemList = node.map(function (item, index) {
+                        return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index < 12 && item));
+                    });
+                    itemList.push(moreButtonDraw('next'), firstLastLiDraw('last', node[node.length - 1]));
+                }
+                else if (thisPage >= 7 && thisPage < node.length - 5) {
+                    itemList = node.map(function (item, index) {
+                        return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index >= thisPage - 6 && index <= thisPage + 3 && item));
+                    });
+                    itemList.unshift(firstLastLiDraw('first', node[0]), moreButtonDraw('prev'));
+                    itemList.push(moreButtonDraw('next'), firstLastLiDraw('last', node[node.length - 1]));
+                }
+                else if (thisPage >= node.length - 12) {
+                    itemList = node.map(function (item, index) {
+                        return (React__default["default"].createElement(React$1.Fragment, { key: "pagination-button-".concat(index) }, index >= node.length - 12 && item));
+                    });
+                    itemList.unshift(firstLastLiDraw('first', node[0]), moreButtonDraw('prev'));
+                }
             }
         }
         return itemList;
@@ -5009,18 +5079,18 @@ var Pagination = function (_a) {
     var pageSetting = function () {
         var paginationItemDraw = pageNumbers.map(function (i) {
             return (React__default["default"].createElement("li", { key: "pagination-button-".concat(i) },
-                React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-".concat(i), onClick: function () { return resolveOnClick('item', i); }, className: thisPage === i ? 'checked' : '' }, i)));
+                React__default["default"].createElement(Button, { type: "ghost", state: disabled ? 'disabled' : 'default', size: buttonSizeFilter(size), id: "pagination-button-".concat(i), onClick: function () { return resolveOnClick('item', i); }, className: thisPage === i ? 'checked' : '' }, i)));
         });
         return paginaionItemFilter(paginationItemDraw);
     };
+    React$1.useEffect(function () {
+        setSelectShowPageSizeData(showPageOptionCustom ? showPageOptionCustom[0] : pageSizeData[0]);
+    }, [showPageOptionCustom]);
     React$1.useEffect(function () {
         if (defaultPage) {
             setThisPage(defaultPage);
         }
     }, [defaultPage]);
-    React$1.useEffect(function () {
-        console.log('thisPage', thisPage);
-    }, [thisPage]);
     return (React__default["default"].createElement("div", { className: [
             'mds-pagination',
             "pagination-".concat(size),
@@ -5028,17 +5098,27 @@ var Pagination = function (_a) {
             disabled ? 'disabled' : ' ',
         ].join(' ') },
         React__default["default"].createElement("ul", null,
+            showFirstButton && (React__default["default"].createElement("li", null,
+                React__default["default"].createElement(Button, { type: "ghost", state: (disabled && 'disabled') ||
+                        (thisPage === 1 ? 'disabled' : 'default'), size: buttonSizeFilter(size), id: "pagination-button-first", onClick: function () { return resolveOnClick('first'); }, isIconMode: true, iconOnly: React__default["default"].createElement(FirstPageLineIcon_1, null) }))),
             React__default["default"].createElement("li", null,
-                React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-prev", onClick: function () { return resolveOnClick('prev'); }, isIconMode: true, iconOnly: React__default["default"].createElement(ArrowLeftLineIcon_1, null), state: thisPage === 1 ? 'disabled' : 'default' })),
+                React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-prev", onClick: function () { return resolveOnClick('prev'); }, isIconMode: true, iconOnly: React__default["default"].createElement(ArrowLeftLineIcon_1, null), state: (disabled && 'disabled') ||
+                        (thisPage === 1 ? 'disabled' : 'default') })),
             simpleMode ? (React__default["default"].createElement(React__default["default"].Fragment, null,
                 React__default["default"].createElement("li", { className: "simple-mode__this" },
                     React__default["default"].createElement(TextLabel, { size: textLabelSizeFilter(size) }, thisPage)),
                 React__default["default"].createElement("li", { className: "simple-mode__dash" },
                     React__default["default"].createElement(TextLabel, { size: textLabelSizeFilter(size) }, "/")),
                 React__default["default"].createElement("li", { className: "simple-mode__total" },
-                    React__default["default"].createElement(TextLabel, { size: textLabelSizeFilter(size) }, totalCount)))) : (pageSetting()),
+                    React__default["default"].createElement(TextLabel, { size: textLabelSizeFilter(size) }, totalPage)))) : (pageSetting()),
             React__default["default"].createElement("li", null,
-                React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-next", onClick: function () { return resolveOnClick('next'); }, isIconMode: true, iconOnly: React__default["default"].createElement(ArrowRightLineIcon_1, null), state: thisPage === totalCount ? 'disabled' : 'default' })))));
+                React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-next", onClick: function () { return resolveOnClick('next'); }, isIconMode: true, iconOnly: React__default["default"].createElement(ArrowRightLineIcon_1, null), state: (disabled && 'disabled') ||
+                        (thisPage === totalPage ? 'disabled' : 'default') })),
+            showLastButton && (React__default["default"].createElement("li", null,
+                React__default["default"].createElement(Button, { type: "ghost", size: buttonSizeFilter(size), id: "pagination-button-last", onClick: function () { return resolveOnClick('last'); }, isIconMode: true, iconOnly: React__default["default"].createElement(LastPageLineIcon_1, null), state: (disabled && 'disabled') ||
+                        (thisPage === totalPage ? 'disabled' : 'default') })))),
+        showPageSizeChanger && (React__default["default"].createElement(Dropdown, { size: "s", menuData: showPageOptionCustom ? showPageOptionCustom : pageSizeData, onChange: resolveOnshowPageSizeChage, id: "dropdown-page-size-change", className: "dropdown-page-size-change" },
+            React__default["default"].createElement(Button, { type: "ghost", size: "m", iconRight: React__default["default"].createElement(ArrowDownLineIcon_1, null) }, selectShowPageSizeData.label && selectShowPageSizeData.label)))));
 };
 
 function Radio(_a) {

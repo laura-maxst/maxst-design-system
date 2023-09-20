@@ -7,7 +7,8 @@ type DropDownMenuProps = {
     iconRight?: JSX.Element | React.ReactNode;
     disabled?: boolean;
     subLabel?: string;
+    onChange: (id: string, label: string) => void;
     onClick: (id: string, label: string) => void;
 };
-declare const DropdownMenu: ({ id, label, size, iconLeft, iconRight, disabled, subLabel, onClick, }: DropDownMenuProps) => JSX.Element;
+declare const DropdownMenu: ({ id, label, size, iconLeft, iconRight, disabled, subLabel, onChange, onClick, }: DropDownMenuProps) => JSX.Element;
 export { DropdownMenu };

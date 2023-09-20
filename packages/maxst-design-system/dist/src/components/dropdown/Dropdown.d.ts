@@ -14,8 +14,8 @@ interface DropdownProps {
     align?: 'left' | 'right' | 'center';
     menuData: DropDownMenuProps[];
     children?: string | any;
-    onClick?: (selectMenuData: object) => void;
-    onChange?: (selectMenuData: object) => void;
+    onClick?: (selectMenuData: DropDownMenuProps) => void;
+    onChange?: (selectMenuData: DropDownMenuProps) => void;
     isFullWidthMenu?: boolean;
     className?: string;
 }

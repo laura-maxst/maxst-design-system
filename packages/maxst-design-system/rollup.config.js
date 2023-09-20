@@ -9,20 +9,44 @@ import sourcemaps from 'rollup-plugin-sourcemaps';
 import babel from '@rollup/plugin-babel';
 import svg from 'rollup-plugin-svg';
 import del from 'rollup-plugin-delete';
+import postcss from 'rollup-plugin-postcss';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
-const external = ['react', 'react-dom'];
+const external = [
+  'react',
+  'react-dom',
+  'src/stories/**',
+  'src/pages/**',
+  '.storybook',
+];
 const config = {
   input: 'src/index.tsx',
+  output: [
+    {
+      sourcemap: true,
+      dir: 'dist',
+      format: 'cjs',
+      exports: 'auto',
+    },
+  ],
   plugins: [
     resolve({ extensions }),
-    babel({ exclude: 'node_modules/**' }),
-    commonjs({ include: 'node_modules/**', exclude: ['src/stories/**'] }),
+    babel({
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
+    }),
+    commonjs({
+      include: 'node_modules/**',
+      exclude: ['src/stories/**', 'src/pages/**'],
+    }),
     typescript({ tsconfig: './tsconfig.json', clean: true }),
+    postcss({
+      extensions: ['.scss'],
+    }),
     svgr(),
     image(),
     url({
-      include: ['src/**/*.tsx', 'src/**/*.ts'],
+      include: ['**/*.png', '**/*.jpg', '**/*.jpeg'],
       limit: Infinity,
       emitFiles: true,
       fileName: '[name][extname]',
@@ -34,13 +58,6 @@ const config = {
     del({ targets: ['dist/*'] }),
     svg(),
   ],
-  output: [
-    {
-      sourcemap: true,
-      dir: 'dist',
-      format: 'cjs',
-    },
-  ],
-  external: ['src/stories/**'],
+  external,
 };
 export default config;

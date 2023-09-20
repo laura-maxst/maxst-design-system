@@ -1,2 +1,2 @@
-declare const _default: import("@storybook/theming/dist/create-c2b2ce6d").c;
+declare const _default: import("@storybook/theming/dist/create-88d00753").c;
 export default _default;

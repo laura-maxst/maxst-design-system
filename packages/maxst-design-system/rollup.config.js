@@ -21,7 +21,7 @@ const external = [
   '.storybook',
 ];
 const config = {
-  input: 'index.tsx',
+  input: 'src/index.tsx',
   output: [
     {
       sourcemap: true,

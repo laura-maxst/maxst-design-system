@@ -17,9 +17,10 @@ const meta: Meta<typeof ButtonGroup> = {
     buttonWidth: {
       description:
         '그룹내의 모든 버튼이 같은 width값으로 고정이 필요할 경우 px, %를 붙여 string으로 작성합니다.',
-      control: {
-        type: null,
-      },
+    },
+    fullWidth: {
+      description:
+        '자식 button들의 width를 100%로 정의해주지만 button의 max-width값 이상 지정할 수 없습니다.',
     },
     direction: {
       description: '기본적으로 horizontal',
@@ -34,22 +35,22 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const PrimaryButtonsGroup: Story = {
+  render: (args) => (
+    <ButtonGroup {...args}>
+      <Button
+        type="primary"
+        size="xl"
+        iconLeft={<PlusLineBoldIcon />}
+        iconRight={<PlusLineBoldIcon />}
+      >
+        primary XL
+      </Button>
+      <Button type="primary" size="l">
+        primary L
+      </Button>
+    </ButtonGroup>
+  ),
   args: {
-    children: (
-      <>
-        <Button
-          type="primary"
-          size="xl"
-          iconLeft={<PlusLineBoldIcon />}
-          iconRight={<PlusLineBoldIcon />}
-        >
-          primary XL
-        </Button>
-        <Button type="primary" size="l">
-          primary L
-        </Button>
-      </>
-    ),
     buttonWidth: '123px',
   },
 };

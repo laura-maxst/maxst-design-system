@@ -125,24 +125,24 @@ export const DropdownWithInput: Story = {
     docs: {
       source: {
         code: `
-        <Dropdown
-          menuData={menuData}
-          onChange={resolveOnChage}
-          onClick={resolveOnClick}
-          id="dropdown-textfield" 
-          isFullWidthMenu={true}
-          className="dropdown-example"
-        >
-          <TextField
-            helperText="helper text"
-            value={labelValue && labelValue}
-            id={idValue && idValue}
-            required={true}
-            placeholder="placeholder"
-            label="label"
-            iconRight={<ArrowDownLineIcon />}
-          />
-        </Dropdown>
+<Dropdown
+  menuData={menuData}
+  onChange={resolveOnChage}
+  onClick={resolveOnClick}
+  id="dropdown-textfield" 
+  isFullWidthMenu={true}
+  className="dropdown-example"
+>
+  <TextField
+    helperText="helper text"
+    value={labelValue && labelValue}
+    id={idValue && idValue}
+    required={true}
+    placeholder="placeholder"
+    label="label"
+    iconRight={<ArrowDownLineIcon />}
+  />
+</Dropdown>
         `,
       },
     },

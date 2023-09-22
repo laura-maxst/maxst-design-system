@@ -606,6 +606,15 @@ input[type='radio'] {
     }
   }
 }
+#anchor--components-breadcrumb--breadcrumb-dropdown {
+  .docs-story {
+    min-height: 200px;
+
+    & > div:first-child {
+      min-height: inherit;
+    }
+  }
+}
 
 .dropdown-box.dropdown-example {
   max-width: 300px;

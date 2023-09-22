@@ -61,7 +61,6 @@ export const CheckboxIcons: Story = {
         checkOnIcon={<StarFillIcon />}
         onClick={onClickIcon}
       />
-
       <CheckboxIcon
         id="checkbox-icon-heart"
         size="l"

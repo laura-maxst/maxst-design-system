@@ -23,7 +23,6 @@ interface BreadcrumItemProps {
   }[];
 }
 interface BreadcrumbProps {
-  menuData: BreadcrumItemProps[];
   moreButton?: boolean;
   thisPage: string;
   homeButton?: {
@@ -31,6 +30,20 @@ interface BreadcrumbProps {
     icon?: React.ReactNode;
     onMoveHome?: () => void;
   };
+  menuData: {
+    id: string;
+    label: string;
+    icon?: React.ReactNode;
+    disabled?: boolean;
+    onMovePage?: () => void;
+    onMoveSubPage?: (targetData: object) => void;
+    subMenu?: {
+      id: string;
+      label: string;
+      icon?: React.ReactNode;
+      disabled?: boolean;
+    }[];
+  }[];
 }
 
 const Breadcrumb = ({

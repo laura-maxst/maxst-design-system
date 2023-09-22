@@ -31,41 +31,41 @@ export const FormLoginExample: Story = {
     docs: {
       source: {
         code: `
-        <Form className="form-login">
-          <InputGroup
-            fullWidth={true}
-            label="Id"
-            helperText="2~10자리 입력가능합니다."
-          >
-            <TextField
-              id="default-textfield-01"
-              placeholder="placeholder"
-              required={true}
-              resetButton={true}
-            />
-          </InputGroup>
-          <InputGroup
-            fullWidth={true}
-            label="Password"
-            helperText="2~10자리 입력가능합니다."
-          >
-            <TextField
-              id="default-textfield-03"
-              placeholder="placeholder"
-              required={true}
-              password={true}
-            />
-          </InputGroup>
-          <Checkbox id="login-checkbox" size="l" label="Save Password" />
-          <ButtonGroup align="right">
-            <Button type="ghost" size="xl">
-              Button
-            </Button>
-            <Button type="primary" size="xl" isActionMode={true}>
-              Button
-            </Button>
-          </ButtonGroup>
-        </Form>
+<Form className="form-login">
+  <InputGroup
+    fullWidth={true}
+    label="Id"
+    helperText="2~10자리 입력가능합니다."
+  >
+    <TextField
+      id="default-textfield-01"
+      placeholder="placeholder"
+      required={true}
+      resetButton={true}
+    />
+  </InputGroup>
+  <InputGroup
+    fullWidth={true}
+    label="Password"
+    helperText="2~10자리 입력가능합니다."
+  >
+    <TextField
+      id="default-textfield-03"
+      placeholder="placeholder"
+      required={true}
+      password={true}
+    />
+  </InputGroup>
+  <Checkbox id="login-checkbox" size="l" label="Save Password" />
+  <ButtonGroup align="right">
+    <Button type="ghost" size="xl">
+      Button
+    </Button>
+    <Button type="primary" size="xl" isActionMode={true}>
+      Button
+    </Button>
+  </ButtonGroup>
+</Form>
         `,
       },
     },

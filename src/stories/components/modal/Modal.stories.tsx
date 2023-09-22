@@ -11,7 +11,7 @@ const meta: Meta<typeof Modal> = {
   argTypes: {
     children: {
       description:
-        'string으로 넘기면 자동으로 <Text type="body" size="m">으로 적용됩니다.그 외의 형태는 컴포넌트 형태로 넘길 수 있습니다. ',
+        'string으로 넘기면 자동으로 Text Component로 적용됩니다.그 외의 형태는 컴포넌트 형태로 넘길 수 있습니다. ',
     },
     titleIcon: {
       description: 'modal header영역에서 title 상단에 위치하는 icon',
@@ -73,14 +73,14 @@ export const BaseModalPrimaryButtonVersion: Story = {
     docs: {
       source: {
         code: `
-    <div className="modal-example">
-    <Button size="l" type="primary" onClick={onOpenModal}>
-      open modal
-    </Button>
-    <Modal {...props} open={isOpen} onClose={onCloseModal}>
-      {props.children}
-    </Modal>
-  </div>
+<div className="modal-example">
+  <Button size="l" type="primary" onClick={onOpenModal}>
+    open modal
+  </Button>
+  <Modal {...props} open={isOpen} onClose={onCloseModal}>
+    {props.children}
+  </Modal>
+</div>
         `,
       },
     },
@@ -102,14 +102,14 @@ export const BaseModalErrorButtonVersion: Story = {
     docs: {
       source: {
         code: `
-    <div className="modal-example">
-    <Button size="l" type="primary" onClick={onOpenModal}>
-      open modal
-    </Button>
-    <Modal {...props} open={isOpen} onClose={onCloseModal}>
-      {props.children}
-    </Modal>
-  </div>
+<div className="modal-example">
+  <Button size="l" type="primary" onClick={onOpenModal}>
+    open modal
+  </Button>
+  <Modal {...props} open={isOpen} onClose={onCloseModal}>
+    {props.children}
+  </Modal>
+</div>
         `,
       },
     },
@@ -129,77 +129,77 @@ export const BaseModalScollbar: Story = {
     docs: {
       source: {
         code: `
-        <div className="modal-example">
-          <Button size="l" type="primary" onClick={onOpenModal}>
-            open modal
-          </Button>
-          <Modal {...props} open={isOpen} onClose={onCloseModal}>
-            <Checkbox id="checkbox01" label="checkbox" size="l" />
-            <Radio id="radio" label="radio" size="l" name="radio" />
-            <InputGroup
-              fullWidth={true}
-              label="Id"
-              helperText="helper text"
-              required={true}
-            >
-              <TextField
-                id="default-textfield-01"
-                placeholder="placeholder"
-                resetButton={true}
-              />
-            </InputGroup>
-            <InputGroup
-              fullWidth={true}
-              label="Password"
-              helperText="helper text"
-              required={true}
-            >
-              <TextField
-                id="default-textfield-01"
-                placeholder="placeholder"
-                resetButton={true}
-              />
-            </InputGroup>
-            <InputGroup fullWidth={true} label="Memo" helperText="helper text">
-              <TextField
-                id="default-textfield-01"
-                placeholder="placeholder"
-                resetButton={true}
-                multiLine={true}
-              />
-            </InputGroup>
-            <InputGroup
-              fullWidth={true}
-              label="Input"
-              helperText="helper text"
-              required={true}
-            >
-              <TextField
-                id="default-textfield-01"
-                placeholder="placeholder"
-                resetButton={true}
-              />
-            </InputGroup>
-            <InputGroup
-              fullWidth={true}
-              label="Input group"
-              helperText="2~10자리 입력가능합니다."
-            >
-              <TextField
-                id="default-textfield-01"
-                placeholder="placeholder"
-                required={true}
-                resetButton={true}
-              />
-              <TextField
-                id="default-textfield-03"
-                placeholder="placeholder"
-                required={true}
-                password={true}
-              />
-            </InputGroup>
-          </Modal>
-        </div>
+<div className="modal-example">
+  <Button size="l" type="primary" onClick={onOpenModal}>
+    open modal
+  </Button>
+  <Modal {...props} open={isOpen} onClose={onCloseModal}>
+    <Checkbox id="checkbox01" label="checkbox" size="l" />
+    <Radio id="radio" label="radio" size="l" name="radio" />
+    <InputGroup
+      fullWidth={true}
+      label="Id"
+      helperText="helper text"
+      required={true}
+    >
+      <TextField
+        id="default-textfield-01"
+        placeholder="placeholder"
+        resetButton={true}
+      />
+    </InputGroup>
+    <InputGroup
+      fullWidth={true}
+      label="Password"
+      helperText="helper text"
+      required={true}
+    >
+      <TextField
+        id="default-textfield-01"
+        placeholder="placeholder"
+        resetButton={true}
+      />
+    </InputGroup>
+    <InputGroup fullWidth={true} label="Memo" helperText="helper text">
+      <TextField
+        id="default-textfield-01"
+        placeholder="placeholder"
+        resetButton={true}
+        multiLine={true}
+      />
+    </InputGroup>
+    <InputGroup
+      fullWidth={true}
+      label="Input"
+      helperText="helper text"
+      required={true}
+    >
+      <TextField
+        id="default-textfield-01"
+        placeholder="placeholder"
+        resetButton={true}
+      />
+    </InputGroup>
+    <InputGroup
+      fullWidth={true}
+      label="Input group"
+      helperText="2~10자리 입력가능합니다."
+    >
+      <TextField
+        id="default-textfield-01"
+        placeholder="placeholder"
+        required={true}
+        resetButton={true}
+      />
+      <TextField
+        id="default-textfield-03"
+        placeholder="placeholder"
+        required={true}
+        password={true}
+      />
+    </InputGroup>
+  </Modal>
+</div>
         `,
       },
     },
@@ -222,14 +222,14 @@ export const BaseModalTitleImage: Story = {
     docs: {
       source: {
         code: `
-    <div className="modal-example">
-    <Button size="l" type="primary" onClick={onOpenModal}>
-      open modal
-    </Button>
-    <Modal {...props} open={isOpen} onClose={onCloseModal}>
-      {props.children}
-    </Modal>
-  </div>
+<div className="modal-example">
+  <Button size="l" type="primary" onClick={onOpenModal}>
+    open modal
+  </Button>
+  <Modal {...props} open={isOpen} onClose={onCloseModal}>
+    {props.children}
+  </Modal>
+</div>
         `,
       },
     },
@@ -251,14 +251,14 @@ export const BaseModalTitleIcon: Story = {
     docs: {
       source: {
         code: `
-    <div className="modal-example">
-    <Button size="l" type="primary" onClick={onOpenModal}>
-      open modal
-    </Button>
-    <Modal {...props} open={isOpen} onClose={onCloseModal}>
-      {props.children}
-    </Modal>
-  </div>
+<div className="modal-example">
+  <Button size="l" type="primary" onClick={onOpenModal}>
+    open modal
+  </Button>
+  <Modal {...props} open={isOpen} onClose={onCloseModal}>
+    {props.children}
+  </Modal>
+</div>
         `,
       },
     },

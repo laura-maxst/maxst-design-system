@@ -23,6 +23,20 @@ export const AlertBasic: Story = {
     type: 'error',
     contents: 'text',
   },
+  parameters: {
+    docs: {
+      source: {
+        code: `      
+<div>
+  <Button type="secondary" size="l" onClick={onOpenSnackbar}>
+    open Alert
+  </Button>
+  <Alert type="error" contents="text" open={isOpen} onClose={onCloseSnackbar} />
+</div>
+        `,
+      },
+    },
+  },
 };
 
 export const AlertDescription: Story = {
@@ -31,6 +45,20 @@ export const AlertDescription: Story = {
     type: 'error',
     title: 'title',
     contents: 'text',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `      
+<div>
+  <Button type="secondary" size="l" onClick={onOpenSnackbar}>
+    open Alert
+  </Button>
+  <Alert type="error" title="title" contents="text" open={isOpen} onClose={onCloseSnackbar} />
+</div>
+        `,
+      },
+    },
   },
 };
 
@@ -44,6 +72,31 @@ export const AlertOptions: Story = {
     actionButtonData: {
       label: 'undo',
       onClickAction: () => console.log('action'),
+    },
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `      
+<div>
+  <Button type="secondary" size="l" onClick={onOpenSnackbar}>
+    open Alert
+  </Button>
+  <Alert 
+    type="error" 
+    title="title" 
+    contents="text" 
+    closeButton={true}
+    open={isOpen} 
+    onClose={onCloseSnackbar} 
+    actionButtonData={{
+      label: 'undo',
+      onClickAction: () => console.log('action'),
+    }}
+  />
+</div>
+        `,
+      },
     },
   },
 };

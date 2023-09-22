@@ -91,16 +91,48 @@ export const PrimaryDefault: Story = {
 
 export const IconButtons: Story = {
   render: () => ButtonGroupBox(IconButtonData),
-};
-
-const PrimaryButtonData = [
-  {
-    type: 'primary',
-    size: 'xl',
-    children: 'primary xl',
-    iconLeft: <PlusLineBoldIcon />,
+  parameters: {
+    docs: {
+      source: {
+        code: `
+<ButtonGroup>
+  <Button
+    type="primary"
+    size="xl"
+    isIconMode={true}
+    iconOnly={<PlusLineBoldIcon />}
+  />
+  <Button
+    type="secondary"
+    size="l"
+    isIconMode={true}
+    iconOnly={<PlusLineBoldIcon />}
+  />
+  <Button
+    type="tertiary"
+    size="m"
+    isIconMode={true}
+    iconOnly={<PlusLineBoldIcon />}
+  />
+  <Button
+    type="error"
+    size="s"
+    isIconMode={true}
+    iconOnly={<PlusLineBoldIcon />}
+  />
+  <Button
+    type="primary"
+    state="disabled"
+    size="xs"
+    isIconMode={true}
+    iconOnly={<PlusLineBoldIcon />}
+  />
+</ButtonGroup>
+        `,
+      },
+    },
   },
-];
+};
 
 const IconButtonData = [
   {
@@ -153,7 +185,12 @@ export const LinkButton: Story = {
 };
 
 export const PrimaryButton: Story = {
-  render: () => ButtonGroupBox(PrimaryButtonData),
+  args: {
+    type: 'primary',
+    size: 'xl',
+    children: 'primary xl',
+    iconLeft: <PlusLineBoldIcon />,
+  },
 };
 
 export const Secondary: Story = {

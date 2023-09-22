@@ -14,9 +14,6 @@ const meta: Meta<typeof List> = {
     listItemData: {
       description:
         'iconRight는 custom이 가능하다. iconRightData로 icon과 event를 설정할 수 있다.\ncheckboxData, labelData, switchData 에 onClick event를 담아 보내서 값을 return 받을 수 있다.\n좌측 요소와 우측 요소는 하나씩만 존재 가능하다.',
-      // control: {
-      //   type: null,
-      // },
     },
     alignTop: {
       description:

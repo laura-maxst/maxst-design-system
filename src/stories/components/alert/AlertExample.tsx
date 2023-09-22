@@ -16,7 +16,7 @@ function AlertExample(args: AlertProps) {
 
   return (
     <div>
-      <Button type="primary" size="l" onClick={onOpenSnackbar}>
+      <Button type="secondary" size="l" onClick={onOpenSnackbar}>
         open Alert
       </Button>
       <Alert {...args} open={isOpen} onClose={onCloseSnackbar} />

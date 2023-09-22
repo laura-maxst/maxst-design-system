@@ -9,8 +9,8 @@ import sourcemaps from 'rollup-plugin-sourcemaps';
 import babel from '@rollup/plugin-babel';
 import svg from 'rollup-plugin-svg';
 import del from 'rollup-plugin-delete';
-import postcss from 'rollup-plugin-postcss';
 import sass from 'rollup-plugin-sass';
+import copy from 'rollup-plugin-copy';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 const external = [
@@ -21,7 +21,7 @@ const external = [
   '.storybook',
 ];
 const config = {
-  input: 'src/index.tsx',
+  input: 'index.tsx',
   output: [
     {
       sourcemap: true,
@@ -41,9 +41,6 @@ const config = {
       exclude: ['src/stories/**', 'src/pages/**'],
     }),
     typescript({ tsconfig: './tsconfig.json', clean: true }),
-    // postcss({
-    //   extensions: ['.scss'],
-    // }),
     sass({
       insert: true,
     }),
@@ -56,6 +53,9 @@ const config = {
       fileName: '[name][extname]',
       destDir: 'dist/assets',
       publicPath: '/assets',
+    }),
+    copy({
+      targets: [{ src: 'public/fonts/*', dest: 'dist/fonts' }],
     }),
     peerDepsExternal(),
     sourcemaps(),

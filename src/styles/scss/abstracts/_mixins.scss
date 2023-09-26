@@ -1,43 +1,46 @@
-// light mode, dark mode 설정을 위한 
+// light mode, dark mode 설정을 위한
 @mixin spread-map($map: ()) {
   @each $key, $value in $map {
-      #{$key}: $value;
+    #{$key}: $value;
   }
 }
 
-//font 관련 
+//font 관련
 @mixin fontScales($scale, $size) {
-  .font-size-#{$scale}{
+  .font-size-#{$scale} {
     font-size: #{$size};
   }
 }
 @mixin fontWeights($key, $value) {
-  .font-weight-#{$key}{
+  .font-weight-#{$key} {
     font-weight: #{$value};
   }
 }
 
 // width
-@mixin max-width($width-size:1200px){
+@mixin max-width($width-size: 1200px) {
   @if $width-size {
-    max-width: #{$width-size} ;
+    max-width: #{$width-size};
   }
 }
 // shadow
-@mixin shadow-level1{
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+@mixin shadow-level1 {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.16);
 }
-@mixin shadow-level2{
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12), 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+@mixin shadow-level2 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 4px 0px rgba(0, 0, 0, 0.16);
 }
-@mixin shadow-level3{
-  box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.12), 0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+@mixin shadow-level3 {
+  box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.12),
+    0px 0px 6px 0px rgba(0, 0, 0, 0.16);
 }
 //scroll
-@mixin scrollY($backgroundColor){
+@mixin scrollY($backgroundColor) {
   overflow-y: auto;
   scrollbar-width: thin;
-  -ms-overflow-style: thin; 
+  -ms-overflow-style: thin;
 
   &::-webkit-scrollbar {
     display: block;
@@ -45,9 +48,29 @@
     height: 10px;
   }
   &::-webkit-scrollbar-thumb {
-      background-color: semantic-color('background', 'ui-middle');
-      border-radius: 0 ;
-      border-right: 4px solid $backgroundColor;
+    background-color: semantic-color('background', 'ui-middle');
+    border-radius: 0;
+    border-right: 4px solid $backgroundColor;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+@mixin scrollX($backgroundColor) {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: thin;
+
+  &::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: semantic-color('background', 'ui-middle');
+    border-radius: 0;
+    border-bottom: 4px solid $backgroundColor;
   }
 
   &::-webkit-scrollbar-track {
@@ -55,37 +78,38 @@
   }
 }
 
-@mixin helper-text-with-icon{
-  .helper-text{
+@mixin helper-text-with-icon {
+  .helper-text {
     display: flex;
-    gap:4px;
-    padding-top:0;
+    gap: 4px;
+    padding-top: 0;
     color: semantic-color('text', 'subtlest');
 
-    .text{
-      width:100%;
+    .text {
+      width: 100%;
     }
-      
-    &.disabled{
+
+    &.disabled {
       color: semantic-color('text', 'disabled');
     }
-    &.error{
+    &.error {
       color: semantic-color('text', 'error');
     }
-    &.success{
+    &.success {
       color: semantic-color('text', 'success');
     }
 
-    .icon-error, .icon-success{
+    .icon-error,
+    .icon-success {
       display: inline-block;
-      width:16px;
-      height:16px;
-      
+      width: 16px;
+      height: 16px;
+
       svg {
-        width:16px;
-        height:16px;
+        width: 16px;
+        height: 16px;
       }
-    } 
+    }
   }
 }
 
@@ -98,45 +122,45 @@
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    word-wrap: break-word; 
+    word-wrap: break-word;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $lineNum;
   }
 }
 
-// 반응형 
+// 반응형
 @mixin media-desktop-l {
-  @media only screen and (min-width: #{$--breakpoint-desktop-l}px){
+  @media only screen and (min-width: #{$--breakpoint-desktop-l}px) {
     @content;
   }
 }
 
 @mixin media-desktop-m {
-  @media only screen and (max-width: #{$--breakpoint-desktop-l}px){
+  @media only screen and (max-width: #{$--breakpoint-desktop-l}px) {
     @content;
   }
 }
 
 @mixin media-tablet-m {
-  @media only screen and (max-width: #{$--breakpoint-tablet-m}px){
+  @media only screen and (max-width: #{$--breakpoint-tablet-m}px) {
     @content;
   }
 }
 
 @mixin media-tablet-s {
-  @media only screen and (max-width: #{$--breakpoint-tablet-s}px){
+  @media only screen and (max-width: #{$--breakpoint-tablet-s}px) {
     @content;
   }
 }
 
 @mixin media-mobile-m {
-  @media only screen and (max-width: #{$--breakpoint-mobile-m}px){
+  @media only screen and (max-width: #{$--breakpoint-mobile-m}px) {
     @content;
   }
 }
 
 @mixin media-mobile-s {
-  @media only screen and (max-width: #{$--breakpoint-mobile-s}){
+  @media only screen and (max-width: #{$--breakpoint-mobile-s}) {
     @content;
   }
 }

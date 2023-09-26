@@ -55,7 +55,7 @@ const config = {
       publicPath: '/assets',
     }),
     copy({
-      targets: [{ src: 'public/fonts/*', dest: 'dist/fonts' }],
+      targets: [{ src: 'src/styles/fonts/*', dest: 'dist/src/styles/fonts' }],
     }),
     peerDepsExternal(),
     sourcemaps(),

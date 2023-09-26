@@ -76,6 +76,18 @@ $theme-map-light: (
   $--palette-mint-100: #bbf4f8,
   $--palette-mint-50: #ddf9fb,
 
+  // bluegray
+  $--palette-bluegray-900: #212631,
+  $--palette-bluegray-800: #293541,
+  $--palette-bluegray-700: #374553,
+  $--palette-bluegray-600: #465563,
+  $--palette-bluegray-500: #657786,
+  $--palette-bluegray-400: #8a98a6,
+  $--palette-bluegray-300: #aab8c2,
+  $--palette-bluegray-200: #c8d0d9,
+  $--palette-bluegray-100: #e1e8ed,
+  $--palette-bluegray-50: #f8f9fd,
+
   // gray
   $--palette-gray-900: #222222,
   $--palette-gray-800: #424242,
@@ -96,10 +108,49 @@ $theme-map-light: (
   $--palette-orange-light: #ffebd0,
   $--palette-green: #00c400,
   $--palette-green-light: #dbf1db,
+
+  // blue
   $--palette-blue: #109eff,
   $--palette-blue-light: #cef1ff,
-  $--palette-purple: #e59bff,
+
+  $--palette-blue-900: #1476c4,
+  $--palette-blue-800: #1681d9,
+  $--palette-blue-700: #138deb,
+  $--palette-blue-600: #109eff,
+  $--palette-blue-500: #49b0fe,
+  $--palette-blue-400: #65bcfe,
+  $--palette-blue-300: #7ec7fe,
+  $--palette-blue-200: #99d2ff,
+  $--palette-blue-100: #c0e3ff,
+  $--palette-blue-50: #e2f2ff,
+
+  // magenta
   $--palette-magenta: #f567ac,
+
+  $--palette-magenta-900: #e12a95,
+  $--palette-magenta-800: #e73d9d,
+  $--palette-magenta-700: #ec53a4,
+  $--palette-magenta-600: #f567ac,
+  $--palette-magenta-500: #f67eb8,
+  $--palette-magenta-400: #f894c5,
+  $--palette-magenta-300: #f9a7cf,
+  $--palette-magenta-200: #fabada,
+  $--palette-magenta-100: #fcd1e6,
+  $--palette-magenta-50: #fee8f3,
+
+  // purple
+  $--palette-purple: #e59bff,
+
+  $--palette-purple-900: #ac76cc,
+  $--palette-purple-800: #c287e0,
+  $--palette-purple-700: #d092f0,
+  $--palette-purple-600: #e59bff,
+  $--palette-purple-500: #e6b2ff,
+  $--palette-purple-400: #e9bcff,
+  $--palette-purple-300: #ecc5ff,
+  $--palette-purple-200: #f3d9ff,
+  $--palette-purple-100: #f6e4ff,
+  $--palette-purple-50: #fbf1ff,
 
   // text color
   $--text-accent: var($--palette-mint-500),
@@ -153,6 +204,18 @@ $theme-map-dark: (
   $--palette-mint-100: #0eadca,
   $--palette-mint-50: #0f9bb6,
 
+  // bluegray
+  $--palette-bluegray-900: #f8f9fd,
+  $--palette-bluegray-800: #eaebec,
+  $--palette-bluegray-700: #cfd1d4,
+  $--palette-bluegray-600: #adb1b9,
+  $--palette-bluegray-500: #90979c,
+  $--palette-bluegray-400: #6b7379,
+  $--palette-bluegray-300: #41474c,
+  $--palette-bluegray-200: #2e363a,
+  $--palette-bluegray-100: #1e2427,
+  $--palette-bluegray-50: #171b1c,
+
   // gray
   $--palette-gray-900: #fdfdfd,
   $--palette-gray-800: #e9e9e9,
@@ -173,10 +236,49 @@ $theme-map-dark: (
   $--palette-orange-light: #4d2e06,
   $--palette-green: #03cd03,
   $--palette-green-light: #073207,
+
+  // blue
   $--palette-blue: #24a6ff,
   $--palette-blue-light: #023245,
-  $--palette-purple: #e394ff,
+
+  $--palette-blue-900: #f8f9fd,
+  $--palette-blue-800: #eaebec,
+  $--palette-blue-700: #cfd1d4,
+  $--palette-blue-600: #24a6ff,
+  $--palette-blue-500: #90979c,
+  $--palette-blue-400: #6b7379,
+  $--palette-blue-300: #41474c,
+  $--palette-blue-200: #2e363a,
+  $--palette-blue-100: #1e2427,
+  $--palette-blue-50: #171b1c,
+
+  // magenta
   $--palette-magenta: #f86fb1,
+
+  $--palette-magenta-900: #f8f9fd,
+  $--palette-magenta-800: #eaebec,
+  $--palette-magenta-700: #cfd1d4,
+  $--palette-magenta-600: #adb1b9,
+  $--palette-magenta-500: #90979c,
+  $--palette-magenta-400: #6b7379,
+  $--palette-magenta-300: #41474c,
+  $--palette-magenta-200: #2e363a,
+  $--palette-magenta-100: #1e2427,
+  $--palette-magenta-50: #171b1c,
+
+  // purple
+  $--palette-purple: #e394ff,
+
+  $--palette-purple-900: #f8f9fd,
+  $--palette-purple-800: #eaebec,
+  $--palette-purple-700: #cfd1d4,
+  $--palette-purple-600: #adb1b9,
+  $--palette-purple-500: #90979c,
+  $--palette-purple-400: #6b7379,
+  $--palette-purple-300: #41474c,
+  $--palette-purple-200: #2e363a,
+  $--palette-purple-100: #1e2427,
+  $--palette-purple-50: #171b1c,
 
   // text color
   $--text-accent: var($--palette-mint-400),

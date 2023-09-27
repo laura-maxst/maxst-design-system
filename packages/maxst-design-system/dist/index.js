@@ -105,7 +105,7 @@ var Spinner = function (_a) {
 
 var Button = function (_a) {
     var id = _a.id, size = _a.size, children = _a.children, type = _a.type, state = _a.state, iconLeft = _a.iconLeft, iconRight = _a.iconRight, isIconMode = _a.isIconMode, iconOnly = _a.iconOnly, isActionMode = _a.isActionMode, loading = _a.loading, buttonWidth = _a.buttonWidth, className = _a.className, props = __rest(_a, ["id", "size", "children", "type", "state", "iconLeft", "iconRight", "isIconMode", "iconOnly", "isActionMode", "loading", "buttonWidth", "className"]);
-    var _b = React$1.useState(''), buttonWidthStyle = _b[0], setButtonWidthStyle = _b[1];
+    var _b = React$1.useState('none'), buttonWidthStyle = _b[0], setButtonWidthStyle = _b[1];
     var onLabelSizeFilter = function () {
         switch (size) {
             case 'xl':
@@ -184,6 +184,12 @@ var Button = function (_a) {
 
 var ButtonGroup = function (_a) {
     var children = _a.children, fullWidth = _a.fullWidth, align = _a.align, direction = _a.direction, buttonWidth = _a.buttonWidth;
+    var _b = React$1.useState('none'), buttonWidthCustom = _b[0], setButtonWidthCustom = _b[1];
+    React$1.useEffect(function () {
+        if (buttonWidth) {
+            setButtonWidthCustom(buttonWidth);
+        }
+    }, [buttonWidth]);
     return (React__default["default"].createElement("div", { className: [
             "button__group",
             fullWidth && 'fullWidth',
@@ -191,7 +197,9 @@ var ButtonGroup = function (_a) {
             direction && direction,
         ].join(' ') }, React__default["default"].Children.map(children, function (child) {
         if (child !== null)
-            return React__default["default"].cloneElement(child, { buttonWidth: buttonWidth });
+            return React__default["default"].cloneElement(child, {
+                buttonWidth: buttonWidthCustom,
+            });
     })));
 };
 

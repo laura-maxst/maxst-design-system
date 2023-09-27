@@ -126,7 +126,9 @@ const Button = ({
         className && className,
       ].join(' ')}
       disabled={state === 'disabled'}
-      style={{ width: `${buttonWidthStyle ? buttonWidthStyle : ''}` }}
+      style={{
+        width: `${buttonWidthStyle ? buttonWidthStyle : 'none'}`,
+      }}
       {...props}
     >
       {loading ? (

@@ -44,7 +44,7 @@ const Button = ({
   className,
   ...props
 }: ButtonProps) => {
-  const [buttonWidthStyle, setButtonWidthStyle] = useState<string>('');
+  const [buttonWidthStyle, setButtonWidthStyle] = useState<string>('none');
 
   const onLabelSizeFilter = () => {
     switch (size) {

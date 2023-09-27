@@ -5,11 +5,9 @@ import { Modal, ModalProps } from '@components/modal';
 function BaseModalExampleType1(props: ModalProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const onOpenModal = () => {
-    console.log('sample open', isOpen);
     setIsOpen(true);
   };
   const onCloseModal = () => {
-    console.log('sample close', isOpen);
     setIsOpen(false);
   };
 

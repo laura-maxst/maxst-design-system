@@ -64,9 +64,12 @@ export const BaseModalPrimaryButtonVersion: Story = {
     children: 'Modal',
     title: 'Title',
     size: 's',
-    buttonPrimary: 'primary',
-    buttonSecondary: 'secondary',
-    buttonGhost: 'ghost',
+    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
+    buttonSecondary: {
+      text: 'secondary',
+      onClick: () => console.log('secondary'),
+    },
+    buttonGhost: { text: 'ghost', onClick: () => console.log('ghost') },
     isCloseButton: true,
   },
   parameters: {
@@ -93,9 +96,12 @@ export const BaseModalErrorButtonVersion: Story = {
     children: 'Modal',
     title: 'Title',
     size: 's',
-    buttonError: 'Error',
-    buttonSecondary: 'secondary',
-    buttonGhost: 'ghost',
+    buttonError: { text: 'Error', onClick: () => console.log('Error') },
+    buttonSecondary: {
+      text: 'secondary',
+      onClick: () => console.log('secondary'),
+    },
+    buttonGhost: { text: 'ghost', onClick: () => console.log('ghost') },
     isCloseButton: true,
   },
   parameters: {
@@ -122,7 +128,7 @@ export const BaseModalScollbar: Story = {
     children: 'Modal',
     title: 'Title',
     size: 'xl',
-    buttonPrimary: 'primary',
+    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
     isCloseButton: true,
   },
   parameters: {
@@ -214,8 +220,8 @@ export const BaseModalTitleImage: Story = {
     titleImage: <img src="./images/img_modal_title.png" alt="" />,
     title: 'Title',
     size: 's',
-    buttonPrimary: 'primary',
-    buttonGhost: 'ghost',
+    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
+    buttonGhost: { text: 'ghost', onClick: () => console.log('ghost') },
     isCloseButton: true,
   },
   parameters: {
@@ -243,8 +249,11 @@ export const BaseModalTitleIcon: Story = {
     titleIcon: <NotificationLineIcon />,
     title: 'Title',
     size: 's',
-    buttonPrimary: 'primary',
-    buttonSecondary: 'secondary',
+    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
+    buttonSecondary: {
+      text: 'secondary',
+      onClick: () => console.log('secondary'),
+    },
     isCloseButton: true,
   },
   parameters: {

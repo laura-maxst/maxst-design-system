@@ -10,10 +10,22 @@ interface ModalProps {
   titleIcon?: JSX.Element | React.ReactNode;
   children?: string | any;
   size?: 's' | 'm' | 'l' | 'xl';
-  buttonPrimary?: string;
-  buttonError?: string;
-  buttonSecondary?: string;
-  buttonGhost?: string;
+  buttonPrimary?: {
+    text: string;
+    onClick: () => void;
+  };
+  buttonError?: {
+    text: string;
+    onClick: () => void;
+  };
+  buttonSecondary?: {
+    text: string;
+    onClick: () => void;
+  };
+  buttonGhost?: {
+    text: string;
+    onClick: () => void;
+  };
   isCloseButton?: boolean;
   open: boolean;
   onClose: () => void;
@@ -88,23 +100,27 @@ const Modal = ({
           <div className="modal-footer">
             <ButtonGroup fullWidth={true}>
               {buttonGhost && (
-                <Button type="ghost" size="l">
-                  {buttonGhost}
+                <Button type="ghost" size="l" onClick={buttonGhost.onClick}>
+                  {buttonGhost.text}
                 </Button>
               )}
               {buttonSecondary && (
-                <Button type="secondary" size="l">
-                  {buttonSecondary}
+                <Button
+                  type="secondary"
+                  size="l"
+                  onClick={buttonSecondary.onClick}
+                >
+                  {buttonSecondary.text}
                 </Button>
               )}
               {buttonPrimary ? (
-                <Button type="primary" size="l">
-                  {buttonPrimary}
+                <Button type="primary" size="l" onClick={buttonPrimary.onClick}>
+                  {buttonPrimary.text}
                 </Button>
               ) : (
                 buttonError && (
-                  <Button type="error" size="l">
-                    {buttonError}
+                  <Button type="error" size="l" onClick={buttonError.onClick}>
+                    {buttonError.text}
                   </Button>
                 )
               )}

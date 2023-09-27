@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface ButtonGropProps {
   children: any;
@@ -15,6 +15,14 @@ const ButtonGroup = ({
   direction,
   buttonWidth,
 }: ButtonGropProps) => {
+  const [buttonWidthCustom, setButtonWidthCustom] = useState<string>('none');
+
+  useEffect(() => {
+    if (buttonWidth) {
+      setButtonWidthCustom(buttonWidth);
+    }
+  }, [buttonWidth]);
+
   return (
     <div
       className={[
@@ -27,7 +35,9 @@ const ButtonGroup = ({
       {/* {children} */}
       {React.Children.map(children, (child) => {
         if (child !== null)
-          return React.cloneElement(child, { buttonWidth: buttonWidth });
+          return React.cloneElement(child, {
+            buttonWidth: buttonWidthCustom,
+          });
       })}
     </div>
   );

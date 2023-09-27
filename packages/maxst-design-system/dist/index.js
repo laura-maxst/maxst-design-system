@@ -172,7 +172,9 @@ var Button = function (_a) {
                 ? 'primary-action'
                 : ''),
             className && className,
-        ].join(' '), disabled: state === 'disabled', style: { width: "".concat(buttonWidthStyle ? buttonWidthStyle : '') } }, props), loading ? (React__default["default"].createElement(Spinner, { color: ['primary', 'secondary', 'error'].includes(type) ? 'white' : 'black' })) : (React__default["default"].createElement(React__default["default"].Fragment, null,
+        ].join(' '), disabled: state === 'disabled', style: {
+            width: "".concat(buttonWidthStyle ? buttonWidthStyle : 'none'),
+        } }, props), loading ? (React__default["default"].createElement(Spinner, { color: ['primary', 'secondary', 'error'].includes(type) ? 'white' : 'black' })) : (React__default["default"].createElement(React__default["default"].Fragment, null,
         iconLeft && iconLeft,
         !isIconMode ? (React__default["default"].createElement(TextLabel, { size: ['text', 'link'].includes(type)
                 ? onTextLabelSizeFilter()

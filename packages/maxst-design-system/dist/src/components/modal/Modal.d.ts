@@ -5,10 +5,22 @@ interface ModalProps {
     titleIcon?: JSX.Element | React.ReactNode;
     children?: string | any;
     size?: 's' | 'm' | 'l' | 'xl';
-    buttonPrimary?: string;
-    buttonError?: string;
-    buttonSecondary?: string;
-    buttonGhost?: string;
+    buttonPrimary?: {
+        text: string;
+        onClick: () => void;
+    };
+    buttonError?: {
+        text: string;
+        onClick: () => void;
+    };
+    buttonSecondary?: {
+        text: string;
+        onClick: () => void;
+    };
+    buttonGhost?: {
+        text: string;
+        onClick: () => void;
+    };
     isCloseButton?: boolean;
     open: boolean;
     onClose: () => void;

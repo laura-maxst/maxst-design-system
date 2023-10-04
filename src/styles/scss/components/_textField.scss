@@ -1,15 +1,16 @@
 @mixin textField-common {
   min-width: 180px;
 
-  & input, & textarea{
+  & input,
+  & textarea {
     display: block;
-    width:100%;
-    height:100%; 
+    width: 100%;
+    height: 100%;
     font-weight: font-weight('regular');
     font-size: font-scale('16');
     color: inherit;
-    
-    &::placeholder{
+
+    &::placeholder {
       line-height: 1.5;
       font-weight: font-weight('regular');
       font-size: font-scale('16');
@@ -26,44 +27,45 @@
     width: 100%;
   }
 }
-// background color 설정 
-@mixin setBackgroundColor ($state){
-  @if($state == 'disabled'){
+// background color 설정
+@mixin setBackgroundColor($state) {
+  @if ($state == 'disabled') {
     color: semantic-color('text', 'disabled');
     background-color: semantic-color('background', 'disabled');
-  }@else{
+  } @else {
     color: semantic-color('text', 'default');
     background-color: semantic-color('background', 'default');
   }
 }
 // border 설정
-@mixin setBorder ($state){
-  @if($state == 'onfocused' or $state == 'typing'){
+@mixin setBorder($state) {
+  @if ($state == 'onfocused' or $state == 'typing') {
     border: 1px solid semantic-color('border', 'accent');
-  }@else if($state == 'error'){
-    border:1px solid semantic-color('border', 'error');
-  }@else if($state == 'success'){
-    border:1px solid semantic-color('border', 'success');
-  }@else if($state == 'disabled'){
-    border:1px solid semantic-color('border', 'disabled');
-  }@else{
-    border:1px solid semantic-color('border', 'default');
+  } @else if($state == 'error') {
+    border: 1px solid semantic-color('border', 'error');
+  } @else if($state == 'success') {
+    border: 1px solid semantic-color('border', 'success');
+  } @else if($state == 'disabled') {
+    border: 1px solid semantic-color('border', 'disabled');
+  } @else {
+    border: 1px solid semantic-color('border', 'default');
   }
 }
 
-$textFieldType : 'text', 'password';
-$textFieldSize : 'l', 's';
-$textFieldState : 'default', 'onfocused', 'typing','completed', 'error', 'success', 'disabled';
+$textFieldType: 'text', 'password';
+$textFieldSize: 'l', 's';
+$textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
+  'success', 'disabled';
 
-@mixin textFieldCase($type, $size, $state){
-  .textfield__#{$type}-#{$size}-#{$state}{
+@mixin textFieldCase($type, $size, $state) {
+  .textfield__#{$type}-#{$size}-#{$state} {
     label {
       display: block;
       width: 100%;
-      margin-bottom:8px;
+      margin-bottom: 8px;
       color: semantic-color('text', 'default');
 
-      .required{
+      .required {
         color: semantic-color('text', 'accent');
       }
     }
@@ -77,76 +79,78 @@ $textFieldState : 'default', 'onfocused', 'typing','completed', 'error', 'succes
       gap: 10px;
       padding: 0 16px;
 
-      @if($size == 'l'){
+      @if ($size == 'l') {
         height: 48px;
-      }@else {
+      } @else {
         height: 36px;
       }
 
-      &:focus, &.onfocused{
-        border-color:semantic-color('border', 'accent');
+      &:focus,
+      &.onfocused {
+        border-color: semantic-color('border', 'accent');
       }
 
-
-      button, svg {
-        width:20px;
-        height:20px;
+      button,
+      svg {
+        width: 20px;
+        height: 20px;
         display: block;
         color: semantic-color('text', 'disabled');
         flex: none;
       }
 
-      & > svg:first-child{
-        @if($state == 'disabled'){
+      & > svg:first-child {
+        @if ($state == 'disabled') {
           color: semantic-color('text', 'disabled');
-        }@else{
+        } @else {
           color: semantic-color('text', 'default');
         }
       }
 
-
       & + .font-body {
         display: flex;
-        gap:4px;
-        margin-top:4px;
+        gap: 4px;
+        margin-top: 4px;
 
-        .text{
-          width:100%;
+        .text {
+          width: 100%;
         }
 
-        @if($state == 'error'){
+        @if ($state == 'error') {
           color: semantic-color('text', 'error');
-        }@else if($state == 'success'){
+        } @else if($state == 'success') {
           color: semantic-color('text', 'success');
-        }
-        @else{
+        } @else {
           color: semantic-color('text', 'subtlest');
         }
-        
-        .icon-success, .icon-success svg {
+
+        .icon-success,
+        .icon-success svg {
           color: semantic-color('text', 'success');
         }
-        .icon-error, .icon-error svg {
+        .icon-error,
+        .icon-error svg {
           color: semantic-color('text', 'error');
         }
 
-        .icon-error, .icon-success{
+        .icon-error,
+        .icon-success {
           display: inline-block;
-          width:16px;
-          height:16px;
-          
+          width: 16px;
+          height: 16px;
+
           svg {
-            width:16px;
-            height:16px;
+            width: 16px;
+            height: 16px;
           }
-        } 
+        }
       }
-      
-      &.multi-line{
+
+      &.multi-line {
         align-items: flex-start;
-        padding:16px;
-        padding-right:0;
-        height:200px;
+        padding: 16px;
+        padding-right: 0;
+        height: 200px;
 
         textarea {
           padding-right: 16px;
@@ -154,9 +158,9 @@ $textFieldState : 'default', 'onfocused', 'typing','completed', 'error', 'succes
         }
       }
     }
-    
-    .textarea__text-langth-check{
-      display: block;    
+
+    .textarea__text-langth-check {
+      display: block;
       width: 100px;
       text-align: right;
     }
@@ -164,51 +168,54 @@ $textFieldState : 'default', 'onfocused', 'typing','completed', 'error', 'succes
 }
 
 @each $type in $textFieldType {
-  @each $size in $textFieldSize{
-    @each $state in $textFieldState{
+  @each $size in $textFieldSize {
+    @each $state in $textFieldState {
       @include textFieldCase($type, $size, $state);
     }
   }
 }
 
-.input__group{
-  width:100%;
+.input__group {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap:4px;
+  gap: 4px;
 
-  .input-box{    
-    padding-top:4px;
+  .input-box {
+    padding-top: 4px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap:8px;
+    gap: 8px;
     flex-wrap: wrap;
-
   }
 
-  & .textfield label{
+  & .textfield label {
     display: none;
   }
 
   &.fullWidth {
-    .textfield {
-      flex-grow: 1;
+    .input-box {
+      flex-wrap: nowrap;
+      & > div {
+        flex-grow: 1;
+        width: 100%;
+      }
     }
   }
 
-  & label{
-    width:100%;
+  & label {
+    width: 100%;
 
-    .required{
+    .required {
       color: semantic-color('text', 'accent');
     }
   }
 
   @include helper-text-with-icon;
-  
+
   @include media-mobile-m {
-    & .textfield{
+    & .textfield {
       width: 100%;
     }
   }

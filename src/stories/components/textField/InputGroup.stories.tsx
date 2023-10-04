@@ -1,6 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from '@storybook/react';
 import { InputGroup, TextField } from '@components/textField';
+import { Dropdown } from '@components/dropdown';
+
+import {
+  ArrowDownLineIcon,
+  CheckLineIcon,
+  ArrowRightLineIcon,
+} from '@maxst-designsystem/icons';
 
 const meta: Meta<typeof InputGroup> = {
   title: 'Components/InputGroup',
@@ -34,6 +41,55 @@ export const InputGroupDefault: Story = {
   },
 };
 
+const menuData = [
+  {
+    id: 'label-0',
+    label: 'label 0',
+    iconLeft: <CheckLineIcon />,
+    iconRight: <ArrowRightLineIcon />,
+    disabled: false,
+    subLabel: 'more',
+  },
+  {
+    id: 'label-1',
+    label: 'label 1',
+    iconLeft: <CheckLineIcon />,
+    iconRight: <ArrowRightLineIcon />,
+    disabled: true,
+    // subLabel: 'more',
+  },
+  {
+    id: 'label-2',
+    label: 'label 2',
+    iconRight: <ArrowRightLineIcon />,
+    disabled: false,
+    subLabel: 'more',
+  },
+  {
+    id: 'label-3',
+    label: 'label 3',
+    iconLeft: <CheckLineIcon />,
+    disabled: false,
+    subLabel: 'more',
+  },
+  {
+    id: 'label-4',
+    label: 'label 4',
+    iconLeft: <CheckLineIcon />,
+    iconRight: <ArrowRightLineIcon />,
+    disabled: false,
+    // subLabel: 'more',
+  },
+];
+
+const onClickMenu = (data: any) => {
+  console.log('click data', data);
+};
+
+const onChangeMenu = (data: any) => {
+  console.log('change data', data);
+};
+
 export const InputGroupFullWidth: Story = {
   args: {
     id: 'full-field',
@@ -41,7 +97,19 @@ export const InputGroupFullWidth: Story = {
     fullWidth: true,
     children: (
       <>
-        <TextField id="full-field01" placeholder="one" />
+        <Dropdown
+          menuData={menuData}
+          onChange={onChangeMenu}
+          onClick={onClickMenu}
+          id="phone-01"
+        >
+          <TextField
+            id=""
+            required={true}
+            placeholder="placeholder"
+            iconRight={<ArrowDownLineIcon />}
+          />
+        </Dropdown>
         <TextField id="full-field02" placeholder="two" />
         <TextField id="full-field03" placeholder="three" />
       </>

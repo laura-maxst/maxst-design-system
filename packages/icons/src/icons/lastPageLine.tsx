@@ -10,14 +10,14 @@ const LastPageLineIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M16.6986 11L15.0016 12.6971L26.1531 23.8485L15.0016 35L16.6986 36.6971L29.5472 23.8485L16.6986 11Z"
         fill="currentColor"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M35.9992 37.4L35.9992 11L33.5992 11L33.5992 37.4L35.9992 37.4Z"
         fill="currentColor"
       />

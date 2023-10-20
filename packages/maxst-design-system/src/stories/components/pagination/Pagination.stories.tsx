@@ -14,7 +14,7 @@ const meta: Meta<typeof Pagination> = {
       description:
         '한 페이지당 보여줄 item 갯수를 수정할 dropdown을 보여주는 옵션. 기본적으로 10, 20, 50. 100이지만 showPageOptionCustom 옵션을 사용해서 custom 가능합니다.',
     },
-    onshowPageSizeChage: {
+    onshowPageSizeChange: {
       description: '한 페이지당 보여줄 item 갯수 변경 이벤트',
     },
     showPageOptionCustom: {
@@ -26,7 +26,11 @@ const meta: Meta<typeof Pagination> = {
 export default meta;
 type Story = StoryObj<typeof Pagination>;
 
-const onshowPageSizeChage = (data: DropDownMenuProps) => {
+const onClick = (thisPage: number) => {
+  console.log(thisPage);
+};
+
+const onshowPageSizeChange = (data: DropDownMenuProps) => {
   console.log(data);
 };
 
@@ -58,7 +62,97 @@ export const PaginationDefault: Story = {
   args: {
     totalPage: 20,
     size: 'l',
-    onshowPageSizeChage: onshowPageSizeChage,
+    onClick: onClick,
+    onshowPageSizeChange: onshowPageSizeChange,
+  },
+};
+
+export const PaginationMediumSize: Story = {
+  render: (args) => (
+    <div className="pagination-box">
+      <Pagination {...args} />
+    </div>
+  ),
+  args: {
+    totalPage: 20,
+    size: 'm',
+    onClick: onClick,
+    onshowPageSizeChange: onshowPageSizeChange,
+  },
+};
+
+export const PaginationSmallSize: Story = {
+  render: (args) => (
+    <div className="pagination-box">
+      <Pagination {...args} />
+    </div>
+  ),
+  args: {
+    totalPage: 20,
+    size: 's',
+    onClick: onClick,
+    onshowPageSizeChange: onshowPageSizeChange,
+  },
+};
+
+export const PaginationSimpleMode: Story = {
+  render: (args) => (
+    <div className="pagination-box">
+      <Pagination {...args} />
+    </div>
+  ),
+  args: {
+    totalPage: 20,
+    size: 'l',
+    onClick: onClick,
+    simpleMode: true,
+    onshowPageSizeChange: onshowPageSizeChange,
+  },
+};
+
+export const PaginationSmallWidth: Story = {
+  render: (args) => (
+    <div className="pagination-box">
+      <Pagination {...args} />
+    </div>
+  ),
+  args: {
+    totalPage: 20,
+    size: 'l',
+    onClick: onClick,
+    smallWidth: true,
+    onshowPageSizeChange: onshowPageSizeChange,
+  },
+};
+
+export const PaginationFirstLastButton: Story = {
+  render: (args) => (
+    <div className="pagination-box">
+      <Pagination {...args} />
+    </div>
+  ),
+  args: {
+    totalPage: 20,
+    size: 'l',
+    onClick: onClick,
+    showFirstButton: true,
+    showLastButton: true,
+    onshowPageSizeChange: onshowPageSizeChange,
+    showPageSizeChanger: true,
+  },
+};
+
+export const PaginationPageOptionCustom: Story = {
+  render: (args) => (
+    <div className="pagination-box">
+      <Pagination {...args} />
+    </div>
+  ),
+  args: {
+    totalPage: 20,
+    size: 'l',
+    onClick: onClick,
+    onshowPageSizeChange: onshowPageSizeChange,
     showPageSizeChanger: true,
     showPageOptionCustom: showPageOptionData,
   },

@@ -1,5 +1,5 @@
 import { Text, TextLabel } from '@components/text';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 type DropDownMenuProps = {
   id: string;
@@ -11,6 +11,7 @@ type DropDownMenuProps = {
   subLabel?: string;
   onChange: (id: string, label: string) => void;
   onClick: (id: string, label: string) => void;
+  selected?: boolean;
 };
 
 const DropdownMenu = ({
@@ -23,6 +24,7 @@ const DropdownMenu = ({
   subLabel,
   onChange,
   onClick,
+  selected,
 }: DropDownMenuProps) => {
   const resolveOnClick = ({
     e,
@@ -45,6 +47,7 @@ const DropdownMenu = ({
         'dropdown-box__menu',
         `menu-item-${size ? size : 'l'}`,
         disabled ? 'disabled' : '',
+        selected ? 'selected' : '',
       ].join(' ')}
       id={id}
       onClick={(e) => resolveOnClick({ e, id, label })}

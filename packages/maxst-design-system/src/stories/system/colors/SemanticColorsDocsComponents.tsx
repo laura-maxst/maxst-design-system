@@ -6,10 +6,10 @@ function TextColorsThemePreview() {
   return (
     <div className="semantic-colors__theme-sample__box">
       <div className="light-mode">
-        <Title type="title" size="xl" role={0}>
+        <Title type="title" size="xl" role={1}>
           Title
         </Title>
-        <Title type="title" size="m" role={1}>
+        <Title type="title" size="m" role={2}>
           Subtitle
         </Title>
         <Text type="body" size="m">
@@ -20,10 +20,10 @@ function TextColorsThemePreview() {
         </Text>
       </div>
       <div className="dark-mode">
-        <Title type="title" size="xl" role={0}>
+        <Title type="title" size="xl" role={1}>
           Title
         </Title>
-        <Title type="title" size="m" role={1}>
+        <Title type="title" size="m" role={2}>
           Subtitle
         </Title>
         <Text type="body" size="m">

@@ -87,7 +87,7 @@ const Alert = ({
         {iconSetting()}
         {title ? (
           <div className="alert__text-box">
-            <Title role={3} type="title" size="xs" className="font-title">
+            <Title role={4} type="title" size="xs" className="font-title">
               {title}
             </Title>
             <Text type="body" size="m">

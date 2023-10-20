@@ -70,7 +70,7 @@ const Breadcrumb = ({
               <>
                 <Button
                   state={buttonData.disabled ? 'disabled' : 'default'}
-                  type="text"
+                  type="ghost"
                   size="s"
                   iconLeft={buttonData.icon && buttonData.icon}
                   iconRight={<ArrowUpCircleLineIcon />}
@@ -87,7 +87,7 @@ const Breadcrumb = ({
         ) : (
           <Button
             state={buttonData.disabled ? 'disabled' : 'default'}
-            type="text"
+            type="ghost"
             size="s"
             iconLeft={buttonData.icon && buttonData.icon}
             className={[
@@ -122,20 +122,14 @@ const Breadcrumb = ({
             className={['breadcrumb-home'].join(' ')}
             onClick={homeButton.onMoveHome && homeButton.onMoveHome}
           />
-          <div className="breadcrumb-icon">
-            <ArrowRightLineIcon />
-          </div>
+          <div className="breadcrumb-icon">/</div>
         </>
       )}
       {fullMenuMode &&
         menuData.map((item: any, index) => {
           return (
             <Fragment key={item.id}>
-              {index !== 0 && (
-                <div className="breadcrumb-icon">
-                  <ArrowRightLineIcon />
-                </div>
-              )}
+              {index !== 0 && <div className="breadcrumb-icon">/</div>}
               {DrawButton(item)}
             </Fragment>
           );
@@ -143,9 +137,7 @@ const Breadcrumb = ({
       {!fullMenuMode && (
         <>
           {DrawButton(menuData[0])}
-          <div className="breadcrumb-icon">
-            <ArrowRightLineIcon />
-          </div>
+          <div className="breadcrumb-icon">/</div>
           <Button
             type="ghost"
             size="s"
@@ -154,9 +146,7 @@ const Breadcrumb = ({
             className={['breadcrumb-more-button'].join(' ')}
             onClick={onClickMoreButton}
           />
-          <div className="breadcrumb-icon">
-            <ArrowRightLineIcon />
-          </div>
+          <div className="breadcrumb-icon">/</div>
           {DrawButton(menuData[menuData.length - 1])}
         </>
       )}

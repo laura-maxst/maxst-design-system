@@ -15,117 +15,6 @@ const meta: Meta<typeof SemanticColors> = {
 export default meta;
 type Story = StoryObj<typeof SemanticColors>;
 
-const SemanticTextColorData = [
-  {
-    color: 'text-default',
-  },
-  {
-    color: 'text-default-reverse',
-  },
-  {
-    color: 'text-sub',
-  },
-  {
-    color: 'text-subtlest',
-  },
-  {
-    color: 'text-disabled',
-  },
-  {
-    color: 'text-error',
-  },
-  {
-    color: 'text-error-accent',
-  },
-  {
-    color: 'text-information',
-  },
-  {
-    color: 'text-accent',
-  },
-  {
-    color: 'text-success',
-  },
-  {
-    color: 'text-warning',
-  },
-];
-
-const SemanticBackgroundColor = [
-  {
-    color: 'background-base',
-  },
-  {
-    color: 'background-2nd-base',
-  },
-  {
-    color: 'background-ui-base',
-  },
-  {
-    color: 'background-ui-middle',
-  },
-  {
-    color: 'background-ui-middle-accent',
-  },
-  {
-    color: 'background-overlay',
-  },
-  {
-    color: 'background-overlay-accent',
-  },
-  {
-    color: 'background-primary',
-  },
-  {
-    color: 'background-primary-accent',
-  },
-  {
-    color: 'background-secondary',
-  },
-  {
-    color: 'background-secondary-accent',
-  },
-  {
-    color: 'background-tertiary',
-  },
-  {
-    color: 'background-disabled',
-  },
-  {
-    color: 'background-error',
-  },
-  {
-    color: 'background-error-accent',
-  },
-];
-
-const SemanticBorderColorData = [
-  {
-    color: 'border-default',
-  },
-  {
-    color: 'border-accent',
-  },
-  {
-    color: 'border-disabled',
-  },
-  {
-    color: 'border-error',
-  },
-  {
-    color: 'border-success',
-  },
-];
-
-const SemanticDividerColorData = [
-  {
-    color: 'divider-default',
-  },
-  {
-    color: 'divider-accent',
-  },
-];
-
 const Palettes = (palette: { color: string }[]) => {
   return (
     <div className="color-box-wrap">
@@ -139,10 +28,10 @@ const Palettes = (palette: { color: string }[]) => {
 export const TextColors = {
   render: () => (
     <Container className="text-color-theme">
-      <Title type="title" size="xl" role={0} align="center">
+      <Title type="title" size="xl" role={1} align="center">
         Title
       </Title>
-      <Title type="title" size="m" role={1}>
+      <Title type="title" size="m" role={2}>
         Subtitle
       </Title>
       <Text type="body" size="l">
@@ -175,11 +64,11 @@ export const TextColors = {
 export const BackgroundColors = {
   render: () => (
     <Container className="text-color-theme background-base">
-      <Title type="title" size="xl" role={0} align="center">
+      <Title type="title" size="xl" role={1} align="center">
         Title
       </Title>
       <Container className="background-2nd-base">
-        <Title type="title" size="m" role={1}>
+        <Title type="title" size="m" role={2}>
           Title
         </Title>
         <Container className="background-base">
@@ -218,7 +107,7 @@ export const BackgroundColors = {
 export const BorderColors = {
   render: () => (
     <Container className="text-color-theme">
-      <Title type="title" size="m" role={1}>
+      <Title type="title" size="m" role={2}>
         Title
       </Title>
       <br />
@@ -251,9 +140,3 @@ export const BorderColors = {
     </Container>
   ),
 };
-// export const DividerColors = {
-//   render: () => Palettes(SemanticDividerColorData),
-//   args: {
-//     color: String([{ ...SemanticDividerColorData }]),
-//   },
-// };

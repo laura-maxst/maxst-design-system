@@ -125,28 +125,43 @@ const TextColorTableData = {
       '<p>보성 텍스트, 바로가기, URL 등에 사용하는 텍스트 색상입니다.</p><p>필요에 따라 상태값이 필요한 경우 추가해서 사용합니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-blue',
+        colorToken: 'palette-blue-600',
         colorCode: '#109EFF',
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-blue',
-        colorCode: '#24A6FF',
+        colorToken: 'palette-blue-600',
+        colorCode: '#7EC7FE',
       }),
     ],
     [
-      'color-text-accent',
+      'color-text-primary',
       '<p>문장 내에 강조해야 할 중요 포인트 (ex. *,※,● 등)에 사용합니다.</p><p class="text-error">사용자의 피로도를 줄이기 위해 사용성에 집중해 최소화하여 사용합니다.</p>',
 
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-mint-500',
-        colorCode: '#1DD9E7',
+        colorToken: 'palette-mint-700',
+        colorCode: '#0FCBDD',
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-mint-500',
-        colorCode: '#1DD9E7',
+        colorToken: 'palette-mint-600',
+        colorCode: '#99EEF4',
+      }),
+    ],
+    [
+      'color-text-primary-accent',
+      '<p>중요 포인트로 사용된 컬러를 클릭하거나, 더욱 강조가 필요할 경우 사용합니다.</p>',
+
+      ColorChipArea({
+        mode: 'light',
+        colorToken: 'palette-mint-900',
+        colorCode: '#0F9BB6',
+      }),
+      ColorChipArea({
+        mode: 'dark',
+        colorToken: 'palette-mint-200',
+        colorCode: '#0FBED',
       }),
     ],
     [
@@ -211,8 +226,8 @@ const BackgroundColorTableData = {
       }),
     ],
     [
-      'color-background-ui-base',
-      '<p>UI 구성 항목의 구분에 대한 배경 색상입니다.</p><p>기본 배경 색상에서 특정 컴포넌트를 분리해야 할 때 사용합니다. (ex.Card UI 배경)</p>',
+      'color-background-3rd-base',
+      '<p>세 번째 기본 배경 색상입니다.</p>',
       ColorChipArea({
         mode: 'light',
         colorToken: 'palette-gray-50',
@@ -220,8 +235,8 @@ const BackgroundColorTableData = {
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-gray-100',
-        colorCode: '#272626',
+        colorToken: 'palette-gray-50',
+        colorCode: '#141212',
       }),
     ],
     [
@@ -285,8 +300,8 @@ const BackgroundColorTableData = {
       '<p>background-overlay 색상의 강조 상태를 나타내는 배경 색상입니다. </p><p>background-overlay의 hover/selected/pressed 색상으로 사용할 수 있습니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-gray-50',
-        colorCode: '#FAFAFA',
+        colorToken: 'palette-gray-100',
+        colorCode: '#F5F5F5',
       }),
       ColorChipArea({
         mode: 'dark',
@@ -323,17 +338,31 @@ const BackgroundColorTableData = {
       }),
     ],
     [
+      'color-background-primary-light',
+      '<p>background-primary 색상의 연한 배경 색상입니다.</p>',
+      ColorChipArea({
+        mode: 'light',
+        colorToken: 'palette-mint-50',
+        colorCode: '#DDF9FB',
+      }),
+      ColorChipArea({
+        mode: 'dark',
+        colorToken: 'palette-mint-50',
+        colorCode: '#0F9BB6',
+      }),
+    ],
+    [
       'color-background-secondary',
       '<p>primary를 보조하는 두 번째 기본 배경 색상입니다.</p><p>button-secondary 색상으로 사용할 수 있습니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-gray-700',
-        colorCode: '#606060',
+        colorToken: 'palette-bluegray-500',
+        colorCode: '#657786',
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-gray-700',
-        colorCode: '#D9D9D9',
+        colorToken: 'palette-bluegray-500',
+        colorCode: '#8A98A6',
       }),
     ],
     [
@@ -341,13 +370,13 @@ const BackgroundColorTableData = {
       '<p>background-secondary 색상의 강조 상태를 나타내는 배경 색상입니다.</p><p>background-secondary의 hover/selected/pressed 색상으로 사용할 수 있습니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-gray-800',
-        colorCode: '#424242',
+        colorToken: 'palette-bluegray-600',
+        colorCode: '#465563',
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-gray-800',
-        colorCode: '#E9E9E9',
+        colorToken: 'palette-bluegray-600',
+        colorCode: '#AAB8C2',
       }),
     ],
     [
@@ -453,13 +482,13 @@ const BackgroundColorTableData = {
       '<p>정보를 전달하는 배경 색상입니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-blue',
+        colorToken: 'palette-blue-600',
         colorCode: '#109EFF',
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-blue',
-        colorCode: '#24A6FF',
+        colorToken: 'palette-blue-600',
+        colorCode: '#109EFF',
       }),
     ],
     [
@@ -467,13 +496,13 @@ const BackgroundColorTableData = {
       '<p>정보를 전달하는 연한 배경 색상입니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-blue-light',
-        colorCode: '#CEF1FF',
+        colorToken: 'palette-blue-50',
+        colorCode: '#E2F2FF',
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-blue-light',
-        colorCode: '#023245',
+        colorToken: 'palette-blue-50',
+        colorCode: '#093C65',
       }),
     ],
     [
@@ -593,6 +622,34 @@ const BorderColorTableData = {
         colorCode: '#03CD03',
       }),
     ],
+    [
+      'color-border-primary',
+      '<p>중요 포인트에 사용하는 테두리 색상입니다.</p>',
+      ColorChipArea({
+        mode: 'light',
+        colorToken: 'palette-mint-700',
+        colorCode: '#0FBED7',
+      }),
+      ColorChipArea({
+        mode: 'dark',
+        colorToken: 'palette-mint-600',
+        colorCode: '#73E7F0',
+      }),
+    ],
+    [
+      'color-border-primary-accent',
+      '<p>border-primary 색상의 강조 상태를 나타내는 테두리 색상입니다.</p><p>border-primary의 hover/selected/pressed 색상으로 사용할 수 있습니다.</p>',
+      ColorChipArea({
+        mode: 'light',
+        colorToken: 'palette-mint-900',
+        colorCode: '#0F9BB6',
+      }),
+      ColorChipArea({
+        mode: 'dark',
+        colorToken: 'palette-mint-200',
+        colorCode: '#0FBED7',
+      }),
+    ],
   ],
 };
 
@@ -626,6 +683,20 @@ const DividerColorTableData = {
         mode: 'dark',
         colorToken: 'palette-gray-900',
         colorCode: '#FDFDFD',
+      }),
+    ],
+    [
+      'color-divider-reverse',
+      '<p>divider-default 색상의 대비를 나타내는 라인 색상입니다.</p>',
+      ColorChipArea({
+        mode: 'light',
+        colorToken: 'palette-gray-700',
+        colorCode: '#606060',
+      }),
+      ColorChipArea({
+        mode: 'dark',
+        colorToken: 'palette-gray-300',
+        colorCode: '#4F4F50',
       }),
     ],
   ],

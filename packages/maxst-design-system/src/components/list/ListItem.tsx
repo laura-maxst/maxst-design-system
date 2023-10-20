@@ -65,7 +65,7 @@ const ListItem = ({
           (avatarIcon && drawIcon('avatar', avatarIcon)) ||
           (image && drawIcon('image', image))}
         <div className="mds-list__text-box">
-          <Title role={3} type="title" size="xs">
+          <Title role={4} type="title" size="xs">
             {title}
           </Title>
           <Text type="body" size="m">

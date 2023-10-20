@@ -3168,14 +3168,14 @@ var FileLineLightIcon = function () {
 
 var FirstPageLineIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M34.3022 11L35.9992 12.6971L24.8477 23.8485L35.9992 35L34.3022 36.6971L21.4536 23.8485L34.3022 11Z", fill: "currentColor" }),
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M15.0015 37.4L15.0016 11L17.4016 11L17.4015 37.4L15.0015 37.4Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M34.3022 11L35.9992 12.6971L24.8477 23.8485L35.9992 35L34.3022 36.6971L21.4536 23.8485L34.3022 11Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.0015 37.4L15.0016 11L17.4016 11L17.4015 37.4L15.0015 37.4Z", fill: "currentColor" })));
 };
 
 var FirstPageLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M34.2724 11.4688L36.3937 13.5901L25.4544 24.5294L36.3937 35.4688L34.2724 37.5901L21.2118 24.5294L34.2724 11.4688Z", fill: "currentColor" }),
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M14.4 37.4L14.4 11L17.4 11L17.4 37.4L14.4 37.4Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M34.2724 11.4688L36.3937 13.5901L25.4544 24.5294L36.3937 35.4688L34.2724 37.5901L21.2118 24.5294L34.2724 11.4688Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M14.4 37.4L14.4 11L17.4 11L17.4 37.4L14.4 37.4Z", fill: "currentColor" })));
 };
 
 var FolderLineIcon = function () {
@@ -3285,14 +3285,14 @@ var LanguageFillIcon = function () {
 
 var LastPageLineIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M16.6986 11L15.0016 12.6971L26.1531 23.8485L15.0016 35L16.6986 36.6971L29.5472 23.8485L16.6986 11Z", fill: "currentColor" }),
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M35.9992 37.4L35.9992 11L33.5992 11L33.5992 37.4L35.9992 37.4Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16.6986 11L15.0016 12.6971L26.1531 23.8485L15.0016 35L16.6986 36.6971L29.5472 23.8485L16.6986 11Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M35.9992 37.4L35.9992 11L33.5992 11L33.5992 37.4L35.9992 37.4Z", fill: "currentColor" })));
 };
 
 var LastPageLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M16.5213 11.4688L14.4 13.5901L25.3394 24.5294L14.4 35.4688L16.5213 37.5901L29.582 24.5294L16.5213 11.4688Z", fill: "currentColor" }),
-        React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M36.3938 37.4L36.3938 11L33.3938 11L33.3938 37.4L36.3938 37.4Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16.5213 11.4688L14.4 13.5901L25.3394 24.5294L14.4 35.4688L16.5213 37.5901L29.582 24.5294L16.5213 11.4688Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.3938 37.4L36.3938 11L33.3938 11L33.3938 37.4L36.3938 37.4Z", fill: "currentColor" })));
 };
 
 var ListLineIcon = function () {

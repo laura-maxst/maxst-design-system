@@ -9,6 +9,7 @@ type DropDownMenuProps = {
     subLabel?: string;
     onChange: (id: string, label: string) => void;
     onClick: (id: string, label: string) => void;
+    selected?: boolean;
 };
-declare const DropdownMenu: ({ id, label, size, iconLeft, iconRight, disabled, subLabel, onChange, onClick, }: DropDownMenuProps) => JSX.Element;
+declare const DropdownMenu: ({ id, label, size, iconLeft, iconRight, disabled, subLabel, onChange, onClick, selected, }: DropDownMenuProps) => JSX.Element;
 export { DropdownMenu };

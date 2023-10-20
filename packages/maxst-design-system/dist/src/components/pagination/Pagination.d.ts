@@ -3,19 +3,19 @@ interface PaginationProps {
     smallWidth?: boolean;
     simpleMode?: boolean;
     size: 'l' | 'm' | 's';
+    align?: 'left' | 'right' | 'center';
     totalPage: number;
     defaultPage?: number;
     disabled?: boolean;
     showFirstButton?: boolean;
     showLastButton?: boolean;
     showPageSizeChanger?: boolean;
-    onshowPageSizeChage?: (data: DropDownMenuProps) => void;
+    onshowPageSizeChange?: (data: DropDownMenuProps) => void;
     showPageOptionCustom?: {
         id: string;
         label: string;
     }[];
-    onChange?: () => void;
-    onClick?: () => void;
+    onClick?: (selectIndex: number) => void;
 }
-declare const Pagination: ({ smallWidth, simpleMode, size, totalPage, defaultPage, disabled, showFirstButton, showLastButton, showPageSizeChanger, onshowPageSizeChage, showPageOptionCustom, onChange, onClick, }: PaginationProps) => JSX.Element;
+declare const Pagination: ({ smallWidth, simpleMode, size, align, totalPage, defaultPage, disabled, showFirstButton, showLastButton, showPageSizeChanger, onshowPageSizeChange, showPageOptionCustom, onClick, }: PaginationProps) => JSX.Element;
 export { Pagination };

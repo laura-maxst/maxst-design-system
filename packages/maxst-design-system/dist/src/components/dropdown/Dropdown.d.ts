@@ -14,11 +14,13 @@ interface DropdownProps {
     align?: 'left' | 'right' | 'center';
     menuData: DropDownMenuProps[];
     children?: string | any;
-    onClick?: (selectMenuData: DropDownMenuProps) => void;
-    onChange?: (selectMenuData: DropDownMenuProps) => void;
+    onClick?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
+    onChange?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
     isFullWidthMenu?: boolean;
     className?: string;
+    multiple?: boolean;
+    menuDirection?: 'top' | 'bottom';
 }
-declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, }: DropdownProps) => JSX.Element;
+declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, }: DropdownProps) => JSX.Element;
 export { Dropdown };
 export type { DropDownMenuProps, DropdownProps };

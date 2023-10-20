@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { DropdownMenu } from './Menu';
 
 type DropDownMenuProps = {
@@ -17,10 +17,12 @@ interface DropdownProps {
   align?: 'left' | 'right' | 'center';
   menuData: DropDownMenuProps[];
   children?: string | any;
-  onClick?: (selectMenuData: DropDownMenuProps) => void;
-  onChange?: (selectMenuData: DropDownMenuProps) => void;
+  onClick?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
+  onChange?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
   isFullWidthMenu?: boolean;
   className?: string;
+  multiple?: boolean;
+  menuDirection?: 'top' | 'bottom';
 }
 
 const Dropdown = ({
@@ -33,15 +35,16 @@ const Dropdown = ({
   onChange,
   isFullWidthMenu,
   className,
+  multiple,
+  menuDirection,
 }: DropdownProps) => {
-  const selectMenu = {
-    id: '',
-    label: '',
-  };
+  const dropdownRef = useRef<HTMLInputElement>(null);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [isFullWidthMenuWrap, setIsFullWidthMenuWrap] = useState<boolean>(
     isFullWidthMenu ? isFullWidthMenu : false,
   );
+  const [selectId, setSelectId] = useState<string>('');
+  const [multiSelectData, setMultiSelectData] = useState<any>([]);
 
   const onClickDropdownBase = (e: any, id: string) => {
     if (menuOpen) {
@@ -51,11 +54,42 @@ const Dropdown = ({
     }
   };
 
+  const onSelectDataFilter = (id: string, label: string) => {
+    const selectData = [...multiSelectData, { id: id, label: label }];
+    const filterSelectData = selectData.reduce((acc, current) => {
+      const x = acc.find((item: any, s: any) => item.id === current.id);
+      if (!x) {
+        return acc.concat([current]);
+      } else {
+        return acc.filter((item: any) => item.id !== current.id);
+      }
+    }, []);
+    setMultiSelectData(filterSelectData);
+    return filterSelectData;
+  };
+
+  const onClickMenuSelectedCheck = (id: string) => {
+    if (multiple) {
+      return multiSelectData.filter((item: any) => item.id === id).length === 1
+        ? true
+        : false;
+    } else {
+      return selectId === id ? true : false;
+    }
+  };
+
   const onChangeDropdownMenu = (id: string, label: string) => {
+    if (!multiple) {
+      setSelectId(id);
+    }
     if (!onChange) {
       return;
     } else {
-      onChange({ id: id, label: label });
+      if (multiple) {
+        onChange(onSelectDataFilter(id, label));
+      } else {
+        onChange({ id: id, label: label });
+      }
     }
   };
 
@@ -68,7 +102,18 @@ const Dropdown = ({
     if (!onClick) {
       return;
     } else {
-      onClick({ id: id, label: label });
+      if (multiple) {
+        onClick(onSelectDataFilter(id, label));
+      } else {
+        setSelectId(id);
+        onClick({ id: id, label: label });
+      }
+    }
+  };
+
+  const handleOutside = (e: any) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+      setMenuOpen(false);
     }
   };
 
@@ -82,24 +127,21 @@ const Dropdown = ({
 
   useEffect(() => {
     if (menuOpen) {
-      const thisDropdown = document.getElementById(String(id));
       const thisDropdownMenuWrap = document.getElementById(`${id}-menu-wrap`);
       const thisDropdownBaseWrap = document.getElementById(`${id}__base`);
-      // const isAlignCenter = thisDropdown?.classList.contains('center');
-      // if (thisDropdownMenuWrap && isAlignCenter) {
-      //   const thisWidth = window
-      //     .getComputedStyle(thisDropdownMenuWrap)
-      //     .getPropertyValue('width')
-      //     .split('px')[0];
-      //   const thisWidthHalf = Number(thisWidth) / 2;
-      //   console.log('thisWidth', thisWidth);
-      //   thisDropdownMenuWrap.style.left = `calc(50% - ${thisWidthHalf}px)`;
-      // }
       if (thisDropdownBaseWrap && thisDropdownMenuWrap) {
         if (thisDropdownBaseWrap.getElementsByClassName('has-helperText')[0]) {
-          thisDropdownMenuWrap.style.top = 'calc(100% - 22px)';
+          if (menuDirection === 'top') {
+            thisDropdownMenuWrap.style.bottom = '0';
+          } else {
+            thisDropdownMenuWrap.style.top = 'calc(100% - 22px)';
+          }
         }
+        document.addEventListener('mousedown', handleOutside);
       }
+      return () => {
+        document.removeEventListener('mousedown', handleOutside);
+      };
     }
   }, [menuOpen]);
 
@@ -108,10 +150,14 @@ const Dropdown = ({
       className={[
         'dropdown-box',
         align ? align : 'left',
+        menuDirection ? menuDirection : 'bottom',
         menuOpen ? 'open' : 'close',
         className ? className : '',
+        multiple ? 'multiple' : '',
+        isFullWidthMenuWrap ? 'full-width' : '',
       ].join(' ')}
       id={id}
+      ref={dropdownRef}
     >
       <div
         className="dropdown-box__base"
@@ -140,6 +186,7 @@ const Dropdown = ({
                 disabled={item.disabled}
                 onChange={onChangeDropdownMenu}
                 onClick={onClickDropdownMenu}
+                selected={onClickMenuSelectedCheck(item.id)}
                 key={item.id}
               />
             ))}

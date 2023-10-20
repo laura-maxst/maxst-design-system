@@ -10,7 +10,7 @@ import {
 
 interface textFieldProps {
   id?: string;
-  value?: any;
+  value?: any | React.ReactNode;
   label?: string;
   placeholder?: string;
   required?: boolean;
@@ -23,7 +23,7 @@ interface textFieldProps {
     | 'error'
     | 'success'
     | 'disabled';
-  size?: 's' | 'l';
+  size?: 's' | 'l' | 'auto';
   disabled?: boolean;
   helperText?: string;
   resetButton?: boolean;
@@ -34,7 +34,9 @@ interface textFieldProps {
   iconRight?: React.ReactNode;
   onClick?: (e: any) => void;
   onChange?: (e: any) => void;
+  renderValue?: string | React.ReactNode | JSX.Element | any;
 }
+// const selectMenuComponent: () =>
 
 function TextField({
   id,
@@ -55,6 +57,7 @@ function TextField({
   iconRight,
   onChange,
   onClick,
+  renderValue,
   ...props
 }: textFieldProps) {
   const [resoleValue, setResolveValue] = useState<string>('');
@@ -62,6 +65,7 @@ function TextField({
   const [showResetButton, setShowResetButton] = useState<boolean>(false);
   const [thisType, setThisType] = useState<string>('text');
   const [valueLength, setValueLength] = useState<number>(0);
+  const [isRenderValueMode, setIsRenderValueMode] = useState<boolean>(false);
 
   const onMaxLengthCheck = (valueLength: number) => {
     if (typeof maxLength === 'number') {
@@ -165,6 +169,21 @@ function TextField({
     }
   }, [maxLength, multiLine, value]);
 
+  useEffect(() => {
+    if (renderValue) {
+      if (typeof renderValue === 'string') {
+        setIsRenderValueMode(true);
+      } else {
+        if (renderValue.props.children.length) {
+          setIsRenderValueMode(true);
+        } else {
+          setIsRenderValueMode(false);
+          setResolveValue('');
+        }
+      }
+    }
+  }, [renderValue]);
+
   return (
     <div
       className={[
@@ -172,6 +191,7 @@ function TextField({
           (disabled && 'disabled') || thisState
         }`,
         helperText ? 'has-helperText' : '',
+        isRenderValueMode ? 'render-value-mode' : '',
       ].join(' ')}
     >
       {label && (
@@ -187,6 +207,16 @@ function TextField({
         )}
       >
         {!multiLine && iconLeft && iconLeft}
+        {isRenderValueMode &&
+          (typeof renderValue === 'string' ? (
+            <div className="textfield__render-value-box">
+              <Text type="body" size="l">
+                {renderValue}
+              </Text>
+            </div>
+          ) : (
+            renderValue
+          ))}
         {multiLine ? (
           <textarea
             id={id}
@@ -237,7 +267,6 @@ function TextField({
             )}
           </>
         )}
-
         {!multiLine && iconRight && iconRight}
       </div>
       {(helperText || multiLine) && (

@@ -1,181 +1,194 @@
-.checkbox__group{
+.checkbox__group {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width:100%;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  gap:16px;
+  gap: 16px;
 
-  .checkbox-box{
+  .checkbox-box {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width:100%;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:16px;
-  }
-  
-  .checkbox__all-check__label{
-    width:100%;
+    gap: 16px;
   }
 
-  &.left{
+  .checkbox__all-check__label {
+    width: 100%;
+  }
+
+  &.left {
     justify-content: flex-start;
   }
-  
-  &.right{
+
+  &.right {
     justify-content: flex-end;
 
-    .checkbox-box, .checkbox-label{
+    .checkbox-box,
+    .checkbox-label {
       justify-content: flex-end;
     }
-    
-    & + .helper-text{
+
+    & + .helper-text {
       text-align: right;
     }
   }
 
   &.vertical {
     flex-direction: column;
-    gap:4px;
+    gap: 4px;
 
-    .checkbox-box{
+    .checkbox-box {
       flex-direction: column;
-      gap:12px;
+      gap: 12px;
       width: max-content;
     }
 
-    .checkbox__all-check__label{
-      .checkbox-wrap{
-        margin-left:0;
+    .checkbox__all-check__label {
+      .checkbox-wrap {
+        margin-left: 0;
       }
     }
 
-    &.right{
+    &.right {
       align-items: flex-end;
-      
-      .checkbox-label{
+
+      .checkbox-label {
         justify-content: flex-start;
       }
     }
   }
 
-  &.horizontal{
+  &.horizontal {
     flex-direction: row;
-    gap:4px;
+    gap: 4px;
 
-    .checkbox-box{
+    .checkbox-box {
       flex-direction: row;
-      gap:16px;
+      gap: 16px;
     }
   }
 
   @include helper-text-with-icon;
 }
 
-$checkboxSize: 'l' , 's';
+$checkboxSize: 'l', 's';
 $checkboxState: 'default', 'pressed', 'disabled', 'error';
 
 @mixin stateDisabled {
-  &, &:hover, &:active, &:focus {
-    border-color:semantic-color('border', 'disabled');
-    background-color:semantic-color('background', 'disabled');
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: semantic-color('border', 'disabled');
+    background-color: semantic-color('background', 'disabled');
   }
   & + p {
-    color: semantic-color('text', 'disabled') ;
+    color: semantic-color('text', 'disabled');
   }
 
   &.checked {
-    svg{
+    svg {
       color: semantic-color('text', 'disabled') !important;
     }
-    &, &:hover, &:active, &:focus {
-      background-color:semantic-color('background', 'disabled');
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: semantic-color('background', 'disabled');
     }
   }
 }
 
-@mixin checkboxCase($size, $state){
-  .checkbox__#{$size}--#{$state}{
+@mixin checkboxCase($size, $state) {
+  .checkbox__#{$size}--#{$state} {
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid semantic-color('border', 'default');
+    border: 1px solid semantic-color('border', 'default');
     cursor: pointer;
 
-    svg{
+    svg {
       color: semantic-color('text', 'default-reverse') !important;
     }
 
-    @if($size == 'l'){
-      width:24px;
-      height:24px;
-        
-      svg{
+    @if ($size == 'l') {
+      width: 24px;
+      height: 24px;
+
+      svg {
         width: 18px;
         height: 18px;
       }
-    }@else if($size == 's'){
-      width:18px;
-      height:18px;
-      
-      svg{
+    } @else if($size == 's') {
+      width: 18px;
+      height: 18px;
+
+      svg {
         width: 16px;
         height: 16px;
       }
     }
 
-    &:hover, &:active, &:focus {
-      border-color:semantic-color('border', 'accent');
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: semantic-color('border', 'accent');
     }
 
-    @if($state == 'pressed'){
-      border-color:semantic-color('border', 'accent');
-    }@else if($state == 'disabled'){
+    @if ($state == 'pressed') {
+      border-color: semantic-color('border', 'accent');
+    } @else if($state == 'disabled') {
       @include stateDisabled;
-    }@else if($state == 'error'){
-      border-color:semantic-color('border', 'error');
+    } @else if($state == 'error') {
+      border-color: semantic-color('border', 'error');
 
-      &:hover, &:active, &:focus {
-        border-color:semantic-color('border', 'error-accent');
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: semantic-color('border', 'error-accent');
       }
     }
 
-    &.checked{
-      border:0 none;
-      background-color:semantic-color('background', 'primary');
+    &.checked {
+      border: 0 none;
+      background-color: semantic-color('background', 'primary');
 
-      &:hover, &:active, &:focus {
-        background-color:semantic-color('background', 'primary-accent');
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: semantic-color('background', 'primary-accent');
       }
-      
-      @if($state == 'pressed'){
-        background-color:semantic-color('background', 'primary-accent');
-      }@else if($state == 'disabled'){
+
+      @if ($state == 'pressed') {
+        background-color: semantic-color('background', 'primary-accent');
+      } @else if($state == 'disabled') {
         @include stateDisabled;
-      }@else if($state == 'error'){
-        background-color:semantic-color('background', 'error');
-        
-        &:hover, &:active, &:focus {
-          background-color:semantic-color('background', 'error-accent');
+      } @else if($state == 'error') {
+        background-color: semantic-color('background', 'error');
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: semantic-color('background', 'error-accent');
         }
       }
     }
-    
   }
-
 }
 
-.checkbox-wrap{
+.checkbox-wrap {
   @include helper-text-with-icon;
 
-  .helper-text.font-body{
-    padding-top:4px;
+  .helper-text.font-body {
+    padding-top: 4px;
   }
 }
-.checkbox-label{ 
+.checkbox-label {
   display: flex;
   align-items: flex-start;
   color: semantic-color('text', 'default');
@@ -184,70 +197,71 @@ $checkboxState: 'default', 'pressed', 'disabled', 'error';
   .checkbox {
     margin-right: 8px;
     color: semantic-color('text', 'default');
-    flex:none;
+    flex: none;
 
-    input{
+    input {
       position: absolute;
-      top:0;
-      left:0;
+      top: 0;
+      left: 0;
     }
   }
-    p{
-      word-break: break-all;
+  p {
+    word-break: break-all;
+  }
+}
+
+@mixin checkboxIconCase($size) {
+  .checkbox-icon {
+    svg {
+      color: semantic-color('text', 'default');
     }
-}  
 
-@mixin checkboxIconCase($size){
-.checkbox-icon{
-  svg{
-    color: semantic-color('text', 'default');
-  }
-
-  &.checked{
-    svg{
-      color: semantic-color('text', 'accent');
-    }
-  }
-  &.disabled{
-    svg{
-      color: semantic-color('text', 'disabled') ;
-    }
-  }
-
-  &:hover, &:focus, &:active{
-    background-color: semantic-color('background', 'ui-base');
-  }
-
-  &.checkbox__#{$size} {
-    display: block;
-
-    @if($size == 'l'){
-      width:40px;
-      height:40px;
-      padding:8px;
-
-      svg{
-        width: 24px;
-        height: 24px;
+    &.checked {
+      svg {
+        color: semantic-color('text', 'accent');
       }
-    }@else if($size == 's'){
-      width:32px;
-      height:32px;
-      padding:6px;
+    }
+    &.disabled {
+      svg {
+        color: semantic-color('text', 'disabled');
+      }
+    }
 
-      svg{
-        width: 20px;
-        height: 20px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: semantic-color('background', '2nd-base');
+    }
+
+    &.checkbox__#{$size} {
+      display: block;
+
+      @if ($size == 'l') {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      } @else if($size == 's') {
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
 }
-
-} 
 @each $size in $checkboxSize {
   @include checkboxIconCase($size);
 
-  @each $state in $checkboxState{
+  @each $state in $checkboxState {
     @include checkboxCase($size, $state);
   }
 }

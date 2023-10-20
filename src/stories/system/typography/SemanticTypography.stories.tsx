@@ -12,7 +12,7 @@ type StoryTitle = StoryObj<typeof Title>;
 type StoryText = StoryObj<typeof Text>;
 
 type titleDataType = {
-  role: number;
+  role: 1 | 2 | 3 | 4 | 5 | 6;
   type: 'title';
   size: 'xl' | 'l' | 'm' | 's' | 'xs';
   content: string;
@@ -32,31 +32,31 @@ type textLabelDataType = {
 
 const titleData: titleDataType[] = [
   {
-    role: 0,
+    role: 1,
     type: 'title',
     size: 'xl',
     content: 'font-title-xl',
   },
   {
-    role: 1,
+    role: 2,
     type: 'title',
     size: 'l',
     content: 'font-title-l',
   },
   {
-    role: 2,
+    role: 3,
     type: 'title',
     size: 'm',
     content: 'font-title-m',
   },
   {
-    role: 3,
+    role: 4,
     type: 'title',
     size: 's',
     content: 'font-title-s',
   },
   {
-    role: 4,
+    role: 5,
     type: 'title',
     size: 'xs',
     content: 'font-title-xs',
@@ -108,7 +108,7 @@ const labelData: textLabelDataType[] = [
 
 const Titles = (
   titleData: {
-    role: number;
+    role: 1 | 2 | 3 | 4 | 5 | 6;
     type: 'title';
     size: 'xl' | 'l' | 'm' | 's' | 'xs';
     content: string;

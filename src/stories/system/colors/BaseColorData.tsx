@@ -53,9 +53,6 @@ const palettePrimaryData = [
       color: '#222',
       bgColor: '#43DFEB',
     },
-    // light: '#73E7F0',
-    // dark: '#43DFEB',
-    // fontColor: '#353535',
   },
   {
     color: 'palette-mint-400',
@@ -123,7 +120,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#F8F9FD',
+      bgColor: '#F3F5FE',
     },
   },
   {
@@ -134,7 +131,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#EAEBEC',
+      bgColor: '#DFE7EE',
     },
   },
   {
@@ -145,7 +142,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#CFD1D4',
+      bgColor: '#C8D0D9',
     },
   },
   {
@@ -156,7 +153,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#ADB1B9',
+      bgColor: '#AAB8C2',
     },
   },
   {
@@ -167,7 +164,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#90979C',
+      bgColor: '#8A98A6',
     },
   },
   {
@@ -178,7 +175,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#6B7379',
+      bgColor: '#657786',
     },
   },
   {
@@ -189,7 +186,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#41474C',
+      bgColor: '#465563',
     },
   },
   {
@@ -200,7 +197,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#2E363A',
+      bgColor: '#374553',
     },
   },
   {
@@ -211,7 +208,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#1E2427',
+      bgColor: '#293541',
     },
   },
   {
@@ -222,7 +219,7 @@ const paletteSecondaryData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#171B1C',
+      bgColor: '#212631',
     },
   },
 ];
@@ -309,7 +306,7 @@ const paletteGrayData = [
     color: 'palette-gray-200',
     light: {
       color: '#222',
-      bgColor: '#F0F0F0',
+      bgColor: '#EBEBEB',
     },
     dark: {
       color: '#fff',
@@ -422,6 +419,39 @@ const paletteSubData = [
 
 const paletteBlueData = [
   {
+    color: 'palette-blue-1200',
+    light: {
+      color: '#fff',
+      bgColor: '#093C65',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#E2F2FF',
+    },
+  },
+  {
+    color: 'palette-blue-1100',
+    light: {
+      color: '#fff',
+      bgColor: '#0E5289',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#C0E3FF',
+    },
+  },
+  {
+    color: 'palette-blue-1000',
+    light: {
+      color: '#fff',
+      bgColor: '#1164A7',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#99D2FF',
+    },
+  },
+  {
     color: 'palette-blue-900',
     light: {
       color: '#fff',
@@ -429,7 +459,7 @@ const paletteBlueData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#FDFDFD',
+      bgColor: '#7EC7FE',
     },
   },
   {
@@ -440,7 +470,7 @@ const paletteBlueData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#E9E9E9',
+      bgColor: '#65BCFE',
     },
   },
   {
@@ -450,8 +480,8 @@ const paletteBlueData = [
       bgColor: '#138DEB',
     },
     dark: {
-      color: '#222',
-      bgColor: '#D9D9D9',
+      color: '#fff',
+      bgColor: '#49B0FE',
     },
   },
   {
@@ -461,8 +491,8 @@ const paletteBlueData = [
       bgColor: '#109EFF',
     },
     dark: {
-      color: '#222',
-      bgColor: '#24A6FF',
+      color: '#fff',
+      bgColor: '#109EFF',
     },
   },
   {
@@ -472,8 +502,8 @@ const paletteBlueData = [
       bgColor: '#49B0FE',
     },
     dark: {
-      color: '#222',
-      bgColor: '#A3A3A3',
+      color: '#fff',
+      bgColor: '#138DEB',
     },
   },
   {
@@ -484,7 +514,7 @@ const paletteBlueData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#8E8E8E',
+      bgColor: '#1681D9',
     },
   },
   {
@@ -495,7 +525,7 @@ const paletteBlueData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#4F4F50',
+      bgColor: '#1476C4',
     },
   },
   {
@@ -506,7 +536,7 @@ const paletteBlueData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#343434',
+      bgColor: '#1164A7',
     },
   },
   {
@@ -517,7 +547,7 @@ const paletteBlueData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#272626',
+      bgColor: '#0E5289',
     },
   },
   {
@@ -528,12 +558,45 @@ const paletteBlueData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#141212',
+      bgColor: '#093C65',
     },
   },
 ];
 
 const paletteMagentaData = [
+  {
+    color: 'palette-magenta-1200',
+    light: {
+      color: '#fff',
+      bgColor: '#7C1752',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#FEE8F3',
+    },
+  },
+  {
+    color: 'palette-magenta-1100',
+    light: {
+      color: '#fff',
+      bgColor: '#A71E6E',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#FCD1E6',
+    },
+  },
+  {
+    color: 'palette-magenta-1000',
+    light: {
+      color: '#fff',
+      bgColor: '#C92183',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#FABADA',
+    },
+  },
   {
     color: 'palette-magenta-900',
     light: {
@@ -542,7 +605,7 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#FDFDFD',
+      bgColor: '#F9A7CF',
     },
   },
   {
@@ -553,7 +616,7 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#E9E9E9',
+      bgColor: '#F894C5',
     },
   },
   {
@@ -563,8 +626,8 @@ const paletteMagentaData = [
       bgColor: '#EC53A4',
     },
     dark: {
-      color: '#222',
-      bgColor: '#D9D9D9',
+      color: '#fff',
+      bgColor: '#F67EB8',
     },
   },
   {
@@ -574,8 +637,8 @@ const paletteMagentaData = [
       bgColor: '#F567AC',
     },
     dark: {
-      color: '#222',
-      bgColor: '#C0C0C0',
+      color: '#fff',
+      bgColor: '#F567AC',
     },
   },
   {
@@ -585,8 +648,8 @@ const paletteMagentaData = [
       bgColor: '#F67EB8',
     },
     dark: {
-      color: '#222',
-      bgColor: '#A3A3A3',
+      color: '#fff',
+      bgColor: '#EC53A4',
     },
   },
   {
@@ -597,7 +660,7 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#8E8E8E',
+      bgColor: '#E73D9D',
     },
   },
   {
@@ -608,7 +671,7 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#4F4F50',
+      bgColor: '#E12A95',
     },
   },
   {
@@ -619,7 +682,7 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#343434',
+      bgColor: '#C92183',
     },
   },
   {
@@ -630,7 +693,7 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#272626',
+      bgColor: '#A71E6E',
     },
   },
   {
@@ -641,12 +704,45 @@ const paletteMagentaData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#141212',
+      bgColor: '#7C1752',
     },
   },
 ];
 
 const palettePurpleData = [
+  {
+    color: 'palette-purple-1200',
+    light: {
+      color: '#fff',
+      bgColor: '#764F8C',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#FBF1FF',
+    },
+  },
+  {
+    color: 'palette-purple-1100',
+    light: {
+      color: '#fff',
+      bgColor: '#905FAC',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#F6E4FF',
+    },
+  },
+  {
+    color: 'palette-purple-1000',
+    light: {
+      color: '#fff',
+      bgColor: '#9968B6',
+    },
+    dark: {
+      color: '#222',
+      bgColor: '#F3D9FF',
+    },
+  },
   {
     color: 'palette-purple-900',
     light: {
@@ -655,7 +751,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#FDFDFD',
+      bgColor: '#ECC5FF',
     },
   },
   {
@@ -666,7 +762,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#222',
-      bgColor: '#E9E9E9',
+      bgColor: '#E9BCFF',
     },
   },
   {
@@ -676,8 +772,8 @@ const palettePurpleData = [
       bgColor: '#D092F0',
     },
     dark: {
-      color: '#222',
-      bgColor: '#D9D9D9',
+      color: '#fff',
+      bgColor: '#E6B2FF',
     },
   },
   {
@@ -687,8 +783,8 @@ const palettePurpleData = [
       bgColor: '#E59BFF',
     },
     dark: {
-      color: '#222',
-      bgColor: '#C0C0C0',
+      color: '#fff',
+      bgColor: '#E59BFF',
     },
   },
   {
@@ -698,8 +794,8 @@ const palettePurpleData = [
       bgColor: '#E6B2FF',
     },
     dark: {
-      color: '#222',
-      bgColor: '#A3A3A3',
+      color: '#fff',
+      bgColor: '#D092F0',
     },
   },
   {
@@ -710,7 +806,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#8E8E8E',
+      bgColor: '#C287E0',
     },
   },
   {
@@ -721,7 +817,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#4F4F50',
+      bgColor: '#AC76CC',
     },
   },
   {
@@ -732,7 +828,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#343434',
+      bgColor: '#9968B6',
     },
   },
   {
@@ -743,7 +839,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#272626',
+      bgColor: '#905FAC',
     },
   },
   {
@@ -754,7 +850,7 @@ const palettePurpleData = [
     },
     dark: {
       color: '#fff',
-      bgColor: '#141212',
+      bgColor: '#764F8C',
     },
   },
 ];

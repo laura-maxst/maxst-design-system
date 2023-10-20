@@ -16,7 +16,6 @@
     @if ($type == 'ghost') {
       background-color: semantic-color('background', '2nd-base');
     } @else {
-      background-color: semantic-color('background', 'ui-base');
       background-color: semantic-color('background', '#{$type}-accent');
     }
   } @else {

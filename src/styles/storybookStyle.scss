@@ -53,6 +53,7 @@ input[type='radio'] {
       p {
         text-wrap: nowrap;
         color: inherit;
+        text-align: center;
       }
 
       .color-box {
@@ -270,12 +271,9 @@ input[type='radio'] {
         &.bg-color-palette-gray-700,
         &.bg-color-palette-gray-500,
         &.bg-color-palette-gray-400,
+        &.bg-color-palette-mint-600,
         &.bg-color-palette-mint-500,
-        &.bg-color-palette-blue,
-        &.bg-color-palette-green,
-        &.bg-color-palette-orange,
-        &.bg-color-palette-red,
-        &.bg-color-palette-red-accent {
+        &.bg-color-palette-mint-200 {
           p,
           span {
             color: #222222;
@@ -299,12 +297,13 @@ input[type='radio'] {
     .light {
       .table-color-chip {
         &.bg-color-palette-white,
+        &.bg-color-palette-mint-50,
         &.bg-color-palette-gray-50,
         &.bg-color-palette-gray-100,
         &.bg-color-palette-gray-200,
         &.bg-color-palette-red-light,
         &.bg-color-palette-orange-light,
-        &.bg-color-palette-blue-light,
+        &.bg-color-palette-blue-50,
         &.bg-color-palette-green-light {
           p,
           span {
@@ -315,6 +314,8 @@ input[type='radio'] {
     }
     .dark {
       .table-color-chip {
+        &.bg-color-palette-bluegray-500,
+        &.bg-color-palette-bluegray-600,
         &.bg-color-palette-gray-500,
         &.bg-color-palette-gray-700,
         &.bg-color-palette-gray-800,
@@ -619,9 +620,21 @@ input[type='radio'] {
 #anchor--components-tooltip--tooltip-custom,
 #anchor--components-tooltip--tooltip-with-arrow-and-title,
 #anchor--components-breadcrumb--breadcrumb-default,
-#anchor--components-pagination--pagination-default {
+#anchor--components-dropdown--dropdown-multi-select-text,
+#anchor--components-dropdown--dropdown-multi-select-chip,
+#anchor--components-dropdown--drop-down-with-controls {
   .docs-story {
     min-height: 400px;
+
+    & > div:first-child {
+      min-height: inherit;
+    }
+  }
+}
+#anchor--components-pagination--pagination-page-option-custom,
+#anchor--components-pagination--pagination-first-last-button {
+  .docs-story {
+    min-height: 300px;
 
     & > div:first-child {
       min-height: inherit;
@@ -640,7 +653,6 @@ input[type='radio'] {
 
 .dropdown-box.dropdown-example {
   max-width: 300px;
-  width: fit-content;
   margin: 0 auto;
 }
 
@@ -666,6 +678,7 @@ input[type='radio'] {
 
 #storybook-root {
   height: 100%;
+
   & > .tooltip-wrap {
     display: block;
     width: fit-content;

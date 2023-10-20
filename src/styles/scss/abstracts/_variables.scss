@@ -50,9 +50,9 @@ $--palette-orange-light: --palette-orange-light;
 $--palette-green: --palette-green;
 $--palette-green-light: --palette-green-light;
 
-$--palette-blue: --palette-blue;
-$--palette-blue-light: --palette-blue-light;
-
+$--palette-blue-1200: --palette-blue-1200;
+$--palette-blue-1100: --palette-blue-1100;
+$--palette-blue-1000: --palette-blue-1000;
 $--palette-blue-900: --palette-blue-900;
 $--palette-blue-800: --palette-blue-800;
 $--palette-blue-700: --palette-blue-700;
@@ -64,8 +64,9 @@ $--palette-blue-200: --palette-blue-200;
 $--palette-blue-100: --palette-blue-100;
 $--palette-blue-50: --palette-blue-50;
 
-$--palette-magenta: --palette-magenta;
-
+$--palette-magenta-1200: --palette-magenta-1200;
+$--palette-magenta-1100: --palette-magenta-1100;
+$--palette-magenta-1000: --palette-magenta-1000;
 $--palette-magenta-900: --palette-magenta-900;
 $--palette-magenta-800: --palette-magenta-800;
 $--palette-magenta-700: --palette-magenta-700;
@@ -77,8 +78,9 @@ $--palette-magenta-200: --palette-magenta-200;
 $--palette-magenta-100: --palette-magenta-100;
 $--palette-magenta-50: --palette-magenta-50;
 
-$--palette-purple: --palette-purple;
-
+$--palette-purple-1200: --palette-purple-1200;
+$--palette-purple-1100: --palette-purple-1100;
+$--palette-purple-1000: --palette-purple-1000;
 $--palette-purple-900: --palette-purple-900;
 $--palette-purple-800: --palette-purple-800;
 $--palette-purple-700: --palette-purple-700;
@@ -90,11 +92,12 @@ $--palette-purple-200: --palette-purple-200;
 $--palette-purple-100: --palette-purple-100;
 $--palette-purple-50: --palette-purple-50;
 
-$--text-accent: --text-accent;
+$--text-primary: --text-primary;
+$--text-primary-accent: --text-primary-accent;
 
 $--background-base: --background-base;
 $--background-2nd-base: --background-2nd-base;
-$--background-ui-base: --background-ui-base;
+$--background-3rd-base: --background-3rd-base;
 $--background-ui-middle: --background-ui-middle;
 $--background-ui-middle-accent: --background-ui-middle-accent;
 $--background-overlay: --background-overlay;
@@ -102,6 +105,7 @@ $--background-overlay-reverse: --background-overlay-reverse;
 $--background-overlay-accent: --background-overlay-accent;
 $--background-primary: --background-primary;
 $--background-primary-accent: --background-primary-accent;
+$--background-primary-light: --background-primary-light;
 $--background-secondary: --background-secondary;
 $--background-secondary-accent: --background-secondary-accent;
 $--background-tertiary: --background-tertiary;
@@ -122,9 +126,12 @@ $--border-disabled: --border-disabled;
 $--border-error: --border-error;
 $--border-error-accent: --border-error-accent;
 $--border-success: --border-success;
+$--border-primary: --border-primary;
+$--border-primary-accent: --border-primary-accent;
 
 $--divider-default: --divider-default;
 $--divider-accent: --divider-accent;
+$--divider-reverse: --divider-reverse;
 
 // pc-> tablet-> mobile 순으로 작업하는 기준
 $--breakpoint-desktop-l: 1920; // 1920+
@@ -143,13 +150,14 @@ $--color-text-disabled: --color-text-disabled;
 $--color-text-error: --color-text-error;
 $--color-text-error-accent: --color-text-error-accent;
 $--color-text-information: --color-text-information;
-$--color-text-accent: --color-text-accent;
+$--color-text-primary: --color-text-primary;
+$--color-text-primary-accent: --color-text-primary-accent;
 $--color-text-success: --color-text-success;
 $--color-text-warning: --color-text-warning;
 // semantic background
 $--color-background-base: --color-background-base;
 $--color-background-2nd-base: --color-background-2nd-base;
-$--color-background-ui-base: --color-background-ui-base;
+$--color-background-3rd-base: --color-background-3rd-base;
 $--color-background-ui-middle: --color-background-ui-middle;
 $--color-background-ui-middle-accent: --color-background-ui-middle-accent;
 $--color-background-overlay: --color-background-overlay;
@@ -157,6 +165,7 @@ $--color-background-overlay-reverse: --color-background-overlay-reverse;
 $--color-background-overlay-accent: --color-background-overlay-accent;
 $--color-background-primary: --color-background-primary;
 $--color-background-primary-accent: --color-background-primary-accent;
+$--color-background-primary-light: --color-background-primary-light;
 $--color-background-secondary: --color-background-secondary;
 $--color-background-secondary-accent: --color-background-secondary-accent;
 $--color-background-tertiary: --color-background-tertiary;
@@ -178,9 +187,13 @@ $--color-border-disabled: --color-border-disabled;
 $--color-border-error: --color-border-error;
 $--color-border-error-accent: --color-border-error-accent;
 $--color-border-success: --color-border-success;
+$--color-border-primary: --color-border-primary;
+$--color-border-primary-accent: --color-border-primary-accent;
+
 // semantic divider
 $--color-divider-default: --color-divider-default;
 $--color-divider-accent: --color-divider-accent;
+$--color-divider-reverse: --color-divider-reverse;
 // semantic dimmed
 $--color-dimmed-85: --color-dimmed-85;
 $--color-dimmed-60: --color-dimmed-60;

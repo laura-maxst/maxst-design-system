@@ -80,7 +80,7 @@ const Modal = ({
           <div className="modal-header">
             {titleIcon && titleIcon}
             {titleImage && titleImage}
-            <Title type="title" size="s" role={1}>
+            <Title type="title" size="s" role={2}>
               {title}
             </Title>
           </div>
@@ -106,7 +106,7 @@ const Modal = ({
               )}
               {buttonSecondary && (
                 <Button
-                  type="secondary"
+                  type="tertiary"
                   size="l"
                   onClick={buttonSecondary.onClick}
                 >

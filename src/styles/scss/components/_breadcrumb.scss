@@ -1,39 +1,40 @@
-.mds-breadcrumb{
+.mds-breadcrumb {
   display: flex;
-  gap:4px;
   flex-wrap: wrap;
   align-items: center;
 
   .breadcrumb-icon {
-    width:20px;
-    height:20px;
-
-    svg{
-      width:20px;
-      height:20px;
-      color: semantic-color('text', 'subtlest');
-    }
-  }
-  .breadcrumb-home + .breadcrumb-icon{
-    margin-left:-4px;
-  }
-  .breadcrumb-home{
-    svg{
-      color: semantic-color('text', 'subtlest');
-    }
-  }
-  .default{    
+    height: 20px;
     color: semantic-color('text', 'subtlest');
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: semantic-color('text', 'subtlest');
+    }
+  }
+  .breadcrumb-home + .breadcrumb-icon {
+    // margin-left: -4px;
+  }
+  .breadcrumb-home {
+    svg {
+      color: semantic-color('text', 'subtlest');
+    }
+  }
+  .default {
+    color: semantic-color('text', 'subtlest');
+    svg {
+      color: semantic-color('text', 'subtlest');
+    }
   }
 
-  button:disabled{    
+  button:disabled {
     color: semantic-color('text', 'disabled');
   }
 
-  .breadcrumb-more-button{
-    svg{
+  .breadcrumb-more-button {
+    svg {
       color: semantic-color('text', 'sub');
     }
   }
 }
-

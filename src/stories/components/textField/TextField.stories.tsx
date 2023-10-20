@@ -22,6 +22,10 @@ const meta: Meta<typeof TextField> = {
     iconRight: {
       description: 'textarea에서는 icon이 적용되지 않는다.',
     },
+    renderValue: {
+      description:
+        'dropdown의 다중선택 등 일반적인 value처리가 아닌 경우에 사용됩니다. component 형태로 넘겨줍니다.',
+    },
   },
 };
 

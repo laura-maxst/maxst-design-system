@@ -16,6 +16,7 @@ interface PaginationProps {
   smallWidth?: boolean;
   simpleMode?: boolean;
   size: 'l' | 'm' | 's';
+  align?: 'left' | 'right' | 'center';
   // totalCount: number;
   totalPage: number;
   defaultPage?: number;
@@ -23,13 +24,12 @@ interface PaginationProps {
   showFirstButton?: boolean;
   showLastButton?: boolean;
   showPageSizeChanger?: boolean;
-  onshowPageSizeChage?: (data: DropDownMenuProps) => void;
+  onshowPageSizeChange?: (data: DropDownMenuProps) => void;
   showPageOptionCustom?: {
     id: string;
     label: string;
   }[];
-  onChange?: () => void;
-  onClick?: () => void;
+  onClick?: (selectIndex: number) => void;
 }
 
 const pageSizeData = [
@@ -55,6 +55,7 @@ const Pagination = ({
   smallWidth,
   simpleMode,
   size,
+  align,
   // totalCount,
   totalPage,
   defaultPage,
@@ -62,13 +63,11 @@ const Pagination = ({
   showFirstButton,
   showLastButton,
   showPageSizeChanger,
-  onshowPageSizeChage,
+  onshowPageSizeChange,
   showPageOptionCustom,
-  onChange,
   onClick,
 }: PaginationProps) => {
   const [thisPage, setThisPage] = useState<number>(1);
-  const [showPageSize, setShowPageSize] = useState<number>(10);
   const [selectShowPageSizeData, setSelectShowPageSizeData] = useState<{
     id: string;
     label: string;
@@ -102,24 +101,17 @@ const Pagination = ({
     }
   };
 
-  const resolveOnChange = () => {
-    if (!onChange) {
-      return;
-    }
-    onChange();
-  };
-
-  const resolveOnshowPageSizeChage = (selectMenuData: DropDownMenuProps) => {
+  const resolveOnshowPageSizeChange = (selectMenuData: any) => {
     if (selectMenuData) {
       setSelectShowPageSizeData({
         id: selectMenuData.id,
         label: selectMenuData.label,
       });
     }
-    if (!onshowPageSizeChage) {
+    if (!onshowPageSizeChange) {
       return;
     }
-    onshowPageSizeChage(selectMenuData);
+    onshowPageSizeChange(selectMenuData);
   };
 
   const resolveOnClick = (type: string, index?: number) => {
@@ -141,11 +133,7 @@ const Pagination = ({
     if (!onClick) {
       return;
     }
-    onClick();
-  };
-
-  const onClickMoreButton = () => {
-    console.log('more');
+    index && onClick(index);
   };
 
   const pageNumbers = Array.from({ length: totalPage }, (_, i) => i + 1);
@@ -164,7 +152,6 @@ const Pagination = ({
           id={`pagination-button-more-${type}`}
           iconOnly={<MoreHorizontalLineIcon />}
           isIconMode={true}
-          onClick={() => onClickMoreButton()}
         />
       </li>
     );
@@ -302,6 +289,7 @@ const Pagination = ({
         `pagination-${size}`,
         simpleMode ? 'pagination__simple-mode' : '',
         disabled ? 'disabled' : ' ',
+        align ? align : 'center',
       ].join(' ')}
     >
       <ul>
@@ -315,7 +303,7 @@ const Pagination = ({
               }
               size={buttonSizeFilter(size)}
               id={`pagination-button-first`}
-              onClick={() => resolveOnClick('first')}
+              onClick={() => resolveOnClick('first', 1)}
               isIconMode={true}
               iconOnly={<FirstPageLineIcon />}
             />
@@ -326,7 +314,7 @@ const Pagination = ({
             type="ghost"
             size={buttonSizeFilter(size)}
             id={`pagination-button-prev`}
-            onClick={() => resolveOnClick('prev')}
+            onClick={() => resolveOnClick('prev', thisPage - 1)}
             isIconMode={true}
             iconOnly={<ArrowLeftLineIcon />}
             state={
@@ -357,7 +345,7 @@ const Pagination = ({
             type="ghost"
             size={buttonSizeFilter(size)}
             id={`pagination-button-next`}
-            onClick={() => resolveOnClick('next')}
+            onClick={() => resolveOnClick('next', thisPage + 1)}
             isIconMode={true}
             iconOnly={<ArrowRightLineIcon />}
             state={
@@ -372,7 +360,7 @@ const Pagination = ({
               type="ghost"
               size={buttonSizeFilter(size)}
               id={`pagination-button-last`}
-              onClick={() => resolveOnClick('last')}
+              onClick={() => resolveOnClick('last', totalPage)}
               isIconMode={true}
               iconOnly={<LastPageLineIcon />}
               state={
@@ -387,12 +375,12 @@ const Pagination = ({
         <Dropdown
           size="s"
           menuData={showPageOptionCustom ? showPageOptionCustom : pageSizeData}
-          onChange={resolveOnshowPageSizeChage}
+          onChange={resolveOnshowPageSizeChange}
           id="dropdown-page-size-change"
           className="dropdown-page-size-change"
         >
           <Button type="ghost" size="m" iconRight={<ArrowDownLineIcon />}>
-            {selectShowPageSizeData.label && selectShowPageSizeData.label}
+            {selectShowPageSizeData.label}
           </Button>
         </Dropdown>
       )}

@@ -8,6 +8,7 @@ import {
 
 interface CheckboxPropsType {
   id: string;
+  mode?: 'primary' | 'secondary';
   type?: 'selected' | 'indeterminate';
   state?: 'default' | 'pressed' | 'disabled' | 'error';
   size: 'l' | 's';
@@ -21,6 +22,7 @@ interface CheckboxPropsType {
 function Checkbox({
   id,
   type,
+  mode,
   state,
   size,
   disabled,
@@ -88,7 +90,9 @@ function Checkbox({
           <span
             className={[
               'checkbox',
-              `checkbox__${size}--${(disabled && 'disabled') || thisState}`,
+              `checkbox__${size}--${(disabled && 'disabled') || thisState}__${
+                mode ? mode : 'primary'
+              }`,
               `${thisIsChecked ? 'checked' : ''}`,
             ].join(' ')}
           >

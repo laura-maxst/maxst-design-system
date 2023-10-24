@@ -10,19 +10,16 @@ interface ModalProps {
   titleIcon?: JSX.Element | React.ReactNode;
   children?: string | any;
   size?: 's' | 'm' | 'l' | 'xl';
-  buttonPrimary?: {
+  mainButton: {
+    type: 'primary' | 'secondary' | 'error';
     text: string;
     onClick: () => void;
   };
-  buttonError?: {
+  subButton: {
     text: string;
     onClick: () => void;
   };
-  buttonSecondary?: {
-    text: string;
-    onClick: () => void;
-  };
-  buttonGhost?: {
+  subtlestButton: {
     text: string;
     onClick: () => void;
   };
@@ -37,10 +34,9 @@ const Modal = ({
   titleIcon,
   children,
   size,
-  buttonPrimary,
-  buttonError,
-  buttonSecondary,
-  buttonGhost,
+  mainButton,
+  subButton,
+  subtlestButton,
   isCloseButton,
   open,
   onClose,
@@ -55,10 +51,10 @@ const Modal = ({
   };
 
   useEffect(() => {
-    if (buttonPrimary || buttonError || buttonSecondary || buttonGhost) {
+    if (mainButton || subButton || subtlestButton) {
       setIsFooter(true);
     }
-  }, [buttonPrimary, buttonError, buttonSecondary, buttonGhost]);
+  }, [mainButton, subButton, subtlestButton]);
 
   useEffect(() => {
     if (open) {
@@ -99,30 +95,24 @@ const Modal = ({
         {isFooter && (
           <div className="modal-footer">
             <ButtonGroup fullWidth={true}>
-              {buttonGhost && (
-                <Button type="ghost" size="l" onClick={buttonGhost.onClick}>
-                  {buttonGhost.text}
+              {subtlestButton && (
+                <Button type="ghost" size="l" onClick={subtlestButton.onClick}>
+                  {subtlestButton.text}
                 </Button>
               )}
-              {buttonSecondary && (
+              {subButton && (
+                <Button type="tertiary" size="l" onClick={subButton.onClick}>
+                  {subButton.text}
+                </Button>
+              )}
+              {mainButton && (
                 <Button
-                  type="tertiary"
+                  type={mainButton.type}
                   size="l"
-                  onClick={buttonSecondary.onClick}
+                  onClick={mainButton.onClick}
                 >
-                  {buttonSecondary.text}
+                  {mainButton.text}
                 </Button>
-              )}
-              {buttonPrimary ? (
-                <Button type="primary" size="l" onClick={buttonPrimary.onClick}>
-                  {buttonPrimary.text}
-                </Button>
-              ) : (
-                buttonError && (
-                  <Button type="error" size="l" onClick={buttonError.onClick}>
-                    {buttonError.text}
-                  </Button>
-                )
               )}
             </ButtonGroup>
           </div>

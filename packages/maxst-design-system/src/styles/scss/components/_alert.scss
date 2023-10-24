@@ -118,21 +118,11 @@ $alertType : 'error' , 'warning' , 'information' , 'success';
 
     @if($case == 'alert'){
       .alert__left-box{
-        align-items: center;
+        align-items: flex-start;
       }
     }@else if($case == 'alert-description'){
 
     }
-    
-    // @if($type=='error'){
-
-    // }@else if($type=='warning'){
-
-    // }@else if($type=='information'){
-
-    // }@else if($type=='success'){
-
-    // }
   }
 }
 

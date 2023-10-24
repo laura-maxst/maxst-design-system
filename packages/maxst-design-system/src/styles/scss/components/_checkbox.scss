@@ -78,6 +78,7 @@
 
 $checkboxSize: 'l', 's';
 $checkboxState: 'default', 'pressed', 'disabled', 'error';
+$checkboxMode: 'primary', 'secondary';
 
 @mixin stateDisabled {
   &,
@@ -104,8 +105,8 @@ $checkboxState: 'default', 'pressed', 'disabled', 'error';
   }
 }
 
-@mixin checkboxCase($size, $state) {
-  .checkbox__#{$size}--#{$state} {
+@mixin checkboxCase($size, $state, $mode) {
+  .checkbox__#{$size}--#{$state}__#{$mode} {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,16 +157,29 @@ $checkboxState: 'default', 'pressed', 'disabled', 'error';
 
     &.checked {
       border: 0 none;
-      background-color: semantic-color('background', 'primary');
 
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: semantic-color('background', 'primary-accent');
+      @if ($mode == 'primary') {
+        background-color: semantic-color('background', 'primary');
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: semantic-color('background', 'primary-accent');
+        }
+      } @else if($mode == 'secondary') {
+        background-color: semantic-color('background', 'secondary');
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: semantic-color('background', 'secondary-accent');
+        }
       }
 
       @if ($state == 'pressed') {
-        background-color: semantic-color('background', 'primary-accent');
+        @if ($mode == 'primary') {
+          background-color: semantic-color('background', 'primary-accent');
+        } @else if($mode == 'secondary') {
+          background-color: semantic-color('background', 'secondary-accent');
+        }
       } @else if($state == 'disabled') {
         @include stateDisabled;
       } @else if($state == 'error') {
@@ -190,7 +204,7 @@ $checkboxState: 'default', 'pressed', 'disabled', 'error';
 }
 .checkbox-label {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   color: semantic-color('text', 'default');
   cursor: pointer;
 
@@ -262,6 +276,8 @@ $checkboxState: 'default', 'pressed', 'disabled', 'error';
   @include checkboxIconCase($size);
 
   @each $state in $checkboxState {
-    @include checkboxCase($size, $state);
+    @each $mode in $checkboxMode {
+      @include checkboxCase($size, $state, $mode);
+    }
   }
 }

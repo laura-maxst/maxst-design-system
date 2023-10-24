@@ -161,7 +161,7 @@ const TextColorTableData = {
       ColorChipArea({
         mode: 'dark',
         colorToken: 'palette-mint-200',
-        colorCode: '#0FBED',
+        colorCode: '#0FBED7',
       }),
     ],
     [

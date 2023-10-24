@@ -18,7 +18,7 @@
 }
 
 // width
-@mixin max-width($width-size: 1200px) {
+@mixin max-width($width-size: 1440px) {
   @if $width-size {
     max-width: #{$width-size};
   }

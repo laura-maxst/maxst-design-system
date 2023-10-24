@@ -1,12 +1,13 @@
-.mds-container{
-  width:100%;
+.mds-container {
+  width: 100%;
   @include max-width();
+  margin: 0 auto;
   padding-left: 56px;
   padding-right: 56px;
   box-sizing: border-box;
-  background-color: semantic-color('background','base');
+  background-color: semantic-color('background', 'base');
 
-  &.full{
+  &.full {
     max-width: none;
   }
 

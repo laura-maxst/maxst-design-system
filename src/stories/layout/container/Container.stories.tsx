@@ -13,7 +13,8 @@ const meta: Meta<typeof Container> = {
       },
     },
     full: {
-      description: 'width:100% == true',
+      description:
+        '기본적으로 max-width:1440px로 설정되어 있습니다. 1440px이상에서도 width:100% 설정이 필요할 때 boolean값으로 설정합니다.',
     },
   },
 };

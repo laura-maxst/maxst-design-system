@@ -25,24 +25,20 @@ const meta: Meta<typeof Modal> = {
         type: null,
       },
     },
-    buttonPrimary: {
-      description: 'buttonError와 둘 중 하나만 사용됩니다.',
+    mainButton: {
+      description: `main버튼으로 type을 'primary','secondary', 'error'을 하나를 지정해줘야 합니다.`,
       control: {
         type: null,
       },
     },
-    buttonError: {
-      description: 'buttonPrimary와 둘 중 하나만 사용됩니다.',
+    subButton: {
+      description: 'main button보다 낮은 위계로 tertiary button이 적용됩니다.',
       control: {
         type: null,
       },
     },
-    buttonSecondary: {
-      control: {
-        type: null,
-      },
-    },
-    buttonGhost: {
+    subtlestButton: {
+      description: 'sub button보다 낮은 위계로 ghost button이 적용됩니다.',
       control: {
         type: null,
       },
@@ -64,26 +60,128 @@ export const BaseModalPrimaryButtonVersion: Story = {
     children: 'Modal',
     title: 'Title',
     size: 's',
-    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
-    buttonSecondary: {
-      text: 'secondary',
-      onClick: () => console.log('secondary'),
+    mainButton: {
+      type: 'primary',
+      text: 'main button',
+      onClick: () => console.log('main'),
     },
-    buttonGhost: { text: 'ghost', onClick: () => console.log('ghost') },
+    subButton: {
+      text: 'sub button',
+      onClick: () => console.log('sub'),
+    },
+    subtlestButton: {
+      text: 'subtlest button',
+      onClick: () => console.log('subtlest'),
+    },
     isCloseButton: true,
   },
   parameters: {
     docs: {
       source: {
         code: `
-<div className="modal-example">
-  <Button size="l" type="primary" onClick={onOpenModal}>
-    open modal
-  </Button>
-  <Modal {...props} open={isOpen} onClose={onCloseModal}>
-    {props.children}
-  </Modal>
-</div>
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  setIsOpen(false);
+};
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      mainButton={{
+        onClick: () => {},
+        text: 'main button',
+        type: 'primary'
+      }}
+      onClose={() => {}}
+      size="s"
+      subButton={{
+        onClick: () => {},
+        text: 'sub button'
+      }}
+      subtlestButton={{
+        onClick: () => {},
+        text: 'subtlest button'
+      }}
+      title="Title"
+      open={isOpen} 
+      onClose={onCloseModal}
+    >
+      Modal
+    </Modal>
+  </div>
+)
+        `,
+      },
+    },
+  },
+};
+
+export const BaseModalSecondaryButtonVersion: Story = {
+  render: (args) => <BaseModalExampleType1 {...args} />,
+  args: {
+    children: 'Modal',
+    title: 'Title',
+    size: 's',
+    mainButton: {
+      type: 'secondary',
+      text: 'main button',
+      onClick: () => console.log('main'),
+    },
+    subButton: {
+      text: 'sub button',
+      onClick: () => console.log('sub'),
+    },
+    subtlestButton: {
+      text: 'subtlest button',
+      onClick: () => console.log('subtlest'),
+    },
+    isCloseButton: true,
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  setIsOpen(false);
+};
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      mainButton={{
+        onClick: () => {},
+        text: 'main button',
+        type: 'secondary'
+      }}
+      onClose={() => {}}
+      size="s"
+      subButton={{
+        onClick: () => {},
+        text: 'sub button'
+      }}
+      subtlestButton={{
+        onClick: () => {},
+        text: 'subtlest button'
+      }}
+      title="Title"
+    >
+      Modal
+    </Modal>
+  </div>
+)
         `,
       },
     },
@@ -96,26 +194,62 @@ export const BaseModalErrorButtonVersion: Story = {
     children: 'Modal',
     title: 'Title',
     size: 's',
-    buttonError: { text: 'Error', onClick: () => console.log('Error') },
-    buttonSecondary: {
-      text: 'secondary',
-      onClick: () => console.log('secondary'),
+    mainButton: {
+      type: 'error',
+      text: 'main button',
+      onClick: () => console.log('main'),
     },
-    buttonGhost: { text: 'ghost', onClick: () => console.log('ghost') },
+    subButton: {
+      text: 'sub button',
+      onClick: () => console.log('sub'),
+    },
+    subtlestButton: {
+      text: 'subtlest button',
+      onClick: () => console.log('subtlest'),
+    },
     isCloseButton: true,
   },
   parameters: {
     docs: {
       source: {
         code: `
-<div className="modal-example">
-  <Button size="l" type="primary" onClick={onOpenModal}>
-    open modal
-  </Button>
-  <Modal {...props} open={isOpen} onClose={onCloseModal}>
-    {props.children}
-  </Modal>
-</div>
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  setIsOpen(false);
+};
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      mainButton={{
+        onClick: () => {},
+        text: 'main button',
+        type: 'primary'
+      }}
+      onClose={() => {}}
+      size="s"
+      subButton={{
+        onClick: () => {},
+        text: 'sub button'
+      }}
+      subtlestButton={{
+        onClick: () => {},
+        text: 'subtlest button'
+      }}
+      title="Title"
+      open={isOpen} 
+      onClose={onCloseModal}
+    >
+      Modal
+    </Modal>
+  </div>
+)
         `,
       },
     },
@@ -128,84 +262,112 @@ export const BaseModalScollbar: Story = {
     children: 'Modal',
     title: 'Title',
     size: 'xl',
-    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
+    mainButton: {
+      type: 'secondary',
+      text: 'main button',
+      onClick: () => console.log('main'),
+    },
     isCloseButton: true,
   },
   parameters: {
     docs: {
       source: {
         code: `
-<div className="modal-example">
-  <Button size="l" type="primary" onClick={onOpenModal}>
-    open modal
-  </Button>
-  <Modal {...props} open={isOpen} onClose={onCloseModal}>
-    <Checkbox id="checkbox01" label="checkbox" size="l" />
-    <Radio id="radio" label="radio" size="l" name="radio" />
-    <InputGroup
-      fullWidth={true}
-      label="Id"
-      helperText="helper text"
-      required={true}
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  console.log('sample open', isOpen);
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  console.log('sample close', isOpen);
+  setIsOpen(false);
+};
+
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      mainButton={{
+        onClick: () => {},
+        text: 'main button',
+        type: 'secondary'
+      }}
+      onClose={() => {}}
+      size="xl"
+      title="Title"
+      open={isOpen} 
+      onClose={onCloseModal} 
     >
-      <TextField
-        id="default-textfield-01"
-        placeholder="placeholder"
-        resetButton={true}
-      />
-    </InputGroup>
-    <InputGroup
-      fullWidth={true}
-      label="Password"
-      helperText="helper text"
-      required={true}
-    >
-      <TextField
-        id="default-textfield-01"
-        placeholder="placeholder"
-        resetButton={true}
-      />
-    </InputGroup>
-    <InputGroup fullWidth={true} label="Memo" helperText="helper text">
-      <TextField
-        id="default-textfield-01"
-        placeholder="placeholder"
-        resetButton={true}
-        multiLine={true}
-      />
-    </InputGroup>
-    <InputGroup
-      fullWidth={true}
-      label="Input"
-      helperText="helper text"
-      required={true}
-    >
-      <TextField
-        id="default-textfield-01"
-        placeholder="placeholder"
-        resetButton={true}
-      />
-    </InputGroup>
-    <InputGroup
-      fullWidth={true}
-      label="Input group"
-      helperText="2~10자리 입력가능합니다."
-    >
-      <TextField
-        id="default-textfield-01"
-        placeholder="placeholder"
+      <Checkbox id="checkbox01" label="checkbox" size="l" />
+      <Radio id="radio" label="radio" size="l" name="radio" />
+      <InputGroup
+        fullWidth={true}
+        label="Id"
+        helperText="helper text"
         required={true}
-        resetButton={true}
-      />
-      <TextField
-        id="default-textfield-03"
-        placeholder="placeholder"
+      >
+        <TextField
+          id="default-textfield-01"
+          placeholder="placeholder"
+          resetButton={true}
+        />
+      </InputGroup>
+      <InputGroup
+        fullWidth={true}
+        label="Password"
+        helperText="helper text"
         required={true}
-        password={true}
-      />
-    </InputGroup>
-  </Modal>
-</div>
+      >
+        <TextField
+          id="default-textfield-01"
+          placeholder="placeholder"
+          resetButton={true}
+        />
+      </InputGroup>
+      <InputGroup fullWidth={true} label="Memo" helperText="helper text">
+        <TextField
+          id="default-textfield-01"
+          placeholder="placeholder"
+          resetButton={true}
+          multiLine={true}
+        />
+      </InputGroup>
+      <InputGroup
+        fullWidth={true}
+        label="Input"
+        helperText="helper text"
+        required={true}
+      >
+        <TextField
+          id="default-textfield-01"
+          placeholder="placeholder"
+          resetButton={true}
+        />
+      </InputGroup>
+      <InputGroup
+        fullWidth={true}
+        label="Input group"
+        helperText="2~10자리 입력가능합니다."
+      >
+        <TextField
+          id="default-textfield-01"
+          placeholder="placeholder"
+          required={true}
+          resetButton={true}
+        />
+        <TextField
+          id="default-textfield-03"
+          placeholder="placeholder"
+          required={true}
+          password={true}
+        />
+      </InputGroup>
+    </Modal>
+  </div>
+)
         `,
       },
     },
@@ -220,22 +382,50 @@ export const BaseModalTitleImage: Story = {
     titleImage: <img src="./images/img_modal_title.png" alt="" />,
     title: 'Title',
     size: 's',
-    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
-    buttonGhost: { text: 'ghost', onClick: () => console.log('ghost') },
+    mainButton: {
+      type: 'primary',
+      text: 'main button',
+      onClick: () => console.log('main'),
+    },
+    subButton: { text: 'sub button', onClick: () => console.log('sub') },
     isCloseButton: true,
   },
   parameters: {
     docs: {
       source: {
         code: `
-<div className="modal-example">
-  <Button size="l" type="primary" onClick={onOpenModal}>
-    open modal
-  </Button>
-  <Modal {...props} open={isOpen} onClose={onCloseModal}>
-    {props.children}
-  </Modal>
-</div>
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  setIsOpen(false);
+};
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      mainButton={{
+        onClick: () => {},
+        text: 'main button',
+        type: 'primary'
+      }}
+      onClose={() => {}}
+      size="s"
+      subButton={{
+        onClick: () => {},
+        text: 'sub button'
+      }}
+      title="Title"
+      titleImage={<img alt="" src="./images/img_modal_title.png"/>}
+    >
+      Modal
+    </Modal>
+  </div>
+)
         `,
       },
     },
@@ -249,25 +439,54 @@ export const BaseModalTitleIcon: Story = {
     titleIcon: <NotificationLineIcon />,
     title: 'Title',
     size: 's',
-    buttonPrimary: { text: 'primary', onClick: () => console.log('primary') },
-    buttonSecondary: {
-      text: 'secondary',
-      onClick: () => console.log('secondary'),
+    mainButton: {
+      type: 'primary',
+      text: 'main button',
+      onClick: () => console.log('main'),
+    },
+    subButton: {
+      text: 'sub button',
+      onClick: () => console.log('sub'),
     },
     isCloseButton: true,
   },
+
   parameters: {
     docs: {
       source: {
         code: `
-<div className="modal-example">
-  <Button size="l" type="primary" onClick={onOpenModal}>
-    open modal
-  </Button>
-  <Modal {...props} open={isOpen} onClose={onCloseModal}>
-    {props.children}
-  </Modal>
-</div>
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  setIsOpen(false);
+};
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      mainButton={{
+        onClick: () => {},
+        text: 'main button',
+        type: 'primary'
+      }}
+      onClose={() => {}}
+      size="s"
+      subButton={{
+        onClick: () => {},
+        text: 'sub button'
+      }}
+      title="Title"
+      titleIcon={<NotificationLineIcon />}
+    >
+      Modal
+    </Modal>
+  </div>
+)
         `,
       },
     },

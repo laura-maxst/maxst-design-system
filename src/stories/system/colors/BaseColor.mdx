@@ -15,6 +15,7 @@ import * as BaseColorStories from './BaseColor.stories';
 ## Type
 
 Base Color는 브랜드 경험과 특정 기준으로 정렬된 색상 범위입니다. 기능이 부여하지 않은 기본적인 color를 팔레트로 제공합니다.
+사용 목적/적용 상황에 따라 Base Color를 바탕으로 Semantic Color로 설계하여 활용합니다.
 
 <ul className="docs__gray-box-list">
   <li className="font-body-l">Primary Color</li>
@@ -28,24 +29,25 @@ Base Color는 브랜드 경험과 특정 기준으로 정렬된 색상 범위입
 
 <br />
 
+> 참고. 컬러 활용법은 <a href="/?path=/docs/system-semanticcolors--docs">Semantic Colors menu</a>를 확인 합니다.
+
+<br />
+
 ## Primary color palette
 
-Primary color는 서비스(브랜드)의 정체성을 나타낼 수 있는 요소에 사용되는 메인 컬러입니다. 팔레트는 10단계 (50-900)를 지원하며, 기본 색상은 500입니다.
+Primary color는 서비스(브랜드)의 정체성을 나타낼 수 있는 요소에 사용되는 메인 컬러입니다. 팔레트는 10단계 (50-900)를 지원하며, 기본 색상은 <b>500</b>입니다.
 Mint 컬러의 특성상 눈부심을 유발할 수 있으므로 최소화하여 사용하며, 밝은 컬러와 함께 사용 시 팔레트 내 명도가 낮은 컬러를 활용하여 사용합니다.
 
 <Story of={BaseColorStories.PrimaryPalette} />
-
-> 참고. 컬러 활용법은 2.Color > B.color > B-2.Semantic Color를 확인 합니다.
 
 <br />
 
 ## Secondary color palette
 
--
+Primary color를 보조하는 역할로 사용합니다. 기본 색상은 <b>700</b>입니다. Primary color보단 위계가 낮거나 빈도/갯수가 높은 곳에 활용될 수 있습니다.
+Mint 컬러의 눈부심을 보완하기 위하여 CTA보다 위계가 낮지만, 사용자에게 눈에 띄어야하는 요소들에 활용됩니다.
 
 <Story of={BaseColorStories.SecondaryPalette} />
-
-> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인 합니다.
 
 <br />
 
@@ -67,8 +69,6 @@ Gray color는 무채색 컬러로 적용되는 UI에 따라 구분하여 사용�
   </li>
 </ul>
 
-> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
-
 <br />
 
 ## Sub Color
@@ -78,15 +78,11 @@ Sub Color는 다양한 카테고리 섹션 컬러로 State color 색상을 포�
 
 <Story of={BaseColorStories.SubPalette} />
 
-> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
-
 <br />
 
 ## Blue Color
 
 <Story of={BaseColorStories.BluePalette} />
-
-> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
 
 <br />
 
@@ -94,15 +90,11 @@ Sub Color는 다양한 카테고리 섹션 컬러로 State color 색상을 포�
 
 <Story of={BaseColorStories.MagentaPalette} />
 
-> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
-
 <br />
 
 ## Purple Color
 
 <Story of={BaseColorStories.PurplePalette} />
-
-> 참고. Semantic color는 2.Color > B.color > B-2.Semantic Color를 확인합니다.
 
 <br />
 <br />

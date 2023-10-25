@@ -282,6 +282,8 @@ export { ProgressCircleLineLightIcon } from './icons/progressCircleLineLight';
 export { ProgressCircleFillIcon } from './icons/progressCircleFill';
 
 export { ProgressLineIcon } from './icons/progressLine';
+export { ProgressLineBoldIcon } from './icons/progressLineBold';
+export { ProgressLineLightIcon } from './icons/progressLineLight';
 
 export { RefreshLineIcon } from './icons/refreshLine';
 export { RefreshLineBoldIcon } from './icons/refreshLineBold';

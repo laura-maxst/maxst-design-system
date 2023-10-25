@@ -270,6 +270,9 @@ export { OpenInNewLineIcon } from './icons/openInNewLine';
 export { PlayCircleLineIcon } from './icons/playCircleLine';
 export { PlayCircleFillIcon } from './icons/playCircleFill';
 
+export { PlayLineIcon } from './icons/playLine';
+export { PlayFillIcon } from './icons/playFill';
+
 export { PlusLineIcon } from './icons/plusLine';
 export { PlusLineBoldIcon } from './icons/plusLineBold';
 

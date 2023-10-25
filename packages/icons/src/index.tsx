@@ -126,6 +126,11 @@ export { FileMoveLineBoldIcon } from './icons/fileMoveLineBold';
 export { FileMoveLineLightIcon } from './icons/fileMoveLineLight';
 export { FileMoveFillIcon } from './icons/fileMoveFill';
 
+export { FilePlyLineIcon } from './icons/filePlyLine';
+export { FilePlyLineBoldIcon } from './icons/filePlyLineBold';
+export { FilePlyLineLightIcon } from './icons/filePlyLineLight';
+export { FilePlyFillIcon } from './icons/filePlyFill';
+
 export { FileZipLineIcon } from './icons/fileZipLine';
 export { FileZipLineBoldIcon } from './icons/fileZipLineBold';
 export { FileZipLineLightIcon } from './icons/fileZipLineLight';

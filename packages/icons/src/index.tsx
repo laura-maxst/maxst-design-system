@@ -20,6 +20,7 @@ export { ArrowForwardCircleFillIcon } from './icons/arrowForwardCircleFill';
 
 export { ArrowForwardLineIcon } from './icons/arrowForwardLine';
 export { ArrowForwardLineBoldIcon } from './icons/arrowForwardLineBold';
+export { ArrowForwardLineLightIcon } from './icons/arrowForwardLineLight';
 
 export { ArrowInwardLineIcon } from './icons/arrowInwardLine';
 export { ArrowInwardLineBoldIcon } from './icons/arrowInwardLineBold';

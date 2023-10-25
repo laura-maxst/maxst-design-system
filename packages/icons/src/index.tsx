@@ -187,6 +187,8 @@ export { MyLocationLineLightIcon } from './icons/myLocationLineLight';
 export { MyLocationFillIcon } from './icons/myLocationFill';
 
 export { NotificationLineIcon } from './icons/notificationLine';
+export { NotificationLineBoldIcon } from './icons/notificationLineBold';
+export { NotificationLineLightIcon } from './icons/notificationLineLight';
 export { NotificationFillIcon } from './icons/notificationFill';
 
 export { NotificationOffLineIcon } from './icons/notificationOffLine';

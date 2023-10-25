@@ -46,6 +46,10 @@ export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
 export { ArrowUpwardLineLightIcon } from './icons/arrowUpwardLineLight';
 export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 
+export { ArScanLineIcon } from './icons/arScanLine';
+export { ArScanLineBoldIcon } from './icons/arScanLineBold';
+export { ArScanLineLightIcon } from './icons/arScanLineLight';
+
 export { CheckCircleFillIcon } from './icons/checkCircleFill';
 export { CheckCircleFillBoldIcon } from './icons/checkCircleFillBold';
 export { CheckCircleLineIcon } from './icons/checkCircleLine';

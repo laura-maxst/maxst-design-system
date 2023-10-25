@@ -86,6 +86,11 @@ export { ErrorCircleFillBoldIcon } from './icons/errorCircleFillBold';
 export { ErrorCircleLineIcon } from './icons/errorCircleLine';
 export { ErrorCircleLineBoldIcon } from './icons/errorCircleLineBold';
 
+export { FilterLineIcon } from './icons/filterLine';
+export { FilterLineBoldIcon } from './icons/filterLineBold';
+export { FilterLineLightIcon } from './icons/filterLineLight';
+export { FilterFillIcon } from './icons/filterFill';
+
 export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';

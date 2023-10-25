@@ -2816,14 +2816,18 @@ var ArrowBackwardCircleFillIcon = function () {
 };
 
 var ArrowBackwardLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.8488 11.1515L25.5459 12.8485L14.3944 24L25.5459 35.1515L23.8488 36.8485L11.0003 24L23.8488 11.1515Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.6973 25H12.6973V22.6H36.6973V25Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.6116 9.61159L24 8L8 24L24 40L25.6116 38.3884L12.4893 25.2662H40V22.987H12.2362L25.6116 9.61159Z", fill: "currentColor" })));
+};
+
+var ArrowBackwardLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.8266 8.82661L24 8L8 24L24 40L24.8266 39.1734L10.2377 24.5845H40V23.4155H10.2378L24.8266 8.82661Z", fill: "currentColor" })));
 };
 
 var ArrowBackwardLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M26.0596 13.0607L23.9383 10.9393L10.8776 24L23.9383 37.0606L26.0596 34.9393L16.1202 25H36.999V22H17.1202L26.0596 13.0607Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.9894 9.98944L24 8L8 24L24 40L25.9894 38.0106L13.2293 25.2504H40V22.4369H13.5419L25.9894 9.98944Z", fill: "currentColor" })));
 };
 
 var ArrowDownCircleLineIcon = function () {
@@ -2848,14 +2852,18 @@ var ArrowDownLineBoldIcon = function () {
 };
 
 var ArrowDownwardLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.1515 24.8485L12.8485 23.1515L24 34.3029L35.1515 23.1515L36.8485 24.8485L24 37.697L11.1515 24.8485Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.9997 12L24.9997 36L22.5997 36L22.5997 12L24.9997 12Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.61159 22.3884L8 24L24 40L40 24L38.3884 22.3884L25.2662 35.5107L25.2662 8L22.987 8L22.987 35.7638L9.61159 22.3884Z", fill: "currentColor" })));
+};
+
+var ArrowDownwardLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8.82664 24.1734L8.00003 25L24 41L40 25L39.1734 24.1734L24.5845 38.7623L24.5845 9.00001L23.4155 9.00001L23.4155 38.7622L8.82664 24.1734Z", fill: "currentColor" })));
 };
 
 var ArrowDownwardLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M13.0607 22.9393L10.9393 25.0607L24 38.1213L37.0606 25.0607L34.9393 22.9393L24.9999 32.8788L24.9999 12L21.9999 12L21.9999 31.8786L13.0607 22.9393Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.98944 23.0106L8 25L24 41L40 25L38.0106 23.0106L25.2504 35.7707L25.2504 9L22.4369 9L22.4369 35.4581L9.98944 23.0106Z", fill: "currentColor" })));
 };
 
 var ArrowForwardCircleLineIcon = function () {
@@ -2870,25 +2878,34 @@ var ArrowForwardCircleFillIcon = function () {
 };
 
 var ArrowForwardLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.3884 9.61159L24 8L40 24L24 40L22.3884 38.3884L35.5106 25.2662H8V22.9871H35.7639L22.3884 9.61159Z", fill: "currentColor" })));
+};
+
+var ArrowForwardLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.1735 8.82661L24.0001 8L40 24L24.0001 40L23.1735 39.1734L37.7623 24.5845H8V23.4155H37.7623L23.1735 8.82661Z", fill: "currentColor" })));
+};
+
+var ArrowForwardLineLightIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.1512 11.1515L22.4541 12.8485L33.6056 24L22.4541 35.1515L24.1512 36.8485L36.9997 24L24.1512 11.1515Z", fill: "currentColor" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.3027 25H35.3027V22.6H11.3027V25Z", fill: "currentColor" })));
 };
 
-var ArrowForwardLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M21.9404 13.0607L24.0618 10.9393L37.1224 24L24.0618 37.0606L21.9404 34.9393L31.8798 25H11.001V22H30.8798L21.9404 13.0607Z", fill: "currentColor" })));
+var ArrowInwardLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M14.9655 35.3137L12.6863 35.3137L12.6863 12.6863L35.3137 12.6863L35.3137 14.9655L16.7561 14.9654L36.2091 34.4184L34.5975 36.0299L14.9654 16.3979L14.9655 35.3137Z", fill: "currentColor" })));
 };
 
-var ArrowInwardLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M14.3025 33.8989L16.7025 33.899L16.703 15.3005L35.3015 15.2999L35.3015 12.8999L14.3031 12.9005L14.3025 33.8989Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.1285 33.0735L16.3306 13.2756L14.6335 14.9727L34.4314 34.7706L36.1285 33.0735Z", fill: "currentColor" })));
+var ArrowInwardLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M13.8552 35.3136L12.6862 35.3136L12.6863 12.6863L35.3136 12.6862L35.3136 13.8552L14.6819 13.8553L35.727 34.9004L34.9004 35.727L13.8553 14.6819L13.8552 35.3136Z", fill: "currentColor" })));
 };
 
 var ArrowInwardLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16.8027 33.899L13.8027 33.8989L13.8033 12.6006L35.1016 12.6L35.1017 15.6L18.4559 15.6004L35.929 33.0735L33.8077 35.1948L16.8031 18.1903L16.8027 33.899Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.4998 34.3137L12.6863 34.3137V11.6863L35.3137 11.6863L35.3137 14.4998L17.4892 14.4998L36.3084 33.319L34.319 35.3084L15.4998 16.4892L15.4998 34.3137Z", fill: "currentColor" })));
 };
 
 var ArrowLeftLineIcon = function () {
@@ -2902,13 +2919,18 @@ var ArrowLeftLineBoldIcon = function () {
 };
 
 var ArrowOutwardLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M35.3889 33.8989L35.3884 14.1005L35.3883 12.8148L34.1027 12.8148L14.3042 12.8142L14.3042 15.3857L31.1646 15.3861L13.4772 33.0735L15.2954 34.8918L32.817 17.3702L32.8175 33.899L35.3889 33.8989Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M33.032 34.9412L35.3111 34.9412L35.3111 12.3137L12.6837 12.3138L12.6837 14.5929L31.2413 14.5929L11.7884 34.0458L13.4 35.6574L33.032 16.0254L33.032 34.9412Z", fill: "currentColor" })));
+};
+
+var ArrowOutwardLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M34.1374 34.9411L35.3064 34.9411L35.3063 12.3137L12.6789 12.3137L12.6789 13.4827L33.3107 13.4827L12.2656 34.5278L13.0922 35.3544L34.1373 14.3093L34.1374 34.9411Z", fill: "currentColor" })));
 };
 
 var ArrowOutwardLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M32.6036 33.899L35.6036 33.8989L35.603 12.6005L14.3046 12.5999L14.3045 15.5999L30.9504 15.6004L13.4773 33.0735L15.5986 35.1948L32.6031 18.1903L32.6036 33.899Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M32.4928 34.9411L35.3063 34.9411V12.3137L12.6789 12.3137L12.6789 15.1272L30.5034 15.1272L11.6842 33.9464L13.6736 35.9359L32.4928 17.1167L32.4928 34.9411Z", fill: "currentColor" })));
 };
 
 var ArrowRightLineIcon = function () {
@@ -2943,14 +2965,33 @@ var ArrowUpLineBoldIcon = function () {
 };
 
 var ArrowUpwardLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.1515 23.1515L12.8485 24.8485L24 13.6971L35.1515 24.8485L36.8485 23.1515L24 10.303L11.1515 23.1515Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.2001 36L25.2001 12L22.8001 12L22.8001 36L25.2001 36Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M39.3884 26.6116L41 25.0001L25 9.00006L9 25.0001L10.6116 26.6116L23.7338 13.4894L23.7338 41.0001L26.013 41.0001L26.013 13.2362L39.3884 26.6116Z", fill: "currentColor" })));
+};
+
+var ArrowUpwardLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M39.1734 25.8267L40 25.0001L24 9.00006L8.00003 25.0001L8.82664 25.8267L23.4156 11.2378L23.4156 41.0001L24.5846 41.0001L24.5846 11.2378L39.1734 25.8267Z", fill: "currentColor" })));
 };
 
 var ArrowUpwardLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M13.0607 25.0607L10.9393 22.9393L24 9.87869L37.0606 22.9393L34.9393 25.0607L25.4999 15.6212L25.4999 36L22.4999 36L22.4999 15.6214L13.0607 25.0607Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M38.0106 25.9894L40 24L24 8L8 24L9.98944 25.9894L22.7496 13.2293L22.7496 40L25.5631 40L25.5631 13.5419L38.0106 25.9894Z", fill: "currentColor" })));
+};
+
+var ArScanLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.79999 5.80005H42.2V15H39.8V8.20005H8.19999V15H5.79999V5.80005ZM36.2 16.5411L24 9.62036L11.8 16.5411V20H14.2V17.9389L24 12.3796L33.8 17.9389V20H36.2V16.5411ZM11.8 25.2H5V22.8H43V25.2H36.2V31.4589L24 38.3796L11.8 31.4589V25.2ZM14.2 25.2V30.0611L24 35.6204L33.8 30.0611V25.2H14.2ZM5.80001 42.1999L42.2 42.2V33H39.8L39.8 39.7999H8.20001L8.20001 32.9999H5.80001L5.80001 42.1999Z", fill: "currentColor" })));
+};
+
+var ArScanLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.5 5.5H42.5V15H39.5V8.5H8.5V15H5.5V5.5ZM36.5 16.3663L24 9.27539L11.5 16.3663V19.9999H14.5V18.1136L24 12.7245L33.5 18.1136V19.9999H36.5V16.3663ZM11.5 25.5H5V22.5H43V25.5H36.5V31.6336L24 38.7245L11.5 31.6336V25.5ZM14.5 25.5V29.8863L24 35.2754L33.5 29.8863V25.5H14.5ZM5.5 33L5.5 42.5L42.5 42.5V33H39.5V39.5L8.5 39.5L8.5 33H5.5Z", fill: "currentColor" })));
+};
+
+var ArScanLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M6.39999 6.3999H41.6V14.9999H40.4V7.5999H7.59999V14.9999H6.39999V6.3999ZM35.6 16.8907L24 10.3103L12.4 16.8907V21.0001H13.6V17.5896L24 11.6899L34.4 17.5896V21.0001H35.6V16.8907ZM12.4 24.5999H5V23.3999H43V24.5999H35.6V31.1096L24 37.6899L12.4 31.1096V24.5999ZM13.6 24.5999V30.4107L24 36.3103L34.4 30.4107V24.5999H13.6ZM6.40001 41.6001L41.6 41.6001V33.0001H40.4V40.4001L7.60001 40.4001L7.60001 33.0001H6.40001L6.40001 41.6001Z", fill: "currentColor" })));
 };
 
 var CheckCircleFillIcon = function () {
@@ -3019,15 +3060,58 @@ var CloseCircleLineBoldIcon = function () {
 };
 
 var CloseLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.2998 37.297L11.5799 12.5771L13.157 11L37.8769 35.7199L36.2998 37.297Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.0225 35.7199L35.7424 11L37.3195 12.5771L12.5996 37.297L11.0225 35.7199Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.3884 24L8 38.3884L9.61159 40L24 25.6116L38.3884 40L40 38.3884L25.6116 24L40 9.61159L38.3884 8L24 22.3884L9.61159 8L8 9.61159L22.3884 24Z", fill: "currentColor" })));
+};
+
+var CloseLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 24.8266L39.1734 40L40 39.1734L24.8266 24L40 8.82661L39.1734 8L24 23.1734L8.82661 8L8 8.82661L23.1734 24L8 39.1734L8.82661 40L24 24.8266Z", fill: "currentColor" })));
 };
 
 var CloseLineBoldIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.9887 38.5092L10.3887 11.9092L12.51 9.78786L39.11 36.3879L36.9887 38.5092Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.78845 36.3879L36.3884 9.78786L38.5098 11.9092L11.9098 38.5092L9.78845 36.3879Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 25.9894L38.0106 40L40 38.0106L25.9894 24L40 9.98944L38.0106 8L24 22.0106L9.98944 8L8 9.98944L22.0106 24L8 38.0106L9.98944 40L24 25.9894Z", fill: "currentColor" })));
+};
+
+var ContentCodyLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M41.2001 5.79999H19.1545L14.8 10.2135V36.2H41.2001V5.79999ZM17.2 11.1982L20.1581 8.19999H38.8V33.8H17.2V11.1982ZM11.2 17V39.8H34V42.2H8.80005V17H11.2Z", fill: "currentColor" })));
+};
+
+var ContentCodyLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M41.5 5.5H19.029L14.5 10.0905V36.5H41.5V5.5ZM17.5 11.3213L20.2835 8.5H38.5V33.5H17.5V11.3213ZM11.5 17V39.5H34V42.5H8.5V17H11.5Z", fill: "currentColor" })));
+};
+
+var ContentCodyLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M40.5999 6.39999H19.4053L15.3999 10.4597V35.6H40.5999V6.39999ZM16.5999 10.952L19.9071 7.59999H39.3999V34.4H16.5999V10.952ZM10.5999 17V40.4H33.9999V41.6H9.3999V17H10.5999Z", fill: "currentColor" })));
+};
+
+var ContentCodyFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20.1544 5.8H42.2V36.2H15.8V10.2136L20.1544 5.8ZM12.2 17V39.8H35V42.2H9.79999V17H12.2Z", fill: "currentColor" })));
+};
+
+var CurrencyLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.19999 24C7.19999 14.7217 14.7216 7.20005 24 7.20005C33.2784 7.20005 40.8 14.7217 40.8 24C40.8 33.2784 33.2784 40.8 24 40.8C14.7216 40.8 7.19999 33.2784 7.19999 24ZM24 4.80005C13.3961 4.80005 4.79999 13.3962 4.79999 24C4.79999 34.6039 13.3961 43.2001 24 43.2001C34.6039 43.2001 43.2 34.6039 43.2 24C43.2 13.3962 34.6039 4.80005 24 4.80005ZM23.166 32.2363V33.9551H24.4121V32.2363C27.6992 32.0322 29.5469 30.1738 29.5684 27.7031C29.5469 24.8887 27.0762 23.793 25.0781 23.3203L24.4121 23.127V18.293C25.8945 18.4541 26.9258 19.2598 27.0547 20.5488H29.3535C29.2891 18.1641 27.3018 16.4238 24.4121 16.2305V14.4902H23.166V16.252C20.4053 16.5312 18.375 18.2285 18.375 20.6992C18.375 22.8691 19.9434 24.1367 22.4355 24.8242L23.166 25.0176V30.1523C21.6406 29.9912 20.459 29.1855 20.3301 27.6816H17.9668C18.1064 30.3457 20.0508 32.043 23.166 32.2363ZM23.166 22.8047C22.0166 22.4824 20.7383 21.8916 20.7383 20.5703C20.7383 19.4102 21.6621 18.5186 23.166 18.3145V22.8047ZM27.2266 27.6602C27.2051 29.0244 26.0664 29.9697 24.4121 30.1523V25.3398C26.002 25.7803 27.2051 26.3389 27.2266 27.6602Z", fill: "currentColor" })));
+};
+
+var CurrencyLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.5 24C7.5 14.8873 14.8873 7.5 24 7.5C33.1127 7.5 40.5 14.8873 40.5 24C40.5 33.1127 33.1127 40.5 24 40.5C14.8873 40.5 7.5 33.1127 7.5 24ZM24 4.5C13.2304 4.5 4.5 13.2304 4.5 24C4.5 34.7696 13.2304 43.5 24 43.5C34.7696 43.5 43.5 34.7696 43.5 24C43.5 13.2304 34.7696 4.5 24 4.5ZM23.4023 32.1934V33.9551H24.6484V32.1934C28.0645 32.0107 30.0625 30.2598 30.0625 27.5527C30.0625 24.9531 28.0645 23.5996 25.4004 22.998L24.6484 22.8047V18.959C25.8838 19.1309 26.6465 19.8291 26.7539 20.8926H29.8477C29.8047 18.293 27.7744 16.4453 24.6484 16.252V14.4902H23.4023V16.252C20.3623 16.4883 18.2031 18.293 18.2031 20.9355C18.2031 23.2129 19.8145 24.5234 22.4355 25.168L23.4023 25.4043V29.4648C21.9951 29.3037 21.0283 28.5195 20.9316 27.1445H17.7949C17.8809 30.2812 20.0186 32.0107 23.4023 32.1934ZM23.4023 22.4824C22.3389 22.1816 21.4902 21.666 21.5117 20.7207C21.5332 19.8398 22.1885 19.1631 23.4023 18.9805V22.4824ZM26.7969 27.5527C26.7969 28.5625 25.9697 29.293 24.6484 29.4648V25.7051C26.0234 26.1133 26.7969 26.6074 26.7969 27.5527Z", fill: "currentColor" })));
+};
+
+var CurrencyLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M6.59999 23.9999C6.59999 14.3901 14.3902 6.5999 24 6.5999C33.6097 6.5999 41.4 14.3901 41.4 23.9999C41.4 33.6097 33.6097 41.3999 24 41.3999C14.3902 41.3999 6.59999 33.6097 6.59999 23.9999ZM24 5.3999C13.7275 5.3999 5.39999 13.7274 5.39999 23.9999C5.39999 34.2724 13.7275 42.5999 24 42.5999C34.2725 42.5999 42.6 34.2724 42.6 23.9999C42.6 13.7274 34.2725 5.3999 24 5.3999ZM23.0586 32.2363V33.9551H24.0898V32.2363C27.1836 32.0537 28.9883 30.2061 28.9883 27.832C28.9883 25.2109 26.6895 24.2012 24.7344 23.6426L24.0898 23.4492V17.6055C25.8838 17.7451 27.1514 18.7764 27.291 20.3555H28.7949C28.6875 18.0781 26.8076 16.3916 24.0898 16.2305V14.4902H23.0586V16.252C20.459 16.4883 18.5469 18.1426 18.5469 20.4844C18.5469 22.5039 19.9863 23.75 22.4355 24.4805L23.0586 24.6523V30.8613C21.2324 30.7217 19.8467 29.7441 19.707 28.0684H18.1387C18.2998 30.4316 20.1475 32.0752 23.0586 32.2363ZM23.0586 23.1699C21.5977 22.7617 20.0508 22.0098 20.0508 20.4199C20.0508 18.9482 21.2432 17.8203 23.0586 17.6055V23.1699ZM27.5059 27.8105C27.5059 29.5078 26.1094 30.6787 24.0898 30.8613V24.9531L24.2832 25.0176C26.1738 25.5547 27.5059 26.2637 27.5059 27.8105Z", fill: "currentColor" })));
+};
+
+var CurrencyFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 4.79993C13.3961 4.79993 4.79999 13.3961 4.79999 23.9999C4.79999 34.6038 13.3961 43.1999 24 43.1999C34.6039 43.1999 43.2 34.6038 43.2 23.9999C43.2 13.3961 34.6039 4.79993 24 4.79993ZM23.166 32.2362V33.955H24.4121V32.2362C27.6992 32.0321 29.5469 30.1737 29.5684 27.703C29.5469 24.8885 27.0762 23.7928 25.0781 23.3202L24.4121 23.1268V18.2928C25.8945 18.454 26.9258 19.2596 27.0547 20.5487H29.3535C29.2891 18.1639 27.3018 16.4237 24.4121 16.2303V14.4901H23.166V16.2518C20.4053 16.5311 18.375 18.2284 18.375 20.6991C18.375 22.869 19.9434 24.1366 22.4355 24.8241L23.166 25.0175V30.1522C21.6406 29.9911 20.459 29.1854 20.3301 27.6815H17.9668C18.1064 30.3456 20.0508 32.0428 23.166 32.2362ZM23.166 22.8046C22.0166 22.4823 20.7383 21.8915 20.7383 20.5702C20.7383 19.41 21.6621 18.5184 23.166 18.3143V22.8046ZM27.2266 27.66C27.2051 29.0243 26.0664 29.9696 24.4121 30.1522V25.3397C26.002 25.7802 27.2051 26.3387 27.2266 27.66Z", fill: "currentColor" })));
 };
 
 var DeleteLineIcon = function () {
@@ -3151,6 +3235,66 @@ var ErrorCircleLineBoldIcon = function () {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 40C32.8366 40 40 32.8366 40 24C40 15.1634 32.8366 8 24 8C15.1634 8 8 15.1634 8 24C8 32.8366 15.1634 40 24 40ZM24 43C34.4934 43 43 34.4934 43 24C43 13.5066 34.4934 5 24 5C13.5066 5 5 13.5066 5 24C5 34.4934 13.5066 43 24 43Z", fill: "currentColor" })));
 };
 
+var FileBinLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.4 38.6V12.4941L13.4941 9.4H37.6V38.6H10.4ZM8 11.5L12.5 7H40V41H8V11.5ZM23.4132 23.6799C23.6372 23.9039 23.9145 24.0159 24.2452 24.0159C24.5652 24.0159 24.8372 23.9039 25.0612 23.6799C25.2852 23.4559 25.3972 23.1786 25.3972 22.8479C25.3972 22.5173 25.2852 22.2399 25.0612 22.0159C24.8372 21.7919 24.5652 21.6799 24.2452 21.6799C23.9145 21.6799 23.6372 21.7919 23.4132 22.0159C23.1892 22.2399 23.0772 22.5173 23.0772 22.8479C23.0772 23.1786 23.1892 23.4559 23.4132 23.6799ZM25.1412 33.9999V25.1839H23.3172V33.9999H25.1412ZM33.8399 25.4719C33.2959 25.1839 32.6773 25.0399 31.9839 25.0399C31.4613 25.0399 30.9653 25.1413 30.4959 25.3439C30.0373 25.5466 29.6586 25.8293 29.3599 26.1919V25.1839H27.5359V33.9999H29.3599V29.0719C29.3599 28.2826 29.5573 27.6799 29.952 27.2639C30.3573 26.8373 30.9013 26.6239 31.584 26.6239C32.2666 26.6239 32.8053 26.8373 33.1999 27.2639C33.5946 27.6799 33.792 28.2826 33.792 29.0719V33.9999H35.5999V28.7999C35.5999 27.9999 35.4453 27.3173 35.1359 26.7519C34.8266 26.1866 34.3946 25.7599 33.8399 25.4719ZM14.2975 26.4959C14.6068 26.0693 15.0281 25.7226 15.5615 25.4559C16.1054 25.1786 16.7081 25.0399 17.3694 25.0399C18.1481 25.0399 18.8521 25.2266 19.4815 25.5999C20.1108 25.9733 20.6068 26.5066 20.9694 27.1999C21.3321 27.8826 21.5135 28.6666 21.5135 29.5519C21.5135 30.4373 21.3321 31.2319 20.9694 31.9359C20.6068 32.6293 20.1054 33.1733 19.4655 33.5679C18.8361 33.9519 18.1374 34.1439 17.3694 34.1439C16.6868 34.1439 16.0788 34.0106 15.5455 33.7439C15.0228 33.4773 14.6068 33.1359 14.2975 32.7199V33.9999H12.4734V22.1599H14.2975V26.4959ZM19.6575 29.5519C19.6575 28.9439 19.5295 28.4213 19.2734 27.9839C19.0281 27.5359 18.6975 27.1999 18.2815 26.9759C17.8761 26.7413 17.4388 26.6239 16.9694 26.6239C16.5108 26.6239 16.0735 26.7413 15.6574 26.9759C15.2521 27.2106 14.9214 27.5519 14.6655 27.9999C14.4201 28.4479 14.2975 28.9759 14.2975 29.5839C14.2975 30.1919 14.4201 30.7253 14.6655 31.1839C14.9214 31.6319 15.2521 31.9733 15.6574 32.2079C16.0735 32.4426 16.5108 32.5599 16.9694 32.5599C17.4388 32.5599 17.8761 32.4426 18.2815 32.2079C18.6975 31.9626 19.0281 31.6106 19.2734 31.1519C19.5295 30.6933 19.6575 30.1599 19.6575 29.5519Z", fill: "currentColor" })));
+};
+
+var FileBinLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 38V12.7426L13.7426 10H37V38H11ZM8 11.5L12.5 7H40V41H8V11.5ZM23.1543 23.7121C23.4209 23.9574 23.7516 24.0801 24.1463 24.0801C24.5409 24.0801 24.8663 23.9574 25.1223 23.7121C25.3889 23.4561 25.5223 23.1414 25.5223 22.7681C25.5223 22.3947 25.3889 22.0854 25.1223 21.8401C24.8663 21.5841 24.5409 21.4561 24.1463 21.4561C23.7516 21.4561 23.4209 21.5841 23.1543 21.8401C22.8983 22.0854 22.7703 22.3947 22.7703 22.7681C22.7703 23.1414 22.8983 23.4561 23.1543 23.7121ZM25.2503 25.1361H23.0103V34.0001H25.2503V25.1361ZM34.9354 26.0161C34.2847 25.3441 33.4314 25.0081 32.3754 25.0081C31.8207 25.0081 31.3087 25.1201 30.8394 25.3441C30.3807 25.5574 30.002 25.8561 29.7034 26.2401V25.1361H27.4634V34.0001H29.7034V29.1041C29.7034 28.4001 29.8794 27.8614 30.2314 27.4881C30.594 27.1041 31.0847 26.9121 31.7034 26.9121C32.3114 26.9121 32.7914 27.1041 33.1434 27.4881C33.4954 27.8614 33.6714 28.4001 33.6714 29.1041V34.0001H35.9114V28.8001C35.9114 27.6054 35.586 26.6774 34.9354 26.0161ZM14.4065 26.4321C14.6945 26.0054 15.0892 25.6587 15.5905 25.3921C16.1025 25.1254 16.6838 24.9921 17.3345 24.9921C18.0918 24.9921 18.7745 25.1787 19.3825 25.5521C20.0012 25.9254 20.4865 26.4587 20.8385 27.1521C21.2012 27.8347 21.3825 28.6294 21.3825 29.5361C21.3825 30.4427 21.2012 31.2481 20.8385 31.9521C20.4865 32.6454 20.0012 33.1841 19.3825 33.5681C18.7745 33.9521 18.0918 34.1441 17.3345 34.1441C16.6732 34.1441 16.0918 34.0161 15.5905 33.7601C15.0998 33.4934 14.7052 33.1521 14.4065 32.7361V34.0001H12.1665V22.1601H14.4065V26.4321ZM19.0945 29.5361C19.0945 29.0027 18.9825 28.5441 18.7585 28.1601C18.5452 27.7654 18.2572 27.4667 17.8945 27.2641C17.5425 27.0614 17.1585 26.9601 16.7425 26.9601C16.3372 26.9601 15.9532 27.0667 15.5905 27.2801C15.2385 27.4827 14.9505 27.7814 14.7265 28.1761C14.5132 28.5707 14.4065 29.0347 14.4065 29.5681C14.4065 30.1014 14.5132 30.5654 14.7265 30.9601C14.9505 31.3547 15.2385 31.6587 15.5905 31.8721C15.9532 32.0747 16.3372 32.1761 16.7425 32.1761C17.1585 32.1761 17.5425 32.0694 17.8945 31.8561C18.2572 31.6427 18.5452 31.3387 18.7585 30.9441C18.9825 30.5494 19.0945 30.0801 19.0945 29.5361Z", fill: "currentColor" })));
+};
+
+var FileBinLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.2 39.8V11.9971L12.9971 8.2H38.8V39.8H9.2ZM8 11.5L12.5 7H40V41H8V11.5ZM23.6003 23.52C23.7923 23.712 24.027 23.808 24.3043 23.808C24.571 23.808 24.795 23.712 24.9763 23.52C25.1683 23.328 25.2643 23.0933 25.2643 22.816C25.2643 22.5386 25.1683 22.304 24.9763 22.112C24.795 21.92 24.571 21.824 24.3043 21.824C24.027 21.824 23.7923 21.92 23.6003 22.112C23.4083 22.304 23.3123 22.5386 23.3123 22.816C23.3123 23.0933 23.4083 23.328 23.6003 23.52ZM25.0083 34V25.232H23.5523V34H25.0083ZM34.3538 26.048C33.6925 25.3973 32.8285 25.072 31.7618 25.072C31.1645 25.072 30.6151 25.1946 30.1138 25.44C29.6231 25.6853 29.2338 26.032 28.9458 26.48V25.232H27.4898V34H28.9458V29.152C28.9458 28.2346 29.1698 27.536 29.6178 27.056C30.0765 26.576 30.6898 26.336 31.4578 26.336C32.2151 26.336 32.8125 26.5706 33.2498 27.04C33.6871 27.4986 33.9058 28.1653 33.9058 29.04V34H35.3458V28.832C35.3458 27.616 35.0151 26.688 34.3538 26.048ZM14.1958 26.864C14.4945 26.3413 14.9318 25.9146 15.5078 25.584C16.0838 25.2533 16.7398 25.088 17.4758 25.088C18.2651 25.088 18.9745 25.2746 19.6038 25.648C20.2331 26.0213 20.7291 26.5493 21.0918 27.232C21.4545 27.904 21.6358 28.688 21.6358 29.584C21.6358 30.4693 21.4545 31.2586 21.0918 31.952C20.7291 32.6453 20.2278 33.184 19.5878 33.568C18.9585 33.952 18.2545 34.144 17.4758 34.144C16.7185 34.144 16.0518 33.9786 15.4758 33.648C14.9105 33.3173 14.4838 32.896 14.1958 32.384V34H12.7398V22.16H14.1958V26.864ZM20.1478 29.584C20.1478 28.9226 20.0145 28.3466 19.7478 27.856C19.4811 27.3653 19.1185 26.992 18.6598 26.736C18.2118 26.48 17.7158 26.352 17.1718 26.352C16.6385 26.352 16.1425 26.4853 15.6838 26.752C15.2358 27.008 14.8731 27.3866 14.5958 27.888C14.3291 28.3786 14.1958 28.9493 14.1958 29.6C14.1958 30.2613 14.3291 30.8426 14.5958 31.344C14.8731 31.8346 15.2358 32.2133 15.6838 32.48C16.1425 32.736 16.6385 32.864 17.1718 32.864C17.7158 32.864 18.2118 32.736 18.6598 32.48C19.1185 32.2133 19.4811 31.8346 19.7478 31.344C20.0145 30.8426 20.1478 30.256 20.1478 29.584Z", fill: "currentColor" })));
+};
+
+var FileBinFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 11.5L12.5 7H40V41H8V11.5ZM23.4132 23.6799C23.6372 23.9039 23.9145 24.0159 24.2452 24.0159C24.5652 24.0159 24.8372 23.9039 25.0612 23.6799C25.2852 23.4559 25.3972 23.1786 25.3972 22.8479C25.3972 22.5173 25.2852 22.2399 25.0612 22.0159C24.8372 21.7919 24.5652 21.6799 24.2452 21.6799C23.9145 21.6799 23.6372 21.7919 23.4132 22.0159C23.1892 22.2399 23.0772 22.5173 23.0772 22.8479C23.0772 23.1786 23.1892 23.4559 23.4132 23.6799ZM25.1412 33.9999V25.1839H23.3172V33.9999H25.1412ZM33.8399 25.4719C33.2959 25.1839 32.6773 25.0399 31.9839 25.0399C31.4613 25.0399 30.9653 25.1413 30.4959 25.3439C30.0373 25.5466 29.6586 25.8293 29.3599 26.1919V25.1839H27.5359V33.9999H29.3599V29.0719C29.3599 28.2826 29.5573 27.6799 29.952 27.2639C30.3573 26.8373 30.9013 26.6239 31.584 26.6239C32.2666 26.6239 32.8053 26.8373 33.1999 27.2639C33.5946 27.6799 33.792 28.2826 33.792 29.0719V33.9999H35.5999V28.7999C35.5999 27.9999 35.4453 27.3173 35.1359 26.7519C34.8266 26.1866 34.3946 25.7599 33.8399 25.4719ZM14.2975 26.4959C14.6068 26.0693 15.0281 25.7226 15.5615 25.4559C16.1054 25.1786 16.7081 25.0399 17.3694 25.0399C18.1481 25.0399 18.8521 25.2266 19.4815 25.5999C20.1108 25.9733 20.6068 26.5066 20.9694 27.1999C21.3321 27.8826 21.5135 28.6666 21.5135 29.5519C21.5135 30.4373 21.3321 31.2319 20.9694 31.9359C20.6068 32.6293 20.1054 33.1733 19.4655 33.5679C18.8361 33.9519 18.1374 34.1439 17.3694 34.1439C16.6868 34.1439 16.0788 34.0106 15.5455 33.7439C15.0228 33.4773 14.6068 33.1359 14.2975 32.7199V33.9999H12.4734V22.1599H14.2975V26.4959ZM19.6575 29.5519C19.6575 28.9439 19.5295 28.4213 19.2734 27.9839C19.0281 27.5359 18.6975 27.1999 18.2815 26.9759C17.8761 26.7413 17.4388 26.6239 16.9694 26.6239C16.5108 26.6239 16.0735 26.7413 15.6574 26.9759C15.2521 27.2106 14.9214 27.5519 14.6655 27.9999C14.4201 28.4479 14.2975 28.9759 14.2975 29.5839C14.2975 30.1919 14.4201 30.7253 14.6655 31.1839C14.9214 31.6319 15.2521 31.9733 15.6574 32.2079C16.0735 32.4426 16.5108 32.5599 16.9694 32.5599C17.4388 32.5599 17.8761 32.4426 18.2815 32.2079C18.6975 31.9626 19.0281 31.6106 19.2734 31.1519C19.5295 30.6933 19.6575 30.1599 19.6575 29.5519Z", fill: "currentColor" })));
+};
+
+var FileEfsLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.4 38.6V12.4941L13.4941 9.4H37.6V38.6H10.4ZM8 11.5L12.5 7H40V41H8V11.5ZM25.2719 26.6719H26.9039V25.1839H25.2719V24.5599C25.2719 24.0479 25.3839 23.6906 25.6079 23.4879C25.8319 23.2746 26.2212 23.1679 26.7759 23.1679V21.6479C25.6239 21.6479 24.7759 21.8826 24.2319 22.3519C23.6985 22.8106 23.4319 23.5466 23.4319 24.5599V25.1839H22.3919V26.6719H23.4319V34H25.2719V26.6719ZM29.8484 33.776C30.403 34.0213 31.027 34.144 31.7204 34.144C32.403 34.144 32.995 34.0319 33.4964 33.8079C34.0084 33.584 34.403 33.2746 34.6804 32.88C34.9577 32.4853 35.0964 32.0373 35.0964 31.5359C35.0857 30.9706 34.931 30.5173 34.6324 30.1759C34.3337 29.8346 33.9764 29.5786 33.5604 29.408C33.155 29.2266 32.6324 29.0506 31.9924 28.8799C31.5124 28.7413 31.1497 28.6293 30.9044 28.5439C30.659 28.448 30.451 28.32 30.2804 28.16C30.1097 28 30.0244 27.8026 30.0244 27.568C30.0244 27.2693 30.1524 27.0293 30.4084 26.8479C30.6644 26.6666 31.0324 26.576 31.5124 26.576C32.003 26.576 32.3924 26.6933 32.6804 26.9279C32.9684 27.1626 33.1284 27.4773 33.1604 27.872H34.9844C34.9417 26.9973 34.611 26.3093 33.9924 25.8079C33.3844 25.2959 32.579 25.04 31.5764 25.04C30.9044 25.04 30.307 25.152 29.7844 25.3759C29.2724 25.5999 28.8777 25.9093 28.6004 26.3039C28.323 26.688 28.1844 27.1146 28.1844 27.584C28.1844 28.16 28.3337 28.624 28.6324 28.976C28.9417 29.3279 29.3044 29.5893 29.7204 29.76C30.1364 29.9306 30.675 30.1066 31.3364 30.288C32.019 30.4799 32.515 30.656 32.8244 30.816C33.1444 30.976 33.3044 31.2213 33.3044 31.552C33.3044 31.8613 33.1604 32.1173 32.8724 32.32C32.595 32.5119 32.2004 32.608 31.6884 32.608C31.1977 32.608 30.787 32.4853 30.4564 32.24C30.1364 31.9839 29.9604 31.6693 29.9284 31.2959H28.0404C28.0617 31.8293 28.2324 32.3146 28.5524 32.7519C28.8724 33.1786 29.3044 33.52 29.8484 33.776ZM21.4129 29.3759C21.4129 29.7066 21.3915 30.0053 21.3489 30.2719H14.6129C14.6662 30.976 14.9275 31.5413 15.3969 31.968C15.8662 32.3946 16.4422 32.608 17.1249 32.608C18.1062 32.608 18.7995 32.1973 19.2049 31.3759H21.1729C20.9062 32.1866 20.4209 32.8533 19.7169 33.3759C19.0235 33.888 18.1595 34.144 17.1249 34.144C16.2822 34.144 15.5249 33.9573 14.8529 33.584C14.1915 33.1999 13.6689 32.6666 13.2849 31.984C12.9115 31.2906 12.7249 30.4906 12.7249 29.584C12.7249 28.6773 12.9062 27.8826 13.2689 27.2C13.6422 26.5066 14.1595 25.9733 14.8209 25.5999C15.4929 25.2266 16.2609 25.04 17.1249 25.04C17.9569 25.04 18.6982 25.2213 19.3489 25.584C19.9995 25.9466 20.5062 26.4586 20.8689 27.1199C21.2315 27.7706 21.4129 28.5226 21.4129 29.3759ZM19.5089 28.7999C19.4982 28.1279 19.2582 27.5893 18.7889 27.184C18.3195 26.7786 17.7382 26.576 17.0449 26.576C16.4155 26.576 15.8769 26.7786 15.4289 27.184C14.9809 27.5786 14.7142 28.1173 14.6289 28.7999H19.5089Z", fill: "currentColor" })));
+};
+
+var FileEfsLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 38V12.7426L13.7426 10H37V38H11ZM8 11.5L12.5 7H40V41H8V11.5ZM25.4363 26.976H26.9883V25.136H25.4363V24.768C25.4363 24.2667 25.5429 23.92 25.7563 23.728C25.9696 23.536 26.3483 23.4453 26.8923 23.456V21.568C25.6443 21.536 24.7109 21.776 24.0923 22.288C23.4736 22.8 23.1643 23.6 23.1643 24.688V25.136H22.1563V26.976H23.1643V34H25.4363V26.976ZM29.8799 33.76C30.4559 34.016 31.1066 34.144 31.8319 34.144C32.5359 34.144 33.1492 34.032 33.6719 33.808C34.2052 33.5733 34.6106 33.2533 34.8879 32.848C35.1759 32.4427 35.3199 31.984 35.3199 31.472C35.3092 30.8853 35.1492 30.416 34.8399 30.064C34.5412 29.7013 34.1839 29.4347 33.7679 29.264C33.3519 29.0933 32.8239 28.928 32.1839 28.768C31.5546 28.608 31.0906 28.4533 30.7919 28.304C30.4932 28.144 30.3439 27.9147 30.3439 27.616C30.3439 27.3493 30.4506 27.1413 30.6639 26.992C30.8879 26.8427 31.2026 26.768 31.6079 26.768C32.0452 26.768 32.3919 26.8747 32.6479 27.088C32.9146 27.2907 33.0639 27.568 33.0959 27.92H35.2399C35.1759 27.024 34.8292 26.3147 34.1999 25.792C33.5706 25.2587 32.7279 24.992 31.6719 24.992C30.9572 24.992 30.3332 25.1093 29.7999 25.344C29.2772 25.5787 28.8719 25.8987 28.5839 26.304C28.3066 26.7093 28.1679 27.1573 28.1679 27.648C28.1679 28.2453 28.3172 28.72 28.6159 29.072C28.9252 29.424 29.2879 29.6853 29.7039 29.856C30.1306 30.0267 30.6746 30.192 31.3359 30.352C31.9759 30.5227 32.4399 30.6827 32.7279 30.832C33.0266 30.9707 33.1759 31.184 33.1759 31.472C33.1759 31.7387 33.0532 31.9573 32.8079 32.128C32.5732 32.2987 32.2426 32.384 31.8159 32.384C31.3786 32.384 31.0106 32.272 30.7119 32.048C30.4239 31.824 30.2586 31.5413 30.2159 31.2H27.9599C27.9919 31.744 28.1732 32.24 28.5039 32.688C28.8452 33.136 29.3039 33.4933 29.8799 33.76ZM21.2893 29.376C21.2893 29.696 21.2679 29.984 21.2253 30.24H14.7453C14.7986 30.88 15.0226 31.3813 15.4173 31.744C15.8119 32.1067 16.2973 32.288 16.8733 32.288C17.7053 32.288 18.2973 31.9307 18.6493 31.216H21.0653C20.8093 32.0693 20.3186 32.7733 19.5933 33.328C18.8679 33.872 17.9773 34.144 16.9213 34.144C16.0679 34.144 15.2999 33.9573 14.6173 33.584C13.9453 33.2 13.4173 32.6613 13.0333 31.968C12.6599 31.2747 12.4733 30.4747 12.4733 29.568C12.4733 28.6507 12.6599 27.8453 13.0333 27.152C13.4066 26.4587 13.9293 25.9253 14.6013 25.552C15.2733 25.1787 16.0466 24.992 16.9213 24.992C17.7639 24.992 18.5159 25.1733 19.1773 25.536C19.8493 25.8987 20.3666 26.416 20.7293 27.088C21.1026 27.7493 21.2893 28.512 21.2893 29.376ZM18.9693 28.736C18.9586 28.16 18.7506 27.7013 18.3453 27.36C17.9399 27.008 17.4439 26.832 16.8573 26.832C16.3026 26.832 15.8333 27.0027 15.4493 27.344C15.0759 27.6747 14.8466 28.1387 14.7613 28.736H18.9693Z", fill: "currentColor" })));
+};
+
+var FileEfsLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.2 39.8V11.9971L12.9971 8.2H38.8V39.8H9.2ZM8 11.5L12.5 7H40V41H8V11.5ZM25.1084 26.4319H26.9484V25.2319H25.1084V24.6079C25.1084 24.0319 25.2364 23.6212 25.4924 23.3759C25.7591 23.1199 26.2124 22.9919 26.8524 22.9919V21.7759C25.7324 21.7759 24.9164 22.0052 24.4044 22.4639C23.9031 22.9119 23.6524 23.6265 23.6524 24.6079V25.2319H22.5164V26.4319H23.6524V33.9999H25.1084V26.4319ZM29.9421 33.8079C30.4754 34.0319 31.0781 34.1439 31.7501 34.1439C32.3794 34.1439 32.9341 34.0372 33.4141 33.8239C33.9047 33.5999 34.2834 33.2959 34.5501 32.9119C34.8167 32.5279 34.9501 32.0959 34.9501 31.6159C34.9394 31.0825 34.7901 30.6505 34.5021 30.3199C34.2247 29.9892 33.8887 29.7439 33.4941 29.5839C33.0994 29.4132 32.5874 29.2425 31.9581 29.0719C31.4567 28.9332 31.0621 28.8105 30.7741 28.7039C30.4967 28.5865 30.2621 28.4372 30.0701 28.2559C29.8887 28.0639 29.7981 27.8239 29.7981 27.5359C29.7981 27.1732 29.9527 26.8799 30.2621 26.6559C30.5714 26.4319 30.9874 26.3199 31.5101 26.3199C32.0754 26.3199 32.5234 26.4585 32.8541 26.7359C33.1954 27.0132 33.3821 27.3812 33.4141 27.8399H34.8701C34.8274 26.9865 34.5074 26.3145 33.9101 25.8239C33.3127 25.3332 32.5287 25.0879 31.5581 25.0879C30.9287 25.0879 30.3687 25.1999 29.8781 25.4239C29.3874 25.6372 29.0087 25.9305 28.7421 26.3039C28.4754 26.6772 28.3421 27.0879 28.3421 27.5359C28.3421 28.1012 28.4861 28.5599 28.7741 28.9119C29.0727 29.2532 29.4247 29.5145 29.8301 29.6959C30.2461 29.8665 30.7794 30.0372 31.4301 30.2079C32.1447 30.3892 32.6727 30.5759 33.0141 30.7679C33.3554 30.9492 33.5261 31.2319 33.5261 31.6159C33.5261 31.9892 33.3661 32.2985 33.0461 32.5439C32.7261 32.7892 32.2887 32.9119 31.7341 32.9119C31.1367 32.9119 30.6514 32.7732 30.2781 32.4959C29.9154 32.2185 29.7127 31.8612 29.6701 31.4239H28.1661C28.1981 31.9572 28.3687 32.4319 28.6781 32.8479C28.9874 33.2532 29.4087 33.5732 29.9421 33.8079ZM21.4586 29.2799C21.4586 29.5572 21.4426 29.8505 21.4106 30.1599H14.4026C14.4559 31.0239 14.7492 31.7012 15.2826 32.1919C15.8266 32.6719 16.4826 32.9119 17.2506 32.9119C17.8799 32.9119 18.4026 32.7679 18.8186 32.4799C19.2452 32.1812 19.5439 31.7865 19.7146 31.2959H21.2826C21.0479 32.1385 20.5786 32.8265 19.8746 33.3599C19.1706 33.8825 18.2959 34.1439 17.2506 34.1439C16.4186 34.1439 15.6719 33.9572 15.0106 33.5839C14.3599 33.2105 13.8479 32.6825 13.4746 31.9999C13.1012 31.3065 12.9146 30.5065 12.9146 29.5999C12.9146 28.6932 13.0959 27.8985 13.4586 27.2159C13.8212 26.5332 14.3279 26.0105 14.9786 25.6479C15.6399 25.2745 16.3972 25.0879 17.2506 25.0879C18.0826 25.0879 18.8186 25.2692 19.4586 25.6319C20.0986 25.9945 20.5892 26.4959 20.9306 27.1359C21.2826 27.7652 21.4586 28.4799 21.4586 29.2799ZM19.9546 28.9759C19.9546 28.4212 19.8319 27.9465 19.5866 27.5519C19.3412 27.1465 19.0052 26.8425 18.5786 26.6399C18.1626 26.4265 17.6986 26.3199 17.1866 26.3199C16.4506 26.3199 15.8212 26.5545 15.2986 27.0239C14.7866 27.4932 14.4932 28.1439 14.4186 28.9759H19.9546Z", fill: "currentColor" })));
+};
+
+var FileEfsFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 11.5L12.5 7H40V41H8V11.5ZM25.2719 26.6719H26.9039V25.1839H25.2719V24.5599C25.2719 24.0479 25.3839 23.6906 25.6079 23.4879C25.8319 23.2746 26.2212 23.1679 26.7759 23.1679V21.6479C25.6239 21.6479 24.7759 21.8826 24.2319 22.3519C23.6985 22.8106 23.4319 23.5466 23.4319 24.5599V25.1839H22.3919V26.6719H23.4319V34H25.2719V26.6719ZM29.8484 33.776C30.403 34.0213 31.027 34.144 31.7204 34.144C32.403 34.144 32.995 34.0319 33.4964 33.8079C34.0084 33.584 34.403 33.2746 34.6804 32.88C34.9577 32.4853 35.0964 32.0373 35.0964 31.5359C35.0857 30.9706 34.931 30.5173 34.6324 30.1759C34.3337 29.8346 33.9764 29.5786 33.5604 29.408C33.155 29.2266 32.6324 29.0506 31.9924 28.8799C31.5124 28.7413 31.1497 28.6293 30.9044 28.5439C30.659 28.448 30.451 28.32 30.2804 28.16C30.1097 28 30.0244 27.8026 30.0244 27.568C30.0244 27.2693 30.1524 27.0293 30.4084 26.8479C30.6644 26.6666 31.0324 26.576 31.5124 26.576C32.003 26.576 32.3924 26.6933 32.6804 26.9279C32.9684 27.1626 33.1284 27.4773 33.1604 27.872H34.9844C34.9417 26.9973 34.611 26.3093 33.9924 25.8079C33.3844 25.2959 32.579 25.04 31.5764 25.04C30.9044 25.04 30.307 25.152 29.7844 25.3759C29.2724 25.5999 28.8777 25.9093 28.6004 26.3039C28.323 26.688 28.1844 27.1146 28.1844 27.584C28.1844 28.16 28.3337 28.624 28.6324 28.976C28.9417 29.3279 29.3044 29.5893 29.7204 29.76C30.1364 29.9306 30.675 30.1066 31.3364 30.288C32.019 30.4799 32.515 30.656 32.8244 30.816C33.1444 30.976 33.3044 31.2213 33.3044 31.552C33.3044 31.8613 33.1604 32.1173 32.8724 32.32C32.595 32.5119 32.2004 32.608 31.6884 32.608C31.1977 32.608 30.787 32.4853 30.4564 32.24C30.1364 31.9839 29.9604 31.6693 29.9284 31.2959H28.0404C28.0617 31.8293 28.2324 32.3146 28.5524 32.7519C28.8724 33.1786 29.3044 33.52 29.8484 33.776ZM21.4129 29.3759C21.4129 29.7066 21.3915 30.0053 21.3489 30.2719H14.6129C14.6662 30.976 14.9275 31.5413 15.3969 31.968C15.8662 32.3946 16.4422 32.608 17.1249 32.608C18.1062 32.608 18.7995 32.1973 19.2049 31.3759H21.1729C20.9062 32.1866 20.4209 32.8533 19.7169 33.3759C19.0235 33.888 18.1595 34.144 17.1249 34.144C16.2822 34.144 15.5249 33.9573 14.8529 33.584C14.1915 33.1999 13.6689 32.6666 13.2849 31.984C12.9115 31.2906 12.7249 30.4906 12.7249 29.584C12.7249 28.6773 12.9062 27.8826 13.2689 27.2C13.6422 26.5066 14.1595 25.9733 14.8209 25.5999C15.4929 25.2266 16.2609 25.04 17.1249 25.04C17.9569 25.04 18.6982 25.2213 19.3489 25.584C19.9995 25.9466 20.5062 26.4586 20.8689 27.1199C21.2315 27.7706 21.4129 28.5226 21.4129 29.3759ZM19.5089 28.7999C19.4982 28.1279 19.2582 27.5893 18.7889 27.184C18.3195 26.7786 17.7382 26.576 17.0449 26.576C16.4155 26.576 15.8769 26.7786 15.4289 27.184C14.9809 27.5786 14.7142 28.1173 14.6289 28.7999H19.5089Z", fill: "currentColor" })));
+};
+
+var FileJpgLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.4 38.6V12.4941L13.4941 9.4H37.6V38.6H10.4ZM8 11.5L12.5 7H40V41H8V11.5ZM14.8514 22.64C14.5414 22.64 14.2814 22.535 14.0714 22.325C13.8614 22.115 13.7564 21.855 13.7564 21.545C13.7564 21.235 13.8614 20.975 14.0714 20.765C14.2814 20.555 14.5414 20.45 14.8514 20.45C15.1514 20.45 15.4064 20.555 15.6164 20.765C15.8264 20.975 15.9314 21.235 15.9314 21.545C15.9314 21.855 15.8264 22.115 15.6164 22.325C15.4064 22.535 15.1514 22.64 14.8514 22.64ZM15.6914 33.62C15.6914 34.43 15.4864 35.015 15.0764 35.375C14.6764 35.745 14.0914 35.93 13.3214 35.93H12.4364V34.49H13.0214C13.3714 34.49 13.6164 34.42 13.7564 34.28C13.9064 34.15 13.9814 33.93 13.9814 33.62V23.735H15.6914V33.62ZM20.8315 23.99C20.3315 24.25 19.9365 24.57 19.6465 24.95V23.735H17.9365V35.93H19.6465V30.8C19.9565 31.18 20.3565 31.5 20.8465 31.76C21.3365 32.01 21.8965 32.135 22.5265 32.135C23.2465 32.135 23.9015 31.955 24.4915 31.595C25.0915 31.225 25.5615 30.715 25.9015 30.065C26.2415 29.405 26.4115 28.66 26.4115 27.83C26.4115 27 26.2415 26.265 25.9015 25.625C25.5615 24.985 25.0915 24.49 24.4915 24.14C23.9015 23.78 23.2465 23.6 22.5265 23.6C21.8965 23.6 21.3315 23.73 20.8315 23.99ZM24.3115 26.36C24.5515 26.77 24.6715 27.26 24.6715 27.83C24.6715 28.4 24.5515 28.9 24.3115 29.33C24.0815 29.76 23.7715 30.09 23.3815 30.32C23.0015 30.54 22.5915 30.65 22.1515 30.65C21.7215 30.65 21.3115 30.54 20.9215 30.32C20.5415 30.1 20.2315 29.78 19.9915 29.36C19.7615 28.93 19.6465 28.43 19.6465 27.86C19.6465 27.29 19.7615 26.795 19.9915 26.375C20.2315 25.955 20.5415 25.635 20.9215 25.415C21.3115 25.195 21.7215 25.085 22.1515 25.085C22.5915 25.085 23.0015 25.195 23.3815 25.415C23.7715 25.625 24.0815 25.94 24.3115 26.36ZM33.1275 23.99C32.6375 23.73 32.0725 23.6 31.4325 23.6C30.7125 23.6 30.0525 23.78 29.4525 24.14C28.8625 24.49 28.3925 24.985 28.0425 25.625C27.7025 26.265 27.5325 27 27.5325 27.83C27.5325 28.66 27.7025 29.405 28.0425 30.065C28.3925 30.715 28.8625 31.225 29.4525 31.595C30.0525 31.955 30.7125 32.135 31.4325 32.135C32.0625 32.135 32.6225 32.005 33.1125 31.745C33.6125 31.475 34.0075 31.145 34.2975 30.755V32.135C34.2975 32.935 34.0825 33.545 33.6525 33.965C33.2325 34.385 32.6775 34.595 31.9875 34.595C31.3975 34.595 30.8875 34.46 30.4575 34.19C30.0375 33.93 29.7625 33.585 29.6325 33.155H27.9375C28.0375 34.055 28.4575 34.765 29.1975 35.285C29.9375 35.815 30.8675 36.08 31.9875 36.08C32.8275 36.08 33.5475 35.91 34.1475 35.57C34.7575 35.23 35.2225 34.76 35.5425 34.16C35.8625 33.57 36.0225 32.895 36.0225 32.135V23.735H34.2975V24.935C34.0175 24.555 33.6275 24.24 33.1275 23.99ZM33.9375 26.375C34.1775 26.795 34.2975 27.29 34.2975 27.86C34.2975 28.43 34.1775 28.93 33.9375 29.36C33.7075 29.78 33.4025 30.1 33.0225 30.32C32.6425 30.54 32.2325 30.65 31.7925 30.65C31.3625 30.65 30.9525 30.54 30.5625 30.32C30.1825 30.09 29.8725 29.76 29.6325 29.33C29.4025 28.9 29.2875 28.4 29.2875 27.83C29.2875 27.26 29.4025 26.77 29.6325 26.36C29.8725 25.94 30.1825 25.625 30.5625 25.415C30.9425 25.195 31.3525 25.085 31.7925 25.085C32.2325 25.085 32.6425 25.195 33.0225 25.415C33.4025 25.635 33.7075 25.955 33.9375 26.375Z", fill: "currentColor" })));
+};
+
+var FileJpgLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 38V12.7426L13.7426 10H37V38H11ZM8 11.5L12.5 7H40V41H8V11.5ZM14.8465 22.7C14.4665 22.7 14.1515 22.585 13.9015 22.355C13.6615 22.115 13.5415 21.82 13.5415 21.47C13.5415 21.12 13.6615 20.83 13.9015 20.6C14.1515 20.36 14.4665 20.24 14.8465 20.24C15.2165 20.24 15.5215 20.36 15.7615 20.6C16.0015 20.83 16.1215 21.12 16.1215 21.47C16.1215 21.82 16.0015 22.115 15.7615 22.355C15.5215 22.585 15.2165 22.7 14.8465 22.7ZM15.8815 33.365C15.8815 34.285 15.6515 34.945 15.1915 35.345C14.7415 35.755 14.0915 35.96 13.2415 35.96H12.3115V34.175H12.9115C13.2315 34.175 13.4565 34.11 13.5865 33.98C13.7165 33.86 13.7815 33.66 13.7815 33.38V23.69H15.8815V33.365ZM32.73 23.9299C32.26 23.6799 31.715 23.5549 31.095 23.5549C30.385 23.5549 29.74 23.7299 29.16 24.0799C28.59 24.4299 28.135 24.9299 27.795 25.5799C27.465 26.2299 27.3 26.9749 27.3 27.8149C27.3 28.6649 27.465 29.4199 27.795 30.0799C28.135 30.7299 28.595 31.2349 29.175 31.5949C29.755 31.9549 30.395 32.1349 31.095 32.1349C31.705 32.1349 32.245 32.0049 32.715 31.7449C33.195 31.4849 33.57 31.1599 33.84 30.7699V32.0599C33.84 32.7999 33.65 33.3499 33.27 33.7099C32.89 34.0799 32.395 34.2649 31.785 34.2649C31.265 34.2649 30.82 34.1499 30.45 33.9199C30.09 33.6999 29.855 33.3999 29.745 33.0199H27.66C27.76 33.9699 28.185 34.7199 28.935 35.2699C29.695 35.8199 30.665 36.0949 31.845 36.0949C32.725 36.0949 33.475 35.9149 34.095 35.5549C34.715 35.2049 35.18 34.7249 35.49 34.1149C35.8 33.5149 35.955 32.8299 35.955 32.0599V23.6899H33.84V24.8749C33.57 24.4849 33.2 24.1699 32.73 23.9299ZM33.54 26.5399C33.74 26.8999 33.84 27.3349 33.84 27.8449C33.84 28.3549 33.74 28.7949 33.54 29.1649C33.34 29.5249 33.07 29.8049 32.73 30.0049C32.39 30.1949 32.025 30.2899 31.635 30.2899C31.255 30.2899 30.895 30.1899 30.555 29.9899C30.225 29.7899 29.955 29.5049 29.745 29.1349C29.545 28.7549 29.445 28.3149 29.445 27.8149C29.445 27.3149 29.545 26.8849 29.745 26.5249C29.955 26.1549 30.225 25.8749 30.555 25.6849C30.885 25.4949 31.245 25.3999 31.635 25.3999C32.025 25.3999 32.39 25.4999 32.73 25.6999C33.07 25.8899 33.34 26.1699 33.54 26.5399ZM21.1663 23.945C20.6963 24.195 20.3263 24.51 20.0563 24.89V23.69H17.9563V35.96H20.0563V30.815C20.3463 31.195 20.7213 31.51 21.1813 31.76C21.6513 32.01 22.1913 32.135 22.8013 32.135C23.5113 32.135 24.1513 31.955 24.7213 31.595C25.3013 31.235 25.7563 30.73 26.0863 30.08C26.4263 29.42 26.5963 28.665 26.5963 27.815C26.5963 26.965 26.4263 26.22 26.0863 25.58C25.7563 24.93 25.3013 24.43 24.7213 24.08C24.1513 23.73 23.5113 23.555 22.8013 23.555C22.1913 23.555 21.6463 23.685 21.1663 23.945ZM24.1363 26.525C24.3463 26.885 24.4513 27.315 24.4513 27.815C24.4513 28.325 24.3463 28.765 24.1363 29.135C23.9363 29.505 23.6663 29.79 23.3263 29.99C22.9963 30.19 22.6363 30.29 22.2463 30.29C21.8663 30.29 21.5063 30.195 21.1663 30.005C20.8363 29.805 20.5663 29.52 20.3563 29.15C20.1563 28.78 20.0563 28.345 20.0563 27.845C20.0563 27.345 20.1563 26.91 20.3563 26.54C20.5663 26.17 20.8363 25.89 21.1663 25.7C21.5063 25.5 21.8663 25.4 22.2463 25.4C22.6363 25.4 22.9963 25.495 23.3263 25.685C23.6663 25.875 23.9363 26.155 24.1363 26.525Z", fill: "currentColor" })));
+};
+
+var FileJpgLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.2 39.8V11.9971L12.9971 8.2H38.8V39.8H9.2ZM8 11.5L12.5 7H40V41H8V11.5ZM14.8929 22.445C14.6329 22.445 14.4129 22.355 14.2329 22.175C14.0629 21.995 13.9779 21.775 13.9779 21.515C13.9779 21.255 14.0629 21.035 14.2329 20.855C14.4129 20.675 14.6329 20.585 14.8929 20.585C15.1529 20.585 15.3679 20.675 15.5379 20.855C15.7179 21.035 15.8079 21.255 15.8079 21.515C15.8079 21.775 15.7179 21.995 15.5379 22.175C15.3679 22.355 15.1529 22.445 14.8929 22.445ZM15.5679 33.785C15.5679 34.515 15.3829 35.05 15.0129 35.39C14.6429 35.73 14.1029 35.9 13.3929 35.9H12.5979V34.745H13.1679C13.5479 34.745 13.8129 34.67 13.9629 34.52C14.1229 34.37 14.2029 34.115 14.2029 33.755V23.78H15.5679V33.785ZM20.4436 24.125C19.9136 24.435 19.5136 24.825 19.2436 25.295V23.78H17.8786V35.9H19.2436V30.485C19.5236 30.955 19.9286 31.35 20.4586 31.67C20.9986 31.98 21.6186 32.135 22.3186 32.135C23.0486 32.135 23.7086 31.955 24.2986 31.595C24.8986 31.235 25.3686 30.73 25.7086 30.08C26.0486 29.43 26.2186 28.69 26.2186 27.86C26.2186 27.02 26.0486 26.285 25.7086 25.655C25.3686 25.015 24.8986 24.52 24.2986 24.17C23.7086 23.82 23.0486 23.645 22.3186 23.645C21.6086 23.645 20.9836 23.805 20.4436 24.125ZM24.4486 26.24C24.6986 26.7 24.8236 27.24 24.8236 27.86C24.8236 28.49 24.6986 29.04 24.4486 29.51C24.1986 29.97 23.8586 30.325 23.4286 30.575C23.0086 30.815 22.5436 30.935 22.0336 30.935C21.5336 30.935 21.0686 30.815 20.6386 30.575C20.2186 30.325 19.8786 29.97 19.6186 29.51C19.3686 29.04 19.2436 28.495 19.2436 27.875C19.2436 27.265 19.3686 26.73 19.6186 26.27C19.8786 25.8 20.2186 25.445 20.6386 25.205C21.0686 24.955 21.5336 24.83 22.0336 24.83C22.5436 24.83 23.0086 24.95 23.4286 25.19C23.8586 25.43 24.1986 25.78 24.4486 26.24ZM33.2653 24.11C32.7353 23.8 32.1153 23.645 31.4053 23.645C30.6753 23.645 30.0103 23.82 29.4103 24.17C28.8203 24.52 28.3553 25.015 28.0153 25.655C27.6753 26.285 27.5053 27.02 27.5053 27.86C27.5053 28.69 27.6753 29.43 28.0153 30.08C28.3553 30.73 28.8203 31.235 29.4103 31.595C30.0103 31.955 30.6753 32.135 31.4053 32.135C32.1153 32.135 32.7353 31.975 33.2653 31.655C33.7953 31.335 34.1953 30.935 34.4653 30.455V32.18C34.4653 33.03 34.2253 33.69 33.7453 34.16C33.2753 34.63 32.6653 34.865 31.9153 34.865C31.2553 34.865 30.6903 34.71 30.2203 34.4C29.7503 34.1 29.4403 33.7 29.2903 33.2H27.9403C28.0703 34.08 28.4953 34.775 29.2153 35.285C29.9353 35.795 30.8353 36.05 31.9153 36.05C32.7053 36.05 33.3953 35.885 33.9853 35.555C34.5853 35.225 35.0453 34.765 35.3653 34.175C35.6853 33.595 35.8453 32.93 35.8453 32.18V23.78H34.4653V25.28C34.2053 24.81 33.8053 24.42 33.2653 24.11ZM34.0903 26.255C34.3403 26.715 34.4653 27.255 34.4653 27.875C34.4653 28.495 34.3403 29.04 34.0903 29.51C33.8403 29.97 33.5003 30.325 33.0703 30.575C32.6503 30.815 32.1853 30.935 31.6753 30.935C31.1653 30.935 30.7003 30.815 30.2803 30.575C29.8603 30.325 29.5253 29.97 29.2753 29.51C29.0253 29.04 28.9003 28.49 28.9003 27.86C28.9003 27.24 29.0253 26.7 29.2753 26.24C29.5253 25.78 29.8603 25.43 30.2803 25.19C30.7003 24.95 31.1653 24.83 31.6753 24.83C32.1853 24.83 32.6503 24.955 33.0703 25.205C33.5003 25.445 33.8403 25.795 34.0903 26.255Z", fill: "currentColor" })));
+};
+
+var FileJpgFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 11.5L12.5 7H40V41H8V11.5ZM14.8514 22.64C14.5414 22.64 14.2814 22.535 14.0714 22.325C13.8614 22.115 13.7564 21.855 13.7564 21.545C13.7564 21.235 13.8614 20.975 14.0714 20.765C14.2814 20.555 14.5414 20.45 14.8514 20.45C15.1514 20.45 15.4064 20.555 15.6164 20.765C15.8264 20.975 15.9314 21.235 15.9314 21.545C15.9314 21.855 15.8264 22.115 15.6164 22.325C15.4064 22.535 15.1514 22.64 14.8514 22.64ZM15.6914 33.62C15.6914 34.43 15.4864 35.015 15.0764 35.375C14.6764 35.745 14.0914 35.93 13.3214 35.93H12.4364V34.49H13.0214C13.3714 34.49 13.6164 34.42 13.7564 34.28C13.9064 34.15 13.9814 33.93 13.9814 33.62V23.735H15.6914V33.62ZM20.8315 23.99C20.3315 24.25 19.9365 24.57 19.6465 24.95V23.735H17.9365V35.93H19.6465V30.8C19.9565 31.18 20.3565 31.5 20.8465 31.76C21.3365 32.01 21.8965 32.135 22.5265 32.135C23.2465 32.135 23.9015 31.955 24.4915 31.595C25.0915 31.225 25.5615 30.715 25.9015 30.065C26.2415 29.405 26.4115 28.66 26.4115 27.83C26.4115 27 26.2415 26.265 25.9015 25.625C25.5615 24.985 25.0915 24.49 24.4915 24.14C23.9015 23.78 23.2465 23.6 22.5265 23.6C21.8965 23.6 21.3315 23.73 20.8315 23.99ZM24.3115 26.36C24.5515 26.77 24.6715 27.26 24.6715 27.83C24.6715 28.4 24.5515 28.9 24.3115 29.33C24.0815 29.76 23.7715 30.09 23.3815 30.32C23.0015 30.54 22.5915 30.65 22.1515 30.65C21.7215 30.65 21.3115 30.54 20.9215 30.32C20.5415 30.1 20.2315 29.78 19.9915 29.36C19.7615 28.93 19.6465 28.43 19.6465 27.86C19.6465 27.29 19.7615 26.795 19.9915 26.375C20.2315 25.955 20.5415 25.635 20.9215 25.415C21.3115 25.195 21.7215 25.085 22.1515 25.085C22.5915 25.085 23.0015 25.195 23.3815 25.415C23.7715 25.625 24.0815 25.94 24.3115 26.36ZM33.1275 23.99C32.6375 23.73 32.0725 23.6 31.4325 23.6C30.7125 23.6 30.0525 23.78 29.4525 24.14C28.8625 24.49 28.3925 24.985 28.0425 25.625C27.7025 26.265 27.5325 27 27.5325 27.83C27.5325 28.66 27.7025 29.405 28.0425 30.065C28.3925 30.715 28.8625 31.225 29.4525 31.595C30.0525 31.955 30.7125 32.135 31.4325 32.135C32.0625 32.135 32.6225 32.005 33.1125 31.745C33.6125 31.475 34.0075 31.145 34.2975 30.755V32.135C34.2975 32.935 34.0825 33.545 33.6525 33.965C33.2325 34.385 32.6775 34.595 31.9875 34.595C31.3975 34.595 30.8875 34.46 30.4575 34.19C30.0375 33.93 29.7625 33.585 29.6325 33.155H27.9375C28.0375 34.055 28.4575 34.765 29.1975 35.285C29.9375 35.815 30.8675 36.08 31.9875 36.08C32.8275 36.08 33.5475 35.91 34.1475 35.57C34.7575 35.23 35.2225 34.76 35.5425 34.16C35.8625 33.57 36.0225 32.895 36.0225 32.135V23.735H34.2975V24.935C34.0175 24.555 33.6275 24.24 33.1275 23.99ZM33.9375 26.375C34.1775 26.795 34.2975 27.29 34.2975 27.86C34.2975 28.43 34.1775 28.93 33.9375 29.36C33.7075 29.78 33.4025 30.1 33.0225 30.32C32.6425 30.54 32.2325 30.65 31.7925 30.65C31.3625 30.65 30.9525 30.54 30.5625 30.32C30.1825 30.09 29.8725 29.76 29.6325 29.33C29.4025 28.9 29.2875 28.4 29.2875 27.83C29.2875 27.26 29.4025 26.77 29.6325 26.36C29.8725 25.94 30.1825 25.625 30.5625 25.415C30.9425 25.195 31.3525 25.085 31.7925 25.085C32.2325 25.085 32.6425 25.195 33.0225 25.415C33.4025 25.635 33.7075 25.955 33.9375 26.375Z", fill: "currentColor" })));
+};
+
 var FileLineIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { d: "M21.4595 39.98H8.01953V26.54L26.5395 8.02002H39.9795V20.96H37.5795V10.42H27.5195L10.4195 27.52V37.58H20.4795L31.5395 26.52V20.08H26.7595L16.0595 30.78L14.3595 29.08L25.7795 17.66H33.9395V27.5L21.4595 39.98Z", fill: "currentColor" })));
@@ -3164,6 +3308,119 @@ var FileLineBoldIcon = function () {
 var FileLineLightIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { d: "M21.2201 39.38H8.62012V26.78L26.7801 8.62H39.3801V20.96H38.1801V9.81999H27.2801L9.82012 27.28V38.18H20.7201L32.1401 26.76V19.48H26.5201L15.6401 30.36L14.7801 29.52L26.0201 18.28H33.3401V27.26L21.2201 39.38Z", fill: "currentColor" })));
+};
+
+var FileMoveLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.7029 4.8H36.3999V26H33.9999V7.2H12.697L8.39994 11.4971V40.8H29.1999V43.2H5.99994V10.5029L11.7029 4.8ZM36.0484 28.9998L42.0484 34.9998L42.8969 35.8484L42.0484 36.6969L36.0484 42.6969L34.3514 40.9998L38.3511 37.0001H29.1999V34.6001H38.2546L34.3514 30.6969L36.0484 28.9998ZM13.1999 21.6H29.1999V19.2H13.1999V21.6ZM29.1999 26.6H13.1999V24.2H29.1999V26.6ZM13.1999 31.6H23.1999V29.2H13.1999V31.6Z", fill: "currentColor" })));
+};
+
+var FileMoveLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("g", { clipPath: "url(#clip0_1698_6897)" },
+            React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.8787 4.5H36V26H33V7.5H12.1213L8 11.6213V40.5H28.5V43.5H5V10.3787L10.8787 4.5ZM33.4395 30.909L35.5608 28.7877L42.6214 35.8483L35.5608 42.909L33.4395 40.7877L36.6271 37.6H28.5V34.6H37.1305L33.4395 30.909ZM12.5 21.9H28.5V18.9H12.5V21.9ZM28.5 26.9H12.5V23.9H28.5V26.9ZM12.5 31.9H22.5V28.9H12.5V31.9Z", fill: "currentColor" })),
+        React.createElement("defs", null,
+            React.createElement("clipPath", { id: "clip0_1698_6897" },
+                React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
+};
+
+var FileMoveLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("g", { clipPath: "url(#clip0_1698_6929)" },
+            React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.3514 5.39999H35.2V26H34V6.59999H11.8485L7.19997 11.2485V41.4H28.6V42.6H5.99997V10.7515L11.3514 5.39999ZM34.1758 30.2726L35.0243 29.4241L41.4485 35.8484L35.0243 42.2726L34.1758 41.4241L38.9998 36.6H28.6001V35.4H39.3031L34.1758 30.2726ZM12.6001 21H28.6001V19.8H12.6001V21ZM28.6001 26H12.6001V24.8H28.6001V26ZM12.6001 31H22.6001V29.8H12.6001V31Z", fill: "currentColor" })),
+        React.createElement("defs", null,
+            React.createElement("clipPath", { id: "clip0_1698_6929" },
+                React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
+};
+
+var FileMoveFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("g", { clipPath: "url(#clip0_1698_6956)" },
+            React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.5 5.99997L5.99997 10.5V42H28L27.9492 41.594C26.7289 40.058 26 38.1141 26 36C26 31.3887 29.4679 27.5874 33.938 27.062L34 27V5.99997H10.5ZM12.1999 20.4H28.1999V18H12.1999V20.4ZM28.1999 25.4H12.1999V23H28.1999V25.4ZM12.1999 30.4H22.1999V28H12.1999V30.4Z", fill: "currentColor" }),
+            React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.0485 28.9998L42.0485 34.9998L42.897 35.8483L42.0485 36.6969L36.0485 42.6969L34.3514 40.9998L38.3512 37.0001H29.2V34.6001H38.2546L34.3514 30.6969L36.0485 28.9998Z", fill: "currentColor" })),
+        React.createElement("defs", null,
+            React.createElement("clipPath", { id: "clip0_1698_6956" },
+                React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
+};
+
+var FileMp4LineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.4 38.6V12.4941L13.4941 9.4H37.6V38.6H10.4ZM8 11.5L12.5 7H40V41H8V11.5ZM31.4873 28.9565V29.8409H35.2098V31.4039H36.3615V29.8409H37.3179V28.8228H36.3615V24H34.9425L31.4873 28.9565ZM32.8344 28.8228L35.2612 25.1929V28.8228H32.8344ZM25.151 25.7653C25.383 25.4614 25.6989 25.2055 26.0988 24.9975C26.4987 24.7896 26.9506 24.6856 27.4545 24.6856C28.0303 24.6856 28.5542 24.8296 29.0261 25.1175C29.5059 25.3974 29.8818 25.7933 30.1538 26.3052C30.4257 26.8171 30.5617 27.4049 30.5617 28.0687C30.5617 28.7326 30.4257 29.3284 30.1538 29.8563C29.8818 30.3762 29.5059 30.7841 29.0261 31.08C28.5542 31.3679 28.0303 31.5119 27.4545 31.5119C26.9506 31.5119 26.5027 31.4119 26.1108 31.212C25.7189 31.004 25.399 30.7481 25.151 30.4442V34.5471H23.7834V24.7936H25.151V25.7653ZM29.17 28.0687C29.17 27.6129 29.074 27.221 28.8821 26.893C28.6981 26.5571 28.4502 26.3052 28.1383 26.1372C27.8344 25.9613 27.5064 25.8733 27.1545 25.8733C26.8106 25.8733 26.4827 25.9613 26.1708 26.1372C25.8669 26.3132 25.6189 26.5691 25.427 26.905C25.243 27.2409 25.151 27.6369 25.151 28.0927C25.151 28.5486 25.243 28.9485 25.427 29.2924C25.6189 29.6284 25.8669 29.8843 26.1708 30.0602C26.4827 30.2362 26.8106 30.3242 27.1545 30.3242C27.5064 30.3242 27.8344 30.2362 28.1383 30.0602C28.4502 29.8763 28.6981 29.6124 28.8821 29.2684C29.074 28.9245 29.17 28.5246 29.17 28.0687ZM20.7115 25.0095C20.3036 24.7936 19.8397 24.6856 19.3198 24.6856C18.832 24.6856 18.3761 24.8056 17.9522 25.0455C17.5283 25.2774 17.2164 25.5934 17.0164 25.9933C16.7925 25.5694 16.4726 25.2454 16.0567 25.0215C15.6408 24.7976 15.1689 24.6856 14.641 24.6856C14.2491 24.6856 13.8812 24.7616 13.5373 24.9135C13.1934 25.0655 12.9095 25.2774 12.6855 25.5494V24.7936H11.3179V31.4039H12.6855V27.7088C12.6855 27.117 12.8335 26.6651 13.1294 26.3532C13.4333 26.0333 13.8412 25.8733 14.3531 25.8733C14.865 25.8733 15.2689 26.0333 15.5648 26.3532C15.8607 26.6651 16.0087 27.117 16.0087 27.7088V31.4039H17.3643V27.7088C17.3643 27.117 17.5123 26.6651 17.8082 26.3532C18.1122 26.0333 18.52 25.8733 19.0319 25.8733C19.5438 25.8733 19.9477 26.0333 20.2436 26.3532C20.5395 26.6651 20.6875 27.117 20.6875 27.7088V31.4039H22.0432V27.5049C22.0432 26.905 21.9232 26.3932 21.6832 25.9693C21.4513 25.5454 21.1274 25.2255 20.7115 25.0095Z", fill: "currentColor" })));
+};
+
+var FileMp4LineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 38V12.7426L13.7426 10H37V38H11ZM8 11.5L12.5 7H40V41H8V11.5ZM30.9521 28.2772V29.3266H34.291V30.6813H35.6266V29.3266H36.4661V28.1627H35.6266V23.8125H34.0716L30.9521 28.2772ZM32.4212 28.1627L34.3769 25.2435V28.1627H32.4212ZM26.1104 24.7044C25.7617 24.8899 25.4871 25.1236 25.2868 25.4056V24.5152H23.7286V33.6195H25.2868V29.8019C25.502 30.0839 25.7802 30.3176 26.1215 30.5031C26.4703 30.6886 26.8709 30.7814 27.3236 30.7814C27.8504 30.7814 28.3253 30.6478 28.7482 30.3807C29.1785 30.1136 29.5162 29.7389 29.761 29.2566C30.0133 28.7668 30.1394 28.2066 30.1394 27.5759C30.1394 26.9452 30.0133 26.3925 29.761 25.9176C29.5162 25.4353 29.1785 25.0643 28.7482 24.8046C28.3253 24.5449 27.8504 24.415 27.3236 24.415C26.8709 24.415 26.4666 24.5115 26.1104 24.7044ZM28.3141 26.6188C28.4699 26.8859 28.5479 27.2049 28.5479 27.5759C28.5479 27.9544 28.4699 28.2808 28.3141 28.5554C28.1657 28.8299 27.9654 29.0414 27.7131 29.1898C27.4683 29.3382 27.2011 29.4124 26.9118 29.4124C26.6298 29.4124 26.3627 29.3419 26.1104 29.2009C25.8655 29.0525 25.6652 28.841 25.5094 28.5665C25.361 28.292 25.2868 27.9692 25.2868 27.5982C25.2868 27.2272 25.361 26.9044 25.5094 26.6299C25.6652 26.3554 25.8655 26.1476 26.1104 26.0066C26.3627 25.8582 26.6298 25.784 26.9118 25.784C27.2011 25.784 27.4683 25.8545 27.7131 25.9955C27.9654 26.1365 28.1657 26.3442 28.3141 26.6188ZM19.7235 24.4263C20.4803 24.4263 21.0888 24.66 21.5488 25.1275C22.0163 25.5875 22.25 26.233 22.25 27.0641V30.6813H20.6918V27.2755C20.6918 26.7932 20.5694 26.426 20.3245 26.1737C20.0797 25.914 19.7458 25.7841 19.3228 25.7841C18.8999 25.7841 18.5623 25.914 18.31 26.1737C18.0651 26.426 17.9427 26.7932 17.9427 27.2755V30.6813H16.3845V27.2755C16.3845 26.7932 16.2621 26.426 16.0172 26.1737C15.7724 25.914 15.4385 25.7841 15.0156 25.7841C14.5852 25.7841 14.2439 25.914 13.9916 26.1737C13.7467 26.426 13.6243 26.7932 13.6243 27.2755V30.6813H12.0661V24.5153H13.6243V25.261C13.8247 25.0013 14.0806 24.7973 14.3923 24.6489C14.7113 24.5005 15.0601 24.4263 15.4385 24.4263C15.9208 24.4263 16.3511 24.5301 16.7296 24.7379C17.108 24.9382 17.4011 25.2276 17.6088 25.606C17.8092 25.2499 18.0985 24.9642 18.477 24.749C18.8628 24.5339 19.2783 24.4263 19.7235 24.4263Z", fill: "currentColor" })));
+};
+
+var FileMp4LineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.2 39.8V11.9971L12.9971 8.2H38.8V39.8H9.2ZM8 11.5L12.5 7H40V41H8V11.5ZM31.8933 29.2999V30.0524H35.9282V31.8081H36.9096V30.0524H38.0002V29.1909H36.9096V24H35.721L31.8933 29.2999ZM33.0383 29.1909L35.9718 25.036V29.1909H33.0383ZM24.9966 26.121C25.2256 25.7224 25.5649 25.3916 26.0144 25.1286C26.4724 24.8572 27.0025 24.7215 27.6048 24.7215C28.2239 24.7215 28.7837 24.8699 29.2842 25.1668C29.7931 25.4637 30.1917 25.8835 30.4801 26.4264C30.7685 26.9607 30.9127 27.5841 30.9127 28.2966C30.9127 29.0006 30.7685 29.6282 30.4801 30.1796C30.1917 30.7309 29.7931 31.1592 29.2842 31.4646C28.7837 31.7699 28.2239 31.9226 27.6048 31.9226C27.011 31.9226 26.4852 31.7911 26.0271 31.5282C25.5776 31.2567 25.2341 30.9217 24.9966 30.5231V35.116H23.8388V24.836H24.9966V26.121ZM29.7295 28.2966C29.7295 27.7707 29.6234 27.3127 29.4114 26.9225C29.1993 26.5324 28.911 26.2355 28.5462 26.0319C28.19 25.8284 27.7956 25.7266 27.363 25.7266C26.9389 25.7266 26.5445 25.8326 26.1798 26.0447C25.8236 26.2482 25.5352 26.5493 25.3147 26.948C25.1026 27.3381 24.9966 27.7919 24.9966 28.3093C24.9966 28.8352 25.1026 29.2974 25.3147 29.6961C25.5352 30.0863 25.8236 30.3874 26.1798 30.5994C26.5445 30.803 26.9389 30.9047 27.363 30.9047C27.7956 30.9047 28.19 30.803 28.5462 30.5994C28.911 30.3874 29.1993 30.0863 29.4114 29.6961C29.6234 29.2974 29.7295 28.8309 29.7295 28.2966ZM20.5656 25.0524C20.1415 24.8234 19.6581 24.7089 19.1152 24.7089C18.5639 24.7089 18.0635 24.8446 17.6139 25.116C17.1644 25.3874 16.8421 25.7691 16.647 26.261C16.4265 25.7521 16.0915 25.3662 15.6419 25.1033C15.1924 24.8403 14.675 24.7089 14.0898 24.7089C13.6233 24.7089 13.1949 24.8064 12.8048 25.0015C12.4231 25.1966 12.1177 25.4765 11.8887 25.8412V24.8361H10.731V31.8081H11.8887V27.9659C11.8887 27.2364 12.0668 26.6809 12.4231 26.2992C12.7793 25.909 13.2585 25.714 13.8607 25.714C14.446 25.714 14.9082 25.9006 15.2475 26.2738C15.5953 26.6385 15.7692 27.1686 15.7692 27.8641V31.8081H16.9142V27.9659C16.9142 27.2364 17.0923 26.6809 17.4486 26.2992C17.8048 25.909 18.284 25.714 18.8862 25.714C19.4715 25.714 19.9337 25.9006 20.273 26.2738C20.6207 26.6385 20.7946 27.1686 20.7946 27.8641V31.8081H21.9397V27.6987C21.9397 27.0541 21.8167 26.507 21.5707 26.0575C21.3247 25.6079 20.9897 25.2729 20.5656 25.0524Z", fill: "currentColor" })));
+};
+
+var FileMp4FillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 11.5L12.5 7H40V41H8V11.5ZM31.4873 28.9565V29.8409H35.2098V31.4039H36.3615V29.8409H37.3179V28.8228H36.3615V24H34.9425L31.4873 28.9565ZM32.8344 28.8228L35.2612 25.1929V28.8228H32.8344ZM25.151 25.7653C25.383 25.4614 25.6989 25.2055 26.0988 24.9975C26.4987 24.7896 26.9506 24.6856 27.4545 24.6856C28.0303 24.6856 28.5542 24.8296 29.0261 25.1175C29.5059 25.3974 29.8818 25.7933 30.1538 26.3052C30.4257 26.8171 30.5617 27.4049 30.5617 28.0687C30.5617 28.7326 30.4257 29.3284 30.1538 29.8563C29.8818 30.3762 29.5059 30.7841 29.0261 31.08C28.5542 31.3679 28.0303 31.5119 27.4545 31.5119C26.9506 31.5119 26.5027 31.4119 26.1108 31.212C25.7189 31.004 25.399 30.7481 25.151 30.4442V34.5471H23.7834V24.7936H25.151V25.7653ZM29.17 28.0687C29.17 27.6129 29.074 27.221 28.8821 26.893C28.6981 26.5571 28.4502 26.3052 28.1383 26.1372C27.8344 25.9613 27.5064 25.8733 27.1545 25.8733C26.8106 25.8733 26.4827 25.9613 26.1708 26.1372C25.8669 26.3132 25.6189 26.5691 25.427 26.905C25.243 27.2409 25.151 27.6369 25.151 28.0927C25.151 28.5486 25.243 28.9485 25.427 29.2924C25.6189 29.6284 25.8669 29.8843 26.1708 30.0602C26.4827 30.2362 26.8106 30.3242 27.1545 30.3242C27.5064 30.3242 27.8344 30.2362 28.1383 30.0602C28.4502 29.8763 28.6981 29.6124 28.8821 29.2684C29.074 28.9245 29.17 28.5246 29.17 28.0687ZM20.7115 25.0095C20.3036 24.7936 19.8397 24.6856 19.3198 24.6856C18.832 24.6856 18.3761 24.8056 17.9522 25.0455C17.5283 25.2774 17.2164 25.5934 17.0164 25.9933C16.7925 25.5694 16.4726 25.2454 16.0567 25.0215C15.6408 24.7976 15.1689 24.6856 14.641 24.6856C14.2491 24.6856 13.8812 24.7616 13.5373 24.9135C13.1934 25.0655 12.9095 25.2774 12.6855 25.5494V24.7936H11.3179V31.4039H12.6855V27.7088C12.6855 27.117 12.8335 26.6651 13.1294 26.3532C13.4333 26.0333 13.8412 25.8733 14.3531 25.8733C14.865 25.8733 15.2689 26.0333 15.5648 26.3532C15.8607 26.6651 16.0087 27.117 16.0087 27.7088V31.4039H17.3643V27.7088C17.3643 27.117 17.5123 26.6651 17.8082 26.3532C18.1121 26.0333 18.52 25.8733 19.0319 25.8733C19.5438 25.8733 19.9477 26.0333 20.2436 26.3532C20.5395 26.6651 20.6875 27.117 20.6875 27.7088V31.4039H22.0432V27.5049C22.0432 26.905 21.9232 26.3932 21.6832 25.9693C21.4513 25.5454 21.1274 25.2255 20.7115 25.0095Z", fill: "currentColor" })));
+};
+
+var FilePlyLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.4 38.6V12.4941L13.4941 9.4H37.6V38.6H10.4ZM8 11.5L12.5 7H40V41H8V11.5ZM25.5752 31.9999V20.8999H23.8652V31.9999H25.5752ZM30.1903 35.8849L35.2603 23.7349H33.4903L31.0753 30.0349L28.7503 23.7349H26.8453L30.1003 31.8649L28.4203 35.8849H30.1903ZM15.4092 24.9499C15.6992 24.5699 16.0942 24.2499 16.5942 23.9899C17.0942 23.7299 17.6592 23.5999 18.2892 23.5999C19.0092 23.5999 19.6642 23.7799 20.2542 24.1399C20.8542 24.4899 21.3242 24.9849 21.6642 25.6249C22.0042 26.2649 22.1742 26.9999 22.1742 27.8299C22.1742 28.6599 22.0042 29.4049 21.6642 30.0649C21.3242 30.7149 20.8542 31.2249 20.2542 31.5949C19.6642 31.9549 19.0092 32.1349 18.2892 32.1349C17.6592 32.1349 17.0992 32.0099 16.6092 31.7599C16.1192 31.4999 15.7192 31.1799 15.4092 30.7999V35.9299H13.6992V23.7349H15.4092V24.9499ZM20.4342 27.8299C20.4342 27.2599 20.3142 26.7699 20.0742 26.3599C19.8442 25.9399 19.5342 25.6249 19.1442 25.4149C18.7642 25.1949 18.3542 25.0849 17.9142 25.0849C17.4842 25.0849 17.0742 25.1949 16.6842 25.4149C16.3042 25.6349 15.9942 25.9549 15.7542 26.3749C15.5242 26.7949 15.4092 27.2899 15.4092 27.8599C15.4092 28.4299 15.5242 28.9299 15.7542 29.3599C15.9942 29.7799 16.3042 30.0999 16.6842 30.3199C17.0742 30.5399 17.4842 30.6499 17.9142 30.6499C18.3542 30.6499 18.7642 30.5399 19.1442 30.3199C19.5342 30.0899 19.8442 29.7599 20.0742 29.3299C20.3142 28.8999 20.4342 28.3999 20.4342 27.8299Z", fill: "currentColor" })));
+};
+
+var FilePlyLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 38V12.7426L13.7426 10H37V38H11ZM8 11.5L12.5 7H40V41H8V11.5ZM25.5896 31.9999V20.8999H23.4896V31.9999H25.5896ZM30.4694 35.9299L35.6144 23.6899H33.3794L31.2044 29.4949L29.0594 23.6899H26.7044L30.0344 31.7899L28.2344 35.9299H30.4694ZM15.4235 24.8899C15.6935 24.5099 16.0635 24.1949 16.5335 23.9449C17.0135 23.6849 17.5585 23.5549 18.1685 23.5549C18.8785 23.5549 19.5185 23.7299 20.0885 24.0799C20.6685 24.4299 21.1235 24.9299 21.4535 25.5799C21.7935 26.2199 21.9635 26.9649 21.9635 27.8149C21.9635 28.6649 21.7935 29.4199 21.4535 30.0799C21.1235 30.7299 20.6685 31.2349 20.0885 31.5949C19.5185 31.9549 18.8785 32.1349 18.1685 32.1349C17.5585 32.1349 17.0185 32.0099 16.5485 31.7599C16.0885 31.5099 15.7135 31.1949 15.4235 30.8149V35.9599H13.3235V23.6899H15.4235V24.8899ZM19.8185 27.8149C19.8185 27.3149 19.7135 26.8849 19.5035 26.5249C19.3035 26.1549 19.0335 25.8749 18.6935 25.6849C18.3635 25.4949 18.0035 25.3999 17.6135 25.3999C17.2335 25.3999 16.8735 25.4999 16.5335 25.6999C16.2035 25.8899 15.9335 26.1699 15.7235 26.5399C15.5235 26.9099 15.4235 27.3449 15.4235 27.8449C15.4235 28.3449 15.5235 28.7799 15.7235 29.1499C15.9335 29.5199 16.2035 29.8049 16.5335 30.0049C16.8735 30.1949 17.2335 30.2899 17.6135 30.2899C18.0035 30.2899 18.3635 30.1899 18.6935 29.9899C19.0335 29.7899 19.3035 29.5049 19.5035 29.1349C19.7135 28.7649 19.8185 28.3249 19.8185 27.8149Z", fill: "currentColor" })));
+};
+
+var FilePlyLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.2 39.8V11.9971L12.9971 8.2H38.8V39.8H9.2ZM8 11.5L12.5 7H40V41H8V11.5ZM25.5166 31.9999V20.8999H24.1516V31.9999H25.5166ZM29.973 35.8699L34.923 23.7799H33.513L30.963 30.4399L28.383 23.7799H26.868L30.183 31.9099L28.563 35.8699H29.973ZM15.3799 25.2949C15.6499 24.8249 16.0499 24.4349 16.5799 24.1249C17.1199 23.8049 17.7449 23.6449 18.4549 23.6449C19.1849 23.6449 19.8449 23.8199 20.4349 24.1699C21.0349 24.5199 21.5049 25.0149 21.8449 25.6549C22.1849 26.2849 22.3549 27.0199 22.3549 27.8599C22.3549 28.6899 22.1849 29.4299 21.8449 30.0799C21.5049 30.7299 21.0349 31.2349 20.4349 31.5949C19.8449 31.9549 19.1849 32.1349 18.4549 32.1349C17.7549 32.1349 17.1349 31.9799 16.5949 31.6699C16.0649 31.3499 15.6599 30.9549 15.3799 30.4849V35.8999H14.0149V23.7799H15.3799V25.2949ZM20.9599 27.8599C20.9599 27.2399 20.8349 26.6999 20.5849 26.2399C20.3349 25.7799 19.9949 25.4299 19.5649 25.1899C19.1449 24.9499 18.6799 24.8299 18.1699 24.8299C17.6699 24.8299 17.2049 24.9549 16.7749 25.2049C16.3549 25.4449 16.0149 25.7999 15.7549 26.2699C15.5049 26.7299 15.3799 27.2649 15.3799 27.8749C15.3799 28.4949 15.5049 29.0399 15.7549 29.5099C16.0149 29.9699 16.3549 30.3249 16.7749 30.5749C17.2049 30.8149 17.6699 30.9349 18.1699 30.9349C18.6799 30.9349 19.1449 30.8149 19.5649 30.5749C19.9949 30.3249 20.3349 29.9699 20.5849 29.5099C20.8349 29.0399 20.9599 28.4899 20.9599 27.8599Z", fill: "currentColor" })));
+};
+
+var FilePlyFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 11.5L12.5 7H40V41H8V11.5ZM25.5752 31.9999V20.8999H23.8652V31.9999H25.5752ZM30.1903 35.8849L35.2603 23.7349H33.4903L31.0753 30.0349L28.7503 23.7349H26.8453L30.1003 31.8649L28.4203 35.8849H30.1903ZM15.4092 24.9499C15.6992 24.5699 16.0942 24.2499 16.5942 23.9899C17.0942 23.7299 17.6592 23.5999 18.2892 23.5999C19.0092 23.5999 19.6642 23.7799 20.2542 24.1399C20.8542 24.4899 21.3242 24.9849 21.6642 25.6249C22.0042 26.2649 22.1742 26.9999 22.1742 27.8299C22.1742 28.6599 22.0042 29.4049 21.6642 30.0649C21.3242 30.7149 20.8542 31.2249 20.2542 31.5949C19.6642 31.9549 19.0092 32.1349 18.2892 32.1349C17.6592 32.1349 17.0992 32.0099 16.6092 31.7599C16.1192 31.4999 15.7192 31.1799 15.4092 30.7999V35.9299H13.6992V23.7349H15.4092V24.9499ZM20.4342 27.8299C20.4342 27.2599 20.3142 26.7699 20.0742 26.3599C19.8442 25.9399 19.5342 25.6249 19.1442 25.4149C18.7642 25.1949 18.3542 25.0849 17.9142 25.0849C17.4842 25.0849 17.0742 25.1949 16.6842 25.4149C16.3042 25.6349 15.9942 25.9549 15.7542 26.3749C15.5242 26.7949 15.4092 27.2899 15.4092 27.8599C15.4092 28.4299 15.5242 28.9299 15.7542 29.3599C15.9942 29.7799 16.3042 30.0999 16.6842 30.3199C17.0742 30.5399 17.4842 30.6499 17.9142 30.6499C18.3542 30.6499 18.7642 30.5399 19.1442 30.3199C19.5342 30.0899 19.8442 29.7599 20.0742 29.3299C20.3142 28.8999 20.4342 28.3999 20.4342 27.8299Z", fill: "currentColor" })));
+};
+
+var FileZipLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.4 38.6V12.4941L13.4941 9.4H37.6V38.6H10.4ZM8 11.5L12.5 7H40V41H8V11.5ZM21.5304 22.6799C21.7544 22.9039 22.0317 23.0159 22.3624 23.0159C22.6824 23.0159 22.9544 22.9039 23.1784 22.6799C23.4024 22.4559 23.5144 22.1786 23.5144 21.8479C23.5144 21.5173 23.4024 21.2399 23.1784 21.0159C22.9544 20.7919 22.6824 20.6799 22.3624 20.6799C22.0317 20.6799 21.7544 20.7919 21.5304 21.0159C21.3064 21.2399 21.1944 21.5173 21.1944 21.8479C21.1944 22.1786 21.3064 22.4559 21.5304 22.6799ZM23.2584 32.9999V24.1839H21.4344V32.9999H23.2584ZM28.7411 24.4559C28.2078 24.7333 27.7864 25.0746 27.4771 25.4799V24.1839H25.6531V37.1919H27.4771V31.7199C27.8078 32.1253 28.2344 32.4666 28.7571 32.7439C29.2798 33.0106 29.8771 33.1439 30.5491 33.1439C31.3171 33.1439 32.0158 32.9519 32.6451 32.5679C33.2851 32.1733 33.7864 31.6293 34.1491 30.9359C34.5118 30.2319 34.6931 29.4373 34.6931 28.5519C34.6931 27.6666 34.5118 26.8826 34.1491 26.1999C33.7864 25.5173 33.2851 24.9893 32.6451 24.6159C32.0158 24.2319 31.3171 24.0399 30.5491 24.0399C29.8771 24.0399 29.2744 24.1786 28.7411 24.4559ZM32.4531 26.9839C32.7091 27.4213 32.8371 27.9439 32.8371 28.5519C32.8371 29.1599 32.7091 29.6933 32.4531 30.1519C32.2078 30.6106 31.8771 30.9626 31.4611 31.2079C31.0558 31.4426 30.6184 31.5599 30.1491 31.5599C29.6904 31.5599 29.2531 31.4426 28.8371 31.2079C28.4318 30.9733 28.1011 30.6319 27.8451 30.1839C27.5998 29.7253 27.4771 29.1919 27.4771 28.5839C27.4771 27.9759 27.5998 27.4479 27.8451 26.9999C28.1011 26.5519 28.4318 26.2106 28.8371 25.9759C29.2531 25.7413 29.6904 25.6239 30.1491 25.6239C30.6184 25.6239 31.0558 25.7413 31.4611 25.9759C31.8771 26.1999 32.2078 26.5359 32.4531 26.9839ZM15.5191 31.5119H19.5191V32.9999H13.4071V31.5119L17.4231 25.6719H13.4071V24.1839H19.5191V25.6719L15.5191 31.5119Z", fill: "currentColor" })));
+};
+
+var FileZipLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 38V12.7426L13.7426 10H37V38H11ZM8 11.5L12.5 7H40V41H8V11.5ZM21.4668 22.7121C21.7334 22.9574 22.0641 23.0801 22.4588 23.0801C22.8534 23.0801 23.1788 22.9574 23.4348 22.7121C23.7014 22.4561 23.8348 22.1414 23.8348 21.7681C23.8348 21.3947 23.7014 21.0854 23.4348 20.8401C23.1788 20.5841 22.8534 20.4561 22.4588 20.4561C22.0641 20.4561 21.7334 20.5841 21.4668 20.8401C21.2108 21.0854 21.0828 21.3947 21.0828 21.7681C21.0828 22.1414 21.2108 22.4561 21.4668 22.7121ZM23.5628 33.0001V24.1361H21.3228V33.0001H23.5628ZM29.1999 24.4081C28.6986 24.6747 28.3039 25.0107 28.0159 25.4161V24.1361H25.7759V37.2241H28.0159V31.7361C28.3252 32.1414 28.7252 32.4774 29.2159 32.7441C29.7172 33.0107 30.2932 33.1441 30.9439 33.1441C31.7012 33.1441 32.3839 32.9521 32.9919 32.5681C33.6106 32.1841 34.0959 31.6454 34.4479 30.9521C34.8106 30.2481 34.9919 29.4427 34.9919 28.5361C34.9919 27.6294 34.8106 26.8347 34.4479 26.1521C34.0959 25.4587 33.6106 24.9254 32.9919 24.5521C32.3839 24.1787 31.7012 23.9921 30.9439 23.9921C30.2932 23.9921 29.7119 24.1307 29.1999 24.4081ZM32.3679 27.1601C32.5919 27.5441 32.7039 28.0027 32.7039 28.5361C32.7039 29.0801 32.5919 29.5494 32.3679 29.9441C32.1546 30.3387 31.8666 30.6427 31.5039 30.8561C31.1519 31.0694 30.7679 31.1761 30.3519 31.1761C29.9466 31.1761 29.5626 31.0747 29.1999 30.8721C28.8479 30.6587 28.5599 30.3547 28.3359 29.9601C28.1226 29.5654 28.0159 29.1014 28.0159 28.5681C28.0159 28.0347 28.1226 27.5707 28.3359 27.1761C28.5599 26.7814 28.8479 26.4827 29.1999 26.2801C29.5626 26.0667 29.9466 25.9601 30.3519 25.9601C30.7679 25.9601 31.1519 26.0614 31.5039 26.2641C31.8666 26.4667 32.1546 26.7654 32.3679 27.1601ZM15.6364 31.1601H19.5884V33.0001H13.0924V31.1921L16.9644 25.9761H13.1084V24.1361H19.5404V25.9441L15.6364 31.1601Z", fill: "currentColor" })));
+};
+
+var FileZipLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.2 39.8V11.9971L12.9971 8.2H38.8V39.8H9.2ZM8 11.5L12.5 7H40V41H8V11.5ZM21.5456 21.52C21.7376 21.712 21.9723 21.808 22.2496 21.808C22.5163 21.808 22.7403 21.712 22.9216 21.52C23.1136 21.328 23.2096 21.0933 23.2096 20.816C23.2096 20.5386 23.1136 20.304 22.9216 20.112C22.7403 19.92 22.5163 19.824 22.2496 19.824C21.9723 19.824 21.7376 19.92 21.5456 20.112C21.3536 20.304 21.2576 20.5386 21.2576 20.816C21.2576 21.0933 21.3536 21.328 21.5456 21.52ZM22.9536 32V23.232H21.4976V32H22.9536ZM28.1711 23.6C27.6058 23.9306 27.1791 24.3466 26.8911 24.848V23.232H25.4351V36.16H26.8911V30.384C27.1898 30.8853 27.6218 31.3066 28.1871 31.648C28.7631 31.9786 29.4245 32.144 30.1711 32.144C30.9498 32.144 31.6538 31.952 32.2831 31.568C32.9231 31.184 33.4245 30.6453 33.7871 29.952C34.1498 29.2586 34.3311 28.4693 34.3311 27.584C34.3311 26.688 34.1498 25.904 33.7871 25.232C33.4245 24.5493 32.9231 24.0213 32.2831 23.648C31.6538 23.2746 30.9498 23.088 30.1711 23.088C29.4138 23.088 28.7471 23.2586 28.1711 23.6ZM32.4431 25.856C32.7098 26.3466 32.8431 26.9226 32.8431 27.584C32.8431 28.256 32.7098 28.8426 32.4431 29.344C32.1765 29.8346 31.8138 30.2133 31.3551 30.48C30.9071 30.736 30.4111 30.864 29.8671 30.864C29.3338 30.864 28.8378 30.736 28.3791 30.48C27.9311 30.2133 27.5685 29.8346 27.2911 29.344C27.0245 28.8426 26.8911 28.2613 26.8911 27.6C26.8911 26.9493 27.0245 26.3786 27.2911 25.888C27.5685 25.3866 27.9311 25.008 28.3791 24.752C28.8378 24.4853 29.3338 24.352 29.8671 24.352C30.4111 24.352 30.9071 24.48 31.3551 24.736C31.8138 24.992 32.1765 25.3653 32.4431 25.856ZM15.3044 30.8H19.6084V32H13.6404V30.8L17.8964 24.416H13.6724V23.232H19.5764V24.416L15.3044 30.8Z", fill: "currentColor" })));
+};
+
+var FileZipFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 11.5L12.5 7H40V41H8V11.5ZM21.5304 22.6799C21.7544 22.9039 22.0317 23.0159 22.3624 23.0159C22.6824 23.0159 22.9544 22.9039 23.1784 22.6799C23.4024 22.4559 23.5144 22.1786 23.5144 21.8479C23.5144 21.5173 23.4024 21.2399 23.1784 21.0159C22.9544 20.7919 22.6824 20.6799 22.3624 20.6799C22.0317 20.6799 21.7544 20.7919 21.5304 21.0159C21.3064 21.2399 21.1944 21.5173 21.1944 21.8479C21.1944 22.1786 21.3064 22.4559 21.5304 22.6799ZM23.2584 32.9999V24.1839H21.4344V32.9999H23.2584ZM28.7411 24.4559C28.2078 24.7333 27.7864 25.0746 27.4771 25.4799V24.1839H25.6531V37.1919H27.4771V31.7199C27.8078 32.1253 28.2344 32.4666 28.7571 32.7439C29.2798 33.0106 29.8771 33.1439 30.5491 33.1439C31.3171 33.1439 32.0158 32.9519 32.6451 32.5679C33.2851 32.1733 33.7864 31.6293 34.1491 30.9359C34.5118 30.2319 34.6931 29.4373 34.6931 28.5519C34.6931 27.6666 34.5118 26.8826 34.1491 26.1999C33.7864 25.5173 33.2851 24.9893 32.6451 24.6159C32.0158 24.2319 31.3171 24.0399 30.5491 24.0399C29.8771 24.0399 29.2744 24.1786 28.7411 24.4559ZM32.4531 26.9839C32.7091 27.4213 32.8371 27.9439 32.8371 28.5519C32.8371 29.1599 32.7091 29.6933 32.4531 30.1519C32.2078 30.6106 31.8771 30.9626 31.4611 31.2079C31.0558 31.4426 30.6184 31.5599 30.1491 31.5599C29.6904 31.5599 29.2531 31.4426 28.8371 31.2079C28.4318 30.9733 28.1011 30.6319 27.8451 30.1839C27.5998 29.7253 27.4771 29.1919 27.4771 28.5839C27.4771 27.9759 27.5998 27.4479 27.8451 26.9999C28.1011 26.5519 28.4318 26.2106 28.8371 25.9759C29.2531 25.7413 29.6904 25.6239 30.1491 25.6239C30.6184 25.6239 31.0558 25.7413 31.4611 25.9759C31.8771 26.1999 32.2078 26.5359 32.4531 26.9839ZM15.5191 31.5119H19.5191V32.9999H13.4071V31.5119L17.4231 25.6719H13.4071V24.1839H19.5191V25.6719L15.5191 31.5119Z", fill: "currentColor" })));
+};
+
+var FilterLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.8749 6.48945H41.919L41.9177 11.8483L29.5441 23.9164V37.2153L25.1982 41.5103H18.8943V23.9165L6.01093 11.353L10.8749 6.48945ZM11.8689 8.88945L9.42658 11.3316L21.2943 22.9046V39.1103H24.2123L27.1441 36.2129V22.9047L39.518 10.8363L39.5185 8.88945H11.8689Z", fill: "currentColor" })));
+};
+
+var FilterLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.289 6.58496H42.0461L42.0447 12.296L29.5781 24.0717V37.0329L25.1378 41.4213L18.8812 41.3624V24.0185L6.21094 11.6627L11.289 6.58496ZM12.5316 9.58496L10.4805 11.6359L21.8812 22.7537V38.3905L23.9172 38.4097L26.5781 35.7799V22.7787L39.045 11.0027L39.0453 9.58496H12.5316Z", fill: "currentColor" })));
+};
+
+var FilterLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.593 6.40147H42.004L42.0028 11.0491L29.4716 23.8681V37.5132L25.0965 41.5994H19.1361V23.8736L5.94305 10.7956L10.593 6.40147ZM11.0676 7.59461L7.65853 10.8161L20.3292 23.3764V40.4063H24.626L28.2784 36.9949V23.3818L40.8098 10.5627L40.8105 7.59461H11.0676Z", fill: "currentColor" })));
+};
+
+var FilterFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { d: "M42.0391 6.58789V11.6435L29 23.375V37.0566L24.567 41.444H19.4375V23.4785L6.23438 11.6435L11.2891 6.58789H42.0391Z", fill: "currentColor" })));
 };
 
 var FirstPageLineIcon = function () {
@@ -3213,6 +3470,26 @@ var FullScreenLineIcon = function () {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M40.5685 19.0183L40.5685 7.43059L28.9802 7.43059L28.9802 9.83051L38.1684 9.83051L38.1684 19.0183L40.5685 19.0183Z", fill: "currentColor" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M40.5687 29.4185L40.5687 41.0061L28.9804 41.0061L28.9804 38.6062L38.1686 38.6062V29.4185L40.5687 29.4185Z", fill: "currentColor" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M6.99166 29.4182L6.99166 41.0058L18.58 41.0058L18.58 38.6059L9.39174 38.6059L9.39174 29.4182L6.99166 29.4182Z", fill: "currentColor" })));
+};
+
+var GridViewLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.6704 6.00019H10.1942L6.00116 10.2413V22.6612H22.6704V6.00019ZM8.40116 11.2274L11.1964 8.40019H20.2704V20.2612H8.40116V11.2274ZM22.6577 25.3459H6.00116V41.9991H22.6577V25.3459ZM8.40116 39.5991V27.7459H20.2577V39.5991H8.40116ZM25.3469 25.3381H42.0005V37.7613L37.7797 41.9991H25.3469V25.3381ZM27.7469 27.7381V39.5991H36.7828L39.6005 36.77V27.7381H27.7469ZM42.0269 6.00117H25.3469V22.6622H42.0269V6.00117ZM27.7469 20.2622V8.40117H39.6269V20.2622H27.7469Z", fill: "currentColor" })));
+};
+
+var GridViewLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.0001 5.99902H22.6562V22.6562H6V9.99917L10.0001 5.99902ZM6 25.3359H22.6601V42.0006H6V25.3359ZM42.0006 25.3359H25.3438V42.0006H38.0005L42.0006 38.0005V25.3359ZM25.3438 6H42.0006V22.6562H25.3438V6Z", fill: "currentColor" })));
+};
+
+var GridViewLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.6683 5.9996H10.2197L6.00159 10.2177V22.6663H22.6683V5.9996ZM7.20159 10.7148L10.7168 7.1996H21.4683V21.4663H7.20159V10.7148ZM22.6683 25.3336H6.00159V42.0003H22.6683V25.3336ZM7.20159 40.8003V26.5336H21.4683V40.8003H7.20159ZM25.3336 25.3336H42.0003V37.7821L37.7821 42.0003H25.3336V25.3336ZM26.5336 26.5336V40.8003H37.2851L40.8003 37.2851V26.5336H26.5336ZM42.0003 6.00058H25.3336V22.6672H42.0003V6.00058ZM26.5336 21.4672V7.20058H40.8003V21.4672H26.5336Z", fill: "currentColor" })));
+};
+
+var GridViewFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.0001 5.99902H22.6562V22.6562H6V9.99917L10.0001 5.99902ZM6 25.3359H22.6601V42.0006H6V25.3359ZM42.0006 25.3359H25.3438V42.0006H38.0005L42.0006 38.0005V25.3359ZM25.3438 6H42.0006V22.6562H25.3438V6Z", fill: "currentColor" })));
 };
 
 var HeartLineIcon = function () {
@@ -3330,6 +3607,21 @@ var LocationFillIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { d: "M34 41.6H14V44H34V41.6Z", fill: "currentColor" }),
         React.createElement("path", { d: "M24.0001 3.85999C16.3601 3.85999 10.1201 10.1 10.1201 17.76V25.68L24.0001 39.7L37.8801 25.68V17.76C37.8801 10.1 31.6601 3.85999 24.0001 3.85999ZM24.0001 24.1C20.6401 24.1 17.9001 21.36 17.9001 18C17.9001 14.64 20.6401 11.9 24.0001 11.9C27.3601 11.9 30.1001 14.64 30.1001 18C30.1001 21.36 27.3601 24.1 24.0001 24.1Z", fill: "currentColor" })));
+};
+
+var LayerHorizontalLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M26.5547 15.9396L26.5209 8.84916L37.875 17.3791L37.8636 31.58L32.2195 27.2905L32.2252 20.1996L26.5547 15.9396ZM24.1461 14.13L16.0471 8.04553L16.0955 18.1837L8.05307 12.1419L8.03696 32.2665L24.127 44.3541L24.135 34.2979L32.209 40.4341L32.2171 30.3031L40.2597 36.4156L40.2759 16.1811L24.0979 4.02698L24.1461 14.13ZM18.4701 12.8677L18.5041 19.9932L24.1431 24.2295L24.1374 31.2853L29.8128 35.5986L29.8242 21.3977L18.4701 12.8677ZM10.4492 16.9438L21.7421 25.4276L21.7308 39.5522L10.4379 31.0684L10.4492 16.9438Z", fill: "currentColor" })));
+};
+
+var LayerHorizontalLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M26.854 15.7891L26.8238 9.4518L37.5749 17.5287L37.5641 30.9755L32.5196 27.1416L32.5253 20.0497L26.854 15.7891ZM23.8432 13.5271L15.7442 7.44263L15.7944 17.9574L8.05307 12.1418L8.03696 32.2664L24.127 44.354L24.1347 34.6743L32.5085 41.0384L32.5166 30.9074L40.5593 37.0199L40.5761 16.0312L23.795 3.42407L23.8432 13.5271ZM18.773 13.4704L18.8052 20.2193L24.1431 24.2294L24.1377 30.9085L29.5133 34.994L29.5241 21.5473L18.773 13.4704ZM11.0483 18.1442L21.1419 25.727L21.1318 38.3516L11.0382 30.7688L11.0483 18.1442Z", fill: "currentColor" })));
+};
+
+var LayerHorizontalLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.9412 16.2479L25.9 7.61351L38.4902 17.0721L38.4776 32.8192L31.6042 27.5954L31.6099 20.5066L25.9412 16.2479ZM24.767 15.3657L16.6736 9.28542L16.6736 18.6181L8.05307 12.1419L8.03696 32.2665L24.127 44.3542L24.1355 33.6926L31.595 39.1711L31.6031 29.064L39.6457 35.1765L39.6607 16.4881L24.7188 5.2627L24.767 15.3657ZM17.8436 11.6278L17.8436 19.4971L24.1431 24.2296L24.1367 32.2418L30.4268 36.8615L30.4394 21.0907L17.8436 11.6278ZM9.2212 14.4828L22.9726 24.8136L22.9588 42.0132L9.20742 31.6824L9.2212 14.4828Z", fill: "currentColor" })));
 };
 
 var LayerLineIcon = function () {
@@ -3593,36 +3885,38 @@ var MyLocationFillIcon = function () {
 };
 
 var NotificationLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.1617 21.5088C10.1617 13.9246 16.4234 7.74353 24.0551 7.74353C31.6868 7.74353 37.9486 13.9246 37.9486 21.5088V26.7641H41.2V33.6878L37.165 37.4379H6.8V30.5084L10.1617 27.4353V21.5088ZM24.0551 10.1435C17.7259 10.1435 12.5617 15.273 12.5617 21.5088V28.493L9.2 31.5661V35.0379H36.2219L38.8 32.6418V29.1641H35.5486V21.5088C35.5486 15.273 30.3844 10.1435 24.0551 10.1435Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.2547 5.00006V8.60006H22.8547V5.00006H25.2547Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19.9092 36.2198V37.2018C19.9092 39.4034 21.7145 41.2206 23.9813 41.2206C26.2352 41.2206 28.0534 39.4162 28.0534 37.2018V36.2198H30.4534V37.2018C30.4534 40.77 27.5322 43.6206 23.9813 43.6206C20.4065 43.6206 17.5092 40.7464 17.5092 37.2018V36.2198H19.9092Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.2614 3.39999V6.46356C32.8205 7.07299 38.8302 13.3873 38.8302 21.0467V26.7471H42.3057V34.0292L38.0428 37.9911H30.8162C30.7252 41.6789 27.6772 44.6 23.9828 44.6C20.2639 44.6 17.2402 41.6554 17.1494 37.9911H5.7V30.7031L9.29337 27.4182V21.0467C9.29337 13.3876 15.3026 7.07342 22.8614 6.46362V3.39999H25.2614ZM19.5506 37.9911C19.6407 40.3137 21.573 42.2 23.9828 42.2C26.379 42.2 28.3247 40.3265 28.415 37.9911H19.5506ZM24.0618 8.81537C17.2514 8.81537 11.6934 14.3347 11.6934 21.0467V28.4759L8.1 31.7609V35.5911H37.0997L39.9057 32.9832V29.1471H36.4302V21.0467C36.4302 14.3347 30.8722 8.81537 24.0618 8.81537Z", fill: "currentColor" })));
+};
+
+var NotificationLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.4614 3.20001V5.98928C33.0424 6.74035 39.0302 13.1206 39.0302 20.8467V26.247H42.5057V33.9599L38.0607 38.0911H31.0029C30.7587 41.8051 27.6389 44.7 23.8828 44.7C20.1022 44.7 17.0064 41.7825 16.7627 38.0911H5.3V30.3709L8.89337 27.0859V20.8467C8.89337 13.1209 14.8807 6.74079 22.4614 5.98935V3.20001H25.4614ZM19.7745 38.0911C20.01 40.1065 21.742 41.7 23.8828 41.7C26.0125 41.7 27.7552 40.1162 27.9911 38.0911H19.7745ZM23.9618 8.91534C17.3142 8.91534 11.8934 14.3032 11.8934 20.8467V28.4081L8.3 31.693V35.0911H36.8818L39.5057 32.6525V29.247H36.0302V20.8467C36.0302 14.3032 30.6094 8.91534 23.9618 8.91534Z", fill: "currentColor" })));
+};
+
+var NotificationLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.6327 3.39999V7.08146C32.2563 7.39991 38.402 13.6721 38.402 21.3075V27.7009H41.9289V34.2164L37.9726 37.8934H30.2717V38.3301C30.2717 41.8098 27.4214 44.6 23.9441 44.6C20.444 44.6 17.6164 41.7873 17.6164 38.3301V37.8934H6V31.3749L9.64647 28.0414V21.3075C9.64647 13.6724 15.7918 7.40034 23.415 7.0815V3.39999H24.6327ZM18.8342 37.8934V38.3301C18.8342 41.1059 21.1076 43.3823 23.9441 43.3823C26.7634 43.3823 29.054 41.1229 29.054 38.3301V37.8934H18.8342ZM24.0242 8.28651C16.7828 8.28651 10.8642 14.1541 10.8642 21.3075V28.5781L7.21773 31.9116V36.6757H37.4941L40.7112 33.6857V28.9186H37.1843V21.3075C37.1843 14.1541 31.2657 8.28651 24.0242 8.28651Z", fill: "currentColor" })));
 };
 
 var NotificationFillIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { d: "M36.7486 27.9642V21.5088C36.7486 14.5988 31.0356 8.94354 24.0551 8.94354C17.0746 8.94354 11.3617 14.5988 11.3617 21.5088V27.9642L8 31.0373V36.2379H36.6935L40 33.1648V27.9642H36.7486Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.1617 21.5088C10.1617 13.9246 16.4234 7.74353 24.0551 7.74353C31.6868 7.74353 37.9486 13.9246 37.9486 21.5088V26.7641H41.2V33.6878L37.165 37.4379H6.8V30.5084L10.1617 27.4353V21.5088ZM24.0551 10.1435C17.7259 10.1435 12.5617 15.273 12.5617 21.5088V28.493L9.2 31.5661V35.0379H36.2219L38.8 32.6418V29.1641H35.5486V21.5088C35.5486 15.273 30.3844 10.1435 24.0551 10.1435Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.2547 5.00006V8.60006H22.8547V5.00006H25.2547Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19.9092 36.2198V37.2018C19.9092 39.4034 21.7145 41.2206 23.9813 41.2206C26.2352 41.2206 28.0534 39.4162 28.0534 37.2018V36.2198H30.4534V37.2018C30.4534 40.77 27.5322 43.6206 23.9813 43.6206C20.4065 43.6206 17.5092 40.7464 17.5092 37.2018V36.2198H19.9092Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.2614 3.39999V6.66417C32.7116 7.27314 38.6302 13.4995 38.6302 21.0467V26.947H42.1057V33.942L37.9642 37.7911H30.8183V37.8214C30.8183 41.5889 27.7338 44.6 23.9828 44.6C20.2067 44.6 17.1473 41.5641 17.1473 37.8214V37.7911H5.9V30.7913L9.49337 27.5063V21.0467C9.49337 13.4997 15.4115 7.27351 22.8614 6.66423V3.39999H25.2614ZM19.5473 37.7911V37.8214C19.5473 40.2211 21.5147 42.2 23.9828 42.2C26.4368 42.2 28.4183 40.2351 28.4183 37.8214V37.7911H19.5473Z", fill: "currentColor" })));
 };
 
 var NotificationOffLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.3004 5V8.6H22.9004V5H25.3004Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19.9 36.2V37.2C19.9 39.4 21.7 41.2 24 41.2C26.3 41.2 28.1 39.4 28.1 37.2V36.2H30.5V37.2C30.5 40.8 27.6 43.6 24 43.6C20.4 43.6 17.5 40.7 17.5 37.2V36.2H19.9Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.1998 21.5C10.1998 18.9893 10.8558 16.5642 12.1852 14.4592L14.2144 15.7408C13.1438 17.4359 12.5998 19.4107 12.5998 21.5V28.5415L9.1998 31.5415V35H34.3998V37.4H6.7998V30.4585L10.1998 27.4585V21.5Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M39.2996 39.2L37.5996 40.9L9.09961 12.4L10.7996 10.7", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.7725 10.4455C18.0826 8.68541 20.9383 7.70001 23.9997 7.70001C31.6563 7.70001 37.8997 13.9311 37.8997 21.5V26.8H41.1997V33.7389L39.8969 34.8969L38.3025 33.1031L38.7997 32.6611V29.2H35.4997V21.5C35.4997 15.2689 30.3431 10.1 23.9997 10.1C21.4611 10.1 19.1169 10.9146 17.227 12.3545L15.7725 10.4455Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.8144 6.44526C19.9857 6.66778 17.3618 7.68347 15.189 9.33896L16.6435 11.248C18.6969 9.68352 21.2435 8.79886 24.0001 8.79886C30.8884 8.79886 36.4887 14.4115 36.4887 21.1797V28.1857V29.3857H37.6887H40.0456V33.2516L39.4783 33.7559L41.0728 35.5497L42.0428 34.6874L42.4456 34.3294V33.7905V28.1857V26.9857H41.2456H38.8887V21.1797C38.8887 13.5406 32.9497 7.17254 25.4012 6.46429V3.3952H22.8144V6.44526ZM16.9951 38.2239H6.75446H5.55446V37.0239V31.4191V30.8776L5.96051 30.5193L9.21913 27.6441V21.1796C9.21913 18.7698 9.78314 16.4349 10.9238 14.3549L7.94007 11.3712L9.7724 9.53888L40.491 40.2575L38.6586 42.0898L34.7928 38.2239H31.005C30.9402 42.0452 27.8395 45 24 45C20.1617 45 17.0617 41.9415 16.9951 38.2239ZM7.95446 35.8239H32.3928L12.7082 16.1394C11.985 17.685 11.6191 19.3944 11.6191 21.1796V28.1856V28.7271L11.2131 29.0854L7.95446 31.9606V35.8239ZM28.4175 38.2239C28.3522 40.5393 26.4364 42.4132 24 42.4132C21.5637 42.4132 19.6478 40.5393 19.5826 38.2239H28.4175Z", fill: "currentColor" })));
+};
+
+var NotificationOffLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.46 5.99029V3.19998H22.46V5.99769C19.7298 6.27497 17.1977 7.28619 15.0858 8.89526L16.9039 11.2816C18.8828 9.77388 21.3382 8.92001 24.0001 8.92001C30.6509 8.92001 36.0555 14.3401 36.0555 20.8687V29.3065H39.5778V32.6832L39.1206 33.0896L41.1137 35.3318L42.5778 34.0304V26.3065H39.0555V20.8687C39.0555 13.1548 33.0716 6.72653 25.46 5.99029ZM38.5897 41.7534L40.7603 39.5829L10.3406 9.16324L8.17004 11.3337L10.7846 13.9482C9.62383 16.0598 9.05138 18.4285 9.05138 20.8687V27.1296L5.42236 30.3317V38.0588H16.7547C16.8922 41.8491 20.0333 44.8782 23.8855 44.8782C27.7123 44.8782 30.8785 41.8733 31.0163 38.0588H34.8951L38.5897 41.7534ZM31.8951 35.0588L13.0207 16.1843C12.3776 17.6254 12.0514 19.2114 12.0514 20.8687V28.4834L8.42236 31.6855V35.0588H31.8951ZM19.7582 38.0588H28.0127C27.8773 40.1836 26.0884 41.8782 23.8855 41.8782C21.6707 41.8782 19.8935 40.1726 19.7582 38.0588Z", fill: "currentColor" })));
 };
 
 var NotificationOffFillIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.3004 5V8.6H22.9004V5H25.3004Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19.9 36.2V37.2C19.9 39.4 21.7 41.2 24 41.2C26.3 41.2 28.1 39.4 28.1 37.2V36.2H30.5V37.2C30.5 40.8 27.6 43.6 24 43.6C20.4 43.6 17.5 40.7 17.5 37.2V36.2H19.9Z", fill: "currentColor" }),
-        React.createElement("path", { d: "M11.4 21.5V28L8 31V36.2H36.3L14 13.9C12.3 16 11.4 18.7 11.4 21.5Z", fill: "currentColor" }),
-        React.createElement("path", { d: "M10.8269 10.7405L9.12988 12.4375L37.626 40.9336L39.3231 39.2366L10.8269 10.7405Z", fill: "currentColor" }),
-        React.createElement("path", { d: "M37.9002 26.8V21.5C37.9002 13.9 31.7002 7.70001 24.0002 7.70001C21.0002 7.70001 18.2002 8.60001 15.8002 10.4L14.7002 11.2L39.1002 35.6L41.2002 33.7V26.8H37.9002Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.9004 7.74103C20.316 7.93554 17.9044 8.82187 15.8002 10.4L14.7002 11.2L39.1002 35.6L41.2002 33.7V26.8H37.9002V21.5C37.9002 14.3329 32.3863 8.4108 25.3004 7.75946V5H22.9004V7.74103ZM19.9 36.2V37.2C19.9 39.4 21.7 41.2 24 41.2C26.3 41.2 28.1 39.4 28.1 37.2V36.2H19.9ZM17.5 36.2L8 36.2V31L11.4 28V21.5C11.4 19.5549 11.8343 17.658 12.6695 15.977L9.12988 12.4375L10.8269 10.7404L13.994 13.9075L14 13.9L36.3 36.2H36.2865L39.3231 39.2366L37.626 40.9336L32.8924 36.2H30.5V37.2C30.5 40.8 27.6 43.6 24 43.6C20.4 43.6 17.5 40.7 17.5 37.2V36.2Z", fill: "currentColor" })));
 };
 
 var OpenInNewLineIcon = function () {
@@ -3638,6 +3932,16 @@ var PlayCircleLineIcon = function () {
 var PlayCircleFillIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M43 24C43 34.4934 34.4934 43 24 43C13.5066 43 5 34.4934 5 24C5 13.5066 13.5066 5 24 5C34.4934 5 43 13.5066 43 24ZM34 24L19 14V34L34 24Z", fill: "currentColor" })));
+};
+
+var PlayLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.8 3.70972L41.1082 24L11.8 44.2903L11.8 3.70972ZM14.2 8.29028L14.2 39.7097L36.8918 24L14.2 8.29028Z", fill: "currentColor" })));
+};
+
+var PlayFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.5 3.13715L41.6352 24L11.5 44.8629L11.5 3.13715Z", fill: "currentColor" })));
 };
 
 var PlusLineIcon = function () {
@@ -3664,14 +3968,55 @@ var ProfileFillIcon = function () {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 40.6C33.1679 40.6 40.6 33.1679 40.6 24C40.6 14.8321 33.1679 7.4 24 7.4C14.8321 7.4 7.4 14.8321 7.4 24C7.4 33.1679 14.8321 40.6 24 40.6ZM24 43C34.4934 43 43 34.4934 43 24C43 13.5066 34.4934 5 24 5C13.5066 5 5 13.5066 5 24C5 34.4934 13.5066 43 24 43Z", fill: "currentColor" })));
 };
 
+var ProgressCircleLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.19999 24C7.19999 14.7217 14.7216 7.20005 24 7.20005C33.2784 7.20005 40.8 14.7217 40.8 24C40.8 33.2784 33.2784 40.8 24 40.8C14.7216 40.8 7.19999 33.2784 7.19999 24ZM24 4.80005C13.3961 4.80005 4.79999 13.3962 4.79999 24C4.79999 34.6039 13.3961 43.2001 24 43.2001C34.6039 43.2001 43.2 34.6039 43.2 24C43.2 13.3962 34.6039 4.80005 24 4.80005ZM24 14.8C18.9144 14.8 14.8 18.9144 14.8 24C14.8 29.0856 18.9144 33.2001 24 33.2001C29.0856 33.2001 33.2 29.0856 33.2 24C33.2 23.6736 33.1828 23.3505 33.1491 23.0319L30.7624 23.284C30.7872 23.5192 30.8 23.7581 30.8 24C30.8 27.7602 27.7601 30.8 24 30.8C20.2399 30.8 17.2 27.7602 17.2 24C17.2 20.2399 20.2399 17.2 24 17.2V14.8Z", fill: "currentColor" })));
+};
+
+var ProgressCircleLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.5 24C7.5 14.8873 14.8873 7.5 24 7.5C33.1127 7.5 40.5 14.8873 40.5 24C40.5 33.1127 33.1127 40.5 24 40.5C14.8873 40.5 7.5 33.1127 7.5 24ZM24 4.5C13.2304 4.5 4.5 13.2304 4.5 24C4.5 34.7696 13.2304 43.5 24 43.5C34.7696 43.5 43.5 34.7696 43.5 24C43.5 13.2304 34.7696 4.5 24 4.5ZM24 14.5C18.7487 14.5 14.5 18.7487 14.5 24C14.5 29.2513 18.7487 33.5 24 33.5C29.2513 33.5 33.5 29.2513 33.5 24C33.5 23.663 33.4822 23.3294 33.4475 23.0004L30.4641 23.3154C30.4878 23.5402 30.5 23.7686 30.5 24C30.5 27.5944 27.5944 30.5 24 30.5C20.4056 30.5 17.5 27.5944 17.5 24C17.5 20.4056 20.4056 17.5 24 17.5V14.5Z", fill: "currentColor" })));
+};
+
+var ProgressCircleLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 5.29032C13.6669 5.29032 5.29032 13.6669 5.29032 24C5.29032 34.3331 13.6669 42.7097 24 42.7097C34.3331 42.7097 42.7097 34.3331 42.7097 24C42.7097 13.6669 34.3331 5.29032 24 5.29032ZM4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.3 23.945C15.3 19.166 19.1659 15.3 23.945 15.3V16.59C19.8784 16.59 16.59 19.8784 16.59 23.945C16.59 28.0117 19.8784 31.3 23.945 31.3C28.0116 31.3 31.3 28.0117 31.3 23.945C31.3 23.6835 31.2862 23.4252 31.2593 23.1707L32.5422 23.0352C32.5738 23.3345 32.59 23.6381 32.59 23.945C32.59 28.7241 28.7241 32.59 23.945 32.59C19.1659 32.59 15.3 28.7241 15.3 23.945Z", fill: "currentColor" })));
+};
+
+var ProgressCircleFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 4.80005C13.3961 4.80005 4.79999 13.3962 4.79999 24C4.79999 34.6039 13.3961 43.2001 24 43.2001C34.6039 43.2001 43.2 34.6039 43.2 24C43.2 13.3962 34.6039 4.80005 24 4.80005ZM24 14.8C18.9144 14.8 14.8 18.9144 14.8 24C14.8 29.0856 18.9144 33.2001 24 33.2001C29.0856 33.2001 33.2 29.0856 33.2 24C33.2 23.6736 33.1828 23.3505 33.1491 23.0319L30.7624 23.284C30.7872 23.5192 30.8 23.7581 30.8 24C30.8 27.7602 27.7601 30.8 24 30.8C20.2399 30.8 17.2 27.7602 17.2 24C17.2 20.2399 20.2399 17.2 24 17.2V14.8Z", fill: "currentColor" })));
+};
+
 var ProgressLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M39.9831 23.6053C39.9735 23.4377 39.959 23.1843 39.959 22.9125H42.959C42.959 23.0972 42.9692 23.2767 42.9795 23.4563C42.9897 23.6358 43 23.8153 43 24C43 34.5054 34.4895 43 24.0103 43C13.531 43 5 34.5054 5 24C5 13.4946 13.5105 5 23.9897 5C24.3589 5 24.728 5 25.0766 5.04104L24.7259 8.02047C24.5833 8.00368 24.3951 8 23.9897 8C15.1668 8 8 15.152 8 24C8 32.8437 15.1831 40 24.0103 40C32.8332 40 40 32.848 40 24C40 23.9146 39.9953 23.8194 39.9844 23.6273L39.9831 23.6053Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.8 24C4.8 13.3859 13.3858 4.80005 24 4.80005V7.20005C14.7113 7.20005 7.2 14.7114 7.2 24C7.2 33.2887 14.7113 40.8 24 40.8C33.2887 40.8 40.8 33.2887 40.8 24C40.8 23.4028 40.7685 22.8126 40.7071 22.2313L43.0938 21.9793C43.164 22.644 43.2 23.3183 43.2 24C43.2 34.6142 34.6142 43.2001 24 43.2001C13.3858 43.2001 4.8 34.6142 4.8 24Z", fill: "currentColor" })));
+};
+
+var ProgressLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.5 24C4.5 13.2201 13.2201 4.5 24 4.5V7.5C14.877 7.5 7.5 14.877 7.5 24C7.5 33.123 14.877 40.5 24 40.5C33.123 40.5 40.5 33.123 40.5 24C40.5 23.4133 40.469 22.8337 40.4087 22.2628L43.3922 21.9477C43.4635 22.6229 43.5 23.3076 43.5 24C43.5 34.7799 34.7799 43.5 24 43.5C13.2201 43.5 4.5 34.7799 4.5 24Z", fill: "currentColor" })));
+};
+
+var ProgressLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.355 24C5.355 13.6923 13.6923 5.35498 24 5.35498V6.64498C14.4048 6.64498 6.645 14.4048 6.645 24C6.645 33.5952 14.4048 41.355 24 41.355C33.5952 41.355 41.355 33.5952 41.355 24C41.355 23.3831 41.3224 22.7736 41.259 22.173L42.5419 22.0375C42.6101 22.6829 42.645 23.3377 42.645 24C42.645 34.3076 34.3077 42.645 24 42.645C13.6923 42.645 5.355 34.3076 5.355 24Z", fill: "currentColor" })));
 };
 
 var RefreshLineIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.5135 14.0322C24.2127 14.0097 23.9081 13.9981 23.5996 13.9981C16.8019 13.9981 11.3052 19.4948 11.3052 26.2925C11.3052 33.0902 16.8019 38.5869 23.5996 38.5869C30.3973 38.5869 35.894 33.0902 35.894 26.2925C35.894 23.4656 34.9289 20.8509 33.3138 18.7793L35.1317 17.362C37.0512 19.8239 38.1992 22.9338 38.1992 26.2925C38.1992 34.3634 31.6704 40.8921 23.5996 40.8921C15.5288 40.8921 9 34.3634 9 26.2925C9 18.2217 15.5288 11.6929 23.5996 11.6929C23.9469 11.6929 24.2902 11.7053 24.6292 11.7293L21.2683 8.35581L22.6292 7L27.7583 12.1483L28.4349 12.8275L27.757 13.5054L22.6279 18.6344L21.2696 17.2761L24.5135 14.0322Z", fill: "currentColor" })));
+};
+
+var RefreshLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.9806 13.7859C17.0783 13.7967 11.5008 19.381 11.5008 26.2858C11.5008 33.1974 17.0892 38.7859 24.0008 38.7859C30.9124 38.7859 36.5008 33.1974 36.5008 26.2858C36.5008 23.4119 35.5198 20.7541 33.8778 18.6481L36.2437 16.8036C38.2818 19.4176 39.5008 22.7198 39.5008 26.2858C39.5008 34.8543 32.5692 41.7859 24.0008 41.7859C15.4324 41.7859 8.50079 34.8543 8.50079 26.2858C8.50079 17.7174 15.4324 10.7858 24.0008 10.7858C24.0107 10.7858 24.0205 10.7859 24.0304 10.7859L21.2194 7.9644L23.3447 5.84705L28.6847 11.207L29.7414 12.2677L28.6827 13.3264L23.3427 18.6664L21.2214 16.5451L23.9806 13.7859Z", fill: "currentColor" })));
+};
+
+var RefreshLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.5758 13.1806C25.0616 13.1184 24.5366 13.0859 24.0007 13.0859C16.7026 13.0859 10.8007 18.9877 10.8007 26.2859C10.8007 33.5841 16.7026 39.4859 24.0007 39.4859C31.2989 39.4859 37.2007 33.5841 37.2007 26.2859C37.2007 23.2504 36.1642 20.4423 34.4298 18.2178L35.6916 17.234C37.6373 19.7295 38.8007 22.8813 38.8007 26.2859C38.8007 34.4677 32.1826 41.0859 24.0007 41.0859C15.8189 41.0859 9.20074 34.4677 9.20074 26.2859C9.20074 18.1041 15.8189 11.4859 24.0007 11.4859C24.6233 11.4859 25.2328 11.525 25.8291 11.5997L21.7153 7.47038L22.8487 6.34113L28.1887 11.7011L28.7523 12.2668L28.1877 12.8314L22.8477 18.1714L21.7163 17.0401L25.5758 13.1806Z", fill: "currentColor" })));
 };
 
 var RouteLineIcon = function () {
@@ -3759,6 +4104,36 @@ var SettingFillIcon = function () {
         React.createElement("path", { d: "M37.92 18.2399V10.0799H29.76L24 4.31995L18.24 10.0799H10.08V18.2399L4.29999 23.9999L10.08 29.7599V37.9199H18.24L24 43.6799L29.76 37.9199H37.92V29.7599L43.68 23.9999L37.92 18.2399ZM24 29.9999C20.7 29.9999 18 27.2999 18 23.9999C18 20.6999 20.7 17.9999 24 17.9999C27.3 17.9999 30 20.6999 30 23.9999C30 27.2999 27.3 29.9999 24 29.9999Z", fill: "currentColor" })));
 };
 
+var SmartGlassesLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.83 13.0262C19.0465 9.63808 28.9531 9.63751 36.1911 13.0267L37.2089 10.8532C29.3269 7.16241 18.6735 7.16184 10.81 10.8537L11.83 13.0262ZM17.4474 17.1473C21.3258 15.3374 26.6542 15.3374 30.5325 17.1473L31.5474 14.9725C27.0258 12.8624 20.9542 12.8624 16.4325 14.9725L17.4474 17.1473ZM25.4607 21.0912C24.5977 20.6963 23.4023 20.6963 22.5394 21.0912L21.5407 18.9088C23.0378 18.2237 24.9623 18.2237 26.4594 18.9088L25.4607 21.0912ZM3.98 22.6201H43.98V32.6401C43.98 36.7229 40.6827 40.0201 36.6 40.0201H32.5C31.0931 40.0201 29.7564 39.4479 28.7626 38.4796L28.7514 38.4687L24.3715 34.0886C24.1601 33.8773 23.8399 33.8773 23.6285 34.0886L19.2485 38.4686C18.2656 39.4516 16.9212 40.0201 15.5 40.0201H11.36C7.27725 40.0201 3.98 36.7229 3.98 32.6401V22.6201ZM6.38 25.0201V27.0601H41.58V25.0201H6.38ZM6.38 32.6401V29.4601H41.58V32.6401C41.58 35.3974 39.3573 37.6201 36.6 37.6201H32.5C31.7492 37.6201 31.0081 37.3142 30.4426 36.7656L26.0685 32.3916C24.9199 31.243 23.0801 31.243 21.9315 32.3916L17.5515 36.7716C17.0144 37.3087 16.2787 37.6201 15.5 37.6201H11.36C8.60274 37.6201 6.38 35.3974 6.38 32.6401Z", fill: "currentColor" })));
+};
+
+var SmartGlassesLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.9575 13.2977C19.0931 9.94756 28.9064 9.94685 36.0639 13.2984L37.3361 10.5815C29.3736 6.85298 18.6269 6.85226 10.6825 10.5821L11.9575 13.2977ZM3.68001 22.3201H44.28V32.6401C44.28 36.8885 40.8484 40.3201 36.6 40.3201H32.5C31.0114 40.3201 29.6005 39.7148 28.5532 38.6944L28.5393 38.6808L24.1593 34.3007C24.1066 34.248 24.0507 34.2301 24 34.2301C23.9493 34.2301 23.8934 34.248 23.8407 34.3007L19.4607 38.6807C18.422 39.7194 17.0016 40.3201 15.5 40.3201H11.36C7.11158 40.3201 3.68001 36.8885 3.68001 32.6401V22.3201ZM6.68001 25.3201V26.76H41.28V25.3201H6.68001ZM6.68001 32.6401V29.76H41.28V32.6401C41.28 35.2316 39.1916 37.3201 36.6 37.3201H32.5C31.8314 37.3201 31.165 37.0475 30.653 36.5518L26.2807 32.1794C25.0149 30.9136 22.9851 30.9136 21.7193 32.1794L17.3393 36.5594C16.858 37.0408 16.1984 37.3201 15.5 37.3201H11.36C8.76844 37.3201 6.68001 35.2316 6.68001 32.6401ZM30.4057 17.1391C26.6078 15.3667 21.3723 15.3667 17.5743 17.1391L16.3057 14.4205C20.9078 12.2729 27.0723 12.2729 31.6743 14.4205L30.4057 17.1391ZM22.6642 20.9438C23.4478 20.5852 24.5521 20.5852 25.3358 20.9438L26.5842 18.2158C25.0078 17.4945 22.9921 17.4945 21.4158 18.2158L22.6642 20.9438Z", fill: "currentColor" })));
+};
+
+var SmartGlassesLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.575 12.4831C18.9532 9.019 29.0466 9.01871 36.4456 12.4833L36.9544 11.3966C29.2334 7.78116 18.7668 7.78088 11.065 11.3968L11.575 12.4831ZM4.58002 23.2198H43.38V32.6398C43.38 36.3912 40.3514 39.4198 36.6 39.4198H32.5C31.2566 39.4198 30.0682 38.9137 29.1813 38.0496L29.1757 38.0441L24.7958 33.6641C24.3501 33.2184 23.65 33.2184 23.2043 33.6641L18.8243 38.0441C17.9528 38.9156 16.7606 39.4198 15.5 39.4198H11.36C7.60865 39.4198 4.58002 36.3912 4.58002 32.6398V23.2198ZM5.78002 24.4198V27.6598H42.18V24.4198H5.78002ZM5.78002 32.6398V28.8598H42.18V32.6398C42.18 35.7285 39.6886 38.2198 36.6 38.2198H32.5C31.5847 38.2198 30.6942 37.8469 30.0214 37.1927L25.6443 32.8156C24.73 31.9013 23.2701 31.9013 22.3558 32.8156L17.9758 37.1956C17.3272 37.8441 16.4394 38.2198 15.5 38.2198H11.36C8.27139 38.2198 5.78002 35.7285 5.78002 32.6398ZM30.7863 16.6036C26.7471 14.7186 21.2329 14.7186 17.1937 16.6036L16.6863 15.5162C21.0471 13.4811 26.9329 13.4811 31.2937 15.5162L30.7863 16.6036ZM22.2897 20.5456C23.3111 20.0781 24.6889 20.0781 25.7103 20.5456L26.2097 19.4544C24.8711 18.8419 23.1289 18.8419 21.7903 19.4544L22.2897 20.5456Z", fill: "currentColor" })));
+};
+
+var SortLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M33.032 34.9412L35.3111 34.9412L35.3111 12.3137L12.6837 12.3138L12.6837 14.5929L31.2413 14.5929L11.7884 34.0458L13.4 35.6574L33.032 16.0254L33.032 34.9412Z", fill: "currentColor" })));
+};
+
+var SortLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M34.1374 34.9411L35.3064 34.9411L35.3063 12.3137L12.6789 12.3137L12.6789 13.4827L33.3107 13.4827L12.2656 34.5278L13.0922 35.3544L34.1373 14.3093L34.1374 34.9411Z", fill: "currentColor" })));
+};
+
+var SortLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M32.4928 34.9411L35.3063 34.9411V12.3137L12.6789 12.3137L12.6789 15.1272L30.5034 15.1272L11.6842 33.9464L13.6736 35.9359L32.4928 17.1167L32.4928 34.9411Z", fill: "currentColor" })));
+};
+
 var StarLineIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.0004 2.28857L30.3812 15.2176L44.6492 17.2908L34.3248 27.3546L36.7621 41.565L24.0004 34.8558L11.2387 41.565L13.676 27.3546L3.35156 17.2908L17.6196 15.2176L24.0004 2.28857ZM24.0004 7.7115L19.2133 17.4112L8.50907 18.9666L16.2547 26.5168L14.4262 37.1777L24.0004 32.1443L33.5746 37.1777L31.7461 26.5168L39.4917 18.9666L28.7875 17.4112L24.0004 7.7115Z", fill: "currentColor" })));
@@ -3767,6 +4142,41 @@ var StarLineIcon = function () {
 var StarFillIcon = function () {
     return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.0004 2.28857L30.3812 15.2176L44.6492 17.2908L34.3248 27.3546L36.7621 41.565L24.0004 34.8558L11.2387 41.565L13.676 27.3546L3.35156 17.2908L17.6196 15.2176L24.0004 2.28857Z", fill: "currentColor" })));
+};
+
+var SyncLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M32.6615 11.2657C25.7109 6.70433 16.1658 8.65311 11.5999 15.6106L11.5866 15.6308L11.5742 15.6516C11.4003 15.9414 11.2417 16.2165 11.0942 16.4853L10.1857 11.6831L8.22058 12.0549L9.80647 20.4375L18.189 18.8516L17.8173 16.8864L13.1254 17.7741C13.2741 17.4975 13.4365 17.2131 13.6196 16.9074C17.4582 11.0823 25.4988 9.43866 31.3412 13.2699C35.2077 15.8492 37.2032 19.8747 37.2032 23.869H39.6032C39.6032 19.0645 37.1999 14.2913 32.6688 11.2705L32.6688 11.2705L32.6615 11.2657ZM15.7344 38.1984C11.2033 35.1777 8.80005 30.4045 8.80005 25.6H11.2C11.2 29.5943 13.1956 33.6198 17.0621 36.1991C22.9111 40.0346 30.9634 38.3829 34.7968 32.5416L34.8175 32.5101L34.84 32.48C35.0578 32.1897 35.2471 31.8609 35.4269 31.4937L30.4145 32.5774L29.9918 30.6226L38.3692 28.8113L40.1806 37.1887L38.2257 37.6114L37.2617 33.1529C37.1159 33.4065 36.9573 33.6538 36.7833 33.8888C32.2096 40.8215 22.6822 42.7579 15.7417 38.2032L15.7344 38.1985L15.7344 38.1984Z", fill: "currentColor" })));
+};
+
+var SyncLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M13.8355 18.1309L17.7242 17.3952L18.2819 20.3429L9.40803 22.0217L7.72919 13.1479L10.6769 12.5902L11.3936 16.3785C16.0682 9.33665 25.7603 7.37804 32.8261 12.015L32.8351 12.0209L32.8351 12.021C37.449 15.0969 39.9031 19.9634 39.9031 24.8691H36.9031C36.9031 20.9762 34.9587 17.0443 31.1756 14.5202C25.4726 10.7812 17.6218 12.3857 13.8735 18.0672L13.8355 18.1309ZM15.5679 39.4481C10.954 36.3721 8.49994 31.5056 8.49994 26.6H11.4999C11.4999 30.4928 13.4443 34.4247 17.2274 36.9489C22.9387 40.6933 30.8042 39.0786 34.5459 33.377L34.5717 33.3376L34.5999 33.3C34.6335 33.2552 34.6664 33.2095 34.6986 33.1627L30.52 34.0662L29.886 31.1339L38.7522 29.2169L40.6692 38.083L37.7369 38.717L36.9667 35.1546C32.2759 42.1442 22.6213 44.0769 15.577 39.454L15.5679 39.4481L15.5679 39.4481Z", fill: "currentColor" })));
+};
+
+var SyncLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M32.3323 11.7674C25.657 7.38668 16.4844 9.26107 12.1015 15.9398L12.1011 15.9395L12.0886 15.9603C11.6389 16.7099 11.2963 17.3545 10.9832 18.0503L9.79267 11.7575L8.61359 11.9806L10.1251 19.9701L18.1147 18.4586L17.8916 17.2795L12.1592 18.364C12.4286 17.7835 12.7268 17.2297 13.1114 16.5881C17.1307 10.4757 25.5509 8.75388 31.6721 12.7694C35.7054 15.4591 37.8031 19.6718 37.8031 23.869H39.0031C39.0031 19.2668 36.7015 14.6801 32.336 11.7698L32.336 11.7698L32.3323 11.7674ZM16.0671 37.6991C11.7016 34.7888 9.39996 30.2022 9.39996 25.5999H10.6C10.6 29.797 12.6977 34.0098 16.731 36.6995C22.8555 40.7173 31.2817 38.9914 35.2983 32.8707L35.3087 32.855L35.32 32.8399C35.7346 32.2871 36.0497 31.62 36.3564 30.8834L30.33 32.1864L30.0764 31.0135L38.0628 29.2867L39.7896 37.2731L38.6167 37.5267L37.3424 31.6331C37.0538 32.3008 36.7221 32.9665 36.2914 33.5446C31.9045 40.2107 22.741 42.0788 16.0708 37.7015L16.0671 37.6991Z", fill: "currentColor" })));
+};
+
+var TableViewLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M42.0287 5.97838H10.2667L5.98511 10.1742V42.022H37.7756L42.0287 37.8147V5.97838ZM8.42874 11.2009L11.2644 8.42201H39.5851V17H25.1992H22.7992H8.42874V11.2009ZM22.7992 19.4H8.42874V28.2998H22.7992V19.4ZM22.7992 30.6998H8.42874V39.5784H22.7992V30.6998ZM25.1992 39.5784V30.6998H39.5851V36.7947L36.7711 39.5784H25.1992ZM25.1992 28.2998V19.4H39.5851V28.2998H25.1992Z", fill: "currentColor" })));
+};
+
+var TableViewLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M42 6H10.2496L6 10.289V17V20V28V31V42H22.5H25.5H37.7599L42 37.7796V31V28V20V17V6ZM25.5 39H36.5214L39 36.5329V31H25.5V39ZM25.5 28H39V20H25.5V28ZM22.5 20V28H9V20H22.5ZM22.5 17H25.5H39V9H11.5004L9 11.5235V17H22.5ZM22.5 31V39H9V31H22.5Z", fill: "currentColor" })));
+};
+
+var TableViewLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M41.9995 5.9996H10.2535L5.99951 10.2025V41.9996H23.3996V42H24.5996V41.9996H37.768L41.9995 38.0416V30.0994H42V28.8994H41.9995V18.2H42V17H41.9995V5.9996ZM24.5996 40.7996H37.2943L40.7995 37.5209V30.0994H24.5996V40.7996ZM24.5996 28.8994H40.7995V18.2H24.5996V28.8994ZM23.3996 18.2V28.8994H7.19951V18.2H23.3996ZM23.3996 17H24.5996H40.7995V7.1996H10.7463L7.19951 10.7038V17H23.3996ZM23.3996 30.0994V40.7996H7.19951V30.0994H23.3996Z", fill: "currentColor" })));
+};
+
+var TableViewFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M42 6H10.25L6 10.0078V18H42V6ZM22.5 21.5H6V30H22.5V21.5ZM6 33.5H22.5V42H6V33.5ZM42 21.5H25.5V30H42V21.5ZM25.5 33.5H42V38L37.7812 42H25.5V33.5Z", fill: "currentColor" })));
 };
 
 var TerminalLineIcon = function () {
@@ -3858,6 +4268,31 @@ var ThreeDMapFillIcon = function () {
         React.createElement("path", { d: "M27.3001 15.4L24.1201 18.56L32.4401 26.88C33.7001 27.16 34.9401 27.48 36.0801 27.9V24.2L27.2801 15.4H27.3001Z", fill: "currentColor" }),
         React.createElement("path", { d: "M9.49953 23.12C6.17953 21.54 4.09953 19.4 4.03953 17.06C4.03953 17.08 4.03953 17.12 4.03953 17.14V17.56C4.03953 17.56 4.01953 17.6 4.01953 17.64C4.01953 17.68 4.01953 17.68 4.01953 17.72V31.86C4.01953 33.74 5.03953 36.42 9.51953 38.7V23.14L9.49953 23.12Z", fill: "currentColor" }),
         React.createElement("path", { d: "M44.0004 17.54V17.12H43.9804C43.9804 17.12 43.9804 17.08 43.9804 17.06C43.9204 19.44 41.7804 21.58 38.4004 23.18V38.74C43.0004 36.44 44.0204 33.74 44.0204 31.84V17.7C44.0204 17.7 44.0204 17.66 44.0204 17.62C44.0204 17.58 44.0204 17.58 44.0204 17.54H44.0004Z", fill: "currentColor" })));
+};
+
+var UploadCircleLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.19999 24C7.19999 14.7217 14.7216 7.20005 24 7.20005C33.2784 7.20005 40.8 14.7217 40.8 24C40.8 33.2784 33.2784 40.8 24 40.8C14.7216 40.8 7.19999 33.2784 7.19999 24ZM24 4.80005C13.3961 4.80005 4.79999 13.3962 4.79999 24C4.79999 34.6039 13.3961 43.2001 24 43.2001C34.6039 43.2001 43.2 34.6039 43.2 24C43.2 13.3962 34.6039 4.80005 24 4.80005ZM30.8546 23.7245L32.5517 22.0275L24.1242 13.6L15.6967 22.0275L17.3938 23.7245L22.8813 18.237V30.215H25.2813V18.1512L30.8546 23.7245ZM17.8203 31.4782H30.4519V33.8782H17.8203V31.4782Z", fill: "currentColor" })));
+};
+
+var UploadCircleLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.5 24C7.5 14.8873 14.8873 7.5 24 7.5C33.1127 7.5 40.5 14.8873 40.5 24C40.5 33.1127 33.1127 40.5 24 40.5C14.8873 40.5 7.5 33.1127 7.5 24ZM24 4.5C13.2304 4.5 4.5 13.2304 4.5 24C4.5 34.7696 13.2304 43.5 24 43.5C34.7696 43.5 43.5 34.7696 43.5 24C43.5 13.2304 34.7696 4.5 24 4.5ZM30.6425 23.7611L32.7638 21.6397L24.1242 13.0001L15.4846 21.6397L17.6059 23.7611L22.6 18.7669V30.0396H25.6V18.7186L30.6425 23.7611ZM17.8203 31.5025H30.4519V34.5025H17.8203V31.5025Z", fill: "currentColor" })));
+};
+
+var UploadCircleLineLightIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.29032 24C5.29032 13.6669 13.6669 5.29032 24 5.29032C34.3331 5.29032 42.7097 13.6669 42.7097 24C42.7097 34.3331 34.3331 42.7097 24 42.7097C13.6669 42.7097 5.29032 34.3331 5.29032 24ZM24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4ZM31.8267 22.7654L32.7391 21.853L24.1335 13.2474L15.5279 21.853L16.4403 22.7654L23.4624 15.7433V30.2009H24.7527V15.6913L31.8267 22.7654ZM17.3551 32.0936H30.9375V33.384H17.3551V32.0936Z", fill: "currentColor" })));
+};
+
+var UploadCircleFillIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 4.80005C13.3961 4.80005 4.79999 13.3962 4.79999 24C4.79999 34.6039 13.3961 43.2001 24 43.2001C34.6039 43.2001 43.2 34.6039 43.2 24C43.2 13.3962 34.6039 4.80005 24 4.80005ZM30.8546 23.1245L32.5517 21.4275L24.1242 13L15.6967 21.4275L17.3938 23.1245L22.8813 17.637V29.615H25.2813V17.5512L30.8546 23.1245ZM17.8203 31.4783H30.4519V33.8783H17.8203V31.4783Z", fill: "currentColor" })));
+};
+
+var UploadLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M36.8506 16.8485L35.1536 18.5456L25.0021 8.39408L25.0021 39.297H22.6021L22.6021 8.7941L12.8506 18.5456L11.1536 16.8485L24.0021 3.99998L36.8506 16.8485ZM14 41.6H34V44H14V41.6Z", fill: "currentColor" })));
 };
 
 var UserLineIcon = function () {
@@ -4005,26 +4440,34 @@ var WarningLineLightIcon = function () {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.75 6L1.75 42H45.75L23.75 6ZM23.75 8.82874L4.41734 40.464H43.0827L23.75 8.82874Z", fill: "currentColor" })));
 };
 
+exports.ArScanLineBoldIcon = ArScanLineBoldIcon;
+exports.ArScanLineIcon = ArScanLineIcon;
+exports.ArScanLineLightIcon = ArScanLineLightIcon;
 exports.ArrowBackwardCircleFillIcon = ArrowBackwardCircleFillIcon;
 exports.ArrowBackwardCircleLineIcon = ArrowBackwardCircleLineIcon;
 exports.ArrowBackwardLineBoldIcon = ArrowBackwardLineBoldIcon;
 exports.ArrowBackwardLineIcon = ArrowBackwardLineIcon;
+exports.ArrowBackwardLineLightIcon = ArrowBackwardLineLightIcon;
 exports.ArrowDownCircleFillIcon = ArrowDownCircleFillIcon;
 exports.ArrowDownCircleLineIcon = ArrowDownCircleLineIcon;
 exports.ArrowDownLineBoldIcon = ArrowDownLineBoldIcon;
 exports.ArrowDownLineIcon = ArrowDownLineIcon;
 exports.ArrowDownwardLineBoldIcon = ArrowDownwardLineBoldIcon;
 exports.ArrowDownwardLineIcon = ArrowDownwardLineIcon;
+exports.ArrowDownwardLineLightIcon = ArrowDownwardLineLightIcon;
 exports.ArrowForwardCircleFillIcon = ArrowForwardCircleFillIcon;
 exports.ArrowForwardCircleLineIcon = ArrowForwardCircleLineIcon;
 exports.ArrowForwardLineBoldIcon = ArrowForwardLineBoldIcon;
 exports.ArrowForwardLineIcon = ArrowForwardLineIcon;
+exports.ArrowForwardLineLightIcon = ArrowForwardLineLightIcon;
 exports.ArrowInwardLineBoldIcon = ArrowInwardLineBoldIcon;
 exports.ArrowInwardLineIcon = ArrowInwardLineIcon;
+exports.ArrowInwardLineLightIcon = ArrowInwardLineLightIcon;
 exports.ArrowLeftLineBoldIcon = ArrowLeftLineBoldIcon;
 exports.ArrowLeftLineIcon = ArrowLeftLineIcon;
 exports.ArrowOutwardLineBoldIcon = ArrowOutwardLineBoldIcon;
 exports.ArrowOutwardLineIcon = ArrowOutwardLineIcon;
+exports.ArrowOutwardLineLightIcon = ArrowOutwardLineLightIcon;
 exports.ArrowRightLineBoldIcon = ArrowRightLineBoldIcon;
 exports.ArrowRightLineIcon = ArrowRightLineIcon;
 exports.ArrowUpCircleFillIcon = ArrowUpCircleFillIcon;
@@ -4033,6 +4476,7 @@ exports.ArrowUpLineBoldIcon = ArrowUpLineBoldIcon;
 exports.ArrowUpLineIcon = ArrowUpLineIcon;
 exports.ArrowUpwardLineBoldIcon = ArrowUpwardLineBoldIcon;
 exports.ArrowUpwardLineIcon = ArrowUpwardLineIcon;
+exports.ArrowUpwardLineLightIcon = ArrowUpwardLineLightIcon;
 exports.CheckCircleFillBoldIcon = CheckCircleFillBoldIcon;
 exports.CheckCircleFillIcon = CheckCircleFillIcon;
 exports.CheckCircleLineBoldIcon = CheckCircleLineBoldIcon;
@@ -4047,6 +4491,15 @@ exports.CloseCircleLineBoldIcon = CloseCircleLineBoldIcon;
 exports.CloseCircleLineIcon = CloseCircleLineIcon;
 exports.CloseLineBoldIcon = CloseLineBoldIcon;
 exports.CloseLineIcon = CloseLineIcon;
+exports.CloseLineLightIcon = CloseLineLightIcon;
+exports.ContentCodyFillIcon = ContentCodyFillIcon;
+exports.ContentCodyLineBoldIcon = ContentCodyLineBoldIcon;
+exports.ContentCodyLineIcon = ContentCodyLineIcon;
+exports.ContentCodyLineLightIcon = ContentCodyLineLightIcon;
+exports.CurrencyFillIcon = CurrencyFillIcon;
+exports.CurrencyLineBoldIcon = CurrencyLineBoldIcon;
+exports.CurrencyLineIcon = CurrencyLineIcon;
+exports.CurrencyLineLightIcon = CurrencyLineLightIcon;
 exports.DeleteFillIcon = DeleteFillIcon;
 exports.DeleteLineBoldIcon = DeleteLineBoldIcon;
 exports.DeleteLineIcon = DeleteLineIcon;
@@ -4068,9 +4521,41 @@ exports.ErrorCircleFillBoldIcon = ErrorCircleFillBoldIcon;
 exports.ErrorCircleFillIcon = ErrorCircleFillIcon;
 exports.ErrorCircleLineBoldIcon = ErrorCircleLineBoldIcon;
 exports.ErrorCircleLineIcon = ErrorCircleLineIcon;
+exports.FileBinFillIcon = FileBinFillIcon;
+exports.FileBinLineBoldIcon = FileBinLineBoldIcon;
+exports.FileBinLineIcon = FileBinLineIcon;
+exports.FileBinLineLightIcon = FileBinLineLightIcon;
+exports.FileEfsFillIcon = FileEfsFillIcon;
+exports.FileEfsLineBoldIcon = FileEfsLineBoldIcon;
+exports.FileEfsLineIcon = FileEfsLineIcon;
+exports.FileEfsLineLightIcon = FileEfsLineLightIcon;
+exports.FileJpgFillIcon = FileJpgFillIcon;
+exports.FileJpgLineBoldIcon = FileJpgLineBoldIcon;
+exports.FileJpgLineIcon = FileJpgLineIcon;
+exports.FileJpgLineLightIcon = FileJpgLineLightIcon;
 exports.FileLineBoldIcon = FileLineBoldIcon;
 exports.FileLineIcon = FileLineIcon;
 exports.FileLineLightIcon = FileLineLightIcon;
+exports.FileMoveFillIcon = FileMoveFillIcon;
+exports.FileMoveLineBoldIcon = FileMoveLineBoldIcon;
+exports.FileMoveLineIcon = FileMoveLineIcon;
+exports.FileMoveLineLightIcon = FileMoveLineLightIcon;
+exports.FileMp4FillIcon = FileMp4FillIcon;
+exports.FileMp4LineBoldIcon = FileMp4LineBoldIcon;
+exports.FileMp4LineIcon = FileMp4LineIcon;
+exports.FileMp4LineLightIcon = FileMp4LineLightIcon;
+exports.FilePlyFillIcon = FilePlyFillIcon;
+exports.FilePlyLineBoldIcon = FilePlyLineBoldIcon;
+exports.FilePlyLineIcon = FilePlyLineIcon;
+exports.FilePlyLineLightIcon = FilePlyLineLightIcon;
+exports.FileZipFillIcon = FileZipFillIcon;
+exports.FileZipLineBoldIcon = FileZipLineBoldIcon;
+exports.FileZipLineIcon = FileZipLineIcon;
+exports.FileZipLineLightIcon = FileZipLineLightIcon;
+exports.FilterFillIcon = FilterFillIcon;
+exports.FilterLineBoldIcon = FilterLineBoldIcon;
+exports.FilterLineIcon = FilterLineIcon;
+exports.FilterLineLightIcon = FilterLineLightIcon;
 exports.FirstPageLineBoldIcon = FirstPageLineBoldIcon;
 exports.FirstPageLineIcon = FirstPageLineIcon;
 exports.FolderFillIcon = FolderFillIcon;
@@ -4079,6 +4564,10 @@ exports.FolderLineIcon = FolderLineIcon;
 exports.FolderLineLightIcon = FolderLineLightIcon;
 exports.FullScreenExitLineIcon = FullScreenExitLineIcon;
 exports.FullScreenLineIcon = FullScreenLineIcon;
+exports.GridViewFillIcon = GridViewFillIcon;
+exports.GridViewLineBoldIcon = GridViewLineBoldIcon;
+exports.GridViewLineIcon = GridViewLineIcon;
+exports.GridViewLineLightIcon = GridViewLineLightIcon;
 exports.HeartFillIcon = HeartFillIcon;
 exports.HeartLineIcon = HeartLineIcon;
 exports.HelpCircleFillIcon = HelpCircleFillIcon;
@@ -4094,6 +4583,9 @@ exports.LanguageLineIcon = LanguageLineIcon;
 exports.LastPageLineBoldIcon = LastPageLineBoldIcon;
 exports.LastPageLineIcon = LastPageLineIcon;
 exports.LayerFillIcon = LayerFillIcon;
+exports.LayerHorizontalLineBoldIcon = LayerHorizontalLineBoldIcon;
+exports.LayerHorizontalLineIcon = LayerHorizontalLineIcon;
+exports.LayerHorizontalLineLightIcon = LayerHorizontalLineLightIcon;
 exports.LayerLineBoldIcon = LayerLineBoldIcon;
 exports.LayerLineIcon = LayerLineIcon;
 exports.LayerLineLightIcon = LayerLineLightIcon;
@@ -4141,18 +4633,31 @@ exports.MyLocationLineBoldIcon = MyLocationLineBoldIcon;
 exports.MyLocationLineIcon = MyLocationLineIcon;
 exports.MyLocationLineLightIcon = MyLocationLineLightIcon;
 exports.NotificationFillIcon = NotificationFillIcon;
+exports.NotificationLineBoldIcon = NotificationLineBoldIcon;
 exports.NotificationLineIcon = NotificationLineIcon;
+exports.NotificationLineLightIcon = NotificationLineLightIcon;
 exports.NotificationOffFillIcon = NotificationOffFillIcon;
+exports.NotificationOffLineBoldIcon = NotificationOffLineBoldIcon;
 exports.NotificationOffLineIcon = NotificationOffLineIcon;
 exports.OpenInNewLineIcon = OpenInNewLineIcon;
 exports.PlayCircleFillIcon = PlayCircleFillIcon;
 exports.PlayCircleLineIcon = PlayCircleLineIcon;
+exports.PlayFillIcon = PlayFillIcon;
+exports.PlayLineIcon = PlayLineIcon;
 exports.PlusLineBoldIcon = PlusLineBoldIcon;
 exports.PlusLineIcon = PlusLineIcon;
 exports.ProfileFillIcon = ProfileFillIcon;
 exports.ProfileLineIcon = ProfileLineIcon;
+exports.ProgressCircleFillIcon = ProgressCircleFillIcon;
+exports.ProgressCircleLineBoldIcon = ProgressCircleLineBoldIcon;
+exports.ProgressCircleLineIcon = ProgressCircleLineIcon;
+exports.ProgressCircleLineLightIcon = ProgressCircleLineLightIcon;
+exports.ProgressLineBoldIcon = ProgressLineBoldIcon;
 exports.ProgressLineIcon = ProgressLineIcon;
+exports.ProgressLineLightIcon = ProgressLineLightIcon;
+exports.RefreshLineBoldIcon = RefreshLineBoldIcon;
 exports.RefreshLineIcon = RefreshLineIcon;
+exports.RefreshLineLightIcon = RefreshLineLightIcon;
 exports.RouteLineBoldIcon = RouteLineBoldIcon;
 exports.RouteLineIcon = RouteLineIcon;
 exports.RouteLineLightIcon = RouteLineLightIcon;
@@ -4165,8 +4670,21 @@ exports.SettingFillIcon = SettingFillIcon;
 exports.SettingLineBoldIcon = SettingLineBoldIcon;
 exports.SettingLineIcon = SettingLineIcon;
 exports.SettingLineLightIcon = SettingLineLightIcon;
+exports.SmartGlassesLineBoldIcon = SmartGlassesLineBoldIcon;
+exports.SmartGlassesLineIcon = SmartGlassesLineIcon;
+exports.SmartGlassesLineLightIcon = SmartGlassesLineLightIcon;
+exports.SortLineBoldIcon = SortLineBoldIcon;
+exports.SortLineIcon = SortLineIcon;
+exports.SortLineLightIcon = SortLineLightIcon;
 exports.StarFillIcon = StarFillIcon;
 exports.StarLineIcon = StarLineIcon;
+exports.SyncLineBoldIcon = SyncLineBoldIcon;
+exports.SyncLineIcon = SyncLineIcon;
+exports.SyncLineLightIcon = SyncLineLightIcon;
+exports.TableViewFillIcon = TableViewFillIcon;
+exports.TableViewLineBoldIcon = TableViewLineBoldIcon;
+exports.TableViewLineIcon = TableViewLineIcon;
+exports.TableViewLineLightIcon = TableViewLineLightIcon;
 exports.TerminalFillIcon = TerminalFillIcon;
 exports.TerminalLineBoldIcon = TerminalLineBoldIcon;
 exports.TerminalLineIcon = TerminalLineIcon;
@@ -4179,6 +4697,11 @@ exports.ThreeDMapFillIcon = ThreeDMapFillIcon;
 exports.ThreeDMapLineBoldIcon = ThreeDMapLineBoldIcon;
 exports.ThreeDMapLineIcon = ThreeDMapLineIcon;
 exports.ThreeDMapLineLightIcon = ThreeDMapLineLightIcon;
+exports.UploadCircleFillIcon = UploadCircleFillIcon;
+exports.UploadCircleLineBoldIcon = UploadCircleLineBoldIcon;
+exports.UploadCircleLineIcon = UploadCircleLineIcon;
+exports.UploadCircleLineLightIcon = UploadCircleLineLightIcon;
+exports.UploadLineIcon = UploadLineIcon;
 exports.UserFillIcon = UserFillIcon;
 exports.UserLineBoldIcon = UserLineBoldIcon;
 exports.UserLineIcon = UserLineIcon;

@@ -107,6 +107,11 @@ export { FileMoveLineBoldIcon } from './icons/fileMoveLineBold';
 export { FileMoveLineLightIcon } from './icons/fileMoveLineLight';
 export { FileMoveFillIcon } from './icons/fileMoveFill';
 
+export { FileJpgLineIcon } from './icons/fileJpgLine';
+export { FileJpgLineBoldIcon } from './icons/fileJpgLineBold';
+export { FileJpgLineLightIcon } from './icons/fileJpgLineLight';
+export { FileJpgFillIcon } from './icons/fileJpgFill';
+
 export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';

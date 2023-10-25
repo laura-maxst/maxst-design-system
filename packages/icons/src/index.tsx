@@ -126,6 +126,11 @@ export { FileMoveLineBoldIcon } from './icons/fileMoveLineBold';
 export { FileMoveLineLightIcon } from './icons/fileMoveLineLight';
 export { FileMoveFillIcon } from './icons/fileMoveFill';
 
+export { FileMp4LineIcon } from './icons/fileMp4Line';
+export { FileMp4LineBoldIcon } from './icons/fileMp4LineBold';
+export { FileMp4LineLightIcon } from './icons/fileMp4LineLight';
+export { FileMp4FillIcon } from './icons/fileMp4Fill';
+
 export { FilePlyLineIcon } from './icons/filePlyLine';
 export { FilePlyLineBoldIcon } from './icons/filePlyLineBold';
 export { FilePlyLineLightIcon } from './icons/filePlyLineLight';

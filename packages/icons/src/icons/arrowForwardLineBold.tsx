@@ -12,7 +12,7 @@ const ArrowForwardLineBoldIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M23.1735 8.82661L24.0001 8L40 24L24.0001 40L23.1735 39.1734L37.7623 24.5845H8V23.4155H37.7623L23.1735 8.82661Z"
+        d="M22.0106 9.98944L24 8L40 24L24 40L22.0106 38.0106L34.6144 25.4067H7.99999V22.5932H34.6144L22.0106 9.98944Z"
         fill="currentColor"
       />
     </svg>

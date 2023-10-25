@@ -75,6 +75,11 @@ export { ContentCodyLineBoldIcon } from './icons/contentCodyLineBold';
 export { ContentCodyLineLightIcon } from './icons/contentCodyLineLight';
 export { ContentCodyFillIcon } from './icons/contentCodyFill';
 
+export { CurrencyLineIcon } from './icons/currencyLine';
+export { CurrencyLineBoldIcon } from './icons/currencyLineBold';
+export { CurrencyLineLightIcon } from './icons/currencyLineLight';
+export { CurrencyFillIcon } from './icons/currencyFill';
+
 export { DeleteLineIcon } from './icons/deleteLine';
 export { DeleteLineBoldIcon } from './icons/deleteLineBold';
 export { DeleteLineLightIcon } from './icons/deleteLineLight';

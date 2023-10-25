@@ -102,6 +102,11 @@ export { FullScreenExitLineIcon } from './icons/fullScreenExitLine';
 
 export { FullScreenLineIcon } from './icons/fullScreenLine';
 
+export { GridViewLineIcon } from './icons/gridViewLine';
+export { GridViewLineBoldIcon } from './icons/gridViewLineBold';
+export { GridViewLineLightIcon } from './icons/gridViewLineLight';
+export { GridViewFillIcon } from './icons/gridViewFill';
+
 export { HeartLineIcon } from './icons/heartLine';
 export { HeartFillIcon } from './icons/heartFill';
 

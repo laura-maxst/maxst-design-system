@@ -39,6 +39,7 @@ export { ArrowUpLineIcon } from './icons/arrowUpLine';
 export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
 
 export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
+export { ArrowUpwardLineLightIcon } from './icons/arrowUpwardLineLight';
 export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 
 export { CheckCircleFillIcon } from './icons/checkCircleFill';

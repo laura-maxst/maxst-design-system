@@ -2,6 +2,7 @@ export { ArrowBackwardCircleLineIcon } from './icons/arrowBackwardCircleLine';
 export { ArrowBackwardCircleFillIcon } from './icons/arrowBackwardCircleFill';
 
 export { ArrowBackwardLineIcon } from './icons/arrowBackwardLine';
+export { ArrowBackwardLineLightIcon } from './icons/arrowBackwardLineLight';
 export { ArrowBackwardLineBoldIcon } from './icons/arrowBackwardLineBold';
 
 export { ArrowDownCircleLineIcon } from './icons/arrowDownCircleLine';

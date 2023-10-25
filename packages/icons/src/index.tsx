@@ -59,6 +59,11 @@ export { CloseCircleLineBoldIcon } from './icons/closeCircleLineBold';
 export { CloseLineIcon } from './icons/closeLine';
 export { CloseLineBoldIcon } from './icons/closeLineBold';
 
+export { ContentCodyLineIcon } from './icons/contentCodyLine';
+export { ContentCodyLineBoldIcon } from './icons/contentCodyLineBold';
+export { ContentCodyLineLightIcon } from './icons/contentCodyLineLight';
+export { ContentCodyFillIcon } from './icons/contentCodyFill';
+
 export { DeleteLineIcon } from './icons/deleteLine';
 export { DeleteLineBoldIcon } from './icons/deleteLineBold';
 export { DeleteLineLightIcon } from './icons/deleteLineLight';

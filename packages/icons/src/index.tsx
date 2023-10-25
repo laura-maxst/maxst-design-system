@@ -160,6 +160,10 @@ export { LocationLineBoldIcon } from './icons/locationLineBold';
 export { LocationLineLightIcon } from './icons/locationLineLight';
 export { LocationFillIcon } from './icons/locationFill';
 
+export { LayerHorizontalLineIcon } from './icons/layerHorizontalLine';
+export { LayerHorizontalLineBoldIcon } from './icons/layerHorizontalLineBold';
+export { LayerHorizontalLineLightIcon } from './icons/layerHorizontalLineLight';
+
 export { LayerLineIcon } from './icons/layerLine';
 export { LayerLineBoldIcon } from './icons/layerLineBold';
 export { LayerLineLightIcon } from './icons/layerLineLight';

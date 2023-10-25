@@ -91,14 +91,19 @@ export { ErrorCircleFillBoldIcon } from './icons/errorCircleFillBold';
 export { ErrorCircleLineIcon } from './icons/errorCircleLine';
 export { ErrorCircleLineBoldIcon } from './icons/errorCircleLineBold';
 
-export { FilterLineIcon } from './icons/filterLine';
-export { FilterLineBoldIcon } from './icons/filterLineBold';
-export { FilterLineLightIcon } from './icons/filterLineLight';
-export { FilterFillIcon } from './icons/filterFill';
+export { FileMoveLineIcon } from './icons/fileMoveLine';
+export { FileMoveLineBoldIcon } from './icons/fileMoveLineBold';
+export { FileMoveLineLightIcon } from './icons/fileMoveLineLight';
+export { FileMoveFillIcon } from './icons/fileMoveFill';
 
 export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';
+
+export { FilterLineIcon } from './icons/filterLine';
+export { FilterLineBoldIcon } from './icons/filterLineBold';
+export { FilterLineLightIcon } from './icons/filterLineLight';
+export { FilterFillIcon } from './icons/filterFill';
 
 export { FirstPageLineIcon } from './icons/firstPageLine';
 export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';

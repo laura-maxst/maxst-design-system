@@ -1,5 +1,6 @@
 interface CheckboxPropsType {
     id: string;
+    mode?: 'primary' | 'secondary';
     type?: 'selected' | 'indeterminate';
     state?: 'default' | 'pressed' | 'disabled' | 'error';
     size: 'l' | 's';
@@ -10,6 +11,6 @@ interface CheckboxPropsType {
     onChange?: (e: any) => void;
     onClick?: (e: any) => void;
 }
-declare function Checkbox({ id, type, state, size, disabled, label, helperText, checked, onChange, onClick, }: CheckboxPropsType): JSX.Element;
+declare function Checkbox({ id, type, mode, state, size, disabled, label, helperText, checked, onChange, onClick, }: CheckboxPropsType): JSX.Element;
 export { Checkbox };
 export type { CheckboxPropsType };

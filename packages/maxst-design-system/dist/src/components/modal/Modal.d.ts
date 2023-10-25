@@ -5,19 +5,16 @@ interface ModalProps {
     titleIcon?: JSX.Element | React.ReactNode;
     children?: string | any;
     size?: 's' | 'm' | 'l' | 'xl';
-    buttonPrimary?: {
+    mainButton: {
+        type: 'primary' | 'secondary' | 'error';
         text: string;
         onClick: () => void;
     };
-    buttonError?: {
+    subButton: {
         text: string;
         onClick: () => void;
     };
-    buttonSecondary?: {
-        text: string;
-        onClick: () => void;
-    };
-    buttonGhost?: {
+    subtlestButton: {
         text: string;
         onClick: () => void;
     };
@@ -25,6 +22,6 @@ interface ModalProps {
     open: boolean;
     onClose: () => void;
 }
-declare const Modal: ({ title, titleImage, titleIcon, children, size, buttonPrimary, buttonError, buttonSecondary, buttonGhost, isCloseButton, open, onClose, }: ModalProps) => JSX.Element;
+declare const Modal: ({ title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, }: ModalProps) => JSX.Element;
 export { Modal };
 export type { ModalProps };

@@ -234,6 +234,11 @@ export { SettingFillIcon } from './icons/settingFill';
 export { StarLineIcon } from './icons/starLine';
 export { StarFillIcon } from './icons/starFill';
 
+export { TableViewLineIcon } from './icons/tableViewLine';
+export { TableViewLineBoldIcon } from './icons/tableViewLineBold';
+export { TableViewLineLightIcon } from './icons/tableViewLineLight';
+export { TableViewFillIcon } from './icons/tableViewFill';
+
 export { TerminalLineIcon } from './icons/terminalLine';
 export { TerminalLineBoldIcon } from './icons/terminalLineBold';
 export { TerminalLineLightIcon } from './icons/terminalLineLight';

@@ -269,6 +269,8 @@ export { ThreeDMapLineBoldIcon } from './icons/threeDMapLineBold';
 export { ThreeDMapLineLightIcon } from './icons/threeDMapLineLight';
 export { ThreeDMapFillIcon } from './icons/threeDMapFill';
 
+export { UploadLineIcon } from './icons/uploadLine';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

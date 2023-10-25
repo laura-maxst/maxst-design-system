@@ -259,6 +259,10 @@ export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';
 export { SettingFillIcon } from './icons/settingFill';
 
+export { SmartGlassesLineIcon } from './icons/smartGlassesLine';
+export { SmartGlassesLineBoldIcon } from './icons/smartGlassesLineBold';
+export { SmartGlassesLineLightIcon } from './icons/smartGlassesLineLight';
+
 export { SortLineIcon } from './icons/sortLine';
 export { SortLineLightIcon } from './icons/sortLineLight';
 export { SortLineBoldIcon } from './icons/sortLineBold';

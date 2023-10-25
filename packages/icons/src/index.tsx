@@ -252,6 +252,10 @@ export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';
 export { SettingFillIcon } from './icons/settingFill';
 
+export { SortLineIcon } from './icons/sortLine';
+export { SortLineLightIcon } from './icons/sortLineLight';
+export { SortLineBoldIcon } from './icons/sortLineBold';
+
 export { StarLineIcon } from './icons/starLine';
 export { StarFillIcon } from './icons/starFill';
 

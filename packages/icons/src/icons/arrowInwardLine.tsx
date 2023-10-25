@@ -3,22 +3,16 @@ import React from 'react';
 const ArrowInwardLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M14.3025 33.8989L16.7025 33.899L16.703 15.3005L35.3015 15.2999L35.3015 12.8999L14.3031 12.9005L14.3025 33.8989Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M36.1285 33.0735L16.3306 13.2756L14.6335 14.9727L34.4314 34.7706L36.1285 33.0735Z"
+        d="M14.9655 35.3137L12.6863 35.3137L12.6863 12.6863L35.3137 12.6863L35.3137 14.9655L16.7561 14.9654L36.2091 34.4184L34.5975 36.0299L14.9654 16.3979L14.9655 35.3137Z"
         fill="currentColor"
       />
     </svg>

@@ -23,6 +23,7 @@ export { ArrowForwardLineBoldIcon } from './icons/arrowForwardLineBold';
 export { ArrowForwardLineLightIcon } from './icons/arrowForwardLineLight';
 
 export { ArrowInwardLineIcon } from './icons/arrowInwardLine';
+export { ArrowInwardLineLightIcon } from './icons/arrowInwardLineLight';
 export { ArrowInwardLineBoldIcon } from './icons/arrowInwardLineBold';
 
 export { ArrowLeftLineIcon } from './icons/arrowLeftLine';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ArrowInwardLineBoldIcon = () => {
+const ArrowInwardLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -12,11 +12,11 @@ const ArrowInwardLineBoldIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M15.4998 34.3137L12.6863 34.3137V11.6863L35.3137 11.6863L35.3137 14.4998L17.4892 14.4998L36.3084 33.319L34.319 35.3084L15.4998 16.4892L15.4998 34.3137Z"
+        d="M13.8552 35.3136L12.6862 35.3136L12.6863 12.6863L35.3136 12.6862L35.3136 13.8552L14.6819 13.8553L35.727 34.9004L34.9004 35.727L13.8553 14.6819L13.8552 35.3136Z"
         fill="currentColor"
       />
     </svg>
   );
 };
 
-export { ArrowInwardLineBoldIcon };
+export { ArrowInwardLineLightIcon };

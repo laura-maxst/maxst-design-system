@@ -2884,13 +2884,12 @@ var ArrowForwardLineIcon = function () {
 
 var ArrowForwardLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.1735 8.82661L24.0001 8L40 24L24.0001 40L23.1735 39.1734L37.7623 24.5845H8V23.4155H37.7623L23.1735 8.82661Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.0106 9.98944L24 8L40 24L24 40L22.0106 38.0106L34.6144 25.4067H7.99999V22.5932H34.6144L22.0106 9.98944Z", fill: "currentColor" })));
 };
 
 var ArrowForwardLineLightIcon = function () {
-    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "48", height: "48", viewBox: "0 0 48 48", fill: "none" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.1512 11.1515L22.4541 12.8485L33.6056 24L22.4541 35.1515L24.1512 36.8485L36.9997 24L24.1512 11.1515Z", fill: "currentColor" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.3027 25H35.3027V22.6H11.3027V25Z", fill: "currentColor" })));
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.1735 8.82661L24.0001 8L40 24L24.0001 40L23.1735 39.1734L37.7623 24.5845H8V23.4155H37.7623L23.1735 8.82661Z", fill: "currentColor" })));
 };
 
 var ArrowInwardLineIcon = function () {
@@ -4121,17 +4120,26 @@ var SmartGlassesLineLightIcon = function () {
 
 var SortLineIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M33.032 34.9412L35.3111 34.9412L35.3111 12.3137L12.6837 12.3138L12.6837 14.5929L31.2413 14.5929L11.7884 34.0458L13.4 35.6574L33.032 16.0254L33.032 34.9412Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.9323 18.824L23.1999 20.4851L13.4661 10.3338L3.7323 20.4851L2 18.824L13.4661 6.86618L24.9323 18.824Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.2862 40.9684L12.2862 10.1906L14.6862 10.1906L14.6862 40.9684L12.2862 40.9684Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.0677 28.9759L24.8001 27.3148L34.5339 37.4661L44.2677 27.3148L46 28.9759L34.5339 40.9338L23.0677 28.9759Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M35.7141 6.83155L35.7141 37.6093L33.3141 37.6093L33.3141 6.83155L35.7141 6.83155Z", fill: "currentColor" })));
 };
 
 var SortLineLightIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M34.1374 34.9411L35.3064 34.9411L35.3063 12.3137L12.6789 12.3137L12.6789 13.4827L33.3107 13.4827L12.2656 34.5278L13.0922 35.3544L34.1373 14.3093L34.1374 34.9411Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24.0661 18.2848L23.1999 19.1153L13.033 8.51237L2.86614 19.1153L1.99999 18.2848L13.033 6.77854L24.0661 18.2848Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.433 40.7778L12.433 8.35535L13.633 8.35535L13.633 40.7778L12.433 40.7778Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.9339 29.3153L24.8 28.4848L34.9669 39.0877L45.1338 28.4848L46 29.3153L34.9669 40.8216L23.9339 29.3153Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M35.5671 6.83162L35.5672 39.4502L34.3672 39.4502L34.3671 6.83163L35.5671 6.83162Z", fill: "currentColor" })));
 };
 
 var SortLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M32.4928 34.9411L35.3063 34.9411V12.3137L12.6789 12.3137L12.6789 15.1272L30.5034 15.1272L11.6842 33.9464L13.6736 35.9359L32.4928 17.1167L32.4928 34.9411Z", fill: "currentColor" })));
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M25.3653 18.6164L23.2 20.6927L13.6827 10.7672L4.16539 20.6927L2.00002 18.6164L13.6827 6.43267L25.3653 18.6164Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.2027 40.9684L12.2027 10.1907L15.2027 10.1907L15.2027 40.9684L12.2027 40.9684Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.6347 28.9836L24.8001 26.9072L34.3174 36.8327L43.8346 26.9072L46 28.9836L34.3173 41.1672L22.6347 28.9836Z", fill: "currentColor" }),
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M35.8374 6.63148L35.8374 37.4092L32.8374 37.4092L32.8374 6.63148L35.8374 6.63148Z", fill: "currentColor" })));
 };
 
 var StarLineIcon = function () {

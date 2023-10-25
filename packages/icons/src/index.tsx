@@ -236,6 +236,8 @@ export { ProfileFillIcon } from './icons/profileFill';
 export { ProgressLineIcon } from './icons/progressLine';
 
 export { RefreshLineIcon } from './icons/refreshLine';
+export { RefreshLineBoldIcon } from './icons/refreshLineBold';
+export { RefreshLineLightIcon } from './icons/refreshLineLight';
 
 export { RouteLineIcon } from './icons/routeLine';
 export { RouteLineBoldIcon } from './icons/routeLineBold';

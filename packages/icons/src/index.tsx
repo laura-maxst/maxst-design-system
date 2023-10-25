@@ -102,6 +102,11 @@ export { ErrorCircleFillBoldIcon } from './icons/errorCircleFillBold';
 export { ErrorCircleLineIcon } from './icons/errorCircleLine';
 export { ErrorCircleLineBoldIcon } from './icons/errorCircleLineBold';
 
+export { FileBinLineIcon } from './icons/fileBinLine';
+export { FileBinLineBoldIcon } from './icons/fileBinLineBold';
+export { FileBinLineLightIcon } from './icons/fileBinLineLight';
+export { FileBinFillIcon } from './icons/fileBinFill';
+
 export { FileEfsLineIcon } from './icons/fileEfsLine';
 export { FileEfsLineBoldIcon } from './icons/fileEfsLineBold';
 export { FileEfsLineLightIcon } from './icons/fileEfsLineLight';

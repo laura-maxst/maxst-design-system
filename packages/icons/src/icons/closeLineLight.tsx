@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CloseLineIcon = () => {
+const CloseLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -12,11 +12,11 @@ const CloseLineIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M22.3884 24L8 38.3884L9.61159 40L24 25.6116L38.3884 40L40 38.3884L25.6116 24L40 9.61159L38.3884 8L24 22.3884L9.61159 8L8 9.61159L22.3884 24Z"
+        d="M24 24.8266L39.1734 40L40 39.1734L24.8266 24L40 8.82661L39.1734 8L24 23.1734L8.82661 8L8 8.82661L23.1734 24L8 39.1734L8.82661 40L24 24.8266Z"
         fill="currentColor"
       />
     </svg>
   );
 };
 
-export { CloseLineIcon };
+export { CloseLineLightIcon };

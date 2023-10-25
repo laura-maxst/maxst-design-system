@@ -3,22 +3,16 @@ import React from 'react';
 const CloseLineBoldIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M36.9887 38.5092L10.3887 11.9092L12.51 9.78786L39.11 36.3879L36.9887 38.5092Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9.78845 36.3879L36.3884 9.78786L38.5098 11.9092L11.9098 38.5092L9.78845 36.3879Z"
+        d="M24 25.9894L38.0106 40L40 38.0106L25.9894 24L40 9.98944L38.0106 8L24 22.0106L9.98944 8L8 9.98944L22.0106 24L8 38.0106L9.98944 40L24 25.9894Z"
         fill="currentColor"
       />
     </svg>

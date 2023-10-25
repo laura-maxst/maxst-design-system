@@ -63,6 +63,7 @@ export { CloseCircleLineIcon } from './icons/closeCircleLine';
 export { CloseCircleLineBoldIcon } from './icons/closeCircleLineBold';
 
 export { CloseLineIcon } from './icons/closeLine';
+export { CloseLineLightIcon } from './icons/closeLineLight';
 export { CloseLineBoldIcon } from './icons/closeLineBold';
 
 export { ContentCodyLineIcon } from './icons/contentCodyLine';

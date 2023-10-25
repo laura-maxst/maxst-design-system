@@ -276,6 +276,11 @@ export { PlusLineBoldIcon } from './icons/plusLineBold';
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileFillIcon } from './icons/profileFill';
 
+export { ProgressCircleLineIcon } from './icons/progressCircleLine';
+export { ProgressCircleLineBoldIcon } from './icons/progressCircleLineBold';
+export { ProgressCircleLineLightIcon } from './icons/progressCircleLineLight';
+export { ProgressCircleFillIcon } from './icons/progressCircleFill';
+
 export { ProgressLineIcon } from './icons/progressLine';
 
 export { RefreshLineIcon } from './icons/refreshLine';

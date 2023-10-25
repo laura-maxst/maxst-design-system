@@ -30,6 +30,7 @@ export { ArrowLeftLineIcon } from './icons/arrowLeftLine';
 export { ArrowLeftLineBoldIcon } from './icons/arrowLeftLineBold';
 
 export { ArrowOutwardLineIcon } from './icons/arrowOutwardLine';
+export { ArrowOutwardLineLightIcon } from './icons/arrowOutwardLineLight';
 export { ArrowOutwardLineBoldIcon } from './icons/arrowOutwardLineBold';
 
 export { ArrowRightLineIcon } from './icons/arrowRightLine';

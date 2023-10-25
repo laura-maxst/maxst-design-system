@@ -12,7 +12,25 @@ const SortLineBoldIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M32.4928 34.9411L35.3063 34.9411V12.3137L12.6789 12.3137L12.6789 15.1272L30.5034 15.1272L11.6842 33.9464L13.6736 35.9359L32.4928 17.1167L32.4928 34.9411Z"
+        d="M25.3653 18.6164L23.2 20.6927L13.6827 10.7672L4.16539 20.6927L2.00002 18.6164L13.6827 6.43267L25.3653 18.6164Z"
+        fill="currentColor"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12.2027 40.9684L12.2027 10.1907L15.2027 10.1907L15.2027 40.9684L12.2027 40.9684Z"
+        fill="currentColor"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M22.6347 28.9836L24.8001 26.9072L34.3174 36.8327L43.8346 26.9072L46 28.9836L34.3173 41.1672L22.6347 28.9836Z"
+        fill="currentColor"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M35.8374 6.63148L35.8374 37.4092L32.8374 37.4092L32.8374 6.63148L35.8374 6.63148Z"
         fill="currentColor"
       />
     </svg>

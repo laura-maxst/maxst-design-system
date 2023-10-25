@@ -11,6 +11,7 @@ export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 
 export { ArrowDownwardLineIcon } from './icons/arrowDownwardLine';
+export { ArrowDownwardLineLightIcon } from './icons/arrowDownwardLineLight';
 export { ArrowDownwardLineBoldIcon } from './icons/arrowDownwardLineBold';
 
 export { ArrowForwardCircleLineIcon } from './icons/arrowForwardCircleLine';

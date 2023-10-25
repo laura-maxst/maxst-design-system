@@ -262,6 +262,10 @@ export { SortLineBoldIcon } from './icons/sortLineBold';
 export { StarLineIcon } from './icons/starLine';
 export { StarFillIcon } from './icons/starFill';
 
+export { SyncLineIcon } from './icons/syncLine';
+export { SyncLineBoldIcon } from './icons/syncLineBold';
+export { SyncLineLightIcon } from './icons/syncLineLight';
+
 export { TableViewLineIcon } from './icons/tableViewLine';
 export { TableViewLineBoldIcon } from './icons/tableViewLineBold';
 export { TableViewLineLightIcon } from './icons/tableViewLineLight';

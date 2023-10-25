@@ -102,11 +102,6 @@ export { ErrorCircleFillBoldIcon } from './icons/errorCircleFillBold';
 export { ErrorCircleLineIcon } from './icons/errorCircleLine';
 export { ErrorCircleLineBoldIcon } from './icons/errorCircleLineBold';
 
-export { FileMoveLineIcon } from './icons/fileMoveLine';
-export { FileMoveLineBoldIcon } from './icons/fileMoveLineBold';
-export { FileMoveLineLightIcon } from './icons/fileMoveLineLight';
-export { FileMoveFillIcon } from './icons/fileMoveFill';
-
 export { FileEfsLineIcon } from './icons/fileEfsLine';
 export { FileEfsLineBoldIcon } from './icons/fileEfsLineBold';
 export { FileEfsLineLightIcon } from './icons/fileEfsLineLight';
@@ -120,6 +115,16 @@ export { FileJpgFillIcon } from './icons/fileJpgFill';
 export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';
+
+export { FileMoveLineIcon } from './icons/fileMoveLine';
+export { FileMoveLineBoldIcon } from './icons/fileMoveLineBold';
+export { FileMoveLineLightIcon } from './icons/fileMoveLineLight';
+export { FileMoveFillIcon } from './icons/fileMoveFill';
+
+export { FileZipLineIcon } from './icons/fileZipLine';
+export { FileZipLineBoldIcon } from './icons/fileZipLineBold';
+export { FileZipLineLightIcon } from './icons/fileZipLineLight';
+export { FileZipFillIcon } from './icons/fileZipFill';
 
 export { FilterLineIcon } from './icons/filterLine';
 export { FilterLineBoldIcon } from './icons/filterLineBold';

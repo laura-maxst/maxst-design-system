@@ -333,6 +333,11 @@ export { ThreeDMapLineBoldIcon } from './icons/threeDMapLineBold';
 export { ThreeDMapLineLightIcon } from './icons/threeDMapLineLight';
 export { ThreeDMapFillIcon } from './icons/threeDMapFill';
 
+export { UploadCircleLineIcon } from './icons/uploadCircleLine';
+export { UploadCircleLineBoldIcon } from './icons/uploadCircleLineBold';
+export { UploadCircleLineLightIcon } from './icons/uploadCircleLineLight';
+export { UploadCircleFillIcon } from './icons/uploadCircleFill';
+
 export { UploadLineIcon } from './icons/uploadLine';
 
 export { UserLineIcon } from './icons/userLine';

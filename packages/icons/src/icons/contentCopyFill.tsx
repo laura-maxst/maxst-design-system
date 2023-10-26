@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContentCodyFillIcon = () => {
+const ContentCopyFillIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const ContentCodyFillIcon = () => {
   );
 };
 
-export { ContentCodyFillIcon };
+export { ContentCopyFillIcon };

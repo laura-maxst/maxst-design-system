@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContentCodyLineBoldIcon = () => {
+const ContentCopyLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -12,11 +12,11 @@ const ContentCodyLineBoldIcon = () => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M41.5 5.5H19.029L14.5 10.0905V36.5H41.5V5.5ZM17.5 11.3213L20.2835 8.5H38.5V33.5H17.5V11.3213ZM11.5 17V39.5H34V42.5H8.5V17H11.5Z"
+        d="M40.5999 6.39999H19.4053L15.3999 10.4597V35.6H40.5999V6.39999ZM16.5999 10.952L19.9071 7.59999H39.3999V34.4H16.5999V10.952ZM10.5999 17V40.4H33.9999V41.6H9.3999V17H10.5999Z"
         fill="currentColor"
       />
     </svg>
   );
 };
 
-export { ContentCodyLineBoldIcon };
+export { ContentCopyLineLightIcon };

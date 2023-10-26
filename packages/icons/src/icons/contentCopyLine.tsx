@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContentCodyLineIcon = () => {
+const ContentCopyLineIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const ContentCodyLineIcon = () => {
   );
 };
 
-export { ContentCodyLineIcon };
+export { ContentCopyLineIcon };

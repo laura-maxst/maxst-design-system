@@ -3073,22 +3073,22 @@ var CloseLineBoldIcon = function () {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 25.9894L38.0106 40L40 38.0106L25.9894 24L40 9.98944L38.0106 8L24 22.0106L9.98944 8L8 9.98944L22.0106 24L8 38.0106L9.98944 40L24 25.9894Z", fill: "currentColor" })));
 };
 
-var ContentCodyLineIcon = function () {
+var ContentCopyLineIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M41.2001 5.79999H19.1545L14.8 10.2135V36.2H41.2001V5.79999ZM17.2 11.1982L20.1581 8.19999H38.8V33.8H17.2V11.1982ZM11.2 17V39.8H34V42.2H8.80005V17H11.2Z", fill: "currentColor" })));
 };
 
-var ContentCodyLineBoldIcon = function () {
+var ContentCopyLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M41.5 5.5H19.029L14.5 10.0905V36.5H41.5V5.5ZM17.5 11.3213L20.2835 8.5H38.5V33.5H17.5V11.3213ZM11.5 17V39.5H34V42.5H8.5V17H11.5Z", fill: "currentColor" })));
 };
 
-var ContentCodyLineLightIcon = function () {
+var ContentCopyLineLightIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M40.5999 6.39999H19.4053L15.3999 10.4597V35.6H40.5999V6.39999ZM16.5999 10.952L19.9071 7.59999H39.3999V34.4H16.5999V10.952ZM10.5999 17V40.4H33.9999V41.6H9.3999V17H10.5999Z", fill: "currentColor" })));
 };
 
-var ContentCodyFillIcon = function () {
+var ContentCopyFillIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20.1544 5.8H42.2V36.2H15.8V10.2136L20.1544 5.8ZM12.2 17V39.8H35V42.2H9.79999V17H12.2Z", fill: "currentColor" })));
 };
@@ -4500,10 +4500,10 @@ exports.CloseCircleLineIcon = CloseCircleLineIcon;
 exports.CloseLineBoldIcon = CloseLineBoldIcon;
 exports.CloseLineIcon = CloseLineIcon;
 exports.CloseLineLightIcon = CloseLineLightIcon;
-exports.ContentCodyFillIcon = ContentCodyFillIcon;
-exports.ContentCodyLineBoldIcon = ContentCodyLineBoldIcon;
-exports.ContentCodyLineIcon = ContentCodyLineIcon;
-exports.ContentCodyLineLightIcon = ContentCodyLineLightIcon;
+exports.ContentCopyFillIcon = ContentCopyFillIcon;
+exports.ContentCopyLineBoldIcon = ContentCopyLineBoldIcon;
+exports.ContentCopyLineIcon = ContentCopyLineIcon;
+exports.ContentCopyLineLightIcon = ContentCopyLineLightIcon;
 exports.CurrencyFillIcon = CurrencyFillIcon;
 exports.CurrencyLineBoldIcon = CurrencyLineBoldIcon;
 exports.CurrencyLineIcon = CurrencyLineIcon;

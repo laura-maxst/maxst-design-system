@@ -15,11 +15,11 @@ interface ModalProps {
     text: string;
     onClick: () => void;
   };
-  subButton: {
+  subButton?: {
     text: string;
     onClick: () => void;
   };
-  subtlestButton: {
+  subtlestButton?: {
     text: string;
     onClick: () => void;
   };

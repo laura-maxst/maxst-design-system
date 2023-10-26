@@ -4264,11 +4264,11 @@ var CheckCircleFillIcon_1 = dist.CheckCircleFillIcon = CheckCircleFillIcon;
 var CheckCircleLineBoldIcon_1 = dist.CheckCircleLineBoldIcon = CheckCircleLineBoldIcon;
 dist.CheckCircleLineIcon = CheckCircleLineIcon;
 var CheckLineBoldIcon_1 = dist.CheckLineBoldIcon = CheckLineBoldIcon;
-dist.CheckLineIcon = CheckLineIcon;
+var CheckLineIcon_1 = dist.CheckLineIcon = CheckLineIcon;
 dist.ClockCircleFillIcon = ClockCircleFillIcon;
 dist.ClockCircleLineIcon = ClockCircleLineIcon;
 var CloseCircleFillBoldIcon_1 = dist.CloseCircleFillBoldIcon = CloseCircleFillBoldIcon;
-dist.CloseCircleFillIcon = CloseCircleFillIcon;
+var CloseCircleFillIcon_1 = dist.CloseCircleFillIcon = CloseCircleFillIcon;
 dist.CloseCircleLineBoldIcon = CloseCircleLineBoldIcon;
 dist.CloseCircleLineIcon = CloseCircleLineIcon;
 var CloseLineBoldIcon_1 = dist.CloseLineBoldIcon = CloseLineBoldIcon;
@@ -4871,6 +4871,45 @@ var CheckboxGroup = function (_a) {
                 state === 'error' && (React__default["default"].createElement("div", { className: "icon-error" },
                     React__default["default"].createElement(ErrorCircleLineBoldIcon_1, null))),
                 React__default["default"].createElement("span", { className: "text" }, helperText))))));
+};
+
+var Chip = function (_a) {
+    var type = _a.type, size = _a.size, state = _a.state, action = _a.action, checked = _a.checked, iconCheck = _a.iconCheck, iconLeft = _a.iconLeft, className = _a.className, children = _a.children, onChange = _a.onChange, onClick = _a.onClick, props = __rest(_a, ["type", "size", "state", "action", "checked", "iconCheck", "iconLeft", "className", "children", "onChange", "onClick"]);
+    var _b = React$1.useState(false), isChecked = _b[0], setIsChecked = _b[1];
+    var resolveOnChange = function () {
+        if (action === 'check') {
+            setIsChecked(!isChecked);
+            if (!onChange) {
+                return;
+            }
+            onChange(!isChecked);
+        }
+    };
+    var resolveOnClick = function () {
+        if (action === 'check') {
+            setIsChecked(!isChecked);
+            if (!onClick) {
+                return;
+            }
+            onClick(!isChecked);
+        }
+    };
+    React$1.useEffect(function () {
+        if (checked) {
+            setIsChecked(checked);
+        }
+    }, []);
+    return (React__default["default"].createElement("div", __assign({ role: action && 'button', tabIndex: action ? 0 : -1, onClick: resolveOnClick, onChange: resolveOnChange, className: [
+            'mds-chip',
+            "chip-".concat(type, "-").concat(size, "-").concat(state ? state : 'default'),
+            action ? action : '',
+            isChecked ? 'checked' : '',
+            className && className,
+        ].join(' ') }, props),
+        iconLeft && React__default["default"].createElement("div", { className: "left-icon" }, iconLeft),
+        React__default["default"].createElement(TextLabel, { size: size === 'l' ? 'm' : 's' }, children),
+        action === 'filter' && React__default["default"].createElement(CloseCircleFillIcon_1, null),
+        action === 'check' && (iconCheck ? iconCheck : React__default["default"].createElement(CheckLineIcon_1, null))));
 };
 
 var Container = function (_a) {
@@ -5691,6 +5730,7 @@ exports.ButtonGroup = ButtonGroup;
 exports.Checkbox = Checkbox;
 exports.CheckboxGroup = CheckboxGroup;
 exports.CheckboxIcon = CheckboxIcon;
+exports.Chip = Chip;
 exports.Container = Container;
 exports.Divider = Divider;
 exports.Dropdown = Dropdown;

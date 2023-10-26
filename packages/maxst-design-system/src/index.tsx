@@ -3,6 +3,7 @@ export { Alert } from './components/alert';
 export { Breadcrumb } from './components/breadcrumb';
 export { Button, ButtonGroup } from './components/button';
 export { Checkbox, CheckboxIcon, CheckboxGroup } from './components/checkbox';
+export { Chip } from './components/chip';
 export { Container } from './components/container';
 export { Divider } from './components/divider';
 export { Dropdown } from './components/dropdown';

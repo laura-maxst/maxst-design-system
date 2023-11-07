@@ -312,7 +312,8 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 
           & img,
           & svg {
-            width: 24px;
+            width: 28px;
+            height: 28px;
           }
         } @else if($size == 'l') {
           width: 40px;
@@ -322,6 +323,7 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
           & img,
           & svg {
             width: 24px;
+            height: 24px;
           }
         } @else if($size == 'm') {
           width: 36px;
@@ -331,6 +333,7 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
           & img,
           & svg {
             width: 20px;
+            height: 20px;
           }
         } @else if($size == 's') {
           width: 32px;
@@ -340,6 +343,7 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
           & img,
           & svg {
             width: 20px;
+            height: 20px;
           }
         } @else if($size == 'xs') {
           width: 28px;
@@ -349,6 +353,7 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
           & img,
           & svg {
             width: 16px;
+            height: 16px;
           }
         }
       }

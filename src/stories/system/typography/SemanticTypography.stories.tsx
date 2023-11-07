@@ -1,32 +1,29 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Title } from '@components/title';
-import { Text, TextLabel } from '@components/text';
+import { Source } from '@storybook/blocks';
+import { Container } from '@components/container';
 
 const meta: Meta<typeof Title> = {
   title: 'system/SemanticTypography',
   component: Title,
+  argTypes: {
+    children: {
+      description:
+        'type: React.ReactNode 기본적으로 string으로 정의하고 필요한 경우 icon같은 component를 같이 정의할 수 있습니다.',
+    },
+    role: {
+      description: 'h태그의 위계를 지정합니다. 1=h1, 2=h2, ...',
+    },
+  },
 };
 
 export default meta;
 type StoryTitle = StoryObj<typeof Title>;
-type StoryText = StoryObj<typeof Text>;
 
 type titleDataType = {
   role: 1 | 2 | 3 | 4 | 5 | 6;
   type: 'title';
   size: 'xl' | 'l' | 'm' | 's' | 'xs';
-  content: string;
-};
-
-type textDataType = {
-  type: 'body';
-  size: 's' | 'l' | 'm';
-  content: string;
-  innerHtml?: boolean;
-};
-
-type textLabelDataType = {
-  size: 'xl' | 'l' | 'm' | 's';
   content: string;
 };
 
@@ -63,49 +60,6 @@ const titleData: titleDataType[] = [
   },
 ];
 
-const bodyData: textDataType[] = [
-  {
-    type: 'body',
-    size: 'l',
-    content: 'font-body-l',
-  },
-  {
-    type: 'body',
-    size: 'm',
-    content: 'font-body-m',
-  },
-  {
-    type: 'body',
-    size: 's',
-    content: 'font-body-s',
-  },
-  {
-    innerHtml: true,
-    type: 'body',
-    size: 'l',
-    content: 'innerHtml이 존재하는 경우 <b>innerHtml={true}</b>로 props 전달',
-  },
-];
-
-const labelData: textLabelDataType[] = [
-  {
-    size: 'xl',
-    content: 'font-label-xl',
-  },
-  {
-    size: 'l',
-    content: 'font-label-l',
-  },
-  {
-    size: 'm',
-    content: 'font-label-m',
-  },
-  {
-    size: 's',
-    content: 'font-label-s',
-  },
-];
-
 const Titles = (
   titleData: {
     role: 1 | 2 | 3 | 4 | 5 | 6;
@@ -115,70 +69,33 @@ const Titles = (
   }[],
 ) => {
   return (
-    <div className="font-box-wrap">
-      {titleData.map((titleItem) => (
-        <Title
-          role={titleItem.role}
-          type={titleItem.type}
-          size={titleItem.size}
-          key={'title-' + titleItem.role}
-        >
-          {titleItem.content}
-        </Title>
-      ))}
-    </div>
-  );
-};
-
-const Texts = (
-  bodyData: {
-    type: 'body';
-    size: 's' | 'l' | 'm';
-    content: string;
-    innerHtml?: boolean;
-  }[],
-) => {
-  return (
-    <div className="font-box-wrap">
-      {bodyData.map((textItem, index) => (
-        <Text
-          innerHtml={textItem.innerHtml}
-          type={textItem.type}
-          size={textItem.size}
-          key={textItem.type + textItem.size + index}
-        >
-          {textItem.content}
-        </Text>
-      ))}
-    </div>
-  );
-};
-
-const TextLabels = (
-  labelData: {
-    size: 'xl' | 'l' | 'm' | 's';
-    content: string;
-  }[],
-) => {
-  return (
-    <div className="font-box-wrap">
-      {labelData.map((textItem, index) => (
-        <TextLabel size={textItem.size} key={'label' + textItem.size + index}>
-          {textItem.content}
-        </TextLabel>
-      ))}
-    </div>
+    <Container>
+      <div className="font-box-wrap">
+        {titleData.map((titleItem) => (
+          <Title
+            role={titleItem.role}
+            type={titleItem.type}
+            size={titleItem.size}
+            key={'title-' + titleItem.role}
+          >
+            {titleItem.content}
+          </Title>
+        ))}
+        <Source
+          dark={true}
+          code={`<Title
+  role={1}
+  type="title"
+  size="xl"
+>
+  blabla
+</Title>`}
+        />
+      </div>
+    </Container>
   );
 };
 
 export const SemanticTitles: StoryTitle = {
   render: () => Titles(titleData),
-};
-
-export const SemanticTexts: StoryText = {
-  render: () => Texts(bodyData),
-};
-
-export const SemanticLabels: StoryText = {
-  render: () => TextLabels(labelData),
 };

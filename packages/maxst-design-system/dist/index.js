@@ -4907,7 +4907,7 @@ dist.SettingLineLightIcon = SettingLineLightIcon;
 dist.SmartGlassesLineBoldIcon = SmartGlassesLineBoldIcon;
 dist.SmartGlassesLineIcon = SmartGlassesLineIcon;
 dist.SmartGlassesLineLightIcon = SmartGlassesLineLightIcon;
-dist.SortLineBoldIcon = SortLineBoldIcon;
+var SortLineBoldIcon_1 = dist.SortLineBoldIcon = SortLineBoldIcon;
 dist.SortLineIcon = SortLineIcon;
 dist.SortLineLightIcon = SortLineLightIcon;
 dist.StarFillIcon = StarFillIcon;
@@ -6233,6 +6233,169 @@ function Tab(_a) {
         })));
 }
 
+var Table = function (_a) {
+    var size = _a.size, align = _a.align, columnData = _a.columnData, rowData = _a.rowData, tableMinWidth = _a.tableMinWidth, verticalHeadingMode = _a.verticalHeadingMode, leftHeadRow = _a.leftHeadRow, checkMode = _a.checkMode, _b = _a.isRowCheck, isRowCheck = _b === void 0 ? false : _b, onClick = _a.onClick;
+    var _c = React$1.useState([]), cellKey = _c[0], setCellKey = _c[1];
+    var _d = React$1.useState([]), cellAlign = _d[0], setCellAlign = _d[1];
+    var _e = React$1.useState([]), rowDataSource = _e[0], setRowDataSource = _e[1];
+    var _f = React$1.useState([]), checkItemList = _f[0], setCheckItemList = _f[1];
+    var _g = React$1.useState('selected'), checkBoxAllType = _g[0], setCheckBoxAllType = _g[1];
+    var _h = React$1.useState(false), checkAll = _h[0], setCheckAll = _h[1];
+    var optionList = rowData.map(function (item) {
+        return item.id;
+    });
+    var _j = React$1.useState(''), sortDirection = _j[0], setSortDirection = _j[1];
+    var onChickSort = function (thisColumn) {
+        if (typeof thisColumn === 'string' || typeof thisColumn === 'number') {
+            if (sortDirection === 'ascend') {
+                var sortData = rowData.sort(function (a, b) {
+                    return a[thisColumn] > b[thisColumn]
+                        ? -1
+                        : a[thisColumn] < b[thisColumn]
+                            ? 1
+                            : 0;
+                });
+                setRowDataSource(sortData);
+                setSortDirection('descend');
+            }
+            else if (sortDirection === 'descend') {
+                var sortData = rowData;
+                setRowDataSource(sortData);
+                setSortDirection('');
+            }
+            else {
+                var sortData = rowData.sort(function (a, b) {
+                    return a[thisColumn] < b[thisColumn]
+                        ? -1
+                        : a[thisColumn] > b[thisColumn]
+                            ? 1
+                            : 0;
+                });
+                setRowDataSource(sortData);
+                setSortDirection('ascend');
+            }
+        }
+    };
+    var resolveOnClick = function (value) {
+        if (!onClick) {
+            return;
+        }
+        onClick(value);
+    };
+    var onCheckedAll = function (e) {
+        if (!checkAll) {
+            setCheckItemList(optionList);
+            resolveOnClick(optionList);
+        }
+        else {
+            setCheckItemList([]);
+            resolveOnClick([]);
+        }
+        setCheckAll(!checkAll);
+    };
+    var onCheckedOne = function (id) {
+        var checkItems = __spreadArray([], checkItemList, true);
+        if (checkItems.includes(id)) {
+            checkItems.splice(checkItems.indexOf(id), 1);
+        }
+        else {
+            checkItems.push(id);
+        }
+        setCheckItemList(checkItems);
+        resolveOnClick(checkItems);
+        if (checkItems.length === 0) {
+            setCheckAll(false);
+        }
+        else {
+            setCheckAll(true);
+        }
+    };
+    var onCheckedRow = function (e, id) {
+        if (checkMode && isRowCheck) {
+            if (!['INPUT', 'LABEL', 'svg'].includes(e.target.tagName)) {
+                var clickRowCheckbox = document.getElementById("".concat(id));
+                clickRowCheckbox && clickRowCheckbox.click();
+            }
+        }
+        else {
+            resolveOnClick(id);
+        }
+    };
+    React$1.useEffect(function () {
+        if (checkItemList.length === rowDataSource.length) {
+            setCheckBoxAllType('selected');
+        }
+        else {
+            setCheckBoxAllType('indeterminate');
+        }
+    }, [checkItemList]);
+    React$1.useEffect(function () {
+        if (columnData) {
+            var keyBucket = [];
+            var alignBucket = [];
+            for (var _i = 0, columnData_1 = columnData; _i < columnData_1.length; _i++) {
+                var item = columnData_1[_i];
+                keyBucket.push(item.id);
+                alignBucket.push(item.align ? item.align : 'left');
+            }
+            setCellKey(keyBucket);
+            setCellAlign(alignBucket);
+        }
+    }, [columnData]);
+    React$1.useEffect(function () {
+        if (rowData) {
+            setRowDataSource(rowData);
+        }
+    }, [rowData]);
+    return (React__default["default"].createElement("div", { className: "mds-table-wrap" },
+        React__default["default"].createElement("table", { className: [
+                "mds-table-".concat(size ? size : 'l', "-").concat(align ? align : 'left'),
+                verticalHeadingMode && 'vertical-heading-mode',
+            ].join(' '), style: { minWidth: tableMinWidth && "".concat(tableMinWidth, "px") } },
+            !verticalHeadingMode && (React__default["default"].createElement("thead", null,
+                React__default["default"].createElement("tr", null,
+                    checkMode && (React__default["default"].createElement("th", { className: "checkbox-mode" },
+                        React__default["default"].createElement(Checkbox, { id: 'check-all', size: 's', type: checkBoxAllType, onClick: onCheckedAll, checked: checkAll }))),
+                    columnData.map(function (columnItem) {
+                        return (React__default["default"].createElement("th", { className: [
+                                columnItem.align ? columnItem.align : 'left',
+                            ].join(' '), key: columnItem.id, id: columnItem.id, style: {
+                                width: columnItem.cellWidth && columnItem.cellWidth,
+                            } },
+                            React__default["default"].createElement("div", { className: "th__content-wrap" },
+                                React__default["default"].createElement(TextLabel, { size: "m" }, columnItem.title),
+                                columnItem.sort && (React__default["default"].createElement(Button, { type: "ghost", size: "xs", iconOnly: React__default["default"].createElement(SortLineBoldIcon_1, null), isIconMode: true, onClick: function () { return onChickSort(columnItem.id); }, className: ['sort-icon', sortDirection].join(' ') })))));
+                    })))),
+            React__default["default"].createElement("tbody", null, rowDataSource.length !== 0 ? (rowDataSource.map(function (rowItem, rowItemIndex) {
+                return (React__default["default"].createElement("tr", { key: String(rowItem.id), onClick: function (e) { return onCheckedRow(e, String(rowItem.id)); }, className: [
+                        checkMode && checkItemList.includes(rowItem.id)
+                            ? 'selected'
+                            : '',
+                    ].join(' ') },
+                    verticalHeadingMode ? (React__default["default"].createElement("th", { id: columnData[rowItemIndex].id },
+                        React__default["default"].createElement("div", null,
+                            React__default["default"].createElement(TextLabel, { size: "m" }, columnData[rowItemIndex].title)))) : (checkMode && (React__default["default"].createElement("td", { className: "checkbox-mode" },
+                        React__default["default"].createElement(Checkbox, { id: String(rowItem.id), size: 's', onClick: function (e) { return onCheckedOne(e.id); }, checked: checkItemList.includes(rowItem.id) })))),
+                    cellKey.map(function (cellKeyItem, cellKeyIndex) {
+                        return cellKeyIndex === 0 && leftHeadRow ? (React__default["default"].createElement("th", { className: [
+                                cellAlign[cellKeyIndex] !== 'left'
+                                    ? cellAlign[cellKeyIndex]
+                                    : '',
+                            ].join(' '), key: rowItem.id + cellKeyItem },
+                            React__default["default"].createElement(TextLabel, { size: "m" }, rowItem[cellKeyItem]))) : (React__default["default"].createElement("td", { className: [
+                                cellAlign[cellKeyIndex] !== 'left'
+                                    ? cellAlign[cellKeyIndex]
+                                    : '',
+                                typeof rowItem[cellKeyItem] !== 'string'
+                                    ? 'component-mode'
+                                    : '',
+                            ].join(' '), key: rowItem.id + cellKeyItem }, typeof rowItem[cellKeyItem] === 'string' ? (React__default["default"].createElement(Text, { type: "body", size: "m" }, rowItem[cellKeyItem])) : (rowItem[cellKeyItem])));
+                    })));
+            })) : (React__default["default"].createElement("tr", { className: "no-data-row" },
+                React__default["default"].createElement("td", { colSpan: checkMode ? columnData.length + 1 : columnData.length },
+                    React__default["default"].createElement(Text, { size: "l", type: "body" }, "There is no table data here."))))))));
+};
+
 var Tooltip = function (_a) {
     var title = _a.title, text = _a.text, customContent = _a.customContent, children = _a.children, align = _a.align, arrow = _a.arrow, mode = _a.mode;
     var _b = React$1.useState(false), isOpen = _b[0], setIsOpen = _b[1];
@@ -6277,6 +6440,7 @@ exports.Snackbar = Snackbar;
 exports.Spinner = Spinner;
 exports.Switch = Switch;
 exports.Tab = Tab;
+exports.Table = Table;
 exports.Text = Text;
 exports.TextField = TextField;
 exports.TextLabel = TextLabel;

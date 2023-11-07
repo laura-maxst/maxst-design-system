@@ -1,7 +1,7 @@
 import React from 'react';
 interface ChipProps {
     type: 'default' | 'tertiary' | 'color-mint' | 'color-bluegray' | 'color-magenta' | 'color-purple' | 'color-blue';
-    size: 'l' | 's';
+    size: 'xl' | 'l' | 's';
     children: string;
     state?: 'default' | 'pressed' | 'disabled';
     action?: 'filter' | 'check';

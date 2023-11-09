@@ -44,7 +44,7 @@
     position: absolute;
     width: 100%;
     top: 100%;
-    min-width: 180px;
+    min-width: min-content;
     z-index: 9999;
     max-height: 216px;
     @include scrollY(semantic-color('background', 'overlay'));

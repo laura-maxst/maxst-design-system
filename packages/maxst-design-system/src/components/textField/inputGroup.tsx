@@ -51,14 +51,14 @@ const InputGroup = ({
             )}
           >
             {state === 'error' && (
-              <div className="icon-error">
+              <span className="icon-error">
                 <ErrorCircleLineBoldIcon />
-              </div>
+              </span>
             )}
             {state === 'success' && (
-              <div className="icon-success">
+              <span className="icon-success">
                 <CheckCircleLineBoldIcon />
-              </div>
+              </span>
             )}
             <span className="text">{helperText}</span>
             {/* {helperText} */}

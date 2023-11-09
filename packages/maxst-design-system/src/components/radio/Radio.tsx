@@ -126,9 +126,9 @@ function Radio({
           ].join(' ')}
         >
           {state === 'error' && (
-            <div className="icon-error">
+            <span className="icon-error">
               <ErrorCircleLineBoldIcon />
-            </div>
+            </span>
           )}
           <span className="text">{helperText}</span>
           {/* {helperText} */}

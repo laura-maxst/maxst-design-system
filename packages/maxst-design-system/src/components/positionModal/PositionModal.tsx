@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { CloseLineIcon } from '@maxst-designsystem/icons';
 import { Title } from '@components/title';
 import { ButtonGroup, Button } from '@components/button';
 import { Text } from '@components/text';
 
-interface ModalProps {
+interface PositionModalProps {
   title?: string;
   titleImage?: JSX.Element | React.ReactNode;
   titleIcon?: JSX.Element | React.ReactNode;
@@ -26,9 +26,27 @@ interface ModalProps {
   isCloseButton?: boolean;
   open: boolean;
   onClose: () => void;
+  smallButtonMode?: boolean;
+  isDim?: boolean;
+  isArrow?: boolean;
+  arrowDirection?:
+    | 'top-left'
+    | 'top'
+    | 'top-right'
+    | 'right-top'
+    | 'right'
+    | 'right-bottom'
+    | 'bottom-right'
+    | 'bottom'
+    | 'bottom-left'
+    | 'left-top'
+    | 'left'
+    | 'left-bottom';
+  // position: { [top: string]: string };
+  position: { top?: string; left?: string; right?: string; bottom?: string };
 }
 
-const Modal = ({
+const PositionModal = ({
   title,
   titleImage,
   titleIcon,
@@ -40,11 +58,16 @@ const Modal = ({
   isCloseButton,
   open,
   onClose,
-}: ModalProps) => {
+  smallButtonMode,
+  isDim = false,
+  isArrow,
+  arrowDirection,
+  position,
+}: PositionModalProps) => {
+  const modalRef = useRef<HTMLDivElement>(null);
   const [isFooter, setIsFooter] = useState<boolean>(false);
 
   const onClickClose = () => {
-    console.log('close');
     const bodyEl = document.body;
     bodyEl.style.overflow = `auto`;
     onClose();
@@ -68,8 +91,22 @@ const Modal = ({
 
   return (
     <div className={['modal-wrap', open ? 'open' : 'close'].join(' ')}>
-      <div className="dim" onClick={onClickClose}></div>
-      <div className={['modal-box', `modal__${size ? size : 's'}`].join(' ')}>
+      <div
+        className={isDim ? 'dim' : 'dim-transparent'}
+        onClick={onClickClose}
+      ></div>
+      <div
+        className={[
+          'modal-box',
+          `modal__${size ? size : 's'}`,
+          'position-modal',
+          isArrow ? 'arrow' : '',
+          isArrow && arrowDirection ? arrowDirection : 'top',
+          !isDim ? 'shadow' : '',
+        ].join(' ')}
+        ref={modalRef}
+        style={position}
+      >
         {isCloseButton && (
           <span className="modal-close-button" onClick={onClickClose}>
             <CloseLineIcon />
@@ -96,22 +133,35 @@ const Modal = ({
           </div>
         )}
         {isFooter && (
-          <div className="modal-footer">
-            <ButtonGroup fullWidth={true}>
+          <div
+            className={[
+              'modal-footer',
+              smallButtonMode ? 'small-button-mode' : '',
+            ].join(' ')}
+          >
+            <ButtonGroup fullWidth={!smallButtonMode} align="right">
               {subtlestButton && (
-                <Button type="ghost" size="l" onClick={subtlestButton.onClick}>
+                <Button
+                  type="ghost"
+                  size={smallButtonMode ? 'm' : 'l'}
+                  onClick={subtlestButton.onClick}
+                >
                   {subtlestButton.text}
                 </Button>
               )}
               {subButton && (
-                <Button type="tertiary" size="l" onClick={subButton.onClick}>
+                <Button
+                  type="tertiary"
+                  size={smallButtonMode ? 'm' : 'l'}
+                  onClick={subButton.onClick}
+                >
                   {subButton.text}
                 </Button>
               )}
               {mainButton && (
                 <Button
                   type={mainButton.type}
-                  size="l"
+                  size={smallButtonMode ? 'm' : 'l'}
                   onClick={mainButton.onClick}
                 >
                   {mainButton.text}
@@ -125,5 +175,5 @@ const Modal = ({
   );
 };
 
-export { Modal };
-export type { ModalProps };
+export { PositionModal };
+export type { PositionModalProps };

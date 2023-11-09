@@ -1,170 +1,295 @@
-.modal-wrap{
+.modal-wrap {
   display: none;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 
-  .dim{
+  .dim,
+  .dim-transparent {
     display: none;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
   }
 
-  &.open{
+  &.open {
     display: block;
     z-index: 99999999;
-    
-    .dim{
+
+    .dim {
       display: block;
       background-color: semantic-color('dimmed', '60');
     }
+
+    .dim-transparent {
+      display: block;
+      background-color: transparent;
+    }
   }
 }
-.modal-box{
+.modal-box {
   position: fixed;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  padding:24px;
-  min-height:184px;
+  padding: 24px;
+  min-height: 184px;
   max-height: 800px;
   background-color: semantic-color('background', 'overlay');
-  @include scrollY(semantic-color('background', 'overlay'));
+  &:not(.arrow) {
+    @include scrollY(semantic-color('background', 'overlay'));
+  }
 
-  .modal-close-button{
+  .modal-close-button {
     position: absolute;
-    top:24px;
+    top: 24px;
     right: 24px;
-    width:24px;
-    height:24px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 
-    svg{
+    svg {
       width: inherit;
       height: inherit;
     }
   }
+
+  &.arrow::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    clip-path: polygon(50% 100%, 0% 100%, 0% 100%, 50% 100%, 100% 0%, 0% 0%);
+    background-color: semantic-color('background', 'overlay');
+    transform: rotate(180deg);
+  }
+
+  &.position-modal {
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
 }
 
-$modalSize : 's', 'm', 'l', 'xl';
+$modalSize: 's', 'm', 'l', 'xl';
 
-@mixin modalBaseCase($size){
-  .modal__#{$size}{
+@mixin modalBaseCase($size) {
+  .modal__#{$size} {
     max-width: 90%;
 
-    .modal-header{
+    &.shadow {
+      filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, 0.16));
+    }
+
+    &.arrow {
+      &.top-left {
+        &::before {
+          top: -10px;
+          left: 15px;
+        }
+      }
+      &.top {
+        &::before {
+          top: -10px;
+          left: calc(50% - 5px);
+        }
+      }
+      &.top-right {
+        &::before {
+          top: -10px;
+          right: 15px;
+        }
+      }
+      &.right-top {
+        &::before {
+          top: 15px;
+          right: -14px;
+          transform: rotate(-90deg);
+        }
+      }
+      &.right {
+        &::before {
+          right: -14px;
+          top: calc(50% - 5px);
+          transform: rotate(-90deg);
+        }
+      }
+      &.right-bottom {
+        &::before {
+          right: -14px;
+          bottom: 15px;
+          transform: rotate(-90deg);
+        }
+      }
+      &.bottom-left {
+        &::before {
+          left: 15px;
+          bottom: -10px;
+          transform: rotate(0);
+        }
+      }
+      &.bottom {
+        &::before {
+          bottom: -10px;
+          left: calc(50% - 5px);
+          transform: rotate(0);
+        }
+      }
+      &.bottom-right {
+        &::before {
+          right: 15px;
+          bottom: -10px;
+          transform: rotate(0);
+        }
+      }
+      &.left-top {
+        &::before {
+          top: 15px;
+          left: -14px;
+          transform: rotate(90deg);
+        }
+      }
+      &.left {
+        &::before {
+          left: -14px;
+          top: calc(50% - 5px);
+          transform: rotate(90deg);
+        }
+      }
+      &.left-bottom {
+        &::before {
+          left: -14px;
+          bottom: 15px;
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .modal-header {
       img {
         display: block;
         margin: 0 auto;
       }
       svg {
-        width:32px;
-        height:32px;
+        width: 32px;
+        height: 32px;
       }
     }
 
-    @if( $size == 's'){
+    @if ($size == 's') {
       width: 348px;
-    }@else if( $size == 'm'){
+    } @else if($size == 'm') {
       width: 532px;
-      
-      .modal-footer{
-        .button__group{
+
+      .modal-footer {
+        .button__group {
           justify-content: flex-end;
 
-          button{
+          button {
             max-width: 100% !important;
           }
         }
-      } 
-    }@else if( $size == 'l'){
+      }
+    } @else if($size == 'l') {
       width: 720px;
 
-      .modal-body{
+      .modal-body {
         max-width: 80%;
       }
-      .modal-footer{
-        .button__group{
+      .modal-footer {
+        .button__group {
           justify-content: flex-end;
 
-          button{
+          button {
             flex-grow: 0;
             width: 33%;
           }
         }
-      } 
-    }@else if( $size == 'xl'){
+      }
+    } @else if($size == 'xl') {
       width: 1088px;
 
-      .modal-body{
+      .modal-body {
         max-width: 80%;
       }
-      .modal-footer{
-        .button__group{
+      .modal-footer {
+        .button__group {
           justify-content: flex-end;
 
-          button{
+          button {
             flex-grow: 0;
             width: 25%;
           }
         }
-      } 
+      }
+    }
+
+    .modal-footer {
+      &.small-button-mode {
+        .button__group {
+          button {
+            width: calc(25% - 6px);
+          }
+        }
+      }
     }
 
     .modal-body {
       display: flex;
       flex-direction: column;
-      gap:24px;
+      gap: 24px;
 
-      & > div:first-child, & > label:first-child{
-        margin-top:32px
+      & > div:first-child,
+      & > label:first-child {
+        margin-top: 32px;
       }
-      & > p:first-child{
-        margin-top:8px;
+      & > p:first-child {
+        margin-top: 8px;
       }
-      .input__group + .helper-text{
-        margin-top:0;
+      .input__group + .helper-text {
+        margin-top: 0;
       }
     }
 
-    .modal-footer{
-      margin-top:40px;
+    .modal-footer {
+      margin-top: 40px;
     }
 
-    button{
+    button {
       min-width: 0;
     }
 
-    @include media-tablet-m{
+    @include media-tablet-m {
       max-height: 90%;
 
-      .modal-header{
+      .modal-header {
         img {
-          max-width:calc(100% - 48px);
+          max-width: calc(100% - 48px);
         }
       }
 
-      .modal-body{
+      .modal-body {
         max-width: 100%;
       }
 
-      .modal-footer{
+      .modal-footer {
         .button__group {
-          button{
-            width:100%;
+          button {
+            width: 100%;
           }
         }
       }
-    } 
+    }
   }
 }
 
-@each $size in $modalSize{
+@each $size in $modalSize {
   @include modalBaseCase($size);
 }

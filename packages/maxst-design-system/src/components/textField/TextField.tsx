@@ -121,6 +121,9 @@ function TextField({
   const onClearValue = () => {
     setResolveValue('');
     setThisState('default');
+    if (onChange) {
+      onChange('');
+    }
   };
 
   const onVisibilityPassword = () => {
@@ -270,16 +273,16 @@ function TextField({
         {!multiLine && iconRight && iconRight}
       </div>
       {(helperText || multiLine) && (
-        <Text type="body" size="s">
+        <Text type="body" size="s" className="helper-text">
           {thisState === 'error' && (
-            <div className="icon-error">
+            <span className="icon-error">
               <ErrorCircleLineBoldIcon />
-            </div>
+            </span>
           )}
           {thisState === 'success' && (
-            <div className="icon-success">
+            <span className="icon-success">
               <CheckCircleLineBoldIcon />
-            </div>
+            </span>
           )}
           <span className="text">{helperText}</span>
           {multiLine && maxLength && (

@@ -1,0 +1,819 @@
+@import '@styles/scss/main.scss';
+
+.sbdocs-wrapper .sbdocs-content {
+  max-width: 1440px;
+}
+
+input[type='radio'] {
+  appearance: auto;
+}
+
+//color docs 관련
+.color-box-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #fafafa;
+  @include scrollX(semantic-color('background', 'overlay'));
+
+  ul.color-palette__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 14px;
+    width: 100%;
+    min-width: max-content;
+    height: max-content;
+    padding: 40px;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      // height: calc(50% - 9px);
+      height: 130px;
+      background-color: #141212;
+      z-index: -1;
+    }
+
+    li {
+      flex-grow: 1;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 100px;
+
+      p {
+        text-wrap: nowrap;
+        color: inherit;
+        text-align: center;
+      }
+
+      .color-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+
+        &:nth-child(2) {
+          border-radius: 16px 16px 0 0;
+        }
+
+        &:nth-child(3) {
+          border-radius: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+
+  &.secondary-palette,
+  &.magenta-palette {
+    ul.color-palette__list {
+      li {
+        p {
+          text-wrap: unset;
+        }
+      }
+    }
+  }
+}
+
+// container 관련
+.mds-container {
+  min-height: 300px;
+  background-color: semantic-color('background', 'base');
+}
+
+// semantic color docs 관련
+.text-color-theme {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .mds-container {
+    min-height: auto;
+    padding: 20px;
+  }
+}
+
+.background-base {
+  background-color: semantic-color('background', 'base');
+}
+
+.background-2nd-base {
+  background-color: semantic-color('background', '2nd-base');
+}
+
+// base color
+.docs__gray-box-list {
+  display: flex;
+  gap: 16px;
+  padding: 0 !important;
+  list-style: none !important;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(33% - 9px);
+    margin: 0;
+    margin-top: 0 !important;
+    padding: 20px;
+    text-align: center;
+    background-color: #f6f6f6;
+  }
+
+  &.type-box2 {
+    li {
+      width: calc(50% - 9px);
+      padding: 0;
+      background-color: transparent;
+
+      h3 {
+        padding: 20px;
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+.docs_ol {
+  list-style: auto;
+}
+
+// 개별 컬러칩
+.color-chip-box-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  list-style: none !important;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+
+    p {
+      margin: 0;
+      font-size: inherit !important;
+      color: #2b2b2b;
+      font-weight: 600;
+      text-wrap: nowrap;
+    }
+
+    &.white {
+      border: 1px solid #a6a6a6;
+      background-color: #fff;
+    }
+
+    &.black {
+      background-color: #000;
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// docs table 공통
+.docs-table-wrap {
+  table {
+    width: 100%;
+  }
+  thead {
+    background-color: #f5f5f5;
+  }
+}
+
+.semantic__color__table {
+  tbody {
+    tr {
+      &:nth-of-type(2n) {
+        background-color: transparent;
+      }
+      td {
+        &:last-child {
+          background-color: #141212; // background base color
+        }
+
+        p,
+        span {
+          font-size: 14px !important;
+        }
+        p {
+          margin: 5px 0 !important;
+        }
+
+        .table-color-chip {
+          padding: 8px;
+
+          p,
+          span {
+            display: block;
+            color: #fff;
+            font-size: 12px !important;
+            line-height: 1.5;
+            white-space: unset;
+          }
+        }
+
+        .table-shadow-chip {
+          padding: 8px;
+
+          span {
+            display: block;
+            font-size: 12px !important;
+            line-height: 1.5;
+            white-space: pre-wrap;
+          }
+        }
+        .dark {
+          .table-shadow-chip {
+            span {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text-error {
+    color: #ea1b1b;
+  }
+
+  // color chip 중 어두운 컬러일때
+  &.semantic__color-text__table {
+    .light {
+      .table-color-chip {
+        &.bg-color-palette-gray-50,
+        &.bg-color-palette-gray-400 {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+    .dark {
+      .table-color-chip {
+        &.bg-color-palette-gray-900,
+        &.bg-color-palette-gray-700,
+        &.bg-color-palette-gray-500,
+        &.bg-color-palette-gray-400,
+        &.bg-color-palette-mint-600,
+        &.bg-color-palette-mint-500,
+        &.bg-color-palette-mint-200 {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+
+    tr {
+      // color chip border가 필요한 경우
+      &:nth-child(2) {
+        .table-color-chip {
+          border: 1px solid #c2c2c2;
+        }
+      }
+    }
+  }
+
+  // text color table end
+  &.semantic__color-background__table {
+    .light {
+      .table-color-chip {
+        &.bg-color-palette-white,
+        &.bg-color-palette-mint-50,
+        &.bg-color-palette-gray-50,
+        &.bg-color-palette-gray-100,
+        &.bg-color-palette-gray-200,
+        &.bg-color-palette-red-light,
+        &.bg-color-palette-orange-light,
+        &.bg-color-palette-blue-50,
+        &.bg-color-palette-green-light {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+    .dark {
+      .table-color-chip {
+        &.bg-color-palette-bluegray-500,
+        &.bg-color-palette-bluegray-600,
+        &.bg-color-palette-gray-500,
+        &.bg-color-palette-gray-700,
+        &.bg-color-palette-gray-800,
+        &.bg-color-palette-gray-900,
+        &.bg-color-palette-mint-500,
+        &.bg-color-palette-mint-200,
+        &.bg-color-palette-white {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+
+    tr {
+      // color chip border가 필요한 경우
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(13),
+      &:nth-child(14) {
+        .table-color-chip {
+          border: 1px solid #c2c2c2;
+        }
+      }
+    }
+  }
+
+  // background color table end
+  &.semantic__color-border__table {
+    .light {
+      .table-color-chip {
+        &.bg-color-palette-gray-300,
+        &.bg-color-palette-gray-400 {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+    .dark {
+      .table-color-chip {
+        &.bg-color-palette-gray-900 {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+  }
+
+  // -- border color table end
+  &.semantic__color-divider__table {
+    .light {
+      .table-color-chip {
+        &.bg-color-palette-gray-300 {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+    .dark {
+      .table-color-chip {
+        &.bg-color-palette-gray-900 {
+          p,
+          span {
+            color: #222222;
+          }
+        }
+      }
+    }
+  }
+  // -- divider color table end
+}
+
+.shadow__table {
+  tbody {
+    tr {
+      &:nth-of-type(2n) {
+        background-color: transparent;
+      }
+      td {
+        vertical-align: middle;
+
+        &:last-child {
+          background-color: #141212; // background base color
+        }
+
+        p,
+        span {
+          font-size: 14px !important;
+        }
+        p {
+          margin: 5px 0 !important;
+        }
+
+        .table-shadow-chip {
+          padding: 8px;
+
+          p {
+            display: block;
+            font-size: 12px !important;
+            line-height: 1.7;
+            white-space: pre-wrap;
+          }
+
+          .shadow-sample-box {
+            width: 100px;
+            height: 100px;
+
+            &.shadow-level1 {
+              box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+                0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+            }
+            &.shadow-level2 {
+              box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12),
+                0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+            }
+            &.shadow-level3 {
+              box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.12),
+                0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+            }
+          }
+        }
+        .dark {
+          .table-shadow-chip {
+            p {
+              color: #fff;
+            }
+            .shadow-sample-box {
+              background-color: #272626;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.base-typography__type-scale__table {
+  tbody {
+    tr {
+      $scale-arr: 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px, 36px, 40px,
+        48px;
+      @each $scale in $scale-arr {
+        $i: index($scale-arr, $scale);
+        &:nth-child(#{$i}) {
+          td:last-child {
+            div {
+              font-size: $scale !important;
+              line-height: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.base-typography__type-weight__table {
+  tbody {
+    tr {
+      $scale-arr: 400, 500, 600;
+      @each $scale in $scale-arr {
+        $i: index($scale-arr, $scale);
+        &:nth-child(#{$i}) {
+          td:last-child {
+            div {
+              font-weight: $scale !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.iconography-wrap {
+  overflow: hidden;
+
+  .iconography-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1px;
+
+    li {
+      .icon-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+        border-left: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        background-color: #f5f5f5;
+
+        p,
+        span {
+          width: 100%;
+          text-align: left;
+
+          &.font-body-s:last-child {
+            color: #9e9e9e;
+          }
+        }
+
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+// docs gray box 영역 : 상세 예시 이미지 감싸는 용도 등
+.docs__gray-box {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background-color: #f5f5f5;
+
+  img.base-typography__img {
+    width: 100%;
+    max-width: 560px;
+  }
+}
+
+// docs 내부 컬러를 위한.
+@mixin exampleColors($name, $color) {
+  .color-#{$name} {
+    color: #{$color};
+  }
+
+  .bg-color-#{$name} {
+    background-color: #{$color};
+  }
+}
+
+@each $type, $color in $colors {
+  @include exampleColors($type, $color);
+}
+
+//divider
+.divider-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.docs__black-box {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #222222;
+  overflow: hidden;
+
+  img.what_is_design_system_img {
+    width: 70%;
+    max-width: 500px;
+  }
+
+  img.design_value_polygon_img {
+    width: 80%;
+    max-width: 700px;
+  }
+
+  &.box02 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .principle_polygon_img {
+    // display: block;
+    width: 90%;
+    max-width: 900px;
+    vertical-align: bottom;
+  }
+}
+
+// dropdown
+#anchor--components-dropdown--dropdown-with-button,
+#anchor--components-dropdown--dropdown-with-input,
+#anchor--components-dropdown--dropdown-with-icon-button,
+#anchor--components-tooltip--tooltip-default,
+#anchor--components-tooltip--tooltip-custom,
+#anchor--components-tooltip--tooltip-with-arrow-and-title,
+// #anchor--components-breadcrumb--breadcrumb-default,
+#anchor--components-dropdown--dropdown-multi-select-text,
+#anchor--components-dropdown--dropdown-multi-select-chip,
+#anchor--components-dropdown--drop-down-with-controls {
+  .docs-story {
+    min-height: 400px;
+
+    & > div:first-child {
+      min-height: inherit;
+    }
+  }
+}
+#anchor--components-pagination--pagination-page-option-custom,
+#anchor--components-pagination--pagination-first-last-button {
+  .docs-story {
+    min-height: 300px;
+
+    & > div:first-child {
+      min-height: inherit;
+    }
+  }
+}
+#anchor--components-breadcrumb--breadcrumb-dropdown {
+  .docs-story {
+    min-height: 200px;
+
+    & > div:first-child {
+      min-height: inherit;
+    }
+  }
+}
+
+.dropdown-box.dropdown-example {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+// form
+.form-box {
+  max-width: 600px;
+  margin: 0 auto;
+
+  &.form-login {
+    max-width: 400px;
+  }
+}
+
+// tooltip
+#anchor--components-tooltip--tooltip-default,
+#anchor--components-tooltip--tooltip-custom,
+#anchor--components-tooltip--tooltip-with-arrow-and-title {
+  .innerZoomElementWrapper {
+    text-align: center;
+    margin-top: 120px;
+  }
+}
+
+#storybook-root {
+  height: 100%;
+
+  & > .tooltip-wrap {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@include media-tablet-s {
+  .color-box-wrap {
+    width: 100%;
+
+    ul.color-palette__list {
+      width: 100%;
+      // min-width: 700px;
+      align-items: flex-end;
+
+      &::after {
+        // min-width: 700px;
+        height: calc(50% - 15px);
+      }
+
+      li {
+        width: 60px;
+        flex-grow: unset;
+
+        .color-box {
+          width: 60px;
+          height: 60px;
+        }
+
+        p {
+          text-wrap: balance;
+          word-break: break-all;
+        }
+      }
+
+      .font-body-m,
+      .font-body-s {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .color-chip-box-list {
+    li {
+      width: 80px;
+      height: 80px;
+      font-size: 10px;
+    }
+  }
+
+  .docs-table-wrap {
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: block;
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #c2c2c2;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+    }
+
+    table {
+      width: 100%;
+      min-width: 700px;
+
+      td {
+        vertical-align: middle;
+        font-size: 14px;
+        div {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+
+@include media-mobile-m {
+  .docs__gray-box-list {
+    li {
+      width: calc(32% - 9px);
+    }
+  }
+
+  .color-box-wrap {
+    ul.color-palette__list {
+      width: 500px;
+    }
+  }
+
+  .docs-table-wrap {
+    table {
+      tbody tr td {
+        font-size: 12px;
+        div {
+          font-size: inherit;
+        }
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+
+  .iconography-wrap {
+    .iconography-list {
+      li {
+        .icon-box {
+          width: 144px;
+          height: 144px;
+
+          p,
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

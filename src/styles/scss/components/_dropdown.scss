@@ -1,0 +1,175 @@
+.dropdown-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:not(.full-width) {
+    width: fit-content;
+  }
+
+  &.center {
+    .dropdown-box__menu-wrap {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.right {
+    .dropdown-box__menu-wrap {
+      right: 0;
+    }
+  }
+
+  &.top {
+    .dropdown-box__menu-wrap {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &__base {
+    .textfield.has-helperText {
+      position: relative;
+    }
+
+    .textfield-formControl {
+      svg:last-child {
+        color: semantic-color('text', 'default');
+      }
+    }
+  }
+
+  &__menu-wrap {
+    @include shadow-level2;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    min-width: min-content;
+    z-index: 9999;
+    max-height: 216px;
+    @include scrollY(semantic-color('background', 'overlay'));
+    background-color: semantic-color('background', 'overlay');
+
+    .dropdown-box__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      cursor: pointer;
+      background-color: semantic-color('background', 'overlay');
+
+      svg {
+        flex: none;
+        width: 20px;
+        height: 20px;
+        color: semantic-color('text', 'default');
+      }
+
+      .dropdown-box__menu__label {
+        width: 100%;
+        color: semantic-color('text', 'default');
+        @include ellipsis(1);
+      }
+
+      .dropdown-box__menu__sub-label {
+        color: semantic-color('text', 'subtlest');
+      }
+
+      & svg:last-child {
+        color: semantic-color('text', 'subtlest');
+      }
+
+      &.selected {
+        background-color: semantic-color('background', 'primary-light');
+        .dropdown-box__menu__sub-label {
+          color: semantic-color('text', 'sub');
+        }
+
+        svg:last-child {
+          color: semantic-color('text', 'sub');
+        }
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: semantic-color('background', 'overlay-accent');
+      }
+
+      &.disabled {
+        .dropdown-box__menu__label {
+          color: semantic-color('text', 'disabled');
+        }
+        .dropdown-box__menu__sub-label {
+          color: semantic-color('text', 'disabled');
+        }
+        svg {
+          color: semantic-color('text', 'disabled');
+        }
+        background-color: semantic-color('background', 'overlay');
+      }
+    }
+  }
+
+  &.multiple {
+    .render-value-mode {
+      .textfield-formControl {
+        & > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include media-mobile-m {
+    &__menu-wrap {
+      min-width: 120px;
+      width: auto;
+
+      &.full-width {
+        width: 100%;
+      }
+    }
+  }
+  // menu open/close시 오른쪽 아이콘 상하 스타일링 정의
+  .dropdown-box__base {
+    .textfield-formControl,
+    .icon-button:not(.icon-button-only) {
+      svg:last-child {
+        transition: all ease 0.3s;
+      }
+    }
+  }
+  &.open {
+    .dropdown-box__base {
+      .textfield-formControl,
+      .icon-button:not(.icon-button-only) {
+        svg:last-child {
+          transition: all ease 0.3s;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+$dropdownMenuSize: 'l', 's';
+$dropdownMenuState: 'default', 'pressed', 'disabled';
+
+@mixin menuItemCase($size, $state) {
+  .menu-item-#{$size} {
+    @if ($size == 's') {
+      height: 36px;
+    } @else {
+      height: 48px;
+    }
+  }
+}
+
+@each $size in $dropdownMenuSize {
+  @each $state in $dropdownMenuState {
+    @include menuItemCase($size, $state);
+  }
+}

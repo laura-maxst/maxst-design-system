@@ -109,21 +109,11 @@ const actionListData = [
   {
     iconName: 'NotificationLine',
     iconNode: <Icon.NotificationLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular',
   },
   {
     iconName: 'NotificationFill',
     iconNode: <Icon.NotificationFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'NotificationOffLine',
-    iconNode: <Icon.NotificationOffLineIcon />,
-    iconType: 'Regular,Bold',
-  },
-  {
-    iconName: 'NotificationOffFill',
-    iconNode: <Icon.NotificationOffFillIcon />,
     iconType: '',
   },
   {
@@ -167,16 +157,6 @@ const actionListData = [
     iconType: '',
   },
   {
-    iconName: 'PlayLine',
-    iconNode: <Icon.PlayLineIcon />,
-    iconType: 'Regular',
-  },
-  {
-    iconName: 'PlayFill',
-    iconNode: <Icon.PlayFillIcon />,
-    iconType: '',
-  },
-  {
     iconName: 'LanguageLine',
     iconNode: <Icon.LanguageLineIcon />,
     iconType: 'Regular',
@@ -184,56 +164,6 @@ const actionListData = [
   {
     iconName: 'LanguageFill',
     iconNode: <Icon.LanguageFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'GridViewLine',
-    iconNode: <Icon.GridViewLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'GridViewFill',
-    iconNode: <Icon.GridViewFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'TableViewLine',
-    iconNode: <Icon.TableViewLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'TableViewFill',
-    iconNode: <Icon.TableViewFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FilterLine',
-    iconNode: <Icon.FilterLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FilterFill',
-    iconNode: <Icon.FilterFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FileMoveLine',
-    iconNode: <Icon.FileMoveLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FileMoveFill',
-    iconNode: <Icon.FileMoveFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'ContentCopyLine',
-    iconNode: <Icon.ContentCopyLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'ContentCopyFill',
-    iconNode: <Icon.ContentCopyFillIcon />,
     iconType: '',
   },
   {
@@ -254,11 +184,6 @@ const actionListData = [
   {
     iconName: 'DownloadLine',
     iconNode: <Icon.DownloadLineIcon />,
-    iconType: 'Regular',
-  },
-  {
-    iconName: 'UploadLine',
-    iconNode: <Icon.UploadLineIcon />,
     iconType: 'Regular',
   },
   {
@@ -317,37 +242,32 @@ const navigationIconListData = [
   {
     iconName: 'ArrowDownwardLine',
     iconNode: <Icon.ArrowDownwardLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'ArrowUpwardLine',
     iconNode: <Icon.ArrowUpwardLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'ArrowBackwardLine',
     iconNode: <Icon.ArrowBackwardLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'ArrowForwardLine',
     iconNode: <Icon.ArrowForwardLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'ArrowInwardLine',
     iconNode: <Icon.ArrowInwardLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'ArrowOutwardLine',
     iconNode: <Icon.ArrowOutwardLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'SortLine',
-    iconNode: <Icon.SortLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'PlusLine',
@@ -362,7 +282,7 @@ const navigationIconListData = [
   {
     iconName: 'CloseLine',
     iconNode: <Icon.CloseLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular,Bold',
   },
   {
     iconName: 'MenuLine',
@@ -372,12 +292,7 @@ const navigationIconListData = [
   {
     iconName: 'RefreshLine',
     iconNode: <Icon.RefreshLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'SyncLine',
-    iconNode: <Icon.SyncLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular',
   },
   {
     iconName: 'CheckLine',
@@ -539,22 +454,12 @@ const etcIconListData = [
   {
     iconName: 'ViewInArLine',
     iconNode: <Icon.ViewInArLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Regular',
   },
   {
     iconName: 'ViewInArFill',
     iconNode: <Icon.ViewInArFillIcon />,
     iconType: '',
-  },
-  {
-    iconName: 'ArScanLine',
-    iconNode: <Icon.ArScanLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'SmartGlassesLine',
-    iconNode: <Icon.SmartGlassesLineIcon />,
-    iconType: 'Regular,Bold,Light',
   },
   {
     iconName: 'LayerLine',
@@ -565,11 +470,6 @@ const etcIconListData = [
     iconName: 'LayerFill',
     iconNode: <Icon.LayerFillIcon />,
     iconType: '',
-  },
-  {
-    iconName: 'LayerHorizontalLine',
-    iconNode: <Icon.LayerHorizontalLineIcon />,
-    iconType: 'Regular,Bold,Light',
   },
   {
     iconName: 'RouteLine',
@@ -604,66 +504,6 @@ const etcIconListData = [
   {
     iconName: 'SelectAreaFill',
     iconNode: <Icon.SelectAreaFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FileJpgLine',
-    iconNode: <Icon.FileJpgLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FileJpgFill',
-    iconNode: <Icon.FileJpgFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FileEfsLine',
-    iconNode: <Icon.FileEfsLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FileEfsFill',
-    iconNode: <Icon.FileEfsFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FileZipLine',
-    iconNode: <Icon.FileZipLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FileZipFill',
-    iconNode: <Icon.FileZipFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FilePlyLine',
-    iconNode: <Icon.FilePlyLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FilePlyFill',
-    iconNode: <Icon.FilePlyFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'FileMp4Line',
-    iconNode: <Icon.FileMp4LineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'FileMp4Fill',
-    iconNode: <Icon.FileMp4FillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'CurrencyLine',
-    iconNode: <Icon.CurrencyLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'CurrencyFill',
-    iconNode: <Icon.CurrencyFillIcon />,
     iconType: '',
   },
   {
@@ -732,29 +572,9 @@ const etcIconListData = [
     iconType: '',
   },
   {
-    iconName: 'UploadCircleLine',
-    iconNode: <Icon.UploadCircleLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'UploadCircleFill',
-    iconNode: <Icon.UploadCircleFillIcon />,
-    iconType: '',
-  },
-  {
-    iconName: 'ProgressCircleLine',
-    iconNode: <Icon.ProgressCircleLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'UploadCircleFill',
-    iconNode: <Icon.UploadCircleFillIcon />,
-    iconType: '',
-  },
-  {
     iconName: 'ProgressLine',
     iconNode: <Icon.ProgressLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: 'Bold',
   },
 ];
 

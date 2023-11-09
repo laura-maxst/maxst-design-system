@@ -50,33 +50,6 @@
         margin-left: -2px;
       }
     }
-  } @else if ($size == 'xl') {
-    min-height: 36px;
-    padding: 0 16px;
-    border-radius: 18px;
-
-    &.filter,
-    &.check {
-      padding-right: 6px;
-    }
-
-    svg {
-      width: 24px;
-      height: 24px;
-      flex: none;
-    }
-
-    img {
-      width: 28px;
-      height: 28px;
-      flex: none;
-    }
-
-    .left-icon {
-      img {
-        margin-left: -10px;
-      }
-    }
   } @else {
     min-height: 32px;
     padding: 0 12px;
@@ -84,8 +57,9 @@
 
     &.filter,
     &.check {
-      padding-right: 6px;
+      padding-right:6px;
     }
+
 
     svg {
       width: 20px;
@@ -109,7 +83,7 @@
 
 $chipType: 'default', 'tertiary', 'color-mint', 'color-bluegray',
   'color-magenta', 'color-purple', 'color-blue';
-$chipSize: 'xl', 'l', 's';
+$chipSize: 'l', 's';
 $chipState: 'default', 'pressed', 'disabled';
 $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
 
@@ -182,7 +156,7 @@ $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
       border: 0 none;
       background-color: semantic-color('background', 'disabled');
 
-      @if ($type == 'tertiary') {
+      @if($type == 'tertiary'){
         border: 1px solid semantic-color('border', 'disabled');
       }
 

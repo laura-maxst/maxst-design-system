@@ -398,7 +398,7 @@ const BackgroundColorTableData = {
       '<p>background-primary, secondary 색상의 비활성화 상태를 나타내는 배경 색상입니다.</p>',
       ColorChipArea({
         mode: 'light',
-        colorToken: 'palette-gray-200',
+        colorToken: 'palette-gray-100',
         colorCode: '#F5F5F5',
       }),
       ColorChipArea({

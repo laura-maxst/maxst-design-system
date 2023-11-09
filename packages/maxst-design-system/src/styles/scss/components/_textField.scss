@@ -190,7 +190,6 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
       width: 100px;
       text-align: right;
     }
-    @include helper-text-with-icon;
   }
 }
 

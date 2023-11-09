@@ -1,7 +1,7 @@
 @import '@styles/scss/main.scss';
 
 .sbdocs-wrapper .sbdocs-content {
-  max-width: 1440px;
+  max-width: 1200px;
 }
 
 input[type='radio'] {
@@ -423,7 +423,7 @@ input[type='radio'] {
         .table-shadow-chip {
           padding: 8px;
 
-          p {
+          span {
             display: block;
             font-size: 12px !important;
             line-height: 1.7;
@@ -450,7 +450,7 @@ input[type='radio'] {
         }
         .dark {
           .table-shadow-chip {
-            p {
+            span {
               color: #fff;
             }
             .shadow-sample-box {
@@ -619,7 +619,7 @@ input[type='radio'] {
 #anchor--components-tooltip--tooltip-default,
 #anchor--components-tooltip--tooltip-custom,
 #anchor--components-tooltip--tooltip-with-arrow-and-title,
-// #anchor--components-breadcrumb--breadcrumb-default,
+#anchor--components-breadcrumb--breadcrumb-default,
 #anchor--components-dropdown--dropdown-multi-select-text,
 #anchor--components-dropdown--dropdown-multi-select-chip,
 #anchor--components-dropdown--drop-down-with-controls {

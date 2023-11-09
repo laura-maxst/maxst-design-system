@@ -81,7 +81,6 @@
 @mixin helper-text-with-icon {
   .helper-text {
     display: flex;
-    align-items: center;
     gap: 4px;
     padding-top: 0;
     color: semantic-color('text', 'subtlest');

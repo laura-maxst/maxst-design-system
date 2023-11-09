@@ -118,9 +118,7 @@ function Checkbox({
           htmlFor={id}
           className={[
             'checkbox',
-            `checkbox__${size}--${(disabled && 'disabled') || thisState}__${
-              mode ? mode : 'primary'
-            }`,
+            `checkbox__${size}--${(disabled && 'disabled') || thisState}`,
             `${thisIsChecked ? 'checked' : ''}`,
           ].join(' ')}
         >
@@ -148,9 +146,9 @@ function Checkbox({
           ].join(' ')}
         >
           {thisState === 'error' && (
-            <span className="icon-error">
+            <div className="icon-error">
               <ErrorCircleLineBoldIcon />
-            </span>
+            </div>
           )}
           <span className="text">{helperText}</span>
           {/* {helperText} */}

@@ -51,7 +51,7 @@ export const CheckboxDefaultPrimary: Story = {
 
 export const CheckboxSecondary: Story = {
   args: {
-    id: 'checkbox-2',
+    id: 'checkbox-1',
     type: 'selected',
     mode: 'secondary',
     size: 'l',
@@ -64,7 +64,7 @@ export const CheckboxSecondary: Story = {
 
 export const CheckboxError: Story = {
   args: {
-    id: 'checkbox-3',
+    id: 'checkbox-1',
     type: 'selected',
     mode: 'secondary',
     size: 'l',
@@ -78,7 +78,7 @@ export const CheckboxError: Story = {
 
 export const CheckboxDisabled: Story = {
   args: {
-    id: 'checkbox-4',
+    id: 'checkbox-1',
     type: 'selected',
     mode: 'secondary',
     size: 'l',

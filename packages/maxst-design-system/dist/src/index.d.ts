@@ -17,7 +17,6 @@ export { Snackbar } from './components/snackbar';
 export { Spinner } from './components/spinner';
 export { Switch } from './components/switchToggle';
 export { Tab } from './components/tab';
-export { Table } from './components/table';
 export { Text, TextLabel } from './components/text';
 export { TextField, InputGroup } from './components/textField';
 export { Title } from './components/title';

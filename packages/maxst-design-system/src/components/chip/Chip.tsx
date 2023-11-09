@@ -11,7 +11,7 @@ interface ChipProps {
     | 'color-magenta'
     | 'color-purple'
     | 'color-blue';
-  size: 'xl' | 'l' | 's';
+  size: 'l' | 's';
   children: string;
   state?: 'default' | 'pressed' | 'disabled';
   action?: 'filter' | 'check';
@@ -83,9 +83,7 @@ const Chip = ({
       {...props}
     >
       {iconLeft && <div className="left-icon">{iconLeft}</div>}
-      <TextLabel size={(size === 'xl' && 'l') || (size === 's' && 's') || 'm'}>
-        {children}
-      </TextLabel>
+      <TextLabel size={size === 'l' ? 'm' : 's'}>{children}</TextLabel>
       {action === 'filter' && <CloseCircleFillIcon />}
       {action === 'check' && (iconCheck ? iconCheck : <CheckLineIcon />)}
     </div>

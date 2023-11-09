@@ -270,16 +270,16 @@ function TextField({
         {!multiLine && iconRight && iconRight}
       </div>
       {(helperText || multiLine) && (
-        <Text type="body" size="s" className="helper-text">
+        <Text type="body" size="s">
           {thisState === 'error' && (
-            <span className="icon-error">
+            <div className="icon-error">
               <ErrorCircleLineBoldIcon />
-            </span>
+            </div>
           )}
           {thisState === 'success' && (
-            <span className="icon-success">
+            <div className="icon-success">
               <CheckCircleLineBoldIcon />
-            </span>
+            </div>
           )}
           <span className="text">{helperText}</span>
           {multiLine && maxLength && (

@@ -3832,24 +3832,34 @@ var MessageFillIcon = function () {
         React.createElement("path", { d: "M42.0005 8.08002H10.6805L5.98047 12.78V40.02L12.0005 34L37.3205 34.06L42.0405 29.36V8.08002H42.0005ZM16.0005 22.26H13.6005V19.86H16.0005V22.26ZM25.2405 22.26H22.8405V19.86H25.2405V22.26ZM34.4005 22.26H32.0005V19.86H34.4005V22.26Z", fill: "currentColor" })));
 };
 
-var MinusLineIcon = function () {
+var MinusCircleLineIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.20005 24C7.20005 14.7217 14.7217 7.20005 24 7.20005C33.2784 7.20005 40.8 14.7217 40.8 24C40.8 33.2784 33.2784 40.8 24 40.8C14.7217 40.8 7.20005 33.2784 7.20005 24ZM24 4.80005C13.3962 4.80005 4.80005 13.3962 4.80005 24C4.80005 34.6039 13.3962 43.2001 24 43.2001C34.6039 43.2001 43.2001 34.6039 43.2001 24C43.2001 13.3962 34.6039 4.80005 24 4.80005ZM14 25.2H34V22.8H14V25.2Z", fill: "currentColor" })));
 };
 
-var MinusLineBoldIcon = function () {
+var MinusCircleLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.5 24C7.5 14.8873 14.8873 7.5 24 7.5C33.1127 7.5 40.5 14.8873 40.5 24C40.5 33.1127 33.1127 40.5 24 40.5C14.8873 40.5 7.5 33.1127 7.5 24ZM24 4.5C13.2304 4.5 4.5 13.2304 4.5 24C4.5 34.7696 13.2304 43.5 24 43.5C34.7696 43.5 43.5 34.7696 43.5 24C43.5 13.2304 34.7696 4.5 24 4.5ZM14 25.5H34V22.5H14V25.5Z", fill: "currentColor" })));
 };
 
-var MinusLineLightIcon = function () {
+var MinusCircleLineLightIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M6.5999 23.9999C6.5999 14.3901 14.3901 6.5999 23.9999 6.5999C33.6097 6.5999 41.3999 14.3901 41.3999 23.9999C41.3999 33.6097 33.6097 41.3999 23.9999 41.3999C14.3901 41.3999 6.5999 33.6097 6.5999 23.9999ZM23.9999 5.3999C13.7274 5.3999 5.3999 13.7274 5.3999 23.9999C5.3999 34.2724 13.7274 42.5999 23.9999 42.5999C34.2724 42.5999 42.5999 34.2724 42.5999 23.9999C42.5999 13.7274 34.2724 5.3999 23.9999 5.3999ZM14 24.5999H34V23.3999H14V24.5999Z", fill: "currentColor" })));
 };
 
-var MinusFillIcon = function () {
+var MinusCircleFillIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42ZM14 22.8V25.2H34V22.8H14Z", fill: "currentColor" })));
+};
+
+var MinusLineIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M37 25.4H11V23H37V25.4Z", fill: "currentColor" })));
+};
+
+var MinusLineBoldIcon = function () {
+    return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M37 26H11V23H37V26Z", fill: "currentColor" })));
 };
 
 var MobileLineIcon = function () {
@@ -4682,10 +4692,12 @@ exports.MessageFillIcon = MessageFillIcon;
 exports.MessageLineBoldIcon = MessageLineBoldIcon;
 exports.MessageLineIcon = MessageLineIcon;
 exports.MessageLineLightIcon = MessageLineLightIcon;
-exports.MinusFillIcon = MinusFillIcon;
+exports.MinusCircleFillIcon = MinusCircleFillIcon;
+exports.MinusCircleLineBoldIcon = MinusCircleLineBoldIcon;
+exports.MinusCircleLineIcon = MinusCircleLineIcon;
+exports.MinusCircleLineLightIcon = MinusCircleLineLightIcon;
 exports.MinusLineBoldIcon = MinusLineBoldIcon;
 exports.MinusLineIcon = MinusLineIcon;
-exports.MinusLineLightIcon = MinusLineLightIcon;
 exports.MobileFillIcon = MobileFillIcon;
 exports.MobileLineBoldIcon = MobileLineBoldIcon;
 exports.MobileLineIcon = MobileLineIcon;

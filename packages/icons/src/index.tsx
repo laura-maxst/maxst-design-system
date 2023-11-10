@@ -244,13 +244,13 @@ export { MessageLineBoldIcon } from './icons/messageLineBold';
 export { MessageLineLightIcon } from './icons/messageLineLight';
 export { MessageFillIcon } from './icons/messageFill';
 
-export { MinusLineIcon } from './icons/minusLine';
-export { MinusLineBoldIcon } from './icons/minusLineBold';
-
 export { MinusCircleLineIcon } from './icons/minusCircleLine';
 export { MinusCircleLineBoldIcon } from './icons/minusCircleLineBold';
 export { MinusCircleLineLightIcon } from './icons/minusCircleLineLight';
 export { MinusCircleFillIcon } from './icons/minusCircleFill';
+
+export { MinusLineIcon } from './icons/minusLine';
+export { MinusLineBoldIcon } from './icons/minusLineBold';
 
 export { MobileLineIcon } from './icons/mobileLine';
 export { MobileLineBoldIcon } from './icons/mobileLineBold';

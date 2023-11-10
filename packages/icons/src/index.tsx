@@ -154,6 +154,11 @@ export { FilterFillIcon } from './icons/filterFill';
 export { FirstPageLineIcon } from './icons/firstPageLine';
 export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';
 
+export { FloorLineIcon } from './icons/floorLine';
+export { FloorLineBoldIcon } from './icons/floorLineBold';
+export { FloorLineLightIcon } from './icons/floorLineLight';
+export { FloorFillIcon } from './icons/floorFill';
+
 export { FolderLineIcon } from './icons/folderLine';
 export { FolderLineBoldIcon } from './icons/folderLineBold';
 export { FolderLineLightIcon } from './icons/folderLineLight';

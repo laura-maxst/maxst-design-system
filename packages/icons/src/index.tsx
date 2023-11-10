@@ -308,6 +308,11 @@ export { SettingLineBoldIcon } from './icons/settingLineBold';
 export { SettingLineLightIcon } from './icons/settingLineLight';
 export { SettingFillIcon } from './icons/settingFill';
 
+export { ShareLineIcon } from './icons/shareLine';
+export { ShareLineBoldIcon } from './icons/shareLineBold';
+export { ShareLineLightIcon } from './icons/shareLineLight';
+export { ShareFillIcon } from './icons/shareFill';
+
 export { SmartGlassesLineIcon } from './icons/smartGlassesLine';
 export { SmartGlassesLineBoldIcon } from './icons/smartGlassesLineBold';
 export { SmartGlassesLineLightIcon } from './icons/smartGlassesLineLight';

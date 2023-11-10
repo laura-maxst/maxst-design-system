@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MinusLineLightIcon = () => {
+const MinusCircleLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const MinusLineLightIcon = () => {
   );
 };
 
-export { MinusLineLightIcon };
+export { MinusCircleLineLightIcon };

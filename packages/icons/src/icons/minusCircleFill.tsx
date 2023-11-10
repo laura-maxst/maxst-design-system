@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MinusFillIcon = () => {
+const MinusCircleFillIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const MinusFillIcon = () => {
   );
 };
 
-export { MinusFillIcon };
+export { MinusCircleFillIcon };

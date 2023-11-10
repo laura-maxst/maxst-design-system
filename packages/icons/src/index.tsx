@@ -246,6 +246,8 @@ export { MessageFillIcon } from './icons/messageFill';
 
 export { MinusLineIcon } from './icons/minusLine';
 export { MinusLineBoldIcon } from './icons/minusLineBold';
+export { MinusLineLightIcon } from './icons/minusLineLight';
+export { MinusFillIcon } from './icons/minusFill';
 
 export { MobileLineIcon } from './icons/mobileLine';
 export { MobileLineBoldIcon } from './icons/mobileLineBold';

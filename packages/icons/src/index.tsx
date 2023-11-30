@@ -203,6 +203,7 @@ export { LocationFillIcon } from './icons/locationFill';
 export { LayerHorizontalLineIcon } from './icons/layerHorizontalLine';
 export { LayerHorizontalLineBoldIcon } from './icons/layerHorizontalLineBold';
 export { LayerHorizontalLineLightIcon } from './icons/layerHorizontalLineLight';
+export { LayerHorizontalFillIcon } from './icons/layerHorizontalFill';
 
 export { LayerLineIcon } from './icons/layerLine';
 export { LayerLineBoldIcon } from './icons/layerLineBold';

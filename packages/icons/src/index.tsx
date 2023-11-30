@@ -391,6 +391,11 @@ export { ViewOffFillBoldIcon } from './icons/viewOffFillBold';
 export { ViewOffLineIcon } from './icons/viewOffLine';
 export { ViewOffLineBoldIcon } from './icons/viewOffLineBold';
 
+export { VpsLineIcon } from './icons/vpsLine';
+export { VpsLineBoldIcon } from './icons/vpsLineBold';
+export { VpsLineLightIcon } from './icons/vpsLineLight';
+export { VpsFillIcon } from './icons/vpsFill';
+
 export { WarningFillIcon } from './icons/warningFill';
 export { WarningFillBoldIcon } from './icons/warningFillBold';
 export { WarningFillLightIcon } from './icons/warningFillLight';

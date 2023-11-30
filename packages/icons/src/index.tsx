@@ -90,6 +90,11 @@ export { DesktopLineBoldIcon } from './icons/desktopLineBold';
 export { DesktopLineLightIcon } from './icons/desktopLineLight';
 export { DesktopFillIcon } from './icons/desktopFill';
 
+export { DigitalTwinLineIcon } from './icons/digitalTwinLine';
+export { DigitalTwinLineBoldIcon } from './icons/digitalTwinLineBold';
+export { DigitalTwinLineLightIcon } from './icons/digitalTwinLineLight';
+export { DigitalTwinFillIcon } from './icons/digitalTwinFill';
+
 export { DocumentLineIcon } from './icons/documentLine';
 export { DocumentLineBoldIcon } from './icons/documentLineBold';
 export { DocumentLineLightIcon } from './icons/documentLineLight';

@@ -324,6 +324,11 @@ export { ShareLineBoldIcon } from './icons/shareLineBold';
 export { ShareLineLightIcon } from './icons/shareLineLight';
 export { ShareFillIcon } from './icons/shareFill';
 
+export { SlamLineIcon } from './icons/slamLine';
+export { SlamLineBoldIcon } from './icons/slamLineBold';
+export { SlamLineLightIcon } from './icons/slamLineLight';
+export { SlamFillIcon } from './icons/slamFill';
+
 export { SmartGlassesLineIcon } from './icons/smartGlassesLine';
 export { SmartGlassesLineBoldIcon } from './icons/smartGlassesLineBold';
 export { SmartGlassesLineLightIcon } from './icons/smartGlassesLineLight';

@@ -127,6 +127,11 @@ export { FileEfsLineBoldIcon } from './icons/fileEfsLineBold';
 export { FileEfsLineLightIcon } from './icons/fileEfsLineLight';
 export { FileEfsFillIcon } from './icons/fileEfsFill';
 
+export { FileInPageLineIcon } from './icons/fileInPageLine';
+export { FileInPageLineBoldIcon } from './icons/fileInPageLineBold';
+export { FileInPageLineLightIcon } from './icons/fileInPageLineLight';
+export { FileInPageFillIcon } from './icons/fileInPageFill';
+
 export { FileJpgLineIcon } from './icons/fileJpgLine';
 export { FileJpgLineBoldIcon } from './icons/fileJpgLineBold';
 export { FileJpgLineLightIcon } from './icons/fileJpgLineLight';

@@ -50,6 +50,11 @@ export { ArScanLineIcon } from './icons/arScanLine';
 export { ArScanLineBoldIcon } from './icons/arScanLineBold';
 export { ArScanLineLightIcon } from './icons/arScanLineLight';
 
+export { CalibrationLineIcon } from './icons/calibrationLine';
+export { CalibrationLineBoldIcon } from './icons/calibrationLineBold';
+export { CalibrationLineLightIcon } from './icons/calibrationLineLight';
+export { CalibrationFillIcon } from './icons/calibrationFill';
+
 export { CheckCircleFillIcon } from './icons/checkCircleFill';
 export { CheckCircleFillBoldIcon } from './icons/checkCircleFillBold';
 export { CheckCircleLineIcon } from './icons/checkCircleLine';

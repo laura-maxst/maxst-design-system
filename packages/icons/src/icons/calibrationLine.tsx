@@ -1,0 +1,22 @@
+import React from 'react';
+
+const CalibrationLineIcon = () => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M13.928 7.01941H5.967V30.951H13.928V7.01941ZM11.5276 28.5506H8.3674V9.41981H11.5276V28.5506ZM27.8896 20.1436H20.0974V21.3964L15.921 18.9852L20.0974 16.574V17.7432H27.8896V16.574L32.066 18.9852L27.8896 21.3964V20.1436ZM33.8488 40.6461H39.6026V34.7341H42.003V43.0465H5.967V34.7341H8.3672V40.6461H14.7316V36.9987H17.132V40.6461H22.8214V34.7341H25.2218V40.6461H31.4484V36.9987H33.8488V40.6461ZM34.0425 30.951V7.01941H42.0035V30.951H34.0425ZM36.4429 28.5506H39.6031V9.41981H36.4429V28.5506Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};
+
+export { CalibrationLineIcon };

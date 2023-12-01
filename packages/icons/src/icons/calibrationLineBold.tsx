@@ -1,0 +1,22 @@
+import React from 'react';
+
+const CalibrationLineBoldIcon = () => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M14.2276 5.6322H5.66701V30.1634H14.2276V5.6322ZM11.2276 27.1634H8.66701V8.6322H11.2276V27.1634ZM27.8896 19.3548H20.0974V20.3089L15.921 17.8977L20.0974 15.4865V16.3548H27.8896V15.4865L32.066 17.8977L27.8896 20.3089V19.3548ZM34.1486 39.2591H39.3028V33.6459H42.3028V42.2591H5.66701V33.6459H8.66701V39.2591H14.4318V35.9115H17.4318V39.2591H22.5216V33.6459H25.5216V39.2591H31.1486V35.9115H34.1486V39.2591ZM42.3031 30.1634H33.7425V5.6322H42.3031V30.1634ZM39.3031 8.6322H36.7425V27.1634H39.3031V8.6322Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};
+
+export { CalibrationLineBoldIcon };

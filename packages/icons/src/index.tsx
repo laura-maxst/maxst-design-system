@@ -127,11 +127,6 @@ export { FileEfsLineBoldIcon } from './icons/fileEfsLineBold';
 export { FileEfsLineLightIcon } from './icons/fileEfsLineLight';
 export { FileEfsFillIcon } from './icons/fileEfsFill';
 
-export { FileInPageLineIcon } from './icons/fileInPageLine';
-export { FileInPageLineBoldIcon } from './icons/fileInPageLineBold';
-export { FileInPageLineLightIcon } from './icons/fileInPageLineLight';
-export { FileInPageFillIcon } from './icons/fileInPageFill';
-
 export { FileJpgLineIcon } from './icons/fileJpgLine';
 export { FileJpgLineBoldIcon } from './icons/fileJpgLineBold';
 export { FileJpgLineLightIcon } from './icons/fileJpgLineLight';
@@ -165,6 +160,11 @@ export { FilterLineIcon } from './icons/filterLine';
 export { FilterLineBoldIcon } from './icons/filterLineBold';
 export { FilterLineLightIcon } from './icons/filterLineLight';
 export { FilterFillIcon } from './icons/filterFill';
+
+export { FindInPageLineIcon } from './icons/findInPageLine';
+export { FindInPageLineBoldIcon } from './icons/findInPageLineBold';
+export { FindInPageLineLightIcon } from './icons/findInPageLineLight';
+export { FindInPageFillIcon } from './icons/findInPageFill';
 
 export { FirstPageLineIcon } from './icons/firstPageLine';
 export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FileInPageLineBoldIcon = () => {
+const FindInPageLineBoldIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const FileInPageLineBoldIcon = () => {
   );
 };
 
-export { FileInPageLineBoldIcon };
+export { FindInPageLineBoldIcon };

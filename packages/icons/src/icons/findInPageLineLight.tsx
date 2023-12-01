@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FileInPageLineLightIcon = () => {
+const FindInPageLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const FileInPageLineLightIcon = () => {
   );
 };
 
-export { FileInPageLineLightIcon };
+export { FindInPageLineLightIcon };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FileInPageFillIcon = () => {
+const FindInPageFillIcon = () => {
   return (
     <svg
       width="48"
@@ -19,4 +19,4 @@ const FileInPageFillIcon = () => {
   );
 };
 
-export { FileInPageFillIcon };
+export { FindInPageFillIcon };

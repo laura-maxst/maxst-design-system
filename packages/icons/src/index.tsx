@@ -194,6 +194,12 @@ export { HomeLineBoldIcon } from './icons/homeLineBold';
 export { HomeLineLightIcon } from './icons/homeLineLight';
 export { HomeFillIcon } from './icons/homeFill';
 
+export { IdCardLineIcon } from './icons/idCardLine';
+export { IdCardLineBoldIcon } from './icons/idCardLineBold';
+export { IdCardLineLightIcon } from './icons/idCardLineLight';
+export { IdCardFillIcon } from './icons/idCardFill';
+export { IdCardFillLightIcon } from './icons/idCardFillLight';
+
 export { InfoCircleLineIcon } from './icons/infoCircleLine';
 export { InfoCircleFillIcon } from './icons/infoCircleFill';
 

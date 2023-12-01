@@ -288,6 +288,11 @@ export { NotificationOffFillIcon } from './icons/notificationOffFill';
 
 export { OpenInNewLineIcon } from './icons/openInNewLine';
 
+export { OptimizationLineIcon } from './icons/optimizationLine';
+export { OptimizationLineBoldIcon } from './icons/optimizationLineBold';
+export { OptimizationLineLightIcon } from './icons/optimizationLineLight';
+export { OptimizationFillIcon } from './icons/optimizationFill';
+
 export { PlayCircleLineIcon } from './icons/playCircleLine';
 export { PlayCircleFillIcon } from './icons/playCircleFill';
 

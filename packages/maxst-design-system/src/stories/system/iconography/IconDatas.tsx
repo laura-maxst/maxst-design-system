@@ -62,16 +62,6 @@ const actionListData = [
     iconType: '',
   },
   {
-    iconName: 'DocumentLine',
-    iconNode: <Icon.DocumentLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
-    iconName: 'DocumentFill',
-    iconNode: <Icon.DocumentFillIcon />,
-    iconType: '',
-  },
-  {
     iconName: 'SettingLine',
     iconNode: <Icon.SettingLineIcon />,
     iconType: 'Regular,Bold,Light',
@@ -224,6 +214,16 @@ const actionListData = [
   {
     iconName: 'FileMoveFill',
     iconNode: <Icon.FileMoveFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'ShareLine',
+    iconNode: <Icon.ShareLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'ShareFill',
+    iconNode: <Icon.ShareFillIcon />,
     iconType: '',
   },
   {
@@ -527,6 +527,16 @@ const etcIconListData = [
     iconType: '',
   },
   {
+    iconName: 'Floor',
+    iconNode: <Icon.FloorLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'FloorFill',
+    iconNode: <Icon.FloorFillIcon />,
+    iconType: '',
+  },
+  {
     iconName: 'ThreeDLine',
     iconNode: <Icon.ThreeDLineIcon />,
     iconType: 'Regular,Bold,Light',
@@ -572,6 +582,11 @@ const etcIconListData = [
     iconType: 'Regular,Bold,Light',
   },
   {
+    iconName: 'LayerHorizontalFill',
+    iconNode: <Icon.LayerHorizontalFillIcon />,
+    iconType: '',
+  },
+  {
     iconName: 'RouteLine',
     iconNode: <Icon.RouteLineIcon />,
     iconType: 'Regular,Bold,Light',
@@ -605,6 +620,91 @@ const etcIconListData = [
     iconName: 'SelectAreaFill',
     iconNode: <Icon.SelectAreaFillIcon />,
     iconType: '',
+  },
+  {
+    iconName: 'MapFlowLine',
+    iconNode: <Icon.MapFlowLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'SlamLine',
+    iconNode: <Icon.SlamLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'SlamFill',
+    iconNode: <Icon.SlamFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'VpsLine',
+    iconNode: <Icon.VpsLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'VpsFill',
+    iconNode: <Icon.VpsFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'DigitalTwinLine',
+    iconNode: <Icon.DigitalTwinLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'DigitalTwinFill',
+    iconNode: <Icon.DigitalTwinFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'CalibrationLine',
+    iconNode: <Icon.CalibrationLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'CalibrationFill',
+    iconNode: <Icon.CalibrationFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'OptimizationLine',
+    iconNode: <Icon.OptimizationLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'OptimizationFill',
+    iconNode: <Icon.OptimizationFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'DocumentLine',
+    iconNode: <Icon.DocumentLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'DocumentFill',
+    iconNode: <Icon.DocumentFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'FindInPageLine',
+    iconNode: <Icon.FindInPageLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'FindInPageFill',
+    iconNode: <Icon.FindInPageFillIcon />,
+    iconType: '',
+  },
+  {
+    iconName: 'IdCardLine',
+    iconNode: <Icon.IdCardLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'IdCardFill',
+    iconNode: <Icon.IdCardFillIcon />,
+    iconType: 'Regular,Light',
   },
   {
     iconName: 'FileJpgLine',
@@ -667,11 +767,6 @@ const etcIconListData = [
     iconType: '',
   },
   {
-    iconName: 'MapFlowLine',
-    iconNode: <Icon.MapFlowLineIcon />,
-    iconType: 'Regular,Bold,Light',
-  },
-  {
     iconName: 'ErrorCircleLine',
     iconNode: <Icon.ErrorCircleLineIcon />,
     iconType: 'Regular,Bold',
@@ -722,6 +817,16 @@ const etcIconListData = [
     iconType: 'Regular,Bold',
   },
   {
+    iconName: 'MinusCircleLine',
+    iconNode: <Icon.MinusCircleLineIcon />,
+    iconType: 'Regular,Bold,Light',
+  },
+  {
+    iconName: 'MinusCircleFill',
+    iconNode: <Icon.MinusCircleFillIcon />,
+    iconType: '',
+  },
+  {
     iconName: 'ClockCircleLine',
     iconNode: <Icon.ClockCircleLineIcon />,
     iconType: 'Regular',
@@ -747,14 +852,14 @@ const etcIconListData = [
     iconType: 'Regular,Bold,Light',
   },
   {
-    iconName: 'UploadCircleFill',
-    iconNode: <Icon.UploadCircleFillIcon />,
-    iconType: '',
+    iconName: 'ProgressCircleFill',
+    iconNode: <Icon.ProgressCircleFillIcon />,
+    iconType: 'Regular,Bold,Light',
   },
   {
     iconName: 'ProgressLine',
     iconNode: <Icon.ProgressLineIcon />,
-    iconType: 'Regular,Bold,Light',
+    iconType: '',
   },
 ];
 

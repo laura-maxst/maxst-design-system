@@ -1,0 +1,92 @@
+.mds-accordion-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .mds-accordion__item {
+    border: 1px solid semantic-color('border', 'default');
+    background-color: semantic-color('background', 'base');
+    transition: all ease 0.3s;
+
+    &.disabled {
+      border: 1px solid semantic-color('border', 'disabled');
+    }
+
+    .mds-accordion__item__head {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      color: semantic-color('text', 'default');
+      cursor: pointer;
+
+      & > .font-title {
+        padding: 20px 16px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: semantic-color('background', '2nd-base');
+      }
+
+      &.non-control {
+        &:hover,
+        &:focus,
+        &:active {
+          cursor: context-menu;
+          background-color: semantic-color('background', 'base');
+        }
+      }
+
+      &.disabled,
+      &.non-control.disabled {
+        color: semantic-color('text', 'disabled');
+        background-color: semantic-color('background', 'disabled');
+
+        .font-title {
+          color: inherit;
+        }
+      }
+
+      .accordion-icon {
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 16px;
+        width: 24px;
+        height: 24px;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          transition: all ease 0.3s;
+        }
+
+        &.open {
+          svg {
+            transition: all ease 0.3s;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    .mds-accordion__item_body {
+      overflow: hidden;
+      color: semantic-color('text', 'default');
+      transition: all ease 0.5s;
+
+      &.close {
+        height: 0px;
+      }
+
+      &.open {
+        transition: all ease 0.5s;
+      }
+
+      & > div {
+        // padding: 20px 16px 35px;
+        transition: all ease 0.5s;
+      }
+    }
+  }
+}

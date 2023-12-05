@@ -5,6 +5,14 @@ const meta: Meta<typeof Divider> = {
   title: 'components/Divider',
   component: Divider,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '영역을 구분하는 선입니다. 기본적으로 문구는 들어가지 않으며 필요시 children으로 문구를 지정하며 가로, 세로 라인 선택이 가능합니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description: 'divider 사이 문구 등이 필요할 경우 사용',

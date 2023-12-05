@@ -676,6 +676,28 @@ input[type='radio'] {
   }
 }
 
+// accordion
+.mds-accordion-wrap {
+  .mds-accordion__item__head {
+    .accordion__head {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 8px;
+
+      &__icon {
+        display: block;
+
+        svg {
+          display: block;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
 #storybook-root {
   height: 100%;
 

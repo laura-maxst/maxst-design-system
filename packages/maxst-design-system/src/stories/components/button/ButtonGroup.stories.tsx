@@ -7,6 +7,14 @@ const meta: Meta<typeof ButtonGroup> = {
   title: 'Components/ButtonGroup',
   component: ButtonGroup,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '여러 개의 Button을 감싸주는 용도로 쓰입니다. 2개 이상 사용시 8px의 여백이 부여되며 가로와 세로 정렬, 내부 정렬, full width 설정 등 을 지정할 수 있습니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description: 'string || string + icon',

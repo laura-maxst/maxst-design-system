@@ -6,6 +6,14 @@ const meta: Meta<typeof CheckboxGroup> = {
   title: 'Components/CheckboxGroup',
   component: CheckboxGroup,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '상하위 관계가 필요할 때, 중첩으로 사용할 수 있으며. 사용자는 전체 선택으로 하위 그룹을 선택하거나, 하위 그룹만 별도로 선택할 수 있습니다. \nIndeterminate(불확정 상태)는 상하위 그룹으로 사용될 경우 일부는 선택되고 일부는 선택되지 않은 하위 목록이 포함된 경우를 나타냅니다.',
+      },
+    },
+  },
   argTypes: {
     id: {
       control: {

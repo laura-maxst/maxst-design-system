@@ -7,6 +7,14 @@ const meta: Meta<typeof Form> = {
   title: 'components/Form',
   component: Form,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Form은 데이터 제공 또는 옵션을 구성할 수 있는 입력 컨트롤 그룹 컴포넌트입니다.\nForm은 쓰임새에 따라 2가지로 분류합니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description:

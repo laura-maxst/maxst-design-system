@@ -11,6 +11,14 @@ const meta: Meta<typeof CheckboxIcon> = {
   title: 'Components/CheckboxIcon',
   component: CheckboxIcon,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Checkbox-icon은 좋아요,북마크와 같이 아이콘으로만 이루어진 유형입니다. Unchecked/Checked 2가지 타입으로 Unchecked를 기본으로 사용합니다.',
+      },
+    },
+  },
   argTypes: {
     id: {
       control: {

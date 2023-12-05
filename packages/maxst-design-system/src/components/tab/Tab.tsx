@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { TabPanel } from './TabPanel';
 import { TextLabel } from '@components/text';
 import { Button } from '@components/button';
@@ -7,7 +7,7 @@ import {
   ArrowRightLineIcon,
 } from '@maxst-designsystem/icons';
 
-interface tabProps {
+interface tabPropsType {
   size?: 'l' | 'm' | 's';
   widthFixed?: boolean;
   selectValue: string;
@@ -19,9 +19,22 @@ interface tabProps {
     children?: React.ReactNode;
     state?: 'default' | 'pressed' | 'disabled';
   }[];
+  secondaryMode?: boolean;
+  className?: string;
 }
 
-function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
+function Tab({
+  size,
+  widthFixed,
+  selectValue,
+  tabData,
+  secondaryMode,
+  className,
+}: tabPropsType) {
+  const tabBarRef: any = useRef(null);
+  const tabBarListRef: any = useRef(null);
+  const prevButtonRef: any = useRef(null);
+  const nextButtonRef: any = useRef(null);
   const [tabSize, setTabSize] = useState<string>('l');
   const [selectTab, setSelectTab] = useState<string>('');
   const [tabMoveSize, setTabMoveSize] = useState<number>(0);
@@ -43,16 +56,12 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
   };
 
   const onChickControlButton = (type: string) => {
-    const tabBar = document.querySelector('.tab-bar') as HTMLElement;
-    const tabBarList = document.querySelector('.tab-bar__list') as HTMLElement;
+    const tabBar = tabBarRef.current;
+    const tabBarList = tabBarListRef.current;
     const tabBarWidth = tabBar.clientWidth;
     const tabBarListWidth = tabBarList.clientWidth;
-    const tabControlPrev = document.querySelector(
-      '.control.prev',
-    ) as HTMLElement;
-    const tabControlNext = document.querySelector(
-      '.control.next',
-    ) as HTMLElement;
+    const tabControlPrev = prevButtonRef.current;
+    const tabControlNext = nextButtonRef.current;
 
     if (type === 'next') {
       if (tabMoveSize > tabBarListWidth - tabBarWidth) {
@@ -88,15 +97,12 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
   };
 
   useEffect(() => {
-    const tabBar = document.querySelector('.tab-bar') as HTMLElement;
-    const tabBarList = document.querySelector('.tab-bar__list') as HTMLElement;
-    const tabControlNext = document.querySelector(
-      '.control.next',
-    ) as HTMLElement;
+    const tabBarList = tabBarListRef.current;
+    const tabControlNext = nextButtonRef.current;
 
     if (tabBarList) {
-      const tabBarWidth = tabBar.clientWidth;
-      const tabBarListWidth = tabBarList.clientWidth;
+      const tabBarWidth = tabBarRef.current.clientWidth;
+      const tabBarListWidth = tabBarListRef.current.clientWidth;
       setTabBarListItemWidth(tabBarList.children[0].clientWidth);
       if (tabBarWidth < tabBarListWidth) {
         tabControlNext.style.display = 'block';
@@ -118,15 +124,22 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
   }, [selectValue]);
 
   return (
-    <div className={['tab-wrap'].join(' ')}>
+    <div
+      className={[
+        'tab-wrap',
+        secondaryMode ? 'secondary-mode' : '',
+        className ? className : '',
+      ].join(' ')}
+    >
       <div
         className={[
           'tab-bar',
           widthFixed ? 'fixed' : '',
           `tab-bar__${size}`,
         ].join(' ')}
+        ref={tabBarRef}
       >
-        <div className="control prev">
+        <div className="control prev" ref={prevButtonRef}>
           <Button
             size={size === 's' ? 's' : 'm'}
             type="tertiary"
@@ -135,9 +148,22 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
             onClick={() => onChickControlButton('prev')}
           />
         </div>
-        <div className="tab-bar__list">
+        <div className="tab-bar__list" ref={tabBarListRef}>
           {tabData.map((tabitem) => {
-            return (
+            return secondaryMode ? (
+              <button
+                className={[
+                  'tab__secondary-mode',
+                  `tab-secondary-${onTabStateFilter(tabitem.state)}`,
+                  tabitem.id === selectTab ? 'checked' : '',
+                ].join(' ')}
+                key={tabitem.id}
+                onClick={() => onClickTabBarItem(tabitem.id, tabitem.state)}
+              >
+                {tabitem.icon && tabitem.icon}
+                <TextLabel size={'l'}>{tabitem.label}</TextLabel>
+              </button>
+            ) : (
               <button
                 className={[
                   `tab-${size}-${onTabStateFilter(tabitem.state)}`,
@@ -164,7 +190,7 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
             );
           })}
         </div>
-        <div className="control next">
+        <div className="control next" ref={nextButtonRef}>
           <Button
             size={size === 's' ? 's' : 'm'}
             type="tertiary"
@@ -185,4 +211,4 @@ function Tab({ size, widthFixed, selectValue, tabData }: tabProps) {
 }
 
 export { Tab };
-export type { tabProps };
+export type { tabPropsType };

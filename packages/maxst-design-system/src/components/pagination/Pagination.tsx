@@ -245,6 +245,15 @@ const Pagination = ({
             moreButtonDraw('prev'),
           );
         }
+      } else {
+        itemList = [];
+        itemList = node.map((item: any, index: number) => {
+          return (
+            <Fragment key={`pagination-button-${index}`}>
+              {index < 14 && item}
+            </Fragment>
+          );
+        });
       }
     }
     return itemList;

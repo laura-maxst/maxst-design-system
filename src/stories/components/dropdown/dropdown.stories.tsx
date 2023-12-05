@@ -22,6 +22,14 @@ const meta: Meta<typeof Dropdown> = {
   title: 'components/Dropdown',
   component: Dropdown,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '여러 개의 옵션 리스트 중 하나의 옵션을 선택할 시 활용합니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description:

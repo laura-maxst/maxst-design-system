@@ -5,6 +5,14 @@ const meta: Meta<typeof Checkbox> = {
   title: 'Components/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Checkbox는 nselected/Seleted/Indeterminate 3가지 타입으로 Unselected를 기본으로 사용합니다. \n상하위 관계가 필요할 때, 중첩으로 사용할 수 있으며. 사용자는 전체 선택으로 하위 그룹을 선택하거나, 하위 그룹만 별도로 선택할 수 있습니다. \nIndeterminate(불확정 상태)는 상하위 그룹으로 사용될 경우 일부는 선택되고 일부는 선택되지 않은 하위 목록이 포함된 경우를 나타냅니다.(상하 관계는 CheckboxGroup으로 감싸서 사용합니다.) \n\n두가지 컬러모드(Primary(Default),Secondary) 를 제공하며 default를 우선으로 사용합니다. 낮은 Depth의 화면이나 체크박수의 갯수가 많아 눈부심을 유발할 수 있는 화면에서는 선택적으로 Secondary 체크박스를 사용할 수 있습니다.',
+      },
+    },
+  },
   argTypes: {
     id: {
       control: {

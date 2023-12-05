@@ -1,0 +1,123 @@
+.mds-sidebar {
+  max-width: 245px;
+  border-right: 1px solid semantic-color('divider', 'default');
+  background-color: semantic-color('background', 'overlay');
+
+  p {
+    font-weight: 500 !important;
+  }
+
+  .mds-sidebar__header {
+    min-height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mds-sidebar__footer {
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .menu-wrap {
+    box-shadow: none;
+
+    .menu-item {
+      p {
+        @include ellipsis(2);
+      }
+    }
+
+    .depth-01-wrap {
+      & > div:first-child {
+        &:hover,
+        &:focus,
+        &:active,
+        &.selected {
+          background-color: semantic-color('background', 'overlay');
+
+          p,
+          svg {
+            color: semantic-color('text', 'primary');
+          }
+        }
+        &.sub-menu-open {
+          p,
+          svg {
+            color: semantic-color('text', 'primary');
+          }
+        }
+      }
+    }
+
+    .depth-02-wrap {
+      .menu-item {
+        padding-left: 16px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .depth-03-wrap {
+      .menu-item {
+        padding-left: 24px;
+
+        p,
+        svg {
+          color: semantic-color('text', 'subtlest');
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: semantic-color('background', 'overlay-accent');
+        }
+
+        &.selected {
+          background-color: semantic-color('background', 'primary-light');
+
+          p,
+          svg {
+            color: semantic-color('text', 'default');
+          }
+        }
+      }
+    }
+  }
+
+  @include media-tablet-m {
+    max-width: 504px;
+
+    .depth-02-wrap {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: semantic-color('background', '3rd-base');
+
+      .menu-item {
+        background-color: semantic-color('background', '3rd-base');
+
+        &:first-child {
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: semantic-color('background', 'overlay-accent');
+          }
+        }
+
+        &.selected:not(.has-sub-menu) {
+          background-color: semantic-color('background', 'primary-light');
+
+          p,
+          svg {
+            color: semantic-color('text', 'default');
+          }
+        }
+      }
+    }
+  }
+  @include media-tablet-s {
+    max-width: 100%;
+  }
+}

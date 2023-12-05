@@ -8,6 +8,14 @@ const meta: Meta<typeof Modal> = {
   title: 'components/Modal',
   component: Modal,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '현재 상황에 관련된 중요한 정보나 긴급한 정보를 전달하는 용도로 사용합니다.\n모달에서는 여러가지 인풋 요소와 시각 오브젝트를 조합하여 사용할 수 있습니다. \nBody영역이 요소들로 컨테이너 영역의 최대 높이(800px)보다 길어질 경우 스크롤 바를 생성합니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description:

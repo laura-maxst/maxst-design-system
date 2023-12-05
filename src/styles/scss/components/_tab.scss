@@ -8,7 +8,7 @@
     margin-right: 56px;
 
     &.fixed {
-      .tab-bar__list > button {
+      .tab-bar__list > button:not(.tab__secondary-mode) {
         width: 100%;
         flex-grow: 1;
         flex-shrink: 1;
@@ -21,6 +21,7 @@
       top: 0;
       z-index: 999;
       background-color: semantic-color('background', 'base');
+
       &::before {
         // position: absolute;
         // top:0;
@@ -78,6 +79,7 @@
     top: 0;
     left: 0;
     display: flex;
+    min-width: 100%;
     align-items: center;
     gap: 12px;
 
@@ -115,6 +117,15 @@
       min-width: 24px;
       width: 24px;
       height: 24px;
+    }
+
+    .mds-chip {
+      & > span {
+        text-wrap: nowrap;
+      }
+    }
+
+    .tab__secondary-mode {
     }
   }
 
@@ -250,8 +261,101 @@ $tabState: 'default', 'pressed', 'disabled';
   }
 }
 
-@each $size in $tabSize {
-  @each $state in $tabState {
+@mixin tabSecondaryStylePressed {
+  border-color: semantic-color('border', 'accent');
+  color: semantic-color('text', 'default');
+  background-color: semantic-color('background', 'base');
+  p,
+  span {
+    color: semantic-color('text', 'default');
+  }
+
+  &.checked {
+    color: semantic-color('text', 'default-reverse');
+    background-color: semantic-color('background', 'secondary-accent');
+
+    p,
+    span {
+      color: semantic-color('text', 'default-reverse');
+    }
+  }
+}
+
+@mixin tabSecondaryCase($state) {
+  .tab-wrap.secondary-mode {
+    .tab-bar {
+      height: 40px !important;
+
+      // &.fixed {
+      //   .tab-bar__list > button,
+      //   .tab-bar__list > .mds-chip {
+      //     width: 100%;
+      //     flex-grow: 1;
+      //     flex-shrink: 1;
+      //   }
+      // }
+
+      .control {
+        &::before {
+          height: 40px;
+        }
+        &::after {
+          height: 40px;
+        }
+      }
+
+      .tab-bar__list {
+        gap: 12px;
+
+        .tab-secondary-#{$state} {
+          height: 40px;
+          border-radius: 20px;
+          border: 1px solid semantic-color('border', 'default');
+          background-color: semantic-color('background', 'base');
+
+          @if ($state == 'pressed') {
+            @include tabSecondaryStylePressed;
+          } @else if($state == 'disabled') {
+            @include tabStyleDisabled;
+            border-color: semantic-color('border', 'disabled') !important;
+          }
+
+          @if ($state == 'pressed') {
+            @include tabSecondaryStylePressed;
+          } @else if($state == 'disabled') {
+            @include tabStyleDisabled;
+            border-color: semantic-color('border', 'disabled');
+          }
+
+          &.checked {
+            position: relative;
+            border: 0 none;
+            color: semantic-color('text', 'default-reverse');
+            background-color: semantic-color('background', 'secondary');
+            p,
+            span {
+              color: semantic-color('text', 'default-reverse');
+            }
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            @include tabSecondaryStylePressed;
+          }
+        }
+      }
+    }
+
+    .tab-panel {
+      border: 0 none;
+    }
+  }
+}
+
+@each $state in $tabState {
+  @include tabSecondaryCase($state);
+  @each $size in $tabSize {
     @include tabCase($size, $state);
   }
 }

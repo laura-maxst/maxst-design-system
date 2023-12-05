@@ -6,6 +6,14 @@ const meta: Meta<typeof Chip> = {
   title: 'components/Chip',
   component: Chip,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Chip은 항목을 설명하는 키워드로 사용하거나, 라벨을 붙여 분류하거나 정리하는 용도로 사용합니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description: 'string',

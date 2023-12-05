@@ -379,7 +379,11 @@ const Pagination = ({
           id="dropdown-page-size-change"
           className="dropdown-page-size-change"
         >
-          <Button type="ghost" size="m" iconRight={<ArrowDownLineIcon />}>
+          <Button
+            type="ghost"
+            size={buttonSizeFilter(size)}
+            iconRight={<ArrowDownLineIcon />}
+          >
             {selectShowPageSizeData.label}
           </Button>
         </Dropdown>

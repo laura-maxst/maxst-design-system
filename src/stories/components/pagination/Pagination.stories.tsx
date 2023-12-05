@@ -6,6 +6,14 @@ const meta: Meta<typeof Pagination> = {
   title: 'components/Pagination',
   component: Pagination,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '페이지네이션은 다음 또는 이전 페이지로 이동하기 위한 제어 기능을 사용하여 콘텐츠나 데이터를 여러 페이지로 분할하는 데 사용합니다.\nPagination은 구조 및 쓰임새에 따라 2가지 모드를 제공합니다.',
+      },
+    },
+  },
   argTypes: {
     totalPage: {
       description: '총 page 수',

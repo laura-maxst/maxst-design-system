@@ -1,0 +1,33 @@
+.mds-box-group {
+  display: flex;
+  width: 100%;
+}
+
+$boxGroupAlign: 'left', 'right', 'center', 'between';
+$boxGroupDirection: 'vertical', 'horizontal';
+
+@mixin boxGroupCase($align, $direction) {
+  .box-group-#{$align}-#{$direction} {
+    @if ($align == 'center') {
+      justify-content: center;
+    } @else if ($align == 'right') {
+      justify-content: flex-end;
+    } @else if ($align == 'between') {
+      justify-content: space-between;
+    } @else {
+      justify-content: flex-start;
+    }
+
+    @if ($direction == 'vertical') {
+      flex-direction: column;
+    } @else {
+      flex-direction: row;
+    }
+  }
+}
+
+@each $align in $boxGroupAlign {
+  @each $direction in $boxGroupDirection {
+    @include boxGroupCase($align, $direction);
+  }
+}

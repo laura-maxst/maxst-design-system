@@ -10,6 +10,14 @@ const meta: Meta<typeof ChipGroup> = {
   title: 'components/ChipGroup',
   component: ChipGroup,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '여러 개의 Chip을 감싸주는 용도로 쓰입니다. 2개 이상 사용시 8px의 여백이 부여됩니다.',
+      },
+    },
+  },
   argTypes: {
     className: {
       control: {

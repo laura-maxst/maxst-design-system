@@ -15,6 +15,7 @@ function Title({ role, type, size, align, className, children }: TitleProps) {
     <TitleTagFilter
       role={role}
       className={[
+        'font-title',
         `font-${type}-${size}`,
         align ? align : '',
         className ? className : '',

@@ -7,6 +7,13 @@ const meta: Meta<typeof TextField> = {
   title: 'Components/TextField',
   component: TextField,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Input과 Textarea를 모두 정의합니다.',
+      },
+    },
+  },
   argTypes: {
     id: {
       control: {

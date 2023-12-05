@@ -13,6 +13,13 @@ const meta: Meta<typeof InputGroup> = {
   title: 'Components/InputGroup',
   component: InputGroup,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: '여러 Input을 감싸는 용도로 사용합니다.',
+      },
+    },
+  },
   argTypes: {
     label: {
       description:

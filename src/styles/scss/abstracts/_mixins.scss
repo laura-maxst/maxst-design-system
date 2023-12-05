@@ -123,6 +123,7 @@
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: wrap;
     word-wrap: break-word;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $lineNum;

@@ -7,6 +7,14 @@ const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Button은 스타일 및 쓰임새에 따라 Box Button, Action Button, Text Button, Icon Button 4가지로 분류합니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description: 'string || string + icon',

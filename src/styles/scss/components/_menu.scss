@@ -1,0 +1,113 @@
+.menu-wrap {
+  &:not(.depth-02-wrap, .depth-03-wrap) {
+    @include shadow-level2;
+  }
+  width: 100%;
+  top: 100%;
+  z-index: 9999;
+  @include scrollY(semantic-color('background', 'overlay'));
+  background-color: semantic-color('background', 'overlay');
+
+  &.has-max-height {
+    max-height: 216px;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    background-color: semantic-color('background', 'overlay');
+
+    svg {
+      flex: none;
+      width: 20px;
+      height: 20px;
+      color: semantic-color('text', 'default');
+    }
+
+    .menu__label {
+      width: 100%;
+      color: semantic-color('text', 'default');
+      @include ellipsis();
+    }
+
+    .menu__sub-label {
+      color: semantic-color('text', 'subtlest');
+    }
+
+    & svg:last-child {
+      color: semantic-color('text', 'subtlest');
+    }
+
+    &.selected {
+      background-color: semantic-color('background', 'primary-light');
+      .menu__sub-label {
+        color: semantic-color('text', 'sub');
+      }
+
+      svg:last-child {
+        color: semantic-color('text', 'sub');
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: semantic-color('background', 'overlay-accent');
+    }
+
+    &.disabled {
+      .menu__label {
+        color: semantic-color('text', 'disabled');
+      }
+      .menu__sub-label {
+        color: semantic-color('text', 'disabled');
+      }
+      svg {
+        color: semantic-color('text', 'disabled');
+      }
+      background-color: semantic-color('background', 'overlay');
+    }
+  }
+
+  .depth-02-wrap {
+    display: none;
+
+    &.open {
+      display: block;
+    }
+
+    .menu-item {
+      padding-left: 24px;
+    }
+  }
+
+  .depth-03-wrap {
+    display: none;
+
+    &.open {
+      display: block;
+    }
+
+    .menu-item {
+      padding-left: 32px;
+    }
+  }
+  .sub-menu-close {
+    svg:last-child {
+      transition: all ease 0.3s;
+      transform: rotate(0);
+    }
+  }
+
+  .sub-menu-open {
+    svg:last-child {
+      transition: all ease 0.3s;
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {/* Colors.mdx */}
-
+import { Canvas } from '@storybook/blocks';
 import { Meta, Story } from '@storybook/blocks';
 
 import * as SemanticTypography from './SemanticTypography.stories';
@@ -41,6 +41,14 @@ Title은 페이지 및 템플릿, 모듈 단위 역할 및 기능의 강조하�
     src="./images/img_semantic_typography_title.png"
     alt="semantic typography title image"
   />
+</div>
+
+<div className="dark">
+  ```
+  <Title role={1} type="title" size="xl">
+    blabla
+  </Title>
+  ```
 </div>
 
 <SemanticTitleTable />

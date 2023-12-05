@@ -6,6 +6,14 @@ const meta: Meta<typeof Breadcrumb> = {
   title: 'components/Breadcrumb',
   component: Breadcrumb,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '사용자에게 이동 경로를 시각적으로 보여주고, 이전 단계로 빠르게 이동할 수 있도록 해줍니다.',
+      },
+    },
+  },
   argTypes: {
     menuData: {
       description:

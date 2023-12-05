@@ -1,5 +1,5 @@
 import React from 'react';
-interface tabProps {
+interface tabPropsType {
     size?: 'l' | 'm' | 's';
     widthFixed?: boolean;
     selectValue: string;
@@ -11,7 +11,9 @@ interface tabProps {
         children?: React.ReactNode;
         state?: 'default' | 'pressed' | 'disabled';
     }[];
+    secondaryMode?: boolean;
+    className?: string;
 }
-declare function Tab({ size, widthFixed, selectValue, tabData }: tabProps): JSX.Element;
+declare function Tab({ size, widthFixed, selectValue, tabData, secondaryMode, className, }: tabPropsType): JSX.Element;
 export { Tab };
-export type { tabProps };
+export type { tabPropsType };

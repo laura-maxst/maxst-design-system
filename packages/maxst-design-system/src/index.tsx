@@ -1,14 +1,18 @@
 import './styles/scss/main.scss';
+export { Accordion } from './components/accordion';
 export { Alert } from './components/alert';
+export { BoxGroup } from './components/boxGroup';
 export { Breadcrumb } from './components/breadcrumb';
 export { Button, ButtonGroup } from './components/button';
 export { Checkbox, CheckboxIcon, CheckboxGroup } from './components/checkbox';
 export { Chip } from './components/chip';
 export { Container } from './components/container';
 export { Divider } from './components/divider';
+export { Drawer } from './components/drawers';
 export { Dropdown } from './components/dropdown';
 export { Form } from './components/form';
 export { List } from './components/list';
+export { Menu } from './components/menu';
 export { Modal } from './components/modal';
 export { Pagination } from './components/pagination';
 export { PositionModal } from './components/positionModal';

@@ -18,6 +18,7 @@ export { Pagination } from './components/pagination';
 export { PositionModal } from './components/positionModal';
 export { Radio, RadioGroup } from './components/radio';
 export { SearchBar } from './components/searchBar';
+export { Sidebar } from './components/sidebar';
 export { Snackbar } from './components/snackbar';
 export { Spinner } from './components/spinner';
 export { Switch } from './components/switchToggle';

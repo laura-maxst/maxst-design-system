@@ -6721,6 +6721,14 @@ var SearchBar = function (_a) {
         React__default["default"].createElement(TextField, { id: id, size: size, placeholder: placeholder, iconLeft: React__default["default"].createElement(SearchLineIcon_1, null), disabled: disabled, onChange: onChange, resetButton: resetButton })));
 };
 
+var Sidebar = function (_a) {
+    var className = _a.className, header = _a.header, footer = _a.footer; _a.multiple; var props = __rest(_a, ["className", "header", "footer", "multiple"]);
+    return (React__default["default"].createElement("div", { className: ['mds-sidebar', className ? className : ''].join(' ') },
+        header && React__default["default"].createElement("div", { className: "mds-sidebar__header" }, header),
+        React__default["default"].createElement(Menu, __assign({}, props, { hasMaxHeight: false, multiple: false })),
+        footer && React__default["default"].createElement("div", { className: "mds-sidebar__footer" }, footer)));
+};
+
 var Snackbar = function (_a) {
     var contents = _a.contents, closeButton = _a.closeButton, actionButtonData = _a.actionButtonData, iconLeft = _a.iconLeft, align = _a.align, open = _a.open, onClose = _a.onClose;
     var resolveOnClose = function () {
@@ -7097,6 +7105,7 @@ exports.PositionModal = PositionModal;
 exports.Radio = Radio;
 exports.RadioGroup = RadioGroup;
 exports.SearchBar = SearchBar;
+exports.Sidebar = Sidebar;
 exports.Snackbar = Snackbar;
 exports.Spinner = Spinner;
 exports.Switch = Switch;

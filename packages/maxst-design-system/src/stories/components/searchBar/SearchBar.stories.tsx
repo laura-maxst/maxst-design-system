@@ -6,6 +6,13 @@ const meta: Meta<typeof SearchBar> = {
   title: 'Components/SearchBar',
   component: SearchBar,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: '검색어를 입력하기 위한 입력 필드 컴포넌트입니다.',
+      },
+    },
+  },
   argTypes: {
     id: {
       control: {

@@ -328,8 +328,14 @@ const sortRowsData = [
   },
 ];
 
-const onClickrow = (value: any) => {
-  console.log('checkrows', value);
+const onClickrow = (e: any, value: any) => {
+  console.log('e', e, 'value', value);
+  if (typeof value == 'object') {
+    console.log('move not');
+    return;
+  } else {
+    console.log('move');
+  }
 };
 
 export const TableDefault: Story = {
@@ -385,8 +391,8 @@ export const TableColumnCellWidthCustom: Story = {
 export const TableCheckModeAndRowCheck: Story = {
   render: (args) => <Table {...args} />,
   args: {
-    columnData: defaultColumnsData,
-    rowData: defaultRowsData,
+    columnData: customCellWidthColumnsData,
+    rowData: componentRowsData,
     tableMinWidth: 500,
     checkMode: true,
     onClick: onClickrow,

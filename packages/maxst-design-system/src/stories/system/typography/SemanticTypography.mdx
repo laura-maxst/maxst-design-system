@@ -1,6 +1,6 @@
 {/* Colors.mdx */}
-import { Canvas } from '@storybook/blocks';
 import { Meta, Story } from '@storybook/blocks';
+import { Source } from '@storybook/blocks';
 
 import * as SemanticTypography from './SemanticTypography.stories';
 import {
@@ -43,13 +43,16 @@ Title은 페이지 및 템플릿, 모듈 단위 역할 및 기능의 강조하�
   />
 </div>
 
-<div className="dark">
-  ```
-  <Title role={1} type="title" size="xl">
-    blabla
-  </Title>
-  ```
-</div>
+<Source
+  dark={true}
+  code={`<Title
+    role={1}
+    type="title"
+    size="xl"
+  >
+    Title
+</Title>`}
+/>
 
 <SemanticTitleTable />
 
@@ -66,6 +69,18 @@ Body는 서비스에서 긴 텍스트 구절에 주로 사용하는 타이포그
     alt="semantic typography body image"
   />
 </div>
+
+<Source
+  dark={true}
+  code={`
+    <Text
+      innerHtml={true}
+      type="body"
+      size="l"
+    >
+  innerHtml이 존재하는 경우 <b>innerHtml={true}</b>로 props 전달
+</Text>`}
+/>
 
 <SemanticBodyTable />
 
@@ -93,6 +108,14 @@ Label은 버튼,칩과 같이 구성 요소 내부의 텍스트 또는 콘텐츠
     alt="semantic typography label image"
   />
 </div>
+
+<Source
+  dark={true}
+  code={`
+<TextLabel size="xl">
+  bla bla
+</TextLabel>`}
+/>
 
 <SemanticLabelTable />
 

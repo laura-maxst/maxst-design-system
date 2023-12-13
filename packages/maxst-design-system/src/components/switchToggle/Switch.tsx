@@ -59,20 +59,23 @@ const Switch = ({
         disabled ? 'disabled' : thisState,
       ].join(' ')}
     >
-      <label htmlFor={id}>
+      <label
+        htmlFor={id}
+        className={[
+          'switch-toggle',
+          `switch-toggle__${size ? size : 'l'}--${
+            (disabled && 'disabled') || thisState
+          }`,
+          isChecked ? 'checked' : '',
+          className ? className : '',
+        ].join(' ')}
+        onClick={resolveOnClick}
+      >
         <input
           id={id}
           type="checkbox"
-          className={[
-            'switch-toggle',
-            `switch-toggle__${size ? size : 'l'}--${
-              (disabled && 'disabled') || thisState
-            }`,
-            className ? className : '',
-          ].join(' ')}
           disabled={disabled}
           defaultChecked={checked}
-          onClick={resolveOnClick}
         />
         <span className="switch-button">
           {iconMode &&

@@ -28,7 +28,7 @@ const meta: Meta<typeof ButtonGroup> = {
     },
     fullWidth: {
       description:
-        '자식 button들의 width를 100%로 정의해주지만 button의 max-width값 이상 지정할 수 없습니다.',
+        '자식 button들의 width를 100%로 정의해주지만 button의 max-width값(330px) 이상 지정할 수 없습니다.',
     },
     direction: {
       description: '기본적으로 horizontal',

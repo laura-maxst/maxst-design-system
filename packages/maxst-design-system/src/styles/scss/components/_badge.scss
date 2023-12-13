@@ -1,0 +1,193 @@
+.mds-badge-wrap {
+  position: relative;
+  width: min-content;
+
+  .mds-badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.click-mode {
+      cursor: pointer;
+    }
+  }
+}
+
+$badgeType: 'number', 'dot', 'icon';
+$badgeColor: 'mint', 'gray', 'magenta', '';
+$badgeStatus: 'default', 'error', 'warning', 'information', 'success', '';
+$badgeSize: 'xl', 'l', 'm', 's';
+
+@mixin badgePosition($type) {
+  @if ($type == 'number') {
+    &.top-right {
+      bottom: calc(50% + 1px);
+      left: calc(50% + 1px);
+    }
+    &.top-left {
+      bottom: calc(50% + 1px);
+      right: calc(50% + 1px);
+    }
+    &.bottom-right {
+      top: calc(50% + 1px);
+      left: calc(50% + 1px);
+    }
+    &.bottom-left {
+      top: calc(50% + 1px);
+      right: calc(50% + 1px);
+    }
+  } @else if($type == 'dot') {
+    &.top-right {
+      bottom: calc(50% + 8px);
+      left: calc(50% + 8px);
+    }
+    &.top-left {
+      bottom: calc(50% + 8px);
+      right: calc(50% + 8px);
+    }
+    &.bottom-right {
+      top: calc(50% + 8px);
+      left: calc(50% + 8px);
+    }
+    &.bottom-left {
+      top: calc(50% + 8px);
+      right: calc(50% + 8px);
+    }
+  } @else if($type == 'icon') {
+    &.top-right {
+      bottom: calc(50% + 4px);
+      left: calc(50% + 6px);
+    }
+    &.top-left {
+      bottom: calc(50% + 4px);
+      right: calc(50% + 6px);
+    }
+    &.bottom-right {
+      top: calc(50% + 4px);
+      left: calc(50% + 6px);
+    }
+    &.bottom-left {
+      top: calc(50% + 4px);
+      right: calc(50% + 6px);
+    }
+  }
+}
+
+@mixin badgeCase($type, $color, $status, $size) {
+  .badge-#{$type}-#{$color}#{$status}-#{$size} {
+    @include badgePosition($type);
+
+    p,
+    span,
+    svg {
+      color: semantic-color('text', 'default-reverse');
+    }
+    // number type
+    @if ($type == 'number') {
+      @if ($size == 'xl') {
+        min-width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        padding: 0 8px;
+      } @else if ($size == 'l') {
+        min-width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 0 6px;
+      } @else if ($size == 'm') {
+        min-width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        padding: 0 4px;
+      } @else if ($size == 's') {
+        min-width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        padding: 0 4px;
+      }
+    }
+    // dot type
+    @if ($type == 'dot') {
+      border-radius: 50%;
+      @if ($size == 'xl') {
+        width: 14px;
+        height: 14px;
+      } @else if ($size == 'l') {
+        width: 10px;
+        height: 10px;
+      } @else if ($size == 'm') {
+        width: 8px;
+        height: 8px;
+      } @else if ($size == 's') {
+        width: 6px;
+        height: 6px;
+      }
+    }
+    // icon type
+    @if ($type == 'icon') {
+      border-radius: 50%;
+      @if ($size == 'xl') {
+        width: 32px;
+        height: 32px;
+        svg {
+          width: 20px;
+        }
+      } @else if ($size == 'l') {
+        width: 24px;
+        height: 24px;
+        svg {
+          width: 16px;
+        }
+      } @else if ($size == 'm') {
+        width: 20px;
+        height: 20px;
+        svg {
+          width: 14px;
+        }
+      } @else if ($size == 's') {
+        width: 16px;
+        height: 16px;
+        svg {
+          width: 10px;
+        }
+      }
+    }
+
+    // status
+    @if ($status == 'default') {
+      background-color: semantic-color('background', 'base');
+      p,
+      span,
+      svg {
+        color: semantic-color('text', 'default');
+      }
+    } @else if ($status == 'error') {
+      background-color: semantic-color('background', 'error');
+    } @else if ($status == 'warning') {
+      background-color: semantic-color('background', 'warning');
+    } @else if ($status == 'information') {
+      background-color: semantic-color('background', 'information');
+    } @else if ($status == 'success') {
+      background-color: semantic-color('background', 'success');
+    }
+    // color
+    @if ($color == 'mint') {
+      background-color: semantic-color('background', 'primary');
+    } @else if ($color == 'gray') {
+      background-color: semantic-color('background', 'secondary');
+    } @else if ($color == 'magenta') {
+      background-color: var($--palette-magenta-800);
+    }
+  }
+}
+
+@each $type in $badgeType {
+  @each $color in $badgeColor {
+    @each $status in $badgeStatus {
+      @each $size in $badgeSize {
+        @include badgeCase($type, $color, $status, $size);
+      }
+    }
+  }
+}

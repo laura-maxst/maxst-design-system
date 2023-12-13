@@ -12,6 +12,14 @@ const meta: Meta<typeof Tooltip> = {
   title: 'components/Tooltip',
   component: Tooltip,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          '툴팁은 UI 요소 위로 마우스를 가져가거나, 클릭할 때 표시되는 메시지 상자입니다. 버튼,아이콘,텍스트 와 같은 UI 요소와 쌍을 이루어 활용합니다.\n비교적 간단하고 보충적인 설명이 필요할 때 사용할 수 있습니다.',
+      },
+    },
+  },
   argTypes: {
     children: {
       description: 'tooltip으로 작동할 모든 component가 가능합니다.',

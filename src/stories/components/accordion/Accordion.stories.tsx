@@ -22,13 +22,17 @@ const meta: Meta<typeof Accordion> = {
     items: {
       description:
         'Object 형태로 data를 넘겨줍니다. head와 contents모두 component형태로 지정할 수 있습니다.',
+      control: {
+        type: null,
+      },
     },
     width: {
       description:
         'accordion의 width 지정이 필요할때 사용합니다. px 혹은 %의 값을 string으로 넘겨줍니다.',
     },
     defaultSelectItem: {
-      description: '선택 되어 open되어 있는 menu를 지정할 수 있습니다.',
+      description:
+        '선택 되어 open되어 있는 menu를 ID값으로 지정할 수 있습니다.',
     },
     expandIcon: {
       description:

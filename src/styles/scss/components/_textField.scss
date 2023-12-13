@@ -229,6 +229,10 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         width: 100%;
       }
     }
+
+    .textfield-formControl {
+      min-width: unset;
+    }
   }
 
   & label {

@@ -794,6 +794,36 @@ body {
       }
     }
   }
+
+  .docblock-argstable {
+    // table-layout: fixed;
+
+    input[type='number'],
+    input[type='text'],
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .iconography-wrap {
+    .iconography-list {
+      li {
+        .icon-box {
+          width: 145px;
+          height: 145px;
+
+          svg {
+            width: 44px;
+          }
+
+          p,
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include media-mobile-m {
@@ -823,12 +853,44 @@ body {
     }
   }
 
+  .sb-anchor {
+    & + div {
+      overflow-x: auto;
+    }
+  }
+
   .iconography-wrap {
     .iconography-list {
       li {
         .icon-box {
-          width: 144px;
-          height: 144px;
+          width: 112px;
+          height: 112px;
+
+          svg {
+            width: 32px;
+          }
+
+          p,
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-mobile-s {
+  .iconography-wrap {
+    .iconography-list {
+      li {
+        .icon-box {
+          width: 117px;
+          height: 117px;
+
+          svg {
+            width: 36px;
+          }
 
           p,
           span {

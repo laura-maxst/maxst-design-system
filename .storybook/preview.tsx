@@ -1,13 +1,16 @@
 // import React, { useEffect } from "react";
-import type { Preview  } from "@storybook/react";
+import type { Preview } from '@storybook/react';
 import '@styles/scss/main.scss';
 import '@styles/storybookStyle.scss';
-import { withThemeByClassName } from "@storybook/addon-styling"
-import { INITIAL_VIEWPORTS, MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { themes } from '@storybook/theming'; 
+import { withThemeByClassName } from '@storybook/addon-styling';
+import {
+  INITIAL_VIEWPORTS,
+  MINIMAL_VIEWPORTS,
+} from '@storybook/addon-viewport';
+import { themes } from '@storybook/theming';
 import storybookTheme from '../src/styles/storybook-theme';
 
-// globalTypes으로 관리하는 theme 설정 관련 테스트 코드 
+// globalTypes으로 관리하는 theme 설정 관련 테스트 코드
 // const MyTheme = {
 //   light : "light",
 //   dark : "dark",
@@ -47,18 +50,18 @@ const preview: Preview = {
   //     },
   //   },
   // },
-  decorators:[
+  decorators: [
     withThemeByClassName({
       themes: {
-        light: "light",
-        dark: "dark",
+        light: 'light',
+        dark: 'dark',
       },
-      defaultTheme: "light",
+      defaultTheme: 'light',
     }),
     // WithThemeProvider
   ],
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -69,8 +72,8 @@ const preview: Preview = {
       theme: storybookTheme,
     },
     viewport: {
-      viewports: INITIAL_VIEWPORTS, 
-      defaultViewport: 'someDefault',
+      viewports: INITIAL_VIEWPORTS,
+      // defaultViewport: 'someDefault',
     },
   },
 };

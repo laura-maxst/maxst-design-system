@@ -201,6 +201,12 @@ $checkboxMode: 'primary', 'secondary';
   .helper-text.font-body {
     padding-top: 4px;
   }
+  .checkbox {
+    input {
+      width: 0px;
+      height: 0px;
+    }
+  }
 }
 .checkbox-label {
   position: relative;
@@ -218,6 +224,8 @@ $checkboxMode: 'primary', 'secondary';
       position: absolute;
       top: 0;
       left: 0;
+      width: 0px;
+      height: 0px;
     }
   }
   p {

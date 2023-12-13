@@ -20,7 +20,7 @@ interface TableProps {
   leftHeadRow?: boolean;
   checkMode?: boolean;
   isRowCheck?: boolean;
-  onClick?: (value: any) => void;
+  onClick?: (e: any, value: any) => void;
 }
 
 const Table = ({
@@ -80,25 +80,25 @@ const Table = ({
     }
   };
 
-  const resolveOnClick = (value: any) => {
+  const resolveOnClick = (e: any, value: any) => {
     if (!onClick) {
       return;
     }
-    onClick(value);
+    onClick(e, value);
   };
 
   const onCheckedAll = (e: any) => {
     if (!checkAll) {
       setCheckItemList(optionList);
-      resolveOnClick(optionList);
+      resolveOnClick(e, optionList);
     } else {
       setCheckItemList([]);
-      resolveOnClick([]);
+      resolveOnClick(e, []);
     }
     setCheckAll(!checkAll);
   };
 
-  const onCheckedOne = (id: string) => {
+  const onCheckedOne = (e: any, id: string) => {
     const checkItems = [...checkItemList];
     if (checkItems.includes(id)) {
       checkItems.splice(checkItems.indexOf(id), 1);
@@ -106,7 +106,7 @@ const Table = ({
       checkItems.push(id);
     }
     setCheckItemList(checkItems);
-    resolveOnClick(checkItems);
+    resolveOnClick(e, checkItems);
     if (checkItems.length === 0) {
       setCheckAll(false);
     } else {
@@ -115,13 +115,14 @@ const Table = ({
   };
 
   const onCheckedRow = (e: any, id: string) => {
+    console.log(e);
     if (checkMode && isRowCheck) {
       if (!['INPUT', 'LABEL', 'svg'].includes(e.target.tagName)) {
         const clickRowCheckbox = document.getElementById(`${id}`);
         clickRowCheckbox && clickRowCheckbox.click();
       }
     } else {
-      resolveOnClick(id);
+      resolveOnClick(e, id);
     }
   };
 
@@ -212,7 +213,6 @@ const Table = ({
               return (
                 <tr
                   key={String(rowItem.id)}
-                  onClick={(e) => onCheckedRow(e, String(rowItem.id))}
                   className={[
                     checkMode && checkItemList.includes(rowItem.id)
                       ? 'selected'
@@ -220,7 +220,10 @@ const Table = ({
                   ].join(' ')}
                 >
                   {verticalHeadingMode ? (
-                    <th id={columnData[rowItemIndex].id}>
+                    <th
+                      id={columnData[rowItemIndex].id}
+                      onClick={(e) => onCheckedRow(e, String(rowItem.id))}
+                    >
                       <div>
                         <TextLabel size="m">
                           {columnData[rowItemIndex].title}
@@ -233,7 +236,7 @@ const Table = ({
                         <Checkbox
                           id={String(rowItem.id)}
                           size={'s'}
-                          onClick={(e) => onCheckedOne(e.id)}
+                          onClick={(e) => onCheckedOne(e, e.id)}
                           checked={checkItemList.includes(rowItem.id)}
                         />
                       </td>
@@ -242,6 +245,7 @@ const Table = ({
                   {cellKey.map((cellKeyItem, cellKeyIndex) => {
                     return cellKeyIndex === 0 && leftHeadRow ? (
                       <th
+                        onClick={(e) => onCheckedRow(e, String(rowItem.id))}
                         className={[
                           cellAlign[cellKeyIndex] !== 'left'
                             ? cellAlign[cellKeyIndex]
@@ -253,6 +257,7 @@ const Table = ({
                       </th>
                     ) : (
                       <td
+                        onClick={(e) => onCheckedRow(e, String(rowItem.id))}
                         className={[
                           cellAlign[cellKeyIndex] !== 'left'
                             ? cellAlign[cellKeyIndex]

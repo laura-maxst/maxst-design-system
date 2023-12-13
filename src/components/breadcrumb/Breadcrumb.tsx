@@ -1,8 +1,7 @@
 import { Button } from '@components/button';
 import React, { Fragment, useEffect, useState } from 'react';
 import {
-  ArrowRightLineIcon,
-  ArrowUpCircleLineIcon,
+  ArrowDownCircleLineIcon,
   MoreHorizontalLineIcon,
   HomeLineIcon,
 } from '@maxst-designsystem/icons';
@@ -73,7 +72,7 @@ const Breadcrumb = ({
                   type="ghost"
                   size="s"
                   iconLeft={buttonData.icon && buttonData.icon}
-                  iconRight={<ArrowUpCircleLineIcon />}
+                  iconRight={<ArrowDownCircleLineIcon />}
                   className={[
                     thisPage === buttonData.id ? 'current' : 'default',
                   ].join(' ')}

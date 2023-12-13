@@ -29,6 +29,11 @@ const meta: Meta<typeof InputGroup> = {
       description:
         'children이 multiline이면 helper text는 children component에 주고 input group에서는 사용하지 않는다. ',
     },
+    children: {
+      control: {
+        type: null,
+      },
+    },
   },
 };
 

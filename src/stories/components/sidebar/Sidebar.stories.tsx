@@ -31,13 +31,6 @@ const meta: Meta<typeof Sidebar> = {
         type: null,
       },
     },
-    multiple: {
-      description:
-        'menu option type을 상속받아 존재하지만 false로 고정하여 수정할 수 없다.',
-      control: {
-        type: null,
-      },
-    },
   },
 };
 

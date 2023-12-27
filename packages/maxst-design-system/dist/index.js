@@ -6676,7 +6676,7 @@ function TextField(_a) {
                 setResolveValue(valuefilter);
             }
             else {
-                setResolveValue(String(value));
+                setResolveValue(value !== undefined ? value : '');
             }
         }
     }, [maxLength, multiLine, value]);

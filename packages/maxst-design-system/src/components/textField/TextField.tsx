@@ -167,7 +167,7 @@ function TextField({
         const valuefilter = String(value).slice(0, maxLength);
         setResolveValue(valuefilter);
       } else {
-        setResolveValue(String(value));
+        setResolveValue(value !== undefined ? value : '');
       }
     }
   }, [maxLength, multiLine, value]);

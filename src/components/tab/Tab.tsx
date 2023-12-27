@@ -7,18 +7,20 @@ import {
   ArrowRightLineIcon,
 } from '@maxst-designsystem/icons';
 
+type tabDataType = {
+  id: string;
+  label: string;
+  icon?: React.ReactNode;
+  count?: number;
+  children?: React.ReactNode;
+  state?: 'default' | 'pressed' | 'disabled';
+};
+
 interface tabPropsType {
   size?: 'l' | 'm' | 's';
   widthFixed?: boolean;
   selectValue: string;
-  tabData: {
-    id: string;
-    label: string;
-    icon?: React.ReactNode;
-    count?: number;
-    children?: React.ReactNode;
-    state?: 'default' | 'pressed' | 'disabled';
-  }[];
+  tabData: tabDataType[];
   secondaryMode?: boolean;
   className?: string;
 }

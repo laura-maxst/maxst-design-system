@@ -87,8 +87,20 @@
   } @else if($type == 'error-tertiary') {
     @if ($state == 'pressed') {
       border: 1px solid semantic-color('border', 'error-accent');
+      & svg {
+        color: semantic-color('text', 'error-accent');
+        .path {
+          stroke: semantic-color('text', 'error-accent') !important;
+        }
+      }
     } @else {
       border: 1px solid semantic-color('border', 'error');
+      & svg {
+        color: semantic-color('text', 'error');
+        .path {
+          stroke: semantic-color('text', 'error') !important;
+        }
+      }
     }
     color: semantic-color('text', 'error');
     & svg {
@@ -145,6 +157,9 @@
   color: semantic-color('text', 'sub');
   & svg {
     color: semantic-color('text', 'sub');
+    .path {
+      stroke: semantic-color('text', 'sub') !important;
+    }
   }
 }
 %type-text-pressed {
@@ -157,12 +172,18 @@
   color: semantic-color('text', 'error');
   & svg {
     color: semantic-color('text', 'error');
+    .path {
+      stroke: semantic-color('text', 'error') !important;
+    }
   }
 }
 %type-link-default {
   color: semantic-color('text', 'information');
   & svg {
     color: semantic-color('text', 'information');
+    .path {
+      stroke: semantic-color('text', 'information') !important;
+    }
   }
 }
 %type-link-pressed {
@@ -180,6 +201,9 @@
   }
   & svg {
     color: semantic-color('text', 'information');
+    .path {
+      stroke: semantic-color('text', 'information') !important;
+    }
   }
 }
 
@@ -257,6 +281,13 @@ $buttonState: 'default', 'pressed', 'disabled', 'error';
     @if ($size == 'xl' and $type == 'primary') {
       &.primary-action {
         @include primary-action($state);
+      }
+    }
+
+    .spinner-wrap {
+      overflow: unset;
+      svg {
+        color: inherit;
       }
     }
   }

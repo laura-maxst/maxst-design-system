@@ -2,19 +2,21 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Container } from '@components/container';
 
 const meta: Meta<typeof Container> = {
-  title: 'layout/Container',
+  title: 'Layout/Container',
   component: Container,
   tags: ['autodocs'],
   argTypes: {
     children: {
-      description: 'React.ReactNode',
+      description: `component형태로 지정합니다.\n
+    React.ReactNode
+          `,
       control: {
         type: null,
       },
     },
     full: {
       description:
-        '기본적으로 max-width:1440px로 설정되어 있습니다. 1440px이상에서도 width:100% 설정이 필요할 때 boolean값으로 설정합니다.',
+        '기본적으로 `max-width:1440px`로 설정되어 있습니다. `1440px`이상에서도 `width:100%` 설정이 필요할 때 `boolean`값으로 설정합니다.',
     },
   },
 };

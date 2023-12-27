@@ -1,56 +1,57 @@
-.radio__group{
+.radio__group {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width:100%;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  gap:8px;
+  gap: 8px;
 
-  .radio-box{
+  .radio-box {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width:100%;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:16px;
+    gap: 16px;
   }
 
-  .radio__group__label{
+  .radio__group__label {
     width: 100%;
   }
 
-  &.left{
+  &.left {
     justify-content: flex-start;
   }
-  
-  &.right{
+
+  &.right {
     justify-content: flex-end;
 
-    .radio-box{
+    .radio-box {
       justify-content: flex-end;
     }
-    
-    & + .helper-text, .radio__group__label{
-      text-align: right; 
+
+    & + .helper-text,
+    .radio__group__label {
+      text-align: right;
     }
   }
 
   &.vertical {
     flex-direction: column;
-    gap:4px;
+    gap: 4px;
 
-    .radio-box{
-      padding-top:4px;
+    .radio-box {
+      padding-top: 4px;
       flex-direction: column;
-      gap:12px;
+      gap: 12px;
     }
-    
-    &.right{
+
+    &.right {
       align-items: flex-end;
 
-      .radio-box{
+      .radio-box {
         align-items: flex-end;
         width: max-content;
         align-items: flex-start;
@@ -58,14 +59,14 @@
     }
   }
 
-  &.horizontal{
+  &.horizontal {
     flex-direction: row;
-    gap:4px;
+    gap: 4px;
 
-    .radio-box{
-      padding-top:4px;
+    .radio-box {
+      padding-top: 4px;
       flex-direction: row;
-      gap:16px;
+      gap: 16px;
     }
   }
 
@@ -74,119 +75,132 @@
   // }
   @include helper-text-with-icon;
 }
-.radio{
-  input[type="radio"] {
+.radio {
+  input[type='radio'] {
     appearance: none;
   }
 }
 
-$radioSize: 'l' , 's';
+$radioSize: 'l', 's';
 $radioState: 'default', 'pressed', 'disabled', 'error';
 
 @mixin stateDisabled {
-  &, &:hover, &:active, &:focus {
-    border-color:semantic-color('border', 'disabled');
-    background-color:semantic-color('background', 'disabled');
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: semantic-color('border', 'disabled');
+    background-color: semantic-color('background', 'disabled');
   }
   & + p {
     color: semantic-color('text', 'disabled');
   }
 
   &.checked {
-    &, &:hover, &:active, &:focus {
-      background-color:semantic-color('background', 'disabled');
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: semantic-color('background', 'disabled');
     }
   }
 }
 
-.radio-wrap{
+.radio-wrap {
   @include helper-text-with-icon;
-  .helper-text.font-body{
-    padding-top:4px;
+  .helper-text.font-body {
+    padding-top: 4px;
   }
 
-  .radio-label{ 
+  .radio-label {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     color: semantic-color('text', 'default');
     cursor: pointer;
 
     .radio {
-      flex:none;
+      flex: none;
       margin-right: 8px;
       color: semantic-color('text', 'default');
     }
-    p{
+    p {
       word-break: break-all;
     }
   }
 }
 
-@mixin radioCase($size, $state){
-  .radio__#{$size}--#{$state}{
+@mixin radioCase($size, $state) {
+  .radio__#{$size}--#{$state} {
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid semantic-color('border', 'default');
+    border: 1px solid semantic-color('border', 'default');
     border-radius: 50%;
     cursor: pointer;
 
-    @if($size == 'l'){
-      width:24px;
-      height:24px;
-    }@else if($size == 's'){
-      width:18px;
-      height:18px;
+    @if ($size == 'l') {
+      width: 24px;
+      height: 24px;
+    } @else if($size == 's') {
+      width: 18px;
+      height: 18px;
     }
 
-    &:hover, &:active, &:focus {
-      border-color:semantic-color('border', 'accent');
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: semantic-color('border', 'accent');
     }
 
-    @if($state == 'pressed'){
-      border-color:semantic-color('border', 'accent');
-    }@else if($state == 'disabled'){
+    @if ($state == 'pressed') {
+      border-color: semantic-color('border', 'accent');
+    } @else if($state == 'disabled') {
       @include stateDisabled;
-    }@else if($state == 'error'){
-      border-color:semantic-color('border', 'error');
+    } @else if($state == 'error') {
+      border-color: semantic-color('border', 'error');
 
-      &:hover, &:active, &:focus {
-        border-color:semantic-color('border', 'error-accent');
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: semantic-color('border', 'error-accent');
       }
     }
 
-    &.checked{ 
+    &.checked {
       border-color: semantic-color('background', 'primary');
-      &:hover, &:active, &:focus {
-        border-color:semantic-color('background', 'primary-accent');
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: semantic-color('background', 'primary-accent');
       }
 
-      @if($size == 'l'){
+      @if ($size == 'l') {
         border-width: 7px;
-      }@else if($size == 's'){
+      } @else if($size == 's') {
         border-width: 6px;
       }
 
-      @if($state == 'pressed'){
+      @if ($state == 'pressed') {
         border-color: semantic-color('background', 'primary-accent');
-      }@else if($state == 'disabled'){
+      } @else if($state == 'disabled') {
         @include stateDisabled;
-      }@else if($state == 'error'){
-        border-color:semantic-color('border', 'error');
-        
-        &:hover, &:active, &:focus {
-          border-color:semantic-color('border', 'error-accent');
+      } @else if($state == 'error') {
+        border-color: semantic-color('border', 'error');
+
+        &:hover,
+        &:active,
+        &:focus {
+          border-color: semantic-color('border', 'error-accent');
         }
       }
     }
-    
+
     @include helper-text-with-icon;
   }
 }
 
-
 @each $size in $radioSize {
-  @each $state in $radioState{
+  @each $state in $radioState {
     @include radioCase($size, $state);
   }
 }

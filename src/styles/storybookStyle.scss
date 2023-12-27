@@ -613,16 +613,13 @@ input[type='radio'] {
 }
 
 // dropdown
-#anchor--components-dropdown--dropdown-with-button,
-#anchor--components-dropdown--dropdown-with-input,
-#anchor--components-dropdown--dropdown-with-icon-button,
-#anchor--components-tooltip--tooltip-default,
-#anchor--components-tooltip--tooltip-custom,
-#anchor--components-tooltip--tooltip-with-arrow-and-title,
-// #anchor--components-breadcrumb--breadcrumb-default,
-#anchor--components-dropdown--dropdown-multi-select-text,
-#anchor--components-dropdown--dropdown-multi-select-chip,
-#anchor--components-dropdown--drop-down-with-controls {
+#anchor--navigation-dropdown--dropdown-with-button,
+#anchor--navigation-dropdown--dropdown-with-input,
+#anchor--navigation-dropdown--dropdown-with-icon-button,
+// #anchor--navigation-breadcrumb--breadcrumb-default,
+#anchor--navigation-dropdown--dropdown-multi-select-text,
+#anchor--navigation-dropdown--dropdown-multi-select-chip,
+#anchor--navigation-dropdown--drop-down-with-controls {
   .docs-story {
     min-height: 400px;
 
@@ -631,8 +628,11 @@ input[type='radio'] {
     }
   }
 }
-#anchor--components-pagination--pagination-page-option-custom,
-#anchor--components-pagination--pagination-first-last-button {
+#anchor--datadisplay-tooltip--tooltip-default,
+#anchor--datadisplay-tooltip--tooltip-custom,
+#anchor--datadisplay-tooltip--tooltip-with-arrow-and-title,
+#anchor--navigation-pagination--pagination-page-option-custom,
+#anchor--navigation-pagination--pagination-first-last-button {
   .docs-story {
     min-height: 300px;
 
@@ -641,7 +641,7 @@ input[type='radio'] {
     }
   }
 }
-#anchor--components-breadcrumb--breadcrumb-dropdown {
+#anchor--navigation-breadcrumb--breadcrumb-dropdown {
   .docs-story {
     min-height: 200px;
 
@@ -667,12 +667,12 @@ input[type='radio'] {
 }
 
 // tooltip
-#anchor--components-tooltip--tooltip-default,
-#anchor--components-tooltip--tooltip-custom,
-#anchor--components-tooltip--tooltip-with-arrow-and-title {
+#anchor--datadisplay-tooltip--tooltip-default,
+#anchor--datadisplay-tooltip--tooltip-custom,
+#anchor--datadisplay-tooltip--tooltip-with-arrow-and-title {
   .innerZoomElementWrapper {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 100px;
   }
 }
 

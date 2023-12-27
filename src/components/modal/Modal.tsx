@@ -5,10 +5,11 @@ import { ButtonGroup, Button } from '@components/button';
 import { Text } from '@components/text';
 
 interface ModalProps {
+  id?: string;
   title?: string;
   titleImage?: JSX.Element | React.ReactNode;
   titleIcon?: JSX.Element | React.ReactNode;
-  children?: string | any;
+  children?: string | React.ReactNode;
   size?: 's' | 'm' | 'l' | 'xl';
   mainButton: {
     type: 'primary' | 'secondary' | 'error';
@@ -29,6 +30,7 @@ interface ModalProps {
 }
 
 const Modal = ({
+  id,
   title,
   titleImage,
   titleIcon,
@@ -44,7 +46,6 @@ const Modal = ({
   const [isFooter, setIsFooter] = useState<boolean>(false);
 
   const onClickClose = () => {
-    console.log('close');
     const bodyEl = document.body;
     bodyEl.style.overflow = `auto`;
     onClose();
@@ -69,7 +70,10 @@ const Modal = ({
   return (
     <div className={['modal-wrap', open ? 'open' : 'close'].join(' ')}>
       <div className="dim" onClick={onClickClose}></div>
-      <div className={['modal-box', `modal__${size ? size : 's'}`].join(' ')}>
+      <div
+        id={id}
+        className={['modal-box', `modal__${size ? size : 's'}`].join(' ')}
+      >
         {isCloseButton && (
           <span className="modal-close-button" onClick={onClickClose}>
             <CloseLineIcon />

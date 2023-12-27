@@ -102,3 +102,4 @@ const ListItem = ({
 };
 
 export { ListItem };
+export type { listItemProps };

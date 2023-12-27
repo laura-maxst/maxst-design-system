@@ -9,9 +9,9 @@ interface InputGroupProps {
   disabled?: boolean;
   fullWidth?: boolean;
   resetButton?: boolean;
-  align?: 'left' | 'right' | 'center';
-  onChange?: (e: any) => void;
-  onClick?: (e: any) => void;
+  // align?: 'left' | 'right' | 'center';
+  onChange?: (value: any) => void;
+  // onClick?: (e: any) => void;
 }
 
 const SearchBar = ({
@@ -21,14 +21,16 @@ const SearchBar = ({
   disabled,
   fullWidth,
   resetButton,
-  align,
+  // align,
   onChange,
 }: InputGroupProps) => {
   return (
     <div
-      className={[`search-wrap`, fullWidth && 'fullWidth', align && align].join(
-        ' ',
-      )}
+      className={[
+        `search-wrap`,
+        fullWidth && 'fullWidth',
+        // align && align
+      ].join(' ')}
     >
       <TextField
         id={id}

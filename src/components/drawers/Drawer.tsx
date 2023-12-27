@@ -28,7 +28,6 @@ const Drawer = ({
   isDim = true,
 }: DrawerPropsType) => {
   const onClickClose = () => {
-    console.log('close');
     const bodyEl = document.body;
     bodyEl.style.overflow = `auto`;
     onClose();

@@ -49,7 +49,19 @@ const CheckboxGroup = ({
     if (!onChange) {
       return;
     }
-    onChange(e);
+    const checkItems = [...checkItemList];
+    if (checkItems.includes(e.id)) {
+      checkItems.splice(checkItems.indexOf(e.id), 1);
+    } else {
+      checkItems.push(e.id);
+    }
+    setCheckItemList(checkItems);
+    if (checkItems.length === 0) {
+      setCheckAll(false);
+    } else {
+      setCheckAll(true);
+    }
+    onChange([e, checkItems]);
     return;
   };
 
@@ -148,6 +160,7 @@ const CheckboxGroup = ({
                 state={state}
                 size={size}
                 checked={checkItemList.includes(checkboxItem.id)}
+                onChange={resolveOnChange}
                 onClick={onCheckedOne}
                 key={checkboxItem.id}
                 disabled={disabled}

@@ -66,7 +66,7 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
       color: semantic-color('text', 'default');
 
       .required {
-        color: semantic-color('text', 'accent');
+        color: semantic-color('text', 'primary');
       }
     }
     .textfield-formControl {
@@ -239,7 +239,7 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
     width: 100%;
 
     .required {
-      color: semantic-color('text', 'accent');
+      color: semantic-color('text', 'primary');
     }
   }
 

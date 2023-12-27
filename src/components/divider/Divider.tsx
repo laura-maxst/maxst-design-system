@@ -3,7 +3,7 @@ import React from 'react';
 interface DividerProps {
   type?: 'default' | 'accent';
   direction?: 'vertical' | 'horizontal';
-  children?: string | any;
+  children?: string | React.ReactNode;
 }
 
 const Divider = ({ type, direction, children }: DividerProps) => {

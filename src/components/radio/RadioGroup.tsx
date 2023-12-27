@@ -63,7 +63,7 @@ const RadioGroup = ({
     if (!onClick) {
       return;
     }
-    onClick([e]);
+    onClick(e);
   };
 
   useEffect(() => {

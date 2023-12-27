@@ -1,33 +1,33 @@
 form {
   width: 100%;
   padding-top: 32px;
-  padding-bottom:40px;
+  padding-bottom: 40px;
 
-  fieldset{
+  fieldset {
     width: 100%;
     min-width: unset;
 
-    & > div{
-      margin-top:24px; 
-      &:first-child{
-        margin-top:0;
+    & > div {
+      margin-top: 24px;
+
+      &:first-child {
+        margin-top: 0;
       }
 
-      &.button__group{
-        margin-top:40px;
+      &.button__group {
+        margin-top: 40px;
       }
     }
-    
-    .dropdown-box{
-      width:100%;
+
+    .dropdown-box {
+      width: 100%;
     }
 
-    & > label{
-      margin-top:24px; 
-      &:first-child{
-        margin-top:0;
+    & > label {
+      margin-top: 24px;
+      &:first-child {
+        margin-top: 0;
       }
-
     }
   }
-}  
+}

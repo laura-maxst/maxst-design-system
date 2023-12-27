@@ -42,23 +42,21 @@ const Chip = ({
   const resolveOnChange = () => {
     if (action === 'check') {
       setIsChecked(!isChecked);
-
-      if (!onChange) {
-        return;
-      }
-      onChange(!isChecked);
     }
+    if (!onChange) {
+      return;
+    }
+    onChange(!isChecked);
   };
 
   const resolveOnClick = () => {
     if (action === 'check') {
       setIsChecked(!isChecked);
-
-      if (!onClick) {
-        return;
-      }
-      onClick(!isChecked);
     }
+    if (!onClick) {
+      return;
+    }
+    onClick(!isChecked);
   };
 
   useEffect(() => {

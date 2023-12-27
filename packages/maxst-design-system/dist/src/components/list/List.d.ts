@@ -5,12 +5,16 @@ interface listProps {
         title: string;
         text?: string;
         iconLeft?: React.ReactNode;
-        iconRight?: React.ReactNode;
+        iconRightData?: {
+            icon: React.ReactNode;
+            onClick: () => void;
+        };
         avatarIcon?: React.ReactNode;
         image?: React.ReactNode;
-        checkMode?: boolean;
-        switchMode?: boolean;
-        label?: string;
+        checkboxData?: any;
+        switchData?: any;
+        labelData?: any;
+        alignTop?: boolean;
     }[];
     alignTop?: boolean;
 }

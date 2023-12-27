@@ -1,6 +1,7 @@
 import './styles/scss/main.scss';
 export { Accordion } from './components/accordion';
 export { Alert } from './components/alert';
+export { Badge } from './components/badge';
 export { BoxGroup } from './components/boxGroup';
 export { Breadcrumb } from './components/breadcrumb';
 export { Button, ButtonGroup } from './components/button';

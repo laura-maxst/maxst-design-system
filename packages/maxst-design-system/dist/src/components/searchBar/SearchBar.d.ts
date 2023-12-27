@@ -5,9 +5,7 @@ interface InputGroupProps {
     disabled?: boolean;
     fullWidth?: boolean;
     resetButton?: boolean;
-    align?: 'left' | 'right' | 'center';
-    onChange?: (e: any) => void;
-    onClick?: (e: any) => void;
+    onChange?: (value: any) => void;
 }
-declare const SearchBar: ({ id, size, placeholder, disabled, fullWidth, resetButton, align, onChange, }: InputGroupProps) => JSX.Element;
+declare const SearchBar: ({ id, size, placeholder, disabled, fullWidth, resetButton, onChange, }: InputGroupProps) => JSX.Element;
 export { SearchBar };

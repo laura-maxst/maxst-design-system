@@ -17,3 +17,4 @@ interface listItemProps {
 }
 declare const ListItem: ({ id, title, text, iconLeft, iconRightData, avatarIcon, image, checkboxData, switchData, labelData, alignTop, }: listItemProps) => JSX.Element;
 export { ListItem };
+export type { listItemProps };

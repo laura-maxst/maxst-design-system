@@ -1,4 +1,5 @@
 interface TableProps {
+    id?: string;
     size?: 'l' | 's';
     align?: 'left' | 'center' | 'right';
     columnData: {
@@ -16,7 +17,7 @@ interface TableProps {
     leftHeadRow?: boolean;
     checkMode?: boolean;
     isRowCheck?: boolean;
-    onClick?: (value: any) => void;
+    onClick?: (rowdata: any, value: any) => void;
 }
-declare const Table: ({ size, align, columnData, rowData, tableMinWidth, verticalHeadingMode, leftHeadRow, checkMode, isRowCheck, onClick, }: TableProps) => JSX.Element;
+declare const Table: ({ id, size, align, columnData, rowData, tableMinWidth, verticalHeadingMode, leftHeadRow, checkMode, isRowCheck, onClick, }: TableProps) => JSX.Element;
 export { Table };

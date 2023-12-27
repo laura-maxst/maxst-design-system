@@ -1,5 +1,6 @@
 import React from 'react';
 interface PositionModalProps {
+    id?: string;
     title?: string;
     titleImage?: JSX.Element | React.ReactNode;
     titleIcon?: JSX.Element | React.ReactNode;
@@ -32,6 +33,6 @@ interface PositionModalProps {
         bottom?: string;
     };
 }
-declare const PositionModal: ({ title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, smallButtonMode, isDim, isArrow, arrowDirection, position, }: PositionModalProps) => JSX.Element;
+declare const PositionModal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, smallButtonMode, isDim, isArrow, arrowDirection, position, }: PositionModalProps) => JSX.Element;
 export { PositionModal };
 export type { PositionModalProps };

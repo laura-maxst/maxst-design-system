@@ -5,6 +5,7 @@ import { ButtonGroup, Button } from '@components/button';
 import { Text } from '@components/text';
 
 interface PositionModalProps {
+  id?: string;
   title?: string;
   titleImage?: JSX.Element | React.ReactNode;
   titleIcon?: JSX.Element | React.ReactNode;
@@ -42,11 +43,11 @@ interface PositionModalProps {
     | 'left-top'
     | 'left'
     | 'left-bottom';
-  // position: { [top: string]: string };
   position: { top?: string; left?: string; right?: string; bottom?: string };
 }
 
 const PositionModal = ({
+  id,
   title,
   titleImage,
   titleIcon,
@@ -96,6 +97,7 @@ const PositionModal = ({
         onClick={onClickClose}
       ></div>
       <div
+        id={id}
         className={[
           'modal-box',
           `modal__${size ? size : 's'}`,

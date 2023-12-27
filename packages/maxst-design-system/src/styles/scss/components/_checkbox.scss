@@ -241,7 +241,7 @@ $checkboxMode: 'primary', 'secondary';
 
     &.checked {
       svg {
-        color: semantic-color('text', 'accent');
+        color: semantic-color('text', 'primary');
       }
     }
     &.disabled {

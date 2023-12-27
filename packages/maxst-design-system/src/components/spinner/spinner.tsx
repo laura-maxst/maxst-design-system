@@ -2,12 +2,17 @@ import React from 'react';
 
 interface spinnerProps {
   color?: 'white' | 'black';
+  className?: string;
 }
-const Spinner = ({ color }: spinnerProps) => {
+const Spinner = ({ color, className }: spinnerProps) => {
   return (
     <span className="spinner-wrap">
       <svg
-        className={['spinner', `spinner-${color ? color : 'white'}`].join(' ')}
+        className={[
+          'spinner',
+          `spinner-${color ? color : 'white'}`,
+          className ? className : '',
+        ].join(' ')}
         viewBox="0 0 50 50"
       >
         <circle

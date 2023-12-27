@@ -10,7 +10,7 @@ import {
 
 interface textFieldProps {
   id?: string;
-  value?: any | React.ReactNode;
+  value?: string | number;
   label?: string;
   placeholder?: string;
   required?: boolean;
@@ -60,7 +60,7 @@ function TextField({
   renderValue,
   ...props
 }: textFieldProps) {
-  const [resoleValue, setResolveValue] = useState<string>('');
+  const [resoleValue, setResolveValue] = useState<string | number>('');
   const [thisState, setThisState] = useState<string>('default');
   const [showResetButton, setShowResetButton] = useState<boolean>(false);
   const [thisType, setThisType] = useState<string>('text');
@@ -156,7 +156,7 @@ function TextField({
 
   useEffect(() => {
     if (multiLine && value) {
-      const valueLengthCheck = value.length;
+      const valueLengthCheck = String(value).length;
       setResolveValue(value);
       setValueLength(valueLengthCheck);
       if (valueLengthCheck > Number(maxLength)) {
@@ -164,10 +164,10 @@ function TextField({
       }
     } else {
       if (typeof maxLength === 'number' && value) {
-        const valuefilter = value.slice(0, maxLength);
+        const valuefilter = String(value).slice(0, maxLength);
         setResolveValue(valuefilter);
       } else {
-        setResolveValue(value);
+        setResolveValue(String(value));
       }
     }
   }, [maxLength, multiLine, value]);

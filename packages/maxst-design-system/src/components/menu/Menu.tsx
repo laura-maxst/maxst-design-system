@@ -16,16 +16,7 @@ type MenuItemProps = {
 interface MenuPropsType {
   id: string;
   size?: 'l' | 's';
-  itemData: {
-    id: string;
-    label: string;
-    iconLeft?: JSX.Element | React.ReactNode;
-    iconRight?: JSX.Element | React.ReactNode;
-    disabled?: boolean;
-    subLabel?: string;
-    size?: 'l' | 's';
-    subItemData?: MenuItemProps[];
-  }[];
+  itemData: MenuItemProps[];
   onClick?: (selectMenuData: MenuItemProps | MenuItemProps[]) => void;
   onChange?: (selectMenuData: MenuItemProps | MenuItemProps[]) => void;
   className?: string;

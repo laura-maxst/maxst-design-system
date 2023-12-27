@@ -1,5 +1,5 @@
 import { TextLabel } from '@components/text';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 interface BadgeProps {
   type: 'number' | 'dot' | 'icon';
@@ -8,7 +8,7 @@ interface BadgeProps {
   color?: 'mint' | 'gray' | 'magenta';
   status?: 'default' | 'error' | 'warning' | 'information' | 'success';
   children?: React.ReactNode;
-  number?: number;
+  number?: number | string;
   icon?: React.ReactNode;
   onClick?: () => void;
 }
@@ -43,13 +43,7 @@ const Badge = ({
         onClick={resolveOnClick}
       >
         {type == 'number' && (number || number === 0) && (
-          <TextLabel
-            size={
-              ((size == 'xl' || size == 'l') && 'm') ||
-              ((size == 's' || size == 'm') && 's') ||
-              'm'
-            }
-          >
+          <TextLabel size={((size == 's' || size == 'm') && 's') || 'm'}>
             {number}
           </TextLabel>
         )}

@@ -16,16 +16,7 @@ interface SidebarPropsType {
   footer?: JSX.Element | React.ReactNode;
   id: string;
   size?: 'l' | 's';
-  itemData: {
-    id: string;
-    label: string;
-    iconLeft?: JSX.Element | React.ReactNode;
-    iconRight?: JSX.Element | React.ReactNode;
-    disabled?: boolean;
-    subLabel?: string;
-    size?: 'l' | 's';
-    subItemData?: SidebarMenuItemProps[];
-  }[];
+  itemData: SidebarMenuItemProps[];
   onClick?: (
     selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[],
   ) => void;

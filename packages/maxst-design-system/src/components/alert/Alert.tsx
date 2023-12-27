@@ -32,7 +32,6 @@ const Alert = ({
   open,
   onClose,
 }: AlertProps) => {
-  // const [iconNode, setIconNode] = useState<>(null);
   const resolveOnClose = () => {
     if (!onClose) {
       return;

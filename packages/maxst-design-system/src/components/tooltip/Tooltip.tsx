@@ -4,7 +4,7 @@ import { Text } from '@components/text';
 interface TooltipProps {
   title?: string;
   text?: string;
-  children: any;
+  children: React.ReactNode;
   customContent?: any;
   align?:
     | 'top-left'

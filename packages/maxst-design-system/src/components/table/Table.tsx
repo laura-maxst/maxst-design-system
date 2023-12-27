@@ -5,6 +5,7 @@ import { SortLineIcon, SortLineBoldIcon } from '@maxst-designsystem/icons';
 import { Button } from '@components/button';
 
 interface TableProps {
+  id?: string;
   size?: 'l' | 's';
   align?: 'left' | 'center' | 'right';
   columnData: {
@@ -20,10 +21,11 @@ interface TableProps {
   leftHeadRow?: boolean;
   checkMode?: boolean;
   isRowCheck?: boolean;
-  onClick?: (e: any, value: any) => void;
+  onClick?: (rowdata: any, value: any) => void;
 }
 
 const Table = ({
+  id,
   size,
   align,
   columnData,
@@ -48,9 +50,11 @@ const Table = ({
   const optionList = rowData.map((item) => {
     return item.id;
   });
+  const [sortId, setSortId] = useState<string>('');
   const [sortDirection, setSortDirection] = useState<string>('');
 
   const onChickSort = (thisColumn: any) => {
+    setSortId(thisColumn);
     if (typeof thisColumn === 'string' || typeof thisColumn === 'number') {
       if (sortDirection === 'ascend') {
         const sortData = rowData.sort((a, b) => {
@@ -80,25 +84,25 @@ const Table = ({
     }
   };
 
-  const resolveOnClick = (e: any, value: any) => {
+  const resolveOnClick = (rowdata: any, value: any) => {
     if (!onClick) {
       return;
     }
-    onClick(e, value);
+    onClick(rowdata, value);
   };
 
   const onCheckedAll = (e: any) => {
     if (!checkAll) {
       setCheckItemList(optionList);
-      resolveOnClick(e, optionList);
+      resolveOnClick(null, optionList);
     } else {
       setCheckItemList([]);
-      resolveOnClick(e, []);
+      resolveOnClick(null, []);
     }
     setCheckAll(!checkAll);
   };
 
-  const onCheckedOne = (e: any, id: string) => {
+  const onCheckedOne = (rowItem: any, id: string) => {
     const checkItems = [...checkItemList];
     if (checkItems.includes(id)) {
       checkItems.splice(checkItems.indexOf(id), 1);
@@ -106,7 +110,7 @@ const Table = ({
       checkItems.push(id);
     }
     setCheckItemList(checkItems);
-    resolveOnClick(e, checkItems);
+    resolveOnClick(rowItem, checkItems);
     if (checkItems.length === 0) {
       setCheckAll(false);
     } else {
@@ -114,15 +118,14 @@ const Table = ({
     }
   };
 
-  const onCheckedRow = (e: any, id: string) => {
-    console.log(e);
+  const onCheckedRow = (e: any, rowItem: any, id: string) => {
     if (checkMode && isRowCheck) {
       if (!['INPUT', 'LABEL', 'svg'].includes(e.target.tagName)) {
         const clickRowCheckbox = document.getElementById(`${id}`);
         clickRowCheckbox && clickRowCheckbox.click();
       }
     } else {
-      resolveOnClick(e, id);
+      resolveOnClick(rowItem, id);
     }
   };
 
@@ -156,6 +159,7 @@ const Table = ({
   return (
     <div className="mds-table-wrap">
       <table
+        id={id}
         className={[
           `mds-table-${size ? size : 'l'}-${align ? align : 'left'}`,
           verticalHeadingMode && 'vertical-heading-mode',
@@ -197,7 +201,10 @@ const Table = ({
                           iconOnly={<SortLineBoldIcon />}
                           isIconMode={true}
                           onClick={() => onChickSort(columnItem.id)}
-                          className={['sort-icon', sortDirection].join(' ')}
+                          className={[
+                            'sort-icon',
+                            sortId === columnItem.id && sortDirection,
+                          ].join(' ')}
                         />
                       )}
                     </div>
@@ -222,7 +229,9 @@ const Table = ({
                   {verticalHeadingMode ? (
                     <th
                       id={columnData[rowItemIndex].id}
-                      onClick={(e) => onCheckedRow(e, String(rowItem.id))}
+                      onClick={(e) =>
+                        onCheckedRow(e, rowItem, String(rowItem.id))
+                      }
                     >
                       <div>
                         <TextLabel size="m">
@@ -236,7 +245,7 @@ const Table = ({
                         <Checkbox
                           id={String(rowItem.id)}
                           size={'s'}
-                          onClick={(e) => onCheckedOne(e, e.id)}
+                          onClick={(e) => onCheckedOne(rowItem, e.id)}
                           checked={checkItemList.includes(rowItem.id)}
                         />
                       </td>
@@ -245,7 +254,9 @@ const Table = ({
                   {cellKey.map((cellKeyItem, cellKeyIndex) => {
                     return cellKeyIndex === 0 && leftHeadRow ? (
                       <th
-                        onClick={(e) => onCheckedRow(e, String(rowItem.id))}
+                        onClick={(e) =>
+                          onCheckedRow(e, rowItem, String(rowItem.id))
+                        }
                         className={[
                           cellAlign[cellKeyIndex] !== 'left'
                             ? cellAlign[cellKeyIndex]
@@ -257,7 +268,9 @@ const Table = ({
                       </th>
                     ) : (
                       <td
-                        onClick={(e) => onCheckedRow(e, String(rowItem.id))}
+                        onClick={(e) =>
+                          onCheckedRow(e, rowItem, String(rowItem.id))
+                        }
                         className={[
                           cellAlign[cellKeyIndex] !== 'left'
                             ? cellAlign[cellKeyIndex]

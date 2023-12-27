@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 interface ButtonGropProps {
-  children: any;
+  children: any | React.ReactNode;
   fullWidth?: boolean;
   align?: 'left' | 'right' | 'center';
   direction?: 'vertical' | 'horizontal';

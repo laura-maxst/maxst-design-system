@@ -52,6 +52,13 @@ const Breadcrumb = ({
   homeButton,
 }: BreadcrumbProps) => {
   const [fullMenuMode, setFullMenuMode] = useState<boolean>(true);
+  const [thisPageIndex, setThisPageIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    for (const i in menuData) {
+      menuData[i].id === thisPage && setThisPageIndex(Number(i));
+    }
+  }, [thisPage]);
 
   const DrawButton = (buttonData: BreadcrumItemProps) => {
     return (
@@ -126,12 +133,16 @@ const Breadcrumb = ({
       )}
       {fullMenuMode &&
         menuData.map((item: any, index) => {
-          return (
-            <Fragment key={item.id}>
-              {index !== 0 && <div className="breadcrumb-icon">/</div>}
-              {DrawButton(item)}
-            </Fragment>
-          );
+          if (thisPageIndex && index > thisPageIndex) {
+            return;
+          } else {
+            return (
+              <Fragment key={item.id}>
+                {index !== 0 && <div className="breadcrumb-icon">/</div>}
+                {DrawButton(item)}
+              </Fragment>
+            );
+          }
         })}
       {!fullMenuMode && (
         <>

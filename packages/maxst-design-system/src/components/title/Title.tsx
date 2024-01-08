@@ -3,14 +3,21 @@ import TitleTagFilter from './TitleTagFilter';
 
 interface TitleProps {
   role: 1 | 2 | 3 | 4 | 5 | 6;
-  type: 'title';
+  type?: 'title';
   size: 'xl' | 'l' | 'm' | 's' | 'xs';
   align?: string;
   className?: string;
   children: React.ReactNode;
 }
 
-function Title({ role, type, size, align, className, children }: TitleProps) {
+function Title({
+  role,
+  type = 'title',
+  size,
+  align,
+  className,
+  children,
+}: TitleProps) {
   return (
     <TitleTagFilter
       role={role}

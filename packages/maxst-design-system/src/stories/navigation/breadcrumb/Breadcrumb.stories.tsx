@@ -24,7 +24,7 @@ const meta: Meta<typeof Breadcrumb> = {
     },
     thisPage: {
       description:
-        '현재 위치한 page를 표시합니다. 보통 마지막 메뉴를 지정합니다. ',
+        '현재 위치한 page를 표시합니다. 중간 메뉴 지정시 이후의 메뉴는 표출 되지 않습니다.',
     },
     homeButton: {
       description:

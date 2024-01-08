@@ -10,6 +10,7 @@ import {
 
 interface textFieldProps {
   id?: string;
+  type?: string;
   value?: string | number;
   label?: string;
   placeholder?: string;
@@ -35,11 +36,13 @@ interface textFieldProps {
   onClick?: (e: any) => void;
   onChange?: (e: any) => void;
   renderValue?: string | React.ReactNode | JSX.Element | any;
+  readOnly?: boolean;
 }
 // const selectMenuComponent: () =>
 
 function TextField({
   id,
+  type = 'text',
   value,
   label,
   placeholder,
@@ -58,6 +61,7 @@ function TextField({
   onChange,
   onClick,
   renderValue,
+  readOnly = false,
   ...props
 }: textFieldProps) {
   const [resoleValue, setResolveValue] = useState<string | number>('');
@@ -187,6 +191,10 @@ function TextField({
     }
   }, [renderValue]);
 
+  useEffect(() => {
+    type && setThisType(type);
+  }, [type]);
+
   return (
     <div
       className={[
@@ -222,6 +230,7 @@ function TextField({
           ))}
         {multiLine ? (
           <textarea
+            readOnly={readOnly}
             id={id}
             placeholder={placeholder}
             disabled={
@@ -236,6 +245,7 @@ function TextField({
           />
         ) : (
           <input
+            readOnly={readOnly}
             id={id}
             placeholder={placeholder}
             type={thisType}

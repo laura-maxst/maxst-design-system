@@ -15,8 +15,8 @@ interface SwitchProps {
   checked?: boolean;
   disabled?: boolean;
   helperText?: string;
-  checkOffIcon: React.ReactNode;
-  checkOnIcon: React.ReactNode;
+  checkOffIcon?: React.ReactNode;
+  checkOnIcon?: React.ReactNode;
   onClick?: (e: any) => void;
 }
 

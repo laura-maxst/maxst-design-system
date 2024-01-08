@@ -39,7 +39,7 @@ const meta: Meta<typeof BoxGroup> = {
 export default meta;
 type Story = StoryObj<typeof BoxGroup>;
 
-export const DividerDefault: Story = {
+export const BoxGroupDefault: Story = {
   render: (args) => <BoxGroup {...args}>{args.children}</BoxGroup>,
   args: {
     children: (

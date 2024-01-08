@@ -1,5 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Switch } from '@components/switchToggle';
+import {
+  NotificationOffLineIcon,
+  NotificationFillIcon,
+} from '@maxst-designsystem/icons';
 
 const meta: Meta<typeof Switch> = {
   title: 'DataInputs/Switch',
@@ -26,6 +30,18 @@ const meta: Meta<typeof Switch> = {
         type: null,
       },
     },
+    checkOffIcon: {
+      description: 'click 전의 icon을 설정할 수 있습니다.',
+      control: {
+        type: null,
+      },
+    },
+    checkOnIcon: {
+      description: 'click 후의 icon을 설정할 수 있습니다.',
+      control: {
+        type: null,
+      },
+    },
   },
 };
 
@@ -38,9 +54,20 @@ const onClickSwitch = (value: boolean) => {
 
 export const SwitchDefault: Story = {
   args: {
-    id: 'switch',
+    id: 'switch-default',
     onClick: onClickSwitch,
     iconMode: false,
     checked: true,
+  },
+};
+
+export const SwitchIconCustom: Story = {
+  args: {
+    id: 'switch-icon-mode',
+    onClick: onClickSwitch,
+    iconMode: true,
+    checked: false,
+    checkOffIcon: <NotificationOffLineIcon />,
+    checkOnIcon: <NotificationFillIcon />,
   },
 };

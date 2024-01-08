@@ -54,6 +54,14 @@ const meta: Meta<typeof TextField> = {
       description:
         'default `value`를 지정하는 등 `value`값을 설정할 수 있습니다.',
     },
+    type: {
+      description:
+        'HTML5의 input type을 지정할 수 있습니다. 미 지정시 text로 설정됩니다.',
+    },
+    readOnly: {
+      description:
+        '읽기 전용으로 입력을 허용하지 않고 입력값만 보여지도록 설정합니다.',
+    },
   },
 };
 

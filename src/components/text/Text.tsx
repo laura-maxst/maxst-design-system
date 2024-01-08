@@ -2,14 +2,21 @@ import React from 'react';
 
 interface TextProps {
   role?: 'default' | 'sub' | 'subtlest';
-  type: 'body';
+  type?: 'body';
   size: 'l' | 'm' | 's';
   innerHtml?: boolean;
   className?: string;
   children: React.ReactNode;
 }
 
-function Text({ role, type, size, innerHtml, className, children }: TextProps) {
+function Text({
+  role,
+  type = 'body',
+  size,
+  innerHtml,
+  className,
+  children,
+}: TextProps) {
   return (
     <>
       {innerHtml ? (

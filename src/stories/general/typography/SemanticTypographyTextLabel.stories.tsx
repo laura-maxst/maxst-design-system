@@ -9,8 +9,9 @@ const meta: Meta<typeof TextLabel> = {
   component: TextLabel,
   argTypes: {
     children: {
-      description:
-        'type: React.ReactNode 기본적으로 string으로 정의하고 필요한 경우 icon같은 component를 같이 정의할 수 있습니다.',
+      description: `기본적으로 \`string\`으로 정의하고 필요한 경우 icon같은 \`component\`를 같이 정의할 수 있습니다.\n
+    string, React.ReactNode
+        `,
     },
   },
 };

@@ -15,6 +15,8 @@ interface SwitchProps {
   checked?: boolean;
   disabled?: boolean;
   helperText?: string;
+  checkOffIcon: React.ReactNode;
+  checkOnIcon: React.ReactNode;
   onClick?: (e: any) => void;
 }
 
@@ -28,6 +30,8 @@ const Switch = ({
   checked,
   disabled,
   helperText,
+  checkOffIcon,
+  checkOnIcon,
   onClick,
 }: SwitchProps) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
@@ -79,7 +83,17 @@ const Switch = ({
         />
         <span className="switch-button">
           {iconMode &&
-            (isChecked ? <CheckLineBoldIcon /> : <CloseLineBoldIcon />)}
+            (isChecked ? (
+              checkOnIcon ? (
+                checkOnIcon
+              ) : (
+                <CheckLineBoldIcon />
+              )
+            ) : checkOffIcon ? (
+              checkOffIcon
+            ) : (
+              <CloseLineBoldIcon />
+            ))}
         </span>
         {label && (
           <Text type="body" size="m">

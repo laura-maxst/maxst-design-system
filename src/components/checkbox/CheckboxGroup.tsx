@@ -45,22 +45,19 @@ const CheckboxGroup = ({
   >(type ? type : 'selected');
   const [checkAll, setCheckAll] = useState<boolean>(Boolean(checked));
 
-  const resolveOnChange = (e: any) => {
+  const resolveOnChange = (e: any, type?: string) => {
     if (!onChange) {
       return;
     }
     const checkItems = [...checkItemList];
-    if (checkItems.includes(e.id)) {
-      checkItems.splice(checkItems.indexOf(e.id), 1);
-    } else {
-      checkItems.push(e.id);
+    if (type !== 'all') {
+      if (checkItems.includes(e.id)) {
+        checkItems.splice(checkItems.indexOf(e.id), 1);
+      } else {
+        checkItems.push(e.id);
+      }
     }
     setCheckItemList(checkItems);
-    if (checkItems.length === 0) {
-      setCheckAll(false);
-    } else {
-      setCheckAll(true);
-    }
     onChange([e, checkItems]);
     return;
   };
@@ -72,9 +69,16 @@ const CheckboxGroup = ({
     setCheckAll(!checkAll);
     if (!checkAll) {
       setCheckItemList(optionList);
+      setCheckAll(true);
     } else {
       setCheckItemList([]);
+      setCheckAll(false);
     }
+
+    if (!onChange) {
+      return;
+    }
+    onChange([e, e.checked ? optionList : []]);
 
     if (!onClick) {
       return;
@@ -142,7 +146,7 @@ const CheckboxGroup = ({
                   size={size}
                   state={state}
                   checked={checkAll}
-                  onChange={resolveOnChange}
+                  onChange={onCheckedAll}
                   onClick={onCheckedAll}
                   type={checkBoxAllType}
                   disabled={disabled}
@@ -181,7 +185,6 @@ const CheckboxGroup = ({
               </span>
             )}
             <span className="text">{helperText}</span>
-            {/* {helperText} */}
           </Text>
         )}
       </div>

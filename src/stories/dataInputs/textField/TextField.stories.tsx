@@ -90,6 +90,21 @@ export const InputDefault: Story = {
   },
 };
 
+export const Password: Story = {
+  args: {
+    id: 'default-password',
+    placeholder: 'placeholder',
+    value: 'password',
+    label: 'password',
+    required: true,
+    password: true,
+    helperText: '2~10자리 입력가능합니다.',
+    minLength: 2,
+    onChange: onChange,
+    onClick: onClick,
+  },
+};
+
 export const InputWithIcon: Story = {
   parameters: {
     docs: {

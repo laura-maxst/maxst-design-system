@@ -130,14 +130,6 @@ function TextField({
     }
   };
 
-  const onVisibilityPassword = () => {
-    if (thisType === 'text') {
-      setThisType('password');
-    } else {
-      setThisType('text');
-    }
-  };
-
   useEffect(() => {
     if (typeof resetButton === 'boolean') {
       setShowResetButton(!!resetButton);
@@ -150,13 +142,13 @@ function TextField({
     }
   }, [state]);
 
-  useEffect(() => {
-    if (password) {
+  const onVisibilityPassword = () => {
+    if (thisType === 'text') {
       setThisType('password');
     } else {
       setThisType('text');
     }
-  }, [password]);
+  };
 
   useEffect(() => {
     if (multiLine && value) {
@@ -194,6 +186,14 @@ function TextField({
   useEffect(() => {
     type && setThisType(type);
   }, [type]);
+
+  useEffect(() => {
+    if (password) {
+      setThisType('password');
+    } else {
+      setThisType('text');
+    }
+  }, [password]);
 
   return (
     <div

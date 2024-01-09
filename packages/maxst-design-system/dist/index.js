@@ -6648,14 +6648,6 @@ function TextField(_a) {
             onChange('');
         }
     };
-    var onVisibilityPassword = function () {
-        if (thisType === 'text') {
-            setThisType('password');
-        }
-        else {
-            setThisType('text');
-        }
-    };
     React$1.useEffect(function () {
         if (typeof resetButton === 'boolean') {
             setShowResetButton(!!resetButton);
@@ -6666,14 +6658,14 @@ function TextField(_a) {
             setThisState(state);
         }
     }, [state]);
-    React$1.useEffect(function () {
-        if (password) {
+    var onVisibilityPassword = function () {
+        if (thisType === 'text') {
             setThisType('password');
         }
         else {
             setThisType('text');
         }
-    }, [password]);
+    };
     React$1.useEffect(function () {
         if (multiLine && value) {
             var valueLengthCheck = String(value).length;
@@ -6712,6 +6704,14 @@ function TextField(_a) {
     React$1.useEffect(function () {
         type && setThisType(type);
     }, [type]);
+    React$1.useEffect(function () {
+        if (password) {
+            setThisType('password');
+        }
+        else {
+            setThisType('text');
+        }
+    }, [password]);
     return (React__default["default"].createElement("div", { className: [
             "textfield textfield__text-".concat(size ? size : 'l', "-").concat((disabled && 'disabled') || thisState),
             helperText ? 'has-helperText' : '',

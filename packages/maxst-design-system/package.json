@@ -1,6 +1,6 @@
 {
   "name": "@maxst-designsystem/maxst-design-system",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
   "scripts": {

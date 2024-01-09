@@ -5695,24 +5695,20 @@ var CheckboxGroup = function (_a) {
     var _b = React$1.useState([]), checkItemList = _b[0], setCheckItemList = _b[1];
     var _c = React$1.useState(type ? type : 'selected'), checkBoxAllType = _c[0], setCheckBoxAllType = _c[1];
     var _d = React$1.useState(Boolean(checked)), checkAll = _d[0], setCheckAll = _d[1];
-    var resolveOnChange = function (e) {
+    var resolveOnChange = function (e, type) {
         if (!onChange) {
             return;
         }
         var checkItems = __spreadArray([], checkItemList, true);
-        if (checkItems.includes(e.id)) {
-            checkItems.splice(checkItems.indexOf(e.id), 1);
-        }
-        else {
-            checkItems.push(e.id);
+        if (type !== 'all') {
+            if (checkItems.includes(e.id)) {
+                checkItems.splice(checkItems.indexOf(e.id), 1);
+            }
+            else {
+                checkItems.push(e.id);
+            }
         }
         setCheckItemList(checkItems);
-        if (checkItems.length === 0) {
-            setCheckAll(false);
-        }
-        else {
-            setCheckAll(true);
-        }
         onChange([e, checkItems]);
         return;
     };
@@ -5723,10 +5719,16 @@ var CheckboxGroup = function (_a) {
         setCheckAll(!checkAll);
         if (!checkAll) {
             setCheckItemList(optionList);
+            setCheckAll(true);
         }
         else {
             setCheckItemList([]);
+            setCheckAll(false);
         }
+        if (!onChange) {
+            return;
+        }
+        onChange([e, e.checked ? optionList : []]);
         if (!onClick) {
             return;
         }
@@ -5781,7 +5783,7 @@ var CheckboxGroup = function (_a) {
                 direction ? direction : 'horizontal',
             ].join(' ') },
             React__default["default"].createElement("div", { className: "checkbox-box" },
-                label && (React__default["default"].createElement(TextLabel, { size: "m", className: "checkbox__all-check__label" }, controlMode ? (React__default["default"].createElement(Checkbox, { id: id, label: label, size: size, state: state, checked: checkAll, onChange: resolveOnChange, onClick: onCheckedAll, type: checkBoxAllType, disabled: disabled })) : (React__default["default"].createElement(React__default["default"].Fragment, null, label)))),
+                label && (React__default["default"].createElement(TextLabel, { size: "m", className: "checkbox__all-check__label" }, controlMode ? (React__default["default"].createElement(Checkbox, { id: id, label: label, size: size, state: state, checked: checkAll, onChange: onCheckedAll, onClick: onCheckedAll, type: checkBoxAllType, disabled: disabled })) : (React__default["default"].createElement(React__default["default"].Fragment, null, label)))),
                 checkItemList &&
                     options.map(function (checkboxItem) { return (React__default["default"].createElement(Checkbox, { id: checkboxItem.id, label: checkboxItem.label, state: state, size: size, checked: checkItemList.includes(checkboxItem.id), onChange: resolveOnChange, onClick: onCheckedOne, key: checkboxItem.id, disabled: disabled })); })),
             helperText && (React__default["default"].createElement(Text, { type: "body", size: "s", className: ['helper-text', (disabled && 'disabled') || state].join(' ') },

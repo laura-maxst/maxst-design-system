@@ -52,7 +52,7 @@ const Drawer = ({
           position ? position : 'left',
           open ? 'open' : 'close',
         ].join(' ')}
-        style={{ width: width ? width : '' }}
+        style={{ width: width ? width : 'none' }}
       >
         {isCloseButton && (
           <Button

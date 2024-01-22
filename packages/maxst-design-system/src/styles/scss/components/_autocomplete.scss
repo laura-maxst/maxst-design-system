@@ -1,0 +1,9 @@
+.mds-autocomplete {
+  position: relative;
+  // width: fit-content;
+
+  .autocomplete__menu-wrap {
+    position: absolute;
+    width: 100%;
+  }
+}

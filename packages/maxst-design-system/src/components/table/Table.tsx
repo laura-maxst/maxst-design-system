@@ -1,7 +1,7 @@
 import { Text, TextLabel } from '@components/text';
 import React, { useEffect, useState } from 'react';
 import { Checkbox } from '@components/checkbox';
-import { SortLineIcon, SortLineBoldIcon } from '@maxst-designsystem/icons';
+import { SortLineBoldIcon } from '@maxst-designsystem/icons';
 import { Button } from '@components/button';
 
 interface TableProps {
@@ -21,7 +21,8 @@ interface TableProps {
   leftHeadRow?: boolean;
   checkMode?: boolean;
   isRowCheck?: boolean;
-  onClick?: (rowdata: any, value: any) => void;
+  onClick?: (rowdata: any, rowid: any) => void;
+  onCheck?: (rowdata: any, rowid: any) => void;
 }
 
 const Table = ({
@@ -36,6 +37,7 @@ const Table = ({
   checkMode,
   isRowCheck = false,
   onClick,
+  onCheck,
 }: TableProps) => {
   const [cellKey, setCellKey] = useState<string[]>([]);
   const [cellAlign, setCellAlign] = useState<string[]>([]);
@@ -84,11 +86,18 @@ const Table = ({
     }
   };
 
-  const resolveOnClick = (rowdata: any, value: any) => {
+  const resolveOnClick = (rowdata: any, rowid: any) => {
     if (!onClick) {
       return;
     }
-    onClick(rowdata, value);
+    onClick(rowdata, rowid);
+  };
+
+  const resolveOnCheck = (rowdata: any, rowid: any) => {
+    if (!onCheck) {
+      return;
+    }
+    onCheck(rowdata, rowid);
   };
 
   const onCheckedAll = (e: any) => {
@@ -102,15 +111,18 @@ const Table = ({
     setCheckAll(!checkAll);
   };
 
-  const onCheckedOne = (rowItem: any, id: string) => {
+  const onCheckedOne = (rowItem: any, rowid: string) => {
     const checkItems = [...checkItemList];
-    if (checkItems.includes(id)) {
-      checkItems.splice(checkItems.indexOf(id), 1);
+    if (checkItems.includes(rowid)) {
+      checkItems.splice(checkItems.indexOf(rowid), 1);
     } else {
-      checkItems.push(id);
+      checkItems.push(rowid);
     }
     setCheckItemList(checkItems);
-    resolveOnClick(rowItem, checkItems);
+    // onCheck()가 있으면 rowclick과 checkbox click 구분
+    onCheck
+      ? resolveOnCheck(rowItem, checkItems)
+      : resolveOnClick(rowItem, checkItems);
     if (checkItems.length === 0) {
       setCheckAll(false);
     } else {
@@ -118,14 +130,14 @@ const Table = ({
     }
   };
 
-  const onCheckedRow = (e: any, rowItem: any, id: string) => {
+  const onCheckedRow = (e: any, rowItem: any, rowid: string) => {
+    const clickRowCheckbox = document.getElementById(`${rowid}`);
     if (checkMode && isRowCheck) {
       if (!['INPUT', 'LABEL', 'svg'].includes(e.target.tagName)) {
-        const clickRowCheckbox = document.getElementById(`${id}`);
         clickRowCheckbox && clickRowCheckbox.click();
       }
     } else {
-      resolveOnClick(rowItem, id);
+      resolveOnClick(rowItem, rowid);
     }
   };
 

@@ -105,12 +105,10 @@ video,
 main {
   margin: 0;
   padding: 0;
-  border: 0;
+  border-width: 0;
   font: inherit;
   font-family: 'Pretendard', sans-serif !important;
   vertical-align: baseline;
-  // color: #252525;
-  // color: var($--theme-on-surface);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -166,7 +164,8 @@ textarea {
 }
 
 button,
-input[type='button'], textarea {
+input[type='button'],
+textarea {
   border: 0 none;
 }
 
@@ -179,14 +178,16 @@ button:focus {
 }
 
 /* input 기본 스타일 초기화 */
-input, textarea {
+input,
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: 0 none;
 }
 
-input:focus , textarea:focus{
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -209,13 +210,13 @@ textarea {
 }
 
 a {
-  color: #008FFD;
+  color: #008ffd;
   text-decoration: none;
   outline: none;
 
   &:hover,
   &:active {
-    color: #008FFD;
+    color: #008ffd;
     text-decoration: none;
   }
 }
@@ -228,6 +229,6 @@ pre {
   white-space: pre-wrap;
 }
 
-p{
+p {
   white-space: break-spaces;
 }

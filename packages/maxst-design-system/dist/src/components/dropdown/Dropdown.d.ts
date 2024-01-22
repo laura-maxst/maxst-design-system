@@ -7,6 +7,7 @@ type DropDownMenuProps = {
     disabled?: boolean;
     subLabel?: string;
     size?: 'l' | 's';
+    subItemData?: DropDownMenuProps[];
 };
 interface DropdownProps {
     id: string;
@@ -20,7 +21,11 @@ interface DropdownProps {
     className?: string;
     multiple?: boolean;
     menuDirection?: 'top' | 'bottom';
+    selectMenu?: string | {
+        id: string;
+        label: string;
+    }[];
 }
-declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, }: DropdownProps) => JSX.Element;
+declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, selectMenu, }: DropdownProps) => JSX.Element;
 export { Dropdown };
 export type { DropDownMenuProps, DropdownProps };

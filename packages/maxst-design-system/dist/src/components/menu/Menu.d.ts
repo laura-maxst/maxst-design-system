@@ -17,9 +17,12 @@ interface MenuPropsType {
     onChange?: (selectMenuData: MenuItemProps | MenuItemProps[]) => void;
     className?: string;
     multiple?: boolean;
-    selectedId?: string;
+    selectMenu?: string | {
+        id: string;
+        label: string;
+    }[];
     hasMaxHeight?: boolean;
 }
-declare const Menu: ({ id, size, itemData, onClick, onChange, className, multiple, selectedId, hasMaxHeight, }: MenuPropsType) => JSX.Element;
+declare const Menu: ({ id, size, itemData, onClick, onChange, className, multiple, selectMenu, hasMaxHeight, }: MenuPropsType) => JSX.Element;
 export { Menu };
-export type { MenuPropsType };
+export type { MenuPropsType, MenuItemProps };

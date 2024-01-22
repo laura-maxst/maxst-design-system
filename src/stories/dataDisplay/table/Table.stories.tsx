@@ -1,14 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Table } from '@components/table';
-import {
-  CheckLineIcon,
-  DesktopLineIcon,
-  MobileLineIcon,
-  MoreVerticalLineIcon,
-} from '@maxst-designsystem/icons';
+import { MoreVerticalLineIcon } from '@maxst-designsystem/icons';
 import { Dropdown } from '@components/dropdown';
 import { Button } from '@components/button';
 import { Pagination } from '@components/pagination';
+import {
+  componentColumnsData,
+  componentRowsData,
+  customAlignColumnsData,
+  customCellWidthColumnsData,
+  defaultColumnsData,
+  defaultRowsData,
+  moreMenuData,
+  sortColumnsData,
+  sortRowsData,
+} from '@stories/data/tableData';
 
 const meta: Meta<typeof Table> = {
   title: 'DataDisplay/Table',
@@ -60,6 +66,13 @@ const meta: Meta<typeof Table> = {
         type: null,
       },
     },
+    onCheck: {
+      description:
+        'row click과 checkbox click을 구분할 때 사용합니다. `onCheck()` 사용시 `onClick`은 checkbox click을 제외한 row click시 작동, `onCheck`는 row 내부의 checkbox click시에만 작동합니다. 이때 `전체선택`은 `onClick`에 포함되지 않습니다.',
+      control: {
+        type: null,
+      },
+    },
     id: {
       description: '필요에 따라 `id`를 지정할 수 있습니다.',
     },
@@ -68,24 +81,6 @@ const meta: Meta<typeof Table> = {
 
 export default meta;
 type Story = StoryObj<typeof Table>;
-
-const moreMenuData = [
-  {
-    id: 'label-0',
-    label: 'label 0',
-    iconLeft: <CheckLineIcon />,
-  },
-  {
-    id: 'label-1',
-    label: 'label 1',
-    iconLeft: <DesktopLineIcon />,
-  },
-  {
-    id: 'label-2',
-    label: 'label 2',
-    iconLeft: <MobileLineIcon />,
-  },
-];
 
 const MoreComponent = () => {
   return (
@@ -102,245 +97,23 @@ const MoreComponent = () => {
   );
 };
 
-const defaultColumnsData: {
-  id: string;
-  title: string;
-  align?: 'left' | 'center' | 'right' | undefined;
-}[] = [
-  {
-    title: 'Header Menu 01',
-    id: 'column-01',
-  },
-  {
-    title: 'Header Menu 02',
-    id: 'column-02',
-  },
-  {
-    title: 'Header Menu 03',
-    id: 'column-03',
-  },
-  {
-    title: 'Header Menu 04',
-    id: 'column-04',
-  },
-];
-const componentColumnsData: {
-  id: string;
-  title: string;
-  align?: 'left' | 'center' | 'right' | undefined;
-  sort?: boolean;
-}[] = [
-  {
-    title: 'Header Menu 01',
-    id: 'column-01',
-  },
-  {
-    title: 'Header Menu 02',
-    id: 'column-02',
-  },
-  {
-    title: 'Header Menu 03',
-    id: 'column-03',
-  },
-  {
-    title: 'Header Menu 04',
-    id: 'column-04',
-  },
-  {
-    title: ' ',
-    id: 'more',
-    align: 'right',
-  },
-];
+const onClickrow = (rowdata: any, id: any) => {
+  console.log('row data', rowdata, 'id', id);
+};
 
-const customAlignColumnsData: {
-  id: string;
-  title: string;
-  align?: 'left' | 'center' | 'right' | undefined;
-}[] = [
-  {
-    title: 'Header Menu 01',
-    id: 'column-01',
-  },
-  {
-    title: 'Header Menu 02',
-    id: 'column-02',
-  },
-  {
-    title: 'Header Menu 03',
-    id: 'column-03',
-    align: 'right',
-  },
-  {
-    title: 'Header Menu 04',
-    id: 'column-04',
-  },
-];
-
-const customCellWidthColumnsData: {
-  id: string;
-  title: string;
-  cellWidth?: string;
-}[] = [
-  {
-    title: 'Header Menu 01',
-    id: 'column-01',
-    cellWidth: '160px',
-  },
-  {
-    title: 'Header Menu 02',
-    id: 'column-02',
-  },
-  {
-    title: 'Header Menu 03',
-    id: 'column-03',
-  },
-  {
-    title: 'Header Menu 04',
-    id: 'column-04',
-  },
-  {
-    title: ' ',
-    id: 'more',
-    cellWidth: '60px',
-  },
-];
-
-const sortColumnsData: {
-  id: string;
-  title: string;
-  align?: 'left' | 'center' | 'right' | undefined;
-  sort?: boolean;
-}[] = [
-  {
-    title: 'Header Menu 01',
-    id: 'column-01',
-    sort: true,
-  },
-  {
-    title: 'Header Menu 02',
-    id: 'column-02',
-    sort: true,
-  },
-  {
-    title: 'Header Menu 03',
-    id: 'column-03',
-    sort: true,
-  },
-  {
-    title: 'Header Menu 04',
-    id: 'column-04',
-    sort: true,
-  },
-  {
-    title: ' ',
-    id: 'more',
-    align: 'right',
-  },
-];
-const defaultRowsData = [
-  {
-    id: '1',
-    'column-01': 'List item text 1-1',
-    'column-02': 'List item text 1-2',
-    'column-03': 'List item text 1-3',
-    'column-04': 'List item text 1-4',
-  },
-  {
-    id: '2',
-    'column-01': 'List item text 2-1',
-    'column-02': 'List item text 2-2',
-    'column-03': 'List item text 2-3',
-    'column-04': 'List item text 2-4',
-  },
-  {
-    id: '3',
-    'column-01': 'List item text 3-1',
-    'column-02': 'List item text 3-2',
-    'column-03': 'List item text 3-3',
-    'column-04': 'List item text 3-4',
-  },
-  {
-    id: '4',
-    'column-01': 'List item text 4-1',
-    'column-02': 'List item text 4-2',
-    'column-03': 'List item text 4-3',
-    'column-04': 'List item text 4-4',
-  },
-];
-
-const componentRowsData = [
-  {
-    id: '1',
-    'column-01': 'List item text 1-1',
-    'column-02': 'List item text 1-2',
-    'column-03': 'List item text 1-3',
-    'column-04': 'List item text 1-4',
-    more: <MoreComponent />,
-  },
-  {
-    id: '2',
-    'column-01': 'List item text 2-1',
-    'column-02': 'List item text 2-2',
-    'column-03': 'List item text 2-3',
-    'column-04': 'List item text 2-4',
-    more: <MoreComponent />,
-  },
-  {
-    id: '3',
-    'column-01': 'List item text 3-1',
-    'column-02': 'List item text 3-2',
-    'column-03': 'List item text 3-3',
-    'column-04': 'List item text 3-4',
-    more: <MoreComponent />,
-  },
-  {
-    id: '4',
-    'column-01': 'List item text 4-1',
-    'column-02': 'List item text 4-2',
-    'column-03': 'List item text 4-3',
-    'column-04': 'List item text 4-4',
-    more: <MoreComponent />,
-  },
-];
-
-const sortRowsData = [
-  {
-    id: '1',
-    'column-01': 'aaaaa 1-1',
-    'column-02': 1234,
-    'column-03': 11,
-    'column-04': 23,
-  },
-  {
-    id: '2',
-    'column-01': 'aaaaa 1-2',
-    'column-02': 2345,
-    'column-03': 111,
-    'column-04': 6,
-  },
-  {
-    id: '3',
-    'column-01': 'aaaaa 1-3',
-    'column-02': 3456,
-    'column-03': 1111,
-    'column-04': 9,
-  },
-  {
-    id: '4',
-    'column-01': 'aaaaa 1-4',
-    'column-02': 4567,
-    'column-03': 11111,
-    'column-04': 567,
-  },
-];
-
-const onClickrow = (rowdata: any, value: any) => {
-  console.log('row data', rowdata, 'value', value);
+const onClickCheck = (rowdata: any, id: any) => {
+  console.log('checkbox click ', rowdata, 'id', id);
 };
 
 export const TableDefault: Story = {
   render: (args) => <Table {...args} />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'Table의 기본형 예시입니다.',
+      },
+    },
+  },
   args: {
     columnData: defaultColumnsData,
     rowData: defaultRowsData,
@@ -356,6 +129,7 @@ export const TableVerticalHeading: Story = {
     rowData: defaultRowsData,
     tableMinWidth: 500,
     leftHeadRow: true,
+    onClick: onClickrow,
   },
 };
 
@@ -366,14 +140,43 @@ export const TablewithLeftHead: Story = {
     rowData: defaultRowsData,
     tableMinWidth: 500,
     verticalHeadingMode: true,
+    onClick: onClickrow,
   },
 };
 
 export const TableColumnAlignCustom: Story = {
   render: (args) => <Table {...args} />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'align 옵션으로 table 문구의 정렬을 설정할 수 있습니다.',
+      },
+    },
+  },
   args: {
     columnData: customAlignColumnsData,
     rowData: defaultRowsData,
+    tableMinWidth: 500,
+    align: 'center',
+    onClick: onClickrow,
+  },
+};
+
+export const TableComponentTypeRow: Story = {
+  render: (args) => <Table {...args} />,
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'row에 component형태의 data를 지정할 수 있습니다. 예. more button',
+      },
+    },
+  },
+  args: {
+    columnData: componentColumnsData,
+    rowData: componentRowsData.map((item) => {
+      return { ...item, more: <MoreComponent /> };
+    }),
     tableMinWidth: 500,
     align: 'center',
   },
@@ -381,38 +184,54 @@ export const TableColumnAlignCustom: Story = {
 
 export const TableColumnCellWidthCustom: Story = {
   render: (args) => <Table {...args} />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'columnData에 cellWidth로 cell별 width값을 지정할 수 있습니다.',
+      },
+    },
+  },
   args: {
     columnData: customCellWidthColumnsData,
-    rowData: componentRowsData,
+    rowData: componentRowsData.map((item) => {
+      return { ...item, more: <MoreComponent /> };
+    }),
     tableMinWidth: 500,
     align: 'left',
+    onClick: onClickrow,
   },
 };
 
-export const TableCheckModeAndRowCheck: Story = {
+export const TableCheckModeAndOnCheck: Story = {
   render: (args) => <Table {...args} />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'onCheck() 사용시 row click과 checkbox click이 구분됩니다. ',
+      },
+    },
+  },
   args: {
     columnData: customCellWidthColumnsData,
-    rowData: componentRowsData,
+    rowData: componentRowsData.map((item) => {
+      return { ...item, more: <MoreComponent /> };
+    }),
     tableMinWidth: 500,
     checkMode: true,
     onClick: onClickrow,
-    isRowCheck: true,
-  },
-};
-
-export const TableComponentTypeRow: Story = {
-  render: (args) => <Table {...args} />,
-  args: {
-    columnData: componentColumnsData,
-    rowData: componentRowsData,
-    tableMinWidth: 500,
-    align: 'center',
+    onCheck: onClickCheck,
   },
 };
 
 export const TableWithSort: Story = {
   render: (args) => <Table {...args} />,
+  parameters: {
+    docs: {
+      description: {
+        story: 'cell별 정렬을 할 수 있습니다. ',
+      },
+    },
+  },
   args: {
     columnData: sortColumnsData,
     rowData: sortRowsData,

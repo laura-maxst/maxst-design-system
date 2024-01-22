@@ -38,5 +38,6 @@ export const SearchBarDefault: Story = {
     placeholder: 'search',
     resetButton: true,
     onChange: onChangeSearch,
+    className: 'searchbar-example',
   },
 };

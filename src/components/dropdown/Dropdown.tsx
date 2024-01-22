@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { DropdownMenu } from './Menu';
+// import { DropdownMenu } from './Menu';
+import { Menu } from '@components/menu';
 
 type DropDownMenuProps = {
   id: string;
@@ -9,6 +10,7 @@ type DropDownMenuProps = {
   disabled?: boolean;
   subLabel?: string;
   size?: 'l' | 's';
+  subItemData?: DropDownMenuProps[];
 };
 
 interface DropdownProps {
@@ -23,6 +25,7 @@ interface DropdownProps {
   className?: string;
   multiple?: boolean;
   menuDirection?: 'top' | 'bottom';
+  selectMenu?: string | { id: string; label: string }[];
 }
 
 const Dropdown = ({
@@ -37,8 +40,10 @@ const Dropdown = ({
   className,
   multiple,
   menuDirection,
+  selectMenu,
 }: DropdownProps) => {
   const dropdownRef = useRef<HTMLInputElement>(null);
+  const menuRef = useRef<HTMLInputElement>(null);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [isFullWidthMenuWrap, setIsFullWidthMenuWrap] = useState<boolean>(
     isFullWidthMenu ? isFullWidthMenu : false,
@@ -46,7 +51,7 @@ const Dropdown = ({
   const [selectId, setSelectId] = useState<string>('');
   const [multiSelectData, setMultiSelectData] = useState<any>([]);
 
-  const onClickDropdownBase = (e: any, id: string) => {
+  const onClickDropdownBase = () => {
     if (menuOpen) {
       setMenuOpen(false);
     } else {
@@ -54,58 +59,42 @@ const Dropdown = ({
     }
   };
 
-  const onSelectDataFilter = (id: string, label: string) => {
-    const selectData = [...multiSelectData, { id: id, label: label }];
-    const filterSelectData = selectData.reduce((acc, current) => {
-      const x = acc.find((item: any, s: any) => item.id === current.id);
-      if (!x) {
-        return acc.concat([current]);
-      } else {
-        return acc.filter((item: any) => item.id !== current.id);
-      }
-    }, []);
-    setMultiSelectData(filterSelectData);
-    return filterSelectData;
-  };
-
-  const onClickMenuSelectedCheck = (id: string) => {
-    if (multiple) {
-      return multiSelectData.filter((item: any) => item.id === id).length === 1
-        ? true
-        : false;
-    } else {
-      return selectId === id ? true : false;
-    }
-  };
-
-  const onChangeDropdownMenu = (id: string, label: string) => {
-    if (!multiple) {
-      setSelectId(id);
-    }
+  const onChangeDropdownMenu = (data: any) => {
+    const { id, label } = data;
     if (!onChange) {
       return;
     } else {
       if (multiple) {
-        onChange(onSelectDataFilter(id, label));
+        onChange(data);
       } else {
         onChange({ id: id, label: label });
       }
     }
   };
 
-  const onClickDropdownMenu = (id: string, label: string) => {
-    if (menuOpen) {
-      setMenuOpen(false);
-    } else {
-      setMenuOpen(true);
+  const onClickDropdownMenu = (data: any) => {
+    const { id, label } = data;
+    if (menuRef.current) {
+      if (multiple) {
+        console.log('multiple');
+      } else {
+        const thisMenuEl = menuRef.current.querySelector('#' + id);
+        const thisMenuElSubList = thisMenuEl?.nextElementSibling;
+
+        if (thisMenuElSubList != null || thisMenuElSubList != undefined) {
+          setMenuOpen(true);
+        } else {
+          setMenuOpen(false);
+          setSelectId(String(id));
+        }
+      }
     }
     if (!onClick) {
       return;
     } else {
       if (multiple) {
-        onClick(onSelectDataFilter(id, label));
+        onClick(data);
       } else {
-        setSelectId(id);
         onClick({ id: id, label: label });
       }
     }
@@ -124,6 +113,16 @@ const Dropdown = ({
       setIsFullWidthMenuWrap(false);
     }
   }, [children]);
+
+  useEffect(() => {
+    if (selectMenu) {
+      if (multiple) {
+        setMultiSelectData(selectMenu);
+      } else {
+        setSelectId(String(selectMenu));
+      }
+    }
+  }, [selectMenu]);
 
   useEffect(() => {
     if (menuOpen) {
@@ -161,7 +160,7 @@ const Dropdown = ({
     >
       <div
         className="dropdown-box__base"
-        onClick={(e) => onClickDropdownBase(e, String(id))}
+        onClick={onClickDropdownBase}
         id={id + '__base'}
       >
         {children}
@@ -173,23 +172,17 @@ const Dropdown = ({
             isFullWidthMenuWrap ? 'full-width' : '',
           ].join(' ')}
           id={id + '-menu-wrap'}
+          ref={menuRef}
         >
-          {menuData &&
-            menuData.map((item) => (
-              <DropdownMenu
-                id={item.id}
-                size={size}
-                label={item.label}
-                subLabel={item?.subLabel}
-                iconLeft={item?.iconLeft}
-                iconRight={item?.iconRight}
-                disabled={item.disabled}
-                onChange={onChangeDropdownMenu}
-                onClick={onClickDropdownMenu}
-                selected={onClickMenuSelectedCheck(item.id)}
-                key={item.id}
-              />
-            ))}
+          <Menu
+            id={id + 'menu'}
+            size={size}
+            itemData={menuData}
+            onChange={onChangeDropdownMenu}
+            onClick={onClickDropdownMenu}
+            multiple={multiple}
+            selectMenu={multiple ? multiSelectData : selectId}
+          />
         </div>
       )}
     </div>

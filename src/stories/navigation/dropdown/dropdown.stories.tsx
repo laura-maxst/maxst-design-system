@@ -12,6 +12,9 @@ import {
   DesktopLineIcon,
   FolderLineIcon,
   MoreVerticalLineIcon,
+  MobileFillIcon,
+  LocationFillIcon,
+  DesktopFillIcon,
 } from '@maxst-designsystem/icons';
 import DropDownTextfield from './DropDownTextfield';
 import DropDownMultiSelectText from './DropDownMultiSelectText';
@@ -95,6 +98,20 @@ const menuData = [
     iconRight: <ArrowRightLineIcon />,
     disabled: false,
     subLabel: 'more',
+    subItemData: [
+      {
+        id: 'menu-2-1',
+        label: 'menu 2-1',
+        iconLeft: <MobileFillIcon />,
+        iconRight: <LocationFillIcon />,
+      },
+      {
+        id: 'menu-2-2',
+        label: 'menu 2-2',
+        iconLeft: <MobileFillIcon />,
+        iconRight: <LocationFillIcon />,
+      },
+    ],
   },
   {
     id: 'label-1',
@@ -142,12 +159,108 @@ const menuData = [
   },
 ];
 
+const menuData2 = [
+  {
+    id: 'menu-0',
+    label: 'menu-0',
+    iconLeft: <CheckLineIcon />,
+    iconRight: <ArrowRightLineIcon />,
+    disabled: false,
+    subLabel: 'more',
+  },
+  {
+    id: 'menu-1',
+    label: 'menu 1',
+    iconLeft: <DesktopLineIcon />,
+    iconRight: <ArrowRightLineIcon />,
+    subItemData: [
+      {
+        id: 'menu-1-1',
+        label: 'menu 1-1',
+        iconLeft: <DesktopFillIcon />,
+        iconRight: <LocationFillIcon />,
+        subItemData: [
+          {
+            id: 'menu-1-1-1',
+            label: 'menu 1-1-1',
+            iconLeft: <DesktopLineIcon />,
+            iconRight: <LocationFillIcon />,
+          },
+          {
+            id: 'menu-1-1-2',
+            label: 'menu 1-1-2',
+            iconLeft: <DesktopLineIcon />,
+            iconRight: <LocationFillIcon />,
+          },
+        ],
+      },
+      {
+        id: 'menu-1-2',
+        label: 'menu 1-2',
+        iconLeft: <DesktopFillIcon />,
+        // iconRight: <LocationFillIcon />,
+      },
+    ],
+  },
+  {
+    id: 'menu-2',
+    label: 'menu 2',
+    iconLeft: <MobileLineIcon />,
+    iconRight: <ArrowRightLineIcon />,
+    disabled: false,
+    subItemData: [
+      {
+        id: 'menu-2-1',
+        label: 'menu 2-1',
+        iconLeft: <MobileFillIcon />,
+        iconRight: <LocationFillIcon />,
+      },
+      {
+        id: 'menu-2-2',
+        label: 'menu 2-2',
+        iconLeft: <MobileFillIcon />,
+        iconRight: <LocationFillIcon />,
+      },
+    ],
+  },
+  {
+    id: 'menu-3',
+    label: 'menu 3',
+    iconLeft: <MapLineIcon />,
+    disabled: false,
+    subLabel: 'more',
+  },
+  {
+    id: 'menu-4',
+    label: 'menu 4',
+    iconLeft: <FolderLineIcon />,
+    iconRight: <ArrowForwardCircleLineIcon />,
+    disabled: false,
+    subLabel: 'more',
+  },
+  {
+    id: 'menu-5',
+    label: 'menu 5',
+    iconRight: <ArrowForwardCircleLineIcon />,
+    disabled: true,
+  },
+  {
+    id: 'menu-6',
+    label: 'menu 6',
+    iconRight: <ArrowForwardCircleLineIcon />,
+  },
+  {
+    id: 'menu-7',
+    label: 'menu 7',
+    iconRight: <ArrowRightLineIcon />,
+  },
+];
 const onClickMenu = (data: any) => {
-  console.log('click data', data);
+  // console.log('click data', data);
 };
 
 const onChangeMenu = (data: any) => {
-  console.log('change data', data);
+  // console.log('change data', data);
 };
 
 export const DropdownWithInput: Story = {
@@ -160,14 +273,16 @@ export const DropdownWithInput: Story = {
         placeholder="placeholder"
         label="label"
         iconRight={<ArrowDownLineIcon />}
+        readOnly
       />
     ),
-    menuData: menuData,
+    menuData: menuData2,
     onChange: onChangeMenu,
     onClick: onClickMenu,
     id: 'dropdown-textfield',
     isFullWidthMenu: true,
     className: 'dropdown-example',
+    selectMenu: 'menu-1',
   },
   parameters: {
     docs: {
@@ -180,6 +295,7 @@ export const DropdownWithInput: Story = {
   id="dropdown-textfield" 
   isFullWidthMenu={true}
   className="dropdown-example"
+  menuDirection={menuDirection}
 >
   <TextField
     helperText="helper text"
@@ -189,6 +305,7 @@ export const DropdownWithInput: Story = {
     placeholder="placeholder"
     label="label"
     iconRight={<ArrowDownLineIcon />}
+    readOnly
   />
 </Dropdown>
         `,
@@ -251,22 +368,28 @@ export const DropdownWithIconButton: Story = {
 export const DropdownMultiSelectText: Story = {
   render: (args) => <DropDownMultiSelectText {...args} />,
   args: {
-    menuData: menuData,
+    menuData: menuData2,
     onChange: onChangeMenu,
     onClick: onClickMenu,
     id: 'dropdown-textfield',
     isFullWidthMenu: true,
     className: 'dropdown-example',
     multiple: true,
+    selectMenu: [
+      { id: 'menu-1-1-1', label: 'menu 1-1-1' },
+      { id: 'menu-2', label: 'menu 2' },
+    ],
   },
   parameters: {
     docs: {
       source: {
         code: `
 const DropDownMultiSelectText = ({
+  menuDirection,
   menuData,
   onChange,
   onClick,
+  ...props
 }: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>(null);
@@ -284,6 +407,12 @@ const DropDownMultiSelectText = ({
     }
     onClick(data);
   };
+
+  useEffect(() => {
+    if (props.selectMenu) {
+      setSelectData(props.selectMenu);
+    }
+  }, [props.selectMenu]);
 
   useEffect(() => {
     if (selectData) {
@@ -304,6 +433,8 @@ const DropDownMultiSelectText = ({
       isFullWidthMenu={true}
       className="dropdown-example"
       multiple={true}
+      menuDirection={menuDirection}
+      selectMenu={props.selectMenu}
     >
       <TextField
         size="auto"
@@ -315,10 +446,12 @@ const DropDownMultiSelectText = ({
         placeholder="placeholder"
         label="label"
         iconRight={<ArrowDownLineIcon />}
+        readOnly
       />
     </Dropdown>
   );
 };
+        
           `,
       },
     },

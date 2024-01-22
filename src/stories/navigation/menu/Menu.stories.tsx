@@ -46,7 +46,7 @@ const meta: Meta<typeof Menu> = {
     multiple: {
       description: '다중 선택 유무를 설정합니다.',
     },
-    selectedId: {
+    selectMenu: {
       description: '초기 선택된 메뉴를 지정할 수 있습니다.',
     },
     hasMaxHeight: {
@@ -135,6 +135,20 @@ const menuData = [
     iconLeft: <MapLineIcon />,
     disabled: false,
     subLabel: 'more',
+    subItemData: [
+      {
+        id: 'menu-3-1',
+        label: 'menu 3-1',
+        iconLeft: <MobileFillIcon />,
+        iconRight: <LocationFillIcon />,
+      },
+      {
+        id: 'menu-3-2',
+        label: 'menu 3-2',
+        iconLeft: <MobileFillIcon />,
+        iconRight: <LocationFillIcon />,
+      },
+    ],
   },
   {
     id: 'menu-4',
@@ -163,11 +177,11 @@ const menuData = [
 ];
 
 const onClickMenu = (data: any) => {
-  console.log('click menu data', data);
+  // console.log('click menu data', data);
 };
 
 const onChangeMenu = (data: any) => {
-  console.log('change data', data);
+  // console.log('change data', data);
 };
 
 export const MenuDefault: Story = {
@@ -177,5 +191,22 @@ export const MenuDefault: Story = {
     itemData: menuData,
     onChange: onChangeMenu,
     onClick: onClickMenu,
+    selectMenu: 'menu-1',
+  },
+};
+
+export const MenuMultiple: Story = {
+  render: (args) => <Menu {...args} />,
+  args: {
+    id: 'menu-multiple-docs',
+    itemData: menuData,
+    onChange: onChangeMenu,
+    onClick: onClickMenu,
+    multiple: true,
+    selectMenu: [
+      { id: 'menu-1-1-1', label: 'menu 1-1-1' },
+      { id: 'menu-0', label: 'menu 0' },
+      // { id: 'menu-2-2', label: 'menu 2-2' },
+    ],
   },
 };

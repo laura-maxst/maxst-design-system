@@ -9,6 +9,7 @@
     font-weight: font-weight('regular');
     font-size: font-scale('16');
     color: inherit;
+    @include ellipsis(1);
 
     &::placeholder {
       line-height: 1.5;

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { MenuItem } from './MenuItem';
 import { ArrowDownLineIcon } from '@maxst-designsystem/icons';
 
@@ -21,7 +21,7 @@ interface MenuPropsType {
   onChange?: (selectMenuData: MenuItemProps | MenuItemProps[]) => void;
   className?: string;
   multiple?: boolean;
-  selectedId?: string;
+  selectMenu?: string | { id: string; label: string }[];
   hasMaxHeight?: boolean;
 }
 
@@ -33,21 +33,18 @@ const Menu = ({
   onChange,
   className,
   multiple,
-  selectedId,
+  selectMenu,
   hasMaxHeight = true,
 }: MenuPropsType) => {
   const menuRef = useRef<HTMLInputElement>(null);
   const [selectMenuId, setSelectMenuId] = useState<string>('');
-  const [selectMenus, setSelectdMenus] = useState<any>([]);
-  const [isOpenDepthTwo, setIsOpenDepthTwo] = useState<boolean>(false);
-  const [isOpenDepthThree, setIsOpenDepthThree] = useState<boolean>(false);
+  const [selectMenus, setSelectMenus] = useState<any>([]);
   const [openedMenus, setOpenedMenus] = useState<any>([]);
-  const [openedMenuID, setOpenedMenuID] = useState<string>('');
 
-  const onSelectDataFilter = (id: string, label: string) => {
+  const onSelectDataFilter = ({ id, label }: { id: string; label: string }) => {
     if (menuRef.current) {
       const child = menuRef.current.children;
-      const thisMenuEl = document.getElementById(id);
+      const thisMenuEl = menuRef.current.querySelector('#' + id);
 
       for (let i = 0; i < child.length; i++) {
         const thisMenuElSubList = thisMenuEl?.nextElementSibling;
@@ -68,7 +65,7 @@ const Menu = ({
                 return acc.filter((item: any) => item.id !== current.id);
               }
             }, []);
-            setSelectdMenus(filterSelectData);
+            setSelectMenus(filterSelectData);
             return filterSelectData;
           }
         }
@@ -76,10 +73,10 @@ const Menu = ({
     }
   };
 
-  const openMenuFilter = (id: string) => {
+  const openMenuFilter = (menuId: string) => {
     if (menuRef.current) {
       const child = menuRef.current.children;
-      const thisMenuEl = document.getElementById(id);
+      const thisMenuEl = menuRef.current.querySelector('#' + menuId);
       const thisMenuElSubList = thisMenuEl?.nextElementSibling;
 
       for (let i = 0; i < child.length; i++) {
@@ -87,18 +84,15 @@ const Menu = ({
         if (thisMenuElSubList != null || thisMenuElSubList != undefined) {
           if (thisMenuElSubList.className.includes('close')) {
             if (thisMenuElSubList.id.includes('depth-02-wrap')) {
-              setIsOpenDepthTwo(true);
               setOpenedMenus([thisMenuElSubList.id]);
             } else if (thisMenuElSubList.id.includes('depth-03-wrap')) {
-              setIsOpenDepthThree(true);
               setOpenedMenus([...openedMenus, thisMenuElSubList.id]);
             }
           } else if (thisMenuElSubList.className.includes('open')) {
             if (thisMenuElSubList.id.includes('depth-02-wrap')) {
               setOpenedMenus([]);
-              setIsOpenDepthTwo(false);
             } else if (thisMenuElSubList.id.includes('depth-03-wrap')) {
-              setIsOpenDepthThree(false);
+              //
             }
             const filterOpenMenu = openedMenus.filter(
               (x: any) => x !== thisMenuElSubList.id,
@@ -121,14 +115,11 @@ const Menu = ({
   };
 
   const onChangeMenu = (id: string, label: string) => {
-    if (!multiple) {
-      setSelectMenuId(id);
-    }
     if (!onChange) {
       return;
     } else {
       if (multiple) {
-        onChange(onSelectDataFilter(id, label));
+        onChange(onSelectDataFilter({ id: id, label: label }));
       } else {
         onChange({ id: id, label: label });
       }
@@ -136,18 +127,18 @@ const Menu = ({
   };
 
   const onClickMenu = (id: string, label: string) => {
-    setOpenedMenuID(id);
     openMenuFilter(id);
-
     if (!multiple) {
       setSelectMenuId(id);
+    } else {
+      onSelectDataFilter({ id: id, label: label });
     }
 
     if (!onClick) {
       return;
     } else {
       if (multiple) {
-        onClick(onSelectDataFilter(id, label));
+        onClick(onSelectDataFilter({ id: id, label: label }));
       } else {
         onClick({ id: id, label: label });
       }
@@ -164,25 +155,52 @@ const Menu = ({
     }
   };
 
-  useEffect(() => {
-    if (selectedId) {
-      setSelectMenuId(selectedId);
-      openMenuFilter(selectedId);
+  // select data로 메뉴 ui 제어
+  const openMenuBucket: any[] = [];
+  const onSelectMenuOpenClose = (menuId: string) => {
+    // 부모 노드 찾기
+    const getParents = (el: any) => {
       const menuWrap = menuRef.current;
-      const selectedMenuEl = document.getElementById(selectedId);
-      const getParents = (el: any) => {
-        const parents = [];
-        for (el; (el = el?.parentNode) && el !== menuWrap; ) {
-          parents.push(el);
-        }
-        return parents.filter((x) => x?.classList.contains('menu-wrap'));
-      };
-      const parentsList = getParents(selectedMenuEl);
-      parentsList.map((listItem) => {
-        return listItem.classList.add('open');
-      });
+      const parents = [];
+      for (el; (el = el?.parentNode) && el !== menuWrap; ) {
+        parents.push(el);
+      }
+      return parents.filter((x) => x?.classList.contains('menu-wrap'));
+    };
+    // 선택 메뉴 감지하여 부모 depth open
+    const selectedMenuEl = menuRef.current?.querySelector('#' + String(menuId));
+    const parentsList = getParents(selectedMenuEl);
+    for (const v of parentsList) {
+      v.id && openMenuBucket.push(v.id);
     }
-  }, [selectedId]);
+    parentsList.map((listItem) => {
+      return listItem.classList.add('open');
+    });
+    setOpenedMenus(openMenuBucket);
+  };
+
+  useEffect(() => {
+    if (selectMenu) {
+      if (multiple) {
+        setSelectMenus(selectMenu);
+        for (const i in selectMenu as {
+          id: string;
+          label: string;
+        }[]) {
+          const selectItem = selectMenu[i] as {
+            id: string;
+            label: string;
+          };
+          openMenuFilter(selectItem.id);
+          onSelectMenuOpenClose(selectItem.id);
+        }
+      } else {
+        setSelectMenuId(String(selectMenu));
+        openMenuFilter(String(selectMenu));
+        onSelectMenuOpenClose(String(selectMenu));
+      }
+    }
+  }, [selectMenu]);
 
   return (
     <div
@@ -211,7 +229,7 @@ const Menu = ({
             selected={onClickMenuSelectedCheck(item.id)}
             className={[
               '',
-              isOpenDepthTwo && openedMenus.includes(item.id + '-depth-02-wrap')
+              openedMenus.includes(item.id + '-depth-02-wrap')
                 ? 'sub-menu-open'
                 : 'sub-menu-close',
             ].join(' ')}
@@ -221,7 +239,7 @@ const Menu = ({
               className={[
                 'menu-wrap',
                 'depth-02-wrap',
-                isOpenDepthTwo &&
+
                 openedMenus.includes(item.id + '-depth-02-wrap')
                   ? 'open'
                   : 'close',
@@ -250,7 +268,6 @@ const Menu = ({
                     className={[
                       'depth-02',
                       subItem.subItemData ? 'has-sub-menu' : '',
-                      isOpenDepthThree &&
                       openedMenus.includes(item.id + '-depth-03-wrap')
                         ? 'sub-menu-open'
                         : 'sub-menu-close',
@@ -261,7 +278,6 @@ const Menu = ({
                       className={[
                         'menu-wrap',
                         'depth-03-wrap',
-                        isOpenDepthThree &&
                         openedMenus.includes(item.id + '-depth-03-wrap')
                           ? 'open'
                           : 'close',
@@ -306,4 +322,4 @@ const Menu = ({
 };
 
 export { Menu };
-export type { MenuPropsType };
+export type { MenuPropsType, MenuItemProps };

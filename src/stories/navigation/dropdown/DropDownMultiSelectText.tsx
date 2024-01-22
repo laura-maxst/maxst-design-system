@@ -9,6 +9,7 @@ const DropDownMultiSelectText = ({
   menuData,
   onChange,
   onClick,
+  ...props
 }: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>(null);
@@ -26,6 +27,12 @@ const DropDownMultiSelectText = ({
     }
     onClick(data);
   };
+
+  useEffect(() => {
+    if (props.selectMenu) {
+      setSelectData(props.selectMenu);
+    }
+  }, [props.selectMenu]);
 
   useEffect(() => {
     if (selectData) {
@@ -47,6 +54,7 @@ const DropDownMultiSelectText = ({
       className="dropdown-example"
       multiple={true}
       menuDirection={menuDirection}
+      selectMenu={props.selectMenu}
     >
       <TextField
         size="auto"
@@ -58,6 +66,7 @@ const DropDownMultiSelectText = ({
         placeholder="placeholder"
         label="label"
         iconRight={<ArrowDownLineIcon />}
+        readOnly
       />
     </Dropdown>
   );

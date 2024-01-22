@@ -619,7 +619,9 @@ input[type='radio'] {
 // #anchor--navigation-breadcrumb--breadcrumb-default,
 #anchor--navigation-dropdown--dropdown-multi-select-text,
 #anchor--navigation-dropdown--dropdown-multi-select-chip,
-#anchor--navigation-dropdown--drop-down-with-controls {
+#anchor--navigation-dropdown--drop-down-with-controls,
+#anchor--datainputs-autocomplete--autocomplete-with-searchbar,
+#anchor--datainputs-autocomplete--autocomplete-with-textfield {
   .docs-story {
     min-height: 400px;
 
@@ -650,7 +652,13 @@ input[type='radio'] {
     }
   }
 }
-
+.search-wrap.searchbar-example {
+  max-width: 320px;
+}
+.auto-complete__searchbar,
+.auto-complete__textfield {
+  max-width: 400px;
+}
 .dropdown-box.dropdown-example {
   max-width: 300px;
   margin: 0 auto;

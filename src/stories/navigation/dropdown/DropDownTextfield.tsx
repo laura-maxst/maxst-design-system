@@ -46,6 +46,7 @@ const DropDownTextfield = ({
         placeholder="placeholder"
         label="label"
         iconRight={<ArrowDownLineIcon />}
+        readOnly
       />
     </Dropdown>
   );

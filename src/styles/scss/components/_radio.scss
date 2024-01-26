@@ -70,14 +70,20 @@
     }
   }
 
-  // .helper-text.font-body{
-  //   padding-top:0;
-  // }
   @include helper-text-with-icon;
 }
+
 .radio {
   input[type='radio'] {
     appearance: none;
+  }
+}
+// radio background, border color setting
+@mixin radioColorSet($type, $color) {
+  @if ($type == 'background') {
+    background-color: semantic-color('background', $color);
+  } @else if($type == 'border') {
+    border-color: semantic-color('border', $color);
   }
 }
 
@@ -89,8 +95,10 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
   &:hover,
   &:active,
   &:focus {
-    border-color: semantic-color('border', 'disabled');
-    background-color: semantic-color('background', 'disabled');
+    &::after {
+      @include radioColorSet('border', 'disabled');
+      @include radioColorSet('background', 'disabled');
+    }
   }
   & + p {
     color: semantic-color('text', 'disabled');
@@ -101,13 +109,16 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
     &:hover,
     &:active,
     &:focus {
-      background-color: semantic-color('background', 'disabled');
+      &::after {
+        @include radioColorSet('background', 'disabled');
+      }
     }
   }
 }
 
 .radio-wrap {
   @include helper-text-with-icon;
+
   .helper-text.font-body {
     padding-top: 4px;
   }
@@ -119,10 +130,22 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
     cursor: pointer;
 
     .radio {
+      position: relative;
       flex: none;
       margin-right: 8px;
       color: semantic-color('text', 'default');
+
+      // radio touch area
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        z-index: 0;
+      }
     }
+
     p {
       word-break: break-all;
     }
@@ -134,9 +157,20 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid semantic-color('border', 'default');
-    border-radius: 50%;
     cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 1px solid;
+      border-radius: 50%;
+      box-sizing: border-box;
+      z-index: 11;
+      @include radioColorSet('border', 'default');
+    }
 
     @if ($size == 'l') {
       width: 24px;
@@ -149,48 +183,71 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
     &:hover,
     &:active,
     &:focus {
-      border-color: semantic-color('border', 'accent');
+      &::after {
+        @include radioColorSet('border', 'accent');
+      }
     }
 
     @if ($state == 'pressed') {
-      border-color: semantic-color('border', 'accent');
+      &::after {
+        @include radioColorSet('border', 'accent');
+      }
     } @else if($state == 'disabled') {
       @include stateDisabled;
     } @else if($state == 'error') {
-      border-color: semantic-color('border', 'error');
+      &::after {
+        @include radioColorSet('border', 'error');
+      }
 
       &:hover,
       &:active,
       &:focus {
-        border-color: semantic-color('border', 'error-accent');
+        &::after {
+          @include radioColorSet('border', 'error-accent');
+        }
       }
     }
 
     &.checked {
-      border-color: semantic-color('background', 'primary');
+      &::after {
+        @include radioColorSet('border', 'primary');
+      }
+
       &:hover,
       &:active,
       &:focus {
-        border-color: semantic-color('background', 'primary-accent');
+        &::after {
+          @include radioColorSet('border', 'primary-accent');
+        }
       }
 
       @if ($size == 'l') {
-        border-width: 7px;
+        &::after {
+          border-width: 7px;
+        }
       } @else if($size == 's') {
-        border-width: 6px;
+        &::after {
+          border-width: 6px;
+        }
       }
 
       @if ($state == 'pressed') {
-        border-color: semantic-color('background', 'primary-accent');
+        &::after {
+          @include radioColorSet('background', 'primary-accent');
+        }
       } @else if($state == 'disabled') {
         @include stateDisabled;
       } @else if($state == 'error') {
-        border-color: semantic-color('border', 'error');
+        &::after {
+          @include radioColorSet('border', 'error');
+        }
 
         &:hover,
         &:active,
         &:focus {
-          border-color: semantic-color('border', 'error-accent');
+          &::after {
+            @include radioColorSet('border', 'error-accent');
+          }
         }
       }
     }

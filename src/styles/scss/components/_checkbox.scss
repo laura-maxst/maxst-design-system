@@ -44,7 +44,6 @@
 
     .checkbox-box {
       flex-direction: column;
-      gap: 12px;
       width: max-content;
     }
 
@@ -76,6 +75,15 @@
   @include helper-text-with-icon;
 }
 
+// checkbox background, border color setting
+@mixin checkboxColorSet($type, $color) {
+  @if ($type == 'background') {
+    background-color: semantic-color('background', $color);
+  } @else if($type == 'border') {
+    border-color: semantic-color('border', $color);
+  }
+}
+
 $checkboxSize: 'l', 's';
 $checkboxState: 'default', 'pressed', 'disabled', 'error';
 $checkboxMode: 'primary', 'secondary';
@@ -85,8 +93,10 @@ $checkboxMode: 'primary', 'secondary';
   &:hover,
   &:active,
   &:focus {
-    border-color: semantic-color('border', 'disabled');
-    background-color: semantic-color('background', 'disabled');
+    &::after {
+      @include checkboxColorSet('border', 'disabled');
+      @include checkboxColorSet('background', 'disabled');
+    }
   }
   & + p {
     color: semantic-color('text', 'disabled');
@@ -100,7 +110,9 @@ $checkboxMode: 'primary', 'secondary';
     &:hover,
     &:active,
     &:focus {
-      background-color: semantic-color('background', 'disabled');
+      &::after {
+        @include checkboxColorSet('background', 'disabled');
+      }
     }
   }
 }
@@ -110,11 +122,23 @@ $checkboxMode: 'primary', 'secondary';
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid semantic-color('border', 'default');
     cursor: pointer;
 
     svg {
       color: semantic-color('text', 'default-reverse') !important;
+      z-index: 111;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid;
+      @include checkboxColorSet('border', 'default');
+      z-index: 11;
     }
 
     @if ($size == 'l') {
@@ -138,57 +162,83 @@ $checkboxMode: 'primary', 'secondary';
     &:hover,
     &:active,
     &:focus {
-      border-color: semantic-color('border', 'accent');
+      &::after {
+        @include checkboxColorSet('border', 'accent');
+      }
     }
 
     @if ($state == 'pressed') {
-      border-color: semantic-color('border', 'accent');
+      &::after {
+        @include checkboxColorSet('border', 'accent');
+      }
     } @else if($state == 'disabled') {
       @include stateDisabled;
     } @else if($state == 'error') {
-      border-color: semantic-color('border', 'error');
+      &::after {
+        @include checkboxColorSet('border', 'error');
+      }
 
       &:hover,
       &:active,
       &:focus {
-        border-color: semantic-color('border', 'error-accent');
+        &::after {
+          @include checkboxColorSet('border', 'error-accent');
+        }
       }
     }
 
     &.checked {
-      border: 0 none;
+      &::after {
+        border: 0 none;
+      }
 
       @if ($mode == 'primary') {
-        background-color: semantic-color('background', 'primary');
+        &::after {
+          @include checkboxColorSet('background', 'primary');
+        }
         &:hover,
         &:active,
         &:focus {
-          background-color: semantic-color('background', 'primary-accent');
+          &::after {
+            @include checkboxColorSet('background', 'primary-accent');
+          }
         }
       } @else if($mode == 'secondary') {
-        background-color: semantic-color('background', 'secondary');
+        &::after {
+          @include checkboxColorSet('background', 'secondary');
+        }
         &:hover,
         &:active,
         &:focus {
-          background-color: semantic-color('background', 'secondary-accent');
+          &::after {
+            @include checkboxColorSet('background', 'secondary-accent');
+          }
         }
       }
 
       @if ($state == 'pressed') {
         @if ($mode == 'primary') {
-          background-color: semantic-color('background', 'primary-accent');
+          &::after {
+            @include checkboxColorSet('background', 'primary-accent');
+          }
         } @else if($mode == 'secondary') {
-          background-color: semantic-color('background', 'secondary-accent');
+          &::after {
+            @include checkboxColorSet('background', 'secondary-accent');
+          }
         }
       } @else if($state == 'disabled') {
         @include stateDisabled;
       } @else if($state == 'error') {
-        background-color: semantic-color('background', 'error');
+        &::after {
+          @include checkboxColorSet('background', 'error');
+        }
 
         &:hover,
         &:active,
         &:focus {
-          background-color: semantic-color('background', 'error-accent');
+          &::after {
+            @include checkboxColorSet('background', 'error-accent');
+          }
         }
       }
     }
@@ -201,13 +251,27 @@ $checkboxMode: 'primary', 'secondary';
   .helper-text.font-body {
     padding-top: 4px;
   }
+
   .checkbox {
+    position: relative;
+
+    // checkbox touch area
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: calc(100% + 16px);
+      height: calc(100% + 16px);
+      z-index: 0;
+    }
+
     input {
       width: 0px;
       height: 0px;
     }
   }
 }
+
 .checkbox-label {
   position: relative;
   display: flex;
@@ -235,6 +299,8 @@ $checkboxMode: 'primary', 'secondary';
 
 @mixin checkboxIconCase($size) {
   .checkbox-icon {
+    cursor: pointer;
+
     svg {
       color: semantic-color('text', 'default');
     }

@@ -4,6 +4,7 @@
   label {
     display: block;
   }
+
   input {
     position: absolute;
     top: 0;
@@ -59,15 +60,16 @@ $switchState: 'default', 'pressed', 'disabled';
 
     &.switch-toggle-#{$size} {
       @if ($size == 'l') {
-        @include switchSize-l-width;
-        @include switchSize-l-height;
+        // @include switchSize-l-width;
+        // @include switchSize-l-height;
 
         label {
+          @include switchSize-l-width;
           @include switchSize-l-height;
         }
 
         &.label-mode {
-          width: auto;
+          // width: auto;
 
           label .font-body {
             top: 0;
@@ -77,9 +79,10 @@ $switchState: 'default', 'pressed', 'disabled';
           }
         }
       } @else if($size == 's') {
-        @include switchSize-s-width;
-        @include switchSize-s-height;
+        // @include switchSize-s-width;
+        // @include switchSize-s-height;
         label {
+          @include switchSize-s-width;
           @include switchSize-s-height;
         }
 
@@ -96,6 +99,8 @@ $switchState: 'default', 'pressed', 'disabled';
     }
   }
   .switch-toggle__#{$size}--#{$state} {
+    cursor: pointer;
+
     &::before {
       position: absolute;
       top: 0;
@@ -110,11 +115,32 @@ $switchState: 'default', 'pressed', 'disabled';
       position: absolute;
       left: 2px;
       display: block;
-      border-radius: 50%;
-      box-sizing: border-box;
+      // border-radius: 50%;
+      // box-sizing: border-box;
       z-index: 10;
       transition: all 0.2s ease-in-out;
-      background-color: var($--palette-white);
+      // background-color: var($--palette-white);
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        transform: translate(calc(-50% + 9.5px), calc(-50% + 10px));
+        z-index: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background-color: var($--palette-white);
+      }
     }
 
     & input:checked {
@@ -197,7 +223,9 @@ $switchState: 'default', 'pressed', 'disabled';
       }
 
       & .switch-button {
-        background-color: semantic-color('text', 'disabled') !important;
+        &::after {
+          background-color: semantic-color('text', 'disabled') !important;
+        }
         svg {
           color: semantic-color('background', 'disabled') !important;
         }
@@ -240,7 +268,9 @@ $switchState: 'default', 'pressed', 'disabled';
       }
 
       & .switch-button {
-        background-color: var($--palette-white);
+        &::after {
+          background-color: var($--palette-white);
+        }
         svg {
           color: semantic-color('background', 'ui-middle');
         }

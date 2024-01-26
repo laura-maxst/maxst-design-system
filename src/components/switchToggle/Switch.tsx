@@ -38,6 +38,7 @@ const Switch = ({
   const [thisState, setThisState] = useState<string>('default');
   const resolveOnClick = (e: any) => {
     setIsChecked(e.target.checked);
+
     if (!onClick) {
       return;
     }
@@ -78,7 +79,7 @@ const Switch = ({
         <input
           id={id}
           type="checkbox"
-          disabled={disabled}
+          disabled={disabled || thisState === 'disabled'}
           defaultChecked={checked}
         />
         <span className="switch-button">

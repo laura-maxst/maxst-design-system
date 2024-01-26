@@ -7,6 +7,14 @@
   box-sizing: border-box;
   background-color: semantic-color('background', 'base');
 
+  &.left {
+    margin-left: 0;
+  }
+
+  &.right {
+    margin-right: 0;
+  }
+
   &.full {
     max-width: none;
   }

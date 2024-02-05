@@ -1,6 +1,6 @@
 // import React, { useEffect } from "react";
 import type { Preview } from '@storybook/react';
-import '@styles/scss/main.scss';
+// import '@styles/scss/main.scss';
 import '@styles/storybookStyle.scss';
 import { withThemeByClassName } from '@storybook/addon-styling';
 import {

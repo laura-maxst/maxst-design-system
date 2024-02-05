@@ -1,4 +1,3 @@
-import './styles/scss/main.scss';
 export { Accordion } from './components/accordion';
 export { Alert } from './components/alert';
 export { AutoComplete } from './components/autoComplete';

@@ -1,9 +1,8 @@
-@import './base/global-style.scss';
-
 @import './abstracts/_functions.scss';
 @import './abstracts/_variables.scss';
 @import './abstracts/_mixins.scss';
 
+@import './base/_globalStyle.scss';
 @import './base/_colors.scss';
 @import './base/_typography.scss';
 

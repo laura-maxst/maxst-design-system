@@ -39,8 +39,8 @@
 //scroll
 @mixin scrollY($backgroundColor) {
   overflow-y: auto;
-  scrollbar-width: thin;
-  -ms-overflow-style: thin;
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
 
   &::-webkit-scrollbar {
     display: block;
@@ -59,8 +59,8 @@
 }
 @mixin scrollX($backgroundColor) {
   overflow-x: auto;
-  scrollbar-width: thin;
-  -ms-overflow-style: thin;
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
 
   &::-webkit-scrollbar {
     display: block;

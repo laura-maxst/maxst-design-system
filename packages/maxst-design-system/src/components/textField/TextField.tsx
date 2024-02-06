@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { TextLabel, Text } from '@components/text';
 import {
   CloseCircleFillBoldIcon,
@@ -37,6 +37,8 @@ interface textFieldProps {
   onChange?: (e: any) => void;
   renderValue?: string | React.ReactNode | JSX.Element | any;
   readOnly?: boolean;
+  minHeight?: number;
+  maxHeight?: number;
 }
 // const selectMenuComponent: () =>
 
@@ -62,8 +64,11 @@ function TextField({
   onClick,
   renderValue,
   readOnly = false,
+  minHeight,
+  maxHeight,
   ...props
 }: textFieldProps) {
+  const textareaRef: any = useRef(null);
   const [resoleValue, setResolveValue] = useState<string | number>('');
   const [thisState, setThisState] = useState<string>('default');
   const [showResetButton, setShowResetButton] = useState<boolean>(false);
@@ -94,11 +99,19 @@ function TextField({
 
   const resolveOnChange = (e: any) => {
     setResolveValue(e.target.value);
+
     if (multiLine) {
       onMaxLengthCheck(e.target.value.length);
+
+      if (textareaRef) {
+        const textarea = textareaRef.current;
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+      }
     } else {
       onMinLengthCheck(e.target.value.length);
     }
+
     if (!onChange) {
       return;
     }
@@ -216,6 +229,9 @@ function TextField({
         className={['textfield-formControl', multiLine && 'multi-line'].join(
           ' ',
         )}
+        style={
+          size === 'auto' ? { minHeight: minHeight, maxHeight: maxHeight } : {}
+        }
       >
         {!multiLine && iconLeft && iconLeft}
         {isRenderValueMode &&
@@ -230,6 +246,8 @@ function TextField({
           ))}
         {multiLine ? (
           <textarea
+            ref={textareaRef}
+            rows={1}
             readOnly={readOnly}
             id={id}
             placeholder={placeholder}

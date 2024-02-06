@@ -70,6 +70,7 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         color: semantic-color('text', 'primary');
       }
     }
+
     .textfield-formControl {
       @include textField-common;
       @include setBackgroundColor($state);
@@ -153,11 +154,16 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         align-items: flex-start;
         padding: 16px;
         padding-right: 0;
-        height: 200px;
+        @include scrollY(semantic-color('background', 'base'));
+
+        @if ($size == 'auto') {
+          height: auto;
+        } @else {
+          height: 200px;
+        }
 
         textarea {
           padding-right: 16px;
-          @include scrollY(semantic-color('background', 'base'));
         }
       }
       .textfield__render-value-box {

@@ -62,6 +62,18 @@ const meta: Meta<typeof TextField> = {
       description:
         '읽기 전용으로 입력을 허용하지 않고 입력값만 보여지도록 설정합니다.',
     },
+    minHeight: {
+      description:
+        'textarea의 최소 높이를 지정합니다. 최소 53px 이하로 지정할 수 없습니다. textarea의 size가 auto일때만 가능합니다.',
+    },
+    maxHeight: {
+      description:
+        'textarea의 최대 높이를 지정합니다.max-height 지정값보다 내용이 길어질 경우 scroll 처리 됩니다. textarea의 size가 auto일때만 가능합니다.',
+    },
+    size: {
+      description:
+        'textfield의 size를 지정합니다. auto는 multiLine일시 textarea에서만 적용됩니다.',
+    },
   },
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FullScreenLineIcon = () => {
+const FullScreenLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -9,26 +9,26 @@ const FullScreenLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_1_438)">
+      <g clipPath="url(#clip0_2748_11465)">
         <path
-          d="M18.96 40.02H8.02002V29.08H10.42V37.62H18.96V40.02Z"
+          d="M18.96 39.42H8.62V29.08H9.81999V38.22H18.96V39.42Z"
           fill="currentColor"
         />
         <path
-          d="M39.98 39.96H29.04V37.56H37.58V29.02H39.98V39.96Z"
+          d="M39.38 39.36H29.04V38.16H38.18V29.02H39.38V39.36Z"
           fill="currentColor"
         />
         <path
-          d="M39.98 18.88H37.58V10.34H29.04V7.94H39.98V18.88Z"
+          d="M39.38 18.88H38.18V9.74001H29.04V8.54001H39.38V18.88Z"
           fill="currentColor"
         />
         <path
-          d="M10.42 18.92H8.02002V7.98H18.96V10.38H10.42V18.92Z"
+          d="M9.81999 18.92H8.62V8.58002H18.96V9.78002H9.81999V18.92Z"
           fill="currentColor"
         />
       </g>
       <defs>
-        <clipPath id="clip0_1_438">
+        <clipPath id="clip0_2748_11465">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -36,4 +36,4 @@ const FullScreenLineIcon = () => {
   );
 };
 
-export { FullScreenLineIcon };
+export { FullScreenLineLightIcon };

@@ -9,30 +9,21 @@ const SortLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M25.3653 18.6164L23.2 20.6927L13.6827 10.7672L4.16539 20.6927L2.00002 18.6164L13.6827 6.43267L25.3653 18.6164Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12.2027 40.9684L12.2027 10.1907L15.2027 10.1907L15.2027 40.9684L12.2027 40.9684Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M22.6347 28.9836L24.8001 26.9072L34.3174 36.8327L43.8346 26.9072L46 28.9836L34.3173 41.1672L22.6347 28.9836Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M35.8374 6.63148L35.8374 37.4092L32.8374 37.4092L32.8374 6.63148L35.8374 6.63148Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1708_133)">
+        <path
+          d="M23.64 18.36L25.9 16.1L15.1 5.3L4.32001 16.1L6.58001 18.36L13.5 11.42V42H16.7V11.42L23.64 18.36Z"
+          fill="currentColor"
+        />
+        <path
+          d="M41.42 29.6L34.5 36.54V5.96H31.3V36.54L24.36 29.6L22.1 31.88L32.9 42.66L43.68 31.88L41.42 29.6Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1708_133">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

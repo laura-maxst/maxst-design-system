@@ -3,18 +3,23 @@ import React from 'react';
 const HeartFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7.85756 8.40932C12.5631 4.39788 19.5205 5.20266 23.7533 9.505L23.9502 9.70511L24.1471 9.505C28.3799 5.20266 35.3373 4.39788 40.0428 8.40932L40.0447 8.41088C45.2579 12.8731 45.5056 20.8017 40.7914 25.5932L23.9502 42.7111L7.10897 25.5932C2.39481 20.8017 2.64251 12.8731 7.85573 8.41088L7.85756 8.40932Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_377)">
+        <path
+          d="M24 43.7L7.6 27.16C5.52 25.06 4.4 22.16 4.52 19.18C4.64 16.18 5.98 13.44 8.28 11.48C12.4 7.98 18.8 8.44 22.86 12.52L24 13.66L25.12 12.52C29.16 8.44 35.56 7.98 39.7 11.48C42 13.44 43.32 16.16 43.46 19.18C43.58 22.14 42.46 25.06 40.4 27.16L24 43.72V43.7Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_377">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

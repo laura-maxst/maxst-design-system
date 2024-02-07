@@ -189,6 +189,8 @@ export { GridViewLineLightIcon } from './icons/gridViewLineLight';
 export { GridViewFillIcon } from './icons/gridViewFill';
 
 export { HeartLineIcon } from './icons/heartLine';
+export { HeartLineBoldIcon } from './icons/heartLineBold';
+export { HeartLineLightIcon } from './icons/heartLineLight';
 export { HeartFillIcon } from './icons/heartFill';
 
 export { HelpCircleLineIcon } from './icons/helpCircleLine';

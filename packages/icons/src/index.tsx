@@ -218,16 +218,6 @@ export { LanguageFillIcon } from './icons/languageFill';
 export { LastPageLineIcon } from './icons/lastPageLine';
 export { LastPageLineBoldIcon } from './icons/lastPageLineBold';
 
-export { ListViewLineIcon } from './icons/listViewLine';
-export { ListViewLineBoldIcon } from './icons/listViewLineBold';
-export { ListViewLineLightIcon } from './icons/listViewLineLight';
-export { ListViewFillIcon } from './icons/listViewFill';
-
-export { LocationLineIcon } from './icons/locationLine';
-export { LocationLineBoldIcon } from './icons/locationLineBold';
-export { LocationLineLightIcon } from './icons/locationLineLight';
-export { LocationFillIcon } from './icons/locationFill';
-
 export { LayerHorizontalLineIcon } from './icons/layerHorizontalLine';
 export { LayerHorizontalLineBoldIcon } from './icons/layerHorizontalLineBold';
 export { LayerHorizontalLineLightIcon } from './icons/layerHorizontalLineLight';
@@ -238,6 +228,19 @@ export { LayerLineBoldIcon } from './icons/layerLineBold';
 export { LayerLineLightIcon } from './icons/layerLineLight';
 export { LayerFillIcon } from './icons/layerFill';
 
+export { LinkLineIcon } from './icons/linkLine';
+export { LinkLineBoldIcon } from './icons/linkLineBold';
+export { LinkLightLineIcon } from './icons/linkLineLight';
+
+export { ListViewLineIcon } from './icons/listViewLine';
+export { ListViewLineBoldIcon } from './icons/listViewLineBold';
+export { ListViewLineLightIcon } from './icons/listViewLineLight';
+export { ListViewFillIcon } from './icons/listViewFill';
+
+export { LocationLineIcon } from './icons/locationLine';
+export { LocationLineBoldIcon } from './icons/locationLineBold';
+export { LocationLineLightIcon } from './icons/locationLineLight';
+export { LocationFillIcon } from './icons/locationFill';
 export { LockLineIcon } from './icons/lockLine';
 export { LockLineBoldIcon } from './icons/lockLineBold';
 export { LockLineLightIcon } from './icons/lockLineLight';

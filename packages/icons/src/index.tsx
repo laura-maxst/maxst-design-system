@@ -290,6 +290,11 @@ export { MyLocationLineBoldIcon } from './icons/myLocationLineBold';
 export { MyLocationLineLightIcon } from './icons/myLocationLineLight';
 export { MyLocationFillIcon } from './icons/myLocationFill';
 
+export { NotificationCheckLineIcon } from './icons/notificationCheckLine';
+export { NotificationCheckLineBoldIcon } from './icons/notificationCheckLineBold';
+export { NotificationCheckLineLightIcon } from './icons/notificationCheckLineLight';
+export { NotificationCheckFillIcon } from './icons/notificationCheckFill';
+
 export { NotificationLineIcon } from './icons/notificationLine';
 export { NotificationLineBoldIcon } from './icons/notificationLineBold';
 export { NotificationLineLightIcon } from './icons/notificationLineLight';

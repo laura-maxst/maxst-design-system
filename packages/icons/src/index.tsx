@@ -10,6 +10,7 @@ export { ArrowDownCircleFillIcon } from './icons/arrowDownCircleFill';
 
 export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
+export { ArrowDownLineLightIcon } from './icons/arrowDownLineLight';
 
 export { ArrowDownwardLineIcon } from './icons/arrowDownwardLine';
 export { ArrowDownwardLineLightIcon } from './icons/arrowDownwardLineLight';

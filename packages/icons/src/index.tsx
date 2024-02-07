@@ -42,6 +42,11 @@ export { ArrowOutwardLineIcon } from './icons/arrowOutwardLine';
 export { ArrowOutwardLineLightIcon } from './icons/arrowOutwardLineLight';
 export { ArrowOutwardLineBoldIcon } from './icons/arrowOutwardLineBold';
 
+export { ArrowRightCircleLineIcon } from './icons/arrowRightCircleLine';
+export { ArrowRightCircleLineBoldIcon } from './icons/arrowRightCircleLineBold';
+export { ArrowRightCircleLineLightIcon } from './icons/arrowRightCircleLineLight';
+export { ArrowRightCircleFillIcon } from './icons/arrowRightCircleFill';
+
 export { ArrowRightLineIcon } from './icons/arrowRightLine';
 export { ArrowRightLineBoldIcon } from './icons/arrowRightLineBold';
 export { ArrowRightLineLightIcon } from './icons/arrowRightLineLight';

@@ -9,12 +9,34 @@ const GridViewLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M22.6704 6.00019H10.1942L6.00116 10.2413V22.6612H22.6704V6.00019ZM8.40116 11.2274L11.1964 8.40019H20.2704V20.2612H8.40116V11.2274ZM22.6577 25.3459H6.00116V41.9991H22.6577V25.3459ZM8.40116 39.5991V27.7459H20.2577V39.5991H8.40116ZM25.3469 25.3381H42.0005V37.7613L37.7797 41.9991H25.3469V25.3381ZM27.7469 27.7381V39.5991H36.7828L39.6005 36.77V27.7381H27.7469ZM42.0269 6.00117H25.3469V22.6622H42.0269V6.00117ZM27.7469 20.2622V8.40117H39.6269V20.2622H27.7469Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2746_8742)">
+        <path
+          d="M40.22 22.7H25.3V7.78H40.22V22.7ZM27.7 20.3H37.82V10.18H27.7V20.3Z"
+          fill="currentColor"
+        />
+        <path
+          d="M22.7 22.7H7.78003V7.78H22.7V22.7ZM10.18 20.3H20.3V10.18H10.18V20.3Z"
+          fill="currentColor"
+        />
+        <path
+          d="M40.22 40.22H25.3V25.3H40.22V40.22ZM27.7 37.82H37.82V27.7H27.7V37.82Z"
+          fill="currentColor"
+        />
+        <path
+          d="M22.7 40.22H7.78003V25.3H22.7V40.22ZM10.18 37.82H20.3V27.7H10.18V37.82Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2746_8742">
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            transform="matrix(-1 0 0 1 48 0)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

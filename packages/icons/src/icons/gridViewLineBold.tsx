@@ -9,12 +9,34 @@ const GridViewLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M10.0001 5.99902H22.6562V22.6562H6V9.99917L10.0001 5.99902ZM6 25.3359H22.6601V42.0006H6V25.3359ZM42.0006 25.3359H25.3438V42.0006H38.0005L42.0006 38.0005V25.3359ZM25.3438 6H42.0006V22.6562H25.3438V6Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2746_8749)">
+        <path
+          d="M25.52 7.38V22.46H40.6V7.38H25.52ZM37.42 19.28H28.72V10.58H37.42V19.28Z"
+          fill="currentColor"
+        />
+        <path
+          d="M7.38 22.48H22.46V7.38H7.38V22.46V22.48ZM10.58 10.58H19.28V19.28H10.58V10.58Z"
+          fill="currentColor"
+        />
+        <path
+          d="M25.52 40.62H40.6V25.54H25.52V40.62ZM28.72 28.72H37.42V37.42H28.72V28.72Z"
+          fill="currentColor"
+        />
+        <path
+          d="M7.38 40.62H22.46V25.54H7.38V40.62ZM10.58 28.72H19.28V37.42H10.58V28.72Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2746_8749">
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            transform="matrix(-1 0 0 1 48 0)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

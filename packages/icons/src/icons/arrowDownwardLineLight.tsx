@@ -9,12 +9,17 @@ const ArrowDownwardLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.82664 24.1734L8.00003 25L24 41L40 25L39.1734 24.1734L24.5845 38.7623L24.5845 9.00001L23.4155 9.00001L23.4155 38.7622L8.82664 24.1734Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1705_137)">
+        <path
+          d="M25.02 39.76V6.03998H23.82V39.76L8.84001 24.8L7.98001 25.64L24.42 42.06L40.84 25.64L39.98 24.8L25.02 39.76Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1705_137">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

@@ -397,6 +397,11 @@ export { UploadCircleFillIcon } from './icons/uploadCircleFill';
 
 export { UploadLineIcon } from './icons/uploadLine';
 
+export { UserAddLineIcon } from './icons/userAddLine';
+export { UserAddLineBoldIcon } from './icons/userAddLineBold';
+export { UserAddLineLightIcon } from './icons/userAddLineLight';
+export { UserAddFillIcon } from './icons/userAddFill';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

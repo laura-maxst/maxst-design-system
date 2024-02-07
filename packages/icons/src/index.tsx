@@ -42,6 +42,7 @@ export { ArrowUpCircleFillIcon } from './icons/arrowUpCircleFill';
 
 export { ArrowUpLineIcon } from './icons/arrowUpLine';
 export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
+export { ArrowUpLineLightIcon } from './icons/arrowUpLineLight';
 
 export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
 export { ArrowUpwardLineLightIcon } from './icons/arrowUpwardLineLight';

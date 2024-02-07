@@ -211,6 +211,8 @@ export { InfoCircleLineIcon } from './icons/infoCircleLine';
 export { InfoCircleFillIcon } from './icons/infoCircleFill';
 
 export { LanguageLineIcon } from './icons/languageLine';
+export { LanguageLineBoldIcon } from './icons/languageLineBold';
+export { LanguageLineLightIcon } from './icons/languageLineLight';
 export { LanguageFillIcon } from './icons/languageFill';
 
 export { LastPageLineIcon } from './icons/lastPageLine';

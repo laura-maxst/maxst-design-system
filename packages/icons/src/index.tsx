@@ -209,6 +209,7 @@ export { FindInPageLineLightIcon } from './icons/findInPageLineLight';
 export { FindInPageFillIcon } from './icons/findInPageFill';
 
 export { FirstPageLineIcon } from './icons/firstPageLine';
+export { FirstPageLineLightIcon } from './icons/firstPageLineLight';
 export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';
 
 export { FloorLineIcon } from './icons/floorLine';

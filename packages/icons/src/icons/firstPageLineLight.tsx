@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FirstPageLineIcon = () => {
+const FirstPageLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -9,15 +9,15 @@ const FirstPageLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_999_111)">
+      <g clipPath="url(#clip0_2751_20499)">
         <path
-          d="M33.76 37.92L19.84 24.02L33.76 10.12L35.44 11.8L23.24 24.02L35.44 36.24L33.76 37.92Z"
+          d="M34.18 37.5L20.7 24.02L34.18 10.54L35.02 11.38L22.38 24.02L35.02 36.66L34.18 37.5Z"
           fill="currentColor"
         />
-        <path d="M15.8 10.02H13.4V38.02H15.8V10.02Z" fill="currentColor" />
+        <path d="M15.2 10.02H14V38.02H15.2V10.02Z" fill="currentColor" />
       </g>
       <defs>
-        <clipPath id="clip0_999_111">
+        <clipPath id="clip0_2751_20499">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -25,4 +25,4 @@ const FirstPageLineIcon = () => {
   );
 };
 
-export { FirstPageLineIcon };
+export { FirstPageLineLightIcon };

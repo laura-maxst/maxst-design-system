@@ -65,6 +65,11 @@ export { ArrowUpLineIcon } from './icons/arrowUpLine';
 export { ArrowUpLineBoldIcon } from './icons/arrowUpLineBold';
 export { ArrowUpLineLightIcon } from './icons/arrowUpLineLight';
 
+export { ArrowUpwardCircleLineIcon } from './icons/arrowUpwardCircleLine';
+export { ArrowUpwardCircleLineLightIcon } from './icons/arrowUpwardCircleLineLight';
+export { ArrowUpwardCircleLineBoldIcon } from './icons/arrowUpwardCircleLineBold';
+export { ArrowUpwardCircleFillIcon } from './icons/arrowUpwardCircleFill';
+
 export { ArrowUpwardLineIcon } from './icons/arrowUpwardLine';
 export { ArrowUpwardLineLightIcon } from './icons/arrowUpwardLineLight';
 export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';

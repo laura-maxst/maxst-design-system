@@ -14,6 +14,11 @@ export { ArrowDownLineIcon } from './icons/arrowDownLine';
 export { ArrowDownLineBoldIcon } from './icons/arrowDownLineBold';
 export { ArrowDownLineLightIcon } from './icons/arrowDownLineLight';
 
+export { ArrowDownwardCircleLineIcon } from './icons/arrowDownwardCircleLine';
+export { ArrowDownwardCircleLineBoldIcon } from './icons/arrowDownwardCircleLineBold';
+export { ArrowDownwardCircleLineLightIcon } from './icons/arrowDownwardCircleLineLight';
+export { ArrowDownwardCircleFillIcon } from './icons/arrowDownwardCircleFill';
+
 export { ArrowDownwardLineIcon } from './icons/arrowDownwardLine';
 export { ArrowDownwardLineLightIcon } from './icons/arrowDownwardLineLight';
 export { ArrowDownwardLineBoldIcon } from './icons/arrowDownwardLineBold';

@@ -237,6 +237,11 @@ export { LayerLineBoldIcon } from './icons/layerLineBold';
 export { LayerLineLightIcon } from './icons/layerLineLight';
 export { LayerFillIcon } from './icons/layerFill';
 
+export { LightModeLineIcon } from './icons/lightModeLine';
+export { LightModeLineBoldIcon } from './icons/lightModeLineBold';
+export { LightModeLineLightIcon } from './icons/lightModeLineLight';
+export { LightModeFillIcon } from './icons/lightModeFill';
+
 export { LinkLineIcon } from './icons/linkLine';
 export { LinkLineBoldIcon } from './icons/linkLineBold';
 export { LinkLightLineIcon } from './icons/linkLineLight';

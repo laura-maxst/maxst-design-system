@@ -402,6 +402,11 @@ export { UserAddLineBoldIcon } from './icons/userAddLineBold';
 export { UserAddLineLightIcon } from './icons/userAddLineLight';
 export { UserAddFillIcon } from './icons/userAddFill';
 
+export { UserCheckLineIcon } from './icons/userCheckLine';
+export { UserCheckLineBoldIcon } from './icons/userCheckLineBold';
+export { UserCheckLineLightIcon } from './icons/userCheckLineLight';
+export { UserCheckFillIcon } from './icons/userCheckFill';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

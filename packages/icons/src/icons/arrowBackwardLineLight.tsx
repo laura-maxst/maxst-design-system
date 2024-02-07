@@ -9,12 +9,17 @@ const ArrowBackwardLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24.8266 8.82661L24 8L8 24L24 40L24.8266 39.1734L10.2377 24.5845H40V23.4155H10.2378L24.8266 8.82661Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1657_22752)">
+        <path
+          d="M23.24 8.42002L22.4 7.58002L5.98 24L22.4 40.42L23.24 39.58L8.28 24.6H42V23.4H8.28L23.24 8.42002Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1657_22752">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

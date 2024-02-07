@@ -9,12 +9,17 @@ const ArrowBackwardLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M25.9894 9.98944L24 8L8 24L24 40L25.9894 38.0106L13.2293 25.2504H40V22.4369H13.5419L25.9894 9.98944Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_547)">
+        <path
+          d="M42 22.4H10.7L23.96 9.13999L21.7 6.85999L4.56 24L21.7 41.14L23.96 38.86L10.68 25.6H42V22.4Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_547">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

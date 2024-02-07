@@ -3,25 +3,26 @@ import React from 'react';
 const MessageLineLightIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M41.4005 8.67999H10.9205L6.56055 13.04V38.58L11.7205 33.42L37.0405 33.48L41.4005 29.12V8.67999ZM36.5605 32.26L11.2405 32.2L7.76055 35.68V13.52L11.4005 9.87999H40.1805V28.62L36.5405 32.28L36.5605 32.26Z"
-        fill="currentColor"
-      />
-      <path
-        d="M34.0004 20.26H32.4004V21.86H34.0004V20.26Z"
-        fill="currentColor"
-      />
-      <path
-        d="M24.8402 20.26H23.2402V21.86H24.8402V20.26Z"
-        fill="currentColor"
-      />
-      <path d="M15.6 20.26H14V21.86H15.6V20.26Z" fill="currentColor" />
+      <g clipPath="url(#clip0_1_493)">
+        <path
+          d="M41.4 10.7H10.92L6.56 15.06V40.6L11.72 35.44L37.04 35.5L41.4 31.14V10.7ZM36.56 34.28L11.24 34.22L7.76 37.7V15.56L11.4 11.92H40.18V30.66L36.54 34.32L36.56 34.28Z"
+          fill="currentColor"
+        />
+        <path d="M34.2 22.08H32.2V24.08H34.2V22.08Z" fill="currentColor" />
+        <path d="M25.04 22.08H23.04V24.08H25.04V22.08Z" fill="currentColor" />
+        <path d="M15.8 22.08H13.8V24.08H15.8V22.08Z" fill="currentColor" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_493">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

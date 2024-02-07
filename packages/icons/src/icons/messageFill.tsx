@@ -3,16 +3,23 @@ import React from 'react';
 const MessageFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M42.0005 8.08002H10.6805L5.98047 12.78V40.02L12.0005 34L37.3205 34.06L42.0405 29.36V8.08002H42.0005ZM16.0005 22.26H13.6005V19.86H16.0005V22.26ZM25.2405 22.26H22.8405V19.86H25.2405V22.26ZM34.4005 22.26H32.0005V19.86H34.4005V22.26Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_499)">
+        <path
+          d="M42 10.1H10.68L5.97998 14.8V42.04L12 36.02L37.32 36.08L42.04 31.38V10.1H42ZM16.4 24.7H13.2V21.5H16.4V24.7ZM25.64 24.7H22.44V21.5H25.64V24.7ZM34.8 24.7H31.6V21.5H34.8V24.7Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_499">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

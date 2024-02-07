@@ -161,6 +161,11 @@ export { FilterLineBoldIcon } from './icons/filterLineBold';
 export { FilterLineLightIcon } from './icons/filterLineLight';
 export { FilterFillIcon } from './icons/filterFill';
 
+export { FilterOffLineIcon } from './icons/filterOffLine';
+export { FilterOffLineBoldIcon } from './icons/filterOffLineBold';
+export { FilterOffLineLightIcon } from './icons/filterOffLineLight';
+export { FilterOffFillIcon } from './icons/filterOffFill';
+
 export { FindInPageLineIcon } from './icons/findInPageLine';
 export { FindInPageLineBoldIcon } from './icons/findInPageLineBold';
 export { FindInPageLineLightIcon } from './icons/findInPageLineLight';

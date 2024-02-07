@@ -417,6 +417,11 @@ export { ThreeDMapLineBoldIcon } from './icons/threeDMapLineBold';
 export { ThreeDMapLineLightIcon } from './icons/threeDMapLineLight';
 export { ThreeDMapFillIcon } from './icons/threeDMapFill';
 
+export { TuneLineIcon } from './icons/tuneLine';
+export { TuneLineBoldIcon } from './icons/tuneLineBold';
+export { TuneLineLightIcon } from './icons/tuneLineLight';
+export { TuneFillIcon } from './icons/tuneFill';
+
 export { UploadCircleLineIcon } from './icons/uploadCircleLine';
 export { UploadCircleLineBoldIcon } from './icons/uploadCircleLineBold';
 export { UploadCircleLineLightIcon } from './icons/uploadCircleLineLight';

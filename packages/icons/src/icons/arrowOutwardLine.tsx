@@ -9,12 +9,17 @@ const ArrowOutwardLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M33.032 34.9412L35.3111 34.9412L35.3111 12.3137L12.6837 12.3138L12.6837 14.5929L31.2413 14.5929L11.7884 34.0458L13.4 35.6574L33.032 16.0254L33.032 34.9412Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_613)">
+        <path
+          d="M13.4 10.36V12.76H33.12L10.3 35.58L12 37.28L34.82 14.46V34.2H37.22V10.36H13.4Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_613">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

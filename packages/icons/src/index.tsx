@@ -6,6 +6,8 @@ export { ArrowBackwardLineLightIcon } from './icons/arrowBackwardLineLight';
 export { ArrowBackwardLineBoldIcon } from './icons/arrowBackwardLineBold';
 
 export { ArrowDownCircleLineIcon } from './icons/arrowDownCircleLine';
+export { ArrowDownCircleLineBoldIcon } from './icons/arrowDownCircleLineBold';
+export { ArrowDownCircleLineLightIcon } from './icons/arrowDownCircleLineLight';
 export { ArrowDownCircleFillIcon } from './icons/arrowDownCircleFill';
 
 export { ArrowDownLineIcon } from './icons/arrowDownLine';

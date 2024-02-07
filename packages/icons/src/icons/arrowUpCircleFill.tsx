@@ -3,18 +3,23 @@ import React from 'react';
 const ArrowUpCircleFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M43.0996 24C43.0996 34.4934 34.593 43 24.0996 43C13.6062 43 5.09961 34.4934 5.09961 24C5.09961 13.5066 13.6062 5 24.0996 5C34.593 5 43.0996 13.5066 43.0996 24ZM33.2502 28.8485L34.9473 27.1515L24.0987 16.3029L13.2502 27.1515L14.9473 28.8485L24.0987 19.697L33.2502 28.8485Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_688)">
+        <path
+          d="M24 3.91998C12.92 3.91998 3.92001 12.92 3.92001 24C3.92001 35.08 12.92 44.08 24 44.08C35.08 44.08 44.08 35.08 44.08 24C44.08 12.92 35.08 3.91998 24 3.91998ZM35.36 28.9L24 17.54L12.64 28.9L10.94 27.2L23.98 14.14L37.04 27.2L35.34 28.9H35.36Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_688">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

@@ -21,6 +21,8 @@ interface textFieldProps {
     onChange?: (e: any) => void;
     renderValue?: string | React.ReactNode | JSX.Element | any;
     readOnly?: boolean;
+    minHeight?: number;
+    maxHeight?: number;
 }
-declare function TextField({ id, type, value, label, placeholder, required, password, state, size, disabled, helperText, resetButton, minLength, maxLength, multiLine, iconLeft, iconRight, onChange, onClick, renderValue, readOnly, ...props }: textFieldProps): JSX.Element;
+declare function TextField({ id, type, value, label, placeholder, required, password, state, size, disabled, helperText, resetButton, minLength, maxLength, multiLine, iconLeft, iconRight, onChange, onClick, renderValue, readOnly, minHeight, maxHeight, ...props }: textFieldProps): JSX.Element;
 export { TextField };

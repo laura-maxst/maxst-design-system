@@ -3,18 +3,23 @@ import React from 'react';
 const StarLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24.0004 2.28857L30.3812 15.2176L44.6492 17.2908L34.3248 27.3546L36.7621 41.565L24.0004 34.8558L11.2387 41.565L13.676 27.3546L3.35156 17.2908L17.6196 15.2176L24.0004 2.28857ZM24.0004 7.7115L19.2133 17.4112L8.50907 18.9666L16.2547 26.5168L14.4262 37.1777L24.0004 32.1443L33.5746 37.1777L31.7461 26.5168L39.4917 18.9666L28.7875 17.4112L24.0004 7.7115Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_381)">
+        <path
+          d="M11.64 42.2L14 28.44L4 18.68L17.82 16.68L24 4.16L30.18 16.68L44 18.68L34 28.42L36.36 42.18L24 35.68L11.64 42.18V42.2ZM24 32.98L33.18 37.8L31.42 27.58L38.84 20.34L28.58 18.84L24 9.54L19.42 18.84L9.16 20.34L16.58 27.58L14.82 37.8L24 32.98Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_381">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

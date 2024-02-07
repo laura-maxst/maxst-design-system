@@ -3,18 +3,23 @@ import React from 'react';
 const StarFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24.0004 2.28857L30.3812 15.2176L44.6492 17.2908L34.3248 27.3546L36.7621 41.565L24.0004 34.8558L11.2387 41.565L13.676 27.3546L3.35156 17.2908L17.6196 15.2176L24.0004 2.28857Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_384)">
+        <path
+          d="M11.64 42.2L14 28.44L4 18.68L17.82 16.68L24 4.16L30.18 16.68L44 18.68L34 28.42L36.36 42.18L24 35.68L11.64 42.18V42.2Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_384">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

@@ -370,6 +370,8 @@ export { SortLineLightIcon } from './icons/sortLineLight';
 export { SortLineBoldIcon } from './icons/sortLineBold';
 
 export { StarLineIcon } from './icons/starLine';
+export { StarLineBoldIcon } from './icons/starLineBold';
+export { StarLineLightIcon } from './icons/starLineLight';
 export { StarFillIcon } from './icons/starFill';
 
 export { SyncLineIcon } from './icons/syncLine';

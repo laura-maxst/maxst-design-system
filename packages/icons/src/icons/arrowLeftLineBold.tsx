@@ -3,16 +3,14 @@ import React from 'react';
 const ArrowLeftLineBoldIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M27.9393 10.9393L30.0607 13.0607L19.1213 24L30.0607 34.9393L27.9393 37.0607L14.8787 24L27.9393 10.9393Z"
+        d="M27.92 38.2L13.74 24L27.92 9.79999L30.2 12.08L18.26 24L30.2 35.92L27.92 38.2Z"
         fill="currentColor"
       />
     </svg>

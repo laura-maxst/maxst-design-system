@@ -3,30 +3,27 @@ import React from 'react';
 const ArrowBackwardCircleLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23.1515 14.1515L24.8485 15.8485L16.697 24L24.8485 32.1515L23.1515 33.8485L13.3029 24L23.1515 14.1515Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M33 24.7501H15V22.3501H33V24.7501Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 40.6C33.1679 40.6 40.6 33.1679 40.6 24C40.6 14.8321 33.1679 7.4 24 7.4C14.8321 7.4 7.4 14.8321 7.4 24C7.4 33.1679 14.8321 40.6 24 40.6ZM24 43C34.4934 43 43 34.4934 43 24C43 13.5066 34.4934 5 24 5C13.5066 5 5 13.5066 5 24C5 34.4934 13.5066 43 24 43Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2751_20162)">
+        <path
+          d="M24 4C12.94 4 3.91998 13 3.91998 24.08C3.91998 35.16 12.92 44.16 24 44.16C35.08 44.16 44.08 35.14 44.08 24.08C44.08 13.02 35.08 4 24 4ZM24 41.76C14.26 41.76 6.31998 33.82 6.31998 24.08C6.31998 14.34 14.26 6.4 24 6.4C33.74 6.4 41.68 14.34 41.68 24.08C41.68 33.82 33.76 41.76 24 41.76Z"
+          fill="currentColor"
+        />
+        <path
+          d="M24.66 13.76L22.96 12.06L11.4 23.62L22.96 35.2L24.66 33.5L15.98 24.82H36.66V22.42H15.98L24.66 13.76Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2751_20162">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

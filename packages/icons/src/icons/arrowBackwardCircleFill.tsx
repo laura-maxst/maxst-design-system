@@ -3,18 +3,23 @@ import React from 'react';
 const ArrowBackwardCircleFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M43 24C43 34.4934 34.4934 43 24 43C13.5066 43 5 34.4934 5 24C5 13.5066 13.5066 5 24 5C34.4934 5 43 13.5066 43 24ZM23.1516 14.1515L24.8486 15.8485L18.347 22.3502H33V24.7502H17.4473L24.8486 32.1515L23.1516 33.8485L13.303 24L23.1516 14.1515Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2751_20167)">
+        <path
+          d="M24 4C12.94 4 3.91998 13 3.91998 24.08C3.91998 35.16 12.92 44.16 24 44.16C35.08 44.16 44.08 35.14 44.08 24.08C44.08 13.02 35.08 4 24 4ZM36.66 24.82H15.98L24.66 33.48L22.96 35.18L11.4 23.62L22.96 12.06L24.66 13.76L16 22.42H36.66V24.82Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2751_20167">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

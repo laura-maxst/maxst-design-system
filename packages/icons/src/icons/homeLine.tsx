@@ -3,16 +3,23 @@ import React from 'react';
 const HomeLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M35.2596 44H25.5796V30.56H22.5196V39.3L17.8196 44H8.05957V22L24.0196 6.04004L39.9796 22V39.3L35.2796 44H35.2596ZM27.9796 41.6H34.2596L37.5596 38.3V22.98L23.9996 9.42004L10.4396 22.98V41.6H16.7996L20.0996 38.3V28.16H27.9596V41.6H27.9796Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_152)">
+        <path
+          d="M35.26 42.74H25.8V29.3H22.2V38.04L17.5 42.74H8.03999V20.74L24 4.78L39.96 20.74V38.04L35.26 42.74ZM28.2 40.34H34.26L37.56 37.04V21.72L24 8.16L10.44 21.72V40.34H16.5L19.8 37.04V26.9H28.2V40.34Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_152">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

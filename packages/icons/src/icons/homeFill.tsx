@@ -3,16 +3,23 @@ import React from 'react';
 const HomeFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M35.2596 44H25.5796V30.56H22.5196V39.3L17.8196 44H8.05957V22L24.0196 6.04004L39.9796 22V39.3L35.2796 44H35.2596Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_160)">
+        <path
+          d="M24 4.75999L8.03999 20.72V42.74H16.92L21.62 38.04V28.4H26.42V42.74H35.26L39.96 38.04V20.72L24 4.75999Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_160">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

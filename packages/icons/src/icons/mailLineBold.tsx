@@ -9,18 +9,17 @@ const MailLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 14.7426V36H36.2574L39 33.2574V12H11.7426L9 14.7426ZM10.5 9L6 13.5V39H37.5L42 34.5V9H10.5Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23.9967 23.9451L39.473 9.40674L41.527 11.5933L24.0033 28.0549L7.97653 13.0966L10.0235 10.9034L23.9967 23.9451Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_816_420)">
+        <path
+          d="M42.46 10.58H5.52002V37.38L42.46 37.44V10.58ZM37.08 34.22L10.86 34.18L17.12 27.92L14.86 25.66L8.72002 31.8V15.6L23.94 30.82L39.24 15.52V31.88L33.02 25.64L30.76 27.9L37.08 34.22ZM11.44 13.78H36.48L23.96 26.3L11.44 13.78Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_816_420">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

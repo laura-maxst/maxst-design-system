@@ -336,6 +336,8 @@ export { RouteLineBoldIcon } from './icons/routeLineBold';
 export { RouteLineLightIcon } from './icons/routeLineLight';
 
 export { SearchLineIcon } from './icons/searchLine';
+export { SearchLineBoldIcon } from './icons/searchLineBold';
+export { SearchLineLightIcon } from './icons/searchLineLight';
 
 export { SelectAreaLineIcon } from './icons/selectAreaLine';
 export { SelectAreaLineBoldIcon } from './icons/selectAreaLineBold';

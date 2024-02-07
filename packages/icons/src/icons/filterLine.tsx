@@ -9,12 +9,17 @@ const FilterLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M10.8749 6.48945H41.919L41.9177 11.8483L29.5441 23.9164V37.2153L25.1982 41.5103H18.8943V23.9165L6.01093 11.353L10.8749 6.48945ZM11.8689 8.88945L9.42658 11.3316L21.2943 22.9046V39.1103H24.2123L27.1441 36.2129V22.9047L39.518 10.8363L39.5185 8.88945H11.8689Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2748_9492)">
+        <path
+          d="M24.6 41.9H19.02V25.38L7.07999 13.44V8H40.92V13.44L29.06 25.42V37.44L24.6 41.9ZM21.42 39.5H23.6L26.64 36.46V24.44L38.5 12.46V10.4H9.47999V12.46L21.42 24.4V39.5Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2748_9492">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

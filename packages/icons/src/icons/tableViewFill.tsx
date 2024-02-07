@@ -9,12 +9,26 @@ const TableViewFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M42 6H10.25L6 10.0078V18H42V6ZM22.5 21.5H6V30H22.5V21.5ZM6 33.5H22.5V42H6V33.5ZM42 21.5H25.5V30H42V21.5ZM25.5 33.5H42V38L37.7812 42H25.5V33.5Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2746_8792)">
+        <path d="M40.22 28.64H20.1V19.34H40.22V28.64Z" fill="currentColor" />
+        <path
+          d="M40.22 17.1H7.78003V7.78H40.22V17.08V17.1Z"
+          fill="currentColor"
+        />
+        <path d="M17.32 28.64H7.78003V19.34H17.32V28.64Z" fill="currentColor" />
+        <path d="M17.32 40.22H7.78003V30.92H17.32V40.22Z" fill="currentColor" />
+        <path d="M40.22 40.22H20.1V30.92H40.22V40.22Z" fill="currentColor" />
+      </g>
+      <defs>
+        <clipPath id="clip0_2746_8792">
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            transform="matrix(-1 0 0 1 48 0)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

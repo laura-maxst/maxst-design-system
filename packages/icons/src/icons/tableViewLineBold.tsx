@@ -9,12 +9,38 @@ const TableViewLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M42 6H10.2496L6 10.289V17V20V28V31V42H22.5H25.5H37.7599L42 37.7796V31V28V20V17V6ZM25.5 39H36.5214L39 36.5329V31H25.5V39ZM25.5 28H39V20H25.5V28ZM22.5 20V28H9V20H22.5ZM22.5 17H25.5H39V9H11.5004L9 11.5235V17H22.5ZM22.5 31V39H9V31H22.5Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2746_8778)">
+        <path
+          d="M19.64 29.38H40.62V18.62H19.64V29.38ZM22.84 21.82H37.42V26.18H22.84V21.82Z"
+          fill="currentColor"
+        />
+        <path
+          d="M7.38 7.38V17.12H40.62V7.38H7.38ZM37.42 13.92H10.58V10.58H37.42V13.92Z"
+          fill="currentColor"
+        />
+        <path
+          d="M7.38 29.38H17.34V18.62H7.38V29.38ZM10.58 21.82H14.14V26.18H10.58V21.82Z"
+          fill="currentColor"
+        />
+        <path
+          d="M7.38 40.62H17.34V30.88H7.38V40.62ZM10.58 34.08H14.14V37.42H10.58V34.08Z"
+          fill="currentColor"
+        />
+        <path
+          d="M19.64 40.62H40.62V30.88H19.64V40.62ZM22.84 34.08H37.42V37.42H22.84V34.08Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2746_8778">
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            transform="matrix(-1 0 0 1 48 0)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

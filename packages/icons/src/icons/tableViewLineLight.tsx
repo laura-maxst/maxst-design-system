@@ -9,12 +9,38 @@ const TableViewLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M41.9995 5.9996H10.2535L5.99951 10.2025V41.9996H23.3996V42H24.5996V41.9996H37.768L41.9995 38.0416V30.0994H42V28.8994H41.9995V18.2H42V17H41.9995V5.9996ZM24.5996 40.7996H37.2943L40.7995 37.5209V30.0994H24.5996V40.7996ZM24.5996 28.8994H40.7995V18.2H24.5996V28.8994ZM23.3996 18.2V28.8994H7.19951V18.2H23.3996ZM23.3996 17H24.5996H40.7995V7.1996H10.7463L7.19951 10.7038V17H23.3996ZM23.3996 30.0994V40.7996H7.19951V30.0994H23.3996Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2746_8785)">
+        <path
+          d="M39.62 28.6H19.64V19.4H39.62V28.6ZM20.82 27.4H38.4V20.6H20.82V27.4Z"
+          fill="currentColor"
+        />
+        <path
+          d="M39.62 16.5H8.38V8.4H39.62V16.5ZM9.58 15.3H38.42V9.6H9.58V15.3Z"
+          fill="currentColor"
+        />
+        <path
+          d="M16.72 28.6H8.38V19.4H16.72V28.6ZM9.58 27.4H15.52V20.6H9.58V27.4Z"
+          fill="currentColor"
+        />
+        <path
+          d="M16.72 39.62H8.38V31.52H16.72V39.62ZM9.58 38.42H15.52V32.72H9.58V38.42Z"
+          fill="currentColor"
+        />
+        <path
+          d="M39.62 39.62H19.64V31.52H39.62V39.62ZM20.82 38.42H38.4V32.72H20.82V38.42Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2746_8785">
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            transform="matrix(-1 0 0 1 48 0)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

@@ -397,6 +397,10 @@ export { SortLineIcon } from './icons/sortLine';
 export { SortLineLightIcon } from './icons/sortLineLight';
 export { SortLineBoldIcon } from './icons/sortLineBold';
 
+export { SortZtoALineIcon } from './icons/sortZtoALine';
+export { SortZtoALineLightIcon } from './icons/sortZtoALineLight';
+export { SortZtoALineBoldIcon } from './icons/sortZtoALineBold';
+
 export { StarLineIcon } from './icons/starLine';
 export { StarLineBoldIcon } from './icons/starLineBold';
 export { StarLineLightIcon } from './icons/starLineLight';

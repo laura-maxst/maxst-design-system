@@ -389,6 +389,10 @@ export { SmartGlassesLineIcon } from './icons/smartGlassesLine';
 export { SmartGlassesLineBoldIcon } from './icons/smartGlassesLineBold';
 export { SmartGlassesLineLightIcon } from './icons/smartGlassesLineLight';
 
+export { SortAtoZLineIcon } from './icons/sortAtoZLine';
+export { SortAtoZLineLightIcon } from './icons/sortAtoZLineLight';
+export { SortAtoZLineBoldIcon } from './icons/sortAtoZLineBold';
+
 export { SortLineIcon } from './icons/sortLine';
 export { SortLineLightIcon } from './icons/sortLineLight';
 export { SortLineBoldIcon } from './icons/sortLineBold';

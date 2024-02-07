@@ -85,6 +85,11 @@ export { CurrencyLineBoldIcon } from './icons/currencyLineBold';
 export { CurrencyLineLightIcon } from './icons/currencyLineLight';
 export { CurrencyFillIcon } from './icons/currencyFill';
 
+export { DarkModeLineIcon } from './icons/darkModeLine';
+export { DarkModeLineBoldIcon } from './icons/darkModeLineBold';
+export { DarkModeLineLightIcon } from './icons/darkModeLineLight';
+export { DarkModeFillIcon } from './icons/darkModeFill';
+
 export { DeleteLineIcon } from './icons/deleteLine';
 export { DeleteLineBoldIcon } from './icons/deleteLineBold';
 export { DeleteLineLightIcon } from './icons/deleteLineLight';

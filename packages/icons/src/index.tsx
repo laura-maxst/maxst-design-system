@@ -407,6 +407,11 @@ export { UserCheckLineBoldIcon } from './icons/userCheckLineBold';
 export { UserCheckLineLightIcon } from './icons/userCheckLineLight';
 export { UserCheckFillIcon } from './icons/userCheckFill';
 
+export { UserGroupLineIcon } from './icons/userGroupLine';
+export { UserGroupLineBoldIcon } from './icons/userGroupLineBold';
+export { UserGroupLineLightIcon } from './icons/userGroupLineLight';
+export { UserGroupFillIcon } from './icons/userGroupFill';
+
 export { UserLineIcon } from './icons/userLine';
 export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';

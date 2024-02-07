@@ -449,10 +449,10 @@ export { ViewInArLineBoldIcon } from './icons/viewInArLineBold';
 export { ViewInArLineLightIcon } from './icons/viewInArLineLight';
 export { ViewInArFillIcon } from './icons/viewInArFill';
 
-export { ViewOffFillIcon } from './icons/viewOffFill';
-export { ViewOffFillBoldIcon } from './icons/viewOffFillBold';
 export { ViewOffLineIcon } from './icons/viewOffLine';
+export { ViewOffLineLightIcon } from './icons/viewOffLineLight';
 export { ViewOffLineBoldIcon } from './icons/viewOffLineBold';
+export { ViewOffFillIcon } from './icons/viewOffFill';
 
 export { VpsLineIcon } from './icons/vpsLine';
 export { VpsLineBoldIcon } from './icons/vpsLineBold';

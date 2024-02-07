@@ -295,6 +295,11 @@ export { NotificationCheckLineBoldIcon } from './icons/notificationCheckLineBold
 export { NotificationCheckLineLightIcon } from './icons/notificationCheckLineLight';
 export { NotificationCheckFillIcon } from './icons/notificationCheckFill';
 
+export { NotificationCircleLineIcon } from './icons/notificationCircleLine';
+export { NotificationCircleLineBoldIcon } from './icons/notificationCircleLineBold';
+export { NotificationCircleLineLightIcon } from './icons/notificationCircleLineLight';
+export { NotificationCircleFillIcon } from './icons/notificationCircleFill';
+
 export { NotificationLineIcon } from './icons/notificationLine';
 export { NotificationLineBoldIcon } from './icons/notificationLineBold';
 export { NotificationLineLightIcon } from './icons/notificationLineLight';

@@ -216,7 +216,10 @@ export { LanguageFillIcon } from './icons/languageFill';
 export { LastPageLineIcon } from './icons/lastPageLine';
 export { LastPageLineBoldIcon } from './icons/lastPageLineBold';
 
-export { ListLineIcon } from './icons/listLine';
+export { ListViewLineIcon } from './icons/listViewLine';
+export { ListViewLineBoldIcon } from './icons/listViewLineBold';
+export { ListViewLineLightIcon } from './icons/listViewLineLight';
+export { ListViewFillIcon } from './icons/listViewFill';
 
 export { LocationLineIcon } from './icons/locationLine';
 export { LocationLineBoldIcon } from './icons/locationLineBold';

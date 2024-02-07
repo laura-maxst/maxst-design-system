@@ -345,6 +345,8 @@ export { OptimizationLineLightIcon } from './icons/optimizationLineLight';
 export { OptimizationFillIcon } from './icons/optimizationFill';
 
 export { PlayCircleLineIcon } from './icons/playCircleLine';
+export { PlayCircleLineBoldIcon } from './icons/playCircleLineBold';
+export { PlayCircleLineLightIcon } from './icons/playCircleLineLight';
 export { PlayCircleFillIcon } from './icons/playCircleFill';
 
 export { PlayLineIcon } from './icons/playLine';

@@ -184,11 +184,13 @@ export { FolderLineBoldIcon } from './icons/folderLineBold';
 export { FolderLineLightIcon } from './icons/folderLineLight';
 export { FolderFillIcon } from './icons/folderFill';
 
-export { FullScreenExitLineIcon } from './icons/fullScreenExitLine';
-
 export { FullScreenLineIcon } from './icons/fullScreenLine';
 export { FullScreenLineBoldIcon } from './icons/fullScreenLineBold';
 export { FullScreenLineLightIcon } from './icons/fullScreenLineLight';
+
+export { FullScreenOffLineIcon } from './icons/fullScreenOffLine';
+export { FullScreenOffLineBoldIcon } from './icons/fullScreenOffLineBold';
+export { FullScreenOffLineLightIcon } from './icons/fullScreenOffLineLight';
 
 export { GridViewLineIcon } from './icons/gridViewLine';
 export { GridViewLineBoldIcon } from './icons/gridViewLineBold';

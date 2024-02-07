@@ -296,6 +296,7 @@ export { NotificationLineLightIcon } from './icons/notificationLineLight';
 export { NotificationFillIcon } from './icons/notificationFill';
 
 export { NotificationOffLineIcon } from './icons/notificationOffLine';
+export { NotificationOffLineLightIcon } from './icons/notificationOffLineLight';
 export { NotificationOffLineBoldIcon } from './icons/notificationOffLineBold';
 export { NotificationOffFillIcon } from './icons/notificationOffFill';
 

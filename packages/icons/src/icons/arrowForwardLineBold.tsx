@@ -9,12 +9,22 @@ const ArrowForwardLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M22.0106 9.98944L24 8L40 24L24 40L22.0106 38.0106L34.6144 25.4067H7.99999V22.5932H34.6144L22.0106 9.98944Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_589)">
+        <path
+          d="M26.3 6.85999L24.04 9.13999L37.3 22.4H6V25.6H37.32L24.04 38.86L26.3 41.14L43.44 24L26.3 6.85999Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_589">
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            transform="matrix(1 0 0 -1 0 48)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

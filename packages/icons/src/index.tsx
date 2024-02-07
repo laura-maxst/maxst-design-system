@@ -314,6 +314,8 @@ export { PlusLineIcon } from './icons/plusLine';
 export { PlusLineBoldIcon } from './icons/plusLineBold';
 
 export { ProfileLineIcon } from './icons/profileLine';
+export { ProfileLineBoldIcon } from './icons/profileLineBold';
+export { ProfileLineLightIcon } from './icons/profileLineLight';
 export { ProfileFillIcon } from './icons/profileFill';
 
 export { ProgressCircleLineIcon } from './icons/progressCircleLine';

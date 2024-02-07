@@ -3,18 +3,26 @@ import React from 'react';
 const DeleteLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M19.4597 4.02002H28.5397V6.42002H19.4597V4.02002ZM39.76 9.06003H12.94L8.23999 13.76V17.8H34.48V38.3L31.18 41.6H13.52V20.38H11.12V44H32.18L36.88 39.3V17.8H39.76V9.06003ZM37.36 15.4H10.64V14.76L13.94 11.46H37.36V15.4ZM18.5798 22.14H20.9798V37.28H18.5798V22.14ZM27.0203 22.14H29.4203V37.28H27.0203V22.14Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_197)">
+        <path d="M20.98 22.14H18.58V37.28H20.98V22.14Z" fill="currentColor" />
+        <path d="M29.42 22.14H27.02V37.28H29.42V22.14Z" fill="currentColor" />
+        <path
+          d="M39.98 8.84H12.72L8.02002 13.54V18H34.5V38.32L31.2 41.62H13.52V20.42H11.12V44.02H32.18L36.88 39.32V18.02H39.98V8.86V8.84ZM37.58 15.58H10.42V14.52L13.72 11.22H37.6V15.58H37.58Z"
+          fill="currentColor"
+        />
+        <path d="M28.54 4.02H19.46V6.42H28.54V4.02Z" fill="currentColor" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_197">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

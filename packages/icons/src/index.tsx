@@ -624,6 +624,11 @@ export { UploadPdfLineBoldIcon } from './icons/uploadPdfLineBold';
 export { UploadPdfLineLightIcon } from './icons/uploadPdfLineLight';
 export { UploadPdfFillIcon } from './icons/uploadPdfFill';
 
+export { UploadZipLineIcon } from './icons/uploadZipLine';
+export { UploadZipLineBoldIcon } from './icons/uploadZipLineBold';
+export { UploadZipLineLightIcon } from './icons/uploadZipLineLight';
+export { UploadZipFillIcon } from './icons/uploadZipFill';
+
 export { UserAddLineIcon } from './icons/userAddLine';
 export { UserAddLineBoldIcon } from './icons/userAddLineBold';
 export { UserAddLineLightIcon } from './icons/userAddLineLight';

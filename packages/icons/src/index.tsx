@@ -418,6 +418,11 @@ export { PlusLineIcon } from './icons/plusLine';
 export { PlusLineLightIcon } from './icons/plusLineLight';
 export { PlusLineBoldIcon } from './icons/plusLineBold';
 
+export { PrivacyLineIcon } from './icons/privacyLine';
+export { PrivacyLineBoldIcon } from './icons/privacyLineBold';
+export { PrivacyLineLightIcon } from './icons/privacyLineLight';
+export { PrivacyFillIcon } from './icons/privacyFill';
+
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileLineBoldIcon } from './icons/profileLineBold';
 export { ProfileLineLightIcon } from './icons/profileLineLight';

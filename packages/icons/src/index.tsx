@@ -462,6 +462,10 @@ export { SaveCircleLineBoldIcon } from './icons/saveCircleLineBold';
 export { SaveCircleLineLightIcon } from './icons/saveCircleLineLight';
 export { SaveCircleFillIcon } from './icons/saveCircleFill';
 
+export { SaveLineIcon } from './icons/saveLine';
+export { SaveLineBoldIcon } from './icons/saveLineBold';
+export { SaveLineLightIcon } from './icons/saveLineLight';
+
 export { SearchLineIcon } from './icons/searchLine';
 export { SearchLineBoldIcon } from './icons/searchLineBold';
 export { SearchLineLightIcon } from './icons/searchLineLight';

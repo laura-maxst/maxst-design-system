@@ -170,6 +170,11 @@ export { DocUploadBoldLineIcon } from './icons/docUploadLineBold';
 export { DocUploadLineLightIcon } from './icons/docUploadLineLight';
 export { DocUploadFillIcon } from './icons/docUploadFill';
 
+export { DownloadBinLineIcon } from './icons/downloadBinLine';
+export { DownloadBinLineBoldIcon } from './icons/downloadBinLineBold';
+export { DownloadBinLineLightIcon } from './icons/downloadBinLineLight';
+export { DownloadBinFillIcon } from './icons/downloadBinFill';
+
 export { DownloadCircleLineIcon } from './icons/downloadCircleLine';
 export { DownloadCircleLineBoldIcon } from './icons/downloadCircleLineBold';
 export { DownloadCircleLineLightIcon } from './icons/downloadCircleLineLight';

@@ -143,6 +143,11 @@ export { DocumentLineBoldIcon } from './icons/documentLineBold';
 export { DocumentLineLightIcon } from './icons/documentLineLight';
 export { DocumentFillIcon } from './icons/documentFill';
 
+export { DownloadCircleLineIcon } from './icons/downloadCircleLine';
+export { DownloadCircleLineBoldIcon } from './icons/downloadCircleLineBold';
+export { DownloadCircleLineLightIcon } from './icons/downloadCircleLineLight';
+export { DownloadCircleFillIcon } from './icons/downloadCircleFill';
+
 export { DownloadLineIcon } from './icons/downloadLine';
 
 export { EditLineIcon } from './icons/editLine';

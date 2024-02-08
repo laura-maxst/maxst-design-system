@@ -428,6 +428,11 @@ export { PrivacyLineBoldIcon } from './icons/privacyLineBold';
 export { PrivacyLineLightIcon } from './icons/privacyLineLight';
 export { PrivacyFillIcon } from './icons/privacyFill';
 
+export { PrivacySecurityLineIcon } from './icons/privacySecurityLine';
+export { PrivacySecurityLineBoldIcon } from './icons/privacySecurityLineBold';
+export { PrivacySecurityLineLightIcon } from './icons/privacySecurityLineLight';
+export { PrivacySecurityFillIcon } from './icons/privacySecurityFill';
+
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileLineBoldIcon } from './icons/profileLineBold';
 export { ProfileLineLightIcon } from './icons/profileLineLight';

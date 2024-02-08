@@ -198,6 +198,11 @@ export { FileMp4LineBoldIcon } from './icons/fileMp4LineBold';
 export { FileMp4LineLightIcon } from './icons/fileMp4LineLight';
 export { FileMp4FillIcon } from './icons/fileMp4Fill';
 
+export { FilePdfLineIcon } from './icons/filePdfLine';
+export { FilePdfLineBoldIcon } from './icons/filePdfLineBold';
+export { FilePdfLineLightIcon } from './icons/filePdfLineLight';
+export { FilePdfFillIcon } from './icons/filePdfFill';
+
 export { FilePlyLineIcon } from './icons/filePlyLine';
 export { FilePlyLineBoldIcon } from './icons/filePlyLineBold';
 export { FilePlyLineLightIcon } from './icons/filePlyLineLight';

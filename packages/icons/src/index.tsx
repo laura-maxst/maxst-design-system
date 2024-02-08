@@ -352,6 +352,7 @@ export { MobileFillIcon } from './icons/mobileFill';
 export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
 
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
+export { MoreVerticalLineLightIcon } from './icons/moreVerticalLineLight';
 
 export { MyLocationLineIcon } from './icons/myLocationLine';
 export { MyLocationLineBoldIcon } from './icons/myLocationLineBold';

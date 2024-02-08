@@ -619,6 +619,11 @@ export { UploadLineIcon } from './icons/uploadLine';
 export { UploadLineBoldIcon } from './icons/uploadLineBold';
 export { UploadLineLightIcon } from './icons/uploadLineLight';
 
+export { UploadMp4LineIcon } from './icons/uploadMp4Line';
+export { UploadMp4LineBoldIcon } from './icons/uploadMp4LineBold';
+export { UploadMp4LineLightIcon } from './icons/uploadMp4LineLight';
+export { UploadMp4FillIcon } from './icons/uploadMp4Fill';
+
 export { UploadPdfLineIcon } from './icons/uploadPdfLine';
 export { UploadPdfLineBoldIcon } from './icons/uploadPdfLineBold';
 export { UploadPdfLineLightIcon } from './icons/uploadPdfLineLight';

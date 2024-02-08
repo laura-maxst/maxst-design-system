@@ -350,6 +350,7 @@ export { MobileLineLightIcon } from './icons/mobileLineLight';
 export { MobileFillIcon } from './icons/mobileFill';
 
 export { MoreHorizontalLineIcon } from './icons/moreHorizontalLine';
+export { MoreHorizontalLineLightIcon } from './icons/moreHorizontalLineLight';
 
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
 export { MoreVerticalLineLightIcon } from './icons/moreVerticalLineLight';

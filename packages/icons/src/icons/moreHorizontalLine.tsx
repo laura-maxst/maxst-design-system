@@ -3,24 +3,22 @@ import React from 'react';
 const MoreHorizontalLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M33.7021 21.4468L33.7021 26.5532L38.8085 26.5532L38.8085 21.4468L33.7021 21.4468Z"
-        fill="currentColor"
-      />
-      <path
-        d="M21.4464 21.4468L21.4464 26.5532L26.5527 26.5532L26.5527 21.4468L21.4464 21.4468Z"
-        fill="currentColor"
-      />
-      <path
-        d="M9.19148 21.4468L9.19148 26.5532L14.2979 26.5532L14.2979 21.4468L9.19148 21.4468Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_410)">
+        <path d="M34.24 21.3V26.7H39.64V21.3H34.24Z" fill="currentColor" />
+        <path d="M21.3 21.3V26.7H26.68V21.3H21.3Z" fill="currentColor" />
+        <path d="M8.35999 21.3V26.7H13.76V21.3H8.35999Z" fill="currentColor" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_410">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

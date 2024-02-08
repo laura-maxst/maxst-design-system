@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LastPageLineIcon = () => {
+const LastPageLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -9,15 +9,15 @@ const LastPageLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_999_152)">
+      <g clipPath="url(#clip0_2751_20610)">
         <path
-          d="M14.24 37.92L12.54 36.24L24.74 24.02L12.54 11.8L14.24 10.12L28.14 24.02L14.24 37.92Z"
+          d="M13.8 37.5L12.96 36.66L25.6 24.02L12.96 11.38L13.8 10.54L27.3 24.02L13.8 37.5Z"
           fill="currentColor"
         />
-        <path d="M34.58 10.02H32.18V38.02H34.58V10.02Z" fill="currentColor" />
+        <path d="M33.98 10.02H32.78V38.02H33.98V10.02Z" fill="currentColor" />
       </g>
       <defs>
-        <clipPath id="clip0_999_152">
+        <clipPath id="clip0_2751_20610">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -25,4 +25,4 @@ const LastPageLineIcon = () => {
   );
 };
 
-export { LastPageLineIcon };
+export { LastPageLineLightIcon };

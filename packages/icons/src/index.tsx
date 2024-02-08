@@ -263,6 +263,7 @@ export { LanguageLineLightIcon } from './icons/languageLineLight';
 export { LanguageFillIcon } from './icons/languageFill';
 
 export { LastPageLineIcon } from './icons/lastPageLine';
+export { LastPageLineLightIcon } from './icons/lastPageLineLight';
 export { LastPageLineBoldIcon } from './icons/lastPageLineBold';
 
 export { LayerHorizontalLineIcon } from './icons/layerHorizontalLine';

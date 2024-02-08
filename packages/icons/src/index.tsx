@@ -247,6 +247,8 @@ export { HeartLineLightIcon } from './icons/heartLineLight';
 export { HeartFillIcon } from './icons/heartFill';
 
 export { HelpCircleLineIcon } from './icons/helpCircleLine';
+export { HelpCircleLineBoldIcon } from './icons/helpCircleLineBold';
+export { HelpCircleLineLightIcon } from './icons/helpCircleLineLight';
 export { HelpCircleFillIcon } from './icons/helpCircleFill';
 
 export { HomeLineIcon } from './icons/homeLine';

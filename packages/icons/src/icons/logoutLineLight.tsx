@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoginLineIcon = () => {
+const LogoutLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -9,18 +9,18 @@ const LoginLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_1_307)">
+      <g clipPath="url(#clip0_2751_20677)">
         <path
-          d="M24 8.4H39.6V36.3L36.3 39.6H24V42H37.3L42 37.3V6H24V8.4Z"
+          d="M7.79998 11.46L11.44 7.79998H24V6.59998H10.96L6.59998 10.96V41.4H24V40.2H7.79998V11.46Z"
           fill="currentColor"
         />
         <path
-          d="M23.68 14.1L21.98 15.8L28.98 22.8H6V25.2H28.98L21.98 32.2L23.68 33.9L33.58 24L23.68 14.1Z"
+          d="M30.76 15.38L38.78 23.4H14.42V24.6H38.78L30.76 32.62L31.62 33.48L41.08 24L31.62 14.54L30.76 15.38Z"
           fill="currentColor"
         />
       </g>
       <defs>
-        <clipPath id="clip0_1_307">
+        <clipPath id="clip0_2751_20677">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -28,4 +28,4 @@ const LoginLineIcon = () => {
   );
 };
 
-export { LoginLineIcon };
+export { LogoutLineLightIcon };

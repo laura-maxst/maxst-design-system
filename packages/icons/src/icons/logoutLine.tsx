@@ -3,30 +3,27 @@ import React from 'react';
 const LogoutLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M13.5239 6.79999H24.9998V9.19999H14.4757L10.1998 13.2244V38.8H24.9998V41.2H7.7998V12.1874L13.5239 6.79999Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M31.8484 15.1515L30.1514 16.8485L37.3028 24L30.1514 31.1515L31.8484 32.8485L40.697 24L31.8484 15.1515Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M17 23L39 23L39 25.4L17 25.4L17 23Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_332)">
+        <path
+          d="M8.4 11.7L11.7 8.4H24V6H10.7L6 10.7V42H24V39.6H8.4V11.7Z"
+          fill="currentColor"
+        />
+        <path
+          d="M30.34 15.8L37.34 22.8H14.42V25.2H37.34L30.34 32.2L32.04 33.9L41.94 24L32.04 14.1L30.34 15.8Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_332">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

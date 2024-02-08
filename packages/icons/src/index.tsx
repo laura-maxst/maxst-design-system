@@ -305,8 +305,12 @@ export { LockOpenLineLightIcon } from './icons/lockOpenLineLight';
 export { LockOpenFillIcon } from './icons/lockOpenFill';
 
 export { LoginLineIcon } from './icons/loginLine';
+export { LoginLineBoldIcon } from './icons/loginLineBold';
+export { LoginLineLightIcon } from './icons/loginLineLight';
 
 export { LogoutLineIcon } from './icons/logoutLine';
+export { LogoutLineBoldIcon } from './icons/logoutLineBold';
+export { LogoutLineLightIcon } from './icons/logoutLineLight';
 
 export { MailLineIcon } from './icons/mailLine';
 export { MailLineBoldIcon } from './icons/mailLineBold';

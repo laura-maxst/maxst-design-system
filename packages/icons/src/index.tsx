@@ -151,6 +151,8 @@ export { DownloadCircleLineLightIcon } from './icons/downloadCircleLineLight';
 export { DownloadCircleFillIcon } from './icons/downloadCircleFill';
 
 export { DownloadLineIcon } from './icons/downloadLine';
+export { DownloadLineBoldIcon } from './icons/downloadLineBold';
+export { DownloadLineLightIcon } from './icons/downloadLineLight';
 
 export { EditLineIcon } from './icons/editLine';
 export { EditLineBoldIcon } from './icons/editLineBold';

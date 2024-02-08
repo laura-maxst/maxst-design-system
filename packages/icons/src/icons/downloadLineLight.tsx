@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DownloadLineIcon = () => {
+const DownloadLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -9,15 +9,15 @@ const DownloadLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_1_343)">
+      <g clipPath="url(#clip0_2758_30150)">
         <path
-          d="M25.16 32.62V6H22.76V32.62L13.08 22.92L11.38 24.62L23.98 37.22L36.56 24.62L34.86 22.92L25.16 32.62Z"
+          d="M24.56 34.08V6H23.38V34.08L12.64 23.36L11.8 24.2L23.98 36.36L36.14 24.2L35.3 23.36L24.56 34.08Z"
           fill="currentColor"
         />
-        <path d="M34.72 39.62H13.36V42.02H34.72V39.62Z" fill="currentColor" />
+        <path d="M34.72 40.22H13.36V41.42H34.72V40.22Z" fill="currentColor" />
       </g>
       <defs>
-        <clipPath id="clip0_1_343">
+        <clipPath id="clip0_2758_30150">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -25,4 +25,4 @@ const DownloadLineIcon = () => {
   );
 };
 
-export { DownloadLineIcon };
+export { DownloadLineLightIcon };

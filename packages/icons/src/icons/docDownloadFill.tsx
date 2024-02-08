@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DocumentDownloadFillIcon = () => {
+const DocDownloadFillIcon = () => {
   return (
     <svg
       width="48"
@@ -29,4 +29,4 @@ const DocumentDownloadFillIcon = () => {
   );
 };
 
-export { DocumentDownloadFillIcon };
+export { DocDownloadFillIcon };

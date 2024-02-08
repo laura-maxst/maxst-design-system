@@ -140,10 +140,10 @@ export { DigitalTwinLineBoldIcon } from './icons/digitalTwinLineBold';
 export { DigitalTwinLineLightIcon } from './icons/digitalTwinLineLight';
 export { DigitalTwinFillIcon } from './icons/digitalTwinFill';
 
-export { DocumentDownloadLineIcon } from './icons/documentDownloadLine';
-export { DocumentDownloadBoldLineIcon } from './icons/documentDownloadLineBold';
-export { DocumentDownloadLineLightIcon } from './icons/documentDownloadLineLight';
-export { DocumentDownloadFillIcon } from './icons/documentDownloadFill';
+export { DocDownloadLineIcon } from './icons/docDownloadLine';
+export { DocDownloadBoldLineIcon } from './icons/docDownloadLineBold';
+export { DocDownloadLineLightIcon } from './icons/docDownloadLineLight';
+export { DocDownloadFillIcon } from './icons/docDownloadFill';
 
 export { DocumentLineIcon } from './icons/documentLine';
 export { DocumentLineBoldIcon } from './icons/documentLineBold';

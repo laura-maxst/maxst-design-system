@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OpenInNewLineIcon = () => {
+const OpenInNewLineBoldIcon = () => {
   return (
     <svg
       width="48"
@@ -9,18 +9,18 @@ const OpenInNewLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_1_354)">
+      <g clipPath="url(#clip0_2751_20637)">
         <path
-          d="M34.08 39.6H8.4V17.02L11.5 13.92H22.68V11.52H10.52L6 16.02V42H36.48V25.32H34.08V39.6Z"
+          d="M33.68 39.2H8.79998V17.18L11.68 14.32H22.68V11.12H10.34L5.59998 15.86V42.4H36.88V25.32H33.68V39.2Z"
           fill="currentColor"
         />
         <path
-          d="M26 10.4H35.9L15.16 31.16L16.84 32.84L37.6 12.1V22H40V8H26V10.4Z"
+          d="M26 7.59998V10.8H34.94L14.86 30.86L17.14 33.14L37.2 13.08V22H40.4V7.59998H26Z"
           fill="currentColor"
         />
       </g>
       <defs>
-        <clipPath id="clip0_1_354">
+        <clipPath id="clip0_2751_20637">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -28,4 +28,4 @@ const OpenInNewLineIcon = () => {
   );
 };
 
-export { OpenInNewLineIcon };
+export { OpenInNewLineBoldIcon };

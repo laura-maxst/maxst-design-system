@@ -372,6 +372,8 @@ export { NotificationOffLineBoldIcon } from './icons/notificationOffLineBold';
 export { NotificationOffFillIcon } from './icons/notificationOffFill';
 
 export { OpenInNewLineIcon } from './icons/openInNewLine';
+export { OpenInNewLineBoldIcon } from './icons/openInNewLineBold';
+export { OpenInNewLineLightIcon } from './icons/openInNewLineLight';
 
 export { OptimizationLineIcon } from './icons/optimizationLine';
 export { OptimizationLineBoldIcon } from './icons/optimizationLineBold';

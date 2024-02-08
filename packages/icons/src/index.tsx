@@ -169,6 +169,11 @@ export { FileBinLineBoldIcon } from './icons/fileBinLineBold';
 export { FileBinLineLightIcon } from './icons/fileBinLineLight';
 export { FileBinFillIcon } from './icons/fileBinFill';
 
+export { FileDownloadLineIcon } from './icons/fileDownloadLine';
+export { FileDownloadLineBoldIcon } from './icons/fileDownloadLineBold';
+export { FileDownloadLineLightIcon } from './icons/fileDownloadLineLight';
+export { FileDownloadFillIcon } from './icons/fileDownloadFill';
+
 export { FileEfsLineIcon } from './icons/fileEfsLine';
 export { FileEfsLineBoldIcon } from './icons/fileEfsLineBold';
 export { FileEfsLineLightIcon } from './icons/fileEfsLineLight';

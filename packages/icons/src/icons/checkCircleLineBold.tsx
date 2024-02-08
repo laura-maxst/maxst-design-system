@@ -3,24 +3,27 @@ import React from 'react';
 const CheckCircleLineBoldIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M34.9936 19.1237L20.3653 32.0582L13.3687 25.0606L15.4901 22.9394L20.4918 27.9418L33.0064 16.8763L34.9936 19.1237Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 7.5C14.8873 7.5 7.5 14.8873 7.5 24C7.5 33.1127 14.8873 40.5 24 40.5C33.1127 40.5 40.5 33.1127 40.5 24C40.5 14.8873 33.1127 7.5 24 7.5ZM4.5 24C4.5 13.2304 13.2304 4.5 24 4.5C34.7696 4.5 43.5 13.2304 43.5 24C43.5 34.7696 34.7696 43.5 24 43.5C13.2304 43.5 4.5 34.7696 4.5 24Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_28225)">
+        <path
+          d="M20.56 33.5L11.46 24.4L13.72 22.14L20.56 28.98L33.64 15.9L35.92 18.16L20.56 33.5Z"
+          fill="currentColor"
+        />
+        <path
+          d="M24 44.5C12.7 44.5 3.52002 35.32 3.52002 24.02C3.52002 12.72 12.7 3.54004 24 3.54004C35.3 3.54004 44.48 12.72 44.48 24.02C44.48 35.32 35.3 44.5 24 44.5ZM24 6.74004C14.48 6.74004 6.72002 14.5 6.72002 24.02C6.72002 33.54 14.48 41.3 24 41.3C33.52 41.3 41.28 33.54 41.28 24.02C41.28 14.5 33.52 6.74004 24 6.74004Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_28225">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

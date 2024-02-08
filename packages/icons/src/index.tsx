@@ -88,8 +88,8 @@ export { CalibrationLineLightIcon } from './icons/calibrationLineLight';
 export { CalibrationFillIcon } from './icons/calibrationFill';
 
 export { CheckCircleFillIcon } from './icons/checkCircleFill';
-export { CheckCircleFillBoldIcon } from './icons/checkCircleFillBold';
 export { CheckCircleLineIcon } from './icons/checkCircleLine';
+export { CheckCircleLineLightIcon } from './icons/checkCircleLineLight';
 export { CheckCircleLineBoldIcon } from './icons/checkCircleLineBold';
 
 export { CheckLineIcon } from './icons/checkLine';

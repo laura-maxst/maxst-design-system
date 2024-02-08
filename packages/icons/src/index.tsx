@@ -150,6 +150,11 @@ export { DocumentLineBoldIcon } from './icons/documentLineBold';
 export { DocumentLineLightIcon } from './icons/documentLineLight';
 export { DocumentFillIcon } from './icons/documentFill';
 
+export { DocUploadLineIcon } from './icons/docUploadLine';
+export { DocUploadBoldLineIcon } from './icons/docUploadLineBold';
+export { DocUploadLineLightIcon } from './icons/docUploadLineLight';
+export { DocUploadFillIcon } from './icons/docUploadFill';
+
 export { DownloadCircleLineIcon } from './icons/downloadCircleLine';
 export { DownloadCircleLineBoldIcon } from './icons/downloadCircleLineBold';
 export { DownloadCircleLineLightIcon } from './icons/downloadCircleLineLight';

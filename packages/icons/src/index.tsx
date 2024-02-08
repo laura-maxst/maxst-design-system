@@ -261,6 +261,8 @@ export { IdCardFillIcon } from './icons/idCardFill';
 export { IdCardFillLightIcon } from './icons/idCardFillLight';
 
 export { InfoCircleLineIcon } from './icons/infoCircleLine';
+export { InfoCircleLineBoldIcon } from './icons/infoCircleLineBold';
+export { InfoCircleLineLightIcon } from './icons/infoCircleLineLight';
 export { InfoCircleFillIcon } from './icons/infoCircleFill';
 
 export { LanguageLineIcon } from './icons/languageLine';

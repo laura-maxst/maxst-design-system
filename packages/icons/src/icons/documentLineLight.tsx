@@ -9,30 +9,20 @@ const DocumentLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9.19982 11.9972V39.8002H38.7998V8.20018H12.9969L9.19982 11.9972ZM12.4998 7.00018L7.99982 11.5002V41.0002H39.9998V7.00018H12.4998Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M32 20.7998H16V19.5998H32V20.7998Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M32 25.7998H16V24.5998H32V25.7998Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M26 30.1996H16V28.9996H26V30.1996Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_816_560)">
+        <path d="M32.68 18.5H15.26V19.7H32.68V18.5Z" fill="currentColor" />
+        <path d="M32.68 23.4H15.26V24.6H32.68V23.4Z" fill="currentColor" />
+        <path d="M24 28.24H15.26V29.44H24V28.24Z" fill="currentColor" />
+        <path
+          d="M8.61998 10.92V41.42H39.28V6.57996H12.96L8.59998 10.94L8.61998 10.92ZM38.08 7.77996V40.24H9.81997V11.42L13.46 7.77996H38.08Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_816_560">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

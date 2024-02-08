@@ -9,12 +9,17 @@ const DocumentFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7.99976 11.5001L12.4998 7.00012H39.9998V41.0001H7.99976V11.5001ZM16 20.7998H32V18.3998H16V20.7998ZM32 25.7998H16V23.3998H32V25.7998ZM16 30.7997H26V28.3997H16V30.7997Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_816_564)">
+        <path
+          d="M12.72 5.97998L8.02002 10.68V42.04H39.88V5.97998H12.72ZM24 30.04H15.26V27.64H24V30.04ZM32.68 25.2H15.26V22.8H32.68V25.2ZM32.68 20.3H15.26V17.9H32.68V20.3Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_816_564">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

@@ -155,10 +155,10 @@ export { EditLineBoldIcon } from './icons/editLineBold';
 export { EditLineLightIcon } from './icons/editLineLight';
 export { EditFillIcon } from './icons/editFill';
 
-export { ErrorCircleFillIcon } from './icons/errorCircleFill';
-export { ErrorCircleFillBoldIcon } from './icons/errorCircleFillBold';
 export { ErrorCircleLineIcon } from './icons/errorCircleLine';
 export { ErrorCircleLineBoldIcon } from './icons/errorCircleLineBold';
+export { ErrorCircleLineLightIcon } from './icons/errorCircleLineLight';
+export { ErrorCircleFillIcon } from './icons/errorCircleFill';
 
 export { FileBinLineIcon } from './icons/fileBinLine';
 export { FileBinLineBoldIcon } from './icons/fileBinLineBold';

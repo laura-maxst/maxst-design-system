@@ -393,6 +393,11 @@ export { PlayCircleFillIcon } from './icons/playCircleFill';
 export { PlayLineIcon } from './icons/playLine';
 export { PlayFillIcon } from './icons/playFill';
 
+export { PlusCircleLineIcon } from './icons/plusCircleLine';
+export { PlusCircleLineLightIcon } from './icons/plusCircleLineLight';
+export { PlusCircleLineBoldIcon } from './icons/plusCircleLineBold';
+export { PlusCircleFillIcon } from './icons/plusCircleFill';
+
 export { PlusLineIcon } from './icons/plusLine';
 export { PlusLineLightIcon } from './icons/plusLineLight';
 export { PlusLineBoldIcon } from './icons/plusLineBold';

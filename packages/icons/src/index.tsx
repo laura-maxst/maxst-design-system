@@ -595,6 +595,11 @@ export { TuneLineBoldIcon } from './icons/tuneLineBold';
 export { TuneLineLightIcon } from './icons/tuneLineLight';
 export { TuneFillIcon } from './icons/tuneFill';
 
+export { UploadBinLineIcon } from './icons/uploadBinLine';
+export { UploadBinLineBoldIcon } from './icons/uploadBinLineBold';
+export { UploadBinLineLightIcon } from './icons/uploadBinLineLight';
+export { UploadBinFillIcon } from './icons/uploadBinFill';
+
 export { UploadCircleLineIcon } from './icons/uploadCircleLine';
 export { UploadCircleLineBoldIcon } from './icons/uploadCircleLineBold';
 export { UploadCircleLineLightIcon } from './icons/uploadCircleLineLight';

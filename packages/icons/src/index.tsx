@@ -175,6 +175,11 @@ export { DownloadCircleLineBoldIcon } from './icons/downloadCircleLineBold';
 export { DownloadCircleLineLightIcon } from './icons/downloadCircleLineLight';
 export { DownloadCircleFillIcon } from './icons/downloadCircleFill';
 
+export { DownloadJpgLineIcon } from './icons/downloadJpgLine';
+export { DownloadJpgLineBoldIcon } from './icons/downloadJpgLineBold';
+export { DownloadJpgLineLightIcon } from './icons/downloadJpgLineLight';
+export { DownloadJpgFillIcon } from './icons/downloadJpgFill';
+
 export { DownloadLineIcon } from './icons/downloadLine';
 export { DownloadLineBoldIcon } from './icons/downloadLineBold';
 export { DownloadLineLightIcon } from './icons/downloadLineLight';

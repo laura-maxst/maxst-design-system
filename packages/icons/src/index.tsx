@@ -145,6 +145,11 @@ export { DocDownloadBoldLineIcon } from './icons/docDownloadLineBold';
 export { DocDownloadLineLightIcon } from './icons/docDownloadLineLight';
 export { DocDownloadFillIcon } from './icons/docDownloadFill';
 
+export { DocMoveLineIcon } from './icons/docMoveLine';
+export { DocMoveLineBoldIcon } from './icons/docMoveLineBold';
+export { DocMoveLineLightIcon } from './icons/docMoveLineLight';
+export { DocMoveFillIcon } from './icons/docMoveFill';
+
 export { DocumentLineIcon } from './icons/documentLine';
 export { DocumentLineBoldIcon } from './icons/documentLineBold';
 export { DocumentLineLightIcon } from './icons/documentLineLight';

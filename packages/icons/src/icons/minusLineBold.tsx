@@ -9,12 +9,14 @@ const MinusLineBoldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M37 26H11V23H37V26Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_640)">
+        <path d="M42 22.4H6V25.6H42V22.4Z" fill="currentColor" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_640">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

@@ -339,6 +339,7 @@ export { MinusCircleLineLightIcon } from './icons/minusCircleLineLight';
 export { MinusCircleFillIcon } from './icons/minusCircleFill';
 
 export { MinusLineIcon } from './icons/minusLine';
+export { MinusLineLightIcon } from './icons/minusLineLight';
 export { MinusLineBoldIcon } from './icons/minusLineBold';
 
 export { MobileLineIcon } from './icons/mobileLine';

@@ -199,6 +199,11 @@ export { DownloadPdfLineBoldIcon } from './icons/downloadPdfLineBold';
 export { DownloadPdfLineLightIcon } from './icons/downloadPdfLineLight';
 export { DownloadPdfFillIcon } from './icons/downloadPdfFill';
 
+export { DownloadZipLineIcon } from './icons/downloadZipLine';
+export { DownloadZipLineBoldIcon } from './icons/downloadZipLineBold';
+export { DownloadZipLineLightIcon } from './icons/downloadZipLineLight';
+export { DownloadZipFillIcon } from './icons/downloadZipFill';
+
 export { EditLineIcon } from './icons/editLine';
 export { EditLineBoldIcon } from './icons/editLineBold';
 export { EditLineLightIcon } from './icons/editLineLight';

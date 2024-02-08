@@ -110,10 +110,10 @@ export { CloseLineIcon } from './icons/closeLine';
 export { CloseLineLightIcon } from './icons/closeLineLight';
 export { CloseLineBoldIcon } from './icons/closeLineBold';
 
-export { ContentCopyLineIcon } from './icons/contentCopyLine';
-export { ContentCopyLineBoldIcon } from './icons/contentCopyLineBold';
-export { ContentCopyLineLightIcon } from './icons/contentCopyLineLight';
-export { ContentCopyFillIcon } from './icons/contentCopyFill';
+export { CopyLineIcon } from './icons/copyLine';
+export { CopyLineBoldIcon } from './icons/copyLineBold';
+export { CopyLineLightIcon } from './icons/copyLineLight';
+export { CopyFillIcon } from './icons/copyFill';
 
 export { CurrencyLineIcon } from './icons/currencyLine';
 export { CurrencyLineBoldIcon } from './icons/currencyLineBold';

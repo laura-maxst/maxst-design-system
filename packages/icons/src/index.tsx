@@ -620,6 +620,11 @@ export { UploadJpgLineBoldIcon } from './icons/uploadJpgLineBold';
 export { UploadJpgLineLightIcon } from './icons/uploadJpgLineLight';
 export { UploadJpgFillIcon } from './icons/uploadJpgFill';
 
+export { UploadJsonLineIcon } from './icons/uploadJsonLine';
+export { UploadJsonLineBoldIcon } from './icons/uploadJsonLineBold';
+export { UploadJsonLineLightIcon } from './icons/uploadJsonLineLight';
+export { UploadJsonFillIcon } from './icons/uploadJsonFill';
+
 export { UploadLineIcon } from './icons/uploadLine';
 export { UploadLineBoldIcon } from './icons/uploadLineBold';
 export { UploadLineLightIcon } from './icons/uploadLineLight';

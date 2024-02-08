@@ -3,18 +3,23 @@ import React from 'react';
 const ClockCircleFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 4.79999C13.3961 4.79999 4.79999 13.3961 4.79999 24C4.79999 34.6039 13.3961 43.2 24 43.2C34.6039 43.2 43.2 34.6039 43.2 24C43.2 13.3961 34.6039 4.79999 24 4.79999ZM22.2153 26.7996L22.2157 12.615L24.6158 12.6151L24.6154 24.3998L34.4006 24.4001L34.4006 26.8L22.2153 26.7996Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_28245)">
+        <path
+          d="M24 3.93994C12.92 3.93994 3.92 12.9399 3.92 24.0199C3.92 35.0999 12.92 44.0999 24 44.0999C35.08 44.0999 44.08 35.0999 44.08 24.0199C44.08 12.9399 35.08 3.93994 24 3.93994ZM35.64 25.9399H22.08V12.2799H24.48V23.5399H35.64V25.9399Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_28245">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

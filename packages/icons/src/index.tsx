@@ -97,6 +97,8 @@ export { CheckLineLightIcon } from './icons/checkLineLight';
 export { CheckLineBoldIcon } from './icons/checkLineBold';
 
 export { ClockCircleLineIcon } from './icons/clockCircleLine';
+export { ClockCircleLineLightIcon } from './icons/clockCircleLineLight';
+export { ClockCircleLineBoldIcon } from './icons/clockCircleLineBold';
 export { ClockCircleFillIcon } from './icons/clockCircleFill';
 
 export { CloseCircleFillIcon } from './icons/closeCircleFill';

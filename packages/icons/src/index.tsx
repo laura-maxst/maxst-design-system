@@ -179,6 +179,11 @@ export { DownloadLineIcon } from './icons/downloadLine';
 export { DownloadLineBoldIcon } from './icons/downloadLineBold';
 export { DownloadLineLightIcon } from './icons/downloadLineLight';
 
+export { DownloadPdfLineIcon } from './icons/downloadPdfLine';
+export { DownloadPdfLineBoldIcon } from './icons/downloadPdfLineBold';
+export { DownloadPdfLineLightIcon } from './icons/downloadPdfLineLight';
+export { DownloadPdfFillIcon } from './icons/downloadPdfFill';
+
 export { EditLineIcon } from './icons/editLine';
 export { EditLineBoldIcon } from './icons/editLineBold';
 export { EditLineLightIcon } from './icons/editLineLight';

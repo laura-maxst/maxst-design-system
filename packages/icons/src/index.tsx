@@ -189,6 +189,11 @@ export { FileJpgLineBoldIcon } from './icons/fileJpgLineBold';
 export { FileJpgLineLightIcon } from './icons/fileJpgLineLight';
 export { FileJpgFillIcon } from './icons/fileJpgFill';
 
+export { FileJsonLineIcon } from './icons/fileJsonLine';
+export { FileJsonLineBoldIcon } from './icons/fileJsonLineBold';
+export { FileJsonLineLightIcon } from './icons/fileJsonLineLight';
+export { FileJsonFillIcon } from './icons/fileJsonFill';
+
 export { FileLineIcon } from './icons/fileLine';
 export { FileLineBoldIcon } from './icons/fileLineBold';
 export { FileLineLightIcon } from './icons/fileLineLight';

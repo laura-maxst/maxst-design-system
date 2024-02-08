@@ -624,6 +624,11 @@ export { UploadPdfLineBoldIcon } from './icons/uploadPdfLineBold';
 export { UploadPdfLineLightIcon } from './icons/uploadPdfLineLight';
 export { UploadPdfFillIcon } from './icons/uploadPdfFill';
 
+export { UploadPlyLineIcon } from './icons/uploadPlyLine';
+export { UploadPlyLineBoldIcon } from './icons/uploadPlyLineBold';
+export { UploadPlyLineLightIcon } from './icons/uploadPlyLineLight';
+export { UploadPlyFillIcon } from './icons/uploadPlyFill';
+
 export { UploadZipLineIcon } from './icons/uploadZipLine';
 export { UploadZipLineBoldIcon } from './icons/uploadZipLineBold';
 export { UploadZipLineLightIcon } from './icons/uploadZipLineLight';

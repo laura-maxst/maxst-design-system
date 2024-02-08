@@ -393,6 +393,7 @@ export { PlayLineIcon } from './icons/playLine';
 export { PlayFillIcon } from './icons/playFill';
 
 export { PlusLineIcon } from './icons/plusLine';
+export { PlusLineLightIcon } from './icons/plusLineLight';
 export { PlusLineBoldIcon } from './icons/plusLineBold';
 
 export { ProfileLineIcon } from './icons/profileLine';

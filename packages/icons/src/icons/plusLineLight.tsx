@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlusLineIcon = () => {
+const PlusLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -9,14 +9,14 @@ const PlusLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_1_625)">
+      <g clipPath="url(#clip0_2751_20727)">
         <path
-          d="M25.2 6H22.8V22.8H6V25.2H22.8V42H25.2V25.2H42V22.8H25.2V6Z"
+          d="M42 23.4H24.6V6H23.4V23.4H6V24.6H23.4V42H24.6V24.6H42V23.4Z"
           fill="currentColor"
         />
       </g>
       <defs>
-        <clipPath id="clip0_1_625">
+        <clipPath id="clip0_2751_20727">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>
@@ -24,4 +24,4 @@ const PlusLineIcon = () => {
   );
 };
 
-export { PlusLineIcon };
+export { PlusLineLightIcon };

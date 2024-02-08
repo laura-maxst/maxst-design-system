@@ -9,24 +9,22 @@ const WarningLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23 29L23 19L25.4 19L25.4 29L23 29Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23 35L23 32L25.4 32L25.4 35L23 35Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 6L2 42H46L24 6ZM24 10.2431L6.00101 39.696H41.999L24 10.2431Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_28173)">
+        <path
+          d="M2.78 40.36H45.22L24 3.59998L2.78 40.36ZM6.94 37.96L24 8.39998L41.06 37.96H6.94Z"
+          fill="currentColor"
+        />
+        <path d="M25.54 31.96H22.5V34.94H25.54V31.96Z" fill="currentColor" />
+        <path
+          d="M22.84 30.06H25.3L25.72 17.4L22.46 17.38L22.84 30.06Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_28173">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

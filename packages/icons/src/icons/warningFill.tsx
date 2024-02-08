@@ -9,12 +9,17 @@ const WarningFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23 29V19H25.4V29H23ZM23 35V32H25.4V35H23ZM24 6L2 42H46L24 6Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_28188)">
+        <path
+          d="M24 3.59998L2.78 40.36H45.22L24 3.59998ZM25.72 17.4L25.3 30.06H22.84L22.46 17.38H25.74L25.72 17.4ZM25.54 34.94H22.5V31.96H25.54V34.94Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_28188">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

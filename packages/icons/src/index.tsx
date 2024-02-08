@@ -567,8 +567,6 @@ export { VpsLineLightIcon } from './icons/vpsLineLight';
 export { VpsFillIcon } from './icons/vpsFill';
 
 export { WarningFillIcon } from './icons/warningFill';
-export { WarningFillBoldIcon } from './icons/warningFillBold';
-export { WarningFillLightIcon } from './icons/warningFillLight';
 export { WarningLineIcon } from './icons/warningLine';
 export { WarningLineBoldIcon } from './icons/warningLineBold';
 export { WarningLineLightIcon } from './icons/warningLineLight';

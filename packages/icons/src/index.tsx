@@ -600,6 +600,11 @@ export { UploadCircleLineBoldIcon } from './icons/uploadCircleLineBold';
 export { UploadCircleLineLightIcon } from './icons/uploadCircleLineLight';
 export { UploadCircleFillIcon } from './icons/uploadCircleFill';
 
+export { UploadJpgLineIcon } from './icons/uploadJpgLine';
+export { UploadJpgLineBoldIcon } from './icons/uploadJpgLineBold';
+export { UploadJpgLineLightIcon } from './icons/uploadJpgLineLight';
+export { UploadJpgFillIcon } from './icons/uploadJpgFill';
+
 export { UploadLineIcon } from './icons/uploadLine';
 export { UploadLineBoldIcon } from './icons/uploadLineBold';
 export { UploadLineLightIcon } from './icons/uploadLineLight';

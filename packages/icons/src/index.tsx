@@ -320,6 +320,11 @@ export { LoginLineIcon } from './icons/loginLine';
 export { LoginLineBoldIcon } from './icons/loginLineBold';
 export { LoginLineLightIcon } from './icons/loginLineLight';
 
+export { LoginSecurityLineIcon } from './icons/loginSecurityLine';
+export { LoginSecurityLineBoldIcon } from './icons/loginSecurityLineBold';
+export { LoginSecurityLineLightIcon } from './icons/loginSecurityLineLight';
+export { LoginSecurityFillIcon } from './icons/loginSecurityFill';
+
 export { LogoutLineIcon } from './icons/logoutLine';
 export { LogoutLineBoldIcon } from './icons/logoutLineBold';
 export { LogoutLineLightIcon } from './icons/logoutLineLight';

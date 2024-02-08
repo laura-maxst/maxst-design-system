@@ -327,6 +327,8 @@ export { MapLineLightIcon } from './icons/mapLineLight';
 export { MapFillIcon } from './icons/mapFill';
 
 export { MenuLineIcon } from './icons/menuLine';
+export { MenuLineBoldIcon } from './icons/menuLineBold';
+export { MenuLineLightIcon } from './icons/menuLineLight';
 
 export { MessageLineIcon } from './icons/messageLine';
 export { MessageLineBoldIcon } from './icons/messageLineBold';

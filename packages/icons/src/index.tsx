@@ -150,6 +150,11 @@ export { DocMoveLineBoldIcon } from './icons/docMoveLineBold';
 export { DocMoveLineLightIcon } from './icons/docMoveLineLight';
 export { DocMoveFillIcon } from './icons/docMoveFill';
 
+export { DocSearchLineIcon } from './icons/docSearchLine';
+export { DocSearchLineBoldIcon } from './icons/docSearchLineBold';
+export { DocSearchLineLightIcon } from './icons/docSearchLineLight';
+export { DocSearchFillIcon } from './icons/docSearchFill';
+
 export { DocumentLineIcon } from './icons/documentLine';
 export { DocumentLineBoldIcon } from './icons/documentLineBold';
 export { DocumentLineLightIcon } from './icons/documentLineLight';

@@ -9,12 +9,17 @@ const CloseLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 24.8266L39.1734 40L40 39.1734L24.8266 24L40 8.82661L39.1734 8L24 23.1734L8.82661 8L8 8.82661L23.1734 24L8 39.1734L8.82661 40L24 24.8266Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1657_9541)">
+        <path
+          d="M38.5 8.64001L24 23.16L9.5 8.64001L8.64 9.50001L23.16 24L8.64 38.5L9.5 39.36L24 24.84L38.5 39.36L39.36 38.5L24.84 24L39.36 9.50001L38.5 8.64001Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1657_9541">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

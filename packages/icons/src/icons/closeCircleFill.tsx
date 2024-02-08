@@ -3,18 +3,23 @@ import React from 'react';
 const CloseCircleFillIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M43 24C43 34.4934 34.4934 43 24 43C13.5066 43 5 34.4934 5 24C5 13.5066 13.5066 5 24 5C34.4934 5 43 13.5066 43 24ZM15.1504 31.1515L22.3027 23.9991L15.1521 16.8485L16.8492 15.1515L23.9998 22.3021L31.1504 15.1515L32.8474 16.8485L25.6968 23.9991L32.8492 31.1515L31.1521 32.8485L23.9998 25.6962L16.8474 32.8485L15.1504 31.1515Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_740)">
+        <path
+          d="M24 3.83997C12.92 3.83997 3.92 12.86 3.92 23.92C3.92 34.98 12.92 44 24 44C35.08 44 44.08 35 44.08 23.92C44.08 12.84 35.08 3.83997 24 3.83997ZM33.94 32.26L32.24 33.96L23.98 25.7L15.72 33.96L14.02 32.26L22.28 24L14.02 15.74L15.72 14.04L23.98 22.3L32.24 14.04L33.94 15.74L25.68 24L33.94 32.26Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_740">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

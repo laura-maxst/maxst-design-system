@@ -99,8 +99,8 @@ export { ClockCircleLineIcon } from './icons/clockCircleLine';
 export { ClockCircleFillIcon } from './icons/clockCircleFill';
 
 export { CloseCircleFillIcon } from './icons/closeCircleFill';
-export { CloseCircleFillBoldIcon } from './icons/closeCircleFillBold';
 export { CloseCircleLineIcon } from './icons/closeCircleLine';
+export { CloseCircleLineLightIcon } from './icons/closeCircleLineLight';
 export { CloseCircleLineBoldIcon } from './icons/closeCircleLineBold';
 
 export { CloseLineIcon } from './icons/closeLine';

@@ -203,6 +203,11 @@ export { FilePlyLineBoldIcon } from './icons/filePlyLineBold';
 export { FilePlyLineLightIcon } from './icons/filePlyLineLight';
 export { FilePlyFillIcon } from './icons/filePlyFill';
 
+export { FileUploadLineIcon } from './icons/fileUploadLine';
+export { FileUploadLineBoldIcon } from './icons/fileUploadLineBold';
+export { FileUploadLineLightIcon } from './icons/fileUploadLineLight';
+export { FileUploadFillIcon } from './icons/fileUploadFill';
+
 export { FileZipLineIcon } from './icons/fileZipLine';
 export { FileZipLineBoldIcon } from './icons/fileZipLineBold';
 export { FileZipLineLightIcon } from './icons/fileZipLineLight';

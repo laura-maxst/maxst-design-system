@@ -93,6 +93,7 @@ export { CheckCircleLineIcon } from './icons/checkCircleLine';
 export { CheckCircleLineBoldIcon } from './icons/checkCircleLineBold';
 
 export { CheckLineIcon } from './icons/checkLine';
+export { CheckLineLightIcon } from './icons/checkLineLight';
 export { CheckLineBoldIcon } from './icons/checkLineBold';
 
 export { ClockCircleLineIcon } from './icons/clockCircleLine';

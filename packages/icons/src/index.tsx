@@ -604,6 +604,11 @@ export { UploadLineIcon } from './icons/uploadLine';
 export { UploadLineBoldIcon } from './icons/uploadLineBold';
 export { UploadLineLightIcon } from './icons/uploadLineLight';
 
+export { UploadPdfLineIcon } from './icons/uploadPdfLine';
+export { UploadPdfLineBoldIcon } from './icons/uploadPdfLineBold';
+export { UploadPdfLineLightIcon } from './icons/uploadPdfLineLight';
+export { UploadPdfFillIcon } from './icons/uploadPdfFill';
+
 export { UserAddLineIcon } from './icons/userAddLine';
 export { UserAddLineBoldIcon } from './icons/userAddLineBold';
 export { UserAddLineLightIcon } from './icons/userAddLineLight';

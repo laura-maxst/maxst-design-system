@@ -449,6 +449,11 @@ export { SearchLineIcon } from './icons/searchLine';
 export { SearchLineBoldIcon } from './icons/searchLineBold';
 export { SearchLineLightIcon } from './icons/searchLineLight';
 
+export { SecurityLineIcon } from './icons/securityLine';
+export { SecurityLineLightIcon } from './icons/securityLineLight';
+export { SecurityLineBoldIcon } from './icons/securityLineBold';
+export { SecurityFillIcon } from './icons/securityFill';
+
 export { SelectAreaLineIcon } from './icons/selectAreaLine';
 export { SelectAreaLineBoldIcon } from './icons/selectAreaLineBold';
 export { SelectAreaLineLightIcon } from './icons/selectAreaLineLight';

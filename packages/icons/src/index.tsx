@@ -547,6 +547,8 @@ export { UploadCircleLineLightIcon } from './icons/uploadCircleLineLight';
 export { UploadCircleFillIcon } from './icons/uploadCircleFill';
 
 export { UploadLineIcon } from './icons/uploadLine';
+export { UploadLineBoldIcon } from './icons/uploadLineBold';
+export { UploadLineLightIcon } from './icons/uploadLineLight';
 
 export { UserAddLineIcon } from './icons/userAddLine';
 export { UserAddLineBoldIcon } from './icons/userAddLineBold';

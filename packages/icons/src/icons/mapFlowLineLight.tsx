@@ -9,36 +9,17 @@ const MapFlowLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7.40002 6.39996H16.6V15.6H7.40002V6.39996ZM8.60002 7.59996V14.4H15.4V7.59996H8.60002Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M19.4 19.4H28.6V28.6H19.4V19.4ZM20.6 20.6V27.4H27.4V20.6H20.6Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M31.4 32.4H40.6V41.6H31.4V32.4ZM32.6 33.6V40.4H39.4V33.6H32.6Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M39.202 11.1H16V9.89996H40.402V24.6H28.4981V23.4H39.202V11.1Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.80195 36.9L32 36.9L32 38.1L7.60195 38.1L7.60195 23.4L19.502 23.4L19.502 24.6L8.80195 24.6L8.80195 36.9Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36645)">
+        <path
+          d="M27 27.0001V24.5801H41.4V9.0001H12.6V6.6001H6.60001V12.6001H12.6V10.2001H40.2V23.4001H27V21.0001H21V23.4001H6.60001V38.9801H35.38V41.3801H41.38V35.3801H35.38V37.7801H7.80001V24.5801H21V26.9801H27V27.0001ZM11.4 11.4001H7.80001V7.8001H11.4V11.4001ZM36.58 36.5801H40.18V40.1801H36.58V36.5801ZM22.2 22.2001H25.8V25.8001H22.2V22.2001Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36645">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

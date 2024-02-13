@@ -523,6 +523,11 @@ export { ObjectCheckLineBoldIcon } from './icons/objectCheckLineBold';
 export { ObjectCheckLineLightIcon } from './icons/objectCheckLineLight';
 export { ObjectCheckFillIcon } from './icons/objectCheckFill';
 
+export { ObjectGroupLineIcon } from './icons/objectGroupLine';
+export { ObjectGroupLineBoldIcon } from './icons/objectGroupLineBold';
+export { ObjectGroupLineLightIcon } from './icons/objectGroupLineLight';
+export { ObjectGroupFillIcon } from './icons/objectGroupFill';
+
 export { ObjectNewLineIcon } from './icons/objectNewLine';
 export { ObjectNewLineBoldIcon } from './icons/objectNewLineBold';
 export { ObjectNewLineLightIcon } from './icons/objectNewLineLight';

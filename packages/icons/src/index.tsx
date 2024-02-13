@@ -376,6 +376,11 @@ export { IdCardLineLightIcon } from './icons/idCardLineLight';
 export { IdCardFillIcon } from './icons/idCardFill';
 export { IdCardFillLightIcon } from './icons/idCardFillLight';
 
+export { ImageLineIcon } from './icons/imageLine';
+export { ImageLineBoldIcon } from './icons/imageLineBold';
+export { ImageLineLightIcon } from './icons/imageLineLight';
+export { ImageFillIcon } from './icons/imageFill';
+
 export { InfoCircleLineIcon } from './icons/infoCircleLine';
 export { InfoCircleLineBoldIcon } from './icons/infoCircleLineBold';
 export { InfoCircleLineLightIcon } from './icons/infoCircleLineLight';

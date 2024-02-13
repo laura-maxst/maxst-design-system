@@ -9,12 +9,17 @@ const FloorFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M18.8605 7H12.1424L7 12.1424V41H14.907L14.907 30.9186H17.2791V41H27.9535V39H34.8721V41H41V7H21.2326V21.8256H24V24.1977H17.2791L17.2791 27.9535H14.907L14.907 21.8256H18.8605L18.8605 7ZM40.8023 24.1977H27.9535V21.8256L40.8023 21.8256V24.1977Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36330)">
+        <path
+          d="M25.3 24.3001V21.9001H41.92V6.08008H20.52V13.2601H18.12V6.08008H10.8L6.09998 10.7801V41.9001H13.32V33.9001H15.72V41.9001H41.94V24.3001H25.32H25.3ZM22.9 24.3001H15.7V31.5001H13.3V21.9001H18.12V15.6601H20.52V21.9001H22.92V24.3001H22.9Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36330">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

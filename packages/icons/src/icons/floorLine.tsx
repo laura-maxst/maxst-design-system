@@ -9,12 +9,21 @@ const FloorLineIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12.1424 7H41V41H34.8721V38.6279H38.6279V24.1977H27.9535V21.8256L38.6279 21.8256V9.37209H21.2326V21.8256H24V24.1977H17.2791L17.2791 27.9535H14.907L14.907 21.8256H18.8605L18.8605 9.37209H13.125L9.37209 13.125V38.6279H14.907L14.907 30.9186H17.2791V38.6279H27.9535V41H7V12.1424L12.1424 7Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36306)">
+        <path
+          d="M6.08002 10.7801V41.9201H28.7V39.5201H15.7V33.9201H13.3V39.5201H8.48002V11.7801L11.78 8.48008H18.1V13.2601H20.5V8.48008H39.52V21.9001H25.3V24.3001H39.52V39.5201H34.7V41.9201H41.92V6.08008H10.78L6.08002 10.7801Z"
+          fill="currentColor"
+        />
+        <path
+          d="M18.1 15.6599V21.8999H13.3V31.4999H15.7V24.2999H22.9V21.8999H20.5V15.6599H18.1Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36306">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

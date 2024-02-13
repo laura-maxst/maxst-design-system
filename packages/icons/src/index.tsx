@@ -692,6 +692,11 @@ export { TerminalLineBoldIcon } from './icons/terminalLineBold';
 export { TerminalLineLightIcon } from './icons/terminalLineLight';
 export { TerminalFillIcon } from './icons/terminalFill';
 
+export { TerminalSettingLineIcon } from './icons/terminalSettingLine';
+export { TerminalSettingLineBoldIcon } from './icons/terminalSettingLineBold';
+export { TerminalSettingLineLightIcon } from './icons/terminalSettingLineLight';
+export { TerminalSettingFillIcon } from './icons/terminalSettingFill';
+
 export { ThreeDLineIcon } from './icons/threeDLine';
 export { ThreeDLineBoldIcon } from './icons/threeDLineBold';
 export { ThreeDLineLightIcon } from './icons/threeDLineLight';

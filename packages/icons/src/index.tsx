@@ -654,6 +654,7 @@ export { SlamFillIcon } from './icons/slamFill';
 export { SmartGlassesLineIcon } from './icons/smartGlassesLine';
 export { SmartGlassesLineBoldIcon } from './icons/smartGlassesLineBold';
 export { SmartGlassesLineLightIcon } from './icons/smartGlassesLineLight';
+export { SmartGlassesFillIcon } from './icons/smartGlassesFill';
 
 export { SortAtoZLineIcon } from './icons/sortAtoZLine';
 export { SortAtoZLineLightIcon } from './icons/sortAtoZLineLight';
@@ -675,6 +676,11 @@ export { StarFillIcon } from './icons/starFill';
 export { SyncLineIcon } from './icons/syncLine';
 export { SyncLineBoldIcon } from './icons/syncLineBold';
 export { SyncLineLightIcon } from './icons/syncLineLight';
+
+export { TabletLineIcon } from './icons/tabletLine';
+export { TabletLineBoldIcon } from './icons/tabletLineBold';
+export { TabletLineLightIcon } from './icons/tabletLineLight';
+export { TabletFillIcon } from './icons/tabletFill';
 
 export { TableViewLineIcon } from './icons/tableViewLine';
 export { TableViewLineBoldIcon } from './icons/tableViewLineBold';

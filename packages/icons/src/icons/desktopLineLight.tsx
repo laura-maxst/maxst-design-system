@@ -3,16 +3,23 @@ import React from 'react';
 const DesktopLineLightIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M10.9996 10.64L6.63965 15V33.42H23.3996V38.16H15.9996V39.36H31.9996V38.16H24.5996V33.42H36.9996L41.3596 29.06V10.64H10.9996ZM40.1596 28.56L36.5196 32.2H7.83965V15.48L11.4796 11.84H40.1396V28.56H40.1596Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36196)">
+        <path
+          d="M6.64001 13.9999V32.4199H23.4V37.1599H16V38.3599H32V37.1599H24.6V32.4199H37L41.36 28.0599V9.63989H11L6.64001 13.9999ZM40.16 10.8399V27.5599L36.52 31.1999H7.84001V14.4999L11.48 10.8599H40.14L40.16 10.8399Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36196">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

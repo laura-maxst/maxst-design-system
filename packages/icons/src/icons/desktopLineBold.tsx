@@ -3,16 +3,23 @@ import React from 'react';
 const DesktopLineBoldIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M10.62 9.73999L5.73999 14.62V34.3H22.5V37.24H16V40.24H32V37.24H25.5V34.3H37.38L42.26 29.42V9.73999H10.62ZM39.26 28.18L36.14 31.3H8.73999V15.86L11.86 12.74H39.26V28.18Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36194)">
+        <path
+          d="M10.58 8.63989L5.64001 13.5799V33.3999H22.4V36.1399H16V39.3399H32V36.1399H25.6V33.3999H37.42L42.36 28.4599V8.63989H10.58ZM39.16 27.1599L36.1 30.2199H8.84001V14.9199L11.9 11.8599H39.16V27.1599Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36194">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

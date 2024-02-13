@@ -405,10 +405,10 @@ export { LayerHorizontalLineBoldIcon } from './icons/layerHorizontalLineBold';
 export { LayerHorizontalLineLightIcon } from './icons/layerHorizontalLineLight';
 export { LayerHorizontalFillIcon } from './icons/layerHorizontalFill';
 
-export { LayerLineIcon } from './icons/layerLine';
-export { LayerLineBoldIcon } from './icons/layerLineBold';
-export { LayerLineLightIcon } from './icons/layerLineLight';
-export { LayerFillIcon } from './icons/layerFill';
+export { LayerVerticalLineIcon } from './icons/layerVerticalLine';
+export { LayerVerticalLineBoldIcon } from './icons/layerVerticalLineBold';
+export { LayerVerticalLineLightIcon } from './icons/layerVerticalLineLight';
+export { LayerVerticalFillIcon } from './icons/layerVerticalFill';
 
 export { LeftViewLineIcon } from './icons/leftViewLine';
 export { LeftViewLineBoldIcon } from './icons/leftViewLineBold';

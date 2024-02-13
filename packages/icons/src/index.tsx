@@ -533,6 +533,11 @@ export { ObjectNewLineBoldIcon } from './icons/objectNewLineBold';
 export { ObjectNewLineLightIcon } from './icons/objectNewLineLight';
 export { ObjectNewFillIcon } from './icons/objectNewFill';
 
+export { ObjectSelectLineIcon } from './icons/objectSelectLine';
+export { ObjectSelectLineBoldIcon } from './icons/objectSelectLineBold';
+export { ObjectSelectLineLightIcon } from './icons/objectSelectLineLight';
+export { ObjectSelectFillIcon } from './icons/objectSelectFill';
+
 export { ObjectToolBoxLineIcon } from './icons/objectToolBoxLine';
 export { ObjectToolBoxLineBoldIcon } from './icons/objectToolBoxLineBold';
 export { ObjectToolBoxLineLightIcon } from './icons/objectToolBoxLineLight';
@@ -676,11 +681,6 @@ export { SecurityLineIcon } from './icons/securityLine';
 export { SecurityLineLightIcon } from './icons/securityLineLight';
 export { SecurityLineBoldIcon } from './icons/securityLineBold';
 export { SecurityFillIcon } from './icons/securityFill';
-
-export { SelectAreaLineIcon } from './icons/selectAreaLine';
-export { SelectAreaLineBoldIcon } from './icons/selectAreaLineBold';
-export { SelectAreaLineLightIcon } from './icons/selectAreaLineLight';
-export { SelectAreaFillIcon } from './icons/selectAreaFill';
 
 export { SettingLineIcon } from './icons/settingLine';
 export { SettingLineBoldIcon } from './icons/settingLineBold';

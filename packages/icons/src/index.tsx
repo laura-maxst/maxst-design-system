@@ -564,6 +564,11 @@ export { RecognitionLineIcon } from './icons/recognitionLine';
 export { RecognitionLineBoldIcon } from './icons/recognitionLineBold';
 export { RecognitionLineLightIcon } from './icons/recognitionLineLight';
 
+export { RecognitionObjectLineIcon } from './icons/recognitionObjectLine';
+export { RecognitionObjectLineBoldIcon } from './icons/recognitionObjectLineBold';
+export { RecognitionObjectLineLightIcon } from './icons/recognitionObjectLineLight';
+export { RecognitionObjectFillIcon } from './icons/recognitionObjectFill';
+
 export { RecordLineIcon } from './icons/recordLine';
 export { RecordLineBoldIcon } from './icons/recordLineBold';
 export { RecordLineLightIcon } from './icons/recordLineLight';
@@ -814,11 +819,6 @@ export { ViewLineIcon } from './icons/viewLine';
 export { ViewLineLightIcon } from './icons/viewLineLight';
 export { ViewLineBoldIcon } from './icons/viewLineBold';
 export { ViewFillIcon } from './icons/viewFill';
-
-export { ViewInArLineIcon } from './icons/viewInArLine';
-export { ViewInArLineBoldIcon } from './icons/viewInArLineBold';
-export { ViewInArLineLightIcon } from './icons/viewInArLineLight';
-export { ViewInArFillIcon } from './icons/viewInArFill';
 
 export { ViewOffLineIcon } from './icons/viewOffLine';
 export { ViewOffLineLightIcon } from './icons/viewOffLineLight';

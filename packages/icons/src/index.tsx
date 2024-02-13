@@ -702,6 +702,11 @@ export { ThreeDMapLineBoldIcon } from './icons/threeDMapLineBold';
 export { ThreeDMapLineLightIcon } from './icons/threeDMapLineLight';
 export { ThreeDMapFillIcon } from './icons/threeDMapFill';
 
+export { ThreeDSpaceLineIcon } from './icons/threeDSpaceLine';
+export { ThreeDSpaceLineBoldIcon } from './icons/threeDSpaceLineBold';
+export { ThreeDSpaceLineLightIcon } from './icons/threeDSpaceLineLight';
+export { ThreeDSpaceFillIcon } from './icons/threeDSpaceFill';
+
 export { TuneLineIcon } from './icons/tuneLine';
 export { TuneLineBoldIcon } from './icons/tuneLineBold';
 export { TuneLineLightIcon } from './icons/tuneLineLight';

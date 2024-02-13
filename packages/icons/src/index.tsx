@@ -518,6 +518,11 @@ export { NotificationOffLineLightIcon } from './icons/notificationOffLineLight';
 export { NotificationOffLineBoldIcon } from './icons/notificationOffLineBold';
 export { NotificationOffFillIcon } from './icons/notificationOffFill';
 
+export { ObjectCheckLineIcon } from './icons/objectCheckLine';
+export { ObjectCheckLineBoldIcon } from './icons/objectCheckLineBold';
+export { ObjectCheckLineLightIcon } from './icons/objectCheckLineLight';
+export { ObjectCheckFillIcon } from './icons/objectCheckFill';
+
 export { ObjectNewLineIcon } from './icons/objectNewLine';
 export { ObjectNewLineBoldIcon } from './icons/objectNewLineBold';
 export { ObjectNewLineLightIcon } from './icons/objectNewLineLight';

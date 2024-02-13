@@ -406,6 +406,10 @@ export { LayerLineBoldIcon } from './icons/layerLineBold';
 export { LayerLineLightIcon } from './icons/layerLineLight';
 export { LayerFillIcon } from './icons/layerFill';
 
+export { LeftViewLineIcon } from './icons/leftViewLine';
+export { LeftViewLineBoldIcon } from './icons/leftViewLineBold';
+export { LeftViewLineLightIcon } from './icons/leftViewLineLight';
+
 export { LightModeLineIcon } from './icons/lightModeLine';
 export { LightModeLineBoldIcon } from './icons/lightModeLineBold';
 export { LightModeLineLightIcon } from './icons/lightModeLineLight';

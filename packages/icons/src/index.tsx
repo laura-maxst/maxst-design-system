@@ -83,6 +83,10 @@ export { ArScanLineBoldIcon } from './icons/arScanLineBold';
 export { ArScanLineLightIcon } from './icons/arScanLineLight';
 export { ArScanFillIcon } from './icons/arScanFill';
 
+export { BottomViewLineIcon } from './icons/bottomViewLine';
+export { BottomViewLineBoldIcon } from './icons/bottomViewLineBold';
+export { BottomViewLineLightIcon } from './icons/bottomViewLineLight';
+
 export { CalibrationLineIcon } from './icons/calibrationLine';
 export { CalibrationLineBoldIcon } from './icons/calibrationLineBold';
 export { CalibrationLineLightIcon } from './icons/calibrationLineLight';

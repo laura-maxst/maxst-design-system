@@ -489,10 +489,10 @@ export { MoreHorizontalLineLightIcon } from './icons/moreHorizontalLineLight';
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
 export { MoreVerticalLineLightIcon } from './icons/moreVerticalLineLight';
 
-export { MyLocationLineIcon } from './icons/myLocationLine';
-export { MyLocationLineBoldIcon } from './icons/myLocationLineBold';
-export { MyLocationLineLightIcon } from './icons/myLocationLineLight';
-export { MyLocationFillIcon } from './icons/myLocationFill';
+export { TrackingLineIcon } from './icons/trackingLine';
+export { TrackingLineBoldIcon } from './icons/trackingLineBold';
+export { TrackingLineLightIcon } from './icons/trackingLineLight';
+export { TrackingFillIcon } from './icons/trackingFill';
 
 export { NotificationCheckLineIcon } from './icons/notificationCheckLine';
 export { NotificationCheckLineBoldIcon } from './icons/notificationCheckLineBold';

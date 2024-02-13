@@ -322,6 +322,11 @@ export { FloorLineBoldIcon } from './icons/floorLineBold';
 export { FloorLineLightIcon } from './icons/floorLineLight';
 export { FloorFillIcon } from './icons/floorFill';
 
+export { FolderDownloadLineIcon } from './icons/folderDownloadLine';
+export { FolderDownloadLineBoldIcon } from './icons/folderDownloadLineBold';
+export { FolderDownloadLineLightIcon } from './icons/folderDownloadLineLight';
+export { FolderDownloadFillIcon } from './icons/folderDownloadFill';
+
 export { FolderLineIcon } from './icons/folderLine';
 export { FolderLineBoldIcon } from './icons/folderLineBold';
 export { FolderLineLightIcon } from './icons/folderLineLight';

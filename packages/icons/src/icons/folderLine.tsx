@@ -3,16 +3,23 @@ import React from 'react';
 const FolderLineIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M32.34 14.76V9.95999H23.66V12.36H29.94V14.76H21.26V9.95999H10.74L6.03998 14.66V39.94H37.28L41.98 35.24V14.76H32.34ZM39.58 34.24L36.28 37.54H8.43998V15.66L11.74 12.36H18.86V17.16H39.58V34.24Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_1_797)">
+        <path
+          d="M32.34 9H23.66V11.4H29.94V13.8H21.26V9H10.74L6.04001 13.7V38.98H37.28L41.98 34.28V13.82H32.34V9.02V9ZM39.58 33.3L36.28 36.6H8.44001V14.7L11.74 11.4H18.86V16.2H39.58V33.28V33.3Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_797">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

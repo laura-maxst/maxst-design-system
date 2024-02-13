@@ -9,16 +9,22 @@ const LayerHorizontalFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_2227_254)">
+      <g clipPath="url(#clip0_2758_36504)">
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M24.4941 44.3702L8.2472 32.4943L7.99976 12.3712L24.2467 24.2471L24.4941 44.3702ZM32.4939 40.2466L26.7401 36.0685L26.5577 23.0558L16.0646 15.358L15.9995 8.2476L32.2464 20.1235L32.4939 40.2466ZM34.7405 31.9445L40.4943 36.1226L40.2469 15.9995L23.9999 4.12364L24.065 11.2341L34.5582 18.9319L34.7405 31.9445Z"
+          d="M25.1 43.6401L7.53999 33.3801L7.63999 13.0601L25.22 23.3201L25.1 43.6601L25.1 43.6401Z"
+          fill="currentColor"
+        />
+        <path
+          d="M15.26 8.71997L15.22 14.78L27.44 21.9L27.36 36.18L32.72 39.3L32.8 18.98L15.26 8.71997Z"
+          fill="currentColor"
+        />
+        <path
+          d="M22.9 4.36011L22.86 10.5201L35.08 17.6601L35 31.8001L40.36 34.9201L40.44 14.6001L22.9 4.36011Z"
           fill="currentColor"
         />
       </g>
       <defs>
-        <clipPath id="clip0_2227_254">
+        <clipPath id="clip0_2758_36504">
           <rect width="48" height="48" fill="white" />
         </clipPath>
       </defs>

@@ -180,6 +180,11 @@ export { DownloadCircleLineBoldIcon } from './icons/downloadCircleLineBold';
 export { DownloadCircleLineLightIcon } from './icons/downloadCircleLineLight';
 export { DownloadCircleFillIcon } from './icons/downloadCircleFill';
 
+export { DownloadDocxLineIcon } from './icons/downloadDocxLine';
+export { DownloadDocxLineBoldIcon } from './icons/downloadDocxLineBold';
+export { DownloadDocxLineLightIcon } from './icons/downloadDocxLineLight';
+export { DownloadDocxFillIcon } from './icons/downloadDocxFill';
+
 export { DownloadEfsLineIcon } from './icons/downloadEfsLine';
 export { DownloadEfsLineBoldIcon } from './icons/downloadEfsLineBold';
 export { DownloadEfsLineLightIcon } from './icons/downloadEfsLineLight';

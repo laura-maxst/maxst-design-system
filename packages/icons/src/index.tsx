@@ -726,6 +726,10 @@ export { ThreeDSpaceLineBoldIcon } from './icons/threeDSpaceLineBold';
 export { ThreeDSpaceLineLightIcon } from './icons/threeDSpaceLineLight';
 export { ThreeDSpaceFillIcon } from './icons/threeDSpaceFill';
 
+export { TopViewLineIcon } from './icons/topViewLine';
+export { TopViewLineBoldIcon } from './icons/topViewLineBold';
+export { TopViewLineLightIcon } from './icons/topViewLineLight';
+
 export { TrackingLineIcon } from './icons/trackingLine';
 export { TrackingLineBoldIcon } from './icons/trackingLineBold';
 export { TrackingLineLightIcon } from './icons/trackingLineLight';

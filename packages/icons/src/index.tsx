@@ -518,6 +518,11 @@ export { NotificationOffLineLightIcon } from './icons/notificationOffLineLight';
 export { NotificationOffLineBoldIcon } from './icons/notificationOffLineBold';
 export { NotificationOffFillIcon } from './icons/notificationOffFill';
 
+export { ObjectNewLineIcon } from './icons/objectNewLine';
+export { ObjectNewLineBoldIcon } from './icons/objectNewLineBold';
+export { ObjectNewLineLightIcon } from './icons/objectNewLineLight';
+export { ObjectNewFillIcon } from './icons/objectNewFill';
+
 export { ObjectToolBoxLineIcon } from './icons/objectToolBoxLine';
 export { ObjectToolBoxLineBoldIcon } from './icons/objectToolBoxLineBold';
 export { ObjectToolBoxLineLightIcon } from './icons/objectToolBoxLineLight';

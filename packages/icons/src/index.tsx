@@ -332,6 +332,11 @@ export { FolderLineBoldIcon } from './icons/folderLineBold';
 export { FolderLineLightIcon } from './icons/folderLineLight';
 export { FolderFillIcon } from './icons/folderFill';
 
+export { FolderUploadLineIcon } from './icons/folderUploadLine';
+export { FolderUploadLineBoldIcon } from './icons/folderUploadLineBold';
+export { FolderUploadLineLightIcon } from './icons/folderUploadLineLight';
+export { FolderUploadFillIcon } from './icons/folderUploadFill';
+
 export { FolderZipLineIcon } from './icons/folderZipLine';
 export { FolderZipLineBoldIcon } from './icons/folderZipLineBold';
 export { FolderZipLineLightIcon } from './icons/folderZipLineLight';
@@ -553,6 +558,11 @@ export { ProgressCircleFillIcon } from './icons/progressCircleFill';
 export { ProgressLineIcon } from './icons/progressLine';
 export { ProgressLineBoldIcon } from './icons/progressLineBold';
 export { ProgressLineLightIcon } from './icons/progressLineLight';
+
+export { RecordLineIcon } from './icons/recordLine';
+export { RecordLineBoldIcon } from './icons/recordLineBold';
+export { RecordLineLightIcon } from './icons/recordLineLight';
+export { RecordFillIcon } from './icons/recordFill';
 
 export { RefreshLineIcon } from './icons/refreshLine';
 export { RefreshLineBoldIcon } from './icons/refreshLineBold';

@@ -617,6 +617,10 @@ export { SaveZipLineIcon } from './icons/saveZipLine';
 export { SaveZipLineBoldIcon } from './icons/saveZipLineBold';
 export { SaveZipLineLightIcon } from './icons/saveZipLineLight';
 
+export { ScanLineIcon } from './icons/scanLine';
+export { ScanLineBoldIcon } from './icons/scanLineBold';
+export { ScanLineLightIcon } from './icons/scanLineLight';
+
 export { SearchLineIcon } from './icons/searchLine';
 export { SearchLineBoldIcon } from './icons/searchLineBold';
 export { SearchLineLightIcon } from './icons/searchLineLight';

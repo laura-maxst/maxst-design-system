@@ -195,6 +195,11 @@ export { DownloadJpgLineBoldIcon } from './icons/downloadJpgLineBold';
 export { DownloadJpgLineLightIcon } from './icons/downloadJpgLineLight';
 export { DownloadJpgFillIcon } from './icons/downloadJpgFill';
 
+export { DownloadJsonLineIcon } from './icons/downloadJsonLine';
+export { DownloadJsonLineBoldIcon } from './icons/downloadJsonLineBold';
+export { DownloadJsonLineLightIcon } from './icons/downloadJsonLineLight';
+export { DownloadJsonFillIcon } from './icons/downloadJsonFill';
+
 export { DownloadLineIcon } from './icons/downloadLine';
 export { DownloadLineBoldIcon } from './icons/downloadLineBold';
 export { DownloadLineLightIcon } from './icons/downloadLineLight';

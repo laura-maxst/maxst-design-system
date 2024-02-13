@@ -569,6 +569,11 @@ export { RecognitionObjectLineBoldIcon } from './icons/recognitionObjectLineBold
 export { RecognitionObjectLineLightIcon } from './icons/recognitionObjectLineLight';
 export { RecognitionObjectFillIcon } from './icons/recognitionObjectFill';
 
+export { RecognitionObjectOffLineIcon } from './icons/recognitionObjectOffLine';
+export { RecognitionObjectOffLineBoldIcon } from './icons/recognitionObjectOffLineBold';
+export { RecognitionObjectOffLineLightIcon } from './icons/recognitionObjectOffLineLight';
+export { RecognitionObjectOffFillIcon } from './icons/recognitionObjectOffFill';
+
 export { RecordLineIcon } from './icons/recordLine';
 export { RecordLineBoldIcon } from './icons/recordLineBold';
 export { RecordLineLightIcon } from './icons/recordLineLight';

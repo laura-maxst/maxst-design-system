@@ -9,12 +9,17 @@ const TerminalFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M11.5 7L7 11.5V41H36.5L41 36.5V7H11.5ZM19.8028 23.5L15.1514 18.8485L16.8484 17.1515L23.197 23.5L16.8484 29.8485L15.1514 28.1515L19.8028 23.5ZM24 31.2H32V28.8H24V31.2Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36589)">
+        <path
+          d="M10.78 6.08008L6.08002 10.7801V41.9001H37.2L41.9 37.2001V6.08008H10.78ZM14.9 32.7401L13.2 31.0401L20.3 23.9401L13.14 16.7801L14.84 15.0801L23.7 23.9401L14.9 32.7401ZM34.76 33.1601H26V30.7601H34.76V33.1601Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36589">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

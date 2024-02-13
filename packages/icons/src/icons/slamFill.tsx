@@ -9,12 +9,29 @@ const SlamFillIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M34.1012 11.4504L23.9994 17.2818L13.8984 11.4498L23.9994 5.61719L34.1012 11.4504ZM12.6986 13.5276L22.8002 19.3598V31.0252L12.6986 25.1924V13.5276ZM25.1986 19.3598V31.0252L35.3002 25.1924V13.5286L25.1986 19.3598ZM39.8002 39.6464V33.7344H42.1986V42.0468H5.80017V33.7344H8.19857V39.6464H14.7318V35.999H17.1302V39.6464H22.8216V33.7344H25.22V39.6464H31.4486V35.999H33.847V39.6464H39.8002Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36668)">
+        <path
+          d="M42.2 33.74H39.8V39.64H33.84V36H31.44V39.64H25.22V33.74H22.82V39.64H17.14V36H14.74V39.64H8.2V33.74H5.8V42.04H42.2V33.74Z"
+          fill="currentColor"
+        />
+        <path
+          d="M23.24 19.3001L12.72 13.0801V25.4001L23.24 31.4801V19.3001Z"
+          fill="currentColor"
+        />
+        <path
+          d="M34.52 11.9401L24 5.86011L13.62 11.8601L24 18.0201L34.52 11.9401Z"
+          fill="currentColor"
+        />
+        <path
+          d="M24.76 31.48L35.28 25.4V13.24L24.76 19.32V31.48Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36668">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

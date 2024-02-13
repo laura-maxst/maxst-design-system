@@ -3,17 +3,27 @@ import React from 'react';
 const MobileLineBoldIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M16.6007 5.70001L11.7207 10.58V44.28H31.3807L36.2607 39.4V5.70001H16.6007ZM33.2607 38.16L30.1407 41.28H14.7207V11.82L17.8407 8.70001H33.2607V38.16Z"
-        fill="currentColor"
-      />
-      <path d="M25.9609 36.4H19.9609V39.4H25.9609V36.4Z" fill="currentColor" />
+      <g clipPath="url(#clip0_2758_36208)">
+        <path
+          d="M16.56 4.62012L11.62 9.56012V43.4001H31.42L36.36 38.4601V4.62012H16.56ZM33.16 37.1201L30.1 40.1801H14.82V10.8801L17.88 7.82012H33.16V37.1401V37.1201Z"
+          fill="currentColor"
+        />
+        <path
+          d="M25.88 35.3799H19.88V38.5799H25.88V35.3799Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36208">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

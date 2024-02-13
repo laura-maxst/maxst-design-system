@@ -3,17 +3,27 @@ import React from 'react';
 const MobileLineLightIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
       viewBox="0 0 48 48"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M16.9596 6.59998L12.5996 10.96V43.38H30.9996L35.3596 39.02V6.59998H16.9596ZM34.1596 38.52L30.5196 42.16H13.8196V11.46L17.4596 7.81998H34.1596V38.54V38.52Z"
-        fill="currentColor"
-      />
-      <path d="M25.959 37.3H19.959V38.5H25.959V37.3Z" fill="currentColor" />
+      <g clipPath="url(#clip0_2758_36212)">
+        <path
+          d="M12.62 9.96012V42.3801H31.02L35.38 38.0201V5.62012H16.98L12.62 9.98012V9.96012ZM34.16 6.82012V37.5401L30.52 41.1801H13.82V10.4601L17.46 6.82012H34.16Z"
+          fill="currentColor"
+        />
+        <path
+          d="M26.98 36.3799H20.98V37.5799H26.98V36.3799Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36212">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

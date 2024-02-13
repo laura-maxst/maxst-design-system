@@ -587,6 +587,10 @@ export { RefreshLineIcon } from './icons/refreshLine';
 export { RefreshLineBoldIcon } from './icons/refreshLineBold';
 export { RefreshLineLightIcon } from './icons/refreshLineLight';
 
+export { RightViewLineIcon } from './icons/rightViewLine';
+export { RightViewLineBoldIcon } from './icons/rightViewLineBold';
+export { RightViewLineLightIcon } from './icons/rightViewLineLight';
+
 export { RouteLineIcon } from './icons/routeLine';
 export { RouteLineBoldIcon } from './icons/routeLineBold';
 export { RouteLineLightIcon } from './icons/routeLineLight';

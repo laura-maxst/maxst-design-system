@@ -9,12 +9,26 @@ const CalibrationLineLightIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M13.3418 6.58691H6.582V29.3163H13.3418V6.58691ZM12.1426 28.1171H7.7812V7.78611H12.1426V28.1171ZM28.7816 18.509H19.3934V19.948L15.936 17.9518L19.3934 15.9556V17.3098H28.7816V16.047L32.081 17.9518L28.7816 19.8566V18.509ZM33.2626 40.2139H40.2176V33.7013H41.4168V41.4131H6.582V33.7013H7.7812V40.2139H15.3466V35.9659H16.5458V40.2139H23.4364V33.7013H24.6356V40.2139H32.0634V35.9659H33.2626V40.2139ZM41.4173 29.3163H34.6575V6.58691H41.4173V29.3163ZM40.2181 7.78611H35.8567V28.1171H40.2181V7.78611Z"
-        fill="currentColor"
-      />
+      <g clipPath="url(#clip0_2758_36732)">
+        <path
+          d="M40.2 40.24H7.76V33.74H6.56V41.44H41.4V33.74H40.2V40.24Z"
+          fill="currentColor"
+        />
+        <path d="M16.54 36H15.34V39.92H16.54V36Z" fill="currentColor" />
+        <path d="M33.24 36H32.04V39.92H33.24V36Z" fill="currentColor" />
+        <path d="M24.62 33.74H23.42V39.94H24.62V33.74Z" fill="currentColor" />
+        <path d="M7.76 6.1001H6.56V30.2001H7.76V6.1001Z" fill="currentColor" />
+        <path d="M41.4 6.1001H40.2V30.2001H41.4V6.1001Z" fill="currentColor" />
+        <path
+          d="M18.6 24.1601L13.82 19.4001H34.08L29.3 24.1601L30.16 25.0201L35.78 19.4001V19.3801L36.38 18.8001L35.78 18.2001L30.16 12.5601L29.3 13.4201L34.08 18.2001H13.82L18.6 13.4201L17.76 12.5601L11.52 18.8001L17.76 25.0201L18.6 24.1601Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2758_36732">
+          <rect width="48" height="48" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

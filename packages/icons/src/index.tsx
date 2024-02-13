@@ -90,7 +90,6 @@ export { BottomViewLineLightIcon } from './icons/bottomViewLineLight';
 export { CalibrationLineIcon } from './icons/calibrationLine';
 export { CalibrationLineBoldIcon } from './icons/calibrationLineBold';
 export { CalibrationLineLightIcon } from './icons/calibrationLineLight';
-export { CalibrationFillIcon } from './icons/calibrationFill';
 
 export { CheckCircleFillIcon } from './icons/checkCircleFill';
 export { CheckCircleLineIcon } from './icons/checkCircleLine';

@@ -560,6 +560,10 @@ export { ProgressLineIcon } from './icons/progressLine';
 export { ProgressLineBoldIcon } from './icons/progressLineBold';
 export { ProgressLineLightIcon } from './icons/progressLineLight';
 
+export { RecognitionLineIcon } from './icons/recognitionLine';
+export { RecognitionLineBoldIcon } from './icons/recognitionLineBold';
+export { RecognitionLineLightIcon } from './icons/recognitionLineLight';
+
 export { RecordLineIcon } from './icons/recordLine';
 export { RecordLineBoldIcon } from './icons/recordLineBold';
 export { RecordLineLightIcon } from './icons/recordLineLight';

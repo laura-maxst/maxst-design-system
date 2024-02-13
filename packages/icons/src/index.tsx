@@ -327,6 +327,11 @@ export { FolderLineBoldIcon } from './icons/folderLineBold';
 export { FolderLineLightIcon } from './icons/folderLineLight';
 export { FolderFillIcon } from './icons/folderFill';
 
+export { FolderZipLineIcon } from './icons/folderZipLine';
+export { FolderZipLineBoldIcon } from './icons/folderZipLineBold';
+export { FolderZipLineLightIcon } from './icons/folderZipLineLight';
+export { FolderZipFillIcon } from './icons/folderZipFill';
+
 export { FullScreenLineIcon } from './icons/fullScreenLine';
 export { FullScreenLineBoldIcon } from './icons/fullScreenLineBold';
 export { FullScreenLineLightIcon } from './icons/fullScreenLineLight';

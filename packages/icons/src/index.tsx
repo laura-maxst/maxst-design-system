@@ -561,6 +561,10 @@ export { SaveLineIcon } from './icons/saveLine';
 export { SaveLineBoldIcon } from './icons/saveLineBold';
 export { SaveLineLightIcon } from './icons/saveLineLight';
 
+export { SavePdfLineIcon } from './icons/savePdfLine';
+export { SavePdfLineBoldIcon } from './icons/savePdfLineBold';
+export { SavePdfLineLightIcon } from './icons/savePdfLineLight';
+
 export { SearchLineIcon } from './icons/searchLine';
 export { SearchLineBoldIcon } from './icons/searchLineBold';
 export { SearchLineLightIcon } from './icons/searchLineLight';

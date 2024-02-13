@@ -770,6 +770,11 @@ export { UserLineBoldIcon } from './icons/userLineBold';
 export { UserLineLightIcon } from './icons/userLineLight';
 export { UserFillIcon } from './icons/userFill';
 
+export { VideoLineIcon } from './icons/videoLine';
+export { VideoLineBoldIcon } from './icons/videoLineBold';
+export { VideoLineLightIcon } from './icons/videoLineLight';
+export { VideoFillIcon } from './icons/videoFill';
+
 export { ViewLineIcon } from './icons/viewLine';
 export { ViewLineLightIcon } from './icons/viewLineLight';
 export { ViewLineBoldIcon } from './icons/viewLineBold';

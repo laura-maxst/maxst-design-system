@@ -577,6 +577,10 @@ export { SavePdfLineIcon } from './icons/savePdfLine';
 export { SavePdfLineBoldIcon } from './icons/savePdfLineBold';
 export { SavePdfLineLightIcon } from './icons/savePdfLineLight';
 
+export { SavePlyLineIcon } from './icons/savePlyLine';
+export { SavePlyLineBoldIcon } from './icons/savePlyLineBold';
+export { SavePlyLineLightIcon } from './icons/savePlyLineLight';
+
 export { SaveZipLineIcon } from './icons/saveZipLine';
 export { SaveZipLineBoldIcon } from './icons/saveZipLineBold';
 export { SaveZipLineLightIcon } from './icons/saveZipLineLight';

@@ -573,6 +573,10 @@ export { SaveLineIcon } from './icons/saveLine';
 export { SaveLineBoldIcon } from './icons/saveLineBold';
 export { SaveLineLightIcon } from './icons/saveLineLight';
 
+export { SaveMp4LineIcon } from './icons/saveMp4Line';
+export { SaveMp4LineBoldIcon } from './icons/saveMp4LineBold';
+export { SaveMp4LineLightIcon } from './icons/saveMp4LineLight';
+
 export { SavePdfLineIcon } from './icons/savePdfLine';
 export { SavePdfLineBoldIcon } from './icons/savePdfLineBold';
 export { SavePdfLineLightIcon } from './icons/savePdfLineLight';

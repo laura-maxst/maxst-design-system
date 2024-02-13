@@ -81,6 +81,7 @@ export { ArrowUpwardLineBoldIcon } from './icons/arrowUpwardLineBold';
 export { ArScanLineIcon } from './icons/arScanLine';
 export { ArScanLineBoldIcon } from './icons/arScanLineBold';
 export { ArScanLineLightIcon } from './icons/arScanLineLight';
+export { ArScanFillIcon } from './icons/arScanFill';
 
 export { CalibrationLineIcon } from './icons/calibrationLine';
 export { CalibrationLineBoldIcon } from './icons/calibrationLineBold';

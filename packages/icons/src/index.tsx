@@ -573,6 +573,10 @@ export { SaveJpgLineIcon } from './icons/saveJpgLine';
 export { SaveJpgLineBoldIcon } from './icons/saveJpgLineBold';
 export { SaveJpgLineLightIcon } from './icons/saveJpgLineLight';
 
+export { SaveJsonLineIcon } from './icons/saveJsonLine';
+export { SaveJsonLineBoldIcon } from './icons/saveJsonLineBold';
+export { SaveJsonLineLightIcon } from './icons/saveJsonLineLight';
+
 export { SaveLineIcon } from './icons/saveLine';
 export { SaveLineBoldIcon } from './icons/saveLineBold';
 export { SaveLineLightIcon } from './icons/saveLineLight';

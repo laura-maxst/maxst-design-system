@@ -577,6 +577,10 @@ export { SavePdfLineIcon } from './icons/savePdfLine';
 export { SavePdfLineBoldIcon } from './icons/savePdfLineBold';
 export { SavePdfLineLightIcon } from './icons/savePdfLineLight';
 
+export { SaveZipLineIcon } from './icons/saveZipLine';
+export { SaveZipLineBoldIcon } from './icons/saveZipLineBold';
+export { SaveZipLineLightIcon } from './icons/saveZipLineLight';
+
 export { SearchLineIcon } from './icons/searchLine';
 export { SearchLineBoldIcon } from './icons/searchLineBold';
 export { SearchLineLightIcon } from './icons/searchLineLight';

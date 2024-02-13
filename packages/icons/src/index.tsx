@@ -557,6 +557,10 @@ export { SaveCircleLineBoldIcon } from './icons/saveCircleLineBold';
 export { SaveCircleLineLightIcon } from './icons/saveCircleLineLight';
 export { SaveCircleFillIcon } from './icons/saveCircleFill';
 
+export { SaveBinLineIcon } from './icons/saveBinLine';
+export { SaveBinLineBoldIcon } from './icons/saveBinLineBold';
+export { SaveBinLineLightIcon } from './icons/saveBinLineLight';
+
 export { SaveEfsLineIcon } from './icons/saveEfsLine';
 export { SaveEfsLineBoldIcon } from './icons/saveEfsLineBold';
 export { SaveEfsLineLightIcon } from './icons/saveEfsLineLight';

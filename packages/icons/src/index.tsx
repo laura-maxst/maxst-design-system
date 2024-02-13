@@ -194,6 +194,11 @@ export { DownloadLineIcon } from './icons/downloadLine';
 export { DownloadLineBoldIcon } from './icons/downloadLineBold';
 export { DownloadLineLightIcon } from './icons/downloadLineLight';
 
+export { DownloadMp4LineIcon } from './icons/downloadMp4Line';
+export { DownloadMp4LineBoldIcon } from './icons/downloadMp4LineBold';
+export { DownloadMp4LineLightIcon } from './icons/downloadMp4LineLight';
+export { DownloadMp4FillIcon } from './icons/downloadMp4Fill';
+
 export { DownloadPdfLineIcon } from './icons/downloadPdfLine';
 export { DownloadPdfLineBoldIcon } from './icons/downloadPdfLineBold';
 export { DownloadPdfLineLightIcon } from './icons/downloadPdfLineLight';

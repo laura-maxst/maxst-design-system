@@ -489,11 +489,6 @@ export { MoreHorizontalLineLightIcon } from './icons/moreHorizontalLineLight';
 export { MoreVerticalLineIcon } from './icons/moreVerticalLine';
 export { MoreVerticalLineLightIcon } from './icons/moreVerticalLineLight';
 
-export { TrackingLineIcon } from './icons/trackingLine';
-export { TrackingLineBoldIcon } from './icons/trackingLineBold';
-export { TrackingLineLightIcon } from './icons/trackingLineLight';
-export { TrackingFillIcon } from './icons/trackingFill';
-
 export { NotificationCheckLineIcon } from './icons/notificationCheckLine';
 export { NotificationCheckLineBoldIcon } from './icons/notificationCheckLineBold';
 export { NotificationCheckLineLightIcon } from './icons/notificationCheckLineLight';
@@ -706,6 +701,16 @@ export { ThreeDSpaceLineIcon } from './icons/threeDSpaceLine';
 export { ThreeDSpaceLineBoldIcon } from './icons/threeDSpaceLineBold';
 export { ThreeDSpaceLineLightIcon } from './icons/threeDSpaceLineLight';
 export { ThreeDSpaceFillIcon } from './icons/threeDSpaceFill';
+
+export { TrackingLineIcon } from './icons/trackingLine';
+export { TrackingLineBoldIcon } from './icons/trackingLineBold';
+export { TrackingLineLightIcon } from './icons/trackingLineLight';
+export { TrackingFillIcon } from './icons/trackingFill';
+
+export { TrackingObjectLineIcon } from './icons/trackingObjectLine';
+export { TrackingObjectLineBoldIcon } from './icons/trackingObjectLineBold';
+export { TrackingObjectLineLightIcon } from './icons/trackingObjectLineLight';
+export { TrackingObjectFillIcon } from './icons/trackingObjectFill';
 
 export { TuneLineIcon } from './icons/tuneLine';
 export { TuneLineBoldIcon } from './icons/tuneLineBold';

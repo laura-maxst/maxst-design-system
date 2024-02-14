@@ -92,6 +92,11 @@ export { CalanderCheckLineBoldIcon } from './icons/calanderCheckLineBold';
 export { CalanderCheckLineLightIcon } from './icons/calanderCheckLineLight';
 export { CalanderCheckFillIcon } from './icons/calanderCheckFill';
 
+export { CalanderMeetLineIcon } from './icons/calanderMeetLine';
+export { CalanderMeetLineBoldIcon } from './icons/calanderMeetLineBold';
+export { CalanderMeetLineLightIcon } from './icons/calanderMeetLineLight';
+export { CalanderMeetFillIcon } from './icons/calanderMeetFill';
+
 export { CalanderLineIcon } from './icons/calanderLine';
 export { CalanderLineBoldIcon } from './icons/calanderLineBold';
 export { CalanderLineLightIcon } from './icons/calanderLineLight';

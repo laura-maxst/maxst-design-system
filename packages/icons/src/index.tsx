@@ -793,6 +793,11 @@ export { StarLineBoldIcon } from './icons/starLineBold';
 export { StarLineLightIcon } from './icons/starLineLight';
 export { StarFillIcon } from './icons/starFill';
 
+export { SupportFundLineIcon } from './icons/supportFundLine';
+export { SupportFundLineBoldIcon } from './icons/supportFundLineBold';
+export { SupportFundLineLightIcon } from './icons/supportFundLineLight';
+export { SupportFundFillIcon } from './icons/supportFundFill';
+
 export { SyncLineIcon } from './icons/syncLine';
 export { SyncLineBoldIcon } from './icons/syncLineBold';
 export { SyncLineLightIcon } from './icons/syncLineLight';

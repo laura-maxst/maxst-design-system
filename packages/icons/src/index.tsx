@@ -606,10 +606,10 @@ export { OptimizationLineBoldIcon } from './icons/optimizationLineBold';
 export { OptimizationLineLightIcon } from './icons/optimizationLineLight';
 export { OptimizationFillIcon } from './icons/optimizationFill';
 
-export { PasswordLineIcon } from './icons/PasswordLine';
-export { PasswordLineBoldIcon } from './icons/PasswordLineBold';
-export { PasswordLineLightIcon } from './icons/PasswordLineLight';
-export { PasswordFillIcon } from './icons/PasswordFill';
+export { PasswordLineIcon } from './icons/passwordLine';
+export { PasswordLineBoldIcon } from './icons/passwordLineBold';
+export { PasswordLineLightIcon } from './icons/passwordLineLight';
+export { PasswordFillIcon } from './icons/passwordFill';
 
 export { PlayCircleLineIcon } from './icons/playCircleLine';
 export { PlayCircleLineBoldIcon } from './icons/playCircleLineBold';

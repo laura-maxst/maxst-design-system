@@ -144,6 +144,11 @@ export { CurrencyLineBoldIcon } from './icons/currencyLineBold';
 export { CurrencyLineLightIcon } from './icons/currencyLineLight';
 export { CurrencyFillIcon } from './icons/currencyFill';
 
+export { CurrencyKrLineIcon } from './icons/currencyKrLine';
+export { CurrencyKrLineBoldIcon } from './icons/currencyKrLineBold';
+export { CurrencyKrLineLightIcon } from './icons/currencyKrLineLight';
+export { CurrencyKrFillIcon } from './icons/currencyKrFill';
+
 export { CurrencyUsLineIcon } from './icons/currencyUsLine';
 export { CurrencyUsLineBoldIcon } from './icons/currencyUsLineBold';
 export { CurrencyUsLineLightIcon } from './icons/currencyUsLineLight';

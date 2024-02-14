@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DocUploadBoldLineIcon = () => {
+const DocUploadLineBoldIcon = () => {
   return (
     <svg
       width="48"
@@ -32,4 +32,4 @@ const DocUploadBoldLineIcon = () => {
   );
 };
 
-export { DocUploadBoldLineIcon };
+export { DocUploadLineBoldIcon };

@@ -378,7 +378,6 @@ export { IdCardLineIcon } from './icons/idCardLine';
 export { IdCardLineBoldIcon } from './icons/idCardLineBold';
 export { IdCardLineLightIcon } from './icons/idCardLineLight';
 export { IdCardFillIcon } from './icons/idCardFill';
-export { IdCardFillLightIcon } from './icons/idCardFillLight';
 
 export { IdentificationLineIcon } from './icons/identificationLine';
 export { IdentificationLineBoldIcon } from './icons/identificationLineBold';

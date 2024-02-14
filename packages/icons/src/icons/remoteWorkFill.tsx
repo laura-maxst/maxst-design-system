@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RemoveWorkFillIcon = () => {
+const RemoteWorkFillIcon = () => {
   return (
     <svg
       width="48"
@@ -30,4 +30,4 @@ const RemoveWorkFillIcon = () => {
   );
 };
 
-export { RemoveWorkFillIcon };
+export { RemoteWorkFillIcon };

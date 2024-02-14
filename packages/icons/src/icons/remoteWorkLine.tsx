@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RemoveWorkLineIcon = () => {
+const RemoteWorkLineIcon = () => {
   return (
     <svg
       width="48"
@@ -40,4 +40,4 @@ const RemoveWorkLineIcon = () => {
   );
 };
 
-export { RemoveWorkLineIcon };
+export { RemoteWorkLineIcon };

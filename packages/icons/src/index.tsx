@@ -685,10 +685,10 @@ export { RefreshLineIcon } from './icons/refreshLine';
 export { RefreshLineBoldIcon } from './icons/refreshLineBold';
 export { RefreshLineLightIcon } from './icons/refreshLineLight';
 
-export { RemoveWorkLineIcon } from './icons/removeWorkLine';
-export { RemoveWorkLineBoldIcon } from './icons/removeWorkLineBold';
-export { RemoveWorkLineLightIcon } from './icons/removeWorkLineLight';
-export { RemoveWorkFillIcon } from './icons/removeWorkFill';
+export { RemoteWorkLineIcon } from './icons/remoteWorkLine';
+export { RemoteWorkLineBoldIcon } from './icons/remoteWorkLineBold';
+export { RemoteWorkLineLightIcon } from './icons/remoteWorkLineLight';
+export { RemoteWorkFillIcon } from './icons/remoteWorkFill';
 
 export { RightViewLineIcon } from './icons/rightViewLine';
 export { RightViewLineBoldIcon } from './icons/rightViewLineBold';

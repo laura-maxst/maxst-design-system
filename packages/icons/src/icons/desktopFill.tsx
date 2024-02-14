@@ -12,7 +12,7 @@ const DesktopFillIcon = () => {
       <g clipPath="url(#clip0_2758_36200)">
         <path
           d="M10.74 9.04004L6.03998 13.74V33.02H22.8V36.56H16V38.96H32V36.56H25.2V33.02H37.26L41.96 28.3V9.04004H10.74Z"
-          fill="#222222"
+          fill="currentColor"
         />
       </g>
       <defs>

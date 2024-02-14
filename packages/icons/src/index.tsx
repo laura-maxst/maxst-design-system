@@ -643,6 +643,11 @@ export { PrivacySecurityLineBoldIcon } from './icons/privacySecurityLineBold';
 export { PrivacySecurityLineLightIcon } from './icons/privacySecurityLineLight';
 export { PrivacySecurityFillIcon } from './icons/privacySecurityFill';
 
+export { PrizeMoneyLineIcon } from './icons/prizeMoneyLine';
+export { PrizeMoneyLineBoldIcon } from './icons/prizeMoneyLineBold';
+export { PrizeMoneyLineLightIcon } from './icons/prizeMoneyLineLight';
+export { PrizeMoneyFillIcon } from './icons/prizeMoneyFill';
+
 export { ProfileLineIcon } from './icons/profileLine';
 export { ProfileLineBoldIcon } from './icons/profileLineBold';
 export { ProfileLineLightIcon } from './icons/profileLineLight';

@@ -185,7 +185,7 @@ export { DigitalTwinLineLightIcon } from './icons/digitalTwinLineLight';
 export { DigitalTwinFillIcon } from './icons/digitalTwinFill';
 
 export { DocDownloadLineIcon } from './icons/docDownloadLine';
-export { DocDownloadBoldLineIcon } from './icons/docDownloadLineBold';
+export { DocDownloadLineBoldIcon } from './icons/docDownloadLineBold';
 export { DocDownloadLineLightIcon } from './icons/docDownloadLineLight';
 export { DocDownloadFillIcon } from './icons/docDownloadFill';
 
@@ -210,7 +210,7 @@ export { DocumentLineLightIcon } from './icons/documentLineLight';
 export { DocumentFillIcon } from './icons/documentFill';
 
 export { DocUploadLineIcon } from './icons/docUploadLine';
-export { DocUploadBoldLineIcon } from './icons/docUploadLineBold';
+export { DocUploadLineBoldIcon } from './icons/docUploadLineBold';
 export { DocUploadLineLightIcon } from './icons/docUploadLineLight';
 export { DocUploadFillIcon } from './icons/docUploadFill';
 
@@ -359,7 +359,7 @@ export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';
 export { FlexibleWorkLineIcon } from './icons/flexibleWorkLine';
 export { FlexibleWorkLineBoldIcon } from './icons/flexibleWorkLineBold';
 export { FlexibleWorkLineLightIcon } from './icons/flexibleWorkLineLight';
-export { FlexibleWorkFillcon } from './icons/flexibleWorkFill';
+export { FlexibleWorkFillIcon } from './icons/flexibleWorkFill';
 
 export { FloorLineIcon } from './icons/floorLine';
 export { FloorLineBoldIcon } from './icons/floorLineBold';

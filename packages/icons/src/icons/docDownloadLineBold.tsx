@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DocDownloadBoldLineIcon = () => {
+const DocDownloadLineBoldIcon = () => {
   return (
     <svg
       width="48"
@@ -32,4 +32,4 @@ const DocDownloadBoldLineIcon = () => {
   );
 };
 
-export { DocDownloadBoldLineIcon };
+export { DocDownloadLineBoldIcon };

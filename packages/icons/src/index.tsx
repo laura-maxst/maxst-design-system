@@ -380,6 +380,16 @@ export { IdCardLineLightIcon } from './icons/idCardLineLight';
 export { IdCardFillIcon } from './icons/idCardFill';
 export { IdCardFillLightIcon } from './icons/idCardFillLight';
 
+export { IdentificationLineIcon } from './icons/identificationLine';
+export { IdentificationLineBoldIcon } from './icons/identificationLineBold';
+export { IdentificationLineLightIcon } from './icons/identificationLineLight';
+export { IdentificationFillIcon } from './icons/identificationFill';
+
+export { IdSecurityLineIcon } from './icons/idSecurityLine';
+export { IdSecurityLineBoldIcon } from './icons/idSecurityLineBold';
+export { IdSecurityLineLightIcon } from './icons/idSecurityLineLight';
+export { IdSecurityFillIcon } from './icons/idSecurityFill';
+
 export { ImageLineIcon } from './icons/imageLine';
 export { ImageLineBoldIcon } from './icons/imageLineBold';
 export { ImageLineLightIcon } from './icons/imageLineLight';

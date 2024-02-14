@@ -11,7 +11,7 @@ const ArrowInwardLineBoldIcon = () => {
     >
       <g clipPath="url(#clip0_1_603)">
         <path
-          d="M35.18 10.72L12.34 33.54V13.8H9.96V37.64H33.78V35.24H14.06L36.88 12.42L35.18 10.72Z"
+          d="M37.16 12.7L34.9 10.44L12.76 32.58V13.8H9.56V38.04H33.78V34.84H15.02L37.16 12.7Z"
           fill="currentColor"
         />
       </g>

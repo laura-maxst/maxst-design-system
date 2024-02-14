@@ -399,6 +399,11 @@ export { FullScreenOffLineIcon } from './icons/fullScreenOffLine';
 export { FullScreenOffLineBoldIcon } from './icons/fullScreenOffLineBold';
 export { FullScreenOffLineLightIcon } from './icons/fullScreenOffLineLight';
 
+export { GiftLineIcon } from './icons/giftLine';
+export { GiftLineBoldIcon } from './icons/giftLineBold';
+export { GiftLineLightIcon } from './icons/giftLineLight';
+export { GiftFillIcon } from './icons/giftFill';
+
 export { GridViewLineIcon } from './icons/gridViewLine';
 export { GridViewLineBoldIcon } from './icons/gridViewLineBold';
 export { GridViewLineLightIcon } from './icons/gridViewLineLight';

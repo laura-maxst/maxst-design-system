@@ -1,3 +1,3 @@
 import React from 'react';
-declare const LinkLightLineIcon: () => React.JSX.Element;
-export { LinkLightLineIcon };
+declare const LinkLineLightIcon: () => React.JSX.Element;
+export { LinkLineLightIcon };

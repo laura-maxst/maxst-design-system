@@ -352,11 +352,6 @@ export { FilterOffLineBoldIcon } from './icons/filterOffLineBold';
 export { FilterOffLineLightIcon } from './icons/filterOffLineLight';
 export { FilterOffFillIcon } from './icons/filterOffFill';
 
-export { FindInPageLineIcon } from './icons/findInPageLine';
-export { FindInPageLineBoldIcon } from './icons/findInPageLineBold';
-export { FindInPageLineLightIcon } from './icons/findInPageLineLight';
-export { FindInPageFillIcon } from './icons/findInPageFill';
-
 export { FirstPageLineIcon } from './icons/firstPageLine';
 export { FirstPageLineLightIcon } from './icons/firstPageLineLight';
 export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';
@@ -479,7 +474,7 @@ export { LightModeFillIcon } from './icons/lightModeFill';
 
 export { LinkLineIcon } from './icons/linkLine';
 export { LinkLineBoldIcon } from './icons/linkLineBold';
-export { LinkLightLineIcon } from './icons/linkLineLight';
+export { LinkLineLightIcon } from './icons/linkLineLight';
 
 export { ListViewLineIcon } from './icons/listViewLine';
 export { ListViewLineBoldIcon } from './icons/listViewLineBold';

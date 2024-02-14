@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LinkLightLineIcon = () => {
+const LinkLineLightIcon = () => {
   return (
     <svg
       width="48"
@@ -24,4 +24,4 @@ const LinkLightLineIcon = () => {
   );
 };
 
-export { LinkLightLineIcon };
+export { LinkLineLightIcon };

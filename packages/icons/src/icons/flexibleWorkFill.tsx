@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FlexibleWorkFillcon = () => {
+const FlexibleWorkFillIcon = () => {
   return (
     <svg
       width="48"
@@ -36,4 +36,4 @@ const FlexibleWorkFillcon = () => {
   );
 };
 
-export { FlexibleWorkFillcon };
+export { FlexibleWorkFillIcon };

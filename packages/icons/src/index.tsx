@@ -608,6 +608,11 @@ export { PlusLineIcon } from './icons/plusLine';
 export { PlusLineLightIcon } from './icons/plusLineLight';
 export { PlusLineBoldIcon } from './icons/plusLineBold';
 
+export { PointLineIcon } from './icons/pointLine';
+export { PointLineBoldIcon } from './icons/pointLineBold';
+export { PointLineLightIcon } from './icons/pointLineLight';
+export { PointFillIcon } from './icons/pointFill';
+
 export { PrivacyLineIcon } from './icons/privacyLine';
 export { PrivacyLineBoldIcon } from './icons/privacyLineBold';
 export { PrivacyLineLightIcon } from './icons/privacyLineLight';

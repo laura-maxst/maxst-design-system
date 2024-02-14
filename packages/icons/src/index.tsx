@@ -336,6 +336,11 @@ export { FirstPageLineIcon } from './icons/firstPageLine';
 export { FirstPageLineLightIcon } from './icons/firstPageLineLight';
 export { FirstPageLineBoldIcon } from './icons/firstPageLineBold';
 
+export { FlexibleWorkLineIcon } from './icons/flexibleWorkLine';
+export { FlexibleWorkLineBoldIcon } from './icons/flexibleWorkLineBold';
+export { FlexibleWorkLineLightIcon } from './icons/flexibleWorkLineLight';
+export { FlexibleWorkFillcon } from './icons/flexibleWorkFill';
+
 export { FloorLineIcon } from './icons/floorLine';
 export { FloorLineBoldIcon } from './icons/floorLineBold';
 export { FloorLineLightIcon } from './icons/floorLineLight';

@@ -83,6 +83,11 @@ export { ArScanLineBoldIcon } from './icons/arScanLineBold';
 export { ArScanLineLightIcon } from './icons/arScanLineLight';
 export { ArScanFillIcon } from './icons/arScanFill';
 
+export { BookBudgetLineIcon } from './icons/bookBudgetLine';
+export { BookBudgetLineBoldIcon } from './icons/bookBudgetLineBold';
+export { BookBudgetLineLightIcon } from './icons/bookBudgetLineLight';
+export { BookBudgetFillIcon } from './icons/bookBudgetFill';
+
 export { BottomViewLineIcon } from './icons/bottomViewLine';
 export { BottomViewLineBoldIcon } from './icons/bottomViewLineBold';
 export { BottomViewLineLightIcon } from './icons/bottomViewLineLight';

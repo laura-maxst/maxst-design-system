@@ -87,6 +87,11 @@ export { BottomViewLineIcon } from './icons/bottomViewLine';
 export { BottomViewLineBoldIcon } from './icons/bottomViewLineBold';
 export { BottomViewLineLightIcon } from './icons/bottomViewLineLight';
 
+export { CalanderLineIcon } from './icons/calanderLine';
+export { CalanderLineBoldIcon } from './icons/calanderLineBold';
+export { CalanderLineLightIcon } from './icons/calanderLineLight';
+export { CalanderFillIcon } from './icons/calanderFill';
+
 export { CalibrationLineIcon } from './icons/calibrationLine';
 export { CalibrationLineBoldIcon } from './icons/calibrationLineBold';
 export { CalibrationLineLightIcon } from './icons/calibrationLineLight';

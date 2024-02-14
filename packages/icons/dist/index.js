@@ -4295,7 +4295,7 @@ var DocDownloadLineIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var DocDownloadBoldLineIcon = function () {
+var DocDownloadLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_1698_6897)" },
             React.createElement("path", { d: "M30.72 12.86H13.3V16.06H30.72V12.86Z", fill: "currentColor" }),
@@ -4545,7 +4545,7 @@ var DocUploadLineIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var DocUploadBoldLineIcon = function () {
+var DocUploadLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_2758_31599)" },
             React.createElement("path", { d: "M8.85997 11.84L11.92 8.77996H35.14V23.58H38.34V5.57996H10.6L5.65997 10.52V42.42H25.6V39.22H8.85997V11.84Z", fill: "currentColor" }),
@@ -5929,7 +5929,7 @@ var FlexibleWorkLineLightIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var FlexibleWorkFillcon = function () {
+var FlexibleWorkFillIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_2758_42641)" },
             React.createElement("path", { d: "M30.2 11.5999H27.8V8.7999H20.2V11.5999H17.8V6.3999H30.2V11.5999Z", fill: "currentColor" }),
@@ -8587,7 +8587,7 @@ var RefreshLineLightIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var RemoveWorkLineIcon = function () {
+var RemoteWorkLineIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_2758_42690)" },
             React.createElement("path", { d: "M20.5 19.0601H17.5V22.0601H20.5V19.0601Z", fill: "currentColor" }),
@@ -8600,7 +8600,7 @@ var RemoveWorkLineIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var RemoveWorkLineBoldIcon = function () {
+var RemoteWorkLineBoldIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_2758_42696)" },
             React.createElement("path", { d: "M20.5 19.0601H17.5V22.0601H20.5V19.0601Z", fill: "currentColor" }),
@@ -8613,7 +8613,7 @@ var RemoveWorkLineBoldIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var RemoveWorkLineLightIcon = function () {
+var RemoteWorkLineLightIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_2758_42702)" },
             React.createElement("path", { d: "M20.2 19.3601H17.8V21.7601H20.2V19.3601Z", fill: "currentColor" }),
@@ -8626,7 +8626,7 @@ var RemoveWorkLineLightIcon = function () {
                 React.createElement("rect", { width: "48", height: "48", fill: "white" })))));
 };
 
-var RemoveWorkFillIcon = function () {
+var RemoteWorkFillIcon = function () {
     return (React.createElement("svg", { width: "48", height: "48", viewBox: "0 0 48 48", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
         React.createElement("g", { clipPath: "url(#clip0_2758_42708)" },
             React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M23.9999 41.8198V28.0798L27.9799 23.9998H38.4599V21.5998L21.6599 4.81982L4.87988 21.5998V41.8198H23.9999ZM20.5 22.0801H17.5V19.0801H20.5V22.0801ZM17.5 28.0601H20.5V25.0601H17.5V28.0601ZM26.5 22.0801H23.5V19.0801H26.5V22.0801Z", fill: "currentColor" }),
@@ -11148,8 +11148,8 @@ exports.DigitalTwinFillIcon = DigitalTwinFillIcon;
 exports.DigitalTwinLineBoldIcon = DigitalTwinLineBoldIcon;
 exports.DigitalTwinLineIcon = DigitalTwinLineIcon;
 exports.DigitalTwinLineLightIcon = DigitalTwinLineLightIcon;
-exports.DocDownloadBoldLineIcon = DocDownloadBoldLineIcon;
 exports.DocDownloadFillIcon = DocDownloadFillIcon;
+exports.DocDownloadLineBoldIcon = DocDownloadLineBoldIcon;
 exports.DocDownloadLineIcon = DocDownloadLineIcon;
 exports.DocDownloadLineLightIcon = DocDownloadLineLightIcon;
 exports.DocMoveFillIcon = DocMoveFillIcon;
@@ -11164,8 +11164,8 @@ exports.DocSearchFillIcon = DocSearchFillIcon;
 exports.DocSearchLineBoldIcon = DocSearchLineBoldIcon;
 exports.DocSearchLineIcon = DocSearchLineIcon;
 exports.DocSearchLineLightIcon = DocSearchLineLightIcon;
-exports.DocUploadBoldLineIcon = DocUploadBoldLineIcon;
 exports.DocUploadFillIcon = DocUploadFillIcon;
+exports.DocUploadLineBoldIcon = DocUploadLineBoldIcon;
 exports.DocUploadLineIcon = DocUploadLineIcon;
 exports.DocUploadLineLightIcon = DocUploadLineLightIcon;
 exports.DocumentFillIcon = DocumentFillIcon;
@@ -11285,7 +11285,7 @@ exports.FilterOffLineLightIcon = FilterOffLineLightIcon;
 exports.FirstPageLineBoldIcon = FirstPageLineBoldIcon;
 exports.FirstPageLineIcon = FirstPageLineIcon;
 exports.FirstPageLineLightIcon = FirstPageLineLightIcon;
-exports.FlexibleWorkFillcon = FlexibleWorkFillcon;
+exports.FlexibleWorkFillIcon = FlexibleWorkFillIcon;
 exports.FlexibleWorkLineBoldIcon = FlexibleWorkLineBoldIcon;
 exports.FlexibleWorkLineIcon = FlexibleWorkLineIcon;
 exports.FlexibleWorkLineLightIcon = FlexibleWorkLineLightIcon;
@@ -11545,10 +11545,10 @@ exports.RecordLineLightIcon = RecordLineLightIcon;
 exports.RefreshLineBoldIcon = RefreshLineBoldIcon;
 exports.RefreshLineIcon = RefreshLineIcon;
 exports.RefreshLineLightIcon = RefreshLineLightIcon;
-exports.RemoveWorkFillIcon = RemoveWorkFillIcon;
-exports.RemoveWorkLineBoldIcon = RemoveWorkLineBoldIcon;
-exports.RemoveWorkLineIcon = RemoveWorkLineIcon;
-exports.RemoveWorkLineLightIcon = RemoveWorkLineLightIcon;
+exports.RemoteWorkFillIcon = RemoteWorkFillIcon;
+exports.RemoteWorkLineBoldIcon = RemoteWorkLineBoldIcon;
+exports.RemoteWorkLineIcon = RemoteWorkLineIcon;
+exports.RemoteWorkLineLightIcon = RemoteWorkLineLightIcon;
 exports.RightViewLineBoldIcon = RightViewLineBoldIcon;
 exports.RightViewLineIcon = RightViewLineIcon;
 exports.RightViewLineLightIcon = RightViewLineLightIcon;

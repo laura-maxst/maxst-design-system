@@ -1,3 +1,3 @@
 import React from 'react';
-declare const DocDownloadBoldLineIcon: () => React.JSX.Element;
-export { DocDownloadBoldLineIcon };
+declare const DocDownloadLineBoldIcon: () => React.JSX.Element;
+export { DocDownloadLineBoldIcon };

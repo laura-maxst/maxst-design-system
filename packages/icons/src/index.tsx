@@ -139,15 +139,15 @@ export { CopyLineBoldIcon } from './icons/copyLineBold';
 export { CopyLineLightIcon } from './icons/copyLineLight';
 export { CopyFillIcon } from './icons/copyFill';
 
-export { CurrencyLineIcon } from './icons/currencyLine';
-export { CurrencyLineBoldIcon } from './icons/currencyLineBold';
-export { CurrencyLineLightIcon } from './icons/currencyLineLight';
-export { CurrencyFillIcon } from './icons/currencyFill';
-
 export { CurrencyKrLineIcon } from './icons/currencyKrLine';
 export { CurrencyKrLineBoldIcon } from './icons/currencyKrLineBold';
 export { CurrencyKrLineLightIcon } from './icons/currencyKrLineLight';
 export { CurrencyKrFillIcon } from './icons/currencyKrFill';
+
+export { CurrencyUsCircleLineIcon } from './icons/currencyUsCircleLine';
+export { CurrencyUsCircleLineBoldIcon } from './icons/currencyUsCircleLineBold';
+export { CurrencyUsCircleLineLightIcon } from './icons/currencyUsCircleLineLight';
+export { CurrencyUsCircleFillIcon } from './icons/currencyUsCircleFill';
 
 export { CurrencyUsLineIcon } from './icons/currencyUsLine';
 export { CurrencyUsLineBoldIcon } from './icons/currencyUsLineBold';

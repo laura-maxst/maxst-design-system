@@ -655,6 +655,11 @@ export { RefreshLineIcon } from './icons/refreshLine';
 export { RefreshLineBoldIcon } from './icons/refreshLineBold';
 export { RefreshLineLightIcon } from './icons/refreshLineLight';
 
+export { RemoveWorkLineIcon } from './icons/removeWorkLine';
+export { RemoveWorkLineBoldIcon } from './icons/removeWorkLineBold';
+export { RemoveWorkLineLightIcon } from './icons/removeWorkLineLight';
+export { RemoveWorkFillIcon } from './icons/removeWorkFill';
+
 export { RightViewLineIcon } from './icons/rightViewLine';
 export { RightViewLineBoldIcon } from './icons/rightViewLineBold';
 export { RightViewLineLightIcon } from './icons/rightViewLineLight';

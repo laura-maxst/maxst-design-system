@@ -20,4 +20,4 @@ function Component() {
 
 ## Documentation
 
-[MAXST Design System Iconography Storybook](https://mds-polygon.maxst.com/?path=/docs/system-iconography--docs)
+[MAXST Design System Iconography Storybook](https://mds-polygon.maxst.com/?path=/docs/general-iconography--docs)

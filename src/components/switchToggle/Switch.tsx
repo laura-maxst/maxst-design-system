@@ -37,12 +37,14 @@ const Switch = ({
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [thisState, setThisState] = useState<string>('default');
   const resolveOnClick = (e: any) => {
-    setIsChecked(e.target.checked);
+    if (thisState !== 'disabled') {
+      setIsChecked(e.target.checked);
 
-    if (!onClick) {
-      return;
+      if (!onClick) {
+        return;
+      }
+      onClick(e.target.checked);
     }
-    onClick(e.target.checked);
   };
 
   useEffect(() => {
@@ -58,6 +60,7 @@ const Switch = ({
   return (
     <div
       className={[
+        'mds-root',
         'switch-toggle-wrap',
         label && 'label-mode',
         size ? `switch-toggle-${size}` : 'switch-toggle-l',

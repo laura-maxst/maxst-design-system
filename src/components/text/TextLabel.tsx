@@ -10,7 +10,7 @@ interface TextLabelProps {
 function TextLabel({ role, size, className, children }: TextLabelProps) {
   return (
     <span
-      className={`font-label font-label-${size} ${role ? role : ''} ${
+      className={`mds-root font-label font-label-${size} ${role ? role : ''} ${
         className ? className : ''
       }`}
     >

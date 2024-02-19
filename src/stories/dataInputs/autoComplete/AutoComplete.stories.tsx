@@ -135,14 +135,7 @@ export const AutocompleteWithSearchbar: Story = {
 
 export const AutocompleteWithTextfield: Story = {
   args: {
-    children: (
-      <TextField
-        id=""
-        required={true}
-        placeholder="placeholder"
-        iconRight={<ArrowDownLineIcon />}
-      />
-    ),
+    children: <TextField id="" required={true} placeholder="placeholder" />,
     menuData: menuData,
     onClick: onClick,
     onChange: onChange,

@@ -72,6 +72,7 @@ const Chip = ({
       onClick={resolveOnClick}
       onChange={resolveOnChange}
       className={[
+        'mds-root',
         'mds-chip',
         `chip-${type}-${size}-${state ? state : 'default'}`,
         action ? action : '',

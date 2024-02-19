@@ -1,4 +1,4 @@
-.mds-chip {
+.mds-root.mds-chip {
   display: inline-flex;
   width: auto;
   max-width: 330px;
@@ -17,7 +17,7 @@
   }
 }
 
-.mds-chip-group {
+.mds-root.mds-chip-group {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -173,7 +173,7 @@ $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
 }
 
 @mixin chipCase($type, $size, $state) {
-  .chip-#{$type}-#{$size}-#{$state} {
+  &.chip-#{$type}-#{$size}-#{$state} {
     @include setColors($type);
     @include setChipSize($size);
 
@@ -218,7 +218,9 @@ $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
 @each $type in $chipType {
   @each $size in $chipSize {
     @each $state in $chipState {
-      @include chipCase($type, $size, $state);
+      .mds-root {
+        @include chipCase($type, $size, $state);
+      }
     }
   }
 }

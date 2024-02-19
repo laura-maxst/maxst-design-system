@@ -128,6 +128,7 @@ function Tab({
   return (
     <div
       className={[
+        'mds-root',
         'tab-wrap',
         secondaryMode ? 'secondary-mode' : '',
         className ? className : '',

@@ -1,4 +1,4 @@
-.checkbox__group {
+.mds-root.checkbox__group {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -245,60 +245,63 @@ $checkboxMode: 'primary', 'secondary';
   }
 }
 
-.checkbox-wrap {
-  @include helper-text-with-icon;
+.mds-root {
+  &.checkbox-wrap {
+    @include helper-text-with-icon;
 
-  .helper-text.font-body {
-    padding-top: 4px;
+    .helper-text.font-body {
+      padding-top: 4px;
+    }
+
+    .checkbox {
+      position: relative;
+
+      // checkbox touch area
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        z-index: 0;
+      }
+
+      input {
+        width: 0px;
+        height: 0px;
+      }
+    }
   }
 
-  .checkbox {
+  .checkbox-label {
     position: relative;
-
-    // checkbox touch area
-    &::before {
-      position: absolute;
-      content: '';
-      display: block;
-      width: calc(100% + 16px);
-      height: calc(100% + 16px);
-      z-index: 0;
-    }
-
-    input {
-      width: 0px;
-      height: 0px;
-    }
-  }
-}
-
-.checkbox-label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: semantic-color('text', 'default');
-  cursor: pointer;
-
-  .checkbox {
-    margin-right: 8px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
     color: semantic-color('text', 'default');
-    flex: none;
+    cursor: pointer;
 
-    input {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0px;
-      height: 0px;
+    .checkbox {
+      margin-right: 8px;
+      color: semantic-color('text', 'default');
+      flex: none;
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 0px;
+      }
     }
-  }
-  p {
-    word-break: break-all;
+    p {
+      word-break: break-all;
+    }
   }
 }
 
 @mixin checkboxIconCase($size) {
-  .checkbox-icon {
+  &.checkbox-icon {
     cursor: pointer;
 
     svg {
@@ -348,11 +351,13 @@ $checkboxMode: 'primary', 'secondary';
   }
 }
 @each $size in $checkboxSize {
-  @include checkboxIconCase($size);
+  .mds-root {
+    @include checkboxIconCase($size);
 
-  @each $state in $checkboxState {
-    @each $mode in $checkboxMode {
-      @include checkboxCase($size, $state, $mode);
+    @each $state in $checkboxState {
+      @each $mode in $checkboxMode {
+        @include checkboxCase($size, $state, $mode);
+      }
     }
   }
 }

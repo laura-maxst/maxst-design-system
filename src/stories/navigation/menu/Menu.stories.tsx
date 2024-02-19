@@ -71,7 +71,6 @@ const menuData = [
     label: 'menu 0',
     iconLeft: <CheckLineIcon />,
     iconRight: <ArrowRightLineIcon />,
-    disabled: false,
     subLabel: 'more',
   },
   {
@@ -85,6 +84,7 @@ const menuData = [
         label: 'menu 1-1',
         iconLeft: <DesktopFillIcon />,
         iconRight: <LocationFillIcon />,
+        disabled: true,
         subItemData: [
           {
             id: 'menu-1-1-1',

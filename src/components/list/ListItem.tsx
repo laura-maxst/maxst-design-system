@@ -49,6 +49,7 @@ const ListItem = ({
   useEffect(() => {
     const listBox = document.getElementById(`mds-list__left-box-${id}`);
     const listRightBox = document.getElementById(`mds-list__right-box-${id}`);
+
     if (listRightBox && listBox) {
       const listRightBoxWidth = window
         .getComputedStyle(listRightBox)

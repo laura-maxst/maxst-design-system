@@ -21,18 +21,18 @@ function Text({
     <>
       {innerHtml ? (
         <p
-          className={`font-${type} font-${type}-${size} ${role ? role : ''} ${
-            className ? className : ''
-          }`}
+          className={`mds-root font-${type} font-${type}-${size} ${
+            role ? role : ''
+          } ${className ? className : ''}`}
           dangerouslySetInnerHTML={{
             __html: String(children),
           }}
         />
       ) : (
         <p
-          className={`font-${type} font-${type}-${size} ${role ? role : ''} ${
-            className ? className : ''
-          }`}
+          className={`mds-root font-${type} font-${type}-${size} ${
+            role ? role : ''
+          } ${className ? className : ''}`}
         >
           {children}
         </p>

@@ -84,7 +84,7 @@ function Checkbox({
   }, [type]);
 
   return (
-    <div className={['checkbox-wrap'].join(' ')}>
+    <div className={['mds-root', 'checkbox-wrap'].join(' ')}>
       {label ? (
         <label htmlFor={id} className={['', 'checkbox-label'].join(' ')}>
           <span

@@ -1,5 +1,5 @@
 /* CSS 초기화 */
-:root {
+.mds-root {
   * {
     box-sizing: border-box;
     word-break: keep-all;
@@ -10,20 +10,16 @@
       display: none; /* Chrome, Safari, Opera*/
     }
   }
-  html {
-    width: 100%;
-  }
-  body {
-    line-height: 1.5;
-    background-color: var($--background-base);
+  box-sizing: border-box;
+  word-break: keep-all;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
-    & > div {
-      position: relative;
-    }
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
   }
 
-  html,
-  body,
+  &,
   div,
   span,
   applet,

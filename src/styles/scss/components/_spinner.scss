@@ -51,7 +51,7 @@
 
 $spinnerColors: 'white', 'black';
 
-.spinner-wrap {
+.mds-root.spinner-wrap {
   @each $color in $spinnerColors {
     @include spinner-style($color);
   }

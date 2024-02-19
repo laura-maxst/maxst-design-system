@@ -1,4 +1,4 @@
-.mds-pagination {
+.mds-root.mds-pagination {
   display: flex;
   align-items: center;
 
@@ -81,7 +81,7 @@
 $paginaionSize: 'l', 'm', 's';
 
 @mixin paginationCase($size) {
-  .pagination-#{$size} {
+  &.pagination-#{$size} {
     @if ($size == 'l') {
       li {
         button {
@@ -126,5 +126,7 @@ $paginaionSize: 'l', 'm', 's';
 }
 
 @each $size in $paginaionSize {
-  @include paginationCase($size);
+  .mds-root {
+    @include paginationCase($size);
+  }
 }

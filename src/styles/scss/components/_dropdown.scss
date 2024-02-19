@@ -1,4 +1,4 @@
-.dropdown-box {
+.mds-root.dropdown-box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
     }
   }
 
-  &__base {
+  .dropdown-box__base {
     .textfield.has-helperText {
       position: relative;
     }
@@ -39,7 +39,7 @@
     }
   }
 
-  &__menu-wrap {
+  .dropdown-box__menu-wrap {
     @include shadow-level2;
     position: absolute;
     width: 100%;
@@ -170,6 +170,8 @@ $dropdownMenuState: 'default', 'pressed', 'disabled';
 
 @each $size in $dropdownMenuSize {
   @each $state in $dropdownMenuState {
-    @include menuItemCase($size, $state);
+    .mds-root {
+      @include menuItemCase($size, $state);
+    }
   }
 }

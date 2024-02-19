@@ -28,7 +28,14 @@ const InputGroup = ({
 }: InputGroupProps) => {
   return (
     <>
-      <div className={[`input__group`, fullWidth && 'fullWidth'].join(' ')}>
+      <div
+        className={[
+          'mds-root',
+          'mds-input-root',
+          `input__group`,
+          fullWidth && 'fullWidth',
+        ].join(' ')}
+      >
         {label && (
           <label htmlFor={id}>
             <TextLabel size="m">

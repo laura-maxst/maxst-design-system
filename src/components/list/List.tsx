@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListItem } from './ListItem';
-import type { listItemProps } from './ListItem';
+// import type { listItemProps } from './ListItem';
 
 interface listProps {
   // listItemData: listItemProps[];
@@ -16,13 +16,14 @@ interface listProps {
     switchData?: any;
     labelData?: any;
     alignTop?: boolean;
+    disabled?: boolean;
   }[];
   alignTop?: boolean;
 }
 
 const List = ({ listItemData, alignTop }: listProps) => {
   return (
-    <div className="mds-list-wrap">
+    <div className="mds-root mds-list-wrap">
       {listItemData.map((listItem) => {
         return <ListItem key={listItem.id} alignTop={alignTop} {...listItem} />;
       })}

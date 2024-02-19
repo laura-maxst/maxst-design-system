@@ -169,7 +169,7 @@ const Table = ({
   }, [rowData]);
 
   return (
-    <div className="mds-table-wrap">
+    <div className="mds-root mds-table-root mds-table-wrap">
       <table
         id={id}
         className={[

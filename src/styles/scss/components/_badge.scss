@@ -1,4 +1,4 @@
-.mds-badge-wrap {
+.mds-root.mds-badge-wrap {
   position: relative;
   width: min-content;
 
@@ -186,7 +186,9 @@ $badgeSize: 'xl', 'l', 'm', 's';
   @each $color in $badgeColor {
     @each $status in $badgeStatus {
       @each $size in $badgeSize {
-        @include badgeCase($type, $color, $status, $size);
+        .mds-root {
+          @include badgeCase($type, $color, $status, $size);
+        }
       }
     }
   }

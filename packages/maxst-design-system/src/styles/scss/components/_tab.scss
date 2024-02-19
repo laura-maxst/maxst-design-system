@@ -1,4 +1,4 @@
-.tab-wrap {
+.mds-root.tab-wrap {
   overflow: hidden;
 
   .tab-bar {
@@ -23,9 +23,6 @@
       background-color: semantic-color('background', 'base');
 
       &::before {
-        // position: absolute;
-        // top:0;
-        // left:0;
         content: '';
         display: block;
         width: 36px;
@@ -124,9 +121,6 @@
         text-wrap: nowrap;
       }
     }
-
-    .tab__secondary-mode {
-    }
   }
 
   .tab-panel {
@@ -180,7 +174,7 @@ $tabSize: 'l', 'm', 's';
 $tabState: 'default', 'pressed', 'disabled';
 
 @mixin tabCase($size, $state) {
-  .tab-wrap {
+  .mds-root.tab-wrap {
     .tab-bar__#{$size} {
       @if ($size == 's') {
         height: 40px;
@@ -265,6 +259,7 @@ $tabState: 'default', 'pressed', 'disabled';
   border-color: semantic-color('border', 'accent');
   color: semantic-color('text', 'default');
   background-color: semantic-color('background', 'base');
+
   p,
   span {
     color: semantic-color('text', 'default');
@@ -282,18 +277,9 @@ $tabState: 'default', 'pressed', 'disabled';
 }
 
 @mixin tabSecondaryCase($state) {
-  .tab-wrap.secondary-mode {
+  .mds-root.tab-wrap.secondary-mode {
     .tab-bar {
       height: 40px !important;
-
-      // &.fixed {
-      //   .tab-bar__list > button,
-      //   .tab-bar__list > .mds-chip {
-      //     width: 100%;
-      //     flex-grow: 1;
-      //     flex-shrink: 1;
-      //   }
-      // }
 
       .control {
         &::before {

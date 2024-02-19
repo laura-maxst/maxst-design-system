@@ -106,7 +106,11 @@ function AutoComplete({
 
   return (
     <div
-      className={['mds-autocomplete', className ? className : ''].join(' ')}
+      className={[
+        'mds-root',
+        'mds-autocomplete',
+        className ? className : '',
+      ].join(' ')}
       ref={autoCompleteRef}
     >
       <div

@@ -36,6 +36,21 @@
     url('/fonts/Pretendard-Regular.woff') format('woff');
 }
 
+@mixin font-common {
+  color: semantic-color('text', 'default');
+  // white-space: break-spaces;
+
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: left;
+  }
+  &.center {
+    text-align: center;
+  }
+}
+
 $font-scales: (
   'px': (
     '12': 12px,
@@ -71,84 +86,12 @@ $font-weights: (
   'regular': 400,
 );
 
-.font-box {
-  margin-bottom: 8px;
-}
-
-@each $type, $scales in $font-scales {
-  @if ($type == 'px') {
-    // px 기준으로 맞춤
-    @each $scale, $size in $scales {
-      @include fontScales($scale, $size);
-    }
-  }
-}
-
-@each $key, $value in $font-weights {
-  @include fontWeights($key, $value);
-}
-
-@mixin font-common {
-  color: semantic-color('text', 'default');
-
-  &.left {
-    text-align: left;
-  }
-  &.right {
-    text-align: left;
-  }
-  &.center {
-    text-align: center;
-  }
-}
-
 %font-title {
   line-height: 1.3;
   font-weight: font-weight('semibold');
   color: semantic-color('text', 'default');
   @include font-common;
 }
-.font-title-xl {
-  @extend %font-title;
-  font-size: font-scale('48');
-
-  @include media-mobile-m {
-    font-size: font-scale('32');
-  }
-}
-.font-title-l {
-  @extend %font-title;
-  font-size: font-scale('32');
-
-  @include media-mobile-m {
-    font-size: font-scale('24');
-  }
-}
-.font-title-m {
-  @extend %font-title;
-  font-size: font-scale('24');
-
-  @include media-mobile-m {
-    font-size: font-scale('20');
-  }
-}
-.font-title-s {
-  @extend %font-title;
-  font-size: font-scale('20');
-
-  @include media-mobile-m {
-    font-size: font-scale('18');
-  }
-}
-.font-title-xs {
-  @extend %font-title;
-  font-size: font-scale('18');
-
-  @include media-mobile-m {
-    font-size: font-scale('16');
-  }
-}
-
 %font-text {
   line-height: 1.5;
   font-weight: font-weight('regular');
@@ -165,65 +108,125 @@ $font-weights: (
     color: semantic-color('text', 'subtlest');
   }
 }
-.font-body-l {
-  @extend %font-text;
-  font-size: font-scale('16');
-
-  @include media-mobile-m {
-    font-size: font-scale('16');
-  }
-}
-.font-body-m {
-  @extend %font-text;
-  font-size: font-scale('14');
-
-  @include media-mobile-m {
-    font-size: font-scale('14');
-  }
-}
-.font-body-s {
-  @extend %font-text;
-  font-size: font-scale('12');
-
-  @include media-mobile-m {
-    font-size: font-scale('12');
-  }
-}
 
 %font-label {
   line-height: 1.5;
   font-weight: font-weight('medium');
   @include font-common;
 }
-.font-label-xl {
-  @extend %font-label;
-  font-size: font-scale('18');
 
-  @include media-mobile-m {
+@each $type, $scales in $font-scales {
+  @if ($type == 'px') {
+    // px 기준으로 맞춤
+    @each $scale, $size in $scales {
+      @include fontScales($scale, $size);
+    }
+  }
+}
+@each $key, $value in $font-weights {
+  @include fontWeights($key, $value);
+}
+
+.mds-root {
+  .font-box {
+    margin-bottom: 8px;
+  }
+
+  .font-title-xl {
+    @extend %font-title;
+    font-size: font-scale('48');
+
+    @include media-mobile-m {
+      font-size: font-scale('32');
+    }
+  }
+  .font-title-l {
+    @extend %font-title;
+    font-size: font-scale('32');
+
+    @include media-mobile-m {
+      font-size: font-scale('24');
+    }
+  }
+  .font-title-m {
+    @extend %font-title;
+    font-size: font-scale('24');
+
+    @include media-mobile-m {
+      font-size: font-scale('20');
+    }
+  }
+  .font-title-s {
+    @extend %font-title;
+    font-size: font-scale('20');
+
+    @include media-mobile-m {
+      font-size: font-scale('18');
+    }
+  }
+  .font-title-xs {
+    @extend %font-title;
     font-size: font-scale('18');
-  }
-}
-.font-label-l {
-  @extend %font-label;
-  font-size: font-scale('16');
 
-  @include media-mobile-m {
+    @include media-mobile-m {
+      font-size: font-scale('16');
+    }
+  }
+
+  .font-body-l {
+    @extend %font-text;
     font-size: font-scale('16');
-  }
-}
-.font-label-m {
-  @extend %font-label;
-  font-size: font-scale('14');
 
-  @include media-mobile-m {
+    @include media-mobile-m {
+      font-size: font-scale('16');
+    }
+  }
+  .font-body-m {
+    @extend %font-text;
     font-size: font-scale('14');
-  }
-}
-.font-label-s {
-  @extend %font-label;
-  font-size: font-scale('12');
 
-  @include media-mobile-m {
+    @include media-mobile-m {
+      font-size: font-scale('14');
+    }
+  }
+  .font-body-s {
+    @extend %font-text;
     font-size: font-scale('12');
+
+    @include media-mobile-m {
+      font-size: font-scale('12');
+    }
+  }
+  .font-label-xl {
+    @extend %font-label;
+    font-size: font-scale('18');
+
+    @include media-mobile-m {
+      font-size: font-scale('18');
+    }
+  }
+  .font-label-l {
+    @extend %font-label;
+    font-size: font-scale('16');
+
+    @include media-mobile-m {
+      font-size: font-scale('16');
+    }
+  }
+  .font-label-m {
+    @extend %font-label;
+    font-size: font-scale('14');
+
+    @include media-mobile-m {
+      font-size: font-scale('14');
+    }
+  }
+  .font-label-s {
+    @extend %font-label;
+    font-size: font-scale('12');
+
+    @include media-mobile-m {
+      font-size: font-scale('12');
+    }
   }
 }

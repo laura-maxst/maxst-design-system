@@ -75,6 +75,7 @@ const Alert = ({
   return (
     <div
       className={[
+        'mds-root',
         'alert-box',
         open ? 'open' : 'close',
         `alert-${title ? 'description-' : ''}${type && type}`,

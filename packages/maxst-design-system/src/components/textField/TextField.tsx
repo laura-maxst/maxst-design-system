@@ -211,6 +211,8 @@ function TextField({
   return (
     <div
       className={[
+        'mds-root',
+        'mds-input-root',
         `textfield textfield__text-${size ? size : 'l'}-${
           (disabled && 'disabled') || thisState
         }`,

@@ -1,17 +1,24 @@
-.mds-table-wrap {
-  width: 100%;
-  @include scrollX(semantic-color('background', 'base'));
-
+.mds-root.mds-table-root {
   table {
-    width: 100%;
-    color: semantic-color('text', 'default');
-
-    &.vertical-heading-mode {
-      border-top: 1px solid semantic-color('divider', 'default');
-    }
+    border-collapse: collapse;
+    border-spacing: 0;
   }
-  & + div.mds-pagination {
-    margin-top: 24px;
+
+  &.mds-table-wrap {
+    width: 100%;
+    @include scrollX(semantic-color('background', 'base'));
+
+    table {
+      width: 100%;
+      color: semantic-color('text', 'default');
+
+      &.vertical-heading-mode {
+        border-top: 1px solid semantic-color('divider', 'default');
+      }
+    }
+    & + div.mds-pagination {
+      margin-top: 24px;
+    }
   }
 }
 
@@ -204,6 +211,8 @@ $tableAlign: 'left', 'center', 'right';
 
 @each $size in $tableSize {
   @each $align in $tableAlign {
-    @include tableCase($size, $align);
+    .mds-root.mds-table-root {
+      @include tableCase($size, $align);
+    }
   }
 }

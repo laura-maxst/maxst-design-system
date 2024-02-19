@@ -51,7 +51,7 @@ $switchSize: 'l', 's';
 $switchState: 'default', 'pressed', 'disabled';
 
 @mixin switchCase($size, $state) {
-  .switch-toggle-wrap {
+  &.switch-toggle-wrap {
     &.disabled {
       label .font-body {
         color: semantic-color('text', 'disabled') !important;
@@ -60,17 +60,12 @@ $switchState: 'default', 'pressed', 'disabled';
 
     &.switch-toggle-#{$size} {
       @if ($size == 'l') {
-        // @include switchSize-l-width;
-        // @include switchSize-l-height;
-
         label {
           @include switchSize-l-width;
           @include switchSize-l-height;
         }
 
         &.label-mode {
-          // width: auto;
-
           label .font-body {
             top: 0;
             left: 52px;
@@ -79,8 +74,6 @@ $switchState: 'default', 'pressed', 'disabled';
           }
         }
       } @else if($size == 's') {
-        // @include switchSize-s-width;
-        // @include switchSize-s-height;
         label {
           @include switchSize-s-width;
           @include switchSize-s-height;
@@ -98,6 +91,7 @@ $switchState: 'default', 'pressed', 'disabled';
       }
     }
   }
+
   .switch-toggle__#{$size}--#{$state} {
     cursor: pointer;
 
@@ -115,11 +109,8 @@ $switchState: 'default', 'pressed', 'disabled';
       position: absolute;
       left: 2px;
       display: block;
-      // border-radius: 50%;
-      // box-sizing: border-box;
       z-index: 10;
       transition: all 0.2s ease-in-out;
-      // background-color: var($--palette-white);
 
       &::before {
         position: absolute;
@@ -129,6 +120,11 @@ $switchState: 'default', 'pressed', 'disabled';
         height: calc(100% + 16px);
         transform: translate(calc(-50% + 9.5px), calc(-50% + 10px));
         z-index: 0;
+      }
+
+      svg {
+        position: absolute;
+        z-index: 99;
       }
 
       &::after {
@@ -157,7 +153,8 @@ $switchState: 'default', 'pressed', 'disabled';
       }
 
       & .switch-button {
-        top: calc(50% - 10px);
+        top: 2px;
+
         @include switchSize-l-button;
 
         svg {
@@ -178,7 +175,9 @@ $switchState: 'default', 'pressed', 'disabled';
       }
 
       & .switch-button {
-        top: calc(50% - 6px);
+        // top: calc(50% - 6px);
+        top: 2px;
+
         @include switchSize-s-button;
         line-height: 12px;
         svg {
@@ -218,6 +217,8 @@ $switchState: 'default', 'pressed', 'disabled';
     }
     // state 별 설정
     @if ($state == 'disabled') {
+      cursor: inherit;
+
       &::before {
         background-color: semantic-color('background', 'disabled') !important;
       }
@@ -290,8 +291,10 @@ $switchState: 'default', 'pressed', 'disabled';
   }
 }
 
-@each $size in $switchSize {
-  @each $state in $switchState {
-    @include switchCase($size, $state);
+@each $state in $switchState {
+  @each $size in $switchSize {
+    .mds-root {
+      @include switchCase($size, $state);
+    }
   }
 }

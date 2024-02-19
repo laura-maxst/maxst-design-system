@@ -6,7 +6,7 @@ interface spinnerProps {
 }
 const Spinner = ({ color, className }: spinnerProps) => {
   return (
-    <span className="spinner-wrap">
+    <span className={['mds-root', 'spinner-wrap'].join(' ')}>
       <svg
         className={[
           'spinner',

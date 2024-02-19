@@ -72,7 +72,7 @@ function Radio({
   }, [checked]);
 
   return (
-    <div className={['radio-wrap'].join(' ')}>
+    <div className={['mds-root', 'radio-wrap'].join(' ')}>
       {label ? (
         <label htmlFor={id} className={['', 'radio-label'].join(' ')}>
           <span

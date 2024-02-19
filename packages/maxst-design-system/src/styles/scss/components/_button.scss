@@ -1,8 +1,30 @@
+.mds-button-root {
+  &,
+  button {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    vertical-align: middle;
+    font-size: 100%;
+    font-family: 'Pretendard', sans-serif;
+    background: transparent;
+
+    border: 0 none;
+
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
 // button 공통 속성
 @mixin button-common {
   // border-radius: 4px;
   white-space: nowrap;
   max-width: 330px !important;
+  border: 0 none;
+
   span {
     width: 100%;
     display: block;
@@ -214,7 +236,7 @@ $buttonSize: 'xl', 'l', 'm', 's', 'xs';
 $buttonState: 'default', 'pressed', 'disabled', 'error';
 
 @mixin buttonCase($type, $size, $state) {
-  .button__#{$type}-#{$size}--#{$state} {
+  &.button__#{$type}-#{$size}--#{$state} {
     @include button-common;
 
     @if ($type == 'link') {
@@ -300,7 +322,7 @@ $iconButtonSize: 'xl', 'l', 'm', 's', 'xs';
 $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 
 @mixin iconButtonCase($type, $size, $state) {
-  .button__icon-#{$type}-#{$size}--#{$state} {
+  &.button__icon-#{$type}-#{$size}--#{$state} {
     @include button-common;
     @include setColorStyle($type, $state);
 
@@ -403,7 +425,9 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 @each $type in $buttonType {
   @each $size in $buttonSize {
     @each $state in $buttonState {
-      @include buttonCase($type, $size, $state);
+      .mds-root {
+        @include buttonCase($type, $size, $state);
+      }
     }
   }
 }
@@ -411,48 +435,52 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 @each $type in $iconButtonType {
   @each $size in $iconButtonSize {
     @each $state in $iconButtonState {
-      @include iconButtonCase($type, $size, $state);
+      .mds-root {
+        @include iconButtonCase($type, $size, $state);
+      }
     }
   }
 }
 
-.button__group {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-
-  &.fullWidth {
-    button {
-      flex-grow: 1;
-      width: 100%;
-    }
-  }
-
-  &.left {
+.mds-root {
+  &.button__group {
+    display: flex;
     justify-content: flex-start;
-  }
+    align-items: center;
+    gap: 8px;
+    width: 100%;
 
-  &.center {
-    justify-content: center;
-  }
+    &.fullWidth {
+      button {
+        flex-grow: 1;
+        width: 100%;
+      }
+    }
 
-  &.right {
-    justify-content: flex-end;
-  }
+    &.left {
+      justify-content: flex-start;
+    }
 
-  &.vertical {
-    flex-direction: column;
-  }
+    &.center {
+      justify-content: center;
+    }
 
-  &.horizontal {
-    flex-direction: row;
-  }
+    &.right {
+      justify-content: flex-end;
+    }
 
-  @include media-mobile-m {
-    button {
-      width: 100%;
+    &.vertical {
+      flex-direction: column;
+    }
+
+    &.horizontal {
+      flex-direction: row;
+    }
+
+    @include media-mobile-m {
+      button {
+        width: 100%;
+      }
     }
   }
 }

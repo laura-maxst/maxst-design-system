@@ -1,62 +1,63 @@
-.alert-box{
+.mds-root.alert-box {
   position: fixed;
   display: flex;
-  top:16px;
-  left:50%;
+  top: 16px;
+  left: 50%;
   transform: translateX(-50%);
   justify-content: space-between;
-  gap:8px;
-  min-width:300px;
+  gap: 8px;
+  min-width: 300px;
   width: auto;
   max-width: 800px;
-  padding:12px 16px;
+  padding: 12px 16px;
   color: semantic-color('text', 'default');
   background-color: semantic-color('background', '2nd-base');
   z-index: 99999;
   transition: all 0.7s ease-in-out;
 
-  &:before{
-    content:'';
+  &:before {
+    content: '';
     display: block;
-    width:4px;
-    height:100%;
+    width: 4px;
+    height: 100%;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: semantic-color('background', 'ui-middle');
   }
 
-  & > div{
+  & > div {
     display: flex;
-    gap:8px;
+    gap: 8px;
     height: fit-content;
   }
 
-  .alert__text-box{
-    gap:4px;
+  .alert__text-box {
+    gap: 4px;
   }
 
-  &.open{
+  &.open {
     opacity: 1;
-    visibility : unset;
+    visibility: unset;
     transition: all 0.7s ease-in-out;
   }
 
-  &.close{
+  &.close {
     opacity: 0;
-    visibility : hidden;
+    visibility: hidden;
   }
 
-  .font-title, p{
+  .font-title,
+  p {
     color: semantic-color('text', 'default');
   }
 
-  button{
+  button {
     height: fit-content;
     min-width: auto;
   }
 
-  svg{
+  svg {
     flex: none;
     display: block;
     width: 24px;
@@ -64,46 +65,47 @@
     color: semantic-color('text', 'default');
   }
 
-  .close-button{
+  .close-button {
     width: 20px;
     height: 20px;
 
-    svg{
+    svg {
       width: 20px;
       height: 20px;
     }
   }
-
 }
 
-$alertCase : 'alert', 'alert-description';
-$alertType : 'error' , 'warning' , 'information' , 'success';
+$alertCase: 'alert', 'alert-description';
+$alertType: 'error', 'warning', 'information', 'success';
 
-@mixin alertCaseType($case, $type){
-  .#{$case}-#{$type}{
+@mixin alertCaseType($case, $type) {
+  &.#{$case}-#{$type} {
     background-color: semantic-color('background', '#{$type}-light');
-    
-    &:before{
+
+    &:before {
       background-color: semantic-color('background', #{$type});
     }
 
     .alert__left-box {
-      svg{
+      svg {
         color: semantic-color('text', #{$type});
       }
     }
 
-    .alert__right-box{
-      .button__ghost-s--default{
-        &:hover, &:focus, &:active{
+    .alert__right-box {
+      .button__ghost-s--default {
+        &:hover,
+        &:focus,
+        &:active {
           position: relative;
           background-color: transparent;
 
-          &::before{
-            content:'';
-            position:absolute;
-            top:0;
-            left:0;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
             display: block;
             width: 100%;
             height: 100%;
@@ -114,30 +116,30 @@ $alertType : 'error' , 'warning' , 'information' , 'success';
         }
       }
     }
-    
 
-    @if($case == 'alert'){
-      .alert__left-box{
+    @if ($case == 'alert') {
+      .alert__left-box {
         align-items: flex-start;
       }
-    }@else if($case == 'alert-description'){
-
+    } @else if($case == 'alert-description') {
     }
   }
 }
 
-@each $case in $alertCase{
-  @each $type in $alertType{
-    @include alertCaseType($case, $type);
+@each $case in $alertCase {
+  @each $type in $alertType {
+    .mds-root {
+      @include alertCaseType($case, $type);
+    }
   }
 }
 
 @include media-mobile-m {
-  .alert-box {
+  .mds-root.alert-box {
     min-width: unset;
     width: calc(100% - 32px);
 
-    .alert__left-box{
+    .alert__left-box {
       align-items: flex-start;
     }
   }

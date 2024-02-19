@@ -44,7 +44,11 @@ const Drawer = ({
   }, [open]);
 
   return (
-    <div className={['mds-drawer-wrap', open ? 'open' : 'close'].join(' ')}>
+    <div
+      className={['mds-root', 'mds-drawer-wrap', open ? 'open' : 'close'].join(
+        ' ',
+      )}
+    >
       {isDim && <div className="dim" onClick={onClickClose}></div>}
       <div
         className={[

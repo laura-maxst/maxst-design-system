@@ -74,7 +74,7 @@ const Accordion = ({
 
   return (
     <div
-      className="mds-accordion-wrap"
+      className="mds-root mds-accordion-wrap"
       style={{ width: width ? width : '100%' }}
     >
       {items.map((itemData) => {

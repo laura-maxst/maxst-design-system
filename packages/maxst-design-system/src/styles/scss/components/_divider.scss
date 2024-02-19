@@ -1,12 +1,13 @@
-.mds-divider{
+.mds-root.mds-divider {
   width: 100%;
   height: 1px;
-  border:0;
+  border: 0;
 
-  &, &.divider-default{
+  &,
+  &.divider-default {
     background-color: semantic-color('divider', 'default');
   }
-  &.divider-accent{
+  &.divider-accent {
     background-color: semantic-color('divider', 'accent');
   }
 
@@ -16,47 +17,49 @@
     align-self: stretch;
   }
 
-  &.with-children{
+  &.with-children {
     position: relative;
     display: flex;
     align-items: center;
-    width:100%;
+    width: 100%;
     background-color: transparent;
 
-    .divider__children-box{
-      padding:0 8px;
+    .divider__children-box {
+      padding: 0 8px;
     }
 
-    &::before, &::after {
-      content:'';
+    &::before,
+    &::after {
+      content: '';
       display: block;
       width: 100%;
       height: 1px;
     }
-    
-    &, &.divider-default{
-      &::before, &::after {
+
+    &,
+    &.divider-default {
+      &::before,
+      &::after {
         background-color: semantic-color('divider', 'default');
       }
     }
-    &.divider-accent{
-      &::before, &::after {
+    &.divider-accent {
+      &::before,
+      &::after {
         background-color: semantic-color('divider', 'accent');
       }
     }
-    
+
     &.divider-vertical {
       flex-direction: column;
-      
-      &::before, &::after {
-        content:'';
+
+      &::before,
+      &::after {
+        content: '';
         display: block;
         width: 1px;
         height: 100%;
       }
     }
   }
-  
 }
-
-

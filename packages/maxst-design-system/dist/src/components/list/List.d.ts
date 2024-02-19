@@ -15,6 +15,7 @@ interface listProps {
         switchData?: any;
         labelData?: any;
         alignTop?: boolean;
+        disabled?: boolean;
     }[];
     alignTop?: boolean;
 }

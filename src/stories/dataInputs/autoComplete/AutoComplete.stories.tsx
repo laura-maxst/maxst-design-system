@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from '@storybook/react';
 import { AutoComplete } from '@components/autoComplete';
-import { ArrowDownLineIcon } from '@maxst-designsystem/icons';
 import { TextField } from '@components/textField';
 import { SearchBar } from '@components/searchBar';
 

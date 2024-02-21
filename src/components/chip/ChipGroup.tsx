@@ -1,5 +1,4 @@
 import React from 'react';
-import { CloseCircleFillIcon, CheckLineIcon } from '@maxst-designsystem/icons';
 
 interface ChipGroupProps {
   children: React.ReactNode;

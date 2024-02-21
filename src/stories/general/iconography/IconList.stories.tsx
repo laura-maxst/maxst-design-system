@@ -4,7 +4,10 @@ import { IconList, IconPropsType } from './IconList';
 import {
   actionListData,
   navigationIconListData,
-  etcIconListData,
+  statusIconListData,
+  fileIconListData,
+  techIconListData,
+  lifeIconListData,
 } from './IconDatas';
 
 const meta: Meta<typeof IconList> = {
@@ -36,7 +39,18 @@ export const ActionIconList = {
 export const NavigationIconList = {
   render: () => IconLists(navigationIconListData),
 };
+export const StatusIconList = {
+  render: () => IconLists(statusIconListData),
+};
 
-export const EtcIconList = {
-  render: () => IconLists(etcIconListData),
+export const FileIconList = {
+  render: () => IconLists(fileIconListData),
+};
+
+export const TechIconList = {
+  render: () => IconLists(techIconListData),
+};
+
+export const LifeIconList = {
+  render: () => IconLists(lifeIconListData),
 };

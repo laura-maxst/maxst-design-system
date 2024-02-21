@@ -1,13 +1,13 @@
 // import React, { useEffect } from "react";
 import type { Preview } from '@storybook/react';
 // import '@styles/scss/main.scss';
-import '@styles/storybookStyle.scss';
+import '../src/styles/storybookStyle.scss';
 import { withThemeByClassName } from '@storybook/addon-styling';
 import {
   INITIAL_VIEWPORTS,
   MINIMAL_VIEWPORTS,
 } from '@storybook/addon-viewport';
-import { themes } from '@storybook/theming';
+import { ClassNames, themes } from '@storybook/theming';
 import storybookTheme from '../src/styles/storybook-theme';
 
 // globalTypes으로 관리하는 theme 설정 관련 테스트 코드
@@ -51,6 +51,11 @@ const preview: Preview = {
   //   },
   // },
   decorators: [
+    // WithThemeProvider
+    // (story) => {
+    //   document.body.classList.add('mds-root');
+    //   return story();
+    // },
     withThemeByClassName({
       themes: {
         light: 'light',
@@ -58,7 +63,6 @@ const preview: Preview = {
       },
       defaultTheme: 'light',
     }),
-    // WithThemeProvider
   ],
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },

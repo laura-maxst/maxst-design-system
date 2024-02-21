@@ -6,10 +6,10 @@ import {
   ArrowLeftLineIcon,
   MapLineIcon,
   ThreeDMapLineIcon,
-  ViewInArLineIcon,
+  SmartGlassesLineIcon,
   ThreeDMapFillIcon,
-  MyLocationLineIcon,
-  SelectAreaLineIcon,
+  LocationLineIcon,
+  ObjectSelectLineIcon,
 } from '@maxst-designsystem/icons';
 import { Sidebar } from '@components/sidebar';
 
@@ -181,17 +181,17 @@ export const DrawerSidebar: Story = {
             label: 'depth-03default',
           },
           {
-            iconLeft: <ViewInArLineIcon />,
+            iconLeft: <SmartGlassesLineIcon />,
             id: 'depth-04default',
             label: 'depth-04default',
           },
           {
-            iconLeft: <MyLocationLineIcon />,
+            iconLeft: <LocationLineIcon />,
             id: 'depth-05default',
             label: 'depth-05default',
           },
           {
-            iconLeft: <SelectAreaLineIcon />,
+            iconLeft: <ObjectSelectLineIcon />,
             id: 'depth-06default',
             label: 'depth-06default',
           },

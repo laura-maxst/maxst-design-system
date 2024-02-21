@@ -24,7 +24,7 @@ interface SidebarPropsType {
     selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[],
   ) => void;
   className?: string;
-  selectedId?: string;
+  selectMenu?: string;
 }
 
 const Sidebar = ({ className, header, footer, ...props }: SidebarPropsType) => {

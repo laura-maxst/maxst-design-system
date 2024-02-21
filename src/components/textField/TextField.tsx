@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TextLabel, Text } from '@components/text';
 import {
-  CloseCircleFillBoldIcon,
+  CloseCircleFillIcon,
   ErrorCircleLineBoldIcon,
   CheckCircleLineBoldIcon,
-  ViewFillBoldIcon,
-  ViewOffFillBoldIcon,
+  ViewFillIcon,
+  ViewOffFillIcon,
 } from '@maxst-designsystem/icons';
 
 interface textFieldProps {
@@ -286,16 +286,12 @@ function TextField({
           <>
             {showResetButton && resoleValue && thisState !== 'disabled' && (
               <button onClick={onClearValue}>
-                <CloseCircleFillBoldIcon />
+                <CloseCircleFillIcon />
               </button>
             )}
             {password && (
               <span onClick={onVisibilityPassword}>
-                {thisType === 'text' ? (
-                  <ViewOffFillBoldIcon />
-                ) : (
-                  <ViewFillBoldIcon />
-                )}
+                {thisType === 'text' ? <ViewOffFillIcon /> : <ViewFillIcon />}
               </span>
             )}
           </>

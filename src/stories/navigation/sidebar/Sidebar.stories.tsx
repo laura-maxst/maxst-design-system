@@ -4,10 +4,10 @@ import { Sidebar } from '@components/sidebar';
 import {
   MapLineIcon,
   ThreeDMapLineIcon,
-  ViewInArLineIcon,
+  TrackingObjectLineIcon,
   ThreeDMapFillIcon,
-  MyLocationLineIcon,
-  SelectAreaLineIcon,
+  LocationLineIcon,
+  ObjectSelectLineIcon,
 } from '@maxst-designsystem/icons';
 import { Container } from '@components/container';
 import SidebarExample from './SidebarExample';
@@ -32,7 +32,7 @@ const meta: Meta<typeof Sidebar> = {
         type: null,
       },
     },
-    selectedId: {
+    selectMenu: {
       description: '초기 선택된 메뉴를 지정할 수 있습니다.',
     },
     itemData: {
@@ -119,17 +119,17 @@ const sidebarMenuDataSetting = (id: string) => {
     {
       id: 'depth-04' + id,
       label: 'depth-04' + id,
-      iconLeft: <ViewInArLineIcon />,
+      iconLeft: <TrackingObjectLineIcon />,
     },
     {
       id: 'depth-05' + id,
       label: 'depth-05' + id,
-      iconLeft: <MyLocationLineIcon />,
+      iconLeft: <LocationLineIcon />,
     },
     {
       id: 'depth-06' + id,
       label: 'depth-06' + id,
-      iconLeft: <SelectAreaLineIcon />,
+      iconLeft: <ObjectSelectLineIcon />,
     },
   ];
 };

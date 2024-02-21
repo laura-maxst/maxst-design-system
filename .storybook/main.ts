@@ -1,28 +1,28 @@
-import path from "path";
+import path from 'path';
 module.exports = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    "@storybook/addon-links", 
-    "@storybook/addon-essentials", 
-    "@storybook/addon-interactions", 
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
     '@storybook/addon-styling',
-    "@storybook/addon-mdx-gfm"
+    '@storybook/addon-mdx-gfm',
   ],
   framework: {
-    name: "@storybook/nextjs",
-    options: {}
+    name: '@storybook/nextjs',
+    options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: 'tag',
   },
-  staticDirs: ['../public'],
-  webpackFinal: async config => {
+  staticDirs: ['../public', { from: '../public/fonts', to: '/fonts' }],
+  webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@src": path.resolve(__dirname, "../src"),
-      "@styles": path.resolve(__dirname, "../src/styles"),
-      "@components": path.resolve(__dirname, "../src/components")
+      '@src': path.resolve(__dirname, '../src'),
+      '@styles': path.resolve(__dirname, '../src/styles'),
+      '@components': path.resolve(__dirname, '../src/components'),
     };
     return config;
-  }
+  },
 };

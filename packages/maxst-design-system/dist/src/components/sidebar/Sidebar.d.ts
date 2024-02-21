@@ -18,7 +18,7 @@ interface SidebarPropsType {
     onClick?: (selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[]) => void;
     onChange?: (selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[]) => void;
     className?: string;
-    selectedId?: string;
+    selectMenu?: string;
 }
 declare const Sidebar: ({ className, header, footer, ...props }: SidebarPropsType) => JSX.Element;
 export { Sidebar };

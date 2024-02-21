@@ -132,7 +132,7 @@ $font-weights: (
     margin-bottom: 8px;
   }
 
-  .font-title-xl {
+  &.font-title-xl {
     @extend %font-title;
     font-size: font-scale('48');
 
@@ -140,7 +140,7 @@ $font-weights: (
       font-size: font-scale('32');
     }
   }
-  .font-title-l {
+  &.font-title-l {
     @extend %font-title;
     font-size: font-scale('32');
 
@@ -148,7 +148,7 @@ $font-weights: (
       font-size: font-scale('24');
     }
   }
-  .font-title-m {
+  &.font-title-m {
     @extend %font-title;
     font-size: font-scale('24');
 
@@ -156,7 +156,7 @@ $font-weights: (
       font-size: font-scale('20');
     }
   }
-  .font-title-s {
+  &.font-title-s {
     @extend %font-title;
     font-size: font-scale('20');
 
@@ -164,7 +164,7 @@ $font-weights: (
       font-size: font-scale('18');
     }
   }
-  .font-title-xs {
+  &.font-title-xs {
     @extend %font-title;
     font-size: font-scale('18');
 
@@ -173,7 +173,7 @@ $font-weights: (
     }
   }
 
-  .font-body-l {
+  &.font-body-l {
     @extend %font-text;
     font-size: font-scale('16');
 
@@ -181,7 +181,7 @@ $font-weights: (
       font-size: font-scale('16');
     }
   }
-  .font-body-m {
+  &.font-body-m {
     @extend %font-text;
     font-size: font-scale('14');
 
@@ -189,7 +189,7 @@ $font-weights: (
       font-size: font-scale('14');
     }
   }
-  .font-body-s {
+  &.font-body-s {
     @extend %font-text;
     font-size: font-scale('12');
 
@@ -197,7 +197,7 @@ $font-weights: (
       font-size: font-scale('12');
     }
   }
-  .font-label-xl {
+  &.font-label-xl {
     @extend %font-label;
     font-size: font-scale('18');
 
@@ -205,7 +205,7 @@ $font-weights: (
       font-size: font-scale('18');
     }
   }
-  .font-label-l {
+  &.font-label-l {
     @extend %font-label;
     font-size: font-scale('16');
 
@@ -213,7 +213,7 @@ $font-weights: (
       font-size: font-scale('16');
     }
   }
-  .font-label-m {
+  &.font-label-m {
     @extend %font-label;
     font-size: font-scale('14');
 
@@ -221,7 +221,7 @@ $font-weights: (
       font-size: font-scale('14');
     }
   }
-  .font-label-s {
+  &.font-label-s {
     @extend %font-label;
     font-size: font-scale('12');
 

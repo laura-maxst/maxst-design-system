@@ -1,4 +1,4 @@
-.mds-root.mds-list-wrap {
+.mds-list-wrap {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -20,9 +20,8 @@
     .mds-list__right-box {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 16px;
       transform: translateY(-50%);
-      padding: 8px 16px;
     }
 
     .mds-list__left-box {
@@ -50,6 +49,14 @@
       }
     }
 
+    &.disabled {
+      .font-title,
+      .font-body,
+      .mds-list__icon-box svg {
+        color: semantic-color('text', 'disabled');
+      }
+    }
+
     .mds-list__icon-box {
       flex: none;
       width: 24px;
@@ -61,7 +68,8 @@
       }
 
       &.icon-with-event {
-        cursor: pointer;
+        width: fit-content;
+        height: fit-content;
       }
     }
 

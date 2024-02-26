@@ -205,7 +205,6 @@ const Menu = ({
   return (
     <div
       className={[
-        'mds-root',
         'menu-wrap',
         className ? className : '',
         hasMaxHeight ? 'has-max-height' : '',

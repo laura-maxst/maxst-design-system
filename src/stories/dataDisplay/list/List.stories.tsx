@@ -56,6 +56,14 @@ const listItemData = [
     iconRightData: { icon: <DeleteFillIcon />, onClick: onClickRightIcon },
   },
   {
+    id: 'list-01',
+    title: 'List',
+    text: 'Supporting text that is long enough to fill up multiple lines',
+    iconLeft: <UserLineIcon />,
+    iconRightData: { icon: <DeleteFillIcon />, onClick: onClickRightIcon },
+    disabled: true,
+  },
+  {
     id: 'list-02',
     title: 'List',
     text: 'Supporting text that is long enough to fill up multiple lines',

@@ -1,4 +1,4 @@
-.mds-root.mds-breadcrumb {
+.mds-breadcrumb {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,8 +22,9 @@
       color: semantic-color('text', 'subtlest');
     }
   }
-  .default {
+  button.default {
     color: semantic-color('text', 'subtlest');
+
     svg {
       color: semantic-color('text', 'subtlest');
     }

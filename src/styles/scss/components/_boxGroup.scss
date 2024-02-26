@@ -1,4 +1,4 @@
-.mds-root.mds-box-group {
+.mds-box-group {
   display: flex;
   width: 100%;
 }
@@ -7,7 +7,7 @@ $boxGroupAlign: 'left', 'right', 'center', 'between';
 $boxGroupDirection: 'vertical', 'horizontal';
 
 @mixin boxGroupCase($align, $direction) {
-  &.box-group-#{$align}-#{$direction} {
+  .box-group-#{$align}-#{$direction} {
     @if ($align == 'center') {
       justify-content: center;
     } @else if ($align == 'right') {
@@ -28,8 +28,6 @@ $boxGroupDirection: 'vertical', 'horizontal';
 
 @each $align in $boxGroupAlign {
   @each $direction in $boxGroupDirection {
-    .mds-root {
-      @include boxGroupCase($align, $direction);
-    }
+    @include boxGroupCase($align, $direction);
   }
 }

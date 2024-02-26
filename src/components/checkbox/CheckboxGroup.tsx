@@ -131,7 +131,6 @@ const CheckboxGroup = ({
     <>
       <div
         className={[
-          'mds-root',
           `checkbox__group`,
           align && align,
           direction ? direction : 'horizontal',

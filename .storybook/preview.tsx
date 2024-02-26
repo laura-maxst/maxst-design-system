@@ -51,11 +51,6 @@ const preview: Preview = {
   //   },
   // },
   decorators: [
-    // WithThemeProvider
-    // (story) => {
-    //   document.body.classList.add('mds-root');
-    //   return story();
-    // },
     withThemeByClassName({
       themes: {
         light: 'light',

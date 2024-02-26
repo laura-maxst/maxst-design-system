@@ -48,15 +48,15 @@ export default meta;
 type Story = StoryObj<typeof InputGroup>;
 
 export const InputGroupDefault: Story = {
+  render: (args) => (
+    <InputGroup {...args}>
+      <TextField id="field01" placeholder="one" password={true} />
+      <TextField id="field02" placeholder="two" />
+      <TextField id="field03" placeholder="three" />
+    </InputGroup>
+  ),
   args: {
     id: 'field',
-    children: (
-      <>
-        <TextField id="field01" placeholder="one" password={true} />
-        <TextField id="field02" placeholder="two" />
-        <TextField id="field03" placeholder="three" />
-      </>
-    ),
   },
 };
 

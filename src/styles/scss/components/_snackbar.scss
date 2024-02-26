@@ -1,4 +1,4 @@
-.mds-root.snackbar-box {
+.snackbar-box {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -29,9 +29,14 @@
     color: semantic-color('text', 'default-reverse');
   }
 
+  button.mds-button-root,
   button {
     height: fit-content;
     color: semantic-color('text', 'accent') !important;
+
+    span {
+      color: semantic-color('text', 'default-reverse');
+    }
   }
 
   svg {
@@ -48,7 +53,7 @@
 }
 // theme에 따른 undo ghost button hover 배경 변경
 .light {
-  .mds-root.snackbar-box {
+  .snackbar-box {
     button {
       &:hover,
       &:focus,
@@ -59,7 +64,7 @@
   }
 }
 .dark {
-  .mds-root.snackbar-box {
+  .snackbar-box {
     button {
       &:hover,
       &:focus,
@@ -71,7 +76,7 @@
 }
 
 @include media-mobile-m {
-  .mds-root.snackbar-box {
+  .snackbar-box {
     min-width: unset;
     width: calc(100% - 32px);
   }
@@ -81,7 +86,7 @@ $snackbarAlign: 'top-left', 'top', 'top-right', 'bottom-right', 'bottom',
   'bottom-left';
 
 @mixin snackbarCase($align) {
-  &.snackbar-#{$align} {
+  .snackbar-#{$align} {
     @if ($align == 'top-left') {
       top: 20px;
       left: 20px;
@@ -131,7 +136,5 @@ $snackbarAlign: 'top-left', 'top', 'top-right', 'bottom-right', 'bottom',
 }
 
 @each $align in $snackbarAlign {
-  .mds-root {
-    @include snackbarCase($align);
-  }
+  @include snackbarCase($align);
 }

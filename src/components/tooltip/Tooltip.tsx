@@ -40,9 +40,7 @@ const Tooltip = ({
 
   return (
     <div
-      className={['mds-root', 'tooltip-wrap', align && `tooltip-${align}`].join(
-        ' ',
-      )}
+      className={['tooltip-wrap', align && `tooltip-${align}`].join(' ')}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
     >

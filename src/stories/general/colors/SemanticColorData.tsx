@@ -277,8 +277,8 @@ const BackgroundColorTableData = {
       }),
       ColorChipArea({
         mode: 'dark',
-        colorToken: 'palette-gray-200',
-        colorCode: '#343434',
+        colorToken: 'palette-gray-100',
+        colorCode: '#272626',
       }),
     ],
     [

@@ -1,4 +1,4 @@
-.mds-root.tab-wrap {
+.tab-wrap {
   overflow: hidden;
 
   .tab-bar {
@@ -174,7 +174,7 @@ $tabSize: 'l', 'm', 's';
 $tabState: 'default', 'pressed', 'disabled';
 
 @mixin tabCase($size, $state) {
-  .mds-root.tab-wrap {
+  .tab-wrap {
     .tab-bar__#{$size} {
       @if ($size == 's') {
         height: 40px;
@@ -277,7 +277,7 @@ $tabState: 'default', 'pressed', 'disabled';
 }
 
 @mixin tabSecondaryCase($state) {
-  .mds-root.tab-wrap.secondary-mode {
+  .tab-wrap.secondary-mode {
     .tab-bar {
       height: 40px !important;
 

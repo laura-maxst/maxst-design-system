@@ -18,11 +18,7 @@ const BoxGroup = ({
 }: BoxGroupPropsType) => {
   return (
     <div
-      className={[
-        'mds-root',
-        'mds-box-group',
-        `box-group-${align}-${direction}`,
-      ].join(' ')}
+      className={['mds-box-group', `box-group-${align}-${direction}`].join(' ')}
       style={{ gap: gap, flexWrap: wrap ? 'wrap' : 'nowrap' }}
     >
       {children}

@@ -117,7 +117,7 @@ const Breadcrumb = ({
   }, [moreButton]);
 
   return (
-    <div className={['mds-root', 'mds-breadcrumb'].join(' ')}>
+    <div className={['mds-breadcrumb'].join(' ')}>
       {homeButton && (
         <>
           <Button

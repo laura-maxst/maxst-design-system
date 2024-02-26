@@ -900,14 +900,12 @@ input[type='radio'] {
 }
 
 // form
-.mds-root {
-  .form-box {
-    max-width: 600px;
-    margin: 0 auto;
+.form-box {
+  max-width: 600px;
+  margin: 0 auto;
 
-    &.form-login {
-      max-width: 400px;
-    }
+  &.form-login {
+    max-width: 400px;
   }
 }
 

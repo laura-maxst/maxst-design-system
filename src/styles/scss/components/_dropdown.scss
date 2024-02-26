@@ -1,4 +1,4 @@
-.mds-root.dropdown-box {
+.dropdown-box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -170,8 +170,6 @@ $dropdownMenuState: 'default', 'pressed', 'disabled';
 
 @each $size in $dropdownMenuSize {
   @each $state in $dropdownMenuState {
-    .mds-root {
-      @include menuItemCase($size, $state);
-    }
+    @include menuItemCase($size, $state);
   }
 }

@@ -14,31 +14,19 @@
     appearance: none;
     border: 0 none;
 
-    resize: none;
-    -webkit-appearance: none;
-
     &:focus,
     &:focus {
       outline: none;
     }
-
-    /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
-    &::-ms-clear {
-      display: none;
-    }
   }
 
-  &,
-  &[type='button'],
-  input[type='button'],
-  textarea {
-    border: 0 none;
+  /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+  input::-ms-clear {
+    display: none;
   }
 
   /* input type number 에서 화살표 제거 */
-  &[type='number']::-webkit-inner-spin-button,
-  &[type='number']::-webkit-outer-spin-button
-    input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -48,6 +36,11 @@
 
 @mixin textField-common {
   min-width: 180px;
+
+  & textarea {
+    resize: none;
+    -webkit-appearance: none;
+  }
 
   & input,
   & textarea {
@@ -107,7 +100,7 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
   'success', 'disabled';
 
 @mixin textFieldCase($type, $size, $state) {
-  &.textfield__#{$type}-#{$size}-#{$state} {
+  .textfield__#{$type}-#{$size}-#{$state} {
     label {
       display: block;
       width: 100%;
@@ -252,61 +245,57 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
 @each $type in $textFieldType {
   @each $size in $textFieldSize {
     @each $state in $textFieldState {
-      .mds-root {
-        @include textFieldCase($type, $size, $state);
-      }
+      @include textFieldCase($type, $size, $state);
     }
   }
 }
 
-.mds-root {
-  &.input__group {
-    width: 100%;
+.input__group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .input-box {
+    padding-top: 4px;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 
+  & .textfield label {
+    display: none;
+  }
+
+  &.fullWidth {
     .input-box {
-      padding-top: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    & .textfield label {
-      display: none;
-    }
-
-    &.fullWidth {
-      .input-box {
-        flex-wrap: nowrap;
-        & > div {
-          flex-grow: 1;
-          width: 100%;
-        }
-      }
-
-      .textfield-formControl {
-        min-width: unset;
-      }
-    }
-
-    & label {
-      width: 100%;
-
-      .required {
-        color: semantic-color('text', 'primary');
-      }
-    }
-
-    @include helper-text-with-icon;
-
-    @include media-mobile-m {
-      & .textfield {
+      flex-wrap: nowrap;
+      & > div {
+        flex-grow: 1;
         width: 100%;
       }
+    }
+
+    .textfield-formControl {
+      min-width: unset;
+    }
+  }
+
+  & label {
+    width: 100%;
+
+    .required {
+      color: semantic-color('text', 'primary');
+    }
+  }
+
+  @include helper-text-with-icon;
+
+  @include media-mobile-m {
+    & .textfield {
+      width: 100%;
     }
   }
 }

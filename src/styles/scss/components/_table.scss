@@ -1,4 +1,4 @@
-.mds-root.mds-table-root {
+.mds-table-root {
   table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -211,7 +211,7 @@ $tableAlign: 'left', 'center', 'right';
 
 @each $size in $tableSize {
   @each $align in $tableAlign {
-    .mds-root.mds-table-root {
+    .mds-table-root {
       @include tableCase($size, $align);
     }
   }

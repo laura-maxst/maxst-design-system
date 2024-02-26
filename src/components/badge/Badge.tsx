@@ -32,7 +32,7 @@ const Badge = ({
   };
 
   return (
-    <div className={['mds-root', 'mds-badge-wrap'].join(' ')}>
+    <div className={['mds-badge-wrap'].join(' ')}>
       <div
         className={[
           'mds-badge',

@@ -63,7 +63,6 @@ function CheckboxIcon({
     <label
       htmlFor={id}
       className={[
-        'mds-root',
         'checkbox',
         'checkbox-icon',
         `checkbox__${size}`,

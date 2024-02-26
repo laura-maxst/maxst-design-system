@@ -22,7 +22,7 @@
 
   .helper-text.font-body {
     display: block;
-    color: semantic-color('text', 'sub');
+    color: semantic-color('text', 'subtlest');
   }
 }
 
@@ -51,7 +51,7 @@ $switchSize: 'l', 's';
 $switchState: 'default', 'pressed', 'disabled';
 
 @mixin switchCase($size, $state) {
-  &.switch-toggle-wrap {
+  .switch-toggle-wrap {
     &.disabled {
       label .font-body {
         color: semantic-color('text', 'disabled') !important;
@@ -293,8 +293,6 @@ $switchState: 'default', 'pressed', 'disabled';
 
 @each $state in $switchState {
   @each $size in $switchSize {
-    .mds-root {
-      @include switchCase($size, $state);
-    }
+    @include switchCase($size, $state);
   }
 }

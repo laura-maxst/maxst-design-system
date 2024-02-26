@@ -1,4 +1,4 @@
-.mds-root.menu-wrap {
+.menu-wrap {
   &:not(.depth-02-wrap, .depth-03-wrap) {
     @include shadow-level2;
   }

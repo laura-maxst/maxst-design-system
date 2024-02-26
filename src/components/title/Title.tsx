@@ -22,7 +22,6 @@ function Title({
     <TitleTagFilter
       role={role}
       className={[
-        'mds-root',
         'font-title',
         `font-${type}-${size}`,
         align ? align : '',

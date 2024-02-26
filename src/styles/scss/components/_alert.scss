@@ -1,4 +1,4 @@
-.mds-root.alert-box {
+.alert-box {
   position: fixed;
   display: flex;
   top: 16px;
@@ -80,7 +80,7 @@ $alertCase: 'alert', 'alert-description';
 $alertType: 'error', 'warning', 'information', 'success';
 
 @mixin alertCaseType($case, $type) {
-  &.#{$case}-#{$type} {
+  .#{$case}-#{$type} {
     background-color: semantic-color('background', '#{$type}-light');
 
     &:before {
@@ -128,14 +128,12 @@ $alertType: 'error', 'warning', 'information', 'success';
 
 @each $case in $alertCase {
   @each $type in $alertType {
-    .mds-root {
-      @include alertCaseType($case, $type);
-    }
+    @include alertCaseType($case, $type);
   }
 }
 
 @include media-mobile-m {
-  .mds-root.alert-box {
+  .alert-box {
     min-width: unset;
     width: calc(100% - 32px);
 

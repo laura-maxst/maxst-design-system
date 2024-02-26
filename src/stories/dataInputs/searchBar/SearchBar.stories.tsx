@@ -9,7 +9,8 @@ const meta: Meta<typeof SearchBar> = {
   parameters: {
     docs: {
       description: {
-        component: '검색어를 입력하기 위한 입력 필드 컴포넌트입니다.',
+        component:
+          '검색어를 입력하기 위한 입력 필드 컴포넌트입니다.\n공통 마진 규칙 및 최소 너비는 Text Field와 동일합니다.',
       },
     },
   },

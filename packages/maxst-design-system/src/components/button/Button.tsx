@@ -112,7 +112,6 @@ const Button = ({
       id={id ? id : ''}
       type={props.htmlType ? props.htmlType : 'button'}
       className={[
-        'mds-root',
         'mds-button-root',
         `button__${isIconMode ? 'icon-' : ''}${type}-${onButtonTypeSizeFilter(
           type,

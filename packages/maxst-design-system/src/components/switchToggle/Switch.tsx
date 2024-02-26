@@ -60,7 +60,6 @@ const Switch = ({
   return (
     <div
       className={[
-        'mds-root',
         'switch-toggle-wrap',
         label && 'label-mode',
         size ? `switch-toggle-${size}` : 'switch-toggle-l',

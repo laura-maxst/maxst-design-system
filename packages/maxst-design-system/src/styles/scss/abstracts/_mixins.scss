@@ -5,6 +5,17 @@
   }
 }
 
+@mixin global {
+  box-sizing: border-box;
+  word-break: keep-all;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+}
+
 //font 관련
 @mixin fontScales($scale, $size) {
   .font-size-#{$scale} {

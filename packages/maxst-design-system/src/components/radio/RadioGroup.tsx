@@ -75,7 +75,6 @@ const RadioGroup = ({
     <>
       <div
         className={[
-          'mds-root',
           `radio__group`,
           align && align,
           direction ? direction : 'horizontal',

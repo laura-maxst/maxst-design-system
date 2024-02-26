@@ -29,11 +29,7 @@ interface SidebarPropsType {
 
 const Sidebar = ({ className, header, footer, ...props }: SidebarPropsType) => {
   return (
-    <div
-      className={['mds-root', 'mds-sidebar', className ? className : ''].join(
-        ' ',
-      )}
-    >
+    <div className={['mds-sidebar', className ? className : ''].join(' ')}>
       {header && <div className="mds-sidebar__header">{header}</div>}
       <Menu {...props} hasMaxHeight={false} multiple={false} />
       {footer && <div className="mds-sidebar__footer">{footer}</div>}

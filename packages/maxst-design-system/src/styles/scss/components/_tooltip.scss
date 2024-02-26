@@ -1,4 +1,4 @@
-.mds-root.tooltip-wrap {
+.tooltip-wrap {
   position: relative;
   display: inline-block;
 
@@ -44,7 +44,7 @@
 }
 
 @mixin tooltipDirectionCase($direction, $theme) {
-  .tooltip-box-#{$theme} {
+  .tooltip-box.tooltip-box-#{$theme} {
     @if ($theme == 'dark-mode') {
       color: semantic-color('text', 'default-reverse');
       background-color: semantic-color('background', 'overlay-reverse');
@@ -182,8 +182,6 @@ $themeMode: 'dark-mode', 'light-mode';
 
 @each $direction in $tooltipDirections {
   @each $theme in $themeMode {
-    .mds-root {
-      @include tooltipDirectionCase($direction, $theme);
-    }
+    @include tooltipDirectionCase($direction, $theme);
   }
 }

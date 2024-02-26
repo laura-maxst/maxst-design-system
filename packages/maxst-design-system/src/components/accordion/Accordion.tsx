@@ -28,10 +28,17 @@ const Accordion = ({
   const [openBody, setOpenBody] = useState<string | null>(null);
   const [height, setHeight] = useState<number>(0);
   const [clickItem, setClickItem] = useState<HTMLElement>();
+  const [clickItemPerent, setClickItemPerent] = useState<HTMLElement>();
 
   const onClickHead = (e: any, clickId: string) => {
     if (!e.target.classList.contains('disabled') && expandControl) {
       const clickIditem = document.getElementById(`${clickId}-item`);
+      const clickItemPerent = document.getElementById(
+        `${clickId}`,
+      )?.parentElement;
+
+      clickItemPerent && setClickItemPerent(clickItemPerent);
+
       clickIditem && setClickItem(clickIditem);
       clickIditem && setHeight(clickIditem.scrollHeight);
 
@@ -57,24 +64,26 @@ const Accordion = ({
   }, [defaultSelectItem]);
 
   useEffect(() => {
-    const allItem = document.querySelectorAll(
-      '.mds-accordion__item_body',
-    ) as any;
-    for (const item of allItem) {
-      item.style.height = '0';
-    }
-    if (clickItem) {
-      if (isOpenBody) {
-        clickItem.style.height = `${height}px`;
-      } else {
-        clickItem.style.height = '0';
+    if (clickItemPerent) {
+      const allItem = clickItemPerent.querySelectorAll(
+        '.mds-accordion__item_body',
+      ) as any;
+      for (const item of allItem) {
+        item.style.height = '0';
+      }
+      if (clickItem) {
+        if (isOpenBody) {
+          clickItem.style.height = `${height}px`;
+        } else {
+          clickItem.style.height = '0';
+        }
       }
     }
-  }, [clickItem, isOpenBody, height]);
+  }, [clickItem, isOpenBody, height, clickItemPerent]);
 
   return (
     <div
-      className="mds-root mds-accordion-wrap"
+      className="mds-accordion-wrap"
       style={{ width: width ? width : '100%' }}
     >
       {items.map((itemData) => {
@@ -85,6 +94,7 @@ const Accordion = ({
               'mds-accordion__item',
               itemData.disabled ? 'disabled' : '',
             ].join(' ')}
+            id={itemData.id}
           >
             <div
               id={itemData.id + '-head'}

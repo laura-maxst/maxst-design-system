@@ -91,9 +91,7 @@ const PositionModal = ({
   }, [open]);
 
   return (
-    <div
-      className={['mds-root', 'modal-wrap', open ? 'open' : 'close'].join(' ')}
-    >
+    <div className={['modal-wrap', open ? 'open' : 'close'].join(' ')}>
       <div
         className={isDim ? 'dim' : 'dim-transparent'}
         onClick={onClickClose}

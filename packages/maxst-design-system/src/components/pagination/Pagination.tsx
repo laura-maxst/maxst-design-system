@@ -294,7 +294,6 @@ const Pagination = ({
   return (
     <div
       className={[
-        'mds-root',
         'mds-pagination',
         `pagination-${size}`,
         simpleMode ? 'pagination__simple-mode' : '',

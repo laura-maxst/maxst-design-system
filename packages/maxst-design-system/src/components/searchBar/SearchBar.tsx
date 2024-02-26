@@ -7,7 +7,6 @@ interface InputGroupProps {
   size?: 'l' | 's';
   placeholder: string;
   disabled?: boolean;
-  fullWidth?: boolean;
   helperText?: string;
   resetButton?: boolean;
   onChange?: (value: any) => void;
@@ -21,7 +20,6 @@ const SearchBar = ({
   size,
   placeholder,
   disabled,
-  fullWidth,
   helperText,
   resetButton,
   onChange,
@@ -29,13 +27,7 @@ const SearchBar = ({
   className,
 }: InputGroupProps) => {
   return (
-    <div
-      className={[
-        `search-wrap`,
-        fullWidth && 'fullWidth',
-        className && className,
-      ].join(' ')}
-    >
+    <div className={[`search-wrap`, className && className].join(' ')}>
       <TextField
         id={id}
         size={size}

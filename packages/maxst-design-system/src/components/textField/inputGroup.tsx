@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { TextLabel, Text } from '@components/text';
 import {
   ErrorCircleLineBoldIcon,
@@ -26,11 +26,18 @@ const InputGroup = ({
   disabled,
   children,
 }: InputGroupProps) => {
+  const [thisState, setThisState] = useState<
+    'default' | 'pressed' | 'disabled' | 'error' | 'success'
+  >('default');
+
+  useEffect(() => {
+    state && setThisState(state);
+  }, [state]);
+
   return (
     <>
       <div
         className={[
-          'mds-root',
           'mds-input-root',
           `input__group`,
           fullWidth && 'fullWidth',
@@ -45,9 +52,10 @@ const InputGroup = ({
         )}
 
         <div className="input-box">
-          {React.Children.map(children, (child) => {
-            return React.cloneElement(child, { state: state });
-          })}
+          {thisState &&
+            React.Children.map(children, (child) => {
+              return React.cloneElement(child, { state: thisState });
+            })}
         </div>
         {helperText && (
           <Text

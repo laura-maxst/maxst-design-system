@@ -1,29 +1,26 @@
 .mds-button-root {
-  &,
+  .button__group button,
   button {
     padding: 0;
     margin: 0;
-    border-radius: 0;
-    vertical-align: middle;
-    font-size: 100%;
-    font-family: 'Pretendard', sans-serif;
-    background: transparent;
-
-    border: 0 none;
-
-    cursor: pointer;
-
-    &:focus {
-      outline: none;
-    }
   }
 }
 // button 공통 속성
 @mixin button-common {
+  border-radius: 0;
+  border: 0 none;
+  vertical-align: middle;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 100%;
   // border-radius: 4px;
   white-space: nowrap;
   max-width: 330px !important;
-  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   span {
     width: 100%;
@@ -75,22 +72,22 @@
   &:hover,
   &:focus,
   &:active {
+    // @include action-common;
     // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'primary-accent') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'primary-accent') 0) left;
     background-color: semantic-color('background', 'primary-accent');
-    @include action-common;
   }
 
   @if ($state == 'disabled') {
+    @include action-common;
     // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'disabled') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'disabled') 0) left ;
     background-color: semantic-color('background', 'disabled');
-    @include action-common;
 
     &:hover,
     &:focus,
     &:active {
+      // @include action-common;
       // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'disabled') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'disabled') 0) left;
       background-color: semantic-color('background', 'disabled');
-      @include action-common;
     }
   }
 }
@@ -152,82 +149,6 @@
     }
   }
 }
-// size
-%size-xl {
-  height: 48px;
-  padding: 0 16px;
-}
-%size-l {
-  height: 40px;
-  padding: 0 16px;
-}
-%size-m {
-  height: 36px;
-  padding: 0 12px;
-}
-%size-s {
-  height: 32px;
-  padding: 0 12px;
-}
-%size-xs {
-  height: 28px;
-  padding: 0 8px;
-}
-
-// text type
-%type-text-default {
-  color: semantic-color('text', 'sub');
-  & svg {
-    color: semantic-color('text', 'sub');
-    .path {
-      stroke: semantic-color('text', 'sub') !important;
-    }
-  }
-}
-%type-text-pressed {
-  color: semantic-color('text', 'default');
-  & svg {
-    color: semantic-color('text', 'default');
-  }
-}
-%type-text-error {
-  color: semantic-color('text', 'error');
-  & svg {
-    color: semantic-color('text', 'error');
-    .path {
-      stroke: semantic-color('text', 'error') !important;
-    }
-  }
-}
-%type-link-default {
-  color: semantic-color('text', 'information');
-  & svg {
-    color: semantic-color('text', 'information');
-    .path {
-      stroke: semantic-color('text', 'information') !important;
-    }
-  }
-}
-%type-link-pressed {
-  position: relative;
-  color: semantic-color('text', 'information');
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: semantic-color('text', 'information');
-  }
-  & svg {
-    color: semantic-color('text', 'information');
-    .path {
-      stroke: semantic-color('text', 'information') !important;
-    }
-  }
-}
 
 // box button, text button
 $buttonType: 'primary', 'secondary', 'tertiary', 'error', 'error-tertiary',
@@ -236,7 +157,8 @@ $buttonSize: 'xl', 'l', 'm', 's', 'xs';
 $buttonState: 'default', 'pressed', 'disabled', 'error';
 
 @mixin buttonCase($type, $size, $state) {
-  &.button__#{$type}-#{$size}--#{$state} {
+  .mds-button-root.button__#{$type}-#{$size}--#{$state},
+  .button__#{$type}-#{$size}--#{$state} {
     @include button-common;
 
     @if ($type == 'link') {
@@ -322,7 +244,7 @@ $iconButtonSize: 'xl', 'l', 'm', 's', 'xs';
 $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 
 @mixin iconButtonCase($type, $size, $state) {
-  &.button__icon-#{$type}-#{$size}--#{$state} {
+  .button__icon-#{$type}-#{$size}--#{$state} {
     @include button-common;
     @include setColorStyle($type, $state);
 
@@ -425,9 +347,7 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 @each $type in $buttonType {
   @each $size in $buttonSize {
     @each $state in $buttonState {
-      .mds-root {
-        @include buttonCase($type, $size, $state);
-      }
+      @include buttonCase($type, $size, $state);
     }
   }
 }
@@ -435,52 +355,125 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 @each $type in $iconButtonType {
   @each $size in $iconButtonSize {
     @each $state in $iconButtonState {
-      .mds-root {
-        @include iconButtonCase($type, $size, $state);
-      }
+      @include iconButtonCase($type, $size, $state);
     }
   }
 }
 
-.mds-root {
-  &.button__group {
-    display: flex;
+.button__group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+
+  &.fullWidth {
+    button {
+      flex-grow: 1;
+      width: 100%;
+    }
+  }
+
+  &.left {
     justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.vertical {
+    flex-direction: column;
+  }
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  @include media-mobile-m {
+    button {
+      width: 100%;
+    }
+  }
+}
+
+// size
+%size-xl {
+  height: 48px;
+  padding: 0 16px;
+}
+%size-l {
+  height: 40px;
+  padding: 0 16px;
+}
+%size-m {
+  height: 36px;
+  padding: 0 12px;
+}
+%size-s {
+  height: 32px;
+  padding: 0 12px;
+}
+%size-xs {
+  height: 28px;
+  padding: 0 8px;
+}
+
+// text type
+%type-text-default {
+  color: semantic-color('text', 'sub');
+  & svg {
+    color: semantic-color('text', 'sub');
+    .path {
+      stroke: semantic-color('text', 'sub') !important;
+    }
+  }
+}
+%type-text-pressed {
+  color: semantic-color('text', 'default');
+  & svg {
+    color: semantic-color('text', 'default');
+  }
+}
+%type-text-error {
+  color: semantic-color('text', 'error');
+  & svg {
+    color: semantic-color('text', 'error');
+    .path {
+      stroke: semantic-color('text', 'error') !important;
+    }
+  }
+}
+%type-link-default {
+  color: semantic-color('text', 'information');
+  & svg {
+    color: semantic-color('text', 'information');
+    .path {
+      stroke: semantic-color('text', 'information') !important;
+    }
+  }
+}
+%type-link-pressed {
+  position: relative;
+  color: semantic-color('text', 'information');
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-
-    &.fullWidth {
-      button {
-        flex-grow: 1;
-        width: 100%;
-      }
-    }
-
-    &.left {
-      justify-content: flex-start;
-    }
-
-    &.center {
-      justify-content: center;
-    }
-
-    &.right {
-      justify-content: flex-end;
-    }
-
-    &.vertical {
-      flex-direction: column;
-    }
-
-    &.horizontal {
-      flex-direction: row;
-    }
-
-    @include media-mobile-m {
-      button {
-        width: 100%;
-      }
+    height: 1px;
+    background-color: semantic-color('text', 'information');
+  }
+  & svg {
+    color: semantic-color('text', 'information');
+    .path {
+      stroke: semantic-color('text', 'information') !important;
     }
   }
 }

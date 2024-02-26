@@ -147,7 +147,6 @@ const Dropdown = ({
   return (
     <div
       className={[
-        'mds-root',
         'dropdown-box',
         align ? align : 'left',
         menuDirection ? menuDirection : 'bottom',

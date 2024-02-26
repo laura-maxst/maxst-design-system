@@ -26,7 +26,6 @@ const ButtonGroup = ({
   return (
     <div
       className={[
-        'mds-root',
         'mds-button-root',
         `button__group`,
         fullWidth && 'fullWidth',

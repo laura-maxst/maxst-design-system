@@ -106,11 +106,7 @@ function AutoComplete({
 
   return (
     <div
-      className={[
-        'mds-root',
-        'mds-autocomplete',
-        className ? className : '',
-      ].join(' ')}
+      className={['mds-autocomplete', className ? className : ''].join(' ')}
       ref={autoCompleteRef}
     >
       <div
@@ -122,6 +118,7 @@ function AutoComplete({
           return React.cloneElement(child, {
             value: selectValue,
             onChange: onChangeChildren,
+            size: size,
           });
         })}
       </div>

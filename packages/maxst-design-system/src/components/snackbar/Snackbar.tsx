@@ -62,7 +62,6 @@ const Snackbar = ({
   return (
     <div
       className={[
-        'mds-root',
         'snackbar-box',
         `snackbar-${align ? align : 'bottom-left'}`,
         open ? 'open' : 'close',

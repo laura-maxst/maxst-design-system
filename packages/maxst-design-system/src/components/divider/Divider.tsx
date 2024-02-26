@@ -12,7 +12,6 @@ const Divider = ({ type, direction, children }: DividerProps) => {
       {children ? (
         <div
           className={[
-            'mds-root',
             'mds-divider',
             `divider-${type ? type : 'default'}`,
             `divider-${direction ? direction : 'horizontal'}`,
@@ -24,7 +23,6 @@ const Divider = ({ type, direction, children }: DividerProps) => {
       ) : (
         <hr
           className={[
-            'mds-root',
             'mds-divider',
             `divider-${type ? type : 'default'}`,
             `divider-${direction ? direction : 'horizontal'}`,

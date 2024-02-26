@@ -1,4 +1,4 @@
-.mds-root.radio__group {
+.radio__group {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -73,13 +73,12 @@
   @include helper-text-with-icon;
 }
 
-.mds-root {
-  .radio {
-    input[type='radio'] {
-      appearance: none;
-    }
+.radio {
+  input[type='radio'] {
+    appearance: none;
   }
 }
+
 // radio background, border color setting
 @mixin radioColorSet($type, $color) {
   @if ($type == 'background') {
@@ -118,7 +117,7 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
   }
 }
 
-.mds-root.radio-wrap {
+.radio-wrap {
   @include helper-text-with-icon;
 
   .helper-text.font-body {
@@ -260,8 +259,6 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
 
 @each $size in $radioSize {
   @each $state in $radioState {
-    .mds-root {
-      @include radioCase($size, $state);
-    }
+    @include radioCase($size, $state);
   }
 }

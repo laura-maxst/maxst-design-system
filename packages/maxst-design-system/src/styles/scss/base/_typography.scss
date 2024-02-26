@@ -37,8 +37,11 @@
 }
 
 @mixin font-common {
+  font: inherit;
+  font-family: 'Pretendard', sans-serif !important;
+  vertical-align: baseline;
   color: semantic-color('text', 'default');
-  // white-space: break-spaces;
+  white-space: break-spaces;
 
   &.left {
     text-align: left;
@@ -87,16 +90,16 @@ $font-weights: (
 );
 
 %font-title {
+  @include font-common;
   line-height: 1.3;
   font-weight: font-weight('semibold');
   color: semantic-color('text', 'default');
-  @include font-common;
 }
 %font-text {
+  @include font-common;
   line-height: 1.5;
   font-weight: font-weight('regular');
   color: semantic-color('text', 'default');
-  @include font-common;
 
   &.default {
     color: semantic-color('text', 'default');
@@ -110,9 +113,9 @@ $font-weights: (
 }
 
 %font-label {
+  @include font-common;
   line-height: 1.5;
   font-weight: font-weight('medium');
-  @include font-common;
 }
 
 @each $type, $scales in $font-scales {
@@ -127,106 +130,114 @@ $font-weights: (
   @include fontWeights($key, $value);
 }
 
-.mds-root {
-  .font-box {
-    margin-bottom: 8px;
-  }
+.font-box {
+  margin-bottom: 8px;
+}
 
-  &.font-title-xl {
-    @extend %font-title;
-    font-size: font-scale('48');
+.font-title-xl {
+  @extend %font-title;
+  font-size: font-scale('48');
 
-    @include media-mobile-m {
-      font-size: font-scale('32');
-    }
-  }
-  &.font-title-l {
-    @extend %font-title;
+  @include media-mobile-m {
     font-size: font-scale('32');
-
-    @include media-mobile-m {
-      font-size: font-scale('24');
-    }
   }
-  &.font-title-m {
-    @extend %font-title;
+}
+
+.font-title-l {
+  @extend %font-title;
+  font-size: font-scale('32');
+
+  @include media-mobile-m {
     font-size: font-scale('24');
-
-    @include media-mobile-m {
-      font-size: font-scale('20');
-    }
   }
-  &.font-title-s {
-    @extend %font-title;
+}
+
+.font-title-m {
+  @extend %font-title;
+  font-size: font-scale('24');
+
+  @include media-mobile-m {
     font-size: font-scale('20');
-
-    @include media-mobile-m {
-      font-size: font-scale('18');
-    }
   }
-  &.font-title-xs {
-    @extend %font-title;
+}
+
+.font-title-s {
+  @extend %font-title;
+  font-size: font-scale('20');
+
+  @include media-mobile-m {
     font-size: font-scale('18');
-
-    @include media-mobile-m {
-      font-size: font-scale('16');
-    }
   }
+}
 
-  &.font-body-l {
-    @extend %font-text;
+.font-title-xs {
+  @extend %font-title;
+  font-size: font-scale('18');
+
+  @include media-mobile-m {
     font-size: font-scale('16');
-
-    @include media-mobile-m {
-      font-size: font-scale('16');
-    }
   }
-  &.font-body-m {
-    @extend %font-text;
+}
+
+.font-body-l {
+  @extend %font-text;
+  font-size: font-scale('16');
+
+  @include media-mobile-m {
+    font-size: font-scale('16');
+  }
+}
+
+.font-body-m {
+  @extend %font-text;
+  font-size: font-scale('14');
+
+  @include media-mobile-m {
     font-size: font-scale('14');
-
-    @include media-mobile-m {
-      font-size: font-scale('14');
-    }
   }
-  &.font-body-s {
-    @extend %font-text;
+}
+
+.font-body-s {
+  @extend %font-text;
+  font-size: font-scale('12');
+
+  @include media-mobile-m {
     font-size: font-scale('12');
-
-    @include media-mobile-m {
-      font-size: font-scale('12');
-    }
   }
-  &.font-label-xl {
-    @extend %font-label;
+}
+
+.font-label-xl {
+  @extend %font-label;
+  font-size: font-scale('18');
+
+  @include media-mobile-m {
     font-size: font-scale('18');
-
-    @include media-mobile-m {
-      font-size: font-scale('18');
-    }
   }
-  &.font-label-l {
-    @extend %font-label;
+}
+
+.font-label-l {
+  @extend %font-label;
+  font-size: font-scale('16');
+
+  @include media-mobile-m {
     font-size: font-scale('16');
-
-    @include media-mobile-m {
-      font-size: font-scale('16');
-    }
   }
-  &.font-label-m {
-    @extend %font-label;
+}
+
+.font-label-m {
+  @extend %font-label;
+  font-size: font-scale('14');
+
+  @include media-mobile-m {
     font-size: font-scale('14');
-
-    @include media-mobile-m {
-      font-size: font-scale('14');
-    }
   }
-  &.font-label-s {
-    @extend %font-label;
-    font-size: font-scale('12');
+}
 
-    @include media-mobile-m {
-      font-size: font-scale('12');
-    }
+.font-label-s {
+  @extend %font-label;
+  font-size: font-scale('12');
+
+  @include media-mobile-m {
+    font-size: font-scale('12');
   }
 }

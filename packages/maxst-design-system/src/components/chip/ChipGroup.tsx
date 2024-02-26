@@ -8,9 +8,7 @@ interface ChipGroupProps {
 const ChipGroup = ({ children, className, ...props }: ChipGroupProps) => {
   return (
     <div
-      className={['mds-root', 'mds-chip-group', className && className].join(
-        ' ',
-      )}
+      className={['mds-chip-group', className && className].join(' ')}
       {...props}
     >
       {children}

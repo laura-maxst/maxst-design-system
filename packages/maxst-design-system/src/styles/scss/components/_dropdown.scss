@@ -50,6 +50,7 @@
     // @include scrollY(semantic-color('background', 'overlay'));
     background-color: semantic-color('background', 'overlay');
     transition: all ease 0.5s;
+    z-index: 999;
     @include shadow-level2;
 
     &.off {

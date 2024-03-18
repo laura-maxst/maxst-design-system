@@ -23,6 +23,6 @@ import { Button } from '@maxst-designsystem/maxst-design-system';
 
 ## Documentation
 
-[MAXST Design System Storybook](https://mds-polygon.maxst.com/)
+[MAXST Design System Storybook](https://mds-polygon.metamaxst.com/)
 
 [MAXST Design System Github](https://github.com/laura-maxst/maxst-design-system/tree/main/packages/maxst-design-system)

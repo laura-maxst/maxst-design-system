@@ -959,6 +959,43 @@ html,
 body {
   height: 100%;
 }
+// footer docs
+.footer-top-right-example {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+  @include media-tablet-m {
+    justify-content: space-between;
+  }
+}
+
+.mds-footer .footer-bottom__right {
+  @include media-tablet-m {
+    width: 100%;
+  }
+}
+
+.footer-top-right-sample {
+  width: 600px;
+  height: 30px;
+  background-color: #c2c2c2;
+
+  @include media-tablet-m {
+    width: 100%;
+  }
+}
+
+.footer-bottom-right-sample {
+  width: 240px;
+  height: 60px;
+  background-color: #c2c2c2;
+
+  @include media-mobile-m {
+    width: 100%;
+    max-width: 240px;
+  }
+}
 
 @include media-tablet-s {
   .color-box-wrap {

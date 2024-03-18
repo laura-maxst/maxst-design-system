@@ -9,9 +9,9 @@ interface PositionModalProps {
   title?: string;
   titleImage?: JSX.Element | React.ReactNode;
   titleIcon?: JSX.Element | React.ReactNode;
-  children?: string | any;
+  children?: JSX.Element | React.ReactNode;
   size?: 's' | 'm' | 'l' | 'xl';
-  mainButton: {
+  mainButton?: {
     type: 'primary' | 'secondary' | 'error';
     text: string;
     onClick: () => void;
@@ -44,6 +44,8 @@ interface PositionModalProps {
     | 'left'
     | 'left-bottom';
   position: { top?: string; left?: string; right?: string; bottom?: string };
+  footerCustom?: JSX.Element | React.ReactNode;
+  className?: string;
 }
 
 const PositionModal = ({
@@ -64,9 +66,11 @@ const PositionModal = ({
   isArrow,
   arrowDirection,
   position,
+  footerCustom,
+  className,
 }: PositionModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
-  const [isFooter, setIsFooter] = useState<boolean>(false);
+  const [isDefaultFooter, setIsDefaultFooter] = useState<boolean>(false);
 
   const onClickClose = () => {
     const bodyEl = document.body;
@@ -76,7 +80,7 @@ const PositionModal = ({
 
   useEffect(() => {
     if (mainButton || subButton || subtlestButton) {
-      setIsFooter(true);
+      setIsDefaultFooter(true);
     }
   }, [mainButton, subButton, subtlestButton]);
 
@@ -91,7 +95,13 @@ const PositionModal = ({
   }, [open]);
 
   return (
-    <div className={['modal-wrap', open ? 'open' : 'close'].join(' ')}>
+    <div
+      className={[
+        'modal-wrap',
+        open ? 'open' : 'close',
+        className ? className : '',
+      ].join(' ')}
+    >
       <div
         className={isDim ? 'dim' : 'dim-transparent'}
         onClick={onClickClose}
@@ -134,7 +144,7 @@ const PositionModal = ({
             )}
           </div>
         )}
-        {isFooter && (
+        {isDefaultFooter ? (
           <div
             className={[
               'modal-footer',
@@ -171,6 +181,8 @@ const PositionModal = ({
               )}
             </ButtonGroup>
           </div>
+        ) : (
+          footerCustom && <div className="modal-footer">{footerCustom}</div>
         )}
       </div>
     </div>

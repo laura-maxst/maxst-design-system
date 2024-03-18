@@ -103,6 +103,11 @@ const Dropdown = ({
   const handleOutside = (e: any) => {
     if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
       setMenuOpen(false);
+
+      const thisDropdownMenuWrap = document.getElementById(`${id}-menu-wrap`);
+      if (thisDropdownMenuWrap) {
+        thisDropdownMenuWrap.style.height = `0px`;
+      }
     }
   };
 
@@ -125,24 +130,35 @@ const Dropdown = ({
   }, [selectMenu]);
 
   useEffect(() => {
+    const thisDropdownBaseWrap = document.getElementById(`${id}__base`);
+    const thisDropdownMenuWrap = document.getElementById(`${id}-menu-wrap`);
+    if (thisDropdownBaseWrap?.getElementsByClassName('has-helperText')[0]) {
+      thisDropdownMenuWrap?.classList.add('has-helperText');
+    }
     if (menuOpen) {
-      const thisDropdownMenuWrap = document.getElementById(`${id}-menu-wrap`);
-      const thisDropdownBaseWrap = document.getElementById(`${id}__base`);
       if (thisDropdownBaseWrap && thisDropdownMenuWrap) {
         if (thisDropdownBaseWrap.getElementsByClassName('has-helperText')[0]) {
           if (menuDirection === 'top') {
             thisDropdownMenuWrap.style.bottom = '0';
+            thisDropdownMenuWrap.style.top = 'auto';
           } else {
-            thisDropdownMenuWrap.style.top = 'calc(100% - 22px)';
+            thisDropdownMenuWrap.style.bottom = 'auto';
           }
         }
+        thisDropdownMenuWrap.style.height = `${thisDropdownMenuWrap.scrollHeight}px`;
         document.addEventListener('mousedown', handleOutside);
       }
+
       return () => {
         document.removeEventListener('mousedown', handleOutside);
       };
+    } else {
+      const thisDropdownMenuWrap = document.getElementById(`${id}-menu-wrap`);
+      if (thisDropdownMenuWrap) {
+        thisDropdownMenuWrap.style.height = `0px`;
+      }
     }
-  }, [menuOpen]);
+  }, [id, menuDirection, menuOpen]);
 
   return (
     <div
@@ -159,32 +175,31 @@ const Dropdown = ({
       ref={dropdownRef}
     >
       <div
-        className="dropdown-box__base"
+        className="dropdown-box_ _base"
         onClick={onClickDropdownBase}
         id={id + '__base'}
       >
         {children}
       </div>
-      {menuOpen && (
-        <div
-          className={[
-            'dropdown-box__menu-wrap',
-            isFullWidthMenuWrap ? 'full-width' : '',
-          ].join(' ')}
-          id={id + '-menu-wrap'}
-          ref={menuRef}
-        >
-          <Menu
-            id={id + 'menu'}
-            size={size}
-            itemData={menuData}
-            onChange={onChangeDropdownMenu}
-            onClick={onClickDropdownMenu}
-            multiple={multiple}
-            selectMenu={multiple ? multiSelectData : selectId}
-          />
-        </div>
-      )}
+      <div
+        className={[
+          'dropdown-box__menu-wrap',
+          isFullWidthMenuWrap ? 'full-width' : '',
+          menuOpen ? 'on' : 'off',
+        ].join(' ')}
+        id={id + '-menu-wrap'}
+        ref={menuRef}
+      >
+        <Menu
+          id={id + 'menu'}
+          size={size}
+          itemData={menuData}
+          onChange={onChangeDropdownMenu}
+          onClick={onClickDropdownMenu}
+          multiple={multiple}
+          selectMenu={multiple ? multiSelectData : selectId}
+        />
+      </div>
     </div>
   );
 };

@@ -13,6 +13,7 @@ interface DrawerPropsType {
   onClose: () => void;
   closeButtonIcon?: React.ReactNode;
   isDim?: boolean;
+  className?: string;
 }
 
 const Drawer = ({
@@ -26,6 +27,7 @@ const Drawer = ({
   onClose,
   closeButtonIcon,
   isDim = true,
+  className,
 }: DrawerPropsType) => {
   const onClickClose = () => {
     const bodyEl = document.body;
@@ -44,7 +46,13 @@ const Drawer = ({
   }, [open]);
 
   return (
-    <div className={['mds-drawer-wrap', open ? 'open' : 'close'].join(' ')}>
+    <div
+      className={[
+        'mds-drawer-wrap',
+        open ? 'open' : 'close',
+        className ? className : '',
+      ].join(' ')}
+    >
       {isDim && <div className="dim" onClick={onClickClose}></div>}
       <div
         className={[

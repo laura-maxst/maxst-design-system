@@ -139,6 +139,10 @@ $checkboxMode: 'primary', 'secondary';
       border: 1px solid;
       @include checkboxColorSet('border', 'default');
       z-index: 11;
+
+      // interaction
+      transition-property: background;
+      transition-duration: 0.7s, 0.7s;
     }
 
     @if ($size == 'l') {
@@ -244,6 +248,7 @@ $checkboxMode: 'primary', 'secondary';
     }
   }
 }
+
 .checkbox-wrap {
   @include helper-text-with-icon;
 
@@ -269,6 +274,20 @@ $checkboxMode: 'primary', 'secondary';
       height: 0px;
     }
   }
+
+  .on {
+    .checkbox::before {
+      transform: scale(0);
+      animation: ripple-animation 0.6s linear;
+      background-color: rgba(255, 255, 255, 0.8);
+      background-color: semantic-color('background', 'secondary');
+      pointer-events: none;
+      width: calc(100% + 16px);
+      height: calc(100% + 16px);
+      opacity: 0.5;
+    }
+  }
+  @include rippleAnimation;
 }
 
 .checkbox-label {

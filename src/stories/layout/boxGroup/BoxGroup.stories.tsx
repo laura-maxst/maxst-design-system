@@ -25,7 +25,7 @@ const meta: Meta<typeof BoxGroup> = {
       },
     },
     align: {
-      description: 'Buttom group 내부의 버튼들의 정렬을 설정할 수 있습니다.',
+      description: 'Box group 내부의 버튼들의 정렬을 설정할 수 있습니다.',
     },
     wrap: {
       description: '줄바꿈 여부를 설정합니다.',

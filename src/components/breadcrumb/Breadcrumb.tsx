@@ -43,6 +43,7 @@ interface BreadcrumbProps {
       disabled?: boolean;
     }[];
   }[];
+  className?: string;
 }
 
 const Breadcrumb = ({
@@ -50,6 +51,7 @@ const Breadcrumb = ({
   moreButton,
   thisPage,
   homeButton,
+  className,
 }: BreadcrumbProps) => {
   const [fullMenuMode, setFullMenuMode] = useState<boolean>(true);
   const [thisPageIndex, setThisPageIndex] = useState<number | null>(null);
@@ -117,7 +119,7 @@ const Breadcrumb = ({
   }, [moreButton]);
 
   return (
-    <div className={['mds-breadcrumb'].join(' ')}>
+    <div className={['mds-breadcrumb', className ? className : ''].join(' ')}>
       {homeButton && (
         <>
           <Button

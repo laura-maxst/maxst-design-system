@@ -6,6 +6,7 @@ interface ButtonGropProps {
   align?: 'left' | 'right' | 'center';
   direction?: 'vertical' | 'horizontal';
   buttonWidth?: string;
+  className?: string;
 }
 
 const ButtonGroup = ({
@@ -14,6 +15,7 @@ const ButtonGroup = ({
   align,
   direction,
   buttonWidth,
+  className,
 }: ButtonGropProps) => {
   const [buttonWidthCustom, setButtonWidthCustom] = useState<string>('none');
 
@@ -31,6 +33,7 @@ const ButtonGroup = ({
         fullWidth && 'fullWidth',
         align && align,
         direction && direction,
+        className ? className : '',
       ].join(' ')}
     >
       {/* {children} */}

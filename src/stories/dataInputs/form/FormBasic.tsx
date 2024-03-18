@@ -130,6 +130,7 @@ function FormBasic() {
     setIsInputOneError(!formData.inputOne.one || !formData.inputOne.two);
     setIsInputTwoError(!formData.inputTwo);
   };
+
   return (
     <>
       <InputGroup

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Text } from '@components/text';
 import {
   MinusLineBoldIcon,
@@ -18,6 +18,7 @@ interface CheckboxPropsType {
   checked?: boolean;
   onChange?: (e: any) => void;
   onClick?: (e: any) => void;
+  className?: string;
 }
 function Checkbox({
   id,
@@ -31,7 +32,9 @@ function Checkbox({
   checked,
   onChange,
   onClick,
+  className,
 }: CheckboxPropsType) {
+  const checkboxRef: any = useRef(null);
   const [thisState, setThisState] = useState<string>('default');
   // checked 여부
   const [thisIsChecked, setThisIsChecked] = useState<boolean>(
@@ -56,6 +59,12 @@ function Checkbox({
     } else {
       setThisIsChecked(false);
     }
+
+    checkboxRef.current.children[0].classList.add('on');
+
+    setTimeout(() => {
+      checkboxRef.current.children[0].classList.remove('on');
+    }, 700);
 
     if (!onClick) {
       return;
@@ -84,9 +93,12 @@ function Checkbox({
   }, [type]);
 
   return (
-    <div className={['checkbox-wrap'].join(' ')}>
+    <div
+      className={['checkbox-wrap', className ? className : ''].join(' ')}
+      ref={checkboxRef}
+    >
       {label ? (
-        <label htmlFor={id} className={['', 'checkbox-label'].join(' ')}>
+        <label htmlFor={id} className={['checkbox-label'].join(' ')}>
           <span
             className={[
               'checkbox',

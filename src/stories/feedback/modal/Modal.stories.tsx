@@ -528,3 +528,52 @@ return (
     },
   },
 };
+
+export const ModalFooterCustom: Story = {
+  render: (args) => <BaseModalExampleType1 {...args} />,
+  args: {
+    id: 'modal',
+    children: 'Modal',
+    title: 'Title',
+    size: 's',
+    footerCustom:
+      'footer custom이 가능하나 디자인 정책에 맞춰서 제작하길 권장합니다.',
+    isCloseButton: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'primary button 등 최대 3가지 button이 제공됩니다.',
+      },
+      source: {
+        code: `
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const onOpenModal = () => {
+  setIsOpen(true);
+};
+const onCloseModal = () => {
+  setIsOpen(false);
+};
+return (
+  <div className="modal-example">
+    <Button size="l" type="primary" onClick={onOpenModal}>
+      open modal
+    </Button>
+    <Modal 
+      isCloseButton={true}
+      onClose={() => {}}
+      size="s"
+      title="Title"
+      open={isOpen} 
+      onClose={onCloseModal}
+      footerCustom={"footer custom이 가능하나 디자인 정책에 맞춰서 제작하길 권장합니다."}
+    >
+      Modal
+    </Modal>
+  </div>
+)
+        `,
+      },
+    },
+  },
+};

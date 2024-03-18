@@ -23,6 +23,7 @@ interface TableProps {
   isRowCheck?: boolean;
   onClick?: (rowdata: any, rowid: any) => void;
   onCheck?: (rowdata: any, rowid: any) => void;
+  className?: string;
 }
 
 const Table = ({
@@ -38,6 +39,7 @@ const Table = ({
   isRowCheck = false,
   onClick,
   onCheck,
+  className,
 }: TableProps) => {
   const [cellKey, setCellKey] = useState<string[]>([]);
   const [cellAlign, setCellAlign] = useState<string[]>([]);
@@ -175,6 +177,7 @@ const Table = ({
         className={[
           `mds-table-${size ? size : 'l'}-${align ? align : 'left'}`,
           verticalHeadingMode && 'vertical-heading-mode',
+          className ? className : '',
         ].join(' ')}
         style={{ minWidth: tableMinWidth && `${tableMinWidth}px` }}
       >

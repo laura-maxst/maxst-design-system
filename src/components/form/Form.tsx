@@ -7,11 +7,8 @@ interface formProps {
 }
 const Form = ({ id, className, children }: formProps) => {
   return (
-    <div className="mds-form">
-      <form
-        id={id && id}
-        className={['form-box', className && className].join(' ')}
-      >
+    <div className={['mds-form', className && className].join(' ')}>
+      <form id={id && id} className={['form-box'].join(' ')}>
         <fieldset>{children}</fieldset>
       </form>
     </div>

@@ -34,6 +34,7 @@
     max-width: #{$width-size};
   }
 }
+
 // shadow
 @mixin shadow-level1 {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
@@ -47,6 +48,7 @@
   box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.12),
     0px 0px 6px 0px rgba(0, 0, 0, 0.16);
 }
+
 //scroll
 @mixin scrollY($backgroundColor) {
   overflow-y: auto;
@@ -141,6 +143,39 @@
   }
 }
 
+// interaction
+@mixin rippleAnimation {
+  @keyframes ripple-animation {
+    50% {
+      transform: scale(0.5);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
 // 반응형
 @mixin media-desktop-l {
   @media only screen and (min-width: #{$--breakpoint-desktop-l}px) {

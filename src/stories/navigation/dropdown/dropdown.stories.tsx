@@ -268,7 +268,7 @@ export const DropdownWithInput: Story = {
   args: {
     children: (
       <TextField
-        helperText="helper text"
+        // helperText="helper text"
         required={true}
         placeholder="placeholder"
         label="label"
@@ -371,7 +371,7 @@ export const DropdownMultiSelectText: Story = {
     menuData: menuData2,
     onChange: onChangeMenu,
     onClick: onClickMenu,
-    id: 'dropdown-textfield',
+    id: 'dropdown-textfield-2',
     isFullWidthMenu: true,
     className: 'dropdown-example',
     multiple: true,

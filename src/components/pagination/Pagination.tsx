@@ -30,6 +30,7 @@ interface PaginationProps {
     label: string;
   }[];
   onClick?: (selectIndex: number) => void;
+  className?: string;
 }
 
 const pageSizeData = [
@@ -66,6 +67,7 @@ const Pagination = ({
   onshowPageSizeChange,
   showPageOptionCustom,
   onClick,
+  className,
 }: PaginationProps) => {
   const [thisPage, setThisPage] = useState<number>(1);
   const [selectShowPageSizeData, setSelectShowPageSizeData] = useState<{
@@ -299,6 +301,7 @@ const Pagination = ({
         simpleMode ? 'pagination__simple-mode' : '',
         disabled ? 'disabled' : ' ',
         align ? align : 'center',
+        className ? className : '',
       ].join(' ')}
     >
       <ul>

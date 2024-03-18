@@ -14,6 +14,7 @@ interface AccordionProps {
   defaultSelectItem?: string;
   expandControl?: boolean;
   showExpandIcon?: boolean;
+  className?: string;
 }
 
 const Accordion = ({
@@ -23,6 +24,7 @@ const Accordion = ({
   defaultSelectItem,
   expandControl = true,
   showExpandIcon = true,
+  className,
 }: AccordionProps) => {
   const [isOpenBody, setIsOpenBody] = useState<boolean>(false);
   const [openBody, setOpenBody] = useState<string | null>(null);
@@ -83,7 +85,7 @@ const Accordion = ({
 
   return (
     <div
-      className="mds-accordion-wrap"
+      className={['mds-accordion-wrap', className ? className : ''].join(' ')}
       style={{ width: width ? width : '100%' }}
     >
       {items.map((itemData) => {

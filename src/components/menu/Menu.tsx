@@ -73,26 +73,40 @@ const Menu = ({
     }
   };
 
+  const menuInteraction = (isOpen: boolean, menuEl: any) => {
+    menuEl.style.height = isOpen ? `${menuEl.scrollHeight}px` : '0';
+
+    setTimeout(() => {
+      menuEl.style.height = isOpen ? '0' : `${menuEl.scrollHeight}px`;
+    }, 50);
+
+    setTimeout(() => {
+      menuEl.style.height = null;
+    }, 300);
+  };
+
   const openMenuFilter = (menuId: string) => {
     if (menuRef.current) {
       const child = menuRef.current.children;
       const thisMenuEl = menuRef.current.querySelector('#' + menuId);
-      const thisMenuElSubList = thisMenuEl?.nextElementSibling;
+      const thisMenuElSubList: any = thisMenuEl?.nextElementSibling;
 
       for (let i = 0; i < child.length; i++) {
         // sub menu 있는 depth click 시
         if (thisMenuElSubList != null || thisMenuElSubList != undefined) {
           if (thisMenuElSubList.className.includes('close')) {
+            menuInteraction(false, thisMenuElSubList);
+
             if (thisMenuElSubList.id.includes('depth-02-wrap')) {
               setOpenedMenus([thisMenuElSubList.id]);
             } else if (thisMenuElSubList.id.includes('depth-03-wrap')) {
               setOpenedMenus([...openedMenus, thisMenuElSubList.id]);
             }
           } else if (thisMenuElSubList.className.includes('open')) {
+            menuInteraction(true, thisMenuElSubList);
+
             if (thisMenuElSubList.id.includes('depth-02-wrap')) {
               setOpenedMenus([]);
-            } else if (thisMenuElSubList.id.includes('depth-03-wrap')) {
-              //
             }
             const filterOpenMenu = openedMenus.filter(
               (x: any) => x !== thisMenuElSubList.id,
@@ -128,6 +142,7 @@ const Menu = ({
 
   const onClickMenu = (id: string, label: string) => {
     openMenuFilter(id);
+
     if (!multiple) {
       setSelectMenuId(id);
     } else {
@@ -196,7 +211,7 @@ const Menu = ({
         }
       } else {
         setSelectMenuId(String(selectMenu));
-        openMenuFilter(String(selectMenu));
+        // openMenuFilter(String(selectMenu));
         onSelectMenuOpenClose(String(selectMenu));
       }
     }

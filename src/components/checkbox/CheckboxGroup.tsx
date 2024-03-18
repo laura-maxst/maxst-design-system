@@ -18,6 +18,7 @@ interface CheckboxGroupProps {
   onChange?: (e: any) => void;
   onClick?: (e: any) => void;
   options: CheckboxPropsType[];
+  className?: string;
 }
 
 const CheckboxGroup = ({
@@ -35,6 +36,7 @@ const CheckboxGroup = ({
   onClick,
   onChange,
   options,
+  className,
 }: CheckboxGroupProps) => {
   const optionList = options.map((item) => {
     return item.id;
@@ -134,6 +136,7 @@ const CheckboxGroup = ({
           `checkbox__group`,
           align && align,
           direction ? direction : 'horizontal',
+          className ? className : '',
         ].join(' ')}
       >
         <div className="checkbox-box">

@@ -20,6 +20,7 @@ interface SnackbarProps {
     | 'bottom-left';
   open: boolean;
   onClose: () => void;
+  className?: string;
 }
 
 const Snackbar = ({
@@ -30,6 +31,7 @@ const Snackbar = ({
   align,
   open,
   onClose,
+  className,
 }: SnackbarProps) => {
   const resolveOnClose = () => {
     if (!onClose) {
@@ -65,6 +67,7 @@ const Snackbar = ({
         'snackbar-box',
         `snackbar-${align ? align : 'bottom-left'}`,
         open ? 'open' : 'close',
+        className ? className : '',
       ].join(' ')}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}

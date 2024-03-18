@@ -14,6 +14,7 @@ interface InputGroupProps {
   helperText?: string;
   disabled?: boolean;
   children: React.ReactNode | any;
+  className?: string;
 }
 
 const InputGroup = ({
@@ -25,6 +26,7 @@ const InputGroup = ({
   helperText,
   disabled,
   children,
+  className,
 }: InputGroupProps) => {
   const [thisState, setThisState] = useState<
     'default' | 'pressed' | 'disabled' | 'error' | 'success'
@@ -41,6 +43,7 @@ const InputGroup = ({
           'mds-input-root',
           `input__group`,
           fullWidth && 'fullWidth',
+          className ? className : '',
         ].join(' ')}
       >
         {label && (

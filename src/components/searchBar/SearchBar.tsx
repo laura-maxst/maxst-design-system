@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { TextField } from '@components/textField';
 import { SearchLineIcon } from '@maxst-designsystem/icons';
 
@@ -15,20 +15,24 @@ interface InputGroupProps {
   value?: string | number;
 }
 
-const SearchBar = ({
-  id,
-  size,
-  placeholder,
-  disabled,
-  helperText,
-  resetButton,
-  onChange,
-  value,
-  className,
-}: InputGroupProps) => {
+const SearchBar = forwardRef(function SearchBar(
+  {
+    id,
+    size,
+    placeholder,
+    disabled,
+    helperText,
+    resetButton,
+    onChange,
+    value,
+    className,
+  }: InputGroupProps,
+  ref: any,
+) {
   return (
     <div className={[`search-wrap`, className && className].join(' ')}>
       <TextField
+        ref={ref}
         id={id}
         size={size}
         placeholder={placeholder}
@@ -41,6 +45,6 @@ const SearchBar = ({
       />
     </div>
   );
-};
+});
 
 export { SearchBar };

@@ -84,7 +84,6 @@ const menuData = [
         label: 'menu 1-1',
         iconLeft: <DesktopFillIcon />,
         iconRight: <LocationFillIcon />,
-        disabled: true,
         subItemData: [
           {
             id: 'menu-1-1-1',
@@ -121,12 +120,12 @@ const menuData = [
         iconLeft: <MobileFillIcon />,
         iconRight: <LocationFillIcon />,
       },
-      {
-        id: 'menu-2-2',
-        label: 'menu 2-2',
-        iconLeft: <MobileFillIcon />,
-        iconRight: <LocationFillIcon />,
-      },
+      // {
+      //   id: 'menu-2-2',
+      //   label: 'menu 2-2',
+      //   iconLeft: <MobileFillIcon />,
+      //   iconRight: <LocationFillIcon />,
+      // },
     ],
   },
   {

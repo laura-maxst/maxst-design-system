@@ -40,15 +40,25 @@
   }
 
   .dropdown-box__menu-wrap {
-    @include shadow-level2;
+    overflow: hidden;
     position: absolute;
     width: 100%;
     top: 100%;
     min-width: min-content;
-    z-index: 9999;
-    max-height: 216px;
-    @include scrollY(semantic-color('background', 'overlay'));
+    // z-index: 9999;
+    // max-height: 216px;
+    // @include scrollY(semantic-color('background', 'overlay'));
     background-color: semantic-color('background', 'overlay');
+    transition: all ease 0.5s;
+    @include shadow-level2;
+
+    &.off {
+      height: 0;
+    }
+
+    &.has-helperText {
+      top: calc(100% - 22px);
+    }
 
     .dropdown-box__menu {
       display: flex;

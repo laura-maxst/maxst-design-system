@@ -15,6 +15,10 @@ const meta: Meta<typeof SearchBar> = {
     },
   },
   argTypes: {
+    ref: {
+      description:
+        '`useRef()`를 사용하여 Searchbar 내부 Textfield에 ref를 전달할 수 있습니다.',
+    },
     id: {
       control: {
         type: null,

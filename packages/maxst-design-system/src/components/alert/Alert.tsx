@@ -21,6 +21,7 @@ interface AlertProps {
   };
   open: boolean;
   onClose: () => void;
+  className?: string;
 }
 
 const Alert = ({
@@ -31,6 +32,7 @@ const Alert = ({
   actionButtonData,
   open,
   onClose,
+  className,
 }: AlertProps) => {
   const resolveOnClose = () => {
     if (!onClose) {
@@ -78,6 +80,7 @@ const Alert = ({
         'alert-box',
         open ? 'open' : 'close',
         `alert-${title ? 'description-' : ''}${type && type}`,
+        className ? className : '',
       ].join(' ')}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}

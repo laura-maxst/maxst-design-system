@@ -17,6 +17,7 @@ interface TooltipProps {
     | 'left';
   arrow?: boolean;
   mode?: 'dark-mode' | 'light-mode';
+  className?: string;
 }
 
 const Tooltip = ({
@@ -27,6 +28,7 @@ const Tooltip = ({
   align,
   arrow,
   mode,
+  className,
 }: TooltipProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -40,7 +42,11 @@ const Tooltip = ({
 
   return (
     <div
-      className={['tooltip-wrap', align && `tooltip-${align}`].join(' ')}
+      className={[
+        'tooltip-wrap',
+        align && `tooltip-${align}`,
+        className ? className : '',
+      ].join(' ')}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
     >

@@ -18,6 +18,7 @@
           &:hover,
           &:focus,
           &:active {
+            color: semantic-color('text', 'default-reverse');
             background-color: semantic-color('background', 'secondary-accent');
           }
 

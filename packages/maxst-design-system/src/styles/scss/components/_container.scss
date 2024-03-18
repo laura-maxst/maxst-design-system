@@ -19,6 +19,10 @@
     max-width: none;
   }
 
+  @include media-desktop-m {
+    @include max-width('1200px');
+  }
+
   @include media-tablet-m {
     max-width: none;
     padding-left: 48px;

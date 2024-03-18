@@ -116,6 +116,16 @@ $font-weights: (
   @include font-common;
   line-height: 1.5;
   font-weight: font-weight('medium');
+
+  &.default {
+    color: semantic-color('text', 'default');
+  }
+  &.sub {
+    color: semantic-color('text', 'sub');
+  }
+  &.subtlest {
+    color: semantic-color('text', 'subtlest');
+  }
 }
 
 @each $type, $scales in $font-scales {

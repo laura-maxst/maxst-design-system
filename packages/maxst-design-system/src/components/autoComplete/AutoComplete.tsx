@@ -34,9 +34,9 @@ function AutoComplete({
   const [autoCompleteMenuDatas, setAutoCompleteMenuData] = useState<
     AutoCompleteMenuType[]
   >([]);
-  const [selectMenuData, setSelectMenuData] = useState<
-    MenuItemProps | MenuItemProps[]
-  >(menuData);
+  // const [selectMenuData, setSelectMenuData] = useState<
+  //   MenuItemProps | MenuItemProps[]
+  // >(menuData);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [selectValue, setSelectValue] = useState<string>('');
 
@@ -70,6 +70,12 @@ function AutoComplete({
       !autoCompleteRef.current.contains(e.target)
     ) {
       setMenuOpen(false);
+      const thisAutoCompleteMenuWrap = document.getElementById(
+        `${id}-menu-wrap`,
+      );
+      if (thisAutoCompleteMenuWrap) {
+        thisAutoCompleteMenuWrap.style.height = `0px`;
+      }
     }
   };
 
@@ -81,28 +87,41 @@ function AutoComplete({
   };
 
   useEffect(() => {
-    if (menuOpen) {
-      const thisAutoCompleteMenuWrap = document.getElementById(
-        `${id}-menu-wrap`,
-      );
-      const thisBaseWrap = document.getElementById(`${id}__base`);
-      if (thisBaseWrap && thisAutoCompleteMenuWrap) {
-        if (thisBaseWrap.getElementsByClassName('has-helperText')[0]) {
-          thisAutoCompleteMenuWrap.style.top = 'calc(100% - 22px)';
-        }
-        document.addEventListener('mousedown', handleOutside);
-      }
-      return () => {
-        document.removeEventListener('mousedown', handleOutside);
-      };
-    }
-  }, [menuOpen]);
-
-  useEffect(() => {
     if (menuData) {
       setAutoCompleteMenuData(menuData);
     }
   }, [menuData]);
+
+  useEffect(() => {
+    const thisBaseWrap = document.getElementById(`${id}__base`);
+    const thisAutoCompleteMenuWrap = document.getElementById(`${id}-menu-wrap`);
+
+    if (menuOpen) {
+      if (thisBaseWrap && thisAutoCompleteMenuWrap) {
+        if (thisBaseWrap.getElementsByClassName('has-helperText')[0]) {
+          thisAutoCompleteMenuWrap.style.top = 'calc(100% - 22px)';
+          thisAutoCompleteMenuWrap.style.height = `${thisAutoCompleteMenuWrap.clientHeight}px`;
+        }
+        document.addEventListener('mousedown', handleOutside);
+      }
+
+      if (autoCompleteMenuDatas) {
+        const thisAutoCompleteMenuWrap = document.getElementById(
+          `${id}-menu-wrap`,
+        );
+        const thisAutoCompleteMenu = document.getElementById(
+          `${id}-menu-menu-wrap`,
+        );
+        if (thisAutoCompleteMenuWrap && thisAutoCompleteMenu) {
+          thisAutoCompleteMenuWrap.style.height = `${thisAutoCompleteMenu.clientHeight}px`;
+        }
+      }
+
+      return () => {
+        document.removeEventListener('mousedown', handleOutside);
+      };
+    }
+  }, [autoCompleteMenuDatas, id, menuOpen]);
 
   return (
     <div
@@ -122,19 +141,19 @@ function AutoComplete({
           });
         })}
       </div>
-      {menuOpen && (
-        <div
-          className={['autocomplete__menu-wrap'].join(' ')}
-          id={id + '-menu-wrap'}
-        >
-          <Menu
-            id={id + '-menu'}
-            itemData={autoCompleteMenuDatas}
-            size={size}
-            onClick={onMenuClick}
-          />
-        </div>
-      )}
+      <div
+        className={['autocomplete__menu-wrap', menuOpen ? 'on' : 'off'].join(
+          ' ',
+        )}
+        id={id + '-menu-wrap'}
+      >
+        <Menu
+          id={id + '-menu'}
+          itemData={autoCompleteMenuDatas}
+          size={size}
+          onClick={onMenuClick}
+        />
+      </div>
     </div>
   );
 }

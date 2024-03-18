@@ -4,9 +4,10 @@ interface DividerProps {
   type?: 'default' | 'accent';
   direction?: 'vertical' | 'horizontal';
   children?: string | React.ReactNode;
+  className?: string;
 }
 
-const Divider = ({ type, direction, children }: DividerProps) => {
+const Divider = ({ type, direction, children, className }: DividerProps) => {
   return (
     <>
       {children ? (
@@ -16,6 +17,7 @@ const Divider = ({ type, direction, children }: DividerProps) => {
             `divider-${type ? type : 'default'}`,
             `divider-${direction ? direction : 'horizontal'}`,
             `${children && 'with-children'}`,
+            className ? className : '',
           ].join(' ')}
         >
           {children && <div className="divider__children-box">{children}</div>}
@@ -26,6 +28,7 @@ const Divider = ({ type, direction, children }: DividerProps) => {
             'mds-divider',
             `divider-${type ? type : 'default'}`,
             `divider-${direction ? direction : 'horizontal'}`,
+            className ? className : '',
           ].join(' ')}
         />
       )}

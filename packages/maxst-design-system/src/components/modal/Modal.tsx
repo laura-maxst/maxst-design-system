@@ -9,9 +9,9 @@ interface ModalProps {
   title?: string;
   titleImage?: JSX.Element | React.ReactNode;
   titleIcon?: JSX.Element | React.ReactNode;
-  children?: string | React.ReactNode;
+  children?: JSX.Element | React.ReactNode;
   size?: 's' | 'm' | 'l' | 'xl';
-  mainButton: {
+  mainButton?: {
     type: 'primary' | 'secondary' | 'error';
     text: string;
     onClick: () => void;
@@ -27,6 +27,8 @@ interface ModalProps {
   isCloseButton?: boolean;
   open: boolean;
   onClose: () => void;
+  footerCustom?: JSX.Element | React.ReactNode;
+  className?: string;
 }
 
 const Modal = ({
@@ -42,8 +44,10 @@ const Modal = ({
   isCloseButton,
   open,
   onClose,
+  footerCustom,
+  className,
 }: ModalProps) => {
-  const [isFooter, setIsFooter] = useState<boolean>(false);
+  const [isDefaultFooter, setIsDefaultFooter] = useState<boolean>(false);
 
   const onClickClose = () => {
     const bodyEl = document.body;
@@ -53,7 +57,9 @@ const Modal = ({
 
   useEffect(() => {
     if (mainButton || subButton || subtlestButton) {
-      setIsFooter(true);
+      setIsDefaultFooter(true);
+    } else {
+      setIsDefaultFooter(false);
     }
   }, [mainButton, subButton, subtlestButton]);
 
@@ -68,7 +74,13 @@ const Modal = ({
   }, [open]);
 
   return (
-    <div className={['modal-wrap', open ? 'open' : 'close'].join(' ')}>
+    <div
+      className={[
+        'modal-wrap',
+        open ? 'open' : 'close',
+        className ? className : '',
+      ].join(' ')}
+    >
       <div className="dim" onClick={onClickClose}></div>
       <div
         id={id}
@@ -99,7 +111,7 @@ const Modal = ({
             )}
           </div>
         )}
-        {isFooter && (
+        {isDefaultFooter ? (
           <div className="modal-footer">
             <ButtonGroup fullWidth={true}>
               {subtlestButton && (
@@ -123,6 +135,8 @@ const Modal = ({
               )}
             </ButtonGroup>
           </div>
+        ) : (
+          footerCustom && <div className="modal-footer">{footerCustom}</div>
         )}
       </div>
     </div>

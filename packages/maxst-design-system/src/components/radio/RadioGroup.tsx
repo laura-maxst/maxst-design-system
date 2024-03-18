@@ -16,6 +16,7 @@ interface RadioGroupProps {
   onChange?: (e: any) => void;
   onClick?: (e: any) => void;
   options: RadioPropsType[];
+  className?: string;
 }
 
 const RadioGroup = ({
@@ -31,6 +32,7 @@ const RadioGroup = ({
   onClick,
   onChange,
   options,
+  className,
 }: RadioGroupProps) => {
   const optionList = options.map((item) => {
     return item.id;
@@ -53,12 +55,6 @@ const RadioGroup = ({
     if (disabled || state === 'disabled') {
       return;
     }
-    // const checkItems = checkItemList;
-    // if (checkItems.includes(e.id)) {
-    //   checkItems.splice(checkItems.indexOf(e.id), 1);
-    // } else {
-    //   checkItems.push();
-    // }
     setCheckItemList(e.id);
     if (!onClick) {
       return;
@@ -72,56 +68,54 @@ const RadioGroup = ({
   }, [options]);
 
   return (
-    <>
-      <div
-        className={[
-          `radio__group`,
-          align && align,
-          direction ? direction : 'horizontal',
-        ].join(' ')}
-      >
-        {label && (
-          <TextLabel size="m" className="radio__group__label">
-            {label}
-          </TextLabel>
-        )}
-        <div className="radio-box">
-          {options &&
-            checkItemList &&
-            options.map((radioItem) => (
-              <Radio
-                id={radioItem.id}
-                name={name}
-                label={radioItem.label}
-                state={state}
-                size={size}
-                checked={checkItemList.includes(radioItem.id)}
-                onChange={resolveOnChange}
-                onClick={onCheckedOne}
-                key={radioItem.id}
-                disabled={disabled}
-              />
-            ))}
-        </div>
-        {helperText && (
-          <Text
-            type="body"
-            size="s"
-            className={['helper-text', (disabled && 'disabled') || state].join(
-              ' ',
-            )}
-          >
-            {state === 'error' && (
-              <span className="icon-error">
-                <ErrorCircleLineBoldIcon />
-              </span>
-            )}
-            <span className="text">{helperText}</span>
-            {/* {helperText} */}
-          </Text>
-        )}
+    <div
+      className={[
+        `radio__group`,
+        align && align,
+        direction ? direction : 'horizontal',
+        className ? className : '',
+      ].join(' ')}
+    >
+      {label && (
+        <TextLabel size="m" className="radio__group__label">
+          {label}
+        </TextLabel>
+      )}
+      <div className="radio-box">
+        {options &&
+          checkItemList &&
+          options.map((radioItem) => (
+            <Radio
+              id={radioItem.id}
+              name={name}
+              label={radioItem.label}
+              state={state}
+              size={size}
+              checked={checkItemList.includes(radioItem.id)}
+              onChange={resolveOnChange}
+              onClick={onCheckedOne}
+              key={radioItem.id}
+              disabled={disabled}
+            />
+          ))}
       </div>
-    </>
+      {helperText && (
+        <Text
+          type="body"
+          size="s"
+          className={['helper-text', (disabled && 'disabled') || state].join(
+            ' ',
+          )}
+        >
+          {state === 'error' && (
+            <span className="icon-error">
+              <ErrorCircleLineBoldIcon />
+            </span>
+          )}
+          <span className="text">{helperText}</span>
+        </Text>
+      )}
+    </div>
   );
 };
 

@@ -7,14 +7,15 @@
 }
 // button 공통 속성
 @mixin button-common {
+  position: relative;
+  overflow: hidden;
+  max-width: 330px !important;
   border-radius: 0;
   border: 0 none;
   vertical-align: middle;
   font-family: 'Pretendard', sans-serif;
   font-size: 100%;
-  // border-radius: 4px;
   white-space: nowrap;
-  max-width: 330px !important;
   background: transparent;
   cursor: pointer;
 
@@ -22,11 +23,16 @@
     outline: none;
   }
 
-  span {
+  span:not(.ripple) {
     width: 100%;
     display: block;
     color: inherit;
     @include ellipsis(1);
+  }
+  span:not(.ripple),
+  svg {
+    position: relative;
+    z-index: 9;
   }
 }
 // button background color 설정
@@ -156,6 +162,32 @@ $buttonType: 'primary', 'secondary', 'tertiary', 'error', 'error-tertiary',
 $buttonSize: 'xl', 'l', 'm', 's', 'xs';
 $buttonState: 'default', 'pressed', 'disabled', 'error';
 
+@mixin rippleEffect($type) {
+  .ripple {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    transform: scale(0);
+    opacity: 0.4;
+    animation: ripple-button 0.7s linear;
+    @if ($type == 'primary' or $type == 'secondary' or $type == 'error') {
+      background-color: semantic-color('text', 'default-reverse');
+    } @else if($type == 'error-tertiary') {
+      background-color: semantic-color('text', 'error');
+    } @else {
+      background-color: semantic-color('text', 'default');
+    }
+  }
+
+  @keyframes ripple-button {
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+}
+
 @mixin buttonCase($type, $size, $state) {
   .mds-button-root.button__#{$type}-#{$size}--#{$state},
   .button__#{$type}-#{$size}--#{$state} {
@@ -175,6 +207,7 @@ $buttonState: 'default', 'pressed', 'disabled', 'error';
       @include setBackgroundColor($type, $state);
       @include setColorStyle($type, $state);
       @extend %size-#{$size};
+      @include rippleEffect($type);
     }
     @if ($state == 'disabled') {
       cursor: default;
@@ -246,6 +279,7 @@ $iconButtonState: 'default', 'pressed', 'disabled', 'error';
 @mixin iconButtonCase($type, $size, $state) {
   .button__icon-#{$type}-#{$size}--#{$state} {
     @include button-common;
+    @include rippleEffect($type);
     @include setColorStyle($type, $state);
 
     display: flex;

@@ -11,6 +11,7 @@ interface BadgeProps {
   number?: number | string;
   icon?: React.ReactNode;
   onClick?: () => void;
+  className?: string;
 }
 
 const Badge = ({
@@ -23,6 +24,7 @@ const Badge = ({
   number,
   icon,
   onClick,
+  className,
 }: BadgeProps) => {
   const resolveOnClick = () => {
     if (type !== 'icon') {
@@ -32,7 +34,7 @@ const Badge = ({
   };
 
   return (
-    <div className={['mds-badge-wrap'].join(' ')}>
+    <div className={['mds-badge-wrap', className ? className : ''].join(' ')}>
       <div
         className={[
           'mds-badge',

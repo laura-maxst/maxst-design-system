@@ -3,7 +3,19 @@
   // width: fit-content;
 
   .autocomplete__menu-wrap {
+    overflow: hidden;
     position: absolute;
     width: 100%;
+    height: 0;
+    transition: all ease 0.5s;
+    @include shadow-level2;
+
+    &.off {
+      height: 0;
+    }
+
+    .menu-wrap:not(.depth-02-wrap, .depth-03-wrap) {
+      box-shadow: none;
+    }
   }
 }

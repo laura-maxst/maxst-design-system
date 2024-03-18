@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState, forwardRef } from 'react';
 import { TextLabel, Text } from '@components/text';
 import {
   CloseCircleFillIcon,
@@ -39,36 +39,39 @@ interface textFieldProps {
   readOnly?: boolean;
   minHeight?: number;
   maxHeight?: number;
+  className?: string;
 }
-// const selectMenuComponent: () =>
 
-function TextField({
-  id,
-  type = 'text',
-  value,
-  label,
-  placeholder,
-  required,
-  password,
-  state,
-  size,
-  disabled,
-  helperText,
-  resetButton,
-  minLength,
-  maxLength,
-  multiLine,
-  iconLeft,
-  iconRight,
-  onChange,
-  onClick,
-  renderValue,
-  readOnly = false,
-  minHeight,
-  maxHeight,
-  ...props
-}: textFieldProps) {
-  const textareaRef: any = useRef(null);
+const TextField = forwardRef(function TextField(
+  {
+    id,
+    type = 'text',
+    value,
+    label,
+    placeholder,
+    required,
+    password,
+    state,
+    size,
+    disabled,
+    helperText,
+    resetButton,
+    minLength,
+    maxLength,
+    multiLine,
+    iconLeft,
+    iconRight,
+    onChange,
+    onClick,
+    renderValue,
+    readOnly = false,
+    minHeight,
+    maxHeight,
+    className,
+    ...props
+  }: textFieldProps,
+  ref: any,
+) {
   const [resoleValue, setResolveValue] = useState<string | number>('');
   const [thisState, setThisState] = useState<string>('default');
   const [showResetButton, setShowResetButton] = useState<boolean>(false);
@@ -99,17 +102,16 @@ function TextField({
 
   const resolveOnChange = (e: any) => {
     setResolveValue(e.target.value);
+    onMinLengthCheck(e.target.value.length);
 
     if (multiLine) {
       onMaxLengthCheck(e.target.value.length);
 
-      if (textareaRef) {
-        const textarea = textareaRef.current;
+      if (size === 'auto') {
+        const textarea = e.target;
         textarea.style.height = 'auto';
         textarea.style.height = textarea.scrollHeight + 'px';
       }
-    } else {
-      onMinLengthCheck(e.target.value.length);
     }
 
     if (!onChange) {
@@ -217,6 +219,7 @@ function TextField({
         }`,
         helperText ? 'has-helperText' : '',
         isRenderValueMode ? 'render-value-mode' : '',
+        className ? className : '',
       ].join(' ')}
     >
       {label && (
@@ -247,7 +250,7 @@ function TextField({
           ))}
         {multiLine ? (
           <textarea
-            ref={textareaRef}
+            ref={ref}
             rows={1}
             readOnly={readOnly}
             id={id}
@@ -264,6 +267,7 @@ function TextField({
           />
         ) : (
           <input
+            ref={ref}
             readOnly={readOnly}
             id={id}
             placeholder={placeholder}
@@ -319,5 +323,6 @@ function TextField({
       )}
     </div>
   );
-}
+});
+
 export { TextField };

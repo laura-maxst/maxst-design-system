@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Text } from '@components/text';
 import { ErrorCircleLineBoldIcon } from '@maxst-designsystem/icons';
 
@@ -13,6 +13,7 @@ interface RadioPropsType {
   checked?: boolean;
   onChange?: (e: any) => void;
   onClick?: (e: any) => void;
+  className?: string;
 }
 
 function Radio({
@@ -26,7 +27,9 @@ function Radio({
   checked,
   onChange,
   onClick,
+  className,
 }: RadioPropsType) {
+  const radioRef: any = useRef(null);
   const [thisState, setThisState] = useState<string>('default');
   // checked 여부
   const [thisIsChecked, setThisIsChecked] = useState<boolean>(
@@ -51,6 +54,12 @@ function Radio({
       setThisIsChecked(false);
     }
 
+    radioRef.current.children[0].classList.add('on');
+
+    setTimeout(() => {
+      radioRef.current.children[0].classList.remove('on');
+    }, 700);
+
     if (!onClick) {
       return;
     }
@@ -72,7 +81,10 @@ function Radio({
   }, [checked]);
 
   return (
-    <div className={['radio-wrap'].join(' ')}>
+    <div
+      className={['radio-wrap', className ? className : ''].join(' ')}
+      ref={radioRef}
+    >
       {label ? (
         <label htmlFor={id} className={['', 'radio-label'].join(' ')}>
           <span
@@ -82,6 +94,7 @@ function Radio({
               `${thisIsChecked ? 'checked' : ''}`,
             ].join(' ')}
           >
+            {thisIsChecked && <span className="dot"> </span>}
             <input
               type="radio"
               id={id}

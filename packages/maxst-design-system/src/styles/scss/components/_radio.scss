@@ -151,6 +151,21 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
       word-break: break-all;
     }
   }
+
+  .on {
+    .radio::before {
+      transform: scale(0);
+      animation: ripple-animation 0.6s linear;
+      background-color: rgba(255, 255, 255, 0.8);
+      background-color: #657786;
+      pointer-events: none;
+      width: calc(100% + 16px);
+      height: calc(100% + 16px);
+      opacity: 0.5;
+      border-radius: 50%;
+    }
+    @include rippleAnimation;
+  }
 }
 
 @mixin radioCase($size, $state) {
@@ -171,14 +186,38 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
       box-sizing: border-box;
       z-index: 11;
       @include radioColorSet('border', 'default');
+
+      // interaction
+      transition-property: background;
+      transition-duration: 0.7s, 0.7s;
+    }
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: var(--palette-white);
+      z-index: 15;
     }
 
     @if ($size == 'l') {
       width: 24px;
       height: 24px;
+
+      .dot {
+        width: 12px;
+        height: 12px;
+      }
     } @else if($size == 's') {
       width: 18px;
       height: 18px;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+      }
     }
 
     &:hover,
@@ -211,24 +250,16 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
 
     &.checked {
       &::after {
-        @include radioColorSet('border', 'primary');
+        @include radioColorSet('background', 'primary');
+        border: 0 none;
       }
 
       &:hover,
       &:active,
       &:focus {
         &::after {
-          @include radioColorSet('border', 'primary-accent');
-        }
-      }
-
-      @if ($size == 'l') {
-        &::after {
-          border-width: 7px;
-        }
-      } @else if($size == 's') {
-        &::after {
-          border-width: 6px;
+          @include radioColorSet('background', 'primary-accent');
+          border: 0 none;
         }
       }
 
@@ -240,14 +271,16 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
         @include stateDisabled;
       } @else if($state == 'error') {
         &::after {
-          @include radioColorSet('border', 'error');
+          @include radioColorSet('background', 'error');
+          border: 0 none;
         }
 
         &:hover,
         &:active,
         &:focus {
           &::after {
-            @include radioColorSet('border', 'error-accent');
+            @include radioColorSet('background', 'error-accent');
+            border: 0 none;
           }
         }
       }

@@ -104,30 +104,31 @@ const Button = ({
   };
 
   const resolveOnClick = (e: any) => {
-    const thisButton: any = buttonRef.current;
+    if (type !== 'text' && type !== 'link') {
+      const thisButton: any = buttonRef.current;
+      const thisButtonStyle = thisButton.getBoundingClientRect();
+      const posX = thisButtonStyle.left;
+      const posY = thisButtonStyle.top;
+      const thisButtonWidth = thisButtonStyle.width;
+      const thisButtonHeight = thisButtonStyle.height;
 
-    const thisButtonStyle = thisButton.getBoundingClientRect();
-    const posX = thisButtonStyle.left;
-    const posY = thisButtonStyle.top;
-    const thisButtonWidth = thisButtonStyle.width;
-    const thisButtonHeight = thisButtonStyle.height;
+      const ripple = document.createElement('span');
+      thisButton.appendChild(ripple);
 
-    const ripple = document.createElement('span');
-    thisButton.appendChild(ripple);
+      const x = e.clientX - posX - thisButtonWidth / 2;
+      const y = e.clientY - posY - thisButtonHeight / 2;
 
-    const x = e.clientX - posX - thisButtonWidth / 2;
-    const y = e.clientY - posY - thisButtonHeight / 2;
+      ripple.style.width = `${thisButtonWidth}px`;
+      ripple.style.height = `${thisButtonHeight}px`;
+      ripple.style.top = `${y}px`;
+      ripple.style.left = `${x}px`;
 
-    ripple.style.width = `${thisButtonWidth}px`;
-    ripple.style.height = `${thisButtonHeight}px`;
-    ripple.style.top = `${y}px`;
-    ripple.style.left = `${x}px`;
+      ripple.classList.add('ripple');
 
-    ripple.classList.add('ripple');
-
-    setTimeout(() => {
-      thisButton.removeChild(ripple);
-    }, 500);
+      setTimeout(() => {
+        thisButton.removeChild(ripple);
+      }, 500);
+    }
 
     if (!onClick) {
       return;

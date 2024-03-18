@@ -144,6 +144,10 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         flex: none;
       }
 
+      .visibility-password-control {
+        cursor: pointer;
+      }
+
       & > svg:first-child {
         @if ($state == 'disabled') {
           color: semantic-color('text', 'disabled');

@@ -283,6 +283,7 @@ const TextField = forwardRef(function TextField(
             minLength={minLength && minLength}
             maxLength={maxLength && maxLength}
             onClick={onClick}
+            autoComplete={password ? 'off' : 'on'}
           />
         )}
         {!disabled && !multiLine && (
@@ -293,7 +294,10 @@ const TextField = forwardRef(function TextField(
               </button>
             )}
             {password && (
-              <span onClick={onVisibilityPassword}>
+              <span
+                className="visibility-password-control"
+                onClick={onVisibilityPassword}
+              >
                 {thisType === 'text' ? <ViewOffFillIcon /> : <ViewFillIcon />}
               </span>
             )}

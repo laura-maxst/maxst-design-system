@@ -19,6 +19,7 @@ interface TableProps {
     isRowCheck?: boolean;
     onClick?: (rowdata: any, rowid: any) => void;
     onCheck?: (rowdata: any, rowid: any) => void;
+    className?: string;
 }
-declare const Table: ({ id, size, align, columnData, rowData, tableMinWidth, verticalHeadingMode, leftHeadRow, checkMode, isRowCheck, onClick, onCheck, }: TableProps) => JSX.Element;
+declare const Table: ({ id, size, align, columnData, rowData, tableMinWidth, verticalHeadingMode, leftHeadRow, checkMode, isRowCheck, onClick, onCheck, className, }: TableProps) => JSX.Element;
 export { Table };

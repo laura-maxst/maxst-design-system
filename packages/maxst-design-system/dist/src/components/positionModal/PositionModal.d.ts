@@ -4,9 +4,9 @@ interface PositionModalProps {
     title?: string;
     titleImage?: JSX.Element | React.ReactNode;
     titleIcon?: JSX.Element | React.ReactNode;
-    children?: string | any;
+    children?: JSX.Element | React.ReactNode;
     size?: 's' | 'm' | 'l' | 'xl';
-    mainButton: {
+    mainButton?: {
         type: 'primary' | 'secondary' | 'error';
         text: string;
         onClick: () => void;
@@ -32,7 +32,9 @@ interface PositionModalProps {
         right?: string;
         bottom?: string;
     };
+    footerCustom?: JSX.Element | React.ReactNode;
+    className?: string;
 }
-declare const PositionModal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, smallButtonMode, isDim, isArrow, arrowDirection, position, }: PositionModalProps) => JSX.Element;
+declare const PositionModal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, smallButtonMode, isDim, isArrow, arrowDirection, position, footerCustom, className, }: PositionModalProps) => JSX.Element;
 export { PositionModal };
 export type { PositionModalProps };

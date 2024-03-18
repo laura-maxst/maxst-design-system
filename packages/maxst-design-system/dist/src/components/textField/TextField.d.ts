@@ -23,6 +23,7 @@ interface textFieldProps {
     readOnly?: boolean;
     minHeight?: number;
     maxHeight?: number;
+    className?: string;
 }
-declare function TextField({ id, type, value, label, placeholder, required, password, state, size, disabled, helperText, resetButton, minLength, maxLength, multiLine, iconLeft, iconRight, onChange, onClick, renderValue, readOnly, minHeight, maxHeight, ...props }: textFieldProps): JSX.Element;
+declare const TextField: React.ForwardRefExoticComponent<textFieldProps & React.RefAttributes<unknown>>;
 export { TextField };

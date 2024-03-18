@@ -10,7 +10,8 @@ interface CheckboxPropsType {
     checked?: boolean;
     onChange?: (e: any) => void;
     onClick?: (e: any) => void;
+    className?: string;
 }
-declare function Checkbox({ id, type, mode, state, size, disabled, label, helperText, checked, onChange, onClick, }: CheckboxPropsType): JSX.Element;
+declare function Checkbox({ id, type, mode, state, size, disabled, label, helperText, checked, onChange, onClick, className, }: CheckboxPropsType): JSX.Element;
 export { Checkbox };
 export type { CheckboxPropsType };

@@ -1,3 +1,4 @@
+import React from 'react';
 interface InputGroupProps {
     id: string;
     size?: 'l' | 's';
@@ -9,5 +10,5 @@ interface InputGroupProps {
     className?: string;
     value?: string | number;
 }
-declare const SearchBar: ({ id, size, placeholder, disabled, helperText, resetButton, onChange, value, className, }: InputGroupProps) => JSX.Element;
+declare const SearchBar: React.ForwardRefExoticComponent<InputGroupProps & React.RefAttributes<unknown>>;
 export { SearchBar };

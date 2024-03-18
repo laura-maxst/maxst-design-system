@@ -5,6 +5,7 @@ interface BoxGroupPropsType {
     gap?: number;
     wrap?: boolean;
     children: React.ReactNode;
+    className?: string;
 }
-declare const BoxGroup: ({ align, direction, gap, wrap, children, }: BoxGroupPropsType) => JSX.Element;
+declare const BoxGroup: ({ align, direction, gap, wrap, children, className, }: BoxGroupPropsType) => JSX.Element;
 export { BoxGroup };

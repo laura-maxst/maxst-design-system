@@ -9,6 +9,7 @@ interface BadgeProps {
     number?: number | string;
     icon?: React.ReactNode;
     onClick?: () => void;
+    className?: string;
 }
-declare const Badge: ({ type, size, align, color, status, children, number, icon, onClick, }: BadgeProps) => JSX.Element;
+declare const Badge: ({ type, size, align, color, status, children, number, icon, onClick, className, }: BadgeProps) => JSX.Element;
 export { Badge };

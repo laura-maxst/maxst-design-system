@@ -10,7 +10,8 @@ interface SnackbarProps {
     align?: 'top-left' | 'top' | 'top-right' | 'bottom-right' | 'bottom' | 'bottom-left';
     open: boolean;
     onClose: () => void;
+    className?: string;
 }
-declare const Snackbar: ({ contents, closeButton, actionButtonData, iconLeft, align, open, onClose, }: SnackbarProps) => JSX.Element;
+declare const Snackbar: ({ contents, closeButton, actionButtonData, iconLeft, align, open, onClose, className, }: SnackbarProps) => JSX.Element;
 export { Snackbar };
 export type { SnackbarProps };

@@ -8,6 +8,7 @@ interface InputGroupProps {
     helperText?: string;
     disabled?: boolean;
     children: React.ReactNode | any;
+    className?: string;
 }
-declare const InputGroup: ({ id, label, state, fullWidth, required, helperText, disabled, children, }: InputGroupProps) => JSX.Element;
+declare const InputGroup: ({ id, label, state, fullWidth, required, helperText, disabled, children, className, }: InputGroupProps) => JSX.Element;
 export { InputGroup };

@@ -7,7 +7,8 @@ interface TooltipProps {
     align?: 'top-left' | 'top' | 'top-right' | 'right' | 'bottom-right' | 'bottom' | 'bottom-left' | 'left';
     arrow?: boolean;
     mode?: 'dark-mode' | 'light-mode';
+    className?: string;
 }
-declare const Tooltip: ({ title, text, customContent, children, align, arrow, mode, }: TooltipProps) => JSX.Element;
+declare const Tooltip: ({ title, text, customContent, children, align, arrow, mode, className, }: TooltipProps) => JSX.Element;
 export { Tooltip };
 export type { TooltipProps };

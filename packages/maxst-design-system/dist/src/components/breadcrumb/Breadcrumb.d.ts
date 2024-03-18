@@ -21,6 +21,7 @@ interface BreadcrumbProps {
             disabled?: boolean;
         }[];
     }[];
+    className?: string;
 }
-declare const Breadcrumb: ({ menuData, moreButton, thisPage, homeButton, }: BreadcrumbProps) => JSX.Element;
+declare const Breadcrumb: ({ menuData, moreButton, thisPage, homeButton, className, }: BreadcrumbProps) => JSX.Element;
 export { Breadcrumb };

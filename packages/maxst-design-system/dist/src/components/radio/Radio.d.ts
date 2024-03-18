@@ -9,7 +9,8 @@ interface RadioPropsType {
     checked?: boolean;
     onChange?: (e: any) => void;
     onClick?: (e: any) => void;
+    className?: string;
 }
-declare function Radio({ id, name, state, size, disabled, label, helperText, checked, onChange, onClick, }: RadioPropsType): JSX.Element;
+declare function Radio({ id, name, state, size, disabled, label, helperText, checked, onChange, onClick, className, }: RadioPropsType): JSX.Element;
 export { Radio };
 export type { RadioPropsType };

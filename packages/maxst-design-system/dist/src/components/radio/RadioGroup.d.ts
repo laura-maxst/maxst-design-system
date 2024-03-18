@@ -12,6 +12,7 @@ interface RadioGroupProps {
     onChange?: (e: any) => void;
     onClick?: (e: any) => void;
     options: RadioPropsType[];
+    className?: string;
 }
-declare const RadioGroup: ({ id, name, state, size, disabled, label, helperText, align, direction, onClick, onChange, options, }: RadioGroupProps) => JSX.Element;
+declare const RadioGroup: ({ id, name, state, size, disabled, label, helperText, align, direction, onClick, onChange, options, className, }: RadioGroupProps) => JSX.Element;
 export { RadioGroup };

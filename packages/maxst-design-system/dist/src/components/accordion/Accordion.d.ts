@@ -11,6 +11,7 @@ interface AccordionProps {
     defaultSelectItem?: string;
     expandControl?: boolean;
     showExpandIcon?: boolean;
+    className?: string;
 }
-declare const Accordion: ({ width, items, expandIcon, defaultSelectItem, expandControl, showExpandIcon, }: AccordionProps) => JSX.Element;
+declare const Accordion: ({ width, items, expandIcon, defaultSelectItem, expandControl, showExpandIcon, className, }: AccordionProps) => JSX.Element;
 export { Accordion };

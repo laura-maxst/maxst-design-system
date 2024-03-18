@@ -5,6 +5,7 @@ interface ButtonGropProps {
     align?: 'left' | 'right' | 'center';
     direction?: 'vertical' | 'horizontal';
     buttonWidth?: string;
+    className?: string;
 }
-declare const ButtonGroup: ({ children, fullWidth, align, direction, buttonWidth, }: ButtonGropProps) => JSX.Element;
+declare const ButtonGroup: ({ children, fullWidth, align, direction, buttonWidth, className, }: ButtonGropProps) => JSX.Element;
 export { ButtonGroup };

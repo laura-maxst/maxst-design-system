@@ -14,6 +14,7 @@ interface CheckboxGroupProps {
     onChange?: (e: any) => void;
     onClick?: (e: any) => void;
     options: CheckboxPropsType[];
+    className?: string;
 }
-declare const CheckboxGroup: ({ id, type, state, size, disabled, label, checked, controlMode, helperText, align, direction, onClick, onChange, options, }: CheckboxGroupProps) => JSX.Element;
+declare const CheckboxGroup: ({ id, type, state, size, disabled, label, checked, controlMode, helperText, align, direction, onClick, onChange, options, className, }: CheckboxGroupProps) => JSX.Element;
 export { CheckboxGroup };

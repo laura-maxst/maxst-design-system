@@ -16,6 +16,7 @@ interface PaginationProps {
         label: string;
     }[];
     onClick?: (selectIndex: number) => void;
+    className?: string;
 }
-declare const Pagination: ({ smallWidth, simpleMode, size, align, totalPage, defaultPage, disabled, showFirstButton, showLastButton, showPageSizeChanger, onshowPageSizeChange, showPageOptionCustom, onClick, }: PaginationProps) => JSX.Element;
+declare const Pagination: ({ smallWidth, simpleMode, size, align, totalPage, defaultPage, disabled, showFirstButton, showLastButton, showPageSizeChanger, onshowPageSizeChange, showPageOptionCustom, onClick, className, }: PaginationProps) => JSX.Element;
 export { Pagination };

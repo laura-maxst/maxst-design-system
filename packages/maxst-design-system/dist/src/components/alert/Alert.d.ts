@@ -9,7 +9,8 @@ interface AlertProps {
     };
     open: boolean;
     onClose: () => void;
+    className?: string;
 }
-declare const Alert: ({ type, title, contents, closeButton, actionButtonData, open, onClose, }: AlertProps) => JSX.Element;
+declare const Alert: ({ type, title, contents, closeButton, actionButtonData, open, onClose, className, }: AlertProps) => JSX.Element;
 export { Alert };
 export type { AlertProps };

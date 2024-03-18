@@ -10,7 +10,8 @@ interface DrawerPropsType {
     onClose: () => void;
     closeButtonIcon?: React.ReactNode;
     isDim?: boolean;
+    className?: string;
 }
-declare const Drawer: ({ width, header, footer, position, children, isCloseButton, open, onClose, closeButtonIcon, isDim, }: DrawerPropsType) => JSX.Element;
+declare const Drawer: ({ width, header, footer, position, children, isCloseButton, open, onClose, closeButtonIcon, isDim, className, }: DrawerPropsType) => JSX.Element;
 export { Drawer };
 export type { DrawerPropsType };

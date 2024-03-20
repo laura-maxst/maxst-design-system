@@ -10,6 +10,8 @@ interface FooterProps {
   topRightArea?: React.ReactNode;
   bottomRightArea?: React.ReactNode;
   className?: string;
+  logo: any;
+  addressData?: string[];
 }
 
 const Footer = ({
@@ -17,6 +19,8 @@ const Footer = ({
   topRightArea,
   bottomRightArea,
   className,
+  logo,
+  addressData,
 }: FooterProps) => {
   return (
     <footer
@@ -36,7 +40,7 @@ const Footer = ({
         <div className="footer-bottom">
           <div className="footer-bottom__left">
             <div>
-              <img src="/images/lib/footer_logo.png" alt="maxst logo" />
+              <div className="logo">{logo}</div>
               {termData && (
                 <div className="footer__term-list">
                   {termData.map((item, index) => {
@@ -50,24 +54,36 @@ const Footer = ({
               )}
             </div>
             <address className="footer__address">
-              <Text type="body" size="s" role="subtlest" className="copyright">
-                대표 : 박재완
-              </Text>
-              <Text type="body" size="s" role="subtlest" className="copyright">
-                사업자등록번호 : 114-86-83769
-              </Text>
-              <Text type="body" size="s" role="subtlest" className="copyright">
-                주소 : 서울시 강남구 남부순환로 351길 4,STAY77
-              </Text>
-              <Text type="body" size="s" role="subtlest" className="copyright">
-                마케팅 문의 : 02-5121-9801
-              </Text>
-              <Text type="body" size="s" role="subtlest" className="copyright">
-                전화번호 : 070-8854-1140
-              </Text>
-              <Text type="body" size="s" role="subtlest" className="copyright">
-                이메일 : help@maxst.com
-              </Text>
+              {addressData ? (
+                addressData.map((item) => {
+                  return (
+                    <Text type="body" size="s" role="subtlest" key={item}>
+                      {item}
+                    </Text>
+                  );
+                })
+              ) : (
+                <>
+                  <Text type="body" size="s" role="subtlest">
+                    대표 : 박재완
+                  </Text>
+                  <Text type="body" size="s" role="subtlest">
+                    사업자등록번호 : 114-86-83769
+                  </Text>
+                  <Text type="body" size="s" role="subtlest">
+                    주소 : 서울시 강남구 남부순환로 351길 4,STAY77
+                  </Text>
+                  <Text type="body" size="s" role="subtlest">
+                    마케팅 문의 : 02-5121-9801
+                  </Text>
+                  <Text type="body" size="s" role="subtlest">
+                    전화번호 : 070-8854-1140
+                  </Text>
+                  <Text type="body" size="s" role="subtlest">
+                    이메일 : help@maxst.com
+                  </Text>
+                </>
+              )}
             </address>
             <Text type="body" size="s" className="footer__copyright">
               © 2023 MAXST Co., Ltd. All Rights Reserved.

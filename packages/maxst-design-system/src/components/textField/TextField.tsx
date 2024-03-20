@@ -1,4 +1,4 @@
-import React, { useEffect, useState, forwardRef } from 'react';
+import React, { useEffect, useState, forwardRef, use } from 'react';
 import { TextLabel, Text } from '@components/text';
 import {
   CloseCircleFillIcon,
@@ -79,14 +79,15 @@ const TextField = forwardRef(function TextField(
   const [valueLength, setValueLength] = useState<number>(0);
   const [isRenderValueMode, setIsRenderValueMode] = useState<boolean>(false);
 
-  const onMaxLengthCheck = (valueLength: number) => {
-    if (typeof maxLength === 'number') {
-      setValueLength(valueLength);
-      if (valueLength > Number(maxLength)) {
-        setThisState('error');
-      } else {
-        setThisState('typing');
-      }
+  const onMultilineCheck = (valueLength: number) => {
+    setValueLength(valueLength);
+
+    if (typeof maxLength === 'number' && valueLength > Number(maxLength)) {
+      setThisState('error');
+    } else if (typeof minLength === 'number' && valueLength < minLength) {
+      setThisState('error');
+    } else {
+      setThisState('typing');
     }
   };
 
@@ -102,16 +103,17 @@ const TextField = forwardRef(function TextField(
 
   const resolveOnChange = (e: any) => {
     setResolveValue(e.target.value);
-    onMinLengthCheck(e.target.value.length);
 
     if (multiLine) {
-      onMaxLengthCheck(e.target.value.length);
+      onMultilineCheck(e.target.value.length);
 
       if (size === 'auto') {
         const textarea = e.target;
         textarea.style.height = 'auto';
         textarea.style.height = textarea.scrollHeight + 'px';
       }
+    } else {
+      onMinLengthCheck(e.target.value.length);
     }
 
     if (!onChange) {
@@ -170,6 +172,7 @@ const TextField = forwardRef(function TextField(
       const valueLengthCheck = String(value).length;
       setResolveValue(value);
       setValueLength(valueLengthCheck);
+
       if (valueLengthCheck > Number(maxLength)) {
         setThisState('error');
       }

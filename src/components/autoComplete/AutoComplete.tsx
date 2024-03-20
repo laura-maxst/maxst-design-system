@@ -31,6 +31,7 @@ function AutoComplete({
   children,
 }: AutoCompleteType) {
   const autoCompleteRef = useRef<HTMLInputElement>(null);
+  const menuRef = useRef<HTMLInputElement>(null);
   const [autoCompleteMenuDatas, setAutoCompleteMenuData] = useState<
     AutoCompleteMenuType[]
   >([]);
@@ -81,7 +82,24 @@ function AutoComplete({
 
   const onMenuClick = (data: any) => {
     setSelectValue(data.id);
-    if (onChange) {
+    const thisAutoCompleteMenuWrap = document.getElementById(`${id}-menu-wrap`);
+
+    if (menuRef.current) {
+      const thisMenuEl = menuRef.current.querySelector('#' + data.id);
+      const thisMenuElSubList = thisMenuEl?.nextElementSibling;
+      if (thisMenuElSubList != null || thisMenuElSubList != undefined) {
+        setMenuOpen(true);
+      } else {
+        setMenuOpen(false);
+        if (thisAutoCompleteMenuWrap) {
+          thisAutoCompleteMenuWrap.style.height = `0px`;
+        }
+      }
+    }
+
+    if (!onChange) {
+      return;
+    } else {
       onChange(data);
     }
   };
@@ -146,6 +164,7 @@ function AutoComplete({
           ' ',
         )}
         id={id + '-menu-wrap'}
+        ref={menuRef}
       >
         <Menu
           id={id + '-menu'}

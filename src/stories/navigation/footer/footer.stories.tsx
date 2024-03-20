@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from '@storybook/react';
 import { Footer } from '@components/footer';
 import { Text } from '@components/text';
@@ -126,6 +127,7 @@ export const FooterDefault: Story = {
     </div>
   ),
   args: {
+    logo: <img src="/images/lib/footer_logo.png" alt="maxst logo" />,
     termData: termData,
     topRightArea: <div className="footer-top-right-sample"> </div>,
     bottomRightArea: <div className="footer-bottom-right-sample"> </div>,
@@ -139,8 +141,19 @@ export const FooterCustom: Story = {
     </div>
   ),
   args: {
+    logo: <img src="/images/lib/footer_logo.png" alt="maxst logo" />,
     termData: termData,
     topRightArea: <FooterTopRightBox />,
     bottomRightArea: <FooterBottomRightBox />,
+    addressData: [
+      'address',
+      'custom 가능',
+      'string[]',
+      '형태로',
+      '설정 가능합니다.',
+      '미 설정시',
+      'maxst의 정보로',
+      '기본 설정됩니다.',
+    ],
   },
 };

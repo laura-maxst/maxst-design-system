@@ -32,17 +32,25 @@ const meta: Meta<typeof Chip> = {
         type: null,
       },
     },
+    id: {
+      description: 'check mode와 filter mode일 시 사용합니다.',
+    },
+    onClick: {
+      description:
+        'check mode와 filter mode일 시 사용합니다.\ncheck mode에서는 `event 객체`, `checked` 여부를 반환합니다. \nfilter mode에서는 `event 객체`를 반환합니다.',
+    },
   },
 };
 
 export default meta;
 type Story = StoryObj<typeof Chip>;
 
-const onChange = (checked: boolean) => {
-  console.log('chip click', checked);
+const onClick = (id: string, checked?: boolean) => {
+  console.log('chip click', 'id : ', id, 'checked : ', checked);
 };
-const onClick = (checked: boolean) => {
-  console.log('chip click', checked);
+
+const onClickFilter = (id: string) => {
+  console.log('chip click', 'id : ', id);
 };
 
 export const ChipDefault: Story = {
@@ -68,16 +76,16 @@ export const ChipFilter: Story = {
     docs: {
       description: {
         story:
-          '필터형으로 콘텐츠를 필터링하는 목적으로 사용됩니다. \n클릭이 가능하며, 추가 및 삭제도 가능합니다.',
+          '필터형으로 콘텐츠를 필터링하는 목적으로 사용됩니다. \n클릭이 가능하며, 추가 및 삭제도 가능합니다.\nonClick시 id를 return합니다.',
       },
     },
   },
   args: {
+    id: 'chip-filter',
     type: 'color-blue',
     size: 'l',
     children: 'Chip',
-    onChange: onChange,
-    onClick: onClick,
+    onClick: onClickFilter,
     action: 'filter',
   },
 };
@@ -88,15 +96,15 @@ export const ChipCheck: Story = {
     docs: {
       description: {
         story:
-          '선택형으로 콘텐츠와 관련된 옵션 중 하나를 선택하는 목적으로 사용합니다. \nTab의 하위위계로 활용할 수 있습니다.',
+          '선택형으로 콘텐츠와 관련된 옵션 중 하나를 선택하는 목적으로 사용합니다. \nTab의 하위위계로 활용할 수 있습니다.\nonClick시 id와 checked 여부를 return합니다.',
       },
     },
   },
   args: {
+    id: 'chip-check',
     type: 'tertiary',
     size: 'l',
     children: 'Chip Icon',
-    onChange: onChange,
     onClick: onClick,
     action: 'check',
   },
@@ -115,7 +123,6 @@ export const ChipWidthIcon: Story = {
     type: 'default',
     size: 'l',
     children: 'Chip Icon',
-    onChange: onChange,
     onClick: onClick,
     iconLeft: <UserLineIcon />,
   },
@@ -135,7 +142,6 @@ export const ChipWidthImage: Story = {
     type: 'color-magenta',
     size: 'l',
     children: 'Chip Icon',
-    onChange: onChange,
     onClick: onClick,
     // eslint-disable-next-line @next/next/no-img-element
     iconLeft: <img src="./images/img_chip_profile_sample.png" alt="" />,

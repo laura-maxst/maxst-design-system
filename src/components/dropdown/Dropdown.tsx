@@ -26,6 +26,7 @@ interface DropdownProps {
   multiple?: boolean;
   menuDirection?: 'top' | 'bottom';
   selectMenu?: string | { id: string; label: string }[];
+  disabled?: boolean;
 }
 
 const Dropdown = ({
@@ -41,6 +42,7 @@ const Dropdown = ({
   multiple,
   menuDirection,
   selectMenu,
+  disabled,
 }: DropdownProps) => {
   const dropdownRef = useRef<HTMLInputElement>(null);
   const menuRef = useRef<HTMLInputElement>(null);
@@ -52,10 +54,12 @@ const Dropdown = ({
   const [multiSelectData, setMultiSelectData] = useState<any>([]);
 
   const onClickDropdownBase = () => {
-    if (menuOpen) {
-      setMenuOpen(false);
-    } else {
-      setMenuOpen(true);
+    if (!disabled) {
+      if (menuOpen) {
+        setMenuOpen(false);
+      } else {
+        setMenuOpen(true);
+      }
     }
   };
 
@@ -143,6 +147,7 @@ const Dropdown = ({
             thisDropdownMenuWrap.style.top = 'auto';
           } else {
             thisDropdownMenuWrap.style.bottom = 'auto';
+            thisDropdownMenuWrap.style.top = '';
           }
         }
         thisDropdownMenuWrap.style.height = `${thisDropdownMenuWrap.scrollHeight}px`;
@@ -179,7 +184,10 @@ const Dropdown = ({
         onClick={onClickDropdownBase}
         id={id + '__base'}
       >
-        {children}
+        {React.cloneElement(children, {
+          disabled: disabled,
+        })}
+        {/* {children} */}
       </div>
       <div
         className={[

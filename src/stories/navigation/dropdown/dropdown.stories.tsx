@@ -426,6 +426,7 @@ const DropDownMultiSelectText = ({
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData}
       onChange={resolveOnChage}
       onClick={resolveOnClick}
@@ -477,6 +478,7 @@ const DropDownMultiSelectChip = ({
   menuData,
   onChange,
   onClick,
+  ...props
 }: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
@@ -507,6 +509,7 @@ const DropDownMultiSelectChip = ({
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData}
       onChange={resolveOnChage}
       onClick={resolveOnClick}
@@ -560,7 +563,12 @@ export const DropDownWithControls: Story = {
     docs: {
       source: {
         code: `
-const DropDownWithControl = ({ onChange, onClick }: DropdownProps) => {
+const DropDownWithControl = ({
+  menuDirection,
+  onChange,
+  onClick,
+  ...props
+}: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
 
@@ -685,6 +693,7 @@ const DropDownWithControl = ({ onChange, onClick }: DropdownProps) => {
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData}
       onChange={resolveOnChage}
       onClick={resolveOnClick}

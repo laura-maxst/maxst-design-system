@@ -82,6 +82,7 @@
     transition: left 0.4s;
 
     & > button {
+      overflow: hidden;
       display: flex;
       align-items: center;
       gap: 2px;
@@ -89,9 +90,9 @@
       height: 56px;
       padding-left: 20px;
       padding-right: 20px;
+      border-radius: 2px 2px 0 0;
       color: semantic-color('text', 'subtlest');
       cursor: pointer;
-      overflow: hidden;
 
       .font-label {
         color: semantic-color('text', 'subtlest');

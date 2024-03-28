@@ -14,6 +14,7 @@ const DropDownWithControl = ({
   menuDirection,
   onChange,
   onClick,
+  ...props
 }: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
@@ -139,6 +140,7 @@ const DropDownWithControl = ({
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData2}
       onChange={resolveOnChage}
       onClick={resolveOnClick}

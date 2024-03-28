@@ -46,6 +46,7 @@ const DropDownMultiSelectText = ({
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData}
       onChange={resolveOnChage}
       onClick={resolveOnClick}

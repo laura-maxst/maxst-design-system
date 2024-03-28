@@ -47,6 +47,9 @@ const meta: Meta<typeof Button> = {
     htmlType: {
       description: '지정값 없으면 button으로 지정됩니다.',
     },
+    onClick: {
+      description: 'event 객체를 반환받습니다.',
+    },
     loading: {
       description:
         'loading 상태일때 설정합니다. buttom의 min-width값이 없으므로 loading 옵션 사용시 buttonWidth와 함께 설정하길 권장합니다.',
@@ -66,6 +69,10 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 type Story = StoryObj<typeof Button>;
+
+const onClickButton = (e: any) => {
+  console.log('button', e);
+};
 
 const ButtonGroupBox = (
   buttonListData: {
@@ -115,6 +122,7 @@ export const PrimaryActionButton: Story = {
     size: 'xl',
     iconRight: <PlusLineBoldIcon />,
     isActionMode: true,
+    onClick: onClickButton,
   },
 };
 

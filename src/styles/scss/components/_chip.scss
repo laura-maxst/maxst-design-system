@@ -15,6 +15,11 @@
   &.check {
     cursor: pointer;
   }
+
+  span,
+  svg {
+    pointer-events: none;
+  }
 }
 
 .mds-chip-group {
@@ -110,19 +115,21 @@
 $chipType: 'default', 'tertiary', 'color-mint', 'color-bluegray',
   'color-magenta', 'color-purple', 'color-blue';
 $chipSize: 'xl', 'l', 's';
-$chipState: 'default', 'pressed', 'disabled';
+$chipState: 'default', 'pressed';
 $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
 
 @mixin setColors($type) {
-  &:not(.check.checked) {
+  &:not(.check.checked, .disabled) {
     svg {
       color: semantic-color('text', 'subtlest');
     }
   }
 
   @if ($type == 'tertiary') {
+    box-sizing: border-box;
     color: semantic-color('text', 'sub');
-    border: 1px solid semantic-color('border', 'default');
+
+    box-shadow: 0px 0px 0px 1px semantic-color('border', 'default') inset;
     background-color: semantic-color('background', 'tertiary');
 
     &.check.checked {
@@ -160,7 +167,7 @@ $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
   }
 
   @if ($type == 'tertiary') {
-    border: 1px solid semantic-color('border', 'accent');
+    box-shadow: 0px 0px 0px 1px semantic-color('border', 'default') inset;
   } @else if($type == 'default') {
     background-color: semantic-color('background', 'secondary-accent');
   } @else {
@@ -177,23 +184,58 @@ $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
     @include setColors($type);
     @include setChipSize($size);
 
-    @if ($state == 'disabled') {
+    &.filter,
+    &.check {
+      &:hover,
+      &:focus,
+      &:active {
+        @include setPressed($type);
+      }
+    }
+
+    &.disabled {
       color: semantic-color('text', 'disabled');
       border: 0 none;
       background-color: semantic-color('background', 'disabled');
 
+      &:hover,
+      &:focus,
+      &:active {
+        cursor: initial;
+        background-color: semantic-color('background', 'disabled');
+      }
+
       @if ($type == 'tertiary') {
-        border: 1px solid semantic-color('border', 'disabled');
+        box-shadow: 0px 0px 0px 1px semantic-color('border', 'disabled') inset;
+
+        &:hover,
+        &:focus,
+        &:active {
+          box-shadow: 0px
+            0px
+            0px
+            1px
+            semantic-color('border', 'disabled')
+            inset;
+        }
       }
 
       &.checked {
-        border: 1px solid semantic-color('border', 'disabled');
+        box-shadow: 0px 0px 0px 1px semantic-color('border', 'disabled') inset;
+
+        &:hover,
+        &:focus,
+        &:active {
+          box-shadow: 0px 0px 0px 1px semantic-color('border', 'disabled') inset;
+        }
       }
 
       & svg {
         color: semantic-color('text', 'disabled');
       }
-    } @else if ($state == 'pressed') {
+    }
+
+    @if ($state == 'pressed') {
       @include setPressed($type);
     }
     .left-icon {
@@ -201,15 +243,6 @@ $chipColors: 'bluegray', 'mint', 'magenta', 'purple', 'blue';
 
       svg {
         color: inherit !important;
-      }
-    }
-
-    &.filter,
-    &.check {
-      &:hover,
-      &:focus,
-      &:active {
-        @include setPressed($type);
       }
     }
   }

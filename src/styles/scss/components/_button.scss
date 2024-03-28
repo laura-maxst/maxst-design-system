@@ -12,12 +12,18 @@
   max-width: 330px !important;
   border-radius: 0;
   border: 0 none;
+  border-radius: 2px;
   vertical-align: middle;
   font-family: 'Pretendard', sans-serif;
   font-size: 100%;
   white-space: nowrap;
   background: transparent;
   cursor: pointer;
+
+  span,
+  svg {
+    pointer-events: none;
+  }
 
   &:focus {
     outline: none;
@@ -63,9 +69,7 @@
 }
 
 @mixin primary-action($state) {
-  // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'primary') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'primary') 0) left;
   @include action-common;
-  background-color: semantic-color('background', 'primary');
   clip-path: polygon(
     0% 14px,
     14px 0%,
@@ -74,25 +78,22 @@
     calc(100% - 14px) 100%,
     0% 100%
   );
+  border-radius: 0;
+  background-color: semantic-color('background', 'primary');
 
   &:hover,
   &:focus,
   &:active {
-    // @include action-common;
-    // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'primary-accent') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'primary-accent') 0) left;
     background-color: semantic-color('background', 'primary-accent');
   }
 
   @if ($state == 'disabled') {
     @include action-common;
-    // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'disabled') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'disabled') 0) left ;
     background-color: semantic-color('background', 'disabled');
 
     &:hover,
     &:focus,
     &:active {
-      // @include action-common;
-      // background: linear-gradient(-45deg, transparent 10px, semantic-color('background', 'disabled') 0) right, linear-gradient(135deg, transparent 10px, semantic-color('background', 'disabled') 0) left;
       background-color: semantic-color('background', 'disabled');
     }
   }

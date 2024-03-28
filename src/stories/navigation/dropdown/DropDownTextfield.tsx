@@ -9,6 +9,7 @@ const DropDownTextfield = ({
   menuData,
   onChange,
   onClick,
+  ...props
 }: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<string>('');
   const [idValue, setIdValue] = useState<string>('');
@@ -30,6 +31,7 @@ const DropDownTextfield = ({
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData}
       onChange={resolveOnChage}
       onClick={resolveOnClick}

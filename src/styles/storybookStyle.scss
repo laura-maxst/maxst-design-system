@@ -656,13 +656,15 @@ input[type='radio'] {
         }
 
         .table-shadow-chip {
-          padding: 8px;
+          padding-top: 16px;
+          padding-left: 32px;
 
           p {
             display: block;
             font-size: 12px !important;
             line-height: 1.7;
             white-space: pre-wrap;
+            margin-top: 24px !important;
           }
 
           .shadow-sample-box {
@@ -670,16 +672,20 @@ input[type='radio'] {
             height: 100px;
 
             &.shadow-level1 {
-              box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
-                0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 0px 2px rgba(33, 38, 49, 0.12),
+                2px 0px 8px rgba(33, 38, 49, 0.12);
             }
             &.shadow-level2 {
-              box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12),
-                0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+              box-shadow: 2px 2px 8px rgba(33, 38, 49, 0.12),
+                2px 2px 16px rgba(33, 38, 49, 0.16);
             }
             &.shadow-level3 {
-              box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.12),
-                0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+              box-shadow: 2px 4px 24px rgba(33, 38, 49, 0.28),
+                2px 4px 24px rgba(33, 38, 49, 0.28);
+            }
+            &.shadow-level4 {
+              box-shadow: 4px 8px 32px rgba(33, 38, 49, 0.24),
+                2px 4px 40px rgba(33, 38, 49, 0.56);
             }
           }
         }
@@ -869,7 +875,8 @@ input[type='radio'] {
 #anchor--datadisplay-tooltip--tooltip-custom,
 #anchor--datadisplay-tooltip--tooltip-with-arrow-and-title,
 #anchor--navigation-pagination--pagination-page-option-custom,
-#anchor--navigation-pagination--pagination-first-last-button {
+#anchor--navigation-pagination--pagination-first-last-button,
+#anchor--navigation-pagination--pagination-default {
   .docs-story {
     min-height: 300px;
 

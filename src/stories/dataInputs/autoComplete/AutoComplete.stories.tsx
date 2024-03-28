@@ -116,7 +116,7 @@ const onChange = (value: any) => {
   console.log('onchange', value);
 };
 const onClick = (e: any) => {
-  console.log('onclick', e.target);
+  console.log('onclick', e);
 };
 
 export const AutocompleteWithSearchbar: Story = {

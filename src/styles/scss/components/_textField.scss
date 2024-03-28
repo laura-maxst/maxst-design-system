@@ -32,10 +32,29 @@
     -moz-appearance: none;
     appearance: none;
   }
+
+  &.textfield-chip {
+    flex-wrap: wrap;
+
+    .textfield-formControl {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      flex: none;
+      width: 100%;
+    }
+
+    &.has-chip {
+      input {
+        width: auto;
+      }
+    }
+  }
 }
 
 @mixin textField-common {
   min-width: 180px;
+  border-radius: 2px;
 
   & textarea {
     resize: none;
@@ -124,10 +143,24 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
 
       @if ($size == 'l') {
         height: 48px;
+
+        &.textfield-chip-control {
+          height: auto;
+          min-height: 48px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
       } @else if ($size == 'auto') {
         min-height: 48px;
       } @else {
         height: 36px;
+
+        &.textfield-chip-control {
+          height: auto;
+          min-height: 36px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+        }
       }
 
       &:focus,

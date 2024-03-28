@@ -10,6 +10,7 @@ const DropDownMultiSelectChip = ({
   menuData,
   onChange,
   onClick,
+  ...props
 }: DropdownProps) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
@@ -40,6 +41,7 @@ const DropDownMultiSelectChip = ({
 
   return (
     <Dropdown
+      {...props}
       menuData={menuData}
       onChange={resolveOnChage}
       onClick={resolveOnClick}

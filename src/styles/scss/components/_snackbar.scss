@@ -9,10 +9,11 @@
   max-width: 500px;
   padding: 12px 16px;
   color: semantic-color('text', 'default-reverse');
+  border-radius: 2px;
   background-color: semantic-color('background', 'overlay-reverse');
   z-index: 99999;
-  @include shadow-level2;
   transition: all 0.7s ease-in-out;
+  @include shadow-level3;
 
   &.open {
     opacity: 1;
@@ -32,7 +33,7 @@
   button.mds-button-root,
   button {
     height: fit-content;
-    color: semantic-color('text', 'accent') !important;
+    color: semantic-color('text', 'default-reverse') !important;
 
     span {
       color: semantic-color('text', 'default-reverse');

@@ -2,7 +2,7 @@ import React from 'react';
 interface ButtonProps {
     id?: string;
     size: 'xl' | 'l' | 'm' | 's' | 'xs';
-    onClick?: () => void;
+    onClick?: (e: any) => void;
     type: 'primary' | 'secondary' | 'tertiary' | 'error' | 'error-tertiary' | 'text' | 'link' | 'ghost';
     state?: 'default' | 'pressed' | 'disabled' | 'error';
     children?: React.ReactNode;

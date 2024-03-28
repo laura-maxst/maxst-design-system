@@ -25,7 +25,8 @@ interface DropdownProps {
         id: string;
         label: string;
     }[];
+    disabled?: boolean;
 }
-declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, selectMenu, }: DropdownProps) => JSX.Element;
+declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, selectMenu, disabled, }: DropdownProps) => JSX.Element;
 export { Dropdown };
 export type { DropDownMenuProps, DropdownProps };

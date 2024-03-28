@@ -266,12 +266,15 @@ const Pagination = ({
       return (
         <li key={`pagination-button-${i}`}>
           <Button
-            type="ghost"
+            type={thisPage === i ? 'secondary' : 'ghost'}
             state={disabled ? 'disabled' : 'default'}
             size={buttonSizeFilter(size)}
             id={`pagination-button-${i}`}
             onClick={() => resolveOnClick('item', i)}
-            className={thisPage === i ? 'checked' : ''}
+            className={[
+              'pagination-button',
+              thisPage === i ? 'checked' : '',
+            ].join(' ')}
           >
             {i}
           </Button>

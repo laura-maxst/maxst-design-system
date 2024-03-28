@@ -3,6 +3,7 @@ import { CloseCircleFillIcon, CheckLineIcon } from '@maxst-designsystem/icons';
 import { TextLabel } from '@components/text';
 
 interface ChipProps {
+  id?: string;
   type:
     | 'default'
     | 'tertiary'
@@ -13,17 +14,19 @@ interface ChipProps {
     | 'color-blue';
   size: 'xl' | 'l' | 's';
   children: string;
-  state?: 'default' | 'pressed' | 'disabled';
+  state?: 'default' | 'pressed';
   action?: 'filter' | 'check';
   checked?: boolean;
   iconCheck?: React.ReactNode;
   iconLeft?: React.ReactNode;
   className?: string;
-  onChange?: (checked: boolean) => void;
-  onClick?: (checked: boolean) => void;
+  disabled?: boolean;
+  onChange?: (id: string, checked?: boolean) => void;
+  onClick?: (id: string, checked?: boolean) => void;
 }
 
 const Chip = ({
+  id,
   type,
   size,
   state,
@@ -35,33 +38,49 @@ const Chip = ({
   children,
   onChange,
   onClick,
+  disabled,
   ...props
 }: ChipProps) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [thisChipID, setThisChipID] = useState<string>('');
 
   const resolveOnChange = () => {
     if (action === 'check') {
-      setIsChecked(!isChecked);
+      if (!disabled) {
+        setIsChecked(!isChecked);
+
+        if (!onChange) {
+          return;
+        }
+        onChange(thisChipID, !isChecked);
+      }
     }
-    if (!onChange) {
-      return;
-    }
-    onChange(!isChecked);
   };
 
-  const resolveOnClick = () => {
-    if (action === 'check') {
-      setIsChecked(!isChecked);
+  const resolveOnClick = (e: any) => {
+    if (!disabled) {
+      if (action === 'check') {
+        setIsChecked(!isChecked);
+
+        if (!onClick) {
+          return;
+        }
+        onClick(e, !isChecked);
+      } else if (action === 'filter') {
+        if (!onClick) {
+          return;
+        }
+        onClick(e);
+      }
     }
-    if (!onClick) {
-      return;
-    }
-    onClick(!isChecked);
   };
 
   useEffect(() => {
     if (checked) {
       setIsChecked(checked);
+    }
+    if (id) {
+      setThisChipID(id);
     }
   }, []);
 
@@ -76,8 +95,10 @@ const Chip = ({
         `chip-${type}-${size}-${state ? state : 'default'}`,
         action ? action : '',
         isChecked ? 'checked' : '',
+        disabled ? 'disabled' : '',
         className && className,
       ].join(' ')}
+      id={id}
       {...props}
     >
       {iconLeft && <div className="left-icon">{iconLeft}</div>}

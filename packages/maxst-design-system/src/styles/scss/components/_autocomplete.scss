@@ -2,13 +2,23 @@
   position: relative;
   // width: fit-content;
 
+  &.on {
+    .autocomplete__base {
+      .textfield-formControl {
+        border-radius: 2px 2px 0 0;
+      }
+    }
+  }
+
   .autocomplete__menu-wrap {
     overflow: hidden;
     position: absolute;
     width: 100%;
     height: 0;
     transition: all ease 0.5s;
+    border-radius: 0 0 2px 2px;
     @include shadow-level2;
+    z-index: 999;
 
     &.off {
       height: 0;

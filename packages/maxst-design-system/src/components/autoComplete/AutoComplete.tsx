@@ -143,7 +143,11 @@ function AutoComplete({
 
   return (
     <div
-      className={['mds-autocomplete', className ? className : ''].join(' ')}
+      className={[
+        'mds-autocomplete',
+        menuOpen ? 'on' : 'off',
+        className ? className : '',
+      ].join(' ')}
       ref={autoCompleteRef}
     >
       <div

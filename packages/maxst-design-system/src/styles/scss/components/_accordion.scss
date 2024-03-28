@@ -5,6 +5,7 @@
 
   .mds-accordion__item {
     border: 1px solid semantic-color('border', 'default');
+    border-radius: 2px;
     background-color: semantic-color('background', 'base');
     transition: all ease 0.3s;
 

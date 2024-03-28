@@ -10,29 +10,6 @@
       button {
         min-width: unset;
         padding: 0;
-
-        &.checked {
-          color: semantic-color('text', 'default-reverse');
-          background-color: semantic-color('background', 'secondary');
-
-          &:hover,
-          &:focus,
-          &:active {
-            color: semantic-color('text', 'default-reverse');
-            background-color: semantic-color('background', 'secondary-accent');
-          }
-
-          &:disabled {
-            color: semantic-color('text', 'disabled');
-            background-color: semantic-color('background', 'disabled');
-
-            &:hover,
-            &:focus,
-            &:active {
-              background-color: semantic-color('background', 'disabled');
-            }
-          }
-        }
       }
     }
   }
@@ -84,7 +61,7 @@ $paginaionSize: 'l', 'm', 's';
 
 @mixin paginationCase($size) {
   .pagination-#{$size} {
-    button.mds-button-root {
+    button.mds-button-root.pagination-button {
       padding: 0;
     }
 

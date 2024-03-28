@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { MouseEventHandler, useEffect, useRef, useState } from 'react';
 import { TextLabel } from '@components/text';
 import { Spinner } from '@components/spinner';
 
 interface ButtonProps {
   id?: string;
   size: 'xl' | 'l' | 'm' | 's' | 'xs';
-  onClick?: () => void;
+  onClick?: (e: any) => void;
   type:
     | 'primary'
     | 'secondary'
@@ -133,7 +133,7 @@ const Button = ({
     if (!onClick) {
       return;
     } else {
-      onClick();
+      onClick(e);
     }
   };
 

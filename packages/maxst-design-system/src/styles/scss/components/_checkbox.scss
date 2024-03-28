@@ -320,6 +320,7 @@ $checkboxMode: 'primary', 'secondary';
 
 @mixin checkboxIconCase($size) {
   .checkbox-icon {
+    border-radius: 2px;
     cursor: pointer;
 
     svg {

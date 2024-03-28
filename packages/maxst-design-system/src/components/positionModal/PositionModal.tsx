@@ -114,7 +114,7 @@ const PositionModal = ({
           'position-modal',
           isArrow ? 'arrow' : '',
           isArrow && arrowDirection ? arrowDirection : 'top',
-          !isDim ? 'shadow' : '',
+          !isDim ? 'none-dim' : '',
         ].join(' ')}
         ref={modalRef}
         style={position}

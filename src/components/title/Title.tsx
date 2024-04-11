@@ -1,5 +1,6 @@
 import React from 'react';
 import TitleTagFilter from './TitleTagFilter';
+import { pretendard } from '@util/fonts';
 
 interface TitleProps {
   role: 1 | 2 | 3 | 4 | 5 | 6;
@@ -22,6 +23,8 @@ function Title({
     <TitleTagFilter
       role={role}
       className={[
+        pretendard.className,
+        pretendard.variable,
         'font-title',
         `font-${type}-${size}`,
         align ? align : '',

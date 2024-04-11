@@ -1,44 +1,44 @@
 // font face
-@font-face {
-  font-family: 'Pretendard';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/Pretendard-Bold.eot');
-  src: url('/fonts/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Pretendard-Bold.woff2') format('woff2'),
-    url('/fonts/Pretendard-Bold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Pretendard';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/fonts/Pretendard-SemiBold.eot');
-  src: url('/fonts/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Pretendard-SemiBold.woff2') format('woff2'),
-    url('/fonts/Pretendard-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Pretendard';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/fonts/Pretendard-Medium.eot');
-  src: url('/fonts/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Pretendard-Medium.woff2') format('woff2'),
-    url('/fonts/Pretendard-Medium.woff') format('woff');
-}
-@font-face {
-  font-family: 'Pretendard';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/Pretendard-Regular.eot');
-  src: url('/fonts/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Pretendard-Regular.woff2') format('woff2'),
-    url('/fonts/Pretendard-Regular.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'Pretendard';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('/fonts/Pretendard-Bold.eot');
+//   src: url('/fonts/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('/fonts/Pretendard-Bold.woff2') format('woff2'),
+//     url('/fonts/Pretendard-Bold.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Pretendard';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('/fonts/Pretendard-SemiBold.eot');
+//   src: url('/fonts/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+//     url('/fonts/Pretendard-SemiBold.woff2') format('woff2'),
+//     url('/fonts/Pretendard-SemiBold.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Pretendard';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('/fonts/Pretendard-Medium.eot');
+//   src: url('/fonts/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+//     url('/fonts/Pretendard-Medium.woff2') format('woff2'),
+//     url('/fonts/Pretendard-Medium.woff') format('woff');
+// }
+// @font-face {
+//   font-family: 'Pretendard';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('/fonts/Pretendard-Regular.eot');
+//   src: url('/fonts/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('/fonts/Pretendard-Regular.woff2') format('woff2'),
+//     url('/fonts/Pretendard-Regular.woff') format('woff');
+// }
 
 @mixin font-common {
   font: inherit;
-  font-family: 'Pretendard', sans-serif !important;
+  font-family: var(--font-pretendard), sans-serif !important;
   vertical-align: baseline;
   color: semantic-color('text', 'default');
   white-space: break-spaces;

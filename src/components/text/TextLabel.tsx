@@ -1,4 +1,5 @@
 import React from 'react';
+import { pretendard } from '@util/fonts';
 
 interface TextLabelProps {
   role?: 'default' | 'sub' | 'subtlest';
@@ -10,9 +11,12 @@ interface TextLabelProps {
 function TextLabel({ role, size, className, children }: TextLabelProps) {
   return (
     <span
-      className={`font-label font-label-${size} ${role ? role : ''} ${
-        className ? className : ''
-      }`}
+      className={[
+        pretendard.className,
+        pretendard.variable,
+        `font-label font-label-${size} ${role ? role : ''}`,
+        className ? className : '',
+      ].join(' ')}
     >
       {children}
     </span>

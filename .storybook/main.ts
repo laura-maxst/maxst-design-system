@@ -15,7 +15,7 @@ module.exports = {
   docs: {
     autodocs: 'tag',
   },
-  staticDirs: ['../public', { from: '../public/fonts', to: '/fonts' }],
+  staticDirs: ['../public', { from: '../public', to: '/' }],
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

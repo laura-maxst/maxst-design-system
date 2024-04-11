@@ -19,7 +19,8 @@
       "@*": ["./src/*"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@util/*": ["src/util/*"]
     }
   },
   "include": [

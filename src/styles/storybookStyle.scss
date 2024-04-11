@@ -1,4 +1,44 @@
 @import '/src/styles/scss/main.scss';
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../public/Pretendard-Bold.eot');
+  src: url('../../public/Pretendard-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../public/Pretendard-Bold.woff2') format('woff2'),
+    url('../../public/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../public/Pretendard-SemiBold.eot');
+  src: url('../../public/Pretendard-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../public/Pretendard-SemiBold.woff2') format('woff2'),
+    url('../../public/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/Pretendard-Medium.eot');
+  src: url('../../public/Pretendard-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../public/Pretendard-Medium.woff2') format('woff2'),
+    url('../../public/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/Pretendard-Regular.eot');
+  src: url('../../public/Pretendard-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../public/Pretendard-Regular.woff2') format('woff2'),
+    url('../../public/Pretendard-Regular.woff') format('woff');
+}
 
 * {
   box-sizing: border-box;
@@ -16,7 +56,7 @@ html {
 }
 body {
   // line-height: 1.5;
-  font-family: 'Pretendard', sans-serif !important;
+  // font-family: 'Pretendard', sans-serif !important;
   background-color: var($--background-base);
 
   & > div {
@@ -24,7 +64,7 @@ body {
   }
 }
 #root {
-  font-family: 'Pretendard', sans-serif !important;
+  // font-family: 'Pretendard', sans-serif !important;
 }
 div,
 span,
@@ -111,7 +151,7 @@ button {
   padding: 0;
   border-width: 0;
   font: inherit;
-  font-family: 'Pretendard', sans-serif !important;
+  font-family: Pretendard, sans-serif !important;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -162,7 +202,7 @@ textarea {
   border-radius: 0;
   vertical-align: middle;
   font-size: 100%;
-  font-family: 'Pretendard', sans-serif !important;
+  // font-family: 'Pretendard', sans-serif !important;
   background: transparent;
 }
 
@@ -797,7 +837,20 @@ input[type='radio'] {
     max-width: 560px;
   }
 }
+// modal
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
+  & > div:first-child,
+  & > label:first-child {
+    margin-top: 32px;
+  }
+  & > p:first-child {
+    margin-top: 8px;
+  }
+}
 // docs 내부 컬러를 위한.
 @mixin exampleColors($name, $color) {
   .color-#{$name} {

@@ -1,11 +1,11 @@
 import { create } from '@storybook/theming/create';
-import './fonts.css';
+import { pretendard } from '../util/fonts';
 
 // storybook theme custom
 export default create({
   base: 'light',
 
-  fontBase: "'Pretendard', sans-serif",
+  fontBase: `Pretendard, sans-serif`,
   brandTitle: 'Maxst Design System',
   brandUrl: '',
   brandImage: '',

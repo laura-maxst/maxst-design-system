@@ -10,7 +10,7 @@ const meta: Meta<typeof InputChip> = {
   parameters: {
     docs: {
       description: {
-        component: 'Input과 Textarea를 모두 정의합니다.',
+        component: 'Input안에 chip이 생성되는 component입니다.',
       },
     },
   },

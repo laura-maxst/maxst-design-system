@@ -250,13 +250,6 @@ $modalSize: 's', 'm', 'l', 'xl';
       flex-direction: column;
       gap: 24px;
 
-      & > div:first-child,
-      & > label:first-child {
-        margin-top: 32px;
-      }
-      & > p:first-child {
-        margin-top: 8px;
-      }
       .input__group + .helper-text {
         margin-top: 0;
       }

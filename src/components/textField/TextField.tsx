@@ -8,7 +8,6 @@ import {
   ViewFillIcon,
   ViewOffFillIcon,
 } from '@maxst-designsystem/icons';
-import { pretendard } from '@util/fonts';
 
 const TextField = forwardRef(function TextField(
   {
@@ -184,8 +183,6 @@ const TextField = forwardRef(function TextField(
   return (
     <div
       className={[
-        pretendard.className,
-        pretendard.variable,
         'mds-input-root',
         `textfield textfield__text-${size ? size : 'l'}-${
           (disabled && 'disabled') || thisState

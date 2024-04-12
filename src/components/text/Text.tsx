@@ -1,5 +1,4 @@
 import React from 'react';
-import { pretendard } from '@util/fonts';
 
 interface TextProps {
   role?: 'default' | 'sub' | 'subtlest';
@@ -23,8 +22,6 @@ function Text({
       {innerHtml ? (
         <p
           className={[
-            pretendard.className,
-            pretendard.variable,
             `font-${type} font-${type}-${size} ${role ? role : ''}`,
             className ? className : '',
           ].join(' ')}
@@ -35,8 +32,6 @@ function Text({
       ) : (
         <p
           className={[
-            pretendard.className,
-            pretendard.variable,
             `font-${type} font-${type}-${size} ${role ? role : ''}`,
             className ? className : '',
           ].join(' ')}

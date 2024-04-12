@@ -1,7 +1,6 @@
 import React, { MouseEventHandler, useEffect, useRef, useState } from 'react';
 import { TextLabel } from '@components/text';
 import { Spinner } from '@components/spinner';
-import { pretendard } from '@util/fonts';
 
 interface ButtonProps {
   id?: string;
@@ -150,8 +149,6 @@ const Button = ({
       id={id ? id : ''}
       type={props.htmlType ? props.htmlType : 'button'}
       className={[
-        pretendard.className,
-        pretendard.variable,
         'mds-button-root',
         `button__${isIconMode ? 'icon-' : ''}${type}-${onButtonTypeSizeFilter(
           type,

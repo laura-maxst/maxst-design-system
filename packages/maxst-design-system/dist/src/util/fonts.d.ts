@@ -1,1 +1,1 @@
-export declare const pretendard: import("@next/font").NextFontWithVariable;
+export declare const pretendard: import('@next/font').NextFontWithVariable;

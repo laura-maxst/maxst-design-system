@@ -8,21 +8,8 @@ import {
 } from '@storybook/addon-viewport';
 import storybookTheme from '../src/styles/storybook-theme';
 
-import { pretendard } from '../src/util/fonts';
-
 const preview: Preview = {
   decorators: [
-    // (Story) => (
-    //   <main
-    //     className={[
-    //       pretendard.className,
-    //       pretendard.variable,
-    //       'font-pretendard',
-    //     ].join(' ')}
-    //   >
-    //     <Story />
-    //   </main>
-    // ),
     withThemeByClassName({
       themes: {
         light: 'light',

@@ -1,5 +1,4 @@
 import { create } from '@storybook/theming/create';
-import { pretendard } from '../util/fonts';
 
 // storybook theme custom
 export default create({

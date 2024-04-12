@@ -1,3 +1,4 @@
+import React from 'react';
 interface SnsListProps {
     data: {
         type: 'facebook' | 'instagram' | 'youtube' | 'blog' | 'medium';
@@ -5,5 +6,5 @@ interface SnsListProps {
     }[];
     className?: string;
 }
-declare const SnsList: ({ data, className }: SnsListProps) => JSX.Element;
+declare const SnsList: ({ data, className }: SnsListProps) => React.JSX.Element;
 export { SnsList };

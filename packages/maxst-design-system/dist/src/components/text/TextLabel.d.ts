@@ -5,5 +5,5 @@ interface TextLabelProps {
     className?: string;
     children: React.ReactNode;
 }
-declare function TextLabel({ role, size, className, children }: TextLabelProps): JSX.Element;
+declare function TextLabel({ role, size, className, children }: TextLabelProps): React.JSX.Element;
 export { TextLabel };

@@ -1,3 +1,4 @@
+import React from 'react';
 import { DropDownMenuProps } from '@components/dropdown/Dropdown';
 interface PaginationProps {
     smallWidth?: boolean;
@@ -18,5 +19,5 @@ interface PaginationProps {
     onClick?: (selectIndex: number) => void;
     className?: string;
 }
-declare const Pagination: ({ smallWidth, simpleMode, size, align, totalPage, defaultPage, disabled, showFirstButton, showLastButton, showPageSizeChanger, onshowPageSizeChange, showPageOptionCustom, onClick, className, }: PaginationProps) => JSX.Element;
+declare const Pagination: ({ smallWidth, simpleMode, size, align, totalPage, defaultPage, disabled, showFirstButton, showLastButton, showPageSizeChanger, onshowPageSizeChange, showPageOptionCustom, onClick, className, }: PaginationProps) => React.JSX.Element;
 export { Pagination };

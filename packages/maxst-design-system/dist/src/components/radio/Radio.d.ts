@@ -1,3 +1,4 @@
+import React from 'react';
 interface RadioPropsType {
     id: string;
     name: string;
@@ -11,6 +12,6 @@ interface RadioPropsType {
     onClick?: (e: any) => void;
     className?: string;
 }
-declare function Radio({ id, name, state, size, disabled, label, helperText, checked, onChange, onClick, className, }: RadioPropsType): JSX.Element;
+declare function Radio({ id, name, state, size, disabled, label, helperText, checked, onChange, onClick, className, }: RadioPropsType): React.JSX.Element;
 export { Radio };
 export type { RadioPropsType };

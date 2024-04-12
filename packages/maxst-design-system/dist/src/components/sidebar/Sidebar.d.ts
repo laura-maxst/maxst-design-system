@@ -20,6 +20,6 @@ interface SidebarPropsType {
     className?: string;
     selectMenu?: string;
 }
-declare const Sidebar: ({ className, header, footer, ...props }: SidebarPropsType) => JSX.Element;
+declare const Sidebar: ({ className, header, footer, ...props }: SidebarPropsType) => React.JSX.Element;
 export { Sidebar };
 export type { SidebarPropsType };

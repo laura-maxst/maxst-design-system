@@ -25,6 +25,6 @@ interface ModalProps {
     footerCustom?: JSX.Element | React.ReactNode;
     className?: string;
 }
-declare const Modal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, footerCustom, className, }: ModalProps) => JSX.Element;
+declare const Modal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, footerCustom, className, }: ModalProps) => React.JSX.Element;
 export { Modal };
 export type { ModalProps };

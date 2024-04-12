@@ -7,6 +7,6 @@ interface TitleProps {
     className?: string;
     children: React.ReactNode;
 }
-declare function Title({ role, type, size, align, className, children, }: TitleProps): JSX.Element;
+declare function Title({ role, type, size, align, className, children, }: TitleProps): React.JSX.Element;
 export { Title };
 export type { TitleProps };

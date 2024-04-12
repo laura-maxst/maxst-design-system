@@ -10,5 +10,5 @@ interface FooterProps {
     logo: any;
     addressData?: string[];
 }
-declare const Footer: ({ termData, topRightArea, bottomRightArea, className, logo, addressData, }: FooterProps) => JSX.Element;
+declare const Footer: ({ termData, topRightArea, bottomRightArea, className, logo, addressData, }: FooterProps) => React.JSX.Element;
 export { Footer };

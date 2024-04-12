@@ -1,3 +1,4 @@
+import React from 'react';
 interface CheckboxPropsType {
     id: string;
     mode?: 'primary' | 'secondary';
@@ -12,6 +13,6 @@ interface CheckboxPropsType {
     onClick?: (e: any) => void;
     className?: string;
 }
-declare function Checkbox({ id, type, mode, state, size, disabled, label, helperText, checked, onChange, onClick, className, }: CheckboxPropsType): JSX.Element;
+declare function Checkbox({ id, type, mode, state, size, disabled, label, helperText, checked, onChange, onClick, className, }: CheckboxPropsType): React.JSX.Element;
 export { Checkbox };
 export type { CheckboxPropsType };

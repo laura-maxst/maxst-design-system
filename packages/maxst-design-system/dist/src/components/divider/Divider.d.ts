@@ -5,5 +5,5 @@ interface DividerProps {
     children?: string | React.ReactNode;
     className?: string;
 }
-declare const Divider: ({ type, direction, children, className }: DividerProps) => JSX.Element;
+declare const Divider: ({ type, direction, children, className }: DividerProps) => React.JSX.Element;
 export { Divider };

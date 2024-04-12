@@ -17,5 +17,5 @@ interface AutoCompleteType {
     onChange?: (value: any) => void;
     children: React.ReactNode;
 }
-declare function AutoComplete({ id, size, className, menuData, onClick, onChange, children, }: AutoCompleteType): JSX.Element;
+declare function AutoComplete({ id, size, className, menuData, onClick, onChange, children, }: AutoCompleteType): React.JSX.Element;
 export { AutoComplete };

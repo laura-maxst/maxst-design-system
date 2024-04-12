@@ -4,5 +4,5 @@ interface formProps {
     className?: string;
     children: React.ReactNode;
 }
-declare const Form: ({ id, className, children }: formProps) => JSX.Element;
+declare const Form: ({ id, className, children }: formProps) => React.JSX.Element;
 export { Form };

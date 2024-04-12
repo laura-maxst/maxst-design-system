@@ -12,6 +12,6 @@ type MenuItemPropsType = {
     selected?: boolean;
     className?: string;
 };
-declare const MenuItem: ({ id, label, size, iconLeft, iconRight, disabled, subLabel, onChange, onClick, selected, className, }: MenuItemPropsType) => JSX.Element;
+declare const MenuItem: ({ id, label, size, iconLeft, iconRight, disabled, subLabel, onChange, onClick, selected, className, }: MenuItemPropsType) => React.JSX.Element;
 export { MenuItem };
 export type { MenuItemPropsType };

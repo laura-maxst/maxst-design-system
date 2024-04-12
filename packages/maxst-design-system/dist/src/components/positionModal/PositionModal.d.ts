@@ -35,6 +35,6 @@ interface PositionModalProps {
     footerCustom?: JSX.Element | React.ReactNode;
     className?: string;
 }
-declare const PositionModal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, smallButtonMode, isDim, isArrow, arrowDirection, position, footerCustom, className, }: PositionModalProps) => JSX.Element;
+declare const PositionModal: ({ id, title, titleImage, titleIcon, children, size, mainButton, subButton, subtlestButton, isCloseButton, open, onClose, smallButtonMode, isDim, isArrow, arrowDirection, position, footerCustom, className, }: PositionModalProps) => React.JSX.Element;
 export { PositionModal };
 export type { PositionModalProps };

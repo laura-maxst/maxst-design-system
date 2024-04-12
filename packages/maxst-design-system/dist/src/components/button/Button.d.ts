@@ -16,5 +16,5 @@ interface ButtonProps {
     buttonWidth?: string;
     className?: string;
 }
-declare const Button: ({ id, size, children, type, state, iconLeft, iconRight, isIconMode, iconOnly, isActionMode, loading, buttonWidth, className, onClick, ...props }: ButtonProps) => JSX.Element;
+declare const Button: ({ id, size, children, type, state, iconLeft, iconRight, isIconMode, iconOnly, isActionMode, loading, buttonWidth, className, onClick, ...props }: ButtonProps) => React.JSX.Element;
 export { Button };

@@ -9,6 +9,6 @@ interface CheckboxIconPropsType {
     onChange?: (e: any) => void;
     onClick?: (e: any) => void;
 }
-declare function CheckboxIcon({ id, size, disabled, checked, checkOffIcon, checkOnIcon, onChange, onClick, }: CheckboxIconPropsType): JSX.Element;
+declare function CheckboxIcon({ id, size, disabled, checked, checkOffIcon, checkOnIcon, onChange, onClick, }: CheckboxIconPropsType): React.JSX.Element;
 export { CheckboxIcon };
 export type { CheckboxIconPropsType };

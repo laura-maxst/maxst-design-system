@@ -16,6 +16,6 @@ interface listItemProps {
     alignTop?: boolean;
     disabled?: boolean;
 }
-declare const ListItem: ({ id, title, text, iconLeft, iconRightData, avatarIcon, image, checkboxData, switchData, labelData, alignTop, disabled, }: listItemProps) => JSX.Element;
+declare const ListItem: ({ id, title, text, iconLeft, iconRightData, avatarIcon, image, checkboxData, switchData, labelData, alignTop, disabled, }: listItemProps) => React.JSX.Element;
 export { ListItem };
 export type { listItemProps };

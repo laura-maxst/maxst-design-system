@@ -6,5 +6,5 @@ interface ContainerProps {
     align?: 'left' | 'center' | 'right';
     children: React.ReactNode;
 }
-declare const Container: ({ full, className, maxWidth, align, children, ...props }: ContainerProps) => JSX.Element;
+declare const Container: ({ full, className, maxWidth, align, children, ...props }: ContainerProps) => React.JSX.Element;
 export { Container };

@@ -15,6 +15,6 @@ interface tabPropsType {
     secondaryMode?: boolean;
     className?: string;
 }
-declare function Tab({ size, widthFixed, selectValue, tabData, secondaryMode, className, }: tabPropsType): JSX.Element;
+declare function Tab({ size, widthFixed, selectValue, tabData, secondaryMode, className, }: tabPropsType): React.JSX.Element;
 export { Tab };
 export type { tabPropsType };

@@ -14,5 +14,5 @@ interface ChipProps {
     onChange?: (id: string, checked?: boolean) => void;
     onClick?: (id: string, checked?: boolean) => void;
 }
-declare const Chip: ({ id, type, size, state, action, checked, iconCheck, iconLeft, className, children, onChange, onClick, disabled, ...props }: ChipProps) => JSX.Element;
+declare const Chip: ({ id, type, size, state, action, checked, iconCheck, iconLeft, className, children, onChange, onClick, disabled, ...props }: ChipProps) => React.JSX.Element;
 export { Chip };

@@ -9,6 +9,6 @@ interface TooltipProps {
     mode?: 'dark-mode' | 'light-mode';
     className?: string;
 }
-declare const Tooltip: ({ title, text, customContent, children, align, arrow, mode, className, }: TooltipProps) => JSX.Element;
+declare const Tooltip: ({ title, text, customContent, children, align, arrow, mode, className, }: TooltipProps) => React.JSX.Element;
 export { Tooltip };
 export type { TooltipProps };

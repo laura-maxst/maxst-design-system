@@ -7,5 +7,5 @@ interface ButtonGropProps {
     buttonWidth?: string;
     className?: string;
 }
-declare const ButtonGroup: ({ children, fullWidth, align, direction, buttonWidth, className, }: ButtonGropProps) => JSX.Element;
+declare const ButtonGroup: ({ children, fullWidth, align, direction, buttonWidth, className, }: ButtonGropProps) => React.JSX.Element;
 export { ButtonGroup };

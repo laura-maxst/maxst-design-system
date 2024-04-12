@@ -11,6 +11,7 @@ import svg from 'rollup-plugin-svg';
 import del from 'rollup-plugin-delete';
 import sass from 'rollup-plugin-sass';
 import copy from 'rollup-plugin-copy';
+import json from '@rollup/plugin-json';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 const external = [
@@ -41,6 +42,7 @@ const config = {
       exclude: ['src/stories/**', 'src/pages/**'],
     }),
     typescript({ tsconfig: './tsconfig.json', clean: true }),
+    json(),
     sass({
       insert: true,
     }),

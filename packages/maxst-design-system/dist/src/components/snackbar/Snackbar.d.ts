@@ -12,6 +12,6 @@ interface SnackbarProps {
     onClose: () => void;
     className?: string;
 }
-declare const Snackbar: ({ contents, closeButton, actionButtonData, iconLeft, align, open, onClose, className, }: SnackbarProps) => JSX.Element;
+declare const Snackbar: ({ contents, closeButton, actionButtonData, iconLeft, align, open, onClose, className, }: SnackbarProps) => React.JSX.Element;
 export { Snackbar };
 export type { SnackbarProps };

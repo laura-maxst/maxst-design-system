@@ -11,5 +11,5 @@ interface BadgeProps {
     onClick?: () => void;
     className?: string;
 }
-declare const Badge: ({ type, size, align, color, status, children, number, icon, onClick, className, }: BadgeProps) => JSX.Element;
+declare const Badge: ({ type, size, align, color, status, children, number, icon, onClick, className, }: BadgeProps) => React.JSX.Element;
 export { Badge };

@@ -7,5 +7,5 @@ interface TextProps {
     className?: string;
     children: React.ReactNode;
 }
-declare function Text({ role, type, size, innerHtml, className, children, }: TextProps): JSX.Element;
+declare function Text({ role, type, size, innerHtml, className, children, }: TextProps): React.JSX.Element;
 export { Text };

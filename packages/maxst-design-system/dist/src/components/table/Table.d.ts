@@ -1,3 +1,4 @@
+import React from 'react';
 interface TableProps {
     id?: string;
     size?: 'l' | 's';
@@ -21,5 +22,5 @@ interface TableProps {
     onCheck?: (rowdata: any, rowid: any) => void;
     className?: string;
 }
-declare const Table: ({ id, size, align, columnData, rowData, tableMinWidth, verticalHeadingMode, leftHeadRow, checkMode, isRowCheck, onClick, onCheck, className, }: TableProps) => JSX.Element;
+declare const Table: ({ id, size, align, columnData, rowData, tableMinWidth, verticalHeadingMode, leftHeadRow, checkMode, isRowCheck, onClick, onCheck, className, }: TableProps) => React.JSX.Element;
 export { Table };

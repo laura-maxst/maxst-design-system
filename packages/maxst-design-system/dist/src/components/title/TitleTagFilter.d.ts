@@ -4,5 +4,5 @@ interface TitleProps {
     className: string;
     children: React.ReactNode;
 }
-declare const TitleTagFilter: ({ role, className, children }: TitleProps) => JSX.Element;
+declare const TitleTagFilter: ({ role, className, children }: TitleProps) => React.JSX.Element;
 export default TitleTagFilter;

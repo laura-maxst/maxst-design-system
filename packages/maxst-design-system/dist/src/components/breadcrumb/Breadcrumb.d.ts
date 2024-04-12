@@ -23,5 +23,5 @@ interface BreadcrumbProps {
     }[];
     className?: string;
 }
-declare const Breadcrumb: ({ menuData, moreButton, thisPage, homeButton, className, }: BreadcrumbProps) => JSX.Element;
+declare const Breadcrumb: ({ menuData, moreButton, thisPage, homeButton, className, }: BreadcrumbProps) => React.JSX.Element;
 export { Breadcrumb };

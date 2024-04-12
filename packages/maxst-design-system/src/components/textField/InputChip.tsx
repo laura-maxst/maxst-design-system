@@ -6,7 +6,6 @@ import {
   CheckCircleLineBoldIcon,
 } from '@maxst-designsystem/icons';
 import { Chip } from '@components/chip';
-import { pretendard } from '@util/fonts';
 
 const InputChip = forwardRef(function InputChip(
   {
@@ -143,8 +142,6 @@ const InputChip = forwardRef(function InputChip(
   return (
     <div
       className={[
-        pretendard.className,
-        pretendard.variable,
         'mds-input-root',
         `textfield textfield__text-${size ? size : 'l'}-${
           (disabled && 'disabled') || thisState

@@ -1,6 +1,47 @@
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../../public/font/Pretendard-Bold.eot');
+  src: url('../../../../public/font/Pretendard-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../../public/font/Pretendard-Bold.woff2') format('woff2'),
+    url('../../../../public/font/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../../../public/font/Pretendard-SemiBold.eot');
+  src: url('../../../../public/font/Pretendard-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../../public/font/Pretendard-SemiBold.woff2') format('woff2'),
+    url('../../../../public/font/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../../../public/font/Pretendard-Medium.eot');
+  src: url('../../../../public/font/Pretendard-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../../public/font/Pretendard-Medium.woff2') format('woff2'),
+    url('../../../../public/font/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../../public/font/Pretendard-Regular.eot');
+  src: url('../../../../public/font/Pretendard-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../../public/font/Pretendard-Regular.woff2') format('woff2'),
+    url('../../../../public/font/Pretendard-Regular.woff') format('woff');
+}
+
 @mixin font-common {
   font: inherit;
-  font-family: var(--font-pretendard), 'Pretendard', sans-serif !important;
+  font-family: 'Pretendard', sans-serif !important;
   vertical-align: baseline;
   color: semantic-color('text', 'default');
   white-space: break-spaces;

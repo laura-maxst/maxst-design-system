@@ -7,11 +7,6 @@
       format('embedded-opentype'),
     url('../../../../fonts/Pretendard-Bold.woff2') format('woff2'),
     url('../../../../fonts/Pretendard-Bold.woff') format('woff');
-  src: url('../../../../public/fonts/Pretendard-Bold.eot');
-  src: url('../../../../public/fonts/Pretendard-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../../../public/fonts/Pretendard-Bold.woff2') format('woff2'),
-    url('../../../../public/fonts/Pretendard-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Pretendard';
@@ -22,11 +17,6 @@
       format('embedded-opentype'),
     url('../../../../fonts/Pretendard-SemiBold.woff2') format('woff2'),
     url('../../../../fonts/Pretendard-SemiBold.woff') format('woff');
-  src: url('../../../../public/fonts/Pretendard-SemiBold.eot');
-  src: url('../../../../public/fonts/Pretendard-SemiBold.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../../../public/fonts/Pretendard-SemiBold.woff2') format('woff2'),
-    url('../../../../public/fonts/Pretendard-SemiBold.woff') format('woff');
 }
 @font-face {
   font-family: 'Pretendard';
@@ -37,11 +27,6 @@
       format('embedded-opentype'),
     url('../../../../fonts/Pretendard-Medium.woff2') format('woff2'),
     url('../../../../fonts/Pretendard-Medium.woff') format('woff');
-  src: url('../../../../public/fonts/Pretendard-Medium.eot');
-  src: url('../../../../public/fonts/Pretendard-Medium.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../../../public/fonts/Pretendard-Medium.woff2') format('woff2'),
-    url('../../../../public/fonts/Pretendard-Medium.woff') format('woff');
 }
 @font-face {
   font-family: 'Pretendard';
@@ -52,11 +37,6 @@
       format('embedded-opentype'),
     url('../../../../fonts/Pretendard-Regular.woff2') format('woff2'),
     url('../../../../fonts/Pretendard-Regular.woff') format('woff');
-  src: url('../../../../public/fonts/Pretendard-Regular.eot');
-  src: url('../../../../public/fonts/Pretendard-Regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('../../../../public/fonts/Pretendard-Regular.woff2') format('woff2'),
-    url('../../../../public/fonts/Pretendard-Regular.woff') format('woff');
 }
 
 @mixin font-common {

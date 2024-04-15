@@ -1,0 +1,59 @@
+.loading-wrap {
+  .lf-player-container {
+    display: inline-block;
+  }
+}
+
+.loading_page-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: semantic-color('dimmed', '60');
+  }
+}
+
+$loadingSize: 'l', 'm', 's';
+
+@mixin loadingCase($size) {
+  .loading-#{$size} {
+    @if ($size == 'l') {
+      .lf-player-container {
+        & > div {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    } @else if ($size == 'm') {
+      .lf-player-container {
+        & > div {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    } @else if ($size == 's') {
+      .lf-player-container {
+        & > div {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+}
+
+@each $size in $loadingSize {
+  @include loadingCase($size);
+}

@@ -1056,6 +1056,10 @@ body {
     max-width: 240px;
   }
 }
+//loading
+.loading-sample-wrap .mds-box-group {
+  align-items: center;
+}
 
 @include media-tablet-s {
   .color-box-wrap {

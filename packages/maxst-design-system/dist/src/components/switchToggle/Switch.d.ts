@@ -11,7 +11,7 @@ interface SwitchProps {
     helperText?: string;
     checkOffIcon?: React.ReactNode;
     checkOnIcon?: React.ReactNode;
-    onClick?: (e: any) => void;
+    onClick?: (data: any) => void;
 }
 declare const Switch: ({ id, iconMode, size, state, label, className, checked, disabled, helperText, checkOffIcon, checkOnIcon, onClick, }: SwitchProps) => React.JSX.Element;
 export { Switch };

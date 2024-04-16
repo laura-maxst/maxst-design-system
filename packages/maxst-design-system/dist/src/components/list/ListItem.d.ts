@@ -6,7 +6,7 @@ interface listItemProps {
     iconLeft?: React.ReactNode;
     iconRightData?: {
         icon: React.ReactNode;
-        onClick: () => void;
+        onClick: (e: any) => void;
     };
     avatarIcon?: React.ReactNode;
     image?: React.ReactNode;

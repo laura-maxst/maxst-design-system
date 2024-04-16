@@ -12,8 +12,8 @@ interface CheckboxGroupProps {
     helperText?: string;
     align?: 'left' | 'right';
     direction?: 'vertical' | 'horizontal';
-    onChange?: (e: any) => void;
-    onClick?: (e: any) => void;
+    onChange?: (data: any) => void;
+    onClick?: (data: any) => void;
     options: CheckboxPropsType[];
     className?: string;
 }

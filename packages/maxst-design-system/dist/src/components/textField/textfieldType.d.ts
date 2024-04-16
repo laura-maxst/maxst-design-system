@@ -18,7 +18,7 @@ export interface textFieldProps {
     iconLeft?: React.ReactNode;
     iconRight?: React.ReactNode;
     onClick?: (e: any) => void;
-    onChange?: (e: any) => void;
+    onChange?: (value: any) => void;
     renderValue?: string | React.ReactNode | JSX.Element | any;
     readOnly?: boolean;
     minHeight?: number;
@@ -40,7 +40,7 @@ export interface InputChipType {
     minChipLength?: number;
     maxChipLength?: number;
     onClick?: (e: any) => void;
-    onChange?: (e: any) => void;
+    onChange?: (data: any) => void;
     className?: string;
     chipColor?: 'default' | 'tertiary' | 'color-mint' | 'color-bluegray' | 'color-magenta' | 'color-purple' | 'color-blue';
     chipValueData?: {

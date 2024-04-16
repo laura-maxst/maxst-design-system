@@ -15,6 +15,7 @@ export { Dropdown } from './components/dropdown';
 export { Footer } from './components/footer';
 export { Form } from './components/form';
 export { List } from './components/list';
+export { Loading, LoadingPage } from './components/loading';
 export { Menu } from './components/menu';
 export { Modal } from './components/modal';
 export { Pagination } from './components/pagination';

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
-import whiteLoadingData from '@assets/lotties/loding_motion_white.json';
-import blackLoadingData from '@assets/lotties/loding_motion_black.json';
-import mintLoadingData from '@assets/lotties/loding_motion_mint.json';
+import whiteLoadingData from './data/loding_motion_white.json';
+import blackLoadingData from './data/loding_motion_black.json';
+import mintLoadingData from './data/loding_motion_mint.json';
 
 interface loadingProps {
   id?: string;

@@ -84,8 +84,8 @@ const meta: Meta<typeof TextField> = {
 export default meta;
 type Story = StoryObj<typeof TextField>;
 
-const onChange = (e: any) => {
-  console.log('onchange', e);
+const onChange = (data: any) => {
+  console.log('onchange', data);
 };
 const onClick = (e: any) => {
   console.log('onclick', e);

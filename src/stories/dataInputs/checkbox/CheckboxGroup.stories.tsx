@@ -28,7 +28,22 @@ const meta: Meta<typeof CheckboxGroup> = {
       },
     },
     options: {
-      description: 'checkbox props를 참조하여 Object 배열로 전달합니다.',
+      description: `checkbox props를 참조하여 Object 배열로 전달합니다.\n
+      {
+        id: string;
+        mode?: 'primary' | 'secondary';
+        type?: 'selected' | 'indeterminate';
+        state?: 'default' | 'pressed' | 'disabled' | 'error';
+        size: 'l' | 's';
+        label?: string;
+        helperText?: string;
+        disabled?: boolean;
+        checked?: boolean;
+        onChange?: (e: any) => void;
+        onClick?: (e: any) => void;
+        className?: string;
+      }[]
+      `,
       control: {
         type: null,
       },
@@ -37,15 +52,13 @@ const meta: Meta<typeof CheckboxGroup> = {
       description: '전체 선택 유무를 선택할 수 있습니다.',
     },
     onChange: {
-      description:
-        '`event.target`값과 check된 `id`값을 배열로 return 받습니다.',
+      description: '`event 객체`와 check된 `id`값을 배열로 return 받습니다.',
       control: {
         type: null,
       },
     },
     onClick: {
-      description:
-        '`event.target`값과 check된 `id`값을 배열로 return 받습니다.',
+      description: '`event 객체`와 check된 `id`값을 배열로 return 받습니다.',
       control: {
         type: null,
       },
@@ -56,11 +69,11 @@ const meta: Meta<typeof CheckboxGroup> = {
 export default meta;
 type Story = StoryObj<typeof CheckboxGroup>;
 
-const onChangeAll = (e: any) => {
-  console.log('onchange target + values', e);
+const onChangeAll = (data: any) => {
+  console.log('onchange target + values', data);
 };
-const onClickAll = (e: any) => {
-  console.log('onclick target + values', e);
+const onClickAll = (data: any) => {
+  console.log('onclick target + values', data);
 };
 
 export const CheckboxGroupDefault: Story = {
@@ -83,8 +96,8 @@ export const CheckboxGroupDefault: Story = {
       disabled={args.disabled}
       checked={args.checked}
       controlMode={args.controlMode}
-      onChange={(e) => onChangeAll(e)}
-      onClick={(e) => onClickAll(e)}
+      onChange={(data) => onChangeAll(data)}
+      onClick={(data) => onClickAll(data)}
       options={checkboxItemList}
       direction={args.direction}
     />

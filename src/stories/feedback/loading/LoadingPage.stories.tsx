@@ -3,7 +3,7 @@ import { LoadingPage } from '@components/loading';
 import LoadingSample from './LoadingSample';
 
 const meta: Meta<typeof LoadingPage> = {
-  title: 'Feedback/Loading/LoadingPage',
+  title: 'Feedback/LoadingPage',
   component: LoadingPage,
   tags: ['autodocs'],
   parameters: {

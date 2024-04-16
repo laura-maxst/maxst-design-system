@@ -38,13 +38,13 @@ const meta: Meta<typeof CheckboxIcon> = {
       },
     },
     onChange: {
-      description: '`event.target`값을 return 받습니다.',
+      description: '`event 객체`를 return 받습니다.',
       control: {
         type: null,
       },
     },
     onClick: {
-      description: '`event.target`값을 return 받습니다.',
+      description: '`event 객체`를 return 받습니다.',
       control: {
         type: null,
       },

@@ -27,8 +27,8 @@ const RadioGroup = ({
   disabled,
   label,
   helperText,
-  align,
-  direction,
+  align = 'left',
+  direction = 'horizontal',
   onClick,
   onChange,
   options,
@@ -55,7 +55,7 @@ const RadioGroup = ({
     if (disabled || state === 'disabled') {
       return;
     }
-    setCheckItemList(e.id);
+    setCheckItemList(e.target.id);
     if (!onClick) {
       return;
     }

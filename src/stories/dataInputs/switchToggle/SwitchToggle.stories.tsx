@@ -19,7 +19,8 @@ const meta: Meta<typeof Switch> = {
   },
   argTypes: {
     onClick: {
-      description: 'check 여부(`value`)를 `boolean` type으로 return 받습니다.',
+      description:
+        '`event 객체`와 check 여부(`value : boolean`)를 담은 배열을 return 받습니다.',
       control: {
         type: null,
       },

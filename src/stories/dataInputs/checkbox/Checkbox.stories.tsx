@@ -28,13 +28,13 @@ const meta: Meta<typeof Checkbox> = {
         '단독으로 쓰일때는 `selected`로 사용됩니다. `indeterminate`는 CheckboxGroup에서 사용됩니다.',
     },
     onChange: {
-      description: '`event.target`값을 return 받습니다.',
+      description: '`event 객체`를 return 받습니다.',
       control: {
         type: null,
       },
     },
     onClick: {
-      description: '`event.target`값을 return 받습니다.',
+      description: '`event 객체`를 return 받습니다.',
       control: {
         type: null,
       },
@@ -46,10 +46,10 @@ export default meta;
 type Story = StoryObj<typeof Checkbox>;
 
 const onChange = (e: any) => {
-  console.log('target', e);
+  console.log('onChange', e);
 };
 const onClick = (e: any) => {
-  console.log('target', e);
+  console.log('onClick', e);
 };
 
 export const CheckboxDefaultPrimary: Story = {

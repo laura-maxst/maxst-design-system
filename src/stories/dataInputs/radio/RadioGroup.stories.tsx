@@ -8,19 +8,32 @@ const meta: Meta<typeof RadioGroup> = {
   tags: ['autodocs'],
   argTypes: {
     options: {
-      description: 'radio props를 참조하여 Object 배열로 지정합니다.',
+      description: `radio props를 참조하여 Object 배열로 지정합니다.\n
+      {
+        id: string;
+        name: string;
+        state?: 'default' | 'pressed' | 'disabled' | 'error';
+        size: 'l' | 's';
+        label: string;
+        helperText?: string;
+        disabled?: boolean;
+        checked?: boolean;
+        onChange?: (e: any) => void;
+        onClick?: (e: any) => void;
+        className?: string;
+      }[]`,
       control: {
         type: null,
       },
     },
     onChange: {
-      description: '`event.target`값을 return 받습니다.',
+      description: '`event 객체`를 return 받습니다.',
       control: {
         type: null,
       },
     },
     onClick: {
-      description: '`event.target`값을 return 받습니다.',
+      description: '`event 객체`를 return 받습니다.',
       control: {
         type: null,
       },

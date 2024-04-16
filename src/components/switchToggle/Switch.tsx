@@ -17,7 +17,7 @@ interface SwitchProps {
   helperText?: string;
   checkOffIcon?: React.ReactNode;
   checkOnIcon?: React.ReactNode;
-  onClick?: (e: any) => void;
+  onClick?: (data: any) => void;
 }
 
 const Switch = ({
@@ -43,7 +43,7 @@ const Switch = ({
       if (!onClick) {
         return;
       }
-      onClick(e.target.checked);
+      onClick([e, e.target.checked]);
     }
   };
 

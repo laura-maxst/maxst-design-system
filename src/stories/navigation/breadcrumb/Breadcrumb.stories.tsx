@@ -16,8 +16,21 @@ const meta: Meta<typeof Breadcrumb> = {
   },
   argTypes: {
     menuData: {
-      description:
-        'menu item별로 `onMovePage` props로 링크 이동 이벤트를 구현할 수 있습니다. \nsub menu 설정시 dropdown으로 sub menu가 구현되며 `onMoveSubPage`로 이벤트를 연결할 수 있습니다.',
+      description: `menu item별로 \`onMovePage()\` props로 링크 이동 이벤트를 구현할 수 있습니다. \nsub menu 설정시 dropdown으로 sub menu가 구현되며 \`onMoveSubPage()\`로 이벤트를 연결할 수 있습니다.\n
+        {
+          id: string;
+          label: string;
+          icon?: React.ReactNode;
+          disabled?: boolean;
+          onMovePage?: () => void;
+          onMoveSubPage?: (targetData: object) => void;
+          subMenu?: {
+            id: string;
+            label: string;
+            icon?: React.ReactNode;
+            disabled?: boolean;
+          }[]
+        `,
     },
     moreButton: {
       description: 'menu가 길어 줄임이 필요할 때 설정합니다.',

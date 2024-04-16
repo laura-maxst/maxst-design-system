@@ -15,8 +15,8 @@ interface CheckboxGroupProps {
   helperText?: string;
   align?: 'left' | 'right';
   direction?: 'vertical' | 'horizontal';
-  onChange?: (e: any) => void;
-  onClick?: (e: any) => void;
+  onChange?: (data: any) => void;
+  onClick?: (data: any) => void;
   options: CheckboxPropsType[];
   className?: string;
 }
@@ -31,8 +31,8 @@ const CheckboxGroup = ({
   checked,
   controlMode,
   helperText,
-  align,
-  direction,
+  align = 'left',
+  direction = 'horizontal',
   onClick,
   onChange,
   options,
@@ -53,10 +53,10 @@ const CheckboxGroup = ({
     }
     const checkItems = [...checkItemList];
     if (type !== 'all') {
-      if (checkItems.includes(e.id)) {
-        checkItems.splice(checkItems.indexOf(e.id), 1);
+      if (checkItems.includes(e.target.id)) {
+        checkItems.splice(checkItems.indexOf(e.target.id), 1);
       } else {
-        checkItems.push(e.id);
+        checkItems.push(e.target.id);
       }
     }
     setCheckItemList(checkItems);
@@ -80,12 +80,12 @@ const CheckboxGroup = ({
     if (!onChange) {
       return;
     }
-    onChange([e, e.checked ? optionList : []]);
+    onChange([e, !checkAll ? optionList : []]);
 
     if (!onClick) {
       return;
     }
-    onClick([e, e.checked ? optionList : []]);
+    onClick([e, !checkAll ? optionList : []]);
   };
 
   const onCheckedOne = (e: any) => {
@@ -93,10 +93,10 @@ const CheckboxGroup = ({
       return;
     }
     const checkItems = [...checkItemList];
-    if (checkItems.includes(e.id)) {
-      checkItems.splice(checkItems.indexOf(e.id), 1);
+    if (checkItems.includes(e.target.id)) {
+      checkItems.splice(checkItems.indexOf(e.target.id), 1);
     } else {
-      checkItems.push(e.id);
+      checkItems.push(e.target.id);
     }
     setCheckItemList(checkItems);
     if (checkItems.length === 0) {

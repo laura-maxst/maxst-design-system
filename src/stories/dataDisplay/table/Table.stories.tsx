@@ -98,7 +98,7 @@ const MoreComponent = () => {
 };
 
 const onClickrow = (rowdata: any, id: any) => {
-  console.log('row data', rowdata, 'id', id);
+  console.log('row click data', rowdata, 'id', id);
 };
 
 const onClickCheck = (rowdata: any, id: any) => {

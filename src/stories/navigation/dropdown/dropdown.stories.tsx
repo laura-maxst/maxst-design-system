@@ -256,11 +256,11 @@ const menuData2 = [
   },
 ];
 const onClickMenu = (data: any) => {
-  // console.log('click data', data);
+  console.log('click data', data);
 };
 
 const onChangeMenu = (data: any) => {
-  // console.log('change data', data);
+  console.log('change data', data);
 };
 
 export const DropdownWithInput: Story = {

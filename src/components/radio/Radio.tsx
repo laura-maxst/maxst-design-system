@@ -40,7 +40,7 @@ function Radio({
     if (!onChange) {
       return;
     }
-    onChange(e.target);
+    onChange(e);
     return;
   };
 
@@ -63,7 +63,7 @@ function Radio({
     if (!onClick) {
       return;
     }
-    onClick(e.target);
+    onClick(e);
   };
 
   useEffect(() => {

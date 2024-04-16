@@ -48,7 +48,7 @@ const meta: Meta<typeof Button> = {
       description: '지정값 없으면 button으로 지정됩니다.',
     },
     onClick: {
-      description: 'event 객체를 반환받습니다.',
+      description: '`event 객체`를 반환받습니다.',
     },
     loading: {
       description:

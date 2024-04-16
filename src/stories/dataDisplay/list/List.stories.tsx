@@ -20,8 +20,22 @@ const meta: Meta<typeof List> = {
   },
   argTypes: {
     listItemData: {
-      description:
-        'iconRight는 custom이 가능합니다. \niconRightData로 icon과 event를 설정할 수 있습니다.\ncheckboxData, labelData, switchData에 onClick event를 담아 보내서 값을 return 받습니다.\n좌측 요소와 우측 요소는 하나씩만 표출되도록 지원합니다.',
+      description: `iconRight는 custom이 가능합니다. \niconRightData로 icon과 event를 설정할 수 있습니다.\ncheckboxData, labelData, switchData에 onClick event를 담아 보내서 값을 return 받습니다.\n좌측 요소와 우측 요소는 하나씩만 표출되도록 지원합니다.\n
+        {
+          id: string;
+          title: string;
+          text?: string;
+          iconLeft?: React.ReactNode;
+          iconRightData?: { icon: React.ReactNode; onClick: (e: any) => void };
+          avatarIcon?: React.ReactNode;
+          image?: React.ReactNode;
+          checkboxData?: any;
+          switchData?: any;
+          labelData?: any;
+          alignTop?: boolean;
+          disabled?: boolean;
+        }[]
+        `,
     },
     alignTop: {
       description:
@@ -41,15 +55,15 @@ const onClickswitch = (value: boolean) => {
 };
 
 const onClickLabelButton = (e: any) => {
-  console.log(e.target);
+  console.log(e);
 };
-const onClickRightIcon = () => {
-  console.log('right icon click');
+const onClickRightIcon = (e: any) => {
+  console.log('right icon click', e);
 };
 
 const listItemData = [
   {
-    id: 'list-01',
+    id: 'list-00',
     title: 'List',
     text: 'Supporting text that is long enough to fill up multiple lines',
     iconLeft: <UserLineIcon />,

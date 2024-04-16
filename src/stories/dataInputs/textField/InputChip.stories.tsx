@@ -28,7 +28,7 @@ const meta: Meta<typeof InputChip> = {
       description: '입력된 chip data를(`string[]`)형태로 return 받습니다.',
     },
     onClick: {
-      description: '해당 이벤트 객체를 return 받습니다.',
+      description: '해당 이벤트 객체(입력Input)를 return 받습니다.',
     },
     minInputLength: {
       description: 'chip 생성시 최소로 입력 해야 하는 문구의 수를 지정합니다.',

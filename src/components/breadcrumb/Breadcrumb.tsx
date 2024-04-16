@@ -29,20 +29,7 @@ interface BreadcrumbProps {
     icon?: React.ReactNode;
     onMoveHome?: () => void;
   };
-  menuData: {
-    id: string;
-    label: string;
-    icon?: React.ReactNode;
-    disabled?: boolean;
-    onMovePage?: () => void;
-    onMoveSubPage?: (targetData: object) => void;
-    subMenu?: {
-      id: string;
-      label: string;
-      icon?: React.ReactNode;
-      disabled?: boolean;
-    }[];
-  }[];
+  menuData: BreadcrumItemProps[];
   className?: string;
 }
 

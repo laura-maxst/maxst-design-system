@@ -260,7 +260,7 @@ const Table = ({
                         <Checkbox
                           id={String(rowItem.id)}
                           size={'s'}
-                          onClick={(e) => onCheckedOne(rowItem, e.id)}
+                          onClick={(e) => onCheckedOne(rowItem, e.target.id)}
                           checked={checkItemList.includes(rowItem.id)}
                         />
                       </td>

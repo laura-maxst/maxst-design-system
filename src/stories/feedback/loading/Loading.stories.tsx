@@ -4,7 +4,7 @@ import { BoxGroup } from '@components/boxGroup';
 import { Title } from '@components/title';
 
 const meta: Meta<typeof Loading> = {
-  title: 'Feedback/Loading/Loading',
+  title: 'Feedback/Loading',
   component: Loading,
   tags: ['autodocs'],
   parameters: {

@@ -13,7 +13,7 @@ interface loadingProps {
 }
 const LoadingPage = ({
   id,
-  color = 'mint',
+  color = 'white',
   size = 'l',
   className,
   isDim = true,

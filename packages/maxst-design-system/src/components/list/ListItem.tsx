@@ -10,7 +10,7 @@ interface listItemProps {
   title: string;
   text?: string;
   iconLeft?: React.ReactNode;
-  iconRightData?: { icon: React.ReactNode; onClick: () => void };
+  iconRightData?: { icon: React.ReactNode; onClick: (e: any) => void };
   avatarIcon?: React.ReactNode;
   image?: React.ReactNode;
   checkboxData?: any;
@@ -40,7 +40,10 @@ const ListItem = ({
     return <div className={`mds-list__${type}-box`}>{node}</div>;
   };
 
-  const drawIconWithEvent = (icon: React.ReactNode, onClick: () => void) => {
+  const drawIconWithEvent = (
+    icon: React.ReactNode,
+    onClick: (e: any) => void,
+  ) => {
     return (
       <div className={`mds-list__icon-box icon-with-event`}>
         <Button

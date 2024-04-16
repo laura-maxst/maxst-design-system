@@ -46,7 +46,7 @@ function Checkbox({
     if (!onChange) {
       return;
     }
-    onChange(e.target);
+    onChange(e);
     return;
   };
 
@@ -69,7 +69,7 @@ function Checkbox({
     if (!onClick) {
       return;
     }
-    onClick(e.target);
+    onClick(e);
   };
 
   useEffect(() => {

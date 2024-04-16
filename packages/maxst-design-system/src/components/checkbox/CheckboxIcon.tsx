@@ -30,7 +30,7 @@ function CheckboxIcon({
     if (!onChange) {
       return;
     }
-    onChange(e.target);
+    onChange(e);
     return;
   };
 
@@ -48,7 +48,7 @@ function CheckboxIcon({
     if (!onClick) {
       return;
     }
-    onClick(e.target);
+    onClick(e);
   };
 
   useEffect(() => {

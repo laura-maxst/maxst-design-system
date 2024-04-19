@@ -1,5 +1,5 @@
 import React from 'react';
-interface TooltipProps {
+interface TooltipPropsType {
     title?: string;
     text?: string;
     children: React.ReactNode;
@@ -9,6 +9,6 @@ interface TooltipProps {
     mode?: 'dark-mode' | 'light-mode';
     className?: string;
 }
-declare const Tooltip: ({ title, text, customContent, children, align, arrow, mode, className, }: TooltipProps) => React.JSX.Element;
+declare const Tooltip: ({ title, text, customContent, children, align, arrow, mode, className, }: TooltipPropsType) => React.JSX.Element;
 export { Tooltip };
-export type { TooltipProps };
+export type { TooltipPropsType };

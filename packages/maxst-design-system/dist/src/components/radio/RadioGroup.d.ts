@@ -1,6 +1,6 @@
 import React from 'react';
 import { RadioPropsType } from '@components/radio';
-interface RadioGroupProps {
+interface RadioGroupPropsType {
     id: string;
     name: string;
     state?: 'default' | 'pressed' | 'disabled' | 'error';
@@ -15,5 +15,5 @@ interface RadioGroupProps {
     options: RadioPropsType[];
     className?: string;
 }
-declare const RadioGroup: ({ id, name, state, size, disabled, label, helperText, align, direction, onClick, onChange, options, className, }: RadioGroupProps) => React.JSX.Element;
+declare const RadioGroup: ({ id, name, state, size, disabled, label, helperText, align, direction, onClick, onChange, options, className, }: RadioGroupPropsType) => React.JSX.Element;
 export { RadioGroup };

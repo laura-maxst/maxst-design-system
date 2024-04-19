@@ -1,5 +1,5 @@
 import React from 'react';
-import { DropDownMenuProps } from '@components/dropdown/Dropdown';
+import { DropDownMenuPropsType } from '@components/dropdown/Dropdown';
 interface PaginationProps {
     smallWidth?: boolean;
     simpleMode?: boolean;
@@ -11,7 +11,7 @@ interface PaginationProps {
     showFirstButton?: boolean;
     showLastButton?: boolean;
     showPageSizeChanger?: boolean;
-    onshowPageSizeChange?: (data: DropDownMenuProps) => void;
+    onshowPageSizeChange?: (data: DropDownMenuPropsType) => void;
     showPageOptionCustom?: {
         id: string;
         label: string;

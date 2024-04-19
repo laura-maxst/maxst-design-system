@@ -1,5 +1,5 @@
 import React from 'react';
-interface BreadcrumItemProps {
+interface BreadcrumItemPropsType {
     id: string;
     label: string;
     icon?: React.ReactNode;
@@ -13,7 +13,7 @@ interface BreadcrumItemProps {
         disabled?: boolean;
     }[];
 }
-interface BreadcrumbProps {
+interface BreadcrumbPropsType {
     moreButton?: boolean;
     thisPage: string;
     homeButton?: {
@@ -21,8 +21,8 @@ interface BreadcrumbProps {
         icon?: React.ReactNode;
         onMoveHome?: () => void;
     };
-    menuData: BreadcrumItemProps[];
+    menuData: BreadcrumItemPropsType[];
     className?: string;
 }
-declare const Breadcrumb: ({ menuData, moreButton, thisPage, homeButton, className, }: BreadcrumbProps) => React.JSX.Element;
+declare const Breadcrumb: ({ menuData, moreButton, thisPage, homeButton, className, }: BreadcrumbPropsType) => React.JSX.Element;
 export { Breadcrumb };

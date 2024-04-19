@@ -1,7 +1,7 @@
 import React from 'react';
-interface spinnerProps {
+interface spinnerPropsType {
     color?: 'white' | 'black';
     className?: string;
 }
-declare const Spinner: ({ color, className }: spinnerProps) => React.JSX.Element;
+declare const Spinner: ({ color, className }: spinnerPropsType) => React.JSX.Element;
 export { Spinner };

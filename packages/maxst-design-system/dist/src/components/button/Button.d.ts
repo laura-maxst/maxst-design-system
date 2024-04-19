@@ -1,5 +1,5 @@
 import React from 'react';
-interface ButtonProps {
+interface ButtonPropsType {
     id?: string;
     size: 'xl' | 'l' | 'm' | 's' | 'xs';
     onClick?: (e: any) => void;
@@ -16,5 +16,5 @@ interface ButtonProps {
     buttonWidth?: string;
     className?: string;
 }
-declare const Button: ({ id, size, children, type, state, iconLeft, iconRight, isIconMode, iconOnly, isActionMode, loading, buttonWidth, className, onClick, ...props }: ButtonProps) => React.JSX.Element;
+declare const Button: ({ id, size, children, type, state, iconLeft, iconRight, isIconMode, iconOnly, isActionMode, loading, buttonWidth, className, onClick, ...props }: ButtonPropsType) => React.JSX.Element;
 export { Button };

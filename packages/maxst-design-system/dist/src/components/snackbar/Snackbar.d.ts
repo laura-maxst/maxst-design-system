@@ -1,5 +1,5 @@
 import React from 'react';
-interface SnackbarProps {
+interface SnackbarPropsType {
     contents: string;
     closeButton?: boolean;
     actionButtonData?: {
@@ -12,6 +12,6 @@ interface SnackbarProps {
     onClose: () => void;
     className?: string;
 }
-declare const Snackbar: ({ contents, closeButton, actionButtonData, iconLeft, align, open, onClose, className, }: SnackbarProps) => React.JSX.Element;
+declare const Snackbar: ({ contents, closeButton, actionButtonData, iconLeft, align, open, onClose, className, }: SnackbarPropsType) => React.JSX.Element;
 export { Snackbar };
-export type { SnackbarProps };
+export type { SnackbarPropsType };

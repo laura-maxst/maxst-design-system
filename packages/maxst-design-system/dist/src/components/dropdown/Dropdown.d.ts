@@ -1,5 +1,5 @@
 import React from 'react';
-type DropDownMenuProps = {
+type DropDownMenuPropsType = {
     id: string;
     label: string;
     iconLeft?: JSX.Element | React.ReactNode;
@@ -7,16 +7,16 @@ type DropDownMenuProps = {
     disabled?: boolean;
     subLabel?: string;
     size?: 'l' | 's';
-    subItemData?: DropDownMenuProps[];
+    subItemData?: DropDownMenuPropsType[];
 };
-interface DropdownProps {
+interface DropdownPropsType {
     id: string;
     size?: 'l' | 's';
     align?: 'left' | 'right' | 'center';
-    menuData: DropDownMenuProps[];
+    menuData: DropDownMenuPropsType[];
     children?: string | any;
-    onClick?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
-    onChange?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
+    onClick?: (selectMenuData: DropDownMenuPropsType | DropDownMenuPropsType[]) => void;
+    onChange?: (selectMenuData: DropDownMenuPropsType | DropDownMenuPropsType[]) => void;
     isFullWidthMenu?: boolean;
     className?: string;
     multiple?: boolean;
@@ -27,6 +27,6 @@ interface DropdownProps {
     }[];
     disabled?: boolean;
 }
-declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, selectMenu, disabled, }: DropdownProps) => React.JSX.Element;
+declare const Dropdown: ({ id, size, align, children, menuData, onClick, onChange, isFullWidthMenu, className, multiple, menuDirection, selectMenu, disabled, }: DropdownPropsType) => React.JSX.Element;
 export { Dropdown };
-export type { DropDownMenuProps, DropdownProps };
+export type { DropDownMenuPropsType, DropdownPropsType };

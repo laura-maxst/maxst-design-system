@@ -12699,7 +12699,7 @@ var Dropdown = function (_a) {
             multiple ? 'multiple' : '',
             isFullWidthMenuWrap ? 'full-width' : '',
         ].join(' '), id: id, ref: dropdownRef },
-        React__default["default"].createElement("div", { className: "dropdown-box_ _base", onClick: onClickDropdownBase, id: id + '__base' }, React__default["default"].cloneElement(children, {
+        React__default["default"].createElement("div", { className: "dropdown-box__base", onClick: onClickDropdownBase, id: id + '__base' }, React__default["default"].cloneElement(children, {
             disabled: disabled,
         })),
         React__default["default"].createElement("div", { className: [
@@ -13143,12 +13143,11 @@ var snsSvgData = {
 
 /* eslint-disable @next/next/no-img-element */
 var Footer = function (_a) {
-    var termData = _a.termData, topRightArea = _a.topRightArea, bottomRightArea = _a.bottomRightArea, className = _a.className, logo = _a.logo, addressData = _a.addressData;
+    var snsData = _a.snsData, termData = _a.termData, topRightArea = _a.topRightArea, bottomRightArea = _a.bottomRightArea, className = _a.className, logo = _a.logo, addressData = _a.addressData;
     return (React__default["default"].createElement("footer", { className: ['mds-footer footer-wrap', className ? className : ''].join(' ') },
         React__default["default"].createElement(Container, null,
             React__default["default"].createElement("div", { className: "footer-top" },
-                React__default["default"].createElement("div", { className: "footer-top__left" },
-                    React__default["default"].createElement(SnsList, { data: snsData })),
+                React__default["default"].createElement("div", { className: "footer-top__left" }, snsData && React__default["default"].createElement(SnsList, { data: snsData })),
                 topRightArea && (React__default["default"].createElement("div", { className: "footer-top__right" },
                     topRightArea,
                     " "))),
@@ -13171,28 +13170,6 @@ var Footer = function (_a) {
                     React__default["default"].createElement(Text, { type: "body", size: "s", className: "footer__copyright" }, "\u00A9 2023 MAXST Co., Ltd. All Rights Reserved.")),
                 bottomRightArea && (React__default["default"].createElement("div", { className: "footer-bottom__right" }, bottomRightArea))))));
 };
-var snsData = [
-    {
-        type: 'facebook',
-        url: 'https://www.facebook.com/ARmaxst',
-    },
-    {
-        type: 'instagram',
-        url: 'https://www.instagram.com/armaxst/',
-    },
-    {
-        type: 'youtube',
-        url: 'https://www.youtube.com/user/ARmaxst',
-    },
-    {
-        type: 'blog',
-        url: 'https://blog.naver.com/armaxst',
-    },
-    {
-        type: 'medium',
-        url: 'https://medium.com/@maxst_tech',
-    },
-];
 
 var Form = function (_a) {
     var id = _a.id, className = _a.className, children = _a.children;

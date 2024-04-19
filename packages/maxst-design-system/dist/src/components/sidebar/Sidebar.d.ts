@@ -1,5 +1,5 @@
 import React from 'react';
-type SidebarMenuItemProps = {
+type SidebarMenuItemPropsType = {
     id: string;
     label: string;
     iconLeft?: JSX.Element | React.ReactNode;
@@ -7,16 +7,16 @@ type SidebarMenuItemProps = {
     disabled?: boolean;
     subLabel?: string;
     size?: 'l' | 's';
-    subItemData?: SidebarMenuItemProps[];
+    subItemData?: SidebarMenuItemPropsType[];
 };
 interface SidebarPropsType {
     header?: JSX.Element | React.ReactNode;
     footer?: JSX.Element | React.ReactNode;
     id: string;
     size?: 'l' | 's';
-    itemData: SidebarMenuItemProps[];
-    onClick?: (selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[]) => void;
-    onChange?: (selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[]) => void;
+    itemData: SidebarMenuItemPropsType[];
+    onClick?: (selectMenuData: SidebarMenuItemPropsType | SidebarMenuItemPropsType[]) => void;
+    onChange?: (selectMenuData: SidebarMenuItemPropsType | SidebarMenuItemPropsType[]) => void;
     className?: string;
     selectMenu?: string;
 }

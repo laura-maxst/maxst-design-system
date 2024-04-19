@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckboxPropsType } from '@components/checkbox';
-interface CheckboxGroupProps {
+interface CheckboxGroupPropsType {
     id: string;
     type?: 'selected' | 'indeterminate';
     state?: 'default' | 'pressed' | 'disabled' | 'error';
@@ -17,5 +17,5 @@ interface CheckboxGroupProps {
     options: CheckboxPropsType[];
     className?: string;
 }
-declare const CheckboxGroup: ({ id, type, state, size, disabled, label, checked, controlMode, helperText, align, direction, onClick, onChange, options, className, }: CheckboxGroupProps) => React.JSX.Element;
+declare const CheckboxGroup: ({ id, type, state, size, disabled, label, checked, controlMode, helperText, align, direction, onClick, onChange, options, className, }: CheckboxGroupPropsType) => React.JSX.Element;
 export { CheckboxGroup };

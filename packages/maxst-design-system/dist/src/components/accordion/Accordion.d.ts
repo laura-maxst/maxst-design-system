@@ -1,5 +1,5 @@
 import React from 'react';
-interface AccordionProps {
+interface AccordionPropsType {
     width?: string;
     items: {
         id: string;
@@ -13,5 +13,5 @@ interface AccordionProps {
     showExpandIcon?: boolean;
     className?: string;
 }
-declare const Accordion: ({ width, items, expandIcon, defaultSelectItem, expandControl, showExpandIcon, className, }: AccordionProps) => React.JSX.Element;
+declare const Accordion: ({ width, items, expandIcon, defaultSelectItem, expandControl, showExpandIcon, className, }: AccordionPropsType) => React.JSX.Element;
 export { Accordion };

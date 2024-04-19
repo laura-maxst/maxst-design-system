@@ -1,4 +1,4 @@
 import React from 'react';
-import type { textFieldProps } from './textfieldType';
-declare const TextField: React.ForwardRefExoticComponent<textFieldProps & React.RefAttributes<unknown>>;
+import type { textFieldPropsType } from './textfieldType';
+declare const TextField: React.ForwardRefExoticComponent<textFieldPropsType & React.RefAttributes<unknown>>;
 export { TextField };

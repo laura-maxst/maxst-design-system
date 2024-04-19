@@ -1,5 +1,7 @@
 import React from 'react';
-interface FooterProps {
+import type { SnsListDataType } from '@components/snsList';
+interface FooterPropsType {
+    snsData?: SnsListDataType[];
     termData?: {
         label: string;
         url: string;
@@ -10,5 +12,5 @@ interface FooterProps {
     logo: any;
     addressData?: string[];
 }
-declare const Footer: ({ termData, topRightArea, bottomRightArea, className, logo, addressData, }: FooterProps) => React.JSX.Element;
+declare const Footer: ({ snsData, termData, topRightArea, bottomRightArea, className, logo, addressData, }: FooterPropsType) => React.JSX.Element;
 export { Footer };

@@ -1,5 +1,5 @@
 import React from 'react';
-interface ProgressProps {
+interface ProgressPropsType {
     className?: string;
     type?: 'primary' | 'secondary';
     status?: 'error' | 'success';
@@ -13,4 +13,4 @@ interface ProgressProps {
     iconError?: React.ReactNode | JSX.Element;
     iconSuccess?: React.ReactNode | JSX.Element;
 }
-export type { ProgressProps };
+export type { ProgressPropsType };

@@ -1,6 +1,6 @@
 import React from 'react';
-interface tabPanelProps {
+interface tabPanelPropsType {
     contents: React.ReactNode;
 }
-declare function TabPanel({ contents }: tabPanelProps): React.JSX.Element;
+declare function TabPanel({ contents }: tabPanelPropsType): React.JSX.Element;
 export { TabPanel };

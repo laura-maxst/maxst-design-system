@@ -1,5 +1,5 @@
 import React from 'react';
-interface SwitchProps {
+interface SwitchPropsType {
     id: string;
     iconMode?: boolean;
     size?: 'l' | 's';
@@ -13,5 +13,5 @@ interface SwitchProps {
     checkOnIcon?: React.ReactNode;
     onClick?: (data: any) => void;
 }
-declare const Switch: ({ id, iconMode, size, state, label, className, checked, disabled, helperText, checkOffIcon, checkOnIcon, onClick, }: SwitchProps) => React.JSX.Element;
+declare const Switch: ({ id, iconMode, size, state, label, className, checked, disabled, helperText, checkOffIcon, checkOnIcon, onClick, }: SwitchPropsType) => React.JSX.Element;
 export { Switch };

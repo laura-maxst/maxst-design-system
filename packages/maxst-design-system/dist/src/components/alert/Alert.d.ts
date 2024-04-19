@@ -1,5 +1,5 @@
 import React from 'react';
-interface AlertProps {
+interface AlertPropsType {
     type: 'error' | 'warning' | 'information' | 'success';
     title?: string;
     contents: string;
@@ -12,6 +12,6 @@ interface AlertProps {
     onClose: () => void;
     className?: string;
 }
-declare const Alert: ({ type, title, contents, closeButton, actionButtonData, open, onClose, className, }: AlertProps) => React.JSX.Element;
+declare const Alert: ({ type, title, contents, closeButton, actionButtonData, open, onClose, className, }: AlertPropsType) => React.JSX.Element;
 export { Alert };
-export type { AlertProps };
+export type { AlertPropsType };

@@ -1,7 +1,7 @@
 import React from 'react';
-interface ChipGroupProps {
+interface ChipGroupPropsType {
     children: React.ReactNode;
     className?: string;
 }
-declare const ChipGroup: ({ children, className, ...props }: ChipGroupProps) => React.JSX.Element;
+declare const ChipGroup: ({ children, className, ...props }: ChipGroupPropsType) => React.JSX.Element;
 export { ChipGroup };

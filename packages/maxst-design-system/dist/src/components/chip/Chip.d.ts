@@ -1,5 +1,5 @@
 import React from 'react';
-interface ChipProps {
+interface ChipPropsType {
     id?: string;
     type: 'default' | 'tertiary' | 'color-mint' | 'color-bluegray' | 'color-magenta' | 'color-purple' | 'color-blue';
     size: 'xl' | 'l' | 's';
@@ -14,5 +14,5 @@ interface ChipProps {
     onChange?: (id: string, checked?: boolean) => void;
     onClick?: (id: string, checked?: boolean) => void;
 }
-declare const Chip: ({ id, type, size, state, action, checked, iconCheck, iconLeft, className, children, onChange, onClick, disabled, ...props }: ChipProps) => React.JSX.Element;
+declare const Chip: ({ id, type, size, state, action, checked, iconCheck, iconLeft, className, children, onChange, onClick, disabled, ...props }: ChipPropsType) => React.JSX.Element;
 export { Chip };

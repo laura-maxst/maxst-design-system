@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export interface textFieldProps {
+export interface textFieldPropsType {
     id?: string;
     type?: string;
     value?: string | number;
@@ -47,4 +47,15 @@ export interface InputChipType {
         id: string;
         label: string;
     }[];
+}
+export interface InputGroupPropsType {
+    id?: string;
+    label?: string;
+    state?: 'default' | 'pressed' | 'disabled' | 'error' | 'success';
+    fullWidth?: boolean;
+    required?: boolean;
+    helperText?: string;
+    disabled?: boolean;
+    children: React.ReactNode | any;
+    className?: string;
 }

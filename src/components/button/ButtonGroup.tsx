@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-interface ButtonGropProps {
+interface ButtonGropPropsType {
   children: any | React.ReactNode;
   fullWidth?: boolean;
   align?: 'left' | 'right' | 'center';
@@ -16,7 +16,7 @@ const ButtonGroup = ({
   direction,
   buttonWidth,
   className,
-}: ButtonGropProps) => {
+}: ButtonGropPropsType) => {
   const [buttonWidthCustom, setButtonWidthCustom] = useState<string>('none');
 
   useEffect(() => {

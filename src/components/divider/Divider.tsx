@@ -1,13 +1,18 @@
 import React from 'react';
 
-interface DividerProps {
+interface DividerPropsType {
   type?: 'default' | 'accent';
   direction?: 'vertical' | 'horizontal';
   children?: string | React.ReactNode;
   className?: string;
 }
 
-const Divider = ({ type, direction, children, className }: DividerProps) => {
+const Divider = ({
+  type,
+  direction,
+  children,
+  className,
+}: DividerPropsType) => {
   return (
     <>
       {children ? (

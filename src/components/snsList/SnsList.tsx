@@ -2,15 +2,16 @@
 import { Button } from '@components/button';
 import React, { useEffect } from 'react';
 
-interface SnsListProps {
-  data: {
-    type: 'facebook' | 'instagram' | 'youtube' | 'blog' | 'medium';
-    url: string;
-  }[];
+interface SnsListDataType {
+  type: 'facebook' | 'instagram' | 'youtube' | 'blog' | 'medium';
+  url: string;
+}
+interface SnsListPropsType {
+  data: SnsListDataType[];
   className?: string;
 }
 
-const SnsList = ({ data, className }: SnsListProps) => {
+const SnsList = ({ data, className }: SnsListPropsType) => {
   const onClickRouter = (url: string) => {
     window.open(url, '_blank', 'noopener');
   };
@@ -133,3 +134,4 @@ const snsSvgData = {
   ),
 };
 export { SnsList };
+export type { SnsListDataType };

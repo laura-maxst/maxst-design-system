@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface tabPanelProps {
+interface tabPanelPropsType {
   contents: React.ReactNode;
 }
 
-function TabPanel({ contents }: tabPanelProps) {
+function TabPanel({ contents }: tabPanelPropsType) {
   return <div className="tab-panel">{contents}</div>;
 }
 

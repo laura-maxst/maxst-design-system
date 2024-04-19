@@ -3,7 +3,7 @@ import { Text, TextLabel } from '@components/text';
 import { Checkbox, CheckboxPropsType } from '@components/checkbox';
 import { ErrorCircleLineBoldIcon } from '@maxst-designsystem/icons';
 
-interface CheckboxGroupProps {
+interface CheckboxGroupPropsType {
   id: string;
   type?: 'selected' | 'indeterminate';
   state?: 'default' | 'pressed' | 'disabled' | 'error';
@@ -37,7 +37,7 @@ const CheckboxGroup = ({
   onChange,
   options,
   className,
-}: CheckboxGroupProps) => {
+}: CheckboxGroupPropsType) => {
   const optionList = options.map((item) => {
     return item.id;
   });

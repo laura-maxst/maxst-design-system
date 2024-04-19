@@ -4,7 +4,7 @@ import { Checkbox } from '@components/checkbox';
 import { SortLineBoldIcon } from '@maxst-designsystem/icons';
 import { Button } from '@components/button';
 
-interface TableProps {
+interface TablePropsType {
   id?: string;
   size?: 'l' | 's';
   align?: 'left' | 'center' | 'right';
@@ -40,7 +40,7 @@ const Table = ({
   onClick,
   onCheck,
   className,
-}: TableProps) => {
+}: TablePropsType) => {
   const [cellKey, setCellKey] = useState<string[]>([]);
   const [cellAlign, setCellAlign] = useState<string[]>([]);
   const [rowDataSource, setRowDataSource] = useState<

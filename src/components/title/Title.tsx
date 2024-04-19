@@ -1,7 +1,7 @@
 import React from 'react';
 import TitleTagFilter from './TitleTagFilter';
 
-interface TitleProps {
+interface TitlePropsType {
   role: 1 | 2 | 3 | 4 | 5 | 6;
   type?: 'title';
   size: 'xl' | 'l' | 'm' | 's' | 'xs';
@@ -17,7 +17,7 @@ function Title({
   align,
   className,
   children,
-}: TitleProps) {
+}: TitlePropsType) {
   return (
     <TitleTagFilter
       role={role}
@@ -34,4 +34,4 @@ function Title({
 }
 
 export { Title };
-export type { TitleProps };
+export type { TitlePropsType };

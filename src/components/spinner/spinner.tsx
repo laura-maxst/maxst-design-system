@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface spinnerProps {
+interface spinnerPropsType {
   color?: 'white' | 'black';
   className?: string;
 }
-const Spinner = ({ color, className }: spinnerProps) => {
+const Spinner = ({ color, className }: spinnerPropsType) => {
   return (
     <span className={['spinner-wrap'].join(' ')}>
       <svg

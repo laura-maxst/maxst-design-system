@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from '@components/menu';
 
-type SidebarMenuItemProps = {
+type SidebarMenuItemPropsType = {
   id: string;
   label: string;
   iconLeft?: JSX.Element | React.ReactNode;
@@ -9,19 +9,19 @@ type SidebarMenuItemProps = {
   disabled?: boolean;
   subLabel?: string;
   size?: 'l' | 's';
-  subItemData?: SidebarMenuItemProps[];
+  subItemData?: SidebarMenuItemPropsType[];
 };
 interface SidebarPropsType {
   header?: JSX.Element | React.ReactNode;
   footer?: JSX.Element | React.ReactNode;
   id: string;
   size?: 'l' | 's';
-  itemData: SidebarMenuItemProps[];
+  itemData: SidebarMenuItemPropsType[];
   onClick?: (
-    selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[],
+    selectMenuData: SidebarMenuItemPropsType | SidebarMenuItemPropsType[],
   ) => void;
   onChange?: (
-    selectMenuData: SidebarMenuItemProps | SidebarMenuItemProps[],
+    selectMenuData: SidebarMenuItemPropsType | SidebarMenuItemPropsType[],
   ) => void;
   className?: string;
   selectMenu?: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ContainerProps {
+interface ContainerPropsType {
   full?: boolean;
   className?: string;
   maxWidth?: string;
@@ -15,7 +15,7 @@ const Container = ({
   align,
   children,
   ...props
-}: ContainerProps) => {
+}: ContainerPropsType) => {
   return (
     <div
       className={[

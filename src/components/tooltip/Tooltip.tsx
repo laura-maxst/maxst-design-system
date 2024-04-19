@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Text } from '@components/text';
 
-interface TooltipProps {
+interface TooltipPropsType {
   title?: string;
   text?: string;
   children: React.ReactNode;
@@ -29,7 +29,7 @@ const Tooltip = ({
   arrow,
   mode,
   className,
-}: TooltipProps) => {
+}: TooltipPropsType) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onMouseOver = () => {
@@ -81,4 +81,4 @@ const Tooltip = ({
 };
 
 export { Tooltip };
-export type { TooltipProps };
+export type { TooltipPropsType };

@@ -1,7 +1,7 @@
 import { TextLabel } from '@components/text';
 import React from 'react';
 
-interface BadgeProps {
+interface BadgePropsType {
   type: 'number' | 'dot' | 'icon';
   size: 'xl' | 'l' | 'm' | 's';
   align?: 'top-right' | 'top-left' | 'bottom-left' | 'bottom-right';
@@ -25,7 +25,7 @@ const Badge = ({
   icon,
   onClick,
   className,
-}: BadgeProps) => {
+}: BadgePropsType) => {
   const resolveOnClick = () => {
     if (type !== 'icon') {
       return;

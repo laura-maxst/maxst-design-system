@@ -4,18 +4,7 @@ import {
   ErrorCircleLineBoldIcon,
   CheckCircleLineBoldIcon,
 } from '@maxst-designsystem/icons';
-
-interface InputGroupProps {
-  id?: string;
-  label?: string;
-  state?: 'default' | 'pressed' | 'disabled' | 'error' | 'success';
-  fullWidth?: boolean;
-  required?: boolean;
-  helperText?: string;
-  disabled?: boolean;
-  children: React.ReactNode | any;
-  className?: string;
-}
+import { InputGroupPropsType } from './textfieldType';
 
 const InputGroup = ({
   id,
@@ -27,7 +16,7 @@ const InputGroup = ({
   disabled,
   children,
   className,
-}: InputGroupProps) => {
+}: InputGroupPropsType) => {
   const [thisState, setThisState] = useState<
     'default' | 'pressed' | 'disabled' | 'error' | 'success'
   >('default');

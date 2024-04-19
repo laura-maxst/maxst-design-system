@@ -2,10 +2,12 @@
 import React from 'react';
 import { Container } from '@components/container';
 import { Button } from '@components/button';
+import type { SnsListDataType } from '@components/snsList';
 import { SnsList } from '@components/snsList';
 import { Text } from '@components/text';
 
-interface FooterProps {
+interface FooterPropsType {
+  snsData?: SnsListDataType[];
   termData?: { label: string; url: string }[];
   topRightArea?: React.ReactNode;
   bottomRightArea?: React.ReactNode;
@@ -15,13 +17,14 @@ interface FooterProps {
 }
 
 const Footer = ({
+  snsData,
   termData,
   topRightArea,
   bottomRightArea,
   className,
   logo,
   addressData,
-}: FooterProps) => {
+}: FooterPropsType) => {
   return (
     <footer
       className={['mds-footer footer-wrap', className ? className : ''].join(
@@ -31,7 +34,7 @@ const Footer = ({
       <Container>
         <div className="footer-top">
           <div className="footer-top__left">
-            <SnsList data={snsData} />
+            {snsData && <SnsList data={snsData} />}
           </div>
           {topRightArea && (
             <div className="footer-top__right">{topRightArea} </div>
@@ -97,31 +100,5 @@ const Footer = ({
     </footer>
   );
 };
-
-const snsData: {
-  type: 'facebook' | 'instagram' | 'youtube' | 'blog' | 'medium';
-  url: string;
-}[] = [
-  {
-    type: 'facebook',
-    url: 'https://www.facebook.com/ARmaxst',
-  },
-  {
-    type: 'instagram',
-    url: 'https://www.instagram.com/armaxst/',
-  },
-  {
-    type: 'youtube',
-    url: 'https://www.youtube.com/user/ARmaxst',
-  },
-  {
-    type: 'blog',
-    url: 'https://blog.naver.com/armaxst',
-  },
-  {
-    type: 'medium',
-    url: 'https://medium.com/@maxst_tech',
-  },
-];
 
 export { Footer };

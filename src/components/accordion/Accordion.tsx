@@ -2,7 +2,7 @@ import { Title } from '@components/title';
 import { ArrowDownLineIcon } from '@maxst-designsystem/icons';
 import React, { useEffect, useState } from 'react';
 
-interface AccordionProps {
+interface AccordionPropsType {
   width?: string;
   items: {
     id: string;
@@ -25,7 +25,7 @@ const Accordion = ({
   expandControl = true,
   showExpandIcon = true,
   className,
-}: AccordionProps) => {
+}: AccordionPropsType) => {
   const [isOpenBody, setIsOpenBody] = useState<boolean>(false);
   const [openBody, setOpenBody] = useState<string | null>(null);
   const [height, setHeight] = useState<number>(0);

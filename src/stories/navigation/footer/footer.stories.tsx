@@ -5,6 +5,7 @@ import { Text } from '@components/text';
 import { Button } from '@components/button';
 import { Dropdown } from '@components/dropdown';
 import { TextField } from '@components/textField';
+import type { SnsListDataType } from '@components/snsList';
 import {
   ArrowDownLineIcon,
   ArrowForwardLineIcon,
@@ -23,10 +24,13 @@ const meta: Meta<typeof Footer> = {
   },
   argTypes: {
     termData: {
-      description: '약관 등의 링크이동을 지원합니다.\nlabel과 url을 ',
+      description: '약관 등의 링크이동을 지원합니다.',
       control: {
         type: null,
       },
+    },
+    snsData: {
+      description: '선택 옵션으로 data 지정시 snsList가 설정됩니다.',
     },
     topRightArea: {
       description:
@@ -64,6 +68,29 @@ const termData = [
   {
     label: '오시는 길',
     url: '',
+  },
+];
+
+const snsData: SnsListDataType[] = [
+  {
+    type: 'facebook',
+    url: 'https://www.facebook.com/ARmaxst',
+  },
+  {
+    type: 'instagram',
+    url: 'https://www.instagram.com/armaxst/',
+  },
+  {
+    type: 'youtube',
+    url: 'https://www.youtube.com/user/ARmaxst',
+  },
+  {
+    type: 'blog',
+    url: 'https://blog.naver.com/armaxst',
+  },
+  {
+    type: 'medium',
+    url: 'https://medium.com/@maxst_tech',
   },
 ];
 
@@ -127,6 +154,7 @@ export const FooterDefault: Story = {
     </div>
   ),
   args: {
+    snsData: snsData,
     logo: <img src="/images/lib/footer_logo.png" alt="maxst logo" />,
     termData: termData,
     topRightArea: <div className="footer-top-right-sample"> </div>,
@@ -145,6 +173,7 @@ export const FooterCustom: Story = {
     termData: termData,
     topRightArea: <FooterTopRightBox />,
     bottomRightArea: <FooterBottomRightBox />,
+    // snsData: snsData,
     addressData: [
       'address',
       'custom 가능',

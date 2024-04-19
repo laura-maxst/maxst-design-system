@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface TextProps {
+interface TextPropsType {
   role?: 'default' | 'sub' | 'subtlest';
   type?: 'body';
   size: 'l' | 'm' | 's';
@@ -16,7 +16,7 @@ function Text({
   innerHtml,
   className,
   children,
-}: TextProps) {
+}: TextPropsType) {
   return (
     <>
       {innerHtml ? (

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CloseCircleFillIcon, CheckLineIcon } from '@maxst-designsystem/icons';
 import { TextLabel } from '@components/text';
 
-interface ChipProps {
+interface ChipPropsType {
   id?: string;
   type:
     | 'default'
@@ -40,7 +40,7 @@ const Chip = ({
   onClick,
   disabled,
   ...props
-}: ChipProps) => {
+}: ChipPropsType) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [thisChipID, setThisChipID] = useState<string>('');
 

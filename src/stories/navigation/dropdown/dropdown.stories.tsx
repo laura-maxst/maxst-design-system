@@ -390,7 +390,7 @@ const DropDownMultiSelectText = ({
   onChange,
   onClick,
   ...props
-}: DropdownProps) => {
+}: DropdownPropsType) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>(null);
 
@@ -479,7 +479,7 @@ const DropDownMultiSelectChip = ({
   onChange,
   onClick,
   ...props
-}: DropdownProps) => {
+}: DropdownPropsType) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
 
@@ -568,7 +568,7 @@ const DropDownWithControl = ({
   onChange,
   onClick,
   ...props
-}: DropdownProps) => {
+}: DropdownPropsType) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
 

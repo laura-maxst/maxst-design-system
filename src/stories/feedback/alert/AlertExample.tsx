@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Alert } from '@components/alert';
-import { AlertProps } from '@components/alert/Alert';
+import { AlertPropsType } from '@components/alert/Alert';
 import { Button } from '@components/button';
 
-function AlertExample(args: AlertProps) {
+function AlertExample(args: AlertPropsType) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onOpenSnackbar = () => {

@@ -3,7 +3,7 @@ import { Text, TextLabel } from '@components/text';
 import { Radio, RadioPropsType } from '@components/radio';
 import { ErrorCircleLineBoldIcon } from '@maxst-designsystem/icons';
 
-interface RadioGroupProps {
+interface RadioGroupPropsType {
   id: string;
   name: string;
   state?: 'default' | 'pressed' | 'disabled' | 'error';
@@ -33,7 +33,7 @@ const RadioGroup = ({
   onChange,
   options,
   className,
-}: RadioGroupProps) => {
+}: RadioGroupPropsType) => {
   const optionList = options.map((item) => {
     return item.id;
   });

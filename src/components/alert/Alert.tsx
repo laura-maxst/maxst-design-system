@@ -10,7 +10,7 @@ import {
   CheckCircleFillIcon,
 } from '@maxst-designsystem/icons';
 
-interface AlertProps {
+interface AlertPropsType {
   type: 'error' | 'warning' | 'information' | 'success';
   title?: string;
   contents: string;
@@ -33,7 +33,7 @@ const Alert = ({
   open,
   onClose,
   className,
-}: AlertProps) => {
+}: AlertPropsType) => {
   const resolveOnClose = () => {
     if (!onClose) {
       return;
@@ -130,4 +130,4 @@ const Alert = ({
 };
 
 export { Alert };
-export type { AlertProps };
+export type { AlertPropsType };

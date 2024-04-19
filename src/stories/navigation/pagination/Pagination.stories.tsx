@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Pagination } from '@components/pagination';
-import { DropDownMenuProps } from '@components/dropdown/Dropdown';
+import { DropDownMenuPropsType } from '@components/dropdown/Dropdown';
 
 const meta: Meta<typeof Pagination> = {
   title: 'Navigation/Pagination',
@@ -54,7 +54,7 @@ const onClick = (thisPage: number) => {
   console.log(thisPage);
 };
 
-const onshowPageSizeChange = (data: DropDownMenuProps) => {
+const onshowPageSizeChange = (data: DropDownMenuPropsType) => {
   console.log(data);
 };
 

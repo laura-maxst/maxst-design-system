@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DropdownProps } from '@components/dropdown/Dropdown';
+import { DropdownPropsType } from '@components/dropdown/Dropdown';
 import { Dropdown } from '@components/dropdown';
 import { TextField } from '@components/textField';
 import { ArrowDownLineIcon } from '@maxst-designsystem/icons';
@@ -10,7 +10,7 @@ const DropDownTextfield = ({
   onChange,
   onClick,
   ...props
-}: DropdownProps) => {
+}: DropdownPropsType) => {
   const [labelValue, setLabelValue] = useState<string>('');
   const [idValue, setIdValue] = useState<string>('');
 

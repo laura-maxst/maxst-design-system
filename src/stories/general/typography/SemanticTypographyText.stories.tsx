@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Text } from '@components/text';
 import { Source } from '@storybook/blocks';
 import { Container } from '@components/container';
+import { Fragment } from 'react';
 
 const meta: Meta<typeof Text> = {
   title: 'general/SemanticTypography',
@@ -93,18 +94,17 @@ const Texts = (
     <Container>
       <div className="font-box-wrap">
         {bodyData.map((textItem, index) => (
-          <>
+          <Fragment key={textItem.type + textItem.size + index}>
             {(index === 3 || index === 6) && <br />}
             <Text
               innerHtml={textItem.innerHtml}
               type={textItem.type}
               size={textItem.size}
               role={textItem.role ? textItem.role : 'default'}
-              key={textItem.type + textItem.size + index}
             >
               {textItem.content}
             </Text>
-          </>
+          </Fragment>
         ))}
         <Source
           dark={true}

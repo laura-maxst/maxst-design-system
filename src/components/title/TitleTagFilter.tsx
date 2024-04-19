@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface TitleProps {
+interface TitlePropsType {
   role: number;
   className: string;
   children: React.ReactNode;
 }
 
-const TitleTagFilter = ({ role, className, children }: TitleProps) => {
+const TitleTagFilter = ({ role, className, children }: TitlePropsType) => {
   switch (role) {
     case 1:
       return <h1 className={className}>{children}</h1>;

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Button } from '@components/button';
-import { PositionModal, PositionModalProps } from '@components/positionModal';
+import {
+  PositionModal,
+  PositionModalPropsType,
+} from '@components/positionModal';
 
-function PositionModalExample(props: PositionModalProps) {
+function PositionModalExample(props: PositionModalPropsType) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const onOpenModal = () => {
     setIsOpen(true);

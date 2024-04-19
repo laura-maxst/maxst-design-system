@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { DropdownProps } from '@components/dropdown/Dropdown';
+import { DropdownPropsType } from '@components/dropdown/Dropdown';
 import { Dropdown } from '@components/dropdown';
 import { TextField } from '@components/textField';
 import { ArrowDownLineIcon } from '@maxst-designsystem/icons';
@@ -11,7 +11,7 @@ const DropDownMultiSelectChip = ({
   onChange,
   onClick,
   ...props
-}: DropdownProps) => {
+}: DropdownPropsType) => {
   const [labelValue, setLabelValue] = useState<any>('');
   const [selectData, setSelectData] = useState<any>([]);
 

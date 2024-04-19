@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import { TextField } from '@components/textField';
 import { SearchLineIcon } from '@maxst-designsystem/icons';
 
-interface InputGroupProps {
+interface InputGroupPropsType {
   id: string;
   size?: 'l' | 's';
   placeholder: string;
@@ -26,7 +26,7 @@ const SearchBar = forwardRef(function SearchBar(
     onChange,
     value,
     className,
-  }: InputGroupProps,
+  }: InputGroupPropsType,
   ref: any,
 ) {
   return (

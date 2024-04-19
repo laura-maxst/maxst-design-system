@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Snackbar } from '@components/snackbar';
-import { SnackbarProps } from '@components/snackbar/Snackbar';
+import { SnackbarPropsType } from '@components/snackbar/Snackbar';
 import { Button } from '@components/button';
 
-function SnackbarExample(args: SnackbarProps) {
+function SnackbarExample(args: SnackbarPropsType) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onOpenSnackbar = () => {

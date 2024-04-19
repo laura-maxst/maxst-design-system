@@ -3,7 +3,7 @@ import { Text } from '@components/text';
 import { Button } from '@components/button';
 import { CloseLineIcon } from '@maxst-designsystem/icons';
 
-interface SnackbarProps {
+interface SnackbarPropsType {
   contents: string;
   closeButton?: boolean;
   actionButtonData?: {
@@ -32,7 +32,7 @@ const Snackbar = ({
   open,
   onClose,
   className,
-}: SnackbarProps) => {
+}: SnackbarPropsType) => {
   const resolveOnClose = () => {
     if (!onClose) {
       return;
@@ -105,4 +105,4 @@ const Snackbar = ({
 };
 
 export { Snackbar };
-export type { SnackbarProps };
+export type { SnackbarPropsType };

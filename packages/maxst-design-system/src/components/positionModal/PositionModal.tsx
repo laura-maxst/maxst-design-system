@@ -4,7 +4,7 @@ import { Title } from '@components/title';
 import { ButtonGroup, Button } from '@components/button';
 import { Text } from '@components/text';
 
-interface PositionModalProps {
+interface PositionModalPropsType {
   id?: string;
   title?: string;
   titleImage?: JSX.Element | React.ReactNode;
@@ -68,7 +68,7 @@ const PositionModal = ({
   position,
   footerCustom,
   className,
-}: PositionModalProps) => {
+}: PositionModalPropsType) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const [isDefaultFooter, setIsDefaultFooter] = useState<boolean>(false);
 
@@ -190,4 +190,4 @@ const PositionModal = ({
 };
 
 export { PositionModal };
-export type { PositionModalProps };
+export type { PositionModalPropsType };

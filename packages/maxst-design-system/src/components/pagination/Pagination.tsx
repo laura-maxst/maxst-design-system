@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import { Button } from '@components/button';
 import { TextLabel } from '@components/text';
 import { Dropdown } from '@components/dropdown';
-import { DropDownMenuProps } from '@components/dropdown/Dropdown';
+import { DropDownMenuPropsType } from '@components/dropdown/Dropdown';
 import {
   ArrowDownLineIcon,
   ArrowRightLineIcon,
@@ -24,7 +24,7 @@ interface PaginationProps {
   showFirstButton?: boolean;
   showLastButton?: boolean;
   showPageSizeChanger?: boolean;
-  onshowPageSizeChange?: (data: DropDownMenuProps) => void;
+  onshowPageSizeChange?: (data: DropDownMenuPropsType) => void;
   showPageOptionCustom?: {
     id: string;
     label: string;

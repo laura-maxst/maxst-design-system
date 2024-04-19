@@ -2,7 +2,7 @@ import React, { MouseEventHandler, useEffect, useRef, useState } from 'react';
 import { TextLabel } from '@components/text';
 import { Spinner } from '@components/spinner';
 
-interface ButtonProps {
+interface ButtonPropsType {
   id?: string;
   size: 'xl' | 'l' | 'm' | 's' | 'xs';
   onClick?: (e: any) => void;
@@ -44,7 +44,7 @@ const Button = ({
   className,
   onClick,
   ...props
-}: ButtonProps) => {
+}: ButtonPropsType) => {
   const buttonRef: any = useRef();
   const [buttonWidthStyle, setButtonWidthStyle] = useState<string>('none');
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, forwardRef } from 'react';
 import { TextLabel, Text } from '@components/text';
-import type { textFieldProps } from './textfieldType';
+import type { textFieldPropsType } from './textfieldType';
 import {
   CloseCircleFillIcon,
   ErrorCircleLineBoldIcon,
@@ -36,7 +36,7 @@ const TextField = forwardRef(function TextField(
     maxHeight,
     className,
     ...props
-  }: textFieldProps,
+  }: textFieldPropsType,
   ref: any,
 ) {
   const [resoleValue, setResolveValue] = useState<string | number>('');

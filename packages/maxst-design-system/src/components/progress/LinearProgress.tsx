@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import type { ProgressProps } from './progressType';
+import type { ProgressPropsType } from './progressType';
 import { TextLabel } from '@components/text';
 import {
   CheckLineBoldIcon,
@@ -20,7 +20,7 @@ const LinearProgress = ({
   iconBefore,
   iconError,
   iconSuccess,
-}: ProgressProps) => {
+}: ProgressPropsType) => {
   const [hasPercent, setHasPercent] = useState<boolean>(false);
   const [progressPercent, setProgressPercent] = useState<number>(0);
 

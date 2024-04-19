@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 // import { DropdownMenu } from './Menu';
 import { Menu } from '@components/menu';
 
-type DropDownMenuProps = {
+type DropDownMenuPropsType = {
   id: string;
   label: string;
   iconLeft?: JSX.Element | React.ReactNode;
@@ -10,17 +10,21 @@ type DropDownMenuProps = {
   disabled?: boolean;
   subLabel?: string;
   size?: 'l' | 's';
-  subItemData?: DropDownMenuProps[];
+  subItemData?: DropDownMenuPropsType[];
 };
 
-interface DropdownProps {
+interface DropdownPropsType {
   id: string;
   size?: 'l' | 's';
   align?: 'left' | 'right' | 'center';
-  menuData: DropDownMenuProps[];
+  menuData: DropDownMenuPropsType[];
   children?: string | any;
-  onClick?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
-  onChange?: (selectMenuData: DropDownMenuProps | DropDownMenuProps[]) => void;
+  onClick?: (
+    selectMenuData: DropDownMenuPropsType | DropDownMenuPropsType[],
+  ) => void;
+  onChange?: (
+    selectMenuData: DropDownMenuPropsType | DropDownMenuPropsType[],
+  ) => void;
   isFullWidthMenu?: boolean;
   className?: string;
   multiple?: boolean;
@@ -43,7 +47,7 @@ const Dropdown = ({
   menuDirection,
   selectMenu,
   disabled,
-}: DropdownProps) => {
+}: DropdownPropsType) => {
   const dropdownRef = useRef<HTMLInputElement>(null);
   const menuRef = useRef<HTMLInputElement>(null);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -180,7 +184,7 @@ const Dropdown = ({
       ref={dropdownRef}
     >
       <div
-        className="dropdown-box_ _base"
+        className="dropdown-box__base"
         onClick={onClickDropdownBase}
         id={id + '__base'}
       >
@@ -213,4 +217,4 @@ const Dropdown = ({
 };
 
 export { Dropdown };
-export type { DropDownMenuProps, DropdownProps };
+export type { DropDownMenuPropsType, DropdownPropsType };

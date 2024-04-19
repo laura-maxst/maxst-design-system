@@ -5,7 +5,7 @@ import {
   CloseLineBoldIcon,
 } from '@maxst-designsystem/icons';
 
-interface SwitchProps {
+interface SwitchPropsType {
   id: string;
   iconMode?: boolean;
   size?: 'l' | 's';
@@ -33,7 +33,7 @@ const Switch = ({
   checkOffIcon,
   checkOnIcon,
   onClick,
-}: SwitchProps) => {
+}: SwitchPropsType) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [thisState, setThisState] = useState<string>('default');
   const resolveOnClick = (e: any) => {

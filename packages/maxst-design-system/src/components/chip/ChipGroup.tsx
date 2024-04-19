@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface ChipGroupProps {
+interface ChipGroupPropsType {
   children: React.ReactNode;
   className?: string;
 }
 
-const ChipGroup = ({ children, className, ...props }: ChipGroupProps) => {
+const ChipGroup = ({ children, className, ...props }: ChipGroupPropsType) => {
   return (
     <div
       className={['mds-chip-group', className && className].join(' ')}

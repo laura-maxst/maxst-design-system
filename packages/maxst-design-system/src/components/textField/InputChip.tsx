@@ -125,14 +125,14 @@ const InputChip = forwardRef(function InputChip(
   }, [chipValueData]);
 
   useEffect(() => {
-    if (selectData.length > 0) {
-      onChipErrorCheck();
-      if (!onChange) {
-        return;
-      }
-      onChange(selectData);
+    // if (selectData.length > 0) {
+    onChipErrorCheck();
+    if (!onChange) {
       return;
     }
+    onChange(selectData);
+    return;
+    // }
   }, [selectData]);
 
   useEffect(() => {

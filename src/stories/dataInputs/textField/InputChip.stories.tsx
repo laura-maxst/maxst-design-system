@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from '@storybook/react';
 import { InputChip } from '@components/textField';
-import { UserFillIcon } from '@maxst-designsystem/icons';
 
 const meta: Meta<typeof InputChip> = {
   title: 'DataInputs/InputChip',

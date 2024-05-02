@@ -579,7 +579,8 @@ input[type='radio'] {
         &.bg-color-palette-red-light,
         &.bg-color-palette-orange-light,
         &.bg-color-palette-blue-50,
-        &.bg-color-palette-green-light {
+        &.bg-color-palette-green-light,
+        &.bg-color-palette-bluegray-100 {
           p,
           span {
             color: #222222;
@@ -615,7 +616,7 @@ input[type='radio'] {
       &:nth-child(7),
       &:nth-child(8),
       &:nth-child(13),
-      &:nth-child(14) {
+      &:nth-child(15) {
         .table-color-chip {
           border: 1px solid #c2c2c2;
         }

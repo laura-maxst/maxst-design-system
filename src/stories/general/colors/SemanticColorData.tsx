@@ -380,6 +380,20 @@ const BackgroundColorTableData = {
       }),
     ],
     [
+      'color-background-secondary-light',
+      '<p>background-secondary 색상의 연한 배경 색상입니다.</p>',
+      ColorChipArea({
+        mode: 'light',
+        colorToken: 'palette-bluegray-100',
+        colorCode: '#E1E8ED',
+      }),
+      ColorChipArea({
+        mode: 'dark',
+        colorToken: 'palette-bluegray-100',
+        colorCode: '#293541',
+      }),
+    ],
+    [
       'color-background-tertiary',
       '<p>세 번째 기본 배경 색상입니다.</p><p>button-secondary의 line 배경 색상으로 사용할 수 있습니다.</p>',
       ColorChipArea({

@@ -24,7 +24,8 @@ const meta: Meta<typeof Footer> = {
   },
   argTypes: {
     termData: {
-      description: '약관 등의 링크이동을 지원합니다.',
+      description:
+        '약관 등의 링크이동을 지원합니다. onClick 함수로 기존 router 이동, 새탭 open 등 원하는 이벤트를 설정할 수 있습니다.',
       control: {
         type: null,
       },
@@ -55,19 +56,19 @@ type Story = StoryObj<typeof Footer>;
 const termData = [
   {
     label: '위치정보사업 이용약관',
-    url: '',
+    onClick: () => console.log('위치정보사업 이용약관'),
   },
   {
     label: '위치기반서비스 이용약관',
-    url: '',
+    onClick: () => console.log('위치기반서비스 이용약관'),
   },
   {
     label: '개인정보 취급방침',
-    url: '',
+    onClick: () => console.log('개인정보 취급방침'),
   },
   {
     label: '오시는 길',
-    url: '',
+    onClick: () => console.log('오시는 길'),
   },
 ];
 

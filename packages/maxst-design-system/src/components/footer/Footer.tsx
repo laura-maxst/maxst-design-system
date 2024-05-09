@@ -8,7 +8,7 @@ import { Text } from '@components/text';
 
 interface FooterPropsType {
   snsData?: SnsListDataType[];
-  termData?: { label: string; url: string }[];
+  termData?: { label: string; onClick: () => void }[];
   topRightArea?: React.ReactNode;
   bottomRightArea?: React.ReactNode;
   className?: string;
@@ -48,7 +48,12 @@ const Footer = ({
                 <div className="footer__term-list">
                   {termData.map((item, index) => {
                     return (
-                      <Button type="text" size="m" key={item.label + index}>
+                      <Button
+                        type="text"
+                        size="m"
+                        key={item.label + index}
+                        onClick={item.onClick}
+                      >
                         {item.label}
                       </Button>
                     );

@@ -19,6 +19,7 @@ export interface textFieldPropsType {
     iconRight?: React.ReactNode;
     onClick?: (e: any) => void;
     onChange?: (value: any) => void;
+    onKeyDown?: (e: any) => void;
     renderValue?: string | React.ReactNode | JSX.Element | any;
     readOnly?: boolean;
     minHeight?: number;

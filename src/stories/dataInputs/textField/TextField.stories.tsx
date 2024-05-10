@@ -90,6 +90,9 @@ const onChange = (data: any) => {
 const onClick = (e: any) => {
   console.log('onclick', e);
 };
+const onKeyDown = (e: any) => {
+  console.log('onKeyDown', e.keyCode);
+};
 
 export const InputDefault: Story = {
   args: {
@@ -103,6 +106,7 @@ export const InputDefault: Story = {
     maxLength: 10,
     onChange: onChange,
     onClick: onClick,
+    onKeyDown: onKeyDown,
   },
 };
 

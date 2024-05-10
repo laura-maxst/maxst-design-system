@@ -170,7 +170,6 @@ $checkboxMode: 'primary', 'secondary';
         @include checkboxColorSet('border', 'accent');
       }
     }
-
     @if ($state == 'pressed') {
       &::after {
         @include checkboxColorSet('border', 'accent');
@@ -300,6 +299,9 @@ $checkboxMode: 'primary', 'secondary';
   color: semantic-color('text', 'default');
   cursor: pointer;
 
+  &:focus-within {
+    outline: 1px solid semantic-color('border', 'accent');
+  }
   .checkbox {
     margin-right: 8px;
     color: semantic-color('text', 'default');

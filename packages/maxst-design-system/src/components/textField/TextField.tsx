@@ -30,6 +30,7 @@ const TextField = forwardRef(function TextField(
     iconRight,
     onChange,
     onClick,
+    onKeyDown,
     renderValue,
     readOnly = false,
     minHeight,
@@ -234,6 +235,7 @@ const TextField = forwardRef(function TextField(
             onFocus={(e) => onFocus(e)}
             onBlur={(e) => onBlur(e)}
             onClick={onClick}
+            onKeyDown={onKeyDown}
           />
         ) : (
           <input
@@ -253,6 +255,7 @@ const TextField = forwardRef(function TextField(
             minLength={minLength && minLength}
             maxLength={maxLength && maxLength}
             onClick={onClick}
+            onKeyDown={onKeyDown}
             autoComplete={password ? 'off' : 'on'}
           />
         )}

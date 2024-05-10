@@ -4,7 +4,7 @@ interface FooterPropsType {
     snsData?: SnsListDataType[];
     termData?: {
         label: string;
-        url: string;
+        onClick: () => void;
     }[];
     topRightArea?: React.ReactNode;
     bottomRightArea?: React.ReactNode;

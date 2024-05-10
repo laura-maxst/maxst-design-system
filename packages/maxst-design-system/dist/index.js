@@ -13156,7 +13156,7 @@ var Footer = function (_a) {
                     React__default["default"].createElement("div", null,
                         React__default["default"].createElement("div", { className: "logo" }, logo),
                         termData && (React__default["default"].createElement("div", { className: "footer__term-list" }, termData.map(function (item, index) {
-                            return (React__default["default"].createElement(Button, { type: "text", size: "m", key: item.label + index }, item.label));
+                            return (React__default["default"].createElement(Button, { type: "text", size: "m", key: item.label + index, onClick: item.onClick }, item.label));
                         })))),
                     React__default["default"].createElement("address", { className: "footer__address" }, addressData ? (addressData.map(function (item) {
                         return (React__default["default"].createElement(Text, { type: "body", size: "s", role: "subtlest", key: item }, item));

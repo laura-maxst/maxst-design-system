@@ -151,7 +151,7 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
       word-break: break-all;
     }
 
-    &:focus-within {
+    &:focus-visible {
       outline: 1px solid semantic-color('border', 'accent');
     }
   }

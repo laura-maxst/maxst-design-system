@@ -259,9 +259,9 @@ const TextField = forwardRef(function TextField(
         {!disabled && !multiLine && (
           <>
             {showResetButton && resoleValue && thisState !== 'disabled' && (
-              <button onClick={onClearValue}>
+              <span className="button" onClick={onClearValue}>
                 <CloseCircleFillIcon />
-              </button>
+              </span>
             )}
             {password && (
               <span

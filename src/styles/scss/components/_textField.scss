@@ -173,13 +173,14 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         border-color: semantic-color('border', 'accent');
       }
 
-      button,
+      .button,
       svg {
         width: 20px;
         height: 20px;
         display: block;
         color: semantic-color('text', 'disabled');
         flex: none;
+        cursor: pointer;
       }
 
       .visibility-password-control {

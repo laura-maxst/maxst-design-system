@@ -125,7 +125,7 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
   }
 
   .radio-label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: semantic-color('text', 'default');
     cursor: pointer;
@@ -149,6 +149,10 @@ $radioState: 'default', 'pressed', 'disabled', 'error';
 
     p {
       word-break: break-all;
+    }
+
+    &:focus-within {
+      outline: 1px solid semantic-color('border', 'accent');
     }
   }
 

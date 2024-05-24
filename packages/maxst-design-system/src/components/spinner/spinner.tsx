@@ -1,10 +1,12 @@
 import React from 'react';
 
 interface spinnerPropsType {
+  width?: string;
+  height?: string;
   color?: 'white' | 'black';
   className?: string;
 }
-const Spinner = ({ color, className }: spinnerPropsType) => {
+const Spinner = ({ color, className, width, height }: spinnerPropsType) => {
   return (
     <span className={['spinner-wrap'].join(' ')}>
       <svg
@@ -14,6 +16,7 @@ const Spinner = ({ color, className }: spinnerPropsType) => {
           className ? className : '',
         ].join(' ')}
         viewBox="0 0 50 50"
+        style={{ width: width || '24px', height: height || '24px' }}
       >
         <circle
           className="path"

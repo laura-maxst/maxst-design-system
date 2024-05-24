@@ -8,15 +8,13 @@ interface spinnerPropsType {
 }
 const Spinner = ({ color, className, width, height }: spinnerPropsType) => {
   return (
-    <span className={['spinner-wrap'].join(' ')}>
+    <span
+      className={['spinner-wrap', className ? className : ''].join(' ')}
+      style={{ width: width || '24px', height: height || '24px' }}
+    >
       <svg
-        className={[
-          'spinner',
-          `spinner-${color ? color : 'white'}`,
-          className ? className : '',
-        ].join(' ')}
+        className={['spinner', `spinner-${color ? color : 'white'}`].join(' ')}
         viewBox="0 0 50 50"
-        style={{ width: width || '24px', height: height || '24px' }}
       >
         <circle
           className="path"

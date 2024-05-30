@@ -102,6 +102,7 @@ const Accordion = ({
               id={itemData.id + '-head'}
               className={[
                 'mds-accordion__item__head',
+                openBody === itemData.id && isOpenBody ? 'open' : 'close',
                 itemData.disabled ? 'disabled' : '',
                 !expandControl ? 'non-control' : '',
               ].join(' ')}

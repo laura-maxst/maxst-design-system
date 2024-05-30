@@ -11912,6 +11912,7 @@ var Accordion = function (_a) {
             ].join(' '), id: itemData.id },
             React__default["default"].createElement("div", { id: itemData.id + '-head', className: [
                     'mds-accordion__item__head',
+                    openBody === itemData.id && isOpenBody ? 'open' : 'close',
                     itemData.disabled ? 'disabled' : '',
                     !expandControl ? 'non-control' : '',
                 ].join(' '), onClick: function (e) { return onClickHead(e, itemData.id); } },

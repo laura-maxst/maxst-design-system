@@ -12004,12 +12004,8 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
 
 var Spinner = function (_a) {
     var color = _a.color, className = _a.className, width = _a.width, height = _a.height;
-    return (React__default["default"].createElement("span", { className: ['spinner-wrap'].join(' ') },
-        React__default["default"].createElement("svg", { className: [
-                'spinner',
-                "spinner-".concat(color ? color : 'white'),
-                className ? className : '',
-            ].join(' '), viewBox: "0 0 50 50", style: { width: width || '24px', height: height || '24px' } },
+    return (React__default["default"].createElement("span", { className: ['spinner-wrap', className ? className : ''].join(' '), style: { width: width || '24px', height: height || '24px' } },
+        React__default["default"].createElement("svg", { className: ['spinner', "spinner-".concat(color ? color : 'white')].join(' '), viewBox: "0 0 50 50" },
             React__default["default"].createElement("circle", { className: "path", cx: "25", cy: "25", r: "20", fill: "none", strokeWidth: "4" }))));
 };
 

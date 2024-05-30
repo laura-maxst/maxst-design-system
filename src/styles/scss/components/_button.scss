@@ -7,6 +7,7 @@
 }
 // button 공통 속성
 @mixin button-common {
+  position: relative;
   overflow: hidden;
   max-width: 330px !important;
   border-radius: 0;

@@ -40,6 +40,11 @@ const InputChip = forwardRef(function InputChip(
 
   const onClickChip = (e: any) => {
     setSelectData(selectData.filter((x) => x.id != e.target.id));
+
+    if (!onChange) {
+      return;
+    }
+    onChange(selectData.filter((x) => x.id != e.target.id));
   };
 
   const onChipErrorCheck = () => {
@@ -72,6 +77,11 @@ const InputChip = forwardRef(function InputChip(
     } else {
       setInputValue(null);
     }
+
+    if (!onChange) {
+      return;
+    }
+    onChange(selectData);
   };
 
   const onFocus = (e: any) => {
@@ -125,14 +135,7 @@ const InputChip = forwardRef(function InputChip(
   }, [chipValueData]);
 
   useEffect(() => {
-    // if (selectData.length > 0) {
     onChipErrorCheck();
-    if (!onChange) {
-      return;
-    }
-    onChange(selectData);
-    return;
-    // }
   }, [selectData]);
 
   useEffect(() => {

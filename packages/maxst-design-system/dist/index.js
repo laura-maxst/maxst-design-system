@@ -39843,6 +39843,10 @@ var InputChip = React$1.forwardRef(function InputChip(_a, ref) {
     var _g = React$1.useState([]), selectData = _g[0], setSelectData = _g[1];
     var onClickChip = function (e) {
         setSelectData(selectData.filter(function (x) { return x.id != e.target.id; }));
+        if (!onChange) {
+            return;
+        }
+        onChange(selectData.filter(function (x) { return x.id != e.target.id; }));
     };
     var onChipErrorCheck = function () {
         var isMinChipLength = typeof minChipLength === 'number' && selectData.length < minChipLength;
@@ -39870,6 +39874,10 @@ var InputChip = React$1.forwardRef(function InputChip(_a, ref) {
         else {
             setInputValue(null);
         }
+        if (!onChange) {
+            return;
+        }
+        onChange(selectData);
     };
     var onFocus = function (e) {
         if (thisState !== 'error') {
@@ -39918,14 +39926,7 @@ var InputChip = React$1.forwardRef(function InputChip(_a, ref) {
         }
     }, [chipValueData]);
     React$1.useEffect(function () {
-        // if (selectData.length > 0) {
         onChipErrorCheck();
-        if (!onChange) {
-            return;
-        }
-        onChange(selectData);
-        return;
-        // }
     }, [selectData]);
     React$1.useEffect(function () {
         type && setThisType(type);

@@ -65,7 +65,7 @@ const accordionItemDatas = [
   {
     id: 'item-02',
     head: (
-      <div className="accordion__head" style={{ padding: `20px 16px` }}>
+      <div className="accordion__head">
         <span className="accordion__head__icon">
           <LayerHorizontalLineIcon />
         </span>

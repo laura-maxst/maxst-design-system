@@ -40,6 +40,10 @@ const Tooltip = ({
     setIsOpen(false);
   };
 
+  const onClickTooltip = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div
       className={[
@@ -49,6 +53,7 @@ const Tooltip = ({
       ].join(' ')}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
+      onClick={onClickTooltip}
     >
       {children}
       <div

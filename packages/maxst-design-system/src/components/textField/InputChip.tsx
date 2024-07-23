@@ -66,6 +66,7 @@ const InputChip = forwardRef(function InputChip(
   const resolveOnChange = (e: any) => {
     // eslint-disable-next-line no-useless-escape
     const regExp = /[ \{\}\[\]\/?.,;:|\)*~`!^\-_+┼<>@\#$%&\'\"\\\(\=]/gi;
+    const regExp2 = /[ ,]/gi;
 
     if (e.target.value != ' ' && e.target.value != ',') {
       setInputValue(e.target.value);
@@ -73,6 +74,26 @@ const InputChip = forwardRef(function InputChip(
       if (regExp.test(e.target.value)) {
         const value = e.target.value.substring(0, e.target.value.length - 1);
         setInputValue(value);
+
+        if (regExp2.test(e.target.value)) {
+          console.log(e.target.value);
+          // 최소입력 체크
+          if (e.target.value.length < Number(minInputLength)) {
+            return;
+          } else if (e.target.value !== '' && e.target.value !== ',') {
+            // 중복 검사
+            if (!(selectData.filter((x) => x.id === value).length > 0)) {
+              setSelectData([
+                ...selectData,
+                {
+                  id: value,
+                  label: value,
+                },
+              ]);
+            }
+          }
+          setInputValue(null);
+        }
       }
     } else {
       setInputValue(null);
@@ -90,26 +111,26 @@ const InputChip = forwardRef(function InputChip(
     }
   };
 
-  const onKeyDown = (e: any) => {
-    if (e.keyCode === 32 || e.keyCode === 188) {
-      // 최소입력 체크
-      if (e.target.value.length < Number(minInputLength)) {
-        return;
-      } else if (e.target.value !== '' && e.target.value !== ',') {
-        // 중복 검사
-        if (!(selectData.filter((x) => x.id === e.target.value).length > 0)) {
-          setSelectData([
-            ...selectData,
-            {
-              id: e.target.value,
-              label: e.target.value,
-            },
-          ]);
-        }
-      }
-      setInputValue(null);
-    }
-  };
+  // const onKeyDown = (e: any) => {
+  //   if (e.keyCode === 32 || e.keyCode === 188) {
+  //     // 최소입력 체크
+  //     if (e.target.value.length < Number(minInputLength)) {
+  //       return;
+  //     } else if (e.target.value !== '' && e.target.value !== ',') {
+  //       // 중복 검사
+  //       if (!(selectData.filter((x) => x.id === e.target.value).length > 0)) {
+  //         setSelectData([
+  //           ...selectData,
+  //           {
+  //             id: e.target.value,
+  //             label: e.target.value,
+  //           },
+  //         ]);
+  //       }
+  //     }
+  //     setInputValue(null);
+  //   }
+  // };
 
   const onBlur = (e: any) => {
     if (thisState !== 'error') {
@@ -207,7 +228,7 @@ const InputChip = forwardRef(function InputChip(
             maxLength={maxInputLength && maxInputLength}
             onClick={onClick}
             autoComplete={'off'}
-            onKeyDown={onKeyDown}
+            // onKeyDown={onKeyDown}
           />
         )}
       </div>

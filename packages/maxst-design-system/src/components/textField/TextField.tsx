@@ -46,6 +46,7 @@ const TextField = forwardRef(function TextField(
   const [thisType, setThisType] = useState<string>('text');
   const [valueLength, setValueLength] = useState<number>(0);
   const [isRenderValueMode, setIsRenderValueMode] = useState<boolean>(false);
+  const [rightIconLength, setRightIconLength] = useState<number>(0);
 
   const onMultilineCheck = (valueLength: number) => {
     setValueLength(valueLength);
@@ -115,6 +116,24 @@ const TextField = forwardRef(function TextField(
     }
   };
 
+  const onVisibilityPassword = () => {
+    if (thisType === 'text') {
+      setThisType('password');
+    } else {
+      setThisType('text');
+    }
+  };
+
+  useEffect(() => {
+    const rightIconArr = [
+      Boolean(resetButton),
+      Boolean(password),
+      Boolean(iconRight),
+    ].filter((x) => x == true);
+    setRightIconLength(rightIconArr.length);
+    console.log(rightIconArr.length);
+  }, [resetButton, password, iconRight]);
+
   useEffect(() => {
     if (typeof resetButton === 'boolean') {
       setShowResetButton(!!resetButton);
@@ -126,14 +145,6 @@ const TextField = forwardRef(function TextField(
       setThisState(state);
     }
   }, [state]);
-
-  const onVisibilityPassword = () => {
-    if (thisType === 'text') {
-      setThisType('password');
-    } else {
-      setThisType('text');
-    }
-  };
 
   useEffect(() => {
     if (multiLine && value) {
@@ -188,8 +199,12 @@ const TextField = forwardRef(function TextField(
         `textfield textfield__text-${size ? size : 'l'}-${
           (disabled && 'disabled') || thisState
         }`,
-        helperText ? 'has-helperText' : '',
-        isRenderValueMode ? 'render-value-mode' : '',
+        helperText ? 'has-helperText' : null,
+        iconLeft ? 'has-left' : null,
+        iconRight || resetButton || password
+          ? `has-right icon-${rightIconLength}`
+          : null,
+        isRenderValueMode ? 'render-value-mode' : null,
         className ? className : '',
       ].join(' ')}
     >
@@ -208,7 +223,7 @@ const TextField = forwardRef(function TextField(
           size === 'auto' ? { minHeight: minHeight, maxHeight: maxHeight } : {}
         }
       >
-        {!multiLine && iconLeft && iconLeft}
+        {!multiLine && iconLeft && <div className="left_icon">{iconLeft}</div>}
         {isRenderValueMode &&
           (typeof renderValue === 'string' ? (
             <div className="textfield__render-value-box">
@@ -259,24 +274,35 @@ const TextField = forwardRef(function TextField(
             autoComplete={password ? 'off' : 'on'}
           />
         )}
-        {!disabled && !multiLine && (
-          <>
-            {showResetButton && resoleValue && thisState !== 'disabled' && (
-              <span className="button" onClick={onClearValue}>
-                <CloseCircleFillIcon />
-              </span>
+        {(Boolean(!disabled && !multiLine) ||
+          Boolean(!multiLine && iconRight)) && (
+          <div className={`right_icon_box`}>
+            {!disabled && !multiLine && (
+              <>
+                {showResetButton && resoleValue && thisState !== 'disabled' && (
+                  <span className="button reset_button" onClick={onClearValue}>
+                    <CloseCircleFillIcon />
+                  </span>
+                )}
+                {password && (
+                  <span
+                    className="visibility-password-control"
+                    onClick={onVisibilityPassword}
+                  >
+                    {thisType === 'text' ? (
+                      <ViewOffFillIcon />
+                    ) : (
+                      <ViewFillIcon />
+                    )}
+                  </span>
+                )}
+              </>
             )}
-            {password && (
-              <span
-                className="visibility-password-control"
-                onClick={onVisibilityPassword}
-              >
-                {thisType === 'text' ? <ViewOffFillIcon /> : <ViewFillIcon />}
-              </span>
+            {!multiLine && iconRight && (
+              <div className="right_icon">{iconRight}</div>
             )}
-          </>
+          </div>
         )}
-        {!multiLine && iconRight && iconRight}
       </div>
       {(helperText || multiLine) && (
         <Text type="body" size="s" className="helper-text">

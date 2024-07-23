@@ -18,6 +18,10 @@
     &:focus {
       outline: none;
     }
+
+    &:-internal-autofill-selected {
+      background-color: transparent !important;
+    }
   }
 
   /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
@@ -136,7 +140,34 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
       }
     }
 
+    input {
+      padding: 0 16px;
+    }
+
+    &.has-left {
+      input {
+        padding-left: 46px;
+      }
+    }
+
+    &.has-right {
+      input {
+        padding-right: 46px;
+      }
+      &.icon-2 {
+        input {
+          padding-right: 76px;
+        }
+      }
+      &.icon-3 {
+        input {
+          padding-right: 106px;
+        }
+      }
+    }
+
     .textfield-formControl {
+      position: relative;
       @include textField-common;
       @include setBackgroundColor($state);
       @include setBorder($state);
@@ -144,7 +175,6 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 0 16px;
 
       @if ($size == 'l') {
         height: 48px;
@@ -181,6 +211,30 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         color: semantic-color('text', 'disabled');
         flex: none;
         cursor: pointer;
+      }
+
+      .left_icon {
+        overflow: hidden;
+        position: absolute;
+        left: 16px;
+        top: 13px;
+        width: 20px;
+        height: 20px;
+      }
+
+      .right_icon_box {
+        overflow: hidden;
+        position: absolute;
+        right: 16px;
+        top: 13px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .right_icon {
+        width: 20px;
+        height: 20px;
       }
 
       .visibility-password-control {
@@ -236,8 +290,6 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
 
       &.multi-line {
         align-items: flex-start;
-        padding: 16px;
-        padding-right: 0;
         @include scrollY(semantic-color('background', 'base'));
 
         @if ($size == 'auto') {
@@ -247,7 +299,9 @@ $textFieldState: 'default', 'onfocused', 'typing', 'completed', 'error',
         }
 
         textarea {
-          padding-right: 16px;
+          padding: 16px;
+          // padding-right: 0;
+          //   padding-right: 16px;
         }
       }
       .textfield__render-value-box {

@@ -131,7 +131,6 @@ const TextField = forwardRef(function TextField(
       Boolean(iconRight),
     ].filter((x) => x == true);
     setRightIconLength(rightIconArr.length);
-    console.log(rightIconArr.length);
   }, [resetButton, password, iconRight]);
 
   useEffect(() => {
@@ -306,12 +305,12 @@ const TextField = forwardRef(function TextField(
       </div>
       {(helperText || multiLine) && (
         <Text type="body" size="s" className="helper-text">
-          {thisState === 'error' && (
+          {helperText && thisState === 'error' && (
             <span className="icon-error">
               <ErrorCircleLineBoldIcon />
             </span>
           )}
-          {thisState === 'success' && (
+          {helperText && thisState === 'success' && (
             <span className="icon-success">
               <CheckCircleLineBoldIcon />
             </span>

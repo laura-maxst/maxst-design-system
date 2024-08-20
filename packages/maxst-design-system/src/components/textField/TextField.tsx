@@ -110,7 +110,7 @@ const TextField = forwardRef(function TextField(
 
   const onClearValue = () => {
     setResolveValue('');
-    setThisState('default');
+    setThisState(state || 'default');
     if (onChange) {
       onChange('');
     }

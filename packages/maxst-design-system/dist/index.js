@@ -39730,7 +39730,7 @@ var TextField = React$1.forwardRef(function TextField(_a, ref) {
     };
     var onClearValue = function () {
         setResolveValue('');
-        setThisState('default');
+        setThisState(state || 'default');
         if (onChange) {
             onChange('');
         }
